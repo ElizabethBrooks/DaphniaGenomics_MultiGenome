@@ -6,11 +6,17 @@
 # usage ex: bash run_EGAPx_local.sh inputs_KAP106.txt
 # usage ex: bash run_EGAPx_local.sh inputs_LK16.txt
 
+# retrieve input file
+inputFile=$1
+
 # retrieve species name
 speciesName=$(grep "species:" ../"InputData/"$inputFile | tr -d " " | sed "s/species://g")
 
-# retrieve inputs path
+# retrieve inputs file name
 inputsPath=$(grep "inputs_EGAPx:" ../"InputData/"$inputFile | tr -d " " | sed "s/inputs_EGAPx://g")
+
+# setup inputs path
+inputsPath=$(ls ../"InputData/"$inputsPath)
 
 # retrieve software path
 softwarePath=$(grep "software_EGAPx:" ../"InputData/inputPaths.txt" | tr -d " " | sed "s/software_EGAPx://g")
@@ -21,6 +27,9 @@ outputsPath=$(grep "outputs_EGAPx:" ../"InputData/inputPaths.txt" | tr -d " " | 
 # setup outputs directory
 outputsPath=$outputsPath"/"$speciesName
 
+# make outputs directory
+mkdir $outputsPath
+
 # make temporary data path
 mkdir $outputsPath"/"temp_datapath
 
@@ -28,7 +37,7 @@ mkdir $outputsPath"/"temp_datapath
 cd $outputsPath
 
 # status message
-echo "Beginning analysis..."
+echo "Beginning analysis of $speciesName..."
 
 # run EGAPx to copy config files
 python3 $softwarePath"/ui/"egapx.py $inputsPath -e singularity -w $outputsPath"/"temp_datapath -o $outputsPath
@@ -40,4 +49,4 @@ python3 $softwarePath"/ui/"egapx.py $inputsPath -e singularity -w $outputsPath"/
 nextflow -C $outputsPath"/egapx_config/"singularity.config,$softwarePath"/ui/assets/config/"default.config,$softwarePath"/ui/assets/config/"docker_image.config,$softwarePath"/ui/assets/config/"process_resources.config -log $outputsPath"/"nextflow.log run $softwarePath"/ui/"../nf/ui.nf --output $outputsPath -with-report $outputsPath"/"run.report.html -with-timeline $outputsPath"/"run.timeline.html -with-trace $outputsPath"/"run.trace.txt -params-file $outputsPath"/"run_params.yaml -resume
 
 # status message
-echo "Analysis complete!"
+echo "Analysis of $speciesName complete!"

@@ -1,3 +1,3 @@
 species: D_pulex_KAP4
-inputs_EAGx: ../InputData/inputs_KAP4_EGAPx.yaml
+inputs_EAGx: inputs_KAP4_EGAPx.yaml
 outputs_EAGx: /scratch365/ebrooks5/multi_genome_project

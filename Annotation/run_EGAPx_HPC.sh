@@ -9,11 +9,17 @@
 # usage: qsub run_EGAPx_HPC.sh inputFile
 # usage ex: qsub run_EGAPx_HPC.sh inputs_KAP4.txt
 
+# retrieve input file
+inputFile=$1
+
 # retrieve species name
 speciesName=$(grep "species:" ../"InputData/"$inputFile | tr -d " " | sed "s/species://g")
 
 # retrieve inputs path
 inputsPath=$(grep "inputs_EGAPx:" ../"InputData/"$inputFile | tr -d " " | sed "s/inputs_EGAPx://g")
+
+# setup inputs path
+inputsPath=$(ls ../"InputData/"$inputsPath)
 
 # retrieve software path
 softwarePath=$(grep "software_EGAPx:" ../"InputData/inputPaths.txt" | tr -d " " | sed "s/software_EGAPx://g")
@@ -23,6 +29,9 @@ outputsPath=$(grep "outputs_EGAPx:" ../"InputData/inputPaths.txt" | tr -d " " | 
 
 # setup outputs directory
 outputsPath=$outputsPath"/"$speciesName
+
+# make outputs directory
+mkdir $outputsPath
 
 # make temporary data path
 mkdir $outputsPath"/"temp_datapath
