@@ -18,8 +18,11 @@ speciesName=$(grep "species:" ../"InputData/"$inputFile | tr -d " " | sed "s/spe
 # retrieve inputs path
 inputsPath=$(grep "inputs_EGAPx:" ../"InputData/"$inputFile | tr -d " " | sed "s/inputs_EGAPx://g")
 
+# retrieve repository directory
+repoDir=$(dirname $PWD)
+
 # setup inputs path
-inputsPath=$(ls ../"InputData/"$inputsPath)
+inputsPath=$repoDir"/InputData/"$inputsPath
 
 # retrieve software path
 softwarePath=$(grep "software_EGAPx:" ../"InputData/inputPaths.txt" | tr -d " " | sed "s/software_EGAPx://g")
