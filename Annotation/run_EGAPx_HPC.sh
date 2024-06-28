@@ -8,6 +8,8 @@
 # script to run the EGAPx pipeline
 # usage: qsub run_EGAPx_HPC.sh inputFile
 # usage ex: qsub run_EGAPx_HPC.sh inputs_KAP4.txt
+# usage ex: qsub run_EGAPx_HPC.sh inputs_KAP106.txt
+# usage ex: qsub run_EGAPx_HPC.sh inputs_LK16.txt
 
 # retrieve input file
 inputFile=$1
@@ -43,7 +45,7 @@ mkdir $outputsPath"/"temp_datapath
 cd $outputsPath
 
 # status message
-echo "Beginning analysis..."
+echo "Beginning analysis of $speciesName..."
 
 # run EGAPx to copy config files
 python3 $softwarePath"/ui/"egapx.py $inputsPath -e singularity -w $outputsPath"/"temp_datapath -o $outputsPath
@@ -55,4 +57,4 @@ python3 $softwarePath"/ui/"egapx.py $inputsPath -e singularity -w $outputsPath"/
 nextflow -C $outputsPath"/egapx_config/"singularity.config,$softwarePath"/ui/assets/config/"default.config,$softwarePath"/ui/assets/config/"docker_image.config,$softwarePath"/ui/assets/config/"process_resources.config -log $outputsPath"/"nextflow.log run $softwarePath"/ui/"../nf/ui.nf --output $outputsPath -with-report $outputsPath"/"run.report.html -with-timeline $outputsPath"/"run.timeline.html -with-trace $outputsPath"/"run.trace.txt -params-file $outputsPath"/"run_params.yaml -resume
 
 # status message
-echo "Analysis complete!"
+echo "Analysis of $speciesName complete!"
