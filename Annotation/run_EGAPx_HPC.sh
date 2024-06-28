@@ -10,10 +10,10 @@
 # usage ex: qsub run_EGAPx_HPC.sh inputs_KAP4.txt
 
 # retrieve species name
-speciesName=$(grep "species:" ../"InputData/"$inputFile".txt" | tr -d " " | sed "s/species://g")
+speciesName=$(grep "species:" ../"InputData/"$inputFile | tr -d " " | sed "s/species://g")
 
 # retrieve inputs path
-inputsPath=$(grep "inputs_EGAPx:" ../"InputData/"$inputFile".txt" | tr -d " " | sed "s/inputs_EGAPx://g")
+inputsPath=$(grep "inputs_EGAPx:" ../"InputData/"$inputFile | tr -d " " | sed "s/inputs_EGAPx://g")
 
 # retrieve software path
 softwarePath=$(grep "software_EGAPx:" ../"InputData/inputPaths.txt" | tr -d " " | sed "s/software_EGAPx://g")
