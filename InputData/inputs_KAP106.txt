@@ -1,0 +1,3 @@
+species: D_pulex_KAP106
+inputs_EAGx: ../InputData/inputs_KAP106_EGAPx.yaml
+outputs_EAGx: /scratch365/ebrooks5/multi_genome_project
