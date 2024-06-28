@@ -3,7 +3,7 @@
 #$ -m abe
 #$ -r n
 #$ -N run_EGAPx_jobOutput
-#$ -pe smp 8
+#$ -pe smp 31
 
 # script to run the EGAPx pipeline
 # usage: qsub run_EGAPx_HPC.sh inputFile
@@ -34,10 +34,10 @@ cd $outputsPath
 echo "Beginning analysis..."
 
 # run EGAPx to copy config files
-python3 $softwarePath"/ui/"egapx.py $inputsPath -e slurm -w $outputsPath"/"temp_datapath -o $outputsPath
+python3 $softwarePath"/ui/"egapx.py $inputsPath -e singularity -w $outputsPath"/"temp_datapath -o $outputsPath
 
 # run EGAPx
-python3 $softwarePath"/ui/"egapx.py $inputsPath -e slurm -w $outputsPath"/"temp_datapath -o $outputsPath
+python3 $softwarePath"/ui/"egapx.py $inputsPath -e singularity -w $outputsPath"/"temp_datapath -o $outputsPath
 
 # run nextflow
 nextflow -C $outputsPath"/egapx_config/"singularity.config,$softwarePath"/ui/assets/config/"default.config,$softwarePath"/ui/assets/config/"docker_image.config,$softwarePath"/ui/assets/config/"process_resources.config -log $outputsPath"/"nextflow.log run $softwarePath"/ui/"../nf/ui.nf --output $outputsPath -with-report $outputsPath"/"run.report.html -with-timeline $outputsPath"/"run.timeline.html -with-trace $outputsPath"/"run.trace.txt -params-file $outputsPath"/"run_params.yaml -resume
