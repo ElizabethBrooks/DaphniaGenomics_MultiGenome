@@ -51,5 +51,9 @@ python3 $softwarePath"/ui/"egapx.py $inputsPath -e singularity -w $outputsPath"/
 # run nextflow
 nextflow -C $outputsPath"/egapx_config/"singularity.config,$softwarePath"/ui/assets/config/"default.config,$softwarePath"/ui/assets/config/"docker_image.config,$softwarePath"/ui/assets/config/"process_resources.config -log $outputsPath"/"nextflow.log run $softwarePath"/ui/"../nf/ui.nf --output $outputsPath -with-report $outputsPath"/"run.report.html -with-timeline $outputsPath"/"run.timeline.html -with-trace $outputsPath"/"run.trace.txt -params-file $outputsPath"/"run_params.yaml -resume
 
+# clean up
+rm -r $outputsPath"/"temp_datapath
+rm -r $outputsPath"/"work
+
 # status message
 echo "Analysis of $speciesName complete!"

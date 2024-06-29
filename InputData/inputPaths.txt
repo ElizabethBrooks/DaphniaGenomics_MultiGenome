@@ -1,2 +1,2 @@
 software_EGAPx: /afs/crc.nd.edu/user/e/ebrooks5/egapx
-outputs_EGAPx: /scratch365/ebrooks5/multi_genome_project
+outputs_EGAPx: /scratch365/ebrooks5/multi_genome_project/EGAPx
