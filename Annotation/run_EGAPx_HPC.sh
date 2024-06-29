@@ -7,9 +7,10 @@
 
 # script to run the EGAPx pipeline
 # usage: qsub run_EGAPx_HPC.sh inputFile
-# usage ex: qsub run_EGAPx_HPC.sh inputs_KAP4.txt
-# usage ex: qsub run_EGAPx_HPC.sh inputs_KAP106.txt
-# usage ex: qsub run_EGAPx_HPC.sh inputs_LK16.txt
+# usage ex: bash run_EGAPx_HPC.sh inputs_KAP4_NCBI.txt
+# usage ex: bash run_EGAPx_HPC.sh inputs_KAP106.txt
+# usage ex: bash run_EGAPx_HPC.sh inputs_LK16.txt
+# usage ex: bash run_EGAPx_HPC.sh inputs_LK16_NCBI.txt
 
 # retrieve input file
 inputFile=$1
