@@ -6,6 +6,7 @@
 #$ -pe smp 31
 
 # script to run the EGAPx pipeline
+# NOTE: the /egapx/ui/assets/config/process_resources.config file specifies up to 31 cores (huge_Job)
 # usage: qsub run_EGAPx_HPC.sh inputFile
 # usage ex: qsub run_EGAPx_HPC.sh inputs_KAP4_NCBI.txt
 # usage ex: qsub run_EGAPx_HPC.sh inputs_KAP106.txt
