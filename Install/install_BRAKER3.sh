@@ -2,12 +2,13 @@
 
 # script to install and test run the BRAKER3 pipeline
 # https://hub.docker.com/r/teambraker/braker3
+# usage: bash install_BRAKER3.sh
 
-# set software path
-softPath="/afs/crc.nd.edu/user/e/ebrooks5"
+# retrieve software path
+softwarePath=$(grep "software_BRAKER3:" ../"InputData/inputPaths.txt" | tr -d " " | sed "s/software_BRAKER3://g")
 
 # move to software path
-cd $softPath
+cd $softwarePath
 
 # For Singularity, build the sif-file as follows
 singularity build braker3.sif docker://teambraker/braker3:latest

@@ -37,7 +37,7 @@ outputsPath=$outputsPath"/"$speciesName
 mkdir $outputsPath
 
 # make temporary data path
-mkdir $outputsPath"/"temp_datapath
+mkdir $outputsPath"/temp_datapath"
 
 # move to outputs directory
 cd $outputsPath
@@ -46,17 +46,24 @@ cd $outputsPath
 echo "Beginning analysis of $speciesName..."
 
 # run EGAPx to copy config files
-python3 $softwarePath"/ui/"egapx.py $inputsPath -e singularity -w $outputsPath"/"temp_datapath -o $outputsPath
+python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath
 
 # run EGAPx
-python3 $softwarePath"/ui/"egapx.py $inputsPath -e singularity -w $outputsPath"/"temp_datapath -o $outputsPath
+python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath
 
 # run nextflow
-nextflow -C $outputsPath"/egapx_config/"singularity.config,$softwarePath"/ui/assets/config/"default.config,$softwarePath"/ui/assets/config/"docker_image.config,$softwarePath"/ui/assets/config/"process_resources.config -log $outputsPath"/"nextflow.log run $softwarePath"/ui/"../nf/ui.nf --output $outputsPath -with-report $outputsPath"/"run.report.html -with-timeline $outputsPath"/"run.timeline.html -with-trace $outputsPath"/"run.trace.txt -params-file $outputsPath"/"run_params.yaml -resume
+nextflow -C $outputsPath"/egapx_config/singularity.config",$softwarePath"/ui/assets/config/default.config",$softwarePath"/ui/assets/config/docker_image.config",$softwarePath"/ui/assets/config/process_resources.config" \
+	-log $outputsPath"/nextflow.log" run $softwarePath"/ui/"../nf/ui.nf \
+	--output $outputsPath \
+	-with-report $outputsPath"/run.report.html" \
+	-with-timeline $outputsPath"/run.timeline.html" \
+	-with-trace $outputsPath"/run.trace.txt" \
+	-params-file $outputsPath"/run_params.yaml" \
+	-resume
 
 # clean up
-rm -r $outputsPath"/"temp_datapath
-rm -r $outputsPath"/"work
+rm -r $outputsPath"/temp_datapath"
+rm -r $outputsPath"/work"
 
 # status message
 echo "Analysis of $speciesName complete!"
