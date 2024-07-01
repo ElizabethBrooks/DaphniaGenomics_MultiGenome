@@ -20,8 +20,6 @@ The <i>egapx/ui/assets/config/process_resources.config</i> file specifies up to 
 #### Errors
 ERROR ~ index is out of range 0..-1 (index = 0)
 -- Check script '/afs/crc.nd.edu/user/e/ebrooks5/egapx/nf/./subworkflows/ncbi/./rnaseq_short/star_wnode/main.nf' at line: 83 or see '/scratch365/ebrooks5/multi_genome_project/EGAPx/D_pulicaria_LK16_raw/nextflow.log' file for more details
-
-Jun-30 20:49:03.315 [Actor Thread 23] ERROR nextflow.extension.OperatorImpl - @unknown
-java.lang.IndexOutOfBoundsException: index is out of range 0..-1 (index = 0)
-...
-Jun-30 20:49:03.330 [Actor Thread 23] DEBUG nextflow.Session - Session aborted -- Cause: index is out of range 0..-1 (index = 0)
+- Jun-30 20:49:03.315 [Actor Thread 23] ERROR nextflow.extension.OperatorImpl - @unknown
+- java.lang.IndexOutOfBoundsException: index is out of range 0..-1 (index = 0)
+- Jun-30 20:49:03.330 [Actor Thread 23] DEBUG nextflow.Session - Session aborted -- Cause: index is out of range 0..-1 (index = 0)
