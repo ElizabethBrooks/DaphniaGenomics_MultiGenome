@@ -7,13 +7,13 @@
 
 # script to run the EGAPx pipeline
 # NOTE: the /egapx/ui/assets/config/process_resources.config file specifies up to 31 cores (huge_Job)
+# NOTE: EGAPx expects that input "reads" are a list of FASTA read files, expects pairs in form SRAxxx.1, SRAxxx.2
 # usage: qsub run_EGAPx_HPC.sh inputFile
 # usage ex: qsub run_EGAPx_HPC.sh inputs_KAP4_NCBI.txt
 # usage ex: qsub run_EGAPx_HPC.sh inputs_KAP106.txt
 # usage ex: qsub run_EGAPx_HPC.sh inputs_LK16.txt
 # usage ex: qsub run_EGAPx_HPC.sh inputs_LK16_NCBI.txt
 # usage ex: qsub run_EGAPx_HPC.sh inputs_LK16_raw.txt
-# usage ex: qsub run_EGAPx_HPC.sh inputs_LK16_trimmed.txt
 
 # retrieve input file
 inputFile=$1

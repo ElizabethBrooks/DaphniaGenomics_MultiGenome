@@ -1,6 +1,7 @@
 # NOTE: these IDs were retrieved from the KAP4 NCBI annotation report
 # https://www.ncbi.nlm.nih.gov/refseq/annotation_euk/Daphnia_pulex/100/
 # these are the "RNA-Seq alignments" "Project" IDs and the "SRA Long Read Alignment Statistics" "Run" ID
+# the Project IDs are being used since EGAPx fails if the HTTP header becomes to large from a long list of samples
 SRR17282827
 DRP002580
 ERP110882
