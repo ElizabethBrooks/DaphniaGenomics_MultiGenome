@@ -1,12 +1,19 @@
 # DaphniaGenomics_MultiGenome
 Repository for scripts to analyze multiple daphnia species genomes.
 
-# EGAPx
+## Inputs & Outputs
+
+To use these sets of scripts to install and run the workflows, make sure to change the paths in the inputs files in the <b>InputData</b> directory.
+
+
+# [EGAPx](https://github.com/ncbi/egapx/)
 There are two workflows for EGAPx, local and HPC. The <i>local scripts</i> can be run locally on your system and the <i>HPC scripts</i> are setup for job submission to the ND CRC remote servers.
 
-First, make sure that you have singularity installed on your system. The ND CRC servers have singularity already available.
+First, make sure that you have singularity installed on your system. The ND CRC servers already have singularity available.
 
-Next, you may use the install_EGAPx.sh script in the Install folder to install EGAPx and its dependencies.
+## Installation
+
+The <i>install_EGAPx.sh</i> script in the <b>Install</b> directory can be used to install EGAPx and its dependencies.
 
 ## Notes on EGAPx
 
@@ -23,3 +30,7 @@ ERROR ~ index is out of range 0..-1 (index = 0)
 - Jun-30 20:49:03.315 [Actor Thread 23] ERROR nextflow.extension.OperatorImpl - @unknown
 - java.lang.IndexOutOfBoundsException: index is out of range 0..-1 (index = 0)
 - Jun-30 20:49:03.330 [Actor Thread 23] DEBUG nextflow.Session - Session aborted -- Cause: index is out of range 0..-1 (index = 0)
+
+
+# [BRAKER3](https://github.com/Gaius-Augustus/BRAKER)
+... in progress ...
