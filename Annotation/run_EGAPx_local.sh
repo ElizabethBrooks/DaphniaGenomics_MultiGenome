@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # script to run the EGAPx pipeline
-# NOTE: EGAPx expects that input "reads" are a list of FASTA read files, expects pairs in form SRAxxx.1, SRAxxx.2
 # usage: bash run_EGAPx_local.sh inputFile
 # usage ex: bash run_EGAPx_local.sh inputs_KAP4_NCBI.txt
 # usage ex: bash run_EGAPx_local.sh inputs_KAP106.txt
