@@ -3,7 +3,7 @@ Repository for scripts to analyze multiple daphnia species genomes.
 
 ## Inputs & Outputs
 
-To use these sets of scripts to install and run the workflows, make sure to change the paths in the inputs files in the <b>InputData</b> directory.
+To use these sets of scripts to install and run the workflows, make sure to change the paths in the inputs files in the <b>InputData</b> directory. For example, the input and output paths in the <i>inputPaths.txt</i> file should be changed to the paths on your system.
 
 
 ## [EGAPx](https://github.com/ncbi/egapx/)
