@@ -1,6 +1,12 @@
 # DaphniaGenomics_MultiGenome
 Repository for scripts to analyze multiple daphnia species genomes.
 
+Some things to keep in mind when running EGAPx:
+- Either the number of cores requested for a job must be at least 31, or you will need to edit the default huge_Job value in the <i>egapx/ui/assets/config/process_resources.config</i> file
+- The pipeline can take a lot of memory and time, if there is a large number of reads being retrieved from the SRA
+- There is a limit to the number of SRA IDs that can be input to EGAPx
+
+
 ## Inputs & Outputs
 
 To use these sets of scripts to install and run the workflows, make sure to change the paths in the inputs files in the <b>InputData</b> directory. For example, the input and output paths in the <i>inputPaths.txt</i> file should be changed to the paths on your system.
@@ -19,6 +25,12 @@ The <i>install_EGAPx.sh</i> script in the <b>Install</b> directory can be used t
 
 #### HPC scripts
 The <i>egapx/ui/assets/config/process_resources.config</i> file specifies up to 31 cores (huge_Job).
+
+#### reads_ids
+There is a limit to the number of SRA IDs that can be input to EGAPx, since the pipeline makes a query to the SRA. The HTTP header becomes too large if the list of SRA IDs is very long. 
+
+##### KAP4
+These IDs were retrieved from the [KAP4 NCBI annotation report](https://www.ncbi.nlm.nih.gov/refseq/annotation_euk/Daphnia_pulex/100/). These are the "RNA-Seq alignments" "Project" IDs and the "SRA Long Read Alignment Statistics" "Run" ID. The unique Project IDs are being used since EGAPx fails if the HTTP header becomes to large from a long list of samples.
 
 #### reads
 - EGAPx expects that input "reads" are a list of FASTA read files, expects pairs in form SRAxxx.1, SRAxxx.2 (see the egapx/nf/./subworkflows/ncbi/./rnaseq_short/star_wnode/main.nf file)
