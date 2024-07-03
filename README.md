@@ -32,6 +32,13 @@ There is a limit to the number of SRA IDs that can be input to EGAPx, since the 
 ##### KAP4
 These IDs were retrieved from the [KAP4 NCBI annotation report](https://www.ncbi.nlm.nih.gov/refseq/annotation_euk/Daphnia_pulex/100/). These are the "RNA-Seq alignments" "Project" IDs and the "SRA Long Read Alignment Statistics" "Run" ID. The unique Project IDs are being used since EGAPx fails if the HTTP header becomes to large from a long list of samples.
 
+###### Errors
+The following reads cause errors with EGAPx (ERROR ~ Error executing process > 'egapx:fetch_sra_fasta:run_fetch_sra_fasta), which are testable with the SRA tools prefetch command.
+- prefetch.2.10.1: 'SRR6819015' is a local non-kart file
+- warn: nothing found for SRR11089015.1
+- warn: nothing found for SRR11089015.2
+
+
 #### reads
 - EGAPx expects that input "reads" are a list of FASTA read files, expects pairs in form SRAxxx.1, SRAxxx.2 (see the egapx/nf/./subworkflows/ncbi/./rnaseq_short/star_wnode/main.nf file)
 - Do the reads need to be from the SRA (e.g., https paths in EGAPx example yaml files) or formatted very specifically (e.g., read headers or file names)?
