@@ -1,0 +1,2 @@
+species: D_farinae_small_test
+inputs_EGAPx: input_D_farinae_small_test.yaml
