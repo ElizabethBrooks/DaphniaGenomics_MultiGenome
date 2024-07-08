@@ -13,7 +13,6 @@
 # usage ex: qsub run_EGAPx_HPC.sh inputs_LK16.txt
 # usage ex: qsub run_EGAPx_HPC.sh inputs_LK16_NCBI.txt
 # usage ex: qsub run_EGAPx_HPC.sh inputs_LK16_raw.txt
-# usage ex: qsub run_EGAPx_HPC.sh inputs_D_farinae.txt
 
 # retrieve input file
 inputFile=$1
