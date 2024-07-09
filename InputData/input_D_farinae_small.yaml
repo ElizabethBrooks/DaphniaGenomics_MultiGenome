@@ -1,0 +1,7 @@
+genome: https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/020/809/275/GCF_020809275.1_ASM2080927v1/GCF_020809275.1_ASM2080927v1_genomic.fna.gz
+taxid: 6954
+reads:
+  - /scratch365/ebrooks5/multi_genome_project/data/wget/SRR8506572.1
+  - /scratch365/ebrooks5/multi_genome_project/data/wget/SRR8506572.2
+  - /scratch365/ebrooks5/multi_genome_project/data/wget/SRR9005248.1
+  - /scratch365/ebrooks5/multi_genome_project/data/wget/SRR9005248.2
