@@ -1,4 +1,4 @@
 software_EGAPx: /afs/crc.nd.edu/user/e/ebrooks5/egapx
 software_BRAKER3: /afs/crc.nd.edu/user/e/ebrooks5/braker3
-outputs_EGAPx: /afs/crc.nd.edu/group/pfrenderlab/curie/ebrooks/multi_genome_project/EGAPx
+outputs_EGAPx: /scratch365/ebrooks5/multi_genome_project/EGAPx
 outputs_BRAKER3: /scratch365/ebrooks5/multi_genome_project/BRAKER3
