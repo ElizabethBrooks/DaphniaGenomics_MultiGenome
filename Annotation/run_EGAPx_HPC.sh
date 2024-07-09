@@ -67,8 +67,8 @@ nextflow -C $outputsPath"/egapx_config/singularity.config",$softwarePath"/ui/ass
 	-resume
 
 # clean up
-rm -r $outputsPath"/temp_datapath"
-rm -r $outputsPath"/work"
+#rm -r $outputsPath"/temp_datapath"
+#rm -r $outputsPath"/work"
 
 # status message
 echo "Analysis of $speciesName complete!"
