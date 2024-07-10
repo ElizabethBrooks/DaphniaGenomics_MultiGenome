@@ -1,2 +1,2 @@
-species: D_pulex_KAP4_test5_NCBI
+species: D_pulex_KAP4_test5_NCBI_dump_fmt
 inputs_EGAPx: inputs_KAP4_test5_NCBI_EGAPx.yaml

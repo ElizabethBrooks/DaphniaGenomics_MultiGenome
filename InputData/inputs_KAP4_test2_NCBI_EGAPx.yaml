@@ -1,7 +1,7 @@
 genome: /afs/crc.nd.edu/group/pfrenderlab/mendel/ebrooks/daphnia_pulex/KAP4/NCBI/GCF_021134715.1/ncbi_dataset/data/GCF_021134715.1/GCF_021134715.1_ASM2113471v1_genomic.fna
 taxid: 6669
 reads:
-  - /scratch365/ebrooks5/multi_genome_project/data/tmp/dump/DRR024784_1.fastq
-  - /scratch365/ebrooks5/multi_genome_project/data/tmp/dump/DRR024784_2.fastq
-  - /scratch365/ebrooks5/multi_genome_project/data/tmp/dump/DRR024790_1.fastq
-  - /scratch365/ebrooks5/multi_genome_project/data/tmp/dump/DRR024790_2.fastq
+  - /scratch365/ebrooks5/multi_genome_project/data/KAP4/dump_fmt/DRR024784_1.fastq
+  - /scratch365/ebrooks5/multi_genome_project/data/KAP4/dump_fmt/DRR024784_2.fastq
+  - /scratch365/ebrooks5/multi_genome_project/data/KAP4/dump_fmt/DRR024790_1.fastq
+  - /scratch365/ebrooks5/multi_genome_project/data/KAP4/dump_fmt/DRR024790_2.fastq
