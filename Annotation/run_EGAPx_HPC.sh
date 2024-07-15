@@ -14,6 +14,9 @@
 # usage ex: qsub run_EGAPx_HPC.sh inputs_LK16_NCBI.txt
 # usage ex: qsub run_EGAPx_HPC.sh inputs_LK16_raw.txt
 
+# load the egapx software module (contains nextflow)
+module load bio/egapx/0.1.1
+
 # retrieve input file
 inputFile=$1
 
@@ -67,8 +70,8 @@ nextflow -C $outputsPath"/egapx_config/singularity.config",$softwarePath"/ui/ass
 	-resume
 
 # clean up
-#rm -r $outputsPath"/temp_datapath"
-#rm -r $outputsPath"/work"
+rm -r $outputsPath"/temp_datapath"
+rm -r $outputsPath"/work"
 
 # status message
 echo "Analysis of $speciesName complete!"

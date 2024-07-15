@@ -8,6 +8,9 @@
 # usage ex: bash run_EGAPx_local.sh inputs_LK16_NCBI.txt
 # usage ex: bash run_EGAPx_HPC.sh inputs_LK16_raw.txt
 
+# load the egapx software module
+module load bio/egapx/0.1.1
+
 # retrieve input file
 inputFile=$1
 

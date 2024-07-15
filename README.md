@@ -45,3 +45,22 @@ The following reads cause errors with EGAPx (ERROR ~ Error executing process > '
 
 ## [BRAKER3](https://github.com/Gaius-Augustus/BRAKER)
 ... in progress ...
+
+
+## NOTES
+(base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_D_farinae.txt
+
+(base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_D_farinae_SRA.txt
+Your job 681668 ("run_EGAPx_jobOutput") has been submitted
+(base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_D_farinae_dump.txt
+Your job 681669 ("run_EGAPx_jobOutput") has been submitted
+(base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_D_farinae_dump_fmt.txt
+Your job 681779 ("run_EGAPx_jobOutput") has been submitted
+(base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_D_farinae_wget.txt
+Your job 681769 ("run_EGAPx_jobOutput") has been submitted
+(base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_KAP4.txt
+Your job 681778 ("run_EGAPx_local.sh") has been submitted
+(base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_KAP4_dump.txt
+Your job 681678 ("run_EGAPx_jobOutput") has been submitted
+(base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_KAP4_dump_fmt.txt
+Your job 681679 ("run_EGAPx_jobOutput") has been submitted
