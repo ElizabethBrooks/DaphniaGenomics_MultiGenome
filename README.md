@@ -49,18 +49,49 @@ The following reads cause errors with EGAPx (ERROR ~ Error executing process > '
 
 ## NOTES
 (base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_D_farinae.txt
+Your job 688905 ("run_EGAPx_jobOutput") has been submitted
+Completed at: 15-Jul-2024 13:12:18
+Duration    : 17m 59s
+CPU hours   : 5.6
+Succeeded   : 192
 
 (base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_D_farinae_SRA.txt
-Your job 681668 ("run_EGAPx_jobOutput") has been submitted
+Your job 688906 ("run_EGAPx_jobOutput") has been submitted
+Completed at: 15-Jul-2024 17:09:21
+Duration    : 2h 7m 48s
+CPU hours   : 58.2
+Succeeded   : 213
+
 (base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_D_farinae_dump.txt
-Your job 681669 ("run_EGAPx_jobOutput") has been submitted
+Your job 688907 ("run_EGAPx_jobOutput") has been submitted
+ERROR ~ index is out of range 0..-1 (index = 0)
+ -- Check script '/afs/crc.nd.edu/user/e/ebrooks5/egapx/nf/./subworkflows/ncbi/./rnaseq_short/star_wnode/main.nf' at line: 83 or see '/scratch365/ebrooks5/multi_genome_project/EGAPx/D_farinae_small_dump/nextflow.log' file for more details
+
 (base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_D_farinae_dump_fmt.txt
-Your job 681779 ("run_EGAPx_jobOutput") has been submitted
+Your job 690819 ("run_EGAPx_jobOutput") has been submitted
+EXITING because of FATAL ERROR in reads input: short read sequence line: 0
+ -- Check '/scratch365/ebrooks5/multi_genome_project/EGAPx/D_farinae_small_dump_fmt/nextflow.log' file for details
+
 (base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_D_farinae_wget.txt
-Your job 681769 ("run_EGAPx_jobOutput") has been submitted
+Your job 688909 ("run_EGAPx_jobOutput") has been submitted
+Completed at: 15-Jul-2024 13:30:17
+Duration    : 17m 39s
+CPU hours   : 5.5
+Succeeded   : 192
+
 (base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_KAP4.txt
-Your job 681778 ("run_EGAPx_local.sh") has been submitted
+Your job 688910 ("run_EGAPx_jobOutput") has been submitted
+Completed at: 15-Jul-2024 19:57:40
+Duration    : 2h 11m 4s
+CPU hours   : 54.8
+Succeeded   : 83
+
 (base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_KAP4_dump.txt
-Your job 681678 ("run_EGAPx_jobOutput") has been submitted
+Your job 688911 ("run_EGAPx_jobOutput") has been submitted
+ERROR ~ index is out of range 0..-1 (index = 0)
+ -- Check script '/afs/crc.nd.edu/user/e/ebrooks5/egapx/nf/./subworkflows/ncbi/./rnaseq_short/star_wnode/main.nf' at line: 83 or see '/scratch365/ebrooks5/multi_genome_project/EGAPx/D_pulex_KAP4_dump/nextflow.log' file for more details
+
 (base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_KAP4_dump_fmt.txt
-Your job 681679 ("run_EGAPx_jobOutput") has been submitted
+Your job 691011 ("run_EGAPx_jobOutput") has been submitted
+EXITING because of FATAL ERROR in reads input: short read sequence line: 0
+ -- Check '/scratch365/ebrooks5/multi_genome_project/EGAPx/D_pulex_KAP4_dump_fmt/nextflow.log' file for details
