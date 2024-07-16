@@ -48,6 +48,9 @@ The following reads cause errors with EGAPx (ERROR ~ Error executing process > '
 
 
 ## NOTES
+
+### Tests
+
 (base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_D_farinae.txt
 Your job 688905 ("run_EGAPx_jobOutput") has been submitted
 Completed at: 15-Jul-2024 13:12:18
@@ -95,3 +98,29 @@ ERROR ~ index is out of range 0..-1 (index = 0)
 Your job 691011 ("run_EGAPx_jobOutput") has been submitted
 EXITING because of FATAL ERROR in reads input: short read sequence line: 0
  -- Check '/scratch365/ebrooks5/multi_genome_project/EGAPx/D_pulex_KAP4_dump_fmt/nextflow.log' file for details
+
+
+### Config
+
+// Part of nextflow config describing resource requirements for EGAPx processes
+// We rely on labels to define 3 tiers of processes - default, big, and huge.
+// Make sure that executor you use supports job memory and CPU requirements
+process {
+    memory = 200.GB
+    cpus = 124
+    time = 336.h
+
+    withLabel: 'big_job' {
+        memory = 200.GB
+        cpus = 124
+    }
+
+    withLabel: 'huge_job' {
+        memory = 200.GB
+        cpus = 124
+    }
+
+    withLabel: 'long_job' {
+        time = 336.h
+    }
+}
