@@ -2,20 +2,15 @@
 #$ -M ebrooks5@nd.edu
 #$ -m abe
 #$ -r n
-#$ -N run_EGAPx_jobOutput
+#$ -N resume_EGAPx_jobOutput
 #$ -pe smp 63
 
 # script to run the EGAPx pipeline
 # NOTE: the default /egapx/ui/assets/config/process_resources.config file specifies up to 31 cores (huge_Job)
 # our afs system has 263Gb RAM, 64 cores
-# usage: qsub run_EGAPx_HPC.sh inputFile
-# usage ex: qsub run_EGAPx_HPC.sh inputs_KAP4_NCBI.txt
-## job 694733
-# usage ex: qsub run_EGAPx_HPC.sh inputs_KAP106.txt
-## job 699252
-# usage ex: qsub run_EGAPx_HPC.sh inputs_LK16.txt
-# usage ex: qsub run_EGAPx_HPC.sh inputs_LK16_NCBI.txt
-# usage ex: qsub run_EGAPx_HPC.sh inputs_LK16_raw.txt
+# usage: qsub resume_EGAPx_HPC.sh inputFile
+# usage ex: qsub resume_EGAPx_HPC.sh inputs_KAP4_NCBI.txt
+# usage ex: qsub resume_EGAPx_HPC.sh inputs_KAP106.txt
 
 # load the egapx software module (contains nextflow)
 module load bio/egapx/0.1.1
@@ -54,13 +49,7 @@ mkdir $outputsPath"/temp_datapath"
 cd $outputsPath
 
 # status message
-echo "Beginning analysis of $speciesName..."
-
-# run EGAPx to copy config files
-python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath
-
-# run EGAPx
-python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath
+echo "Resuming analysis of $speciesName..."
 
 # run nextflow
 nextflow -C $outputsPath"/egapx_config/singularity.config",$softwarePath"/ui/assets/config/default.config",$softwarePath"/ui/assets/config/docker_image.config",$softwarePath"/ui/assets/config/process_resources.config" \
@@ -70,7 +59,7 @@ nextflow -C $outputsPath"/egapx_config/singularity.config",$softwarePath"/ui/ass
 	-with-timeline $outputsPath"/run.timeline.html" \
 	-with-trace $outputsPath"/run.trace.txt" \
 	-params-file $outputsPath"/run_params.yaml" \
-	#-resume
+	-resume
 
 # clean up
 #rm -r $outputsPath"/temp_datapath"
