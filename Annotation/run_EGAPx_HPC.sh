@@ -18,7 +18,7 @@
 # usage ex: qsub run_EGAPx_HPC.sh inputs_LK16_raw.txt
 
 # load the egapx software module (contains nextflow)
-module load bio/egapx/0.1.1
+#module load bio/egapx/0.1.1
 
 # retrieve input file
 inputFile=$1

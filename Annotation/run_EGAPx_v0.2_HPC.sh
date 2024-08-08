@@ -2,20 +2,15 @@
 #$ -M ebrooks5@nd.edu
 #$ -m abe
 #$ -r n
-#$ -N resume_EGAPx_jobOutput
+#$ -N run_EGAPx_v0.2_jobOutput
 #$ -pe smp 63
 
 # script to run the EGAPx pipeline
 # NOTE: the default /egapx/ui/assets/config/process_resources.config file specifies up to 31 cores (huge_Job)
 # our afs system has 263Gb RAM, 64 cores
-# usage: qsub resume_EGAPx_HPC.sh inputFile
-# usage ex: qsub resume_EGAPx_HPC.sh inputs_KAP4_NCBI.txt
-## job 747590
-# usage ex: qsub resume_EGAPx_HPC.sh inputs_KAP106.txt
-## job 747591
-
-# load the egapx software module (contains nextflow)
-module load bio/egapx/0.1.1
+# usage: qsub run_EGAPx_v0.2_HPC.sh inputFile
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_KAP4_NCBI.txt
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_KAP106.txt
 
 # retrieve input file
 inputFile=$1
@@ -33,19 +28,31 @@ repoDir=$(dirname $PWD)
 inputsPath=$repoDir"/InputData/"$inputsPath
 
 # retrieve software path
-softwarePath=$(grep "software_EGAPx:" ../"InputData/inputPaths.txt" | tr -d " " | sed "s/software_EGAPx://g")
+softwarePath=$(grep "software_EGAPx_v0.2:" ../"InputData/inputPaths.txt" | tr -d " " | sed "s/software_EGAPx_v0.2://g")
 
 # retrieve outputs path
-outputsPath=$(grep "outputs_EGAPx:" ../"InputData/inputPaths.txt" | tr -d " " | sed "s/outputs_EGAPx://g")
+outputsPath=$(grep "outputs_EGAPx_v0.2:" ../"InputData/inputPaths.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.2://g")
 
 # setup outputs directory
 outputsPath=$outputsPath"/"$speciesName
+
+# make outputs directory
+mkdir $outputsPath
+
+# make temporary data path
+mkdir $outputsPath"/temp_datapath"
 
 # move to outputs directory
 cd $outputsPath
 
 # status message
-echo "Resuming analysis of $speciesName..."
+echo "Beginning analysis of $speciesName..."
+
+# run EGAPx to copy config files
+python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath
+
+# run EGAPx
+python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath
 
 # run nextflow
 nextflow -C $outputsPath"/egapx_config/singularity.config",$softwarePath"/ui/assets/config/default.config",$softwarePath"/ui/assets/config/docker_image.config",$softwarePath"/ui/assets/config/process_resources.config" \
@@ -55,7 +62,7 @@ nextflow -C $outputsPath"/egapx_config/singularity.config",$softwarePath"/ui/ass
 	-with-timeline $outputsPath"/run.timeline.html" \
 	-with-trace $outputsPath"/run.trace.txt" \
 	-params-file $outputsPath"/run_params.yaml" \
-	-resume
+	#-resume
 
 # clean up
 #rm -r $outputsPath"/temp_datapath"
