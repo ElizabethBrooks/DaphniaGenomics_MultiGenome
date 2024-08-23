@@ -61,7 +61,7 @@ nextflow -C $outputsPath"/egapx_config/singularity.config",$softwarePath"/ui/ass
 	-with-timeline $outputsPath"/run.timeline.html" \
 	-with-trace $outputsPath"/run.trace.txt" \
 	-params-file $outputsPath"/run_params.yaml" \
-	-resume
+	#-resume
 
 # clean up
 rm -r $outputsPath"/temp_datapath"
