@@ -1,0 +1,2 @@
+species: D_magna_NIES_NCBI
+inputs_EGAPx: inputs_NIES_NCBI_EGAPx.yaml

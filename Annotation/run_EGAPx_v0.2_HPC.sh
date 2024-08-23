@@ -13,9 +13,11 @@
 ## job 747604
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_KAP106.txt
 ## job 747606
-# usage ex: qsub run_EGAPx_HPC.sh inputs_SC_F0-13Bv2.txt
-## job
-# usage ex: qsub run_EGAPx_HPC.sh inputs_LK16_NCBI.txt
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_LK16_NCBI.txt
+## job 773689
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_SC_F0-13Bv2.txt
+## job 773695
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_NIES_NCBI.txt
 ## job
 
 # retrieve input file

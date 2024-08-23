@@ -13,9 +13,11 @@
 ## job 694733
 # usage ex: qsub run_EGAPx_HPC.sh inputs_KAP106.txt
 ## job 699252
-# usage ex: qsub run_EGAPx_HPC.sh inputs_SC_F0-13Bv2.txt
-## job
 # usage ex: qsub run_EGAPx_HPC.sh inputs_LK16_NCBI.txt
+## job 773663
+# usage ex: qsub run_EGAPx_HPC.sh inputs_SC_F0-13Bv2.txt
+## job 773672
+# usage ex: qsub run_EGAPx_HPC.sh inputs_NIES_NCBI.txt
 ## job
 
 # load the egapx software module (contains nextflow)
