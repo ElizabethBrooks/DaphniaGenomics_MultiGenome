@@ -10,15 +10,18 @@
 # our afs system has 263Gb RAM, 64 cores
 # usage: qsub run_EGAPx_HPC.sh inputFile
 # usage ex: qsub run_EGAPx_HPC.sh inputs_KAP4_NCBI.txt
-## job 694733
+## job 694733 -> DONE
+##  Wallclock Time   = 10:23:29:22
 # usage ex: qsub run_EGAPx_HPC.sh inputs_KAP106.txt
-## job 699252
+## job 699252 -> DONE
+## Wallclock Time   = 8:15:36:18
 # usage ex: qsub run_EGAPx_HPC.sh inputs_LK16_NCBI.txt
-## job 773663
+## job 773663 -> RUNNING
 # usage ex: qsub run_EGAPx_HPC.sh inputs_SC_F0-13Bv2.txt
-## job 773672
+## job 773672 -> DONE
+## Wallclock Time   = 4:16:23:22
 # usage ex: qsub run_EGAPx_HPC.sh inputs_NIES_NCBI.txt
-## job
+## job 773796 -> WAITING
 
 # load the egapx software module (contains nextflow)
 #module load bio/egapx/0.1.1

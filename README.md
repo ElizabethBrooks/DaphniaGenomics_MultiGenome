@@ -1,18 +1,43 @@
-# DaphniaGenomics_MultiGenome
-Repository for scripts to analyze multiple daphnia species genomes.
+# Daphnia Genome Annotations
 
-Some things to keep in mind when running EGAPx:
-- Either the number of cores requested for a job must be at least 31, or you will need to edit the default huge_Job value in the <i>egapx/ui/assets/config/process_resources.config</i> file
-- The pipeline can take a lot of memory and time, if there is a large number of reads being retrieved from the SRA
-- There is a limit to the number of SRA IDs that can be input to EGAPx
+## Annotation Status
 
+The following tables show the annotation status for each Daphnia species. Also included are the run times for the completed annotations.
+
+### EGAPx - NCBI Data
+
+These annotations are being completed using the SRA data assocaited with each of the NCBI genome assemblys. This will allows us to compare the annotations of EGAPx with the NCBI annotations.
+
+| Species | Status | Time |
+| --- | --- | --- |
+| KAP4 | Completed | 16 days	7 hours	38 minutes	10 seconds |
+| KAP106 | Completed | 14 days	13 hours	40 minutes	23 seconds |
+| LK16 | Running | N/A |
+| SC_F0-13Bv2 | Completed | 4 days 16 hours 23 minutes 22 seconds |
+| NIES | Queued | N/A |
+
+### EGAPx v0.2 - NCBI Data
+
+These annotations are being completed using the SRA data assocaited with each of the NCBI genome assemblys. This will allows us to compare the annotations of EGAPx v0.2 with the NCBI annotations.
+
+| Species | Status | Time |
+| --- | --- | --- |
+| KAP4 | Running | N/A |
+| KAP106 | Running | N/A |
+| LK16 | Running | N/A |
+| SC_F0-13Bv2 | Running | N/A |
+| NIES | Queued | N/A |
+
+## Code
+
+Click [here](https://github.com/ElizabethBrooks/DaphniaGenomics_MultiGenome) for the code repository with scripts to analyze multiple daphnia species genomes.
 
 ## Inputs & Outputs
 
 To use these sets of scripts to install and run the workflows, make sure to change the paths in the inputs files in the <b>InputData</b> directory. For example, the input and output paths in the <i>inputPaths.txt</i> file should be changed to the paths on your system.
 
 
-## [EGAPx](https://github.com/ncbi/egapx/)
+## [EGAPx](https://github.com/ncbi/egapx/) Workflows
 There are two workflows for EGAPx, local and HPC. The <i>local scripts</i> can be run locally on your system and the <i>HPC scripts</i> are setup for job submission to the ND CRC remote servers.
 
 First, make sure that you have singularity installed on your system. The ND CRC servers already have singularity available.
@@ -21,7 +46,15 @@ First, make sure that you have singularity installed on your system. The ND CRC 
 
 The <i>install_EGAPx.sh</i> script in the <b>Install</b> directory can be used to install EGAPx and its dependencies.
 
-### Notes on EGAPx
+### Notes
+
+There are some things to keep in mind when running EGAPx.
+
+#### Running
+
+- Either the number of cores requested for a job must be at least 31, or you will need to edit the default huge_Job value in the <i>egapx/ui/assets/config/process_resources.config</i> file
+- The pipeline can take a lot of memory and time, if there is a large number of reads being retrieved from the SRA
+- There is a limit to the number of SRA IDs that can be input to EGAPx
 
 #### HPC scripts
 The <i>egapx/ui/assets/config/process_resources.config</i> file specifies up to 31 cores (huge_Job).
@@ -36,113 +69,22 @@ There is a limit to the number of SRA IDs that can be input to EGAPx, since the 
 ##### KAP4
 These IDs were retrieved from the [KAP4 NCBI annotation report](https://www.ncbi.nlm.nih.gov/refseq/annotation_euk/Daphnia_pulex/100/). These are the "RNA-Seq alignments" "Project" IDs and the "SRA Long Read Alignment Statistics" "Run" ID. The unique Project IDs are being used since EGAPx fails if the HTTP header becomes to large from a long list of samples.
 
-###### Errors
-The following reads cause errors with EGAPx (ERROR ~ Error executing process > 'egapx:fetch_sra_fasta:run_fetch_sra_fasta), which are testable with the SRA tools prefetch command.
-- prefetch.2.10.1: 'SRR6819015' is a local non-kart file
-- warn: nothing found for SRR11089015.1
-- warn: nothing found for SRR11089015.2
+#### EGAPx Config
 
+ND CRC [system specifications](https://docs.crc.nd.edu/new_user/quick_start.html).
 
-## [BRAKER3](https://github.com/Gaius-Augustus/BRAKER)
-... in progress ...
+The following template mat be used to run jobs on the ND CRC remote servers.
 
-
-## NOTES
-
-### Tests
-
-(base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_D_farinae.txt
-Your job 688905 ("run_EGAPx_jobOutput") has been submitted
-Completed at: 15-Jul-2024 13:12:18
-Duration    : 17m 59s
-CPU hours   : 5.6
-Succeeded   : 192
-
-(base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_D_farinae_SRA.txt
-Your job 688906 ("run_EGAPx_jobOutput") has been submitted
-Completed at: 15-Jul-2024 17:09:21
-Duration    : 2h 7m 48s
-CPU hours   : 58.2
-Succeeded   : 213
-
-(base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_D_farinae_dump.txt
-Your job 688907 ("run_EGAPx_jobOutput") has been submitted
-ERROR ~ index is out of range 0..-1 (index = 0)
- -- Check script '/afs/crc.nd.edu/user/e/ebrooks5/egapx/nf/./subworkflows/ncbi/./rnaseq_short/star_wnode/main.nf' at line: 83 or see '/scratch365/ebrooks5/multi_genome_project/EGAPx/D_farinae_small_dump/nextflow.log' file for more details
-
-(base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_D_farinae_dump_fmt.txt
-Your job 699249 ("run_EGAPx_jobOutput") has been submitted
-Completed at: 20-Jul-2024 08:48:36
-Duration    : 2h 38m 51s
-CPU hours   : 162.2
-Succeeded   : 210
-
-(base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_D_farinae_dump_egapx.txt
-Your job 699250 ("run_EGAPx_jobOutput") has been submitted
-ERROR ~ index is out of range 0..-1 (index = 0)
- -- Check script '/afs/crc.nd.edu/user/e/ebrooks5/egapx/nf/./subworkflows/ncbi/./rnaseq_short/star_wnode/main.nf' at line: 83 or see '/scratch365/ebrooks5/multi_genome_project/EGAPx/D_farinae_small_dump_egapx/nextflow.log' file for more details
-
-(base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_D_farinae_dump_egapx_fmt.txt
-Your job 699251 ("run_EGAPx_jobOutput") has been submitted
-Completed at: 20-Jul-2024 06:17:03
-Duration    : 2h 39m 15s
-CPU hours   : 162.6
-Succeeded   : 210
-
-(base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_D_farinae_wget.txt
-Your job 688909 ("run_EGAPx_jobOutput") has been submitted
-Completed at: 15-Jul-2024 13:30:17
-Duration    : 17m 39s
-CPU hours   : 5.5
-Succeeded   : 192
-
-(base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_KAP4.txt
-Your job 688910 ("run_EGAPx_jobOutput") has been submitted
-Completed at: 15-Jul-2024 19:57:40
-Duration    : 2h 11m 4s
-CPU hours   : 54.8
-Succeeded   : 83
-
-(base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_KAP4_dump.txt
-Your job 688911 ("run_EGAPx_jobOutput") has been submitted
-ERROR ~ index is out of range 0..-1 (index = 0)
- -- Check script '/afs/crc.nd.edu/user/e/ebrooks5/egapx/nf/./subworkflows/ncbi/./rnaseq_short/star_wnode/main.nf' at line: 83 or see '/scratch365/ebrooks5/multi_genome_project/EGAPx/D_pulex_KAP4_dump/nextflow.log' file for more details
-
-(base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_KAP4_dump_fmt.txt
-Your job 700363 ("run_EGAPx_jobOutput") has been submitted
-Command exit status:
-  3
-Command output:
-  (empty)
- -- Check '/scratch365/ebrooks5/multi_genome_project/EGAPx/D_pulex_KAP4_dump_fmt/nextflow.log' file for details
-
- Your job 705596 ("run_EGAPx_jobOutput") has been submitted
-Completed at: 23-Jul-2024 18:55:29
-Duration    : 3h 8m 10s
-CPU hours   : 193.6
-Succeeded   : 80
-
-(base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_KAP4_dump_egapx.txt
-Your job 700365 ("run_EGAPx_jobOutput") has been submitted
-ERROR ~ index is out of range 0..-1 (index = 0)
- -- Check script '/afs/crc.nd.edu/user/e/ebrooks5/egapx/nf/./subworkflows/ncbi/./rnaseq_short/star_wnode/main.nf' at line: 83 or see '/scratch365/ebrooks5/multi_genome_project/EGAPx/D_pulex_KAP4_dump_egapx/nextflow.log' file for more details
-
-(base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_KAP4_dump_egapx_fmt.txt
-Your job 700366 ("run_EGAPx_jobOutput") has been submitted
-Completed at: 20-Jul-2024 22:29:31
-Duration    : 3h 3m 52s
-CPU hours   : 189.1
-Succeeded   : 80
-
-
-### Config
-
-https://docs.crc.nd.edu/new_user/quick_start.html
+##### Template
 
 // Part of nextflow config describing resource requirements for EGAPx processes
+
 // We rely on labels to define 3 tiers of processes - default, big, and huge.
+
 // Make sure that executor you use supports job memory and CPU requirements
+
 process {
+
     memory = 200.GB
     cpus = 63
     time = 336.h

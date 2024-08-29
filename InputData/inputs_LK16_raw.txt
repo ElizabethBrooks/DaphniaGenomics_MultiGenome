@@ -1,2 +1,2 @@
 species: D_pulicaria_LK16_raw
-inputs_EGAPx: inputs_LK16_raw_EGAPx.yaml
+inputs_EGAPx: inputs_LK16_raw.yaml

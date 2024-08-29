@@ -10,15 +10,15 @@
 # our afs system has 263Gb RAM, 64 cores
 # usage: qsub run_EGAPx_v0.2_HPC.sh inputFile
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_KAP4_NCBI.txt
-## job 747604
+## job 747604 -> RUNNING
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_KAP106.txt
-## job 747606
+## job 747606 -> RUNNING
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_LK16_NCBI.txt
-## job 773689
+## job 773689 -> RUNNING
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_SC_F0-13Bv2.txt
-## job 773695
+## job 773695 -> RUNNING
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_NIES_NCBI.txt
-## job
+## job 773797 -> WAITING
 
 # retrieve input file
 inputFile=$1

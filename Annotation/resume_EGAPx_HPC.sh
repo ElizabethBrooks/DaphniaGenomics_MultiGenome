@@ -10,9 +10,11 @@
 # our afs system has 263Gb RAM, 64 cores
 # usage: qsub resume_EGAPx_HPC.sh inputFile
 # usage ex: qsub resume_EGAPx_HPC.sh inputs_KAP4_NCBI.txt
-## job 747590
+## job 747590 -> DONE
+## Wallclock Time   = 5:08:08:48
 # usage ex: qsub resume_EGAPx_HPC.sh inputs_KAP106.txt
-## job 747591
+## job 747591 -> DONE
+## Wallclock Time   = 5:22:04:05
 
 # load the egapx software module (contains nextflow)
 module load bio/egapx/0.1.1
