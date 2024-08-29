@@ -2,11 +2,13 @@
 
 ## Annotation Status
 
-The following tables show the annotation status for each Daphnia species. Also included are the run times for the completed annotations.
+The following tables show the annotation status for each Daphnia species that has been annotated, is currently being annotated, or is in the server job queue. Also included are the run times for the completed annotations.
 
-### EGAPx - NCBI Data
+### EGAPx v0.1 - NCBI Data
 
-These annotations are being completed using the SRA data assocaited with each of the NCBI genome assemblys. This will allows us to compare the annotations of EGAPx with the NCBI annotations.
+These annotations are being completed using the SRA data assocaited with each of the NCBI genome assemblies. This will allow us to compare the annotations produced by EGAPx with the NCBI annotations.
+
+The KAP4 and KAP106 annotations had to be re-started (possible since EGAPx uses Nextflow), which may have affected their analysis run times.
 
 | Species | Status | Time |
 | --- | --- | --- |
@@ -18,7 +20,7 @@ These annotations are being completed using the SRA data assocaited with each of
 
 ### EGAPx v0.2 - NCBI Data
 
-These annotations are being completed using the SRA data assocaited with each of the NCBI genome assemblys. This will allows us to compare the annotations of EGAPx v0.2 with the NCBI annotations.
+These annotations are being completed using the SRA data assocaited with each of the NCBI genome assemblies. This will allow us to compare the annotations produced by EGAPx with the NCBI annotations.
 
 | Species | Status | Time |
 | --- | --- | --- |
@@ -60,14 +62,13 @@ There are some things to keep in mind when running EGAPx.
 The <i>egapx/ui/assets/config/process_resources.config</i> file specifies up to 31 cores (huge_Job).
 
 #### reads
-- EGAPx expects that input "reads" are a list of FASTA read files, expects pairs in form SRAxxx.1, SRAxxx.2 (see the egapx/nf/./subworkflows/ncbi/./rnaseq_short/star_wnode/main.nf file)
-- The read files need to be formatted very specifically, details coming soon...
+The read files need to be formatted very specifically, see the format_SRA_reads_EGAPx.sh and download_SRA_reads_EGAPx.sh scripts in the Formatting directory. This is because EGAPx expects that input "reads" are a list of FASTA read files, expects pairs in form SRAxxx.1, SRAxxx.2 (see the egapx/nf/./subworkflows/ncbi/./rnaseq_short/star_wnode/main.nf file).
 
 #### reads_ids
 There is a limit to the number of SRA IDs that can be input to EGAPx, since the pipeline makes a query to the SRA. The HTTP header becomes too large if the list of SRA IDs is very long. 
 
-##### KAP4
-These IDs were retrieved from the [KAP4 NCBI annotation report](https://www.ncbi.nlm.nih.gov/refseq/annotation_euk/Daphnia_pulex/100/). These are the "RNA-Seq alignments" "Project" IDs and the "SRA Long Read Alignment Statistics" "Run" ID. The unique Project IDs are being used since EGAPx fails if the HTTP header becomes to large from a long list of samples.
+##### NCBI Data Sets
+These IDs were retrieved from the annotation report pages of each species. For example, [KAP4 NCBI annotation report](https://www.ncbi.nlm.nih.gov/refseq/annotation_euk/Daphnia_pulex/100/). These are the "RNA-Seq alignments" "Project" IDs and the "SRA Long Read Alignment Statistics" "Run" ID. The unique Project IDs are being used since EGAPx fails if the HTTP header becomes to large from a long list of samples.
 
 #### EGAPx Config
 
