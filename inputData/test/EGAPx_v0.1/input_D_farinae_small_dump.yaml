@@ -1,0 +1,5 @@
+genome: /scratch365/ebrooks5/multi_genome_project/data/test/ref/GCF_020809275.1_ASM2080927v1_genomic.fna.gz
+taxid: 6954
+reads:
+  - /scratch365/ebrooks5/multi_genome_project/data/test/dump/SRR8506572_1.fastq
+  - /scratch365/ebrooks5/multi_genome_project/data/test/dump/SRR8506572_2.fastq

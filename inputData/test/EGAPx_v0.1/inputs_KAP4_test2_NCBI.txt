@@ -1,0 +1,2 @@
+species: D_pulex_KAP4_test2_NCBI
+inputs_EGAPx: inputs_KAP4_test2_NCBI_EGAPx.yaml
