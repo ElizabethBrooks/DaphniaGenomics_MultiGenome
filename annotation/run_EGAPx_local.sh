@@ -27,10 +27,10 @@ repoDir=$(dirname $PWD)
 inputsPath=$repoDir"/inputData/"$inputsPath
 
 # retrieve software path
-softwarePath=$(grep "software_EGAPx:" ../"inputData/inputPaths.txt" | tr -d " " | sed "s/software_EGAPx://g")
+softwarePath=$(grep "software_EGAPx:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/software_EGAPx://g")
 
 # retrieve outputs path
-outputsPath=$(grep "outputs_EGAPx:" ../"inputData/inputPaths.txt" | tr -d " " | sed "s/outputs_EGAPx://g")
+outputsPath=$(grep "outputs_EGAPx:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx://g")
 
 # setup outputs directory
 outputsPath=$outputsPath"/"$speciesName

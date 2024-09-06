@@ -20,6 +20,7 @@
 ## job 773797 -> KILLED -> NOTE: Process `egapx:rnaseq_short_plane:fetch_sra_fasta:run_fetch_sra_fasta (58)` terminated with an error exit status (23) -- Execution is retried (1)
 # SRA test set
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_KAP4_SRA.txt
+## job 799221
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_KAP106_SRA.txt
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_LK16_SRA.txt
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_NIES_SRA.txt
@@ -44,10 +45,10 @@ repoDir=$(dirname $PWD)
 inputsPath=$repoDir"/inputData/"$inputsPath
 
 # retrieve software path
-softwarePath=$(grep "software_EGAPx_v0.2:" ../"inputData/inputPaths.txt" | tr -d " " | sed "s/software_EGAPx_v0.2://g")
+softwarePath=$(grep "software_EGAPx_v0.2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/software_EGAPx_v0.2://g")
 
 # retrieve outputs path
-outputsPath=$(grep "outputs_EGAPx_v0.2:" ../"inputData/inputPaths.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.2://g")
+outputsPath=$(grep "outputs_EGAPx_v0.2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.2://g")
 
 # setup outputs directory
 outputsPath=$outputsPath"/"$speciesName
