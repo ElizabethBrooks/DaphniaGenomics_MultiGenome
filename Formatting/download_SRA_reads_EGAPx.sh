@@ -7,16 +7,36 @@
 
 # script to download formatted SRA reads for EGAPx
 # usage: qsub download_SRA_reads_EGAPx.sh species ID
-# usage ex: qsub download_SRA_reads_EGAPx.sh LK16 DRP002580
-## job 793225, 793310, 793317
-# usage ex: qsub download_SRA_reads_EGAPx.sh LK16 SRP068113
-## job 793230, 793322, 793422
-# usage ex: qsub download_SRA_reads_EGAPx.sh LK16 SRP102491
-## job 793231, 793324
-# usage ex: qsub download_SRA_reads_EGAPx.sh LK16 SRP253589
-## job 793232, 793325
-# usage ex: qsub download_SRA_reads_EGAPx.sh LK16 SRP318178
-## job 793234, 793326
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP4_KAP106 DRP002580
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP4_KAP106 ERP110882
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP4_KAP106 SRP068113
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP4_KAP106 SRP102491
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP4_KAP106 SRP134187
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP4_KAP106 SRP135935
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP4_KAP106 SRP151839
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP4_KAP106 SRP249545
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP4_KAP106 SRP253589
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP4_KAP106 SRP270794
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP4_KAP106 SRP300422
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP4_KAP106 SRP351713
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP4_KAP106 SRR17282827
+## jobs
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP057045
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP113320
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP142416
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP151236
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP161660
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP168044
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP173886
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP256437
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP259943
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP262286
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP262288
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP278637
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP282875
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP326419
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP330012
+## jobs
 
 # retrieve input species
 inputSpecies=$1
@@ -30,14 +50,17 @@ softwarePath=$(grep "software_SRA:" ../"inputData/inputs_annotations.txt" | tr -
 # retrieve outputs path
 outputsPath=$(grep "outputs_SRA:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_SRA://g")
 
+# create the outputs data directory
+mkdir $outputsPath
+
 # name species outputs directory
-outDir=$outputsPath"/dump_"$inputSpecies
+outDir=$outputsPath"/"$inputSpecies
 
 # make species directory for the formatted data
 mkdir $outDir
 
 # name SRA ID outputs directory
-outDir=$outDir"/dump_"$inputID
+outDir=$outDir"/"$inputID
 
 # make SRA ID directory for the formatted data
 mkdir $outDir
