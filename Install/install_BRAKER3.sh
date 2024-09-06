@@ -5,7 +5,7 @@
 # usage: bash install_BRAKER3.sh
 
 # retrieve software path
-softwarePath=$(grep "software_BRAKER3:" ../"InputData/inputPaths.txt" | tr -d " " | sed "s/software_BRAKER3://g")
+softwarePath=$(grep "software_BRAKER3:" ../"inputData/inputPaths.txt" | tr -d " " | sed "s/software_BRAKER3://g")
 
 # move to software path
 cd $softwarePath

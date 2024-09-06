@@ -4,7 +4,7 @@
 # usage: bash test_EGAPx_local.sh
 
 # retrieve software path
-softwarePath=$(grep "software_EGAPx:" ../"InputData/inputPaths.txt" | tr -d " " | sed "s/software_EGAPx://g")
+softwarePath=$(grep "software_EGAPx:" ../"inputData/inputPaths.txt" | tr -d " " | sed "s/software_EGAPx://g")
 
 # make test working directory
 mkdir $softwarePath"/EGAPx_test_local"

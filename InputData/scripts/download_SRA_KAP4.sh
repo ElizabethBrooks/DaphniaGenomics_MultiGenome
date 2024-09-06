@@ -15,10 +15,10 @@ module load bio/2.0
 inputFile=$1
 
 # retrieve species name
-speciesName=$(grep "species:" ../"InputData/"$inputFile | tr -d " " | sed "s/species://g")
+speciesName=$(grep "species:" ../"inputData/"$inputFile | tr -d " " | sed "s/species://g")
 
 # retrieve outputs path
-outputsPath=$(grep "outputs_SRA:" ../"InputData/inputPaths.txt" | tr -d " " | sed "s/outputs_SRA://g")
+outputsPath=$(grep "outputs_SRA:" ../"inputData/inputPaths.txt" | tr -d " " | sed "s/outputs_SRA://g")
 
 # setup outputs directory
 outputsPath=$outputsPath"/"$speciesName

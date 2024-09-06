@@ -15,22 +15,22 @@
 inputFile=$1
 
 # retrieve species name
-speciesName=$(grep "species:" ../"InputData/"$inputFile | tr -d " " | sed "s/species://g")
+speciesName=$(grep "species:" ../"inputData/"$inputFile | tr -d " " | sed "s/species://g")
 
 # retrieve inputs file name
-inputsPath=$(grep "inputs_EGAPx:" ../"InputData/"$inputFile | tr -d " " | sed "s/inputs_EGAPx://g")
+inputsPath=$(grep "inputs_EGAPx:" ../"inputData/"$inputFile | tr -d " " | sed "s/inputs_EGAPx://g")
 
 # retrieve repository directory
 repoDir=$(dirname $PWD)
 
 # setup inputs path
-inputsPath=$repoDir"/InputData/"$inputsPath
+inputsPath=$repoDir"/inputData/"$inputsPath
 
 # retrieve software path
-softwarePath=$(grep "software_EGAPx:" ../"InputData/inputPaths.txt" | tr -d " " | sed "s/software_EGAPx://g")
+softwarePath=$(grep "software_EGAPx:" ../"inputData/inputPaths.txt" | tr -d " " | sed "s/software_EGAPx://g")
 
 # retrieve outputs path
-outputsPath=$(grep "outputs_EGAPx:" ../"InputData/inputPaths.txt" | tr -d " " | sed "s/outputs_EGAPx://g")
+outputsPath=$(grep "outputs_EGAPx:" ../"inputData/inputPaths.txt" | tr -d " " | sed "s/outputs_EGAPx://g")
 
 # setup outputs directory
 outputsPath=$outputsPath"/"$speciesName
