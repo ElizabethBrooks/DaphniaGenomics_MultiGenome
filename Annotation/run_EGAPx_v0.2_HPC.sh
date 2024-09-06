@@ -7,6 +7,7 @@
 
 # script to run the EGAPx pipeline
 # usage: qsub run_EGAPx_v0.2_HPC.sh inputFile
+# NCBI test set
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_KAP4_NCBI.txt
 ## job 747604 -> KILLED -> NOTE: Process `egapx:rnaseq_short_plane:star:run_star (180)` terminated with an error exit status (1) -- Execution is retried (1)
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_KAP106.txt
@@ -17,6 +18,11 @@
 ## job 773695 -> KILLED -> NOTE: Process `egapx:rnaseq_short_plane:fetch_sra_fasta:run_fetch_sra_fasta (85)` terminated with an error exit status (23) -- Execution is retried (1) -> ERROR ~ Unable to re-submit task `egapx:rnaseq_short_plane:fetch_sra_fasta:run_fetch_sra_fasta (85)`
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_NIES_NCBI.txt
 ## job 773797 -> KILLED -> NOTE: Process `egapx:rnaseq_short_plane:fetch_sra_fasta:run_fetch_sra_fasta (58)` terminated with an error exit status (23) -- Execution is retried (1)
+# SRA test set
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_KAP4_SRA.txt
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_KAP106_SRA.txt
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_LK16_SRA.txt
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_NIES_SRA.txt
 
 # NOTE: the default /egapx/ui/assets/config/process_resources.config file specifies up to 31 cores (huge_Job)
 # our afs system has 263Gb RAM, 64 cores

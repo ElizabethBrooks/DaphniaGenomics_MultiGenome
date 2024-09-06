@@ -20,7 +20,7 @@
 # usage ex: qsub download_SRA_reads_EGAPx.sh KAP4_KAP106 SRP300422
 # usage ex: qsub download_SRA_reads_EGAPx.sh KAP4_KAP106 SRP351713
 # usage ex: qsub download_SRA_reads_EGAPx.sh KAP4_KAP106 SRR17282827
-## jobs
+## jobs 798391, 798392, 798393, 798394, 798395, 798396, 798397, 798398, 798399, 798400, 798401, 798402, 798403
 # usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP057045
 # usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP113320
 # usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP142416
@@ -36,8 +36,8 @@
 # usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP282875
 # usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP326419
 # usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP330012
-## jobs
-
+## jobs 798404, 798405, 798407, 798409, 798410, 798411, 798412, 798413, 798414, 798415, 798416, 798417, 798418, 798419, 798420
+ 
 # retrieve input species
 inputSpecies=$1
 

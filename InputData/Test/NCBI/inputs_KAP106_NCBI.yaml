@@ -1,5 +1,6 @@
 genome: /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/D.pulex_KAP106_annotation/D.pulex_KAP106_NMP_1.3.masked.fasta
 taxid: 6669
+reads:
 reads_ids:
   - DRP002580
   - ERP110882
@@ -14,4 +15,3 @@ reads_ids:
   - SRP300422
   - SRP351713
   - SRR17282827
-  
