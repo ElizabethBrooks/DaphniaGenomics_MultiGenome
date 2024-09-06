@@ -1,2 +1,0 @@
-species: D_pulex_KAP4_dump_fmt
-inputs_EGAPx: inputs_KAP4_dump_fmt.yaml

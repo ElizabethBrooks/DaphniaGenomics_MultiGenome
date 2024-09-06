@@ -1,2 +1,0 @@
-species: D_pulex_KAP4
-inputs_EGAPx: inputs_KAP4.yaml

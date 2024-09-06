@@ -1,2 +1,0 @@
-species: D_farinae_small_dump
-inputs_EGAPx: input_D_farinae_small_dump.yaml

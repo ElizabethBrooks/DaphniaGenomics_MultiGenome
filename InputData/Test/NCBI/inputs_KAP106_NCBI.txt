@@ -1,2 +1,0 @@
-species: D_pulex_KAP106_NCBI
-inputs_EGAPx: inputs_KAP106_NCBI.yaml
