@@ -1,4 +1,10 @@
-### TO-DO
+### KAP4 & KAP106 NCBI Data
+The following reads are duplicated:
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP4_KAP106/SRR17282827/SRR17282827_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP4_KAP106/SRP351713/SRR17282827_1.fasta
+
+
+### Test 2
 
 (base) [ebrooks5@crcfe02 SNP_Calling]$ du -hs /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.2/*
 85G /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.2/D_magna_NIES_NCBI
@@ -80,7 +86,7 @@ What files are necessary for re-starting the analysis? There are some output fol
 313G  /scratch365/ebrooks5/multi_genome_project/EGAPx/D_pulicaria_SC_F0-13Bv2/work
 16K /scratch365/ebrooks5/multi_genome_project/EGAPx/D_pulicaria_SC_F0-13Bv2/work_dir_singularity.last
 
-### Tests
+### Test 1
 
 (base) [ebrooks5@crcfe01 Annotation]$ qsub run_EGAPx_HPC.sh inputs_D_farinae.txt
 Your job 688905 ("run_EGAPx_jobOutput") has been submitted
