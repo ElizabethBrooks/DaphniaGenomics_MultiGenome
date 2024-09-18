@@ -21,14 +21,27 @@
 # SRA test set
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_KAP4_SRA.txt
 ## job 800519 -> ERROR ~ Error executing process > 'egapx:rnaseq_short_plane:star:run_star (124)' -> Process `egapx:rnaseq_short_plane:star:run_star` input file name collision -- There are multiple input files for each of the following file names: SRR17282827_1.fasta
-## job
+## job 808160
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_KAP106_SRA.txt
 ## job 800520 -> ERROR ~ Error executing process > 'egapx:rnaseq_short_plane:star:run_star (124)' -> Process `egapx:rnaseq_short_plane:star:run_star` input file name collision -- There are multiple input files for each of the following file names: SRR17282827_1.fasta
-## job
+## job 808161
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_LK16_SRA.txt
-## job 800521
+## job 800521 -> SUCCEEDED
+## Duration    : 3d 20h 23m 8s
+## CPU hours   : 5'805.7
+## Succeeded   : 1'296
+## CDS          223471
+## exon         310947
+## gene         30927
+## mRNA         32583
+## transcript   14332
+## protein_coding 21703
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_NIES_SRA.txt
 ## job 800522
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_SCF1_1A_SRA.txt
+## job 821150
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_KAP106_NCBI_SRA.txt
+## job
 
 # NOTE: the default /egapx/ui/assets/config/process_resources.config file specifies up to 31 cores (huge_Job)
 # our afs system has 263Gb RAM, 64 cores
@@ -82,7 +95,7 @@ if [ ! -f $outputsPath"/accept.gff" ]; then
 	sh $outputsPath"/resume.sh"
 else
     rm -r $outputsPath"/temp_datapath"
-	rm -r $outputsPath"/work"
+	#rm -r $outputsPath"/work"
 	rm -r $outputsPath"/annot_builder_output"
 fi
 

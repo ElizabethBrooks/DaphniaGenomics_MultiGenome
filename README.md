@@ -34,6 +34,22 @@ These annotations are being completed using the SRA data assocaited with each of
 
 Click [here](https://github.com/ElizabethBrooks/DaphniaGenomics_MultiGenome) for the code repository with scripts to analyze multiple daphnia species genomes.
 
+### Compare feature type counts
+cat accept.gff | cut -f3 | grep -c "CDS"
+cat accept.gff | cut -f3 | grep -c "exon"
+cat accept.gff | cut -f3 | grep -c "gene"
+cat accept.gff | cut -f3 | grep -c "mRNA"
+cat accept.gff | cut -f3 | grep -c "transcript"
+cat accept.gff | grep -c "biotype=protein_coding" 
+
+### View feature types
+cat accept.gff | grep "\tCDS\t"
+cat accept.gff | grep "\texon\t"
+cat accept.gff | grep "\tgene\t"
+cat accept.gff | grep "\tmRNA\t"
+cat accept.gff | grep "\ttranscript\t"
+cat accept.gff | grep "biotype=protein_coding" 
+
 ## Inputs & Outputs
 
 To use these sets of scripts to install and run the workflows, make sure to change the paths in the inputs files in the <b>inputData</b> directory. For example, the input and output paths in the <i>inputPaths.txt</i> file should be changed to the paths on your system.
