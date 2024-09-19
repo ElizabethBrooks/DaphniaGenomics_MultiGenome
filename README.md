@@ -4,6 +4,18 @@
 
 The following tables show the annotation status for each Daphnia species that has been annotated, is currently being annotated, or is in the server job queue. Also included are the run times for the completed annotations.
 
+### EGAPx v0.2 - NCBI Data
+
+These annotations are being completed using the SRA data assocaited with each of the NCBI genome assemblies. This will allow us to compare the annotations produced by EGAPx with the NCBI annotations.
+
+| Species | Status | Time |
+| --- | --- | --- |
+| KAP4 | Running | N/A |
+| KAP106 | Running | N/A |
+| LK16 | Completed | 3d 20h 23m 8s |
+| SC_F0-13Bv2 | Running | N/A |
+| NIES | Completed | 11d 11h 17m 20s |
+
 ### EGAPx v0.1 - NCBI Data
 
 These annotations are being completed using the SRA data assocaited with each of the NCBI genome assemblies. This will allow us to compare the annotations produced by EGAPx with the NCBI annotations.
@@ -14,21 +26,9 @@ The KAP4 and KAP106 annotations had to be re-started (possible since EGAPx uses 
 | --- | --- | --- |
 | KAP4 | Completed | 16 days	7 hours	38 minutes	10 seconds |
 | KAP106 | Completed | 14 days	13 hours	40 minutes	23 seconds |
-| LK16 | Running | N/A |
+| LK16 | Killed | 9:20:15:21 |
 | SC_F0-13Bv2 | Completed | 4 days 16 hours 23 minutes 22 seconds |
-| NIES | Queued | N/A |
-
-### EGAPx v0.2 - NCBI Data
-
-These annotations are being completed using the SRA data assocaited with each of the NCBI genome assemblies. This will allow us to compare the annotations produced by EGAPx with the NCBI annotations.
-
-| Species | Status | Time |
-| --- | --- | --- |
-| KAP4 | Running | N/A |
-| KAP106 | Running | N/A |
-| LK16 | Running | N/A |
-| SC_F0-13Bv2 | Running | N/A |
-| NIES | Queued | N/A |
+| NIES | Killed | 01:34:54 |
 
 ## Code
 
