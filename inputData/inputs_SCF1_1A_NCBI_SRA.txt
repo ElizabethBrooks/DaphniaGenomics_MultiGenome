@@ -1,2 +1,0 @@
-species: D_pulicaria_SCF1_1A_SRA
-inputs_EGAPx: inputs_SCF1_1A_SRA.yaml

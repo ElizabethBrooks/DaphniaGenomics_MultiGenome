@@ -7,7 +7,7 @@
 
 # script to run the EGAPx pipeline
 # usage: qsub run_EGAPx_v0.2_HPC.sh inputFile
-# NCBI test set
+# NCBI test set -> KILLED
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_KAP4_NCBI.txt
 ## job 747604 -> KILLED -> NOTE: Process `egapx:rnaseq_short_plane:star:run_star (180)` terminated with an error exit status (1) -- Execution is retried (1)
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_KAP106.txt
@@ -21,10 +21,10 @@
 # SRA test set
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_KAP4_SRA.txt
 ## job 800519 -> ERROR ~ Error executing process > 'egapx:rnaseq_short_plane:star:run_star (124)' -> Process `egapx:rnaseq_short_plane:star:run_star` input file name collision -- There are multiple input files for each of the following file names: SRR17282827_1.fasta
-## job 808160
+## job 808160 -> RUNNING
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_KAP106_SRA.txt
 ## job 800520 -> ERROR ~ Error executing process > 'egapx:rnaseq_short_plane:star:run_star (124)' -> Process `egapx:rnaseq_short_plane:star:run_star` input file name collision -- There are multiple input files for each of the following file names: SRR17282827_1.fasta
-## job 808161
+## job 808161 -> RUNNING
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_LK16_SRA.txt
 ## job 800521 -> SUCCEEDED
 ## Duration    : 3d 20h 23m 8s
@@ -35,12 +35,21 @@
 ## gene         30927
 ## mRNA         32583
 ## transcript   14332
-## protein_coding 21703
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_NIES_SRA.txt
-## job 800522
-# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_SCF1_1A_SRA.txt
-## job 821150
+## job 800522 -> SUCCEEDED
+## Duration    : 11d 11h 17m 20s
+## CPU hours   : 17'306.3
+## Succeeded   : 2'564
+## CDS          248323
+## exon         408176
+## gene         25154
+## mRNA         34010
+## transcript   17116
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_SC_F1_1A_NCBI_SRA.txt
+## job 821150 -> QUEUED
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_KAP106_NCBI_SRA.txt
+## job 821229 -> QUEUED
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_LK16_NCBI_trimmed.txt
 ## job
 
 # NOTE: the default /egapx/ui/assets/config/process_resources.config file specifies up to 31 cores (huge_Job)
