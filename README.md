@@ -2,56 +2,13 @@
 
 ## Annotation Status
 
-The following tables show the annotation status for each Daphnia species that has been annotated, is currently being annotated, or is in the server job queue. Also included are the run times for the completed annotations.
+The [EGAPx\_v0.2\_daphnia\_annotation\_log](https://docs.google.com/spreadsheets/d/10nzxceWsXgf_4hcc5mAFBi7NVG6NLLwm38dv_k6yeUM/edit?usp=sharing) spreadsheet shows the annotation information and status for each Daphnia species in our analysis.
 
-### EGAPx v0.2 - NCBI Data
-
-A detailed log of the EGAPx v0.2 daphnia genome annotations can be found in the 
-Daphnia\_Genome\_Annotations Box folder: EGAPx\_v0.2\_daphnia\_annotation\_log.xlsx
-
-These annotations are being completed using the SRA data assocaited with each of the NCBI genome assemblies. This will allow us to compare the annotations produced by EGAPx with the NCBI annotations.
-
-| Species | Genotype | Status | Time |
-| --- | --- | --- | --- |
-| pulex | KAP4 | Running | N/A |
-| pulex | KAP106 | Running | N/A |
-| pulicaria | LK16 | Completed | 3d 20h 23m 8s |
-| pulicaria | SC F1-1A | Running | N/A |
-| magna | NIES | Completed | 11d 11h 17m 20s |
-
-### EGAPx v0.1 - NCBI Data
-
-These annotations are being completed using the SRA data assocaited with each of the NCBI genome assemblies. This will allow us to compare the annotations produced by EGAPx with the NCBI annotations.
-
-The KAP4 and KAP106 annotations had to be re-started (possible since EGAPx uses Nextflow), which may have affected their analysis run times.
-
-| Species | Genotype | Status | Time |
-| --- | --- | --- | --- |
-| pulex | KAP4 | Completed | 16 days	7 hours	38 minutes	10 seconds |
-| pulex | KAP106 | Completed | 14 days	13 hours	40 minutes	23 seconds |
-| pulicaria | LK16 | Killed, disk I/O error | 9:20:15:21 |
-| pulicaria | SC F1-1A | Completed | 4 days 16 hours 23 minutes 22 seconds |
-| magna | NIES | Killed, Error executing process | 01:34:54 |
+The annotations for Daphnia pulex, pulicaria, and magna have been completed using EGAPx and added to the [Daphnia\_Genome\_Annotations](https://notredame.app.box.com/folder/282385967278) Box folder.
 
 ## Code
 
 Click [here](https://github.com/ElizabethBrooks/DaphniaGenomics_MultiGenome) for the code repository with scripts to analyze multiple daphnia species genomes.
-
-### Compare feature type counts
-- cat accept.gff | cut -f3 | grep -c "CDS"
-- cat accept.gff | cut -f3 | grep -c "exon"
-- cat accept.gff | cut -f3 | grep -c "gene"
-- cat accept.gff | cut -f3 | grep -c "mRNA"
-- cat accept.gff | cut -f3 | grep -c "transcript"
-- cat accept.gff | grep -c "biotype=protein_coding" 
-
-### View feature types
-- cat accept.gff | grep "\tCDS\t"
-- cat accept.gff | grep "\texon\t"
-- cat accept.gff | grep "\tgene\t"
-- cat accept.gff | grep "\tmRNA\t"
-- cat accept.gff | grep "\ttranscript\t"
-- cat accept.gff | grep "biotype=protein_coding" 
 
 ## Inputs & Outputs
 
@@ -69,6 +26,16 @@ Make sure to change the paths in the <i>inputs_annotations.txt</i> file to where
 
 ### Notes
 There are some things to keep in mind when running EGAPx.
+
+#### EGAPx v0.2 - NCBI Data
+
+These annotations are being completed using the SRA data assocaited with each of the NCBI genome assemblies. This will allow us to compare the annotations produced by EGAPx with the NCBI annotations.
+
+#### EGAPx v0.1 - NCBI Data
+
+These annotations are being completed using the SRA data assocaited with each of the NCBI genome assemblies. This will allow us to compare the annotations produced by EGAPx with the NCBI annotations.
+
+The KAP4 and KAP106 annotations had to be re-started (possible since EGAPx uses Nextflow), which may have affected their analysis run times.
 
 #### Running
 - Either the number of cores requested for a job must be at least 31, or you will need to edit the default huge_Job value in the <i>egapx/ui/assets/config/process_resources.config</i> file

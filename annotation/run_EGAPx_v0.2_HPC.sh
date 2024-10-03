@@ -21,36 +21,28 @@
 # SRA test set
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_KAP4_SRA.txt
 ## job 800519 -> ERROR ~ Error executing process > 'egapx:rnaseq_short_plane:star:run_star (124)' -> Process `egapx:rnaseq_short_plane:star:run_star` input file name collision -- There are multiple input files for each of the following file names: SRR17282827_1.fasta
-## job 808160 -> RUNNING
+## job 808160 -> SUCCEEDED
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_KAP106_SRA.txt
 ## job 800520 -> ERROR ~ Error executing process > 'egapx:rnaseq_short_plane:star:run_star (124)' -> Process `egapx:rnaseq_short_plane:star:run_star` input file name collision -- There are multiple input files for each of the following file names: SRR17282827_1.fasta
 ## job 808161 -> RUNNING
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_LK16_SRA.txt
 ## job 800521 -> SUCCEEDED
-## Duration    : 3d 20h 23m 8s
-## CPU hours   : 5'805.7
-## Succeeded   : 1'296
-## CDS          223471
-## exon         310947
-## gene         30927
-## mRNA         32583
-## transcript   14332
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_NIES_SRA.txt
 ## job 800522 -> SUCCEEDED
-## Duration    : 11d 11h 17m 20s
-## CPU hours   : 17'306.3
-## Succeeded   : 2'564
-## CDS          248323
-## exon         408176
-## gene         25154
-## mRNA         34010
-## transcript   17116
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_SC_F1_1A_NCBI_SRA.txt
-## job 821150 -> QUEUED
+## job 823853 -> RUNNING
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_KAP106_NCBI_SRA.txt
-## job 821229 -> QUEUED
+## job 821229 -> RUNNING
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_LK16_NCBI_trimmed.txt
-## job 821670 -> RUNNING
+## job 821670 -> SUCCEEDED
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_CSIRO_1_NCBI_SRA.txt
+## job 
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_Xinb3_NCBI_SRA.txt
+## job 
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_LRV0_1_NCBI_SRA.txt
+## job 
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_SK_NCBI_SRA.txt
+## job 
 
 # NOTE: the default /egapx/ui/assets/config/process_resources.config file specifies up to 31 cores (huge_Job)
 # our afs system has 263Gb RAM, 64 cores

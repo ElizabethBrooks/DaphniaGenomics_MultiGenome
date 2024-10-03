@@ -1,0 +1,11 @@
+genome: /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/NCBI_referenceGenomes_June2024/GenBank/D.magna_Xinb3/GCA_001632505.1/GCA_001632505.1_daphmag2.4_genomic.fna
+taxid: 35525
+reads:
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/Xinb3/SRP064876/SRR2664925_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/Xinb3/SRP064876/SRR2671171_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/Xinb3/SRP064876/SRR2671211_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/Xinb3/SRP064876/SRR2671211_4.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/Xinb3/SRP064876/SRR2671679_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/Xinb3/SRP064876/SRR2671679_4.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/Xinb3/SRP064876/SRR2671858_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/Xinb3/SRP064876/SRR2671858_4.fasta

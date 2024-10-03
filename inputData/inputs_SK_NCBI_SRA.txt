@@ -1,0 +1,2 @@
+species: D_magna_SK_NCBI_SRA
+inputs_EGAPx: inputs_SK_NCBI_SRA.yaml
