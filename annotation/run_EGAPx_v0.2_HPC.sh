@@ -40,7 +40,7 @@
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_Xinb3_NCBI_SRA.txt
 ## job 854121
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_LRV0_1_NCBI_SRA.txt
-## job 
+## job 854182
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_SK_NCBI_SRA.txt
 ## job 
 
