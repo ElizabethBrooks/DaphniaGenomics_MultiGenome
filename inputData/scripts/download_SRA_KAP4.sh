@@ -18,7 +18,8 @@ inputFile=$1
 speciesName=$(grep "species:" ../"inputData/"$inputFile | tr -d " " | sed "s/species://g")
 
 # retrieve outputs path
-outputsPath=$(grep "outputs_SRA:" ../"inputData/inputPaths.txt" | tr -d " " | sed "s/outputs_SRA://g")
+#outputsPath=$(grep "outputs_SRA:" ../"inputData/inputPaths.txt" | tr -d " " | sed "s/outputs_SRA://g")
+outputsPath="/afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_pulex/dump/UV"
 
 # setup outputs directory
 outputsPath=$outputsPath"/"$speciesName
@@ -30,4 +31,5 @@ mkdir $outputsPath
 cd $outputsPath
 
 # download SRA data
-fasterq-dump --threads 31 -v DRP002580 ERP110882 SRP068113 SRP102491 SRP134187 SRP135935 SRP151839 SRP249545 SRP253589 SRP270794 SRP300422 SRP351713 SRR17282827
+#fasterq-dump --threads 31 -v DRP002580 ERP110882 SRP068113 SRP102491 SRP134187 SRP135935 SRP151839 SRP249545 SRP253589 SRP270794 SRP300422 SRP351713 SRR17282827
+fasterq-dump --threads 31 -v SRR3088946
