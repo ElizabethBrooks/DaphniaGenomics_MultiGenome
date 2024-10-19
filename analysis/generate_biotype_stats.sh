@@ -12,13 +12,13 @@
 # usage ex: bash generate_biotype_stats.sh /Users/bamflappy/Downloads/ncbi_dataset_SCF1_1A/ncbi_dataset/data/GCF_021234035.1/genomic.gff
 # usage ex: bash generate_biotype_stats.sh /Users/bamflappy/Downloads/ncbi_dataset_WSL/ncbi_dataset/data/GCA_013167095.2/genomic.gff
 ## EGAPx v0.2
-# usage ex: bash generate_biotype_stats.sh /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.2/D_magna_NIES_SRA/accept.gff
-# usage ex: bash generate_biotype_stats.sh /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.2/D_pulex_KAP4_SRA/accept.gff
-# usage ex: bash generate_biotype_stats.sh /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.2/D_pulicaria_LK16_NCBI_trimmed/accept.gff
-# usage ex: bash generate_biotype_stats.sh /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.2/D_pulicaria_LK16_SRA/accept.gff
-# usage ex: bash generate_biotype_stats.sh /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.2/D_pulicaria_SC_F1_1A_NCBI_SRA/accept.gff
-# usage ex: bash generate_biotype_stats.sh /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.2/RUNNING/D_pulex_KAP106_NCBI_SRA/accept.gff
-# usage ex: bash generate_biotype_stats.sh /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.2/RUNNING/D_pulex_KAP106_SRA/accept.gff
+# usage ex: bash generate_biotype_stats.sh /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.2/SUCCEEDED/D_magna_NIES_SRA/accept.gff
+# usage ex: bash generate_biotype_stats.sh /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.2/SUCCEEDED/D_pulex_KAP4_SRA/accept.gff
+# usage ex: bash generate_biotype_stats.sh /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.2/SUCCEEDED/D_pulicaria_LK16_NCBI_trimmed/accept.gff
+# usage ex: bash generate_biotype_stats.sh /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.2/SUCCEEDED/D_pulicaria_LK16_SRA/accept.gff
+# usage ex: bash generate_biotype_stats.sh /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.2/SUCCEEDED/D_pulicaria_SC_F1_1A_NCBI_SRA/accept.gff
+# usage ex: bash generate_biotype_stats.sh /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.2/SUCCEEDED/D_pulex_KAP106_NCBI_SRA/accept.gff
+# usage ex: bash generate_biotype_stats.sh /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.2/SUCCEEDED/D_pulex_KAP106_SRA/accept.gff
 
 # retrieve inputs file
 inputsFile=$1

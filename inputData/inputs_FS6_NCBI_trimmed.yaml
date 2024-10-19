@@ -1,0 +1,45 @@
+genome: /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/NCBI/GCA_016170125.1_FS6_v1.0_genomic.fna
+taxid: 35527
+reads:
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_18C_Rep15_R1.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_18C_Rep15_R2.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_18C_Rep1_R1.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_18C_Rep1_R2.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_18C_Rep8_R1.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_18C_Rep8_R2.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_25C_Rep16_R1.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_25C_Rep16_R2.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_25C_Rep2_R1.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_25C_Rep2_R2.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_25C_Rep9_R1.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_25C_Rep9_R2.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_Atrazine_Rep14_R1.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_Atrazine_Rep14_R2.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_Atrazine_Rep21_R1.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_Atrazine_Rep21_R2.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_Atrazine_Rep7_R1.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_Atrazine_Rep7_R2.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_NaCl_Rep11_R1.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_NaCl_Rep11_R2.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_NaCl_Rep18_R1.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_NaCl_Rep18_R2.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_NaCl_Rep4_R1.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_NaCl_Rep4_R2.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_Ni_Rep12_R1.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_Ni_Rep12_R2.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_Ni_Rep19_R1.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_Ni_Rep19_R2.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_Ni_Rep5_R1.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_Ni_Rep5_R2.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_pH_Rep13_R1.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_pH_Rep13_R2.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_pH_Rep20_R1.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_pH_Rep20_R2.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_pH_Rep6_R1.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_pH_Rep6_R2.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_UV_Rep10_R1.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_UV_Rep10_R2.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_UV_Rep17_R1.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_UV_Rep17_R2.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_UV_Rep3_R1.fq
+ - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_obtusa/FS6/trimmed_for_reannotation/RNA_DObtusa_UV_Rep3_R2.fq

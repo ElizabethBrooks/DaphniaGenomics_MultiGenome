@@ -32,17 +32,24 @@
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_SC_F1_1A_NCBI_SRA.txt
 ## job 823853 -> RUNNING
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_KAP106_NCBI_SRA.txt
-## job 821229 -> RUNNING
+## job 821229 -> KILLED -> /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.2/D_pulex_KAP106_NCBI_SRA/accept.gff
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_LK16_NCBI_trimmed.txt
 ## job 821670 -> SUCCEEDED
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_CSIRO_1_NCBI_SRA.txt
 ## job 854120
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_Xinb3_NCBI_SRA.txt
-## job 854121
+## job 854121 -> ERROR
+# EXITING because of FATAL ERROR in reads input: Lread of the pair = 856   while DEF_readSeqLengthMax=650
+#   Read Name=>SRR2671679.1952.2
+#   SOLUTION: increase DEF_readSeqLengthMax in IncludeDefine.h and re-compile STAR
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_LRV0_1_NCBI_SRA.txt
 ## job 854182
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_SK_NCBI_SRA.txt
-## job 
+## job 854669
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_FS6_NCBI_trimmed.txt
+## job
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_FS6_ZQ_trimmed.txt
+## job
 
 # NOTE: the default /egapx/ui/assets/config/process_resources.config file specifies up to 31 cores (huge_Job)
 # our afs system has 263Gb RAM, 64 cores
