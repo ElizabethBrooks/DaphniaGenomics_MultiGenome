@@ -12,20 +12,20 @@
 module load bio/2.0
 
 # retrieve input file
-inputFile=$1
+#inputFile=$1
 
 # retrieve species name
-speciesName=$(grep "species:" ../"inputData/"$inputFile | tr -d " " | sed "s/species://g")
+#speciesName=$(grep "species:" ../$inputFile | tr -d " " | sed "s/species://g")
 
 # retrieve outputs path
 #outputsPath=$(grep "outputs_SRA:" ../"inputData/inputPaths.txt" | tr -d " " | sed "s/outputs_SRA://g")
 outputsPath="/afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/D_pulex/dump/UV"
 
 # setup outputs directory
-outputsPath=$outputsPath"/"$speciesName
+#outputsPath=$outputsPath"/"$speciesName
 
 # make outputs folder
-mkdir $outputsPath
+#mkdir $outputsPath
 
 # move to outputs directory
 cd $outputsPath
