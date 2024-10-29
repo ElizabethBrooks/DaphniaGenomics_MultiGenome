@@ -1,0 +1,4 @@
+genome:  /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/D.ambigua.2.0_annotation/D.ambigua.3.0.masked.fasta
+taxid: 77756
+reads:
+- /afs/crc.nd.edu/group/pfrenderlab/franklin/Daphnia_RNA_assembly/isoseq/D.ambigua_isoseq.fasta
