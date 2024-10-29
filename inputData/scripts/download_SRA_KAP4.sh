@@ -9,7 +9,7 @@
 # usage: qsub download_SRA_KAP4.sh inputs_KAP4_NCBI.txt
 
 # load software module
-module load bio/2.0
+#module load bio/2.0
 
 # retrieve input file
 #inputFile=$1
@@ -32,4 +32,4 @@ cd $outputsPath
 
 # download SRA data
 #fasterq-dump --threads 31 -v DRP002580 ERP110882 SRP068113 SRP102491 SRP134187 SRP135935 SRP151839 SRP249545 SRP253589 SRP270794 SRP300422 SRP351713 SRR17282827
-fasterq-dump --threads 31 -v --seq-defline $ac$sn$sg$si$ri$rl SRR3088946
+fasterq-dump --threads 31 -v --seq-defline $ac,$sn,$sg,$si,$ri,$rl SRR3088946

@@ -17,74 +17,52 @@ To use these sets of scripts to install and run the workflows, make sure to chan
 ## [EGAPx](https://github.com/ncbi/egapx/) Workflows
 There are two workflows for EGAPx, local and HPC. The <i>local scripts</i> can be run locally on your system and the <i>HPC scripts</i> are setup for job submission to the ND CRC remote servers.
 
-First, make sure that you have singularity installed on your system. The ND CRC servers already have singularity available.
+Note that singularity needs to be installed on your system. The ND CRC servers already have singularity available.
+
+### Steps
+1. Install and test the EGAPx software.
+2. Format any input files, such as the reads fasta files or yaml guide file.
+3. Run EGAPx using as many cores as possible and with sufficient data storage. This will depend on the size and number of input files, for example.
 
 ### Installation
-The <i>install_EGAPx.sh</i> script in the <b>install</b> directory can be used to install EGAPx and its dependencies. 
+The <i>install\_EGAPx.sh</i> script in the <b>install</b> directory can be used to install EGAPx and its dependencies. 
 
-Make sure to change the paths in the <i>inputs_annotations.txt</i> file to where you would like to have the software installed and outputs generated.
+Make sure to change the paths in the <i>inputs\_annotations.txt</i> file to where you would like to have the software installed and outputs generated.
 
 ### Notes
 There are some things to keep in mind when running EGAPx.
 
-#### EGAPx v0.2 - NCBI Data
+#### EGAPx Config
+The <i>egapx/ui/assets/config/process\_resources.config</i> file specifies up to 31 cores (huge\_Job).
 
-These annotations are being completed using the SRA data assocaited with each of the NCBI genome assemblies. This will allow us to compare the annotations produced by EGAPx with the NCBI annotations.
+The ND CRC [system specifications](https://docs.crc.nd.edu/new_user/quick_start.html) indicates that our afs system has 263Gb RAM, 64 cores. Make sure to leave 1 core free for general processes, so request up to 63 cores per job on our afs system.
 
-#### EGAPx v0.1 - NCBI Data
+The <i>EGAPx\_v0.2\_process\_resources.config</i> file in the <i>inputData</i> directory may be used to run EGAPx workflow jobs on the ND CRC remote servers.
 
-These annotations are being completed using the SRA data assocaited with each of the NCBI genome assemblies. This will allow us to compare the annotations produced by EGAPx with the NCBI annotations.
-
-The KAP4 and KAP106 annotations had to be re-started (possible since EGAPx uses Nextflow), which may have affected their analysis run times.
-
-#### Running
-- Either the number of cores requested for a job must be at least 31, or you will need to edit the default huge_Job value in the <i>egapx/ui/assets/config/process_resources.config</i> file
-- The pipeline can take a lot of memory and time, if there is a large number of reads being retrieved from the SRA
-- There is a limit to the number of SRA IDs that can be input to EGAPx
-
-#### HPC scripts
-The <i>egapx/ui/assets/config/process_resources.config</i> file specifies up to 31 cores (huge_Job).
+It is also possible to set the config using the -c or --config-dir CONFIG\_DIR flag (see the GitHub README for EGAPx or run <i>ui/egapx.py  -h</i>).
 
 #### inputData
 
 ##### reads
-The read files need to be formatted very specifically, see the format_SRA_reads_EGAPx.sh and download_SRA_reads_EGAPx.sh scripts in the Formatting directory. This is because EGAPx expects that input "reads" are a list of FASTA read files, expects pairs in form SRAxxx.1, SRAxxx.2 (see the egapx/nf/./subworkflows/ncbi/./rnaseq_short/star_wnode/main.nf file).
 
-##### reads_ids
+###### EGAPx v0.2
+EGAPx v0.2 expects the headers to simple, such as single words (e.g., read ID or name) with no extra spaces or strange symbols.
+
+<b>TO-DO:</b> Altert EGAPx creators of the following error.<br>
+EGAPx v0.2 should be able to accept fasta files compressed into gz format. However, the following error is returned on our ND CRC remote server system (see https://www.biostars.org/p/9469010/):<br>
+Exiting because of \*FATAL ERROR\*: could not create FIFO file wrkarea/STAR.65804014732736FFdFHY/D.pulicaria\_LARRY\_HIC\_final-18CRep1\_ATCACG\_L001\_R1.concat.fq/D.pulicaria\_LARRY\_HIC\_final-18CRep1\_ATCACG\_L001\_R1.concat.fq-\_STARtmp/tmp.fifo.read1
+
+###### EGAPx v0.1
+The read fasta files need to be formatted very specifically, see the <i>format\_trimmed\_reads\_EGAPx.sh</i> script in the <b>formatting</b> directory.
+
+EGAPx v0.1 expects the headers to simple, such as single words (e.g., read ID or name) with no extra spaces or strange symbols. Additionally, the fasta file needs to contain just header and sequence information (no quality scores, etc.).
+
+EGAPx v0.1 expects that input reads are a list of FASTA read files, which are named in the form SRAxxx.1, SRAxxx.2 (see the <i>egapx/nf/./subworkflows/ncbi/./rnaseq\_short/star\_wnode/main.nf</i> file).
+
+##### reads\_ids
+
+###### EGAPx v0.1 & EGAPx v0.2
 There is a limit to the number of SRA IDs that can be input to EGAPx, since the pipeline makes a query to the SRA. The HTTP header becomes too large if the list of SRA IDs is very long. 
 
-##### NCBI Data Sets
-These IDs were retrieved from the annotation report pages of each species. For example, [KAP4 NCBI annotation report](https://www.ncbi.nlm.nih.gov/refseq/annotation_euk/Daphnia_pulex/100/). These are the "RNA-Seq alignments" "Project" IDs and the "SRA Long Read Alignment Statistics" "Run" ID. The unique Project IDs are being used since EGAPx fails if the HTTP header becomes to large from a long list of samples.
-
-#### EGAPx Config
-ND CRC [system specifications](https://docs.crc.nd.edu/new_user/quick_start.html).
-
-The following template may be used to run EGAPx workflow jobs on the ND CRC remote servers. The config file template can also be found in the <i>EGAPx_v0.2_process_resources.config</i> file in the <i>inputData</i> directory.
-
-##### Template
-// Part of nextflow config describing resource requirements for EGAPx processes
-
-// We rely on labels to define 3 tiers of processes - default, big, and huge.
-
-// Make sure that executor you use supports job memory and CPU requirements
-
-process {
-
-    memory = 200.GB
-    cpus = 63
-    time = 336.h
-
-    withLabel: 'big_job' {
-        memory = 200.GB
-        cpus = 63
-    }
-
-    withLabel: 'huge_job' {
-        memory = 200.GB
-        cpus = 63
-    }
-
-    withLabel: 'long_job' {
-        time = 336.h
-    }
-}
+###### NCBI Data Sets
+These IDs can be retrieved from the annotation report pages of each species. For example, [KAP4 NCBI annotation report](https://www.ncbi.nlm.nih.gov/refseq/annotation_euk/Daphnia_pulex/100/). These are the "RNA-Seq alignments" "Project" IDs and the "SRA Long Read Alignment Statistics" "Run" ID. The unique Project IDs are being used since EGAPx fails if the HTTP header becomes to large from a long list of samples.
