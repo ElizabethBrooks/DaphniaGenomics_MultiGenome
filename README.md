@@ -10,10 +10,6 @@ The annotations for Daphnia pulex, pulicaria, and magna have been completed usin
 
 Click [here](https://github.com/ElizabethBrooks/DaphniaGenomics_MultiGenome) for the code repository with scripts to analyze multiple daphnia species genomes.
 
-## Inputs & Outputs
-
-To use these sets of scripts to install and run the workflows, make sure to change the paths in the inputs files in the <b>inputData</b> directory. For example, the input and output paths in the <i>inputPaths.txt</i> file should be changed to the paths on your system.
-
 ## [EGAPx](https://github.com/ncbi/egapx/) Workflows
 There are two workflows for EGAPx, local and HPC. The <i>local scripts</i> can be run locally on your system and the <i>HPC scripts</i> are setup for job submission to the ND CRC remote servers.
 

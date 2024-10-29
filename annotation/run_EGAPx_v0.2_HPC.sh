@@ -53,7 +53,8 @@
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_FS6_NCBI_trimmed.txt
 ## job 892539 -> RUNNING
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_FS6_ZQ_trimmed.txt
-## job 892541 -> QUEUED
+## job 892541 -> ERROR -> typo in yaml file
+## job 915289
 
 # NOTE: the default /egapx/ui/assets/config/process_resources.config file specifies up to 31 cores (huge_Job)
 # our afs system has 263Gb RAM, 64 cores
