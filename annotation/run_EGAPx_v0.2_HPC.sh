@@ -54,7 +54,7 @@
 ## job 892539 -> RUNNING
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_FS6_ZQ_trimmed.txt
 ## job 892541 -> ERROR -> typo in yaml file
-## job 915292
+## job 915292 -> SUCCEEDED
 #
 ## ZQ test set
 #
@@ -102,7 +102,8 @@ cd $outputsPath
 echo "Beginning analysis of $speciesName..."
 
 # run EGAPx to copy config files
-python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath
+#python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath
+python3 $softwarePath"/ui/egapx.py" $inputsPath -o $outputsPath
 
 # run EGAPx
 python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath
