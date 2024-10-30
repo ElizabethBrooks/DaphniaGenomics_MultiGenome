@@ -1,0 +1,2 @@
+species: D_magna_LRV0_1_NCBI_SRA
+inputs_EGAPx: D_magna/inputs_LRV0_1_NCBI_SRA.yaml

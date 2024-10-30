@@ -1,2 +1,0 @@
-species: D_magna_Xinb3_NCBI_SRA
-inputs_EGAPx: inputs_Xinb3_NCBI_SRA.yaml

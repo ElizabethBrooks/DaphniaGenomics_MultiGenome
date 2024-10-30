@@ -1,2 +1,0 @@
-species: D_carinata_CSIRO_1_NCBI_SRA
-inputs_EGAPx: inputs_CSIRO_1_NCBI_SRA.yaml

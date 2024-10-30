@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# script to use blastp to search to build a blast file for MCScanX 
+# script to use blastp to search to build blast files for MCScanX 
 # https://www-nature-com.proxy.library.nd.edu/articles/s41596-024-00968-2
 # https://github.com/wyp1125/MCScanX?tab=readme-ov-file
 # usage: bash search_MCScanX_pipeline.sh queryTag dgTag queryFileIn dbFileIn queryFileFeat dbFileFeat

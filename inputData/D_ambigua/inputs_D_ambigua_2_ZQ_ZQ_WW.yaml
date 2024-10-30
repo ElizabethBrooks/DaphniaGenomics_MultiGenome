@@ -1,0 +1,5 @@
+taxid: 77756
+genome:  /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/D.ambigua.2.0_annotation/D.ambigua.3.0.masked.fasta
+proteins: /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/D.ambigua.2.0_annotation/D.ambigua.3.0.masked.aa.fasta
+reads:
+- /scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNA_assembly/D.ambigua_isoseq.fmt.fasta

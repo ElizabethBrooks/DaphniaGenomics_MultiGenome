@@ -1,0 +1,2 @@
+species: D_pulex_KAP106_ZQ_SRA
+inputs_EGAPx: D_pulex/inputs_KAP106_ZQ_SRA.yaml

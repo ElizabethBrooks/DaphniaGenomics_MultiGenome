@@ -1,0 +1,2 @@
+species: D_pulicaria_LK16_NCBI_trimmed
+inputs_EGAPx: D_pulicaria/inputs_LK16_NCBI_trimmed.yaml

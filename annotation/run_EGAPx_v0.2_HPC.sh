@@ -59,7 +59,15 @@
 ## ZQ test set
 #
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_D_ambigua_2_ZQ_WW.txt
-## job 915611
+## job 915611 -> no error, no output gff either
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_D_ambigua_2_ZQ_ZQ_WW.txt
+## job 
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_FS6_ZQ_ZQ_trimmed.txt
+## job 
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_KAP106_ZQ_ZQ_SRA.txt
+## job 
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_LK16_ZQ_ZQ_trimmed.txt
+## job 
 
 # NOTE: the default /egapx/ui/assets/config/process_resources.config file specifies up to 31 cores (huge_Job)
 # our afs system has 263Gb RAM, 64 cores

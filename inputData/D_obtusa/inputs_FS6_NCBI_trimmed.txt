@@ -1,0 +1,2 @@
+species: D_obtusa_FS6_NCBI_trimmed
+inputs_EGAPx: D_obtusa/inputs_FS6_NCBI_trimmed.yaml
