@@ -59,7 +59,7 @@
 ## ZQ test set
 #
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_D_ambigua_2_ZQ_WW.txt
-## job
+## job 915611
 
 # NOTE: the default /egapx/ui/assets/config/process_resources.config file specifies up to 31 cores (huge_Job)
 # our afs system has 263Gb RAM, 64 cores

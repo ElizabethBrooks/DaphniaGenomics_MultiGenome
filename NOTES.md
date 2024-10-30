@@ -1,3 +1,7 @@
+### Formatting WW Daphnia\_RNA\_assembly data
+cat /afs/crc.nd.edu/group/pfrenderlab/franklin/Daphnia_RNA_assembly/isoseq/D.ambigua_isoseq.fasta | cut -d"|" -f1 > /scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNA_assembly/D.ambigua_isoseq.fmt.fasta
+
+
 ### KAP4 & KAP106 NCBI Data
 The following reads are duplicated:
   - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP4_KAP106/SRR17282827/SRR17282827_1.fasta
