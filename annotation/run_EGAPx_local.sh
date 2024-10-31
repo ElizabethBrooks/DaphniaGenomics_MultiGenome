@@ -35,6 +35,12 @@ outputsPath=$(grep "outputs_EGAPx:" ../"inputData/inputs_annotations.txt" | tr -
 # setup outputs directory
 outputsPath=$outputsPath"/"$speciesName
 
+#Check if the folder already exists
+if [ $? -ne 0 ]; then
+	echo "The $outputsPath directory already exsists... please remove before proceeding."
+	exit 1
+fi
+
 # make outputs directory
 mkdir $outputsPath
 

@@ -152,13 +152,15 @@ ERROR
 
 ### Isoseq test sets
 
-#### qsub run_EGAPx_v0.2_HPC.sh test/D_pulicaria/inputs_KAP106_NCBI_SRA.txt
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_SRA.txt
+##### job 917474
+wrote to /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.2/D_pulex_KAP106_NCBI_SRA (oops)
 ##### job
 
-#### qsub run_EGAPx_v0.2_HPC.sh test/D_pulicaria/inputs_KAP106_ZQ_SRA.txt
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_SRA.txt
 ##### job
 
-#### qsub run_EGAPx_v0.2_HPC.sh test/D_pulicaria/inputs_KAP106_ZQ_ZQ_SRA.txt
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_ZQ_SRA.txt
 ##### job
 
 

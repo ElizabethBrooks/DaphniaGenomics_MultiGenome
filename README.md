@@ -42,7 +42,7 @@ It is also possible to set the config using the -c or --config-dir CONFIG\_DIR f
 ##### reads
 
 ###### EGAPx v0.2
-EGAPx v0.2 expects the headers to simple, such as single words (e.g., read ID or name) with no extra spaces or "strange" symbols.
+EGAPx v0.2 expects the headers to be simple, such as single words (e.g., read ID or name) with no extra spaces or "strange" symbols.
 
 See the <i>download\_SRA.sh</i> script in the <b>scripts</b> subdirectory of the <b>inputData</b> directory for an example of appropriate header formatting using downloaded SRA data.
 
