@@ -1,6 +1,8 @@
 # EGAPx Tests
 
+
 ## EGAPx v0.2
+
 
 ### NCBI test set
 
@@ -29,6 +31,7 @@ ERROR ~ Unable to re-submit task `egapx:rnaseq_short_plane:fetch_sra_fasta:run_f
 ##### job 773797 
 KILLED 
 NOTE: Process `egapx:rnaseq_short_plane:fetch_sra_fasta:run_fetch_sra_fasta (58)` terminated with an error exit status (23) -- Execution is retried (1)
+
 
 ### SRA test set
 
@@ -98,9 +101,10 @@ typo in yaml file
 ##### job 915292 
 SUCCEEDED
 
+
 ### ZQ & WW test sets
 
-#### WW file formatting
+#### WW Isoseq file formatting
 ```
 for i in /scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNA_assembly/isoseq/*.fasta; do echo $i; newName=$(echo $i | sed "s/\.fasta/.fmt.fasta/g" | sed "s/Daphnia\_RNA\_assembly\/isoseq/Daphnia_RNA_assembly_formatted/g"); cat $i | cut -d"|" -f1 > $newName; done
 ```
@@ -144,6 +148,19 @@ Plus 10 more processes waiting for tasks…
 #### qsub run_EGAPx_v0.2_HPC.sh D_pulicaria/inputs_LK16_ZQ_ZQ_trimmed.txt
 ##### job 917384
 ERROR
+
+
+### Isoseq test sets
+
+#### qsub run_EGAPx_v0.2_HPC.sh test/D_pulicaria/inputs_KAP106_NCBI_SRA.txt
+##### job
+
+#### qsub run_EGAPx_v0.2_HPC.sh test/D_pulicaria/inputs_KAP106_ZQ_SRA.txt
+##### job
+
+#### qsub run_EGAPx_v0.2_HPC.sh test/D_pulicaria/inputs_KAP106_ZQ_ZQ_SRA.txt
+##### job
+
 
 ## EGAPx v0.1
 
