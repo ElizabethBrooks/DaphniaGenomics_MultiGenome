@@ -109,33 +109,33 @@ SUCCEEDED
 for i in /scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNA_assembly/isoseq/*.fasta; do echo $i; newName=$(echo $i | sed "s/\.fasta/.fmt.fasta/g" | sed "s/Daphnia\_RNA\_assembly\/isoseq/Daphnia_RNA_assembly_formatted/g"); cat $i | cut -d"|" -f1 > $newName; done
 ```
 
-#### qsub run_EGAPx_v0.2_HPC.sh inputs_D_ambigua_2_ZQ_WW.txt 
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_ambigua/inputs_D_ambigua_2_ZQ_WW.txt 
 ##### job 915611 
 formatted WW data 
 no error, no output gff either 
 
-#### qsub run_EGAPx_v0.2_HPC.sh D_ambigua/inputs_D_ambigua_2_ZQ_ZQ_WW.txt
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_ambigua/inputs_D_ambigua_2_ZQ_ZQ_WW.txt
 ##### job 917157
 
-#### qsub run_EGAPx_v0.2_HPC.sh D_obtusa/inputs_D_obtusa_2_ZQ_ZQ_trimmed.txt
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_obtusa/inputs_D_obtusa_2_ZQ_ZQ_trimmed.txt
 ##### job 917376
 
-#### qsub run_EGAPx_v0.2_HPC.sh D_obtusa/inputs_D_obtusa_2_ZQ_WW.txt
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_obtusa/inputs_D_obtusa_2_ZQ_WW.txt
 ##### job 917379
 
-#### qsub run_EGAPx_v0.2_HPC.sh D_obtusa/inputs_D_obtusa_2_ZQ_ZQ_WW.txt
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_obtusa/inputs_D_obtusa_2_ZQ_ZQ_WW.txt
 ##### job 917380
 
-#### qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP106_ZQ_ZQ_SRA.txt
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_ZQ_SRA.txt
 ##### job 917381
 
-#### qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP106_ZQ_WW.txt
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_WW.txt
 ##### job 917382 
 not formatted D obtusa WW data (oops)
 ##### job  
 not formatted WW data
 
-#### qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP106_ZQ_ZQ_WW.txt
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_ZQ_WW.txt
 ##### job 917383 
 ERROR
 not formatted D obtusa WW data (oops) 
@@ -145,7 +145,7 @@ not formatted WW data
 ERROR?
 Plus 10 more processes waiting for tasks…
 
-#### qsub run_EGAPx_v0.2_HPC.sh D_pulicaria/inputs_LK16_ZQ_ZQ_trimmed.txt
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulicaria/inputs_LK16_ZQ_ZQ_trimmed.txt
 ##### job 917384
 ERROR
 
@@ -154,14 +154,15 @@ ERROR
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_SRA.txt
 ##### job 917474
+QDEL
 wrote to /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.2/D_pulex_KAP106_NCBI_SRA (oops)
-##### job
+##### job 917475
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_SRA.txt
-##### job
+##### job 917476
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_ZQ_SRA.txt
-##### job
+##### job 917477
 
 
 ## EGAPx v0.1
