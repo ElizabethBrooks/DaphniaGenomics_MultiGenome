@@ -11,7 +11,7 @@ The annotations for Daphnia pulex, pulicaria, and magna have been completed usin
 Click [here](https://github.com/ElizabethBrooks/DaphniaGenomics_MultiGenome) for the code repository with scripts to analyze multiple daphnia species genomes.
 
 ## [EGAPx](https://github.com/ncbi/egapx/) Workflows
-There are two workflows for EGAPx, local and HPC. The <i>local scripts</i> can be run locally on your system and the <i>HPC scripts</i> are setup for job submission to the ND CRC remote servers.
+There are two very similar workflows for EGAPx, local and HPC. The <i>local scripts</i> can be run locally on your system and the <i>HPC scripts</i> are setup for job submission to the ND CRC remote servers.
 
 Note that singularity needs to be installed on your system. The ND CRC servers already have singularity available.
 
@@ -42,9 +42,11 @@ It is also possible to set the config using the -c or --config-dir CONFIG\_DIR f
 ##### reads
 
 ###### EGAPx v0.2
-EGAPx v0.2 expects the headers to simple, such as single words (e.g., read ID or name) with no extra spaces or strange symbols.
+EGAPx v0.2 expects the headers to simple, such as single words (e.g., read ID or name) with no extra spaces or "strange" symbols.
 
-<b>TO-DO:</b> Altert EGAPx creators of the following error.<br>
+See the <i>download\_SRA.sh</i> script in the <b>scripts</b> subdirectory of the <b>inputData</b> directory for an example of appropriate header formatting using downloaded SRA data.
+
+<b>TO-DO:</b> Update EGAPx creators about the following error.<br>
 EGAPx v0.2 should be able to accept fasta files compressed into gz format. However, the following error is returned on our ND CRC remote server system (see https://www.biostars.org/p/9469010/):<br>
 Exiting because of \*FATAL ERROR\*: could not create FIFO file wrkarea/STAR.65804014732736FFdFHY/D.pulicaria\_LARRY\_HIC\_final-18CRep1\_ATCACG\_L001\_R1.concat.fq/D.pulicaria\_LARRY\_HIC\_final-18CRep1\_ATCACG\_L001\_R1.concat.fq-\_STARtmp/tmp.fifo.read1
 
