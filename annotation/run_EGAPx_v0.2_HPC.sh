@@ -4,6 +4,7 @@
 #$ -r n
 #$ -N run_EGAPx_v0.2_jobOutput
 #$ -pe smp 63
+#$ -q largemem
 
 # script to run the EGAPx pipeline
 # usage: qsub run_EGAPx_v0.2_HPC.sh inputFile
