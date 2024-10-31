@@ -52,21 +52,30 @@
 ## job 854669 -> SUCCEEDED
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_FS6_NCBI_trimmed.txt
 ## job 892539 -> RUNNING
-# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_FS6_ZQ_trimmed.txt
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_FS6_ZQ_trimmed.txt -> inputs_D_obtusa_2_ZQ_trimmed.txt
 ## job 892541 -> ERROR -> typo in yaml file
 ## job 915292 -> SUCCEEDED
 #
-## ZQ test set
+## ZQ & WW test sets
 #
-# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_D_ambigua_2_ZQ_WW.txt
+# WW file formatting: for i in /scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNA_assembly/isoseq/*.fasta; do echo $i; newName=$(echo $i | sed "s/\.fasta/.fmt.fasta/g" | sed "s/Daphnia\_RNA\_assembly\/isoseq/Daphnia_RNA_assembly_formatted/g"); cat $i | cut -d"|" -f1 > $newName; done
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_D_ambigua_2_ZQ_WW.txt -> formatted WW data
 ## job 915611 -> no error, no output gff either
-# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_D_ambigua_2_ZQ_ZQ_WW.txt
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh D_ambigua/inputs_D_ambigua_2_ZQ_ZQ_WW.txt
+## job 917157
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh D_obtusa/inputs_D_obtusa_2_ZQ_ZQ_trimmed.txt
 ## job 
-# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_FS6_ZQ_ZQ_trimmed.txt
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh D_obtusa/inputs_D_obtusa_2_ZQ_WW.txt
 ## job 
-# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_KAP106_ZQ_ZQ_SRA.txt
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh D_obtusa/inputs_D_obtusa_2_ZQ_ZQ_WW.txt
 ## job 
-# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_LK16_ZQ_ZQ_trimmed.txt
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP106_ZQ_ZQ_SRA.txt
+## job 
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP106_ZQ_WW.txt
+## job 
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP106_ZQ_ZQ_WW.txt
+## job 
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh D_pulicaria/inputs_LK16_ZQ_ZQ_trimmed.txt
 ## job 
 
 # NOTE: the default /egapx/ui/assets/config/process_resources.config file specifies up to 31 cores (huge_Job)
@@ -119,7 +128,7 @@ python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/
 # clean up, if accept.gff output file exsists
 if [ ! -f $outputsPath"/accept.gff" ]; then
 	# run to resume annotation
-	sh $outputsPath"/resume.sh"
+	bash $outputsPath"/resume.sh"
 else
     rm -r $outputsPath"/temp_datapath"
 	#rm -r $outputsPath"/work"

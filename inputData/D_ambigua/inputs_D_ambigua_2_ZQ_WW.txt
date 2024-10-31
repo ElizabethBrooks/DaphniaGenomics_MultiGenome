@@ -1,0 +1,2 @@
+species: D_ambigua_2_ZQ_WW
+inputs_EGAPx: D_ambigua/inputs_D_ambigua_2_ZQ_WW.yaml

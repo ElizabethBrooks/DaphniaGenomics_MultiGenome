@@ -1,0 +1,2 @@
+species: D_obtusa_2_ZQ_WW
+inputs_EGAPx: D_obtusa/inputs_D_obtusa_2_ZQ_WW.yaml
