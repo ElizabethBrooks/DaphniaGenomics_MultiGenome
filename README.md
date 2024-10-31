@@ -16,7 +16,7 @@ There are two very similar workflows for EGAPx, local and HPC. The <i>local scri
 Note that singularity needs to be installed on your system. The ND CRC servers already have singularity available.
 
 ### Steps
-1. Install and test the EGAPx software.
+1. Install, configure, and test the EGAPx software.
 2. Format any input files, such as the reads fasta files or yaml guide file.
 3. Run EGAPx using as many cores as possible and with sufficient data storage. This will depend on the size and number of input files, for example.
 
@@ -51,7 +51,7 @@ EGAPx v0.2 should be able to accept fasta files compressed into gz format. Howev
 Exiting because of \*FATAL ERROR\*: could not create FIFO file wrkarea/STAR.65804014732736FFdFHY/D.pulicaria\_LARRY\_HIC\_final-18CRep1\_ATCACG\_L001\_R1.concat.fq/D.pulicaria\_LARRY\_HIC\_final-18CRep1\_ATCACG\_L001\_R1.concat.fq-\_STARtmp/tmp.fifo.read1
 
 ###### EGAPx v0.1
-The read fasta files need to be formatted very specifically, see the <i>format\_trimmed\_reads\_EGAPx.sh</i> script in the <b>formatting</b> directory.
+The read fasta files need to be formatted very specifically, see the scripts in the <b>formatting</b> directory for examples.
 
 EGAPx v0.1 expects the headers to simple, such as single words (e.g., read ID or name) with no extra spaces or strange symbols. Additionally, the fasta file needs to contain just header and sequence information (no quality scores, etc.).
 
