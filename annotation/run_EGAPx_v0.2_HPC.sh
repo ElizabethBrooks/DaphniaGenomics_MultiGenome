@@ -59,24 +59,26 @@
 ## ZQ & WW test sets
 #
 # WW file formatting: for i in /scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNA_assembly/isoseq/*.fasta; do echo $i; newName=$(echo $i | sed "s/\.fasta/.fmt.fasta/g" | sed "s/Daphnia\_RNA\_assembly\/isoseq/Daphnia_RNA_assembly_formatted/g"); cat $i | cut -d"|" -f1 > $newName; done
-# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_D_ambigua_2_ZQ_WW.txt -> formatted WW data
-## job 915611 -> no error, no output gff either
+# usage ex: qsub run_EGAPx_v0.2_HPC.sh inputs_D_ambigua_2_ZQ_WW.txt 
+## job 915611 -> formatted WW data -> no error, no output gff either 
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh D_ambigua/inputs_D_ambigua_2_ZQ_ZQ_WW.txt
 ## job 917157
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh D_obtusa/inputs_D_obtusa_2_ZQ_ZQ_trimmed.txt
-## job 
+## job 917376
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh D_obtusa/inputs_D_obtusa_2_ZQ_WW.txt
-## job 
+## job 917379
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh D_obtusa/inputs_D_obtusa_2_ZQ_ZQ_WW.txt
-## job 
+## job 917380
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP106_ZQ_ZQ_SRA.txt
-## job 
+## job 917381
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP106_ZQ_WW.txt
-## job 
+## job 917382 -> not formatted D obtusa WW data (oops)
+## job  -> not formatted WW data
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP106_ZQ_ZQ_WW.txt
-## job 
+## job 917383 -> not formatted D obtusa WW data (oops) -> samtools sort: failed to read header from "wrkarea/STAR.1180121497024erNMJ5/D.pulex_KAP106_NMP_1.3.masked-D.obtusa_isoseq_coding/D.pulex_KAP106_NMP_1.3.masked-D.obtusa_isoseq_coding-Aligned.out.bam"
+## job  -> not formatted WW data
 # usage ex: qsub run_EGAPx_v0.2_HPC.sh D_pulicaria/inputs_LK16_ZQ_ZQ_trimmed.txt
-## job 
+## job 917384
 
 # NOTE: the default /egapx/ui/assets/config/process_resources.config file specifies up to 31 cores (huge_Job)
 # our afs system has 263Gb RAM, 64 cores
