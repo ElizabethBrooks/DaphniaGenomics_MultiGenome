@@ -1,2 +1,2 @@
-species: D_obtusa_2_ZQ_ZQ_trimmed
+species: D_obtusa_2_ZQ_ZQ_trimmed_test
 inputs_EGAPx: D_obtusa/inputs_D_obtusa_2_ZQ_ZQ_trimmed.yaml

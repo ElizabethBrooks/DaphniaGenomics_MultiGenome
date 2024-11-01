@@ -1,2 +1,2 @@
-species: D_pulicaria_LK16_ZQ_ZQ_trimmed
+species: D_pulicaria_LK16_ZQ_ZQ_trimmed_test
 inputs_EGAPx: D_pulicaria/inputs_LK16_ZQ_ZQ_trimmed.yaml
