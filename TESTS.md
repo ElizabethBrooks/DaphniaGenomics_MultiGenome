@@ -116,49 +116,39 @@ for i in /scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNA_assembly/iso
 ```
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_ambigua/inputs_D_ambigua_2_ZQ_WW.txt 
-##### job 915611 
+##### job 915611 -> the output directory was not tagged with "\_test"
 formatted WW data 
 no error, no output gff either 
+##### job 
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_ambigua/inputs_D_ambigua_2_ZQ_ZQ_WW.txt
-##### job 920111
-ERROR -> FileNotFoundError: [Errno 2] No such file or directory: '/afs/crc.nd.edu/group/hoth/eBrooks/DaphniaGenomics_MultiGenome/inputData/D_ambigua/inputs_D_ambigua_2_ZQ_ZQ_WW.yaml'
-##### job 924903
+##### job 
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_obtusa/inputs_D_obtusa_2_ZQ_ZQ_trimmed.txt
-##### job 920112
-ERROR -> FileNotFoundError: [Errno 2] No such file or directory: '/afs/crc.nd.edu/group/hoth/eBrooks/DaphniaGenomics_MultiGenome/inputData/D_obtusa/inputs_D_obtusa_2_ZQ_ZQ_trimmed.yaml'
-##### job 924906
+##### job 
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_obtusa/inputs_D_obtusa_2_ZQ_WW.txt
-##### job 920113
-ERROR -> FileNotFoundError: [Errno 2] No such file or directory: '/afs/crc.nd.edu/group/hoth/eBrooks/DaphniaGenomics_MultiGenome/inputData/D_obtusa/inputs_D_obtusa_2_ZQ_WW.yaml'
-##### job 924908
+##### job 
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_obtusa/inputs_D_obtusa_2_ZQ_ZQ_WW.txt
-##### job 920114
-ERROR -> FileNotFoundError: [Errno 2] No such file or directory: '/afs/crc.nd.edu/group/hoth/eBrooks/DaphniaGenomics_MultiGenome/inputData/D_obtusa/inputs_D_obtusa_2_ZQ_ZQ_WW.yaml'
-##### job 924909
+##### job 
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulicaria/inputs_LK16_ZQ_ZQ_trimmed.txt
 ##### job 917384
 ERROR ->   [ERRO] stat 18CRep6_TTAGGC_L002_R1.concat.fmt.fa: no such file or directory
-##### job 924912
+##### job 
 
 
 ### KAP106 Isoseq test sets
 
 #### qsub run_EGAPx_v0.2_HPC.sh inputs_KAP106_ZQ_ZQ_SRA.txt
-##### job 917381
+##### job 917381 -> non test data subset (oops)
 RUNNING
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_WW.txt
 ##### job 917382 
 not formatted D obtusa WW data (oops)
-##### job 920115
-not formatted WW data
-ERROR -> FileNotFoundError: [Errno 2] No such file or directory: '/afs/crc.nd.edu/group/hoth/eBrooks/DaphniaGenomics_MultiGenome/inputData/D_pulex/inputs_KAP106_ZQ_WW.yaml'
-##### job 924910
+##### job 
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_ZQ_WW.txt
 ##### job 917383 
@@ -171,18 +161,15 @@ ERROR?
 Plus 10 more processes waiting for tasks…
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_SRA.txt
-##### job 917474
-QDEL
-wrote to /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.2/D_pulex_KAP106_NCBI_SRA (oops)
-##### job 917475
+##### job 917475 -> non test data subset (oops)
 RUNNING
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_SRA.txt
-##### job 917476
+##### job 917476 -> non test data subset (oops)
 RUNNING
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_ZQ_SRA.txt
-##### job 917477
+##### job 917477 -> non test data subset (oops)
 RUNNING
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_WW.txt

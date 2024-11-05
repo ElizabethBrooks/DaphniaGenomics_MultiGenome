@@ -1,2 +1,2 @@
 species: D_ambigua_2_ZQ_WW_test
-inputs_EGAPx: D_ambigua/inputs_D_ambigua_2_ZQ_WW.yaml
+inputs_EGAPx: test/EGAPx_v0.2/D_ambigua/inputs_D_ambigua_2_ZQ_WW.yaml

@@ -1,2 +1,2 @@
 species: D_pulex_KAP106_NCBI_SRA_test
-inputs_EGAPx: D_pulex/inputs_KAP106_NCBI_SRA.yaml
+inputs_EGAPx: test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_SRA.yaml
