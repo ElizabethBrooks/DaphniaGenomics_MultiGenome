@@ -123,18 +123,30 @@ no error, no output gff either
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_ambigua/inputs_D_ambigua_2_ZQ_ZQ_WW.txt
 ##### job 920111
 ERROR -> FileNotFoundError: [Errno 2] No such file or directory: '/afs/crc.nd.edu/group/hoth/eBrooks/DaphniaGenomics_MultiGenome/inputData/D_ambigua/inputs_D_ambigua_2_ZQ_ZQ_WW.yaml'
+##### job 924903
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_obtusa/inputs_D_obtusa_2_ZQ_ZQ_trimmed.txt
 ##### job 920112
 ERROR -> FileNotFoundError: [Errno 2] No such file or directory: '/afs/crc.nd.edu/group/hoth/eBrooks/DaphniaGenomics_MultiGenome/inputData/D_obtusa/inputs_D_obtusa_2_ZQ_ZQ_trimmed.yaml'
+##### job 924906
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_obtusa/inputs_D_obtusa_2_ZQ_WW.txt
 ##### job 920113
 ERROR -> FileNotFoundError: [Errno 2] No such file or directory: '/afs/crc.nd.edu/group/hoth/eBrooks/DaphniaGenomics_MultiGenome/inputData/D_obtusa/inputs_D_obtusa_2_ZQ_WW.yaml'
+##### job 924908
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_obtusa/inputs_D_obtusa_2_ZQ_ZQ_WW.txt
 ##### job 920114
 ERROR -> FileNotFoundError: [Errno 2] No such file or directory: '/afs/crc.nd.edu/group/hoth/eBrooks/DaphniaGenomics_MultiGenome/inputData/D_obtusa/inputs_D_obtusa_2_ZQ_ZQ_WW.yaml'
+##### job 924909
+
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulicaria/inputs_LK16_ZQ_ZQ_trimmed.txt
+##### job 917384
+ERROR ->   [ERRO] stat 18CRep6_TTAGGC_L002_R1.concat.fmt.fa: no such file or directory
+##### job 924912
+
+
+### KAP106 Isoseq test sets
 
 #### qsub run_EGAPx_v0.2_HPC.sh inputs_KAP106_ZQ_ZQ_SRA.txt
 ##### job 917381
@@ -146,6 +158,7 @@ not formatted D obtusa WW data (oops)
 ##### job 920115
 not formatted WW data
 ERROR -> FileNotFoundError: [Errno 2] No such file or directory: '/afs/crc.nd.edu/group/hoth/eBrooks/DaphniaGenomics_MultiGenome/inputData/D_pulex/inputs_KAP106_ZQ_WW.yaml'
+##### job 924910
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_ZQ_WW.txt
 ##### job 917383 
@@ -156,13 +169,6 @@ samtools sort: failed to read header from "wrkarea/STAR.1180121497024erNMJ5/D.pu
 not formatted WW data
 ERROR?
 Plus 10 more processes waiting for tasks…
-
-#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulicaria/inputs_LK16_ZQ_ZQ_trimmed.txt
-##### job 917384
-ERROR ->   [ERRO] stat 18CRep6_TTAGGC_L002_R1.concat.fmt.fa: no such file or directory
-
-
-### Isoseq test sets
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_SRA.txt
 ##### job 917474
@@ -178,6 +184,9 @@ RUNNING
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_ZQ_SRA.txt
 ##### job 917477
 RUNNING
+
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_WW.txt
+##### job 
 
 
 ## EGAPx v0.1
