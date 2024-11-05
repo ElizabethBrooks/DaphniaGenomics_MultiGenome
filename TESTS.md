@@ -119,24 +119,24 @@ for i in /scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNA_assembly/iso
 ##### job 915611 -> the output directory was not tagged with "\_test"
 formatted WW data 
 no error, no output gff either 
-##### job 
+##### job 925031
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_ambigua/inputs_D_ambigua_2_ZQ_ZQ_WW.txt
-##### job 
+##### job 925032
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_obtusa/inputs_D_obtusa_2_ZQ_ZQ_trimmed.txt
-##### job 
+##### job 925033
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_obtusa/inputs_D_obtusa_2_ZQ_WW.txt
-##### job 
+##### job 925041
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_obtusa/inputs_D_obtusa_2_ZQ_ZQ_WW.txt
-##### job 
+##### job 925034
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulicaria/inputs_LK16_ZQ_ZQ_trimmed.txt
 ##### job 917384
 ERROR ->   [ERRO] stat 18CRep6_TTAGGC_L002_R1.concat.fmt.fa: no such file or directory
-##### job 
+##### job 925036
 
 
 ### KAP106 Isoseq test sets
@@ -146,20 +146,20 @@ ERROR ->   [ERRO] stat 18CRep6_TTAGGC_L002_R1.concat.fmt.fa: no such file or dir
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_WW.txt
 ##### job 917382 
 not formatted D obtusa WW data (oops)
-##### job 
+##### job 925025
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_WW.txt
-##### job 
+##### job 925026
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_SRA.txt
 ##### job 917475 -> non test data subset (oops)
 RUNNING
-##### job
+##### job 925027
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_SRA.txt
 ##### job 917476 -> non test data subset (oops)
 RUNNING
-##### job
+##### job 925028
 
 #### Protein tests
 
@@ -176,12 +176,12 @@ samtools sort: failed to read header from "wrkarea/STAR.1180121497024erNMJ5/D.pu
 not formatted WW data
 ERROR?
 Plus 10 more processes waiting for tasks…
-##### job
+##### job 925029
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_ZQ_SRA.txt
 ##### job 917477 -> non test data subset (oops)
 RUNNING
-##### job
+##### job 925030
 
 
 ## EGAPx v0.1

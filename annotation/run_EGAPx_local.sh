@@ -54,7 +54,8 @@ cd $outputsPath
 echo "Beginning analysis of $speciesName..."
 
 # run EGAPx to copy config files
-python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath
+#python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath
+python3 $softwarePath"/ui/egapx.py" $inputsPath -o $outputsPath
 
 # run EGAPx
 python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath
@@ -70,8 +71,8 @@ nextflow -C $outputsPath"/egapx_config/singularity.config",$softwarePath"/ui/ass
 	#-resume
 
 # clean up
-rm -r $outputsPath"/temp_datapath"
-rm -r $outputsPath"/work"
+#rm -r $outputsPath"/temp_datapath"
+#rm -r $outputsPath"/work"
 
 # status message
 echo "Analysis of $speciesName complete!"

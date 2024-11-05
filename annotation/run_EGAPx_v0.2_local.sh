@@ -1,12 +1,7 @@
 #!/bin/bash
-#$ -M ebrooks5@nd.edu
-#$ -m abe
-#$ -r n
-#$ -N run_EGAPx_v0.2_jobOutput
-#$ -pe smp 63
 
 # script to run the EGAPx v0.2 pipeline
-# usage: qsub run_EGAPx_v0.2_HPC.sh inputFile
+# usage: bash run_EGAPx_v0.2_local.sh inputFile
 
 # NOTE: the default /egapx/ui/assets/config/process_resources.config file specifies up to 31 cores (huge_Job)
 # our afs system has 263Gb RAM, 64 cores
