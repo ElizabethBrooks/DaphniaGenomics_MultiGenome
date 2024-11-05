@@ -1,2 +1,2 @@
-species: D_pulex_KAP106_ZQ_ZQ_WW_test
+species: D_pulex_KAP106_ZQ_ZQ_WW_tested
 inputs_EGAPx: test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_ZQ_WW.yaml

@@ -141,14 +141,31 @@ ERROR ->   [ERRO] stat 18CRep6_TTAGGC_L002_R1.concat.fmt.fa: no such file or dir
 
 ### KAP106 Isoseq test sets
 
-#### qsub run_EGAPx_v0.2_HPC.sh inputs_KAP106_ZQ_ZQ_SRA.txt
-##### job 917381 -> non test data subset (oops)
-RUNNING
+#### Primary tests
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_WW.txt
 ##### job 917382 
 not formatted D obtusa WW data (oops)
 ##### job 
+
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_WW.txt
+##### job 
+
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_SRA.txt
+##### job 917475 -> non test data subset (oops)
+RUNNING
+##### job
+
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_SRA.txt
+##### job 917476 -> non test data subset (oops)
+RUNNING
+##### job
+
+#### Protein tests
+
+#### qsub run_EGAPx_v0.2_HPC.sh inputs_KAP106_ZQ_ZQ_SRA.txt
+##### job 917381 -> full data set
+RUNNING
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_ZQ_WW.txt
 ##### job 917383 
@@ -159,21 +176,12 @@ samtools sort: failed to read header from "wrkarea/STAR.1180121497024erNMJ5/D.pu
 not formatted WW data
 ERROR?
 Plus 10 more processes waiting for tasks…
-
-#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_SRA.txt
-##### job 917475 -> non test data subset (oops)
-RUNNING
-
-#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_SRA.txt
-##### job 917476 -> non test data subset (oops)
-RUNNING
+##### job
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_ZQ_SRA.txt
 ##### job 917477 -> non test data subset (oops)
 RUNNING
-
-#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_WW.txt
-##### job 
+##### job
 
 
 ## EGAPx v0.1
