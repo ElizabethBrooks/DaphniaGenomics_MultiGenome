@@ -24,6 +24,7 @@
 # usage ex: bash generate_biotype_stats.sh /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.1/D_pulex_KAP4_NCBI/accept.gff
 # usage ex: bash generate_biotype_stats.sh /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.1/D_pulicaria_LK16_NCBI/accept.gff
 # usage ex: bash generate_biotype_stats.sh /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.2/SUCCEEDED/D_obtusa_FS6_ZQ_trimmed/accept.gff
+# usage ex: bash generate_biotype_stats.sh /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.2/ERROR/D_carinata_CSIRO_1_NCBI_SRA/accept.gff
 
 # retrieve inputs file
 inputsFile=$1

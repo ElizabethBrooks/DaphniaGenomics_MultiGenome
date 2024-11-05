@@ -59,7 +59,7 @@ SUCCEEDED
 
 #### qsub run_EGAPx_v0.2_HPC.sh inputs_SC_F1_1A_NCBI_SRA.txt
 ##### job 823853 
-RUNNING
+SUCCEEDED
 
 #### qsub run_EGAPx_v0.2_HPC.sh inputs_KAP106_NCBI_SRA.txt
 ##### job 821229 
@@ -72,7 +72,13 @@ SUCCEEDED
 
 #### qsub run_EGAPx_v0.2_HPC.sh inputs_CSIRO_1_NCBI_SRA.txt
 ##### job 854120 
-RUNNING
+ERROR? -> gff was produced but statistics were not output
+Waiting for file transfers to complete (1 files)
+Completed at: 31-Oct-2024 18:18:21
+Duration    : 13h 21s
+CPU hours   : 43'391.9 (98.1% cached)
+Succeeded   : 363
+Cached      : 427
 
 #### qsub run_EGAPx_v0.2_HPC.sh inputs_Xinb3_NCBI_SRA.txt
 ##### job 854121 
@@ -91,7 +97,7 @@ SUCCEEDED
 
 #### qsub run_EGAPx_v0.2_HPC.sh inputs_FS6_NCBI_trimmed.txt
 ##### job 892539 
-RUNNING
+SUCCEEDED
 
 #### qsub run_EGAPx_v0.2_HPC.sh inputs_FS6_ZQ_trimmed.txt 
 inputs_D_obtusa_2_ZQ_trimmed.txt
@@ -115,25 +121,31 @@ formatted WW data
 no error, no output gff either 
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_ambigua/inputs_D_ambigua_2_ZQ_ZQ_WW.txt
-##### job 
+##### job 920111
+ERROR -> FileNotFoundError: [Errno 2] No such file or directory: '/afs/crc.nd.edu/group/hoth/eBrooks/DaphniaGenomics_MultiGenome/inputData/D_ambigua/inputs_D_ambigua_2_ZQ_ZQ_WW.yaml'
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_obtusa/inputs_D_obtusa_2_ZQ_ZQ_trimmed.txt
-##### job 
+##### job 920112
+ERROR -> FileNotFoundError: [Errno 2] No such file or directory: '/afs/crc.nd.edu/group/hoth/eBrooks/DaphniaGenomics_MultiGenome/inputData/D_obtusa/inputs_D_obtusa_2_ZQ_ZQ_trimmed.yaml'
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_obtusa/inputs_D_obtusa_2_ZQ_WW.txt
-##### job 
+##### job 920113
+ERROR -> FileNotFoundError: [Errno 2] No such file or directory: '/afs/crc.nd.edu/group/hoth/eBrooks/DaphniaGenomics_MultiGenome/inputData/D_obtusa/inputs_D_obtusa_2_ZQ_WW.yaml'
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_obtusa/inputs_D_obtusa_2_ZQ_ZQ_WW.txt
-##### job 
+##### job 920114
+ERROR -> FileNotFoundError: [Errno 2] No such file or directory: '/afs/crc.nd.edu/group/hoth/eBrooks/DaphniaGenomics_MultiGenome/inputData/D_obtusa/inputs_D_obtusa_2_ZQ_ZQ_WW.yaml'
 
 #### qsub run_EGAPx_v0.2_HPC.sh inputs_KAP106_ZQ_ZQ_SRA.txt
 ##### job 917381
+RUNNING
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_WW.txt
 ##### job 917382 
 not formatted D obtusa WW data (oops)
-##### job 
+##### job 920115
 not formatted WW data
+ERROR -> FileNotFoundError: [Errno 2] No such file or directory: '/afs/crc.nd.edu/group/hoth/eBrooks/DaphniaGenomics_MultiGenome/inputData/D_pulex/inputs_KAP106_ZQ_WW.yaml'
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_ZQ_WW.txt
 ##### job 917383 
@@ -147,7 +159,7 @@ Plus 10 more processes waiting for tasks…
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulicaria/inputs_LK16_ZQ_ZQ_trimmed.txt
 ##### job 917384
-ERROR
+ERROR ->   [ERRO] stat 18CRep6_TTAGGC_L002_R1.concat.fmt.fa: no such file or directory
 
 
 ### Isoseq test sets
@@ -157,12 +169,15 @@ ERROR
 QDEL
 wrote to /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.2/D_pulex_KAP106_NCBI_SRA (oops)
 ##### job 917475
+RUNNING
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_SRA.txt
 ##### job 917476
+RUNNING
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_ZQ_SRA.txt
 ##### job 917477
+RUNNING
 
 
 ## EGAPx v0.1
