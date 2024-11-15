@@ -1,6 +1,7 @@
-genome: /afs/crc.nd.edu/group/pfrenderlab/mendel/ebrooks/daphnia_pulex/KAP106/ncbi_dataset_KAP106/ncbi_dataset/data/GCA_028752575.1/GCA_028752575.1_ASM2875257v1_genomic.fna
+genome: /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/D.pulex_KAP106_annotation/D.pulex_KAP106_NMP_1.3.masked.fasta
 taxid: 6669
 reads:
+  - /scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNA_assembly/isoseq/KAP106_coding_transcripts_isoseq.fasta
   - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP4_KAP106/SRP351713/SRR17282827_1.fasta
   - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP4_KAP106/SRP102491/SRR5378527_1.fasta
   - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP4_KAP106/SRP102491/SRR5378527_2.fasta
@@ -250,4 +251,3 @@ reads:
   - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP4_KAP106/SRP300422/SRR13358876_2.fasta
   - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP4_KAP106/SRP351713/SRR17311954_1.fasta
   - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP4_KAP106/SRP351713/SRR17311954_2.fasta
-  

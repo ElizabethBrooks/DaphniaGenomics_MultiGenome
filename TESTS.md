@@ -4,6 +4,106 @@
 ## EGAPx v0.2
 
 
+### ZQ & WW test sets
+
+#### WW Isoseq file formatting
+```
+for i in /scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNA_assembly/isoseq/*.fasta; do echo $i; newName=$(echo $i | sed "s/\.fasta/.fmt.fasta/g" | sed "s/Daphnia\_RNA\_assembly\/isoseq/Daphnia_RNA_assembly_formatted/g"); cat $i | cut -d"|" -f1 > $newName; done
+```
+
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_ambigua/inputs_D_ambigua_2_ZQ_WW.txt 
+##### job 915611 -> the output directory was not tagged with "\_test"
+formatted WW data 
+no error, no output gff either 
+##### job 925031
+ERROR -> Plus 42 more processes waiting for tasks…
+##### job
+
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_ambigua/inputs_D_ambigua_2_ZQ_ZQ_WW.txt
+##### job 925032
+ERROR -> Plus 42 more processes waiting for tasks…
+##### job
+
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_obtusa/inputs_D_obtusa_2_ZQ_ZQ_trimmed.txt
+##### job 925033
+SUCCEEDED
+##### job
+
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_obtusa/inputs_D_obtusa_2_ZQ_WW.txt
+##### job 925041
+ERROR -> Plus 42 more processes waiting for tasks…
+##### job
+
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_obtusa/inputs_D_obtusa_2_ZQ_ZQ_WW.txt
+##### job 925034
+ERROR -> Plus 42 more processes waiting for tasks…
+##### job
+
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulicaria/inputs_LK16_ZQ_ZQ_trimmed.txt
+##### job 917384
+ERROR ->   [ERRO] stat 18CRep6_TTAGGC_L002_R1.concat.fmt.fa: no such file or directory
+##### job 925036
+ERROR -> yaml.scanner.ScannerError: sequence entries are not allowed here
+##### job
+
+
+### KAP106 Isoseq test sets
+
+#### Primary tests
+
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_WW.txt
+##### job 917382 
+not formatted D obtusa WW data (oops)
+##### job 925025
+ERROR -> Plus 10 more processes waiting for tasks…
+##### job
+
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_WW.txt
+##### job 925026
+ERROR -> Plus 10 more processes waiting for tasks…
+##### job
+
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_SRA.txt
+##### job 917475 -> non test data subset (oops)
+RUNNING
+##### job 925027
+ERROR -> ERROR ~ Error executing process > 'egapx:rnaseq_short_plane:rnaseq_collapse:generate_jobs'
+##### job
+
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_SRA.txt
+##### job 917476 -> non test data subset (oops)
+RUNNING
+##### job 925028
+ERROR -> ERROR ~ Error executing process > 'egapx:rnaseq_short_plane:rnaseq_collapse:generate_jobs'
+##### job
+
+#### Protein tests
+
+#### qsub run_EGAPx_v0.2_HPC.sh inputs_KAP106_ZQ_ZQ_SRA.txt
+##### job 917381 -> full data set
+RUNNING
+##### job
+
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_ZQ_WW.txt
+##### job 917383 
+ERROR
+not formatted D obtusa WW data (oops) 
+samtools sort: failed to read header from "wrkarea/STAR.1180121497024erNMJ5/D.pulex_KAP106_NMP_1.3.masked-D.obtusa_isoseq_coding/D.pulex_KAP106_NMP_1.3.masked-D.obtusa_isoseq_coding-Aligned.out.bam"
+##### job 917396
+not formatted WW data
+ERROR -> Plus 10 more processes waiting for tasks…
+##### job 925029
+ERROR -> Plus 10 more processes waiting for tasks…
+##### job
+
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_ZQ_SRA.txt
+##### job 917477 -> non test data subset (oops)
+RUNNING
+##### job 925030
+ERROR -> ERROR ~ Error executing process > 'egapx:rnaseq_short_plane:rnaseq_collapse:generate_jobs'
+##### job
+
+
 ### NCBI test set
 
 #### qsub run_EGAPx_v0.2_HPC.sh inputs_KAP4_NCBI.txt
@@ -106,82 +206,6 @@ ERROR
 typo in yaml file
 ##### job 915292 
 SUCCEEDED
-
-
-### ZQ & WW test sets
-
-#### WW Isoseq file formatting
-```
-for i in /scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNA_assembly/isoseq/*.fasta; do echo $i; newName=$(echo $i | sed "s/\.fasta/.fmt.fasta/g" | sed "s/Daphnia\_RNA\_assembly\/isoseq/Daphnia_RNA_assembly_formatted/g"); cat $i | cut -d"|" -f1 > $newName; done
-```
-
-#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_ambigua/inputs_D_ambigua_2_ZQ_WW.txt 
-##### job 915611 -> the output directory was not tagged with "\_test"
-formatted WW data 
-no error, no output gff either 
-##### job 925031
-
-#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_ambigua/inputs_D_ambigua_2_ZQ_ZQ_WW.txt
-##### job 925032
-
-#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_obtusa/inputs_D_obtusa_2_ZQ_ZQ_trimmed.txt
-##### job 925033
-
-#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_obtusa/inputs_D_obtusa_2_ZQ_WW.txt
-##### job 925041
-
-#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_obtusa/inputs_D_obtusa_2_ZQ_ZQ_WW.txt
-##### job 925034
-
-#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulicaria/inputs_LK16_ZQ_ZQ_trimmed.txt
-##### job 917384
-ERROR ->   [ERRO] stat 18CRep6_TTAGGC_L002_R1.concat.fmt.fa: no such file or directory
-##### job 925036
-
-
-### KAP106 Isoseq test sets
-
-#### Primary tests
-
-#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_WW.txt
-##### job 917382 
-not formatted D obtusa WW data (oops)
-##### job 925025
-
-#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_WW.txt
-##### job 925026
-
-#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_SRA.txt
-##### job 917475 -> non test data subset (oops)
-RUNNING
-##### job 925027
-
-#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_SRA.txt
-##### job 917476 -> non test data subset (oops)
-RUNNING
-##### job 925028
-
-#### Protein tests
-
-#### qsub run_EGAPx_v0.2_HPC.sh inputs_KAP106_ZQ_ZQ_SRA.txt
-##### job 917381 -> full data set
-RUNNING
-
-#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_ZQ_WW.txt
-##### job 917383 
-ERROR
-not formatted D obtusa WW data (oops) 
-samtools sort: failed to read header from "wrkarea/STAR.1180121497024erNMJ5/D.pulex_KAP106_NMP_1.3.masked-D.obtusa_isoseq_coding/D.pulex_KAP106_NMP_1.3.masked-D.obtusa_isoseq_coding-Aligned.out.bam"
-##### job 917396
-not formatted WW data
-ERROR?
-Plus 10 more processes waiting for tasks…
-##### job 925029
-
-#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_ZQ_SRA.txt
-##### job 917477 -> non test data subset (oops)
-RUNNING
-##### job 925030
 
 
 ## EGAPx v0.1
