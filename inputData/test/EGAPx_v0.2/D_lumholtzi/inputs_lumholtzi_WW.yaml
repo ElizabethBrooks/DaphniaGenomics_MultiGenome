@@ -1,0 +1,6 @@
+genome: /scratch365/ebrooks5/multi_genome_project/data/D_lumholtzi_WW/D.lumholtzi_format.fasta
+taxid: 42856
+reads:
+  - /scratch365/ebrooks5/multi_genome_project/data/D_lumholtzi_WW/D.lumholtzi_isoseq_coding.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/D_lumholtzi_WW/lumholtzi.R1_001.fastq.gz
+  - /scratch365/ebrooks5/multi_genome_project/data/D_lumholtzi_WW/lumholtzi.R2_001.fastq.gz

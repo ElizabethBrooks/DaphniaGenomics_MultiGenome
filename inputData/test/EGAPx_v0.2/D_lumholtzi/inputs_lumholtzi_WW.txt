@@ -1,0 +1,2 @@
+species: D_lumholtzi_WW
+inputs_EGAPx: test/EGAPx_v0.2/D_lumholtzi/inputs_lumholtzi_WW.yaml
