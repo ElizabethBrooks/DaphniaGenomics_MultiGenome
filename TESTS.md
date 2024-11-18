@@ -6,9 +6,6 @@
 
 ### NCBI, ZQ, & WW tests
 
-#### qsub run_EGAPx_v0.2_HPC.sh inputs_lumholtzi_WW.txt
-##### job
-
 #### qsub run_EGAPx_v0.2_HPC.sh inputs_KAP106_NCBI_SRA.txt 
 ##### job 954903
 
@@ -31,6 +28,12 @@
 ### KAP106 Isoseq test sets
 
 #### Primary tests
+
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_lumholtzi/inputs_lumholtzi_WW_RNA.txt
+##### job 
+
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_lumholtzi/inputs_lumholtzi_WW.txt
+##### job 956395
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_WW.txt
 ##### job 917382 
