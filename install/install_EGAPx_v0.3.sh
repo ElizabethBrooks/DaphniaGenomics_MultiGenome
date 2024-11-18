@@ -23,4 +23,4 @@ cd egapx
 #source $softwarePath"/"EGAPx_env/bin/activate
 
 # install pyYAML
-pip install -r ui/requirements.txt
+pip install -r requirements.txt
