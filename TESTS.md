@@ -1,28 +1,32 @@
 # EGAPx Tests
 
+## EGAPx v0.3
+
+
+
 
 ## EGAPx v0.2
 
 
 ### NCBI, ZQ, & WW tests
 
-#### qsub run_EGAPx_v0.2_HPC.sh inputs_KAP106_NCBI_SRA.txt 
-##### job 954903
+#### qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP106_NCBI_SRA.txt 
+##### job 
 
-#### qsub run_EGAPx_v0.2_HPC.sh inputs_KAP106_NCBI_SRA_WW.txt 
-##### job 954904
+#### qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP106_NCBI_SRA_WW.txt 
+##### job 
 
-#### qsub run_EGAPx_v0.2_HPC.sh inputs_KAP106_ZQ_SRA.txt 
-##### job 954905
+#### qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP106_ZQ_SRA.txt 
+##### job 
 
-#### qsub run_EGAPx_v0.2_HPC.sh inputs_KAP106_ZQ_SRA_WW.txt 
-##### job 954906
+#### qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP106_ZQ_SRA_WW.txt 
+##### job 
 
-#### qsub run_EGAPx_v0.2_HPC.sh inputs_KAP4_NCBI_SRA.txt 
-##### job 954907
+#### qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP4_NCBI_SRA.txt 
+##### job 
 
-#### qsub run_EGAPx_v0.2_HPC.sh inputs_KAP4_NCBI_SRA_WW.txt 
-##### job 954908
+#### qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP4_NCBI_SRA_WW.txt 
+##### job 
 
 
 ### KAP106 Isoseq test sets
@@ -31,9 +35,11 @@
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_lumholtzi/inputs_lumholtzi_WW_RNA.txt
 ##### job 977147
+RUNNING
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_lumholtzi/inputs_lumholtzi_WW.txt
 ##### job 956395
+ERROR ~ Error executing process > 'egapx:rnaseq_short_plane:star:run_star (1)'
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_WW.txt
 ##### job 917382 
@@ -41,11 +47,23 @@ not formatted D obtusa WW data (oops)
 ##### job 925025
 ERROR -> Plus 10 more processes waiting for tasks…
 ##### job 954911
+SUCCEEDED
+CDS          127742
+exon         138430
+gene         17947
+mRNA         17642
+transcript   2484
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_WW.txt
 ##### job 925026
 ERROR -> Plus 10 more processes waiting for tasks…
 ##### job 954912
+SUCCEEDED
+CDS          127742
+exon         138430
+gene         17947
+mRNA         17642
+transcript   2484
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_SRA.txt
 ##### job 917475 -> non test data subset (oops)
@@ -53,6 +71,12 @@ RUNNING
 ##### job 925027
 ERROR -> ERROR ~ Error executing process > 'egapx:rnaseq_short_plane:rnaseq_collapse:generate_jobs'
 ##### job 954913
+SUCCEEDED
+CDS          127742
+exon         138430
+gene         17947
+mRNA         17642
+transcript   2484
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_SRA.txt
 ##### job 917476 -> non test data subset (oops)
@@ -60,6 +84,12 @@ RUNNING
 ##### job 925028
 ERROR -> ERROR ~ Error executing process > 'egapx:rnaseq_short_plane:rnaseq_collapse:generate_jobs'
 ##### job 954914
+SUCCEEDED
+CDS          127742
+exon         138430
+gene         17947
+mRNA         17642
+transcript   2484
 
 #### Protein tests
 
@@ -67,6 +97,7 @@ ERROR -> ERROR ~ Error executing process > 'egapx:rnaseq_short_plane:rnaseq_coll
 ##### job 917381 -> full data set
 RUNNING
 ##### job 954915
+The /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.2/tested_november2024/ directory already exsists... please remove before proceeding.
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_ZQ_WW.txt
 ##### job 917383 
@@ -79,6 +110,12 @@ ERROR -> Plus 10 more processes waiting for tasks…
 ##### job 925029
 ERROR -> Plus 10 more processes waiting for tasks…
 ##### job 954916
+SUCCEEDED
+CDS          137123
+exon         147254
+gene         20378
+mRNA         19860
+transcript   2563
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_ZQ_SRA.txt
 ##### job 917477 -> non test data subset (oops)
@@ -86,6 +123,12 @@ RUNNING
 ##### job 925030
 ERROR -> ERROR ~ Error executing process > 'egapx:rnaseq_short_plane:rnaseq_collapse:generate_jobs'
 ##### job 954917
+SUCCEEDED
+CDS          137123
+exon         147254
+gene         20378
+mRNA         19860
+transcript   2563
 
 
 ### ZQ & WW test sets
