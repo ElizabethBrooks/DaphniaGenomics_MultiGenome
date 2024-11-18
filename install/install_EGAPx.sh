@@ -6,6 +6,7 @@
 
 # retrieve software path
 softwarePath=$(grep "software_EGAPx:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/software_EGAPx://g")
+softwarePath=$(dirname $softwarePath)
 
 # move to software path
 cd $softwarePath
