@@ -5,7 +5,7 @@
 # usage: bash install_EGAPx_v0.3.sh
 
 # retrieve software path
-softwarePath=$(grep "software_EGAPx_v0.3:" ../"inputData/inputs_annotations.txt.txt" | tr -d " " | sed "s/software_EGAPx_v0.3://g")
+softwarePath=$(grep "software_EGAPx_v0.3:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/software_EGAPx_v0.3://g")
 
 # move to software path
 cd $softwarePath
