@@ -1,7 +1,13 @@
 #!/bin/bash
+#$ -M ebrooks5@nd.edu
+#$ -m abe
+#$ -r n
+#$ -N run_EGAPx_v0.3_jobOutput
+#$ -pe smp 63
+#$ -q largemem
 
-# script to run the EGAPx v0.2 pipeline
-# usage: bash run_EGAPx_v0.2_local.sh inputFile
+# script to run the EGAPx v0.3 pipeline
+# usage: qsub run_EGAPx_v0.3_HPC.sh inputFile
 
 # NOTE: the default /egapx/ui/assets/config/process_resources.config file specifies up to 31 cores (huge_Job)
 # our afs system has 263Gb RAM, 64 cores
@@ -23,10 +29,10 @@ repoDir=$(dirname $PWD)
 inputsPath=$repoDir"/inputData/"$inputsPath
 
 # retrieve software path
-softwarePath=$(grep "software_EGAPx_v0.2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/software_EGAPx_v0.2://g")
+softwarePath=$(grep "software_EGAPx_v0.3:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/software_EGAPx_v0.3://g")
 
 # retrieve outputs path
-outputsPath=$(grep "outputs_EGAPx_v0.2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.2://g")
+outputsPath=$(grep "outputs_EGAPx_v0.3:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3://g")
 
 # setup outputs directory
 outputsPath=$outputsPath"/"$speciesName
