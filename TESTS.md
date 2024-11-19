@@ -8,15 +8,57 @@
 
 #### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.2/D_lumholtzi/inputs_lumholtzi_WW_RNA.txt
 ##### job 980822
-RUNNING
+ERROR
+-> error [nextflow.exception.ProcessFailedException]: Process `egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype` terminated with an error exit status (3)
+-> ERROR ~ Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
+-> Error: (106.16) Application's execution failed (CException::eUnknown) Too many protein hits to proks (GP-23178)
 
 #### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.2/D_lumholtzi/inputs_lumholtzi_WW.txt
 ##### job 980823
-RUNNING
+ERROR
+-> error [nextflow.exception.ProcessFailedException]: Process `egapx:rnaseq_short_plane:star:run_star (1)` terminated with an error exit status (3)
+-> [99/772862] NOTE: Process `egapx:rnaseq_short_plane:star:run_star (1)` terminated with an error exit status (3) -- Execution is retried (3)
+-> [E::sam_parse1] CIGAR and query sequence are of different length
+  [W::sam_read1_sam] Parse error at line 53
+  samtools view: error reading file "-"
+  Traceback (most recent call last):
+    File "/img/gp/bin/star-with-filter", line 32, in <module>
+      subprocess.run(main_cmd, shell=True, check=True)
+    File "/usr/lib/python3.8/subprocess.py", line 516, in run
+      raise CalledProcessError(retcode, process.args,
+  subprocess.CalledProcessError: Command 'set -euo pipefail; /img/gp/bin//../third-party/STAR/bin/Linux_x86_64/STAR --alignSJoverhangMin 8 --outFilterMultimapNmax 200 --outFilterMismatchNmax 50 --runThreadN 31 --genomeLoad NoSharedMemory --outSAMtype SAM --outSAMattributes NH HI AS nM NM MD jM jI XS MC --outSAMprimaryFlag AllBestScore --outFilterMultimapScoreRange 50 --seedSearchStartLmax 15 --limitOutSAMoneReadBytes 1000000 --outSJtype None --genomeDir D.lumholtzi_format.index --outFileNamePrefix wrkarea/STAR.116017757157768zK0EW/D.lumholtzi_format-D.lumholtzi_isoseq_coding/D.lumholtzi_format-D.lumholtzi_isoseq_coding- --outStd SAM --readFilesIn ./D.lumholtzi_isoseq_coding.fasta --alignIntronMax 200000 | /img/gp/bin//compact_sam -max_intron 200000 -min_output_coverage 0.66 -min_query_len 21 -min_output_identity 0.9 | /img/gp/bin//samtools view -b' returned non-zero exit status 1.
+
+#### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_WW.txt
+##### job 981468
+
+#### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_WW.fmt.txt
+##### job
+
+#### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_WW.txt
+##### job 981469
+
+#### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_WW.fmt.txt
+##### job
+
+#### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_SRA.txt
+##### job 981470
+
+#### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_SRA.txt
+##### job 981471
+
+#### Protein tests
+
+#### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_ZQ_WW.txt
+##### job 981472
+
+#### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_ZQ_WW.fmt.txt
+##### job
+
+#### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_ZQ_SRA.txt
+##### job 981473
 
 
 ## EGAPx v0.2
-
 
 ### NCBI, ZQ, & WW tests
 
@@ -55,7 +97,17 @@ RUNNING
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_lumholtzi/inputs_lumholtzi_WW.txt
 ##### job 956395
-ERROR ~ Error executing process > 'egapx:rnaseq_short_plane:star:run_star (1)'
+ERROR 
+-> ERROR ~ Error executing process > 'egapx:rnaseq_short_plane:star:run_star (1)'
+-> [E::sam_parse1] CIGAR and query sequence are of different length
+  [W::sam_read1_sam] Parse error at line 53
+  samtools view: error reading file "-"
+  Traceback (most recent call last):
+    File "/img/gp/bin/star-with-filter", line 32, in <module>
+      subprocess.run(main_cmd, shell=True, check=True)
+    File "/usr/lib/python3.8/subprocess.py", line 516, in run
+      raise CalledProcessError(retcode, process.args,
+  subprocess.CalledProcessError: Command 'set -euo pipefail; /img/gp/bin//../third-party/STAR/bin/Linux_x86_64/STAR --alignSJoverhangMin 8 --outFilterMultimapNmax 200 --outFilterMismatchNmax 50 --runThreadN 16 --genomeLoad NoSharedMemory --outSAMtype SAM --outSAMattributes NH HI AS nM NM MD jM jI XS MC --outSAMprimaryFlag AllBestScore --outFilterMultimapScoreRange 50 --seedSearchStartLmax 15 --limitOutSAMoneReadBytes 1000000 --outSJtype None --genomeDir D.lumholtzi_format.index --outFileNamePrefix wrkarea/STAR.1210575948224L4T8cm/D.lumholtzi_format-D.lumholtzi_isoseq_coding/D.lumholtzi_format-D.lumholtzi_isoseq_coding- --outStd SAM --readFilesIn ./D.lumholtzi_isoseq_coding.fasta --alignIntronMax 200000 | /img/gp/bin//compact_sam -max_intron 200000 -min_output_coverage 0.66 -min_query_len 21 -min_output_identity 0.9 | /img/gp/bin//samtools view -b' returned non-zero exit status 1.
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_WW.txt
 ##### job 917382 
