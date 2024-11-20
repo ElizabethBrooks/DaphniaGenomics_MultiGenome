@@ -5,7 +5,7 @@
 ### Software test
 
 #### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.1/inputs_D_farinae.txt
-##### job 982928
+##### job 982931
 
 
 ### KAP106 Isoseq test sets
