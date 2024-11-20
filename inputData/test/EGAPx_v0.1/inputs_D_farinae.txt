@@ -1,2 +1,2 @@
 species: D_farinae_small
-inputs_EGAPx: input_D_farinae_small.yaml
+inputs_EGAPx: test/EGAPx_v0.1/input_D_farinae_small.yaml
