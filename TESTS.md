@@ -1,13 +1,35 @@
 # EGAPx Tests
 
-## EGAPx v0.3
+## EGAPx v0.3.1
+
+### KAP106 NCBI, ZQ, & WW tests
+
+#### qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP106_NCBI_SRA.txt 
+##### job 
+
+#### qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP106_NCBI_SRA_WW.txt 
+##### job 
+
+#### qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP106_ZQ_SRA.txt 
+##### job 
+
+#### qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP106_ZQ_SRA_WW.txt 
+##### job 
+
+#### qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP4_NCBI_SRA.txt 
+##### job 
+
+#### qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP4_NCBI_SRA_WW.txt 
+##### job 
 
 ### Software test
 
-#### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_SRA_RNA.txt
-##### job
+#### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_SRA_RNA.txt
+##### job 983971
+SUCCEEDED
+Nov 21 02:07:27 ..... finished successfully
 
-#### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.1/inputs_D_farinae.txt
+#### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.1/inputs_D_farinae.txt
 ##### job 982938
 SUCCEEDED
 Completed at: 20-Nov-2024 02:23:00
@@ -20,7 +42,7 @@ Cached      : 83
 
 #### Primary tests
 
-#### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.2/D_lumholtzi/inputs_lumholtzi_WW_RNA.txt
+#### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.2/D_lumholtzi/inputs_lumholtzi_WW_RNA.txt
 ##### job 980822 -> run0
 ERROR -> https://github.com/ncbi/egapx/issues/52
 -> error [nextflow.exception.ProcessFailedException]: Process `egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype` terminated with an error exit status (3)
@@ -30,7 +52,7 @@ ERROR -> https://github.com/ncbi/egapx/issues/52
 ERROR -> https://github.com/ncbi/egapx/issues/52
 -> Error: (106.16) Application's execution failed (CException::eUnknown) Too many protein hits to proks (GP-23178)
 
-#### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.2/D_lumholtzi/inputs_lumholtzi_WW.txt
+#### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.2/D_lumholtzi/inputs_lumholtzi_WW.txt
 ##### job 980823
 ERROR
 -> error [nextflow.exception.ProcessFailedException]: Process `egapx:rnaseq_short_plane:star:run_star (1)` terminated with an error exit status (3)
@@ -45,7 +67,7 @@ ERROR
       raise CalledProcessError(retcode, process.args,
   subprocess.CalledProcessError: Command 'set -euo pipefail; /img/gp/bin//../third-party/STAR/bin/Linux_x86_64/STAR --alignSJoverhangMin 8 --outFilterMultimapNmax 200 --outFilterMismatchNmax 50 --runThreadN 31 --genomeLoad NoSharedMemory --outSAMtype SAM --outSAMattributes NH HI AS nM NM MD jM jI XS MC --outSAMprimaryFlag AllBestScore --outFilterMultimapScoreRange 50 --seedSearchStartLmax 15 --limitOutSAMoneReadBytes 1000000 --outSJtype None --genomeDir D.lumholtzi_format.index --outFileNamePrefix wrkarea/STAR.116017757157768zK0EW/D.lumholtzi_format-D.lumholtzi_isoseq_coding/D.lumholtzi_format-D.lumholtzi_isoseq_coding- --outStd SAM --readFilesIn ./D.lumholtzi_isoseq_coding.fasta --alignIntronMax 200000 | /img/gp/bin//compact_sam -max_intron 200000 -min_output_coverage 0.66 -min_query_len 21 -min_output_identity 0.9 | /img/gp/bin//samtools view -b' returned non-zero exit status 1.
 
-#### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_WW.txt
+#### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_WW.txt
 ##### job 981468
 ERROR
 -> [W::hts_set_opt] Cannot change block size for this format
@@ -53,31 +75,31 @@ ERROR
 -> error [nextflow.exception.ProcessFailedException]: Process `egapx:rnaseq_short_plane:star:run_star (2)` terminated with an error exit status (3)
 Nov-19 00:58:57.618 [TaskFinalizer-5] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:rnaseq_short_plane:star:run_star (2)'
 
-#### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_WW.fmt.txt
+#### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_WW.fmt.txt
 ##### job 981479
 ERROR
 -> [W::hts_set_opt] Cannot change block size for this format
   samtools sort: failed to read header from "wrkarea/STAR.11202277877184Pmfy1D/D.pulex_KAP106_NMP_1.3.masked-KAP106_coding_transcripts_isoseq.fmt/D.pulex_KAP106_NMP_1.3.masked-KAP106_coding_transcripts_isoseq.fmt-Aligned.out.bam"
 
-#### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_WW.txt
+#### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_WW.txt
 ##### job 981469
 ERROR
 -> [W::hts_set_opt] Cannot change block size for this format
   samtools sort: failed to read header from "wrkarea/STAR.11702967365056iMpBF3/GCA_028752575.1_ASM2875257v1_genomic-KAP106_coding_transcripts_isoseq/GCA_028752575.1_ASM2875257v1_genomic-KAP106_coding_transcripts_isoseq-Aligned.out.bam"
 
-#### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_WW.fmt.txt
+#### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_WW.fmt.txt
 ##### job 981480
 ERROR
 -> [W::hts_set_opt] Cannot change block size for this format
   samtools sort: failed to read header from "wrkarea/STAR.116057435584ejT67Y/GCA_028752575.1_ASM2875257v1_genomic-KAP106_coding_transcripts_isoseq.fmt/GCA_028752575.1_ASM2875257v1_genomic-KAP106_coding_transcripts_isoseq.fmt-Aligned.out.bam"
 
-#### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_SRA.txt
+#### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_SRA.txt
 ##### job 981470
 ERROR
 -> [W::hts_set_opt] Cannot change block size for this format
   samtools sort: failed to read header from "wrkarea/STAR.22201597486528plBP4W/GCA_028752575.1_ASM2875257v1_genomic-SRR17282827/GCA_028752575.1_ASM2875257v1_genomic-SRR17282827-Aligned.out.bam"
 
-#### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_SRA.txt
+#### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_SRA.txt
 ##### job 981471
 ERROR
 -> [W::hts_set_opt] Cannot change block size for this format
@@ -85,19 +107,19 @@ ERROR
 
 #### Protein tests
 
-#### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_ZQ_WW.txt
+#### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_ZQ_WW.txt
 ##### job 981472
 ERROR
 -> [W::hts_set_opt] Cannot change block size for this format
   samtools sort: failed to read header from "wrkarea/STAR.11403162346944Z6V3qQ/D.pulex_KAP106_NMP_1.3.masked-KAP106_coding_transcripts_isoseq/D.pulex_KAP106_NMP_1.3.masked-KAP106_coding_transcripts_isoseq-Aligned.out.bam"
 
-#### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_ZQ_WW.fmt.txt
+#### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_ZQ_WW.fmt.txt
 ##### job 981481
 ERROR
 -> [W::hts_set_opt] Cannot change block size for this format
   samtools sort: failed to read header from "wrkarea/STAR.11603239368128M97yJZ/D.pulex_KAP106_NMP_1.3.masked-KAP106_coding_transcripts_isoseq.fmt/D.pulex_KAP106_NMP_1.3.masked-KAP106_coding_transcripts_isoseq.fmt-Aligned.out.bam"
 
-#### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_ZQ_SRA.txt
+#### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_ZQ_ZQ_SRA.txt
 ##### job 981473
 ERROR
 -> [W::hts_set_opt] Cannot change block size for this format
@@ -106,7 +128,7 @@ ERROR
 
 ## EGAPx v0.2
 
-### NCBI, ZQ, & WW tests
+### KAP106 NCBI, ZQ, & WW tests
 
 #### qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP106_NCBI_SRA.txt 
 ##### job 980812

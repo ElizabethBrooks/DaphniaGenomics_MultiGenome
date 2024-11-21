@@ -2,7 +2,7 @@
 
 ## Annotation Status
 
-The [EGAPx\_v0.2\_daphnia\_annotation\_log](https://docs.google.com/spreadsheets/d/10nzxceWsXgf_4hcc5mAFBi7NVG6NLLwm38dv_k6yeUM/edit?usp=sharing) spreadsheet shows the annotation information and status for each Daphnia species in our analysis.
+The [EGAPx\_daphnia\_annotation\_log](https://docs.google.com/spreadsheets/d/10nzxceWsXgf_4hcc5mAFBi7NVG6NLLwm38dv_k6yeUM/edit?usp=sharing) spreadsheet shows the annotation information and status for each Daphnia species in our analysis.
 
 The annotations for Daphnia pulex, pulicaria, and magna have been completed using EGAPx and added to the [Daphnia\_Genome\_Annotations](https://notredame.app.box.com/folder/282385967278) Box folder.
 
