@@ -4,9 +4,17 @@
 
 ### Software test
 
-#### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.1/inputs_D_farinae.txt
-##### job 982931
+#### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_SRA_RNA.txt
+##### job
 
+#### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.1/inputs_D_farinae.txt
+##### job 982938
+SUCCEEDED
+Completed at: 20-Nov-2024 02:23:00
+Duration    : 1m 47s
+CPU hours   : 4.8 (100% cached)
+Succeeded   : 0
+Cached      : 83
 
 ### KAP106 Isoseq test sets
 
@@ -14,11 +22,13 @@
 
 #### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.2/D_lumholtzi/inputs_lumholtzi_WW_RNA.txt
 ##### job 980822 -> run0
-ERROR
+ERROR -> https://github.com/ncbi/egapx/issues/52
 -> error [nextflow.exception.ProcessFailedException]: Process `egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype` terminated with an error exit status (3)
 -> ERROR ~ Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
 -> Error: (106.16) Application's execution failed (CException::eUnknown) Too many protein hits to proks (GP-23178)
 ##### job 982926
+ERROR -> https://github.com/ncbi/egapx/issues/52
+-> Error: (106.16) Application's execution failed (CException::eUnknown) Too many protein hits to proks (GP-23178)
 
 #### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.2/D_lumholtzi/inputs_lumholtzi_WW.txt
 ##### job 980823
@@ -100,7 +110,7 @@ ERROR
 
 #### qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP106_NCBI_SRA.txt 
 ##### job 980812
-QUEUED
+RUNNING
 
 #### qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP106_NCBI_SRA_WW.txt 
 ##### job 980814
