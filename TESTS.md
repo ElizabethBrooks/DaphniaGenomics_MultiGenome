@@ -2,25 +2,47 @@
 
 ## EGAPx v0.3.1
 
+## Small tests
+
+#### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.3/D_pulex/inputs_KAP4_NCBI_SRA_small.txt
+##### job 
+
+
 ### KAP106 NCBI, ZQ, & WW tests
 
-#### qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP106_NCBI_SRA.txt 
-##### job 
+TO-DO: Attempt to resume runs
 
-#### qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP106_NCBI_SRA_WW.txt 
-##### job 
+#### qsub run_EGAPx_v0.3.1_HPC.sh D_pulex/inputs_KAP106_NCBI_SRA.txt 
+##### job 984000
+ERROR -> https://github.com/ncbi/egapx/issues/57
+Nov-23 22:20:36.567 [TaskFinalizer-5] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:rnaseq_short_plane:star:run_star (1)'
 
-#### qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP106_ZQ_SRA.txt 
-##### job 
+#### qsub run_EGAPx_v0.3.1_HPC.sh D_pulex/inputs_KAP106_NCBI_SRA_WW.txt 
+##### job 984001
+ERROR
+Nov-23 22:13:37.039 [TaskFinalizer-8] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:rnaseq_short_plane:star:run_star (2)'
 
-#### qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP106_ZQ_SRA_WW.txt 
-##### job 
+#### qsub run_EGAPx_v0.3.1_HPC.sh D_pulex/inputs_KAP106_ZQ_SRA.txt 
+##### job 984002
+ERROR
+Nov-24 00:16:54.675 [TaskFinalizer-5] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:rnaseq_short_plane:star:run_star (1)'
 
-#### qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP4_NCBI_SRA.txt 
-##### job 
+#### qsub run_EGAPx_v0.3.1_HPC.sh D_pulex/inputs_KAP106_ZQ_SRA_WW.txt 
+##### job 984003
+ERROR
+Nov-23 23:32:25.927 [TaskFinalizer-8] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:rnaseq_short_plane:star:run_star (2)'
 
-#### qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP4_NCBI_SRA_WW.txt 
-##### job 
+#### qsub run_EGAPx_v0.3.1_HPC.sh D_pulex/inputs_KAP4_NCBI_SRA.txt 
+##### job 984005
+ERROR
+ERROR ~ Error executing process > 'egapx:rnaseq_short_plane:star:run_star (1)'
+Nov-29 17:37:06.362 [TaskFinalizer-2] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:rnaseq_short_plane:star:run_star (1)'
+
+#### qsub run_EGAPx_v0.3.1_HPC.sh D_pulex/inputs_KAP4_NCBI_SRA_WW.txt 
+##### job 984006
+ERROR
+ERROR ~ Error executing process > 'egapx:rnaseq_short_plane:star:run_star (2)'
+Nov-29 20:49:43.965 [TaskFinalizer-6] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:rnaseq_short_plane:star:run_star (1)'
 
 ### Software test
 
@@ -44,12 +66,15 @@ Cached      : 83
 
 #### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.2/D_lumholtzi/inputs_lumholtzi_WW_RNA.txt
 ##### job 980822 -> run0
-ERROR -> https://github.com/ncbi/egapx/issues/52
+ERROR 
+-> https://github.com/ncbi/egapx/issues/52
+-> https://github.com/ncbi/egapx/issues/61
+-> https://github.com/ncbi/fcs
 -> error [nextflow.exception.ProcessFailedException]: Process `egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype` terminated with an error exit status (3)
 -> ERROR ~ Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
 -> Error: (106.16) Application's execution failed (CException::eUnknown) Too many protein hits to proks (GP-23178)
 ##### job 982926
-ERROR -> https://github.com/ncbi/egapx/issues/52
+ERROR
 -> Error: (106.16) Application's execution failed (CException::eUnknown) Too many protein hits to proks (GP-23178)
 
 #### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.2/D_lumholtzi/inputs_lumholtzi_WW.txt
@@ -136,19 +161,19 @@ RUNNING
 
 #### qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP106_NCBI_SRA_WW.txt 
 ##### job 980814
-QUEUED
+RUNNING
 
 #### qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP106_ZQ_SRA.txt 
 ##### job 980815
-QUEUED
+RUNNING
 
 #### qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP106_ZQ_SRA_WW.txt 
 ##### job 980816
-QUEUED
+RUNNING
 
 #### qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP4_NCBI_SRA.txt 
 ##### job 980817
-QUEUED
+RUNNING
 
 #### qsub run_EGAPx_v0.2_HPC.sh D_pulex/inputs_KAP4_NCBI_SRA_WW.txt 
 ##### job 980818
