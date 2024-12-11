@@ -4,13 +4,19 @@
 
 ## Small tests
 
-#### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.3/D_pulex/inputs_KAP4_NCBI_SRA_small.txt
-##### job 1026212
-RUNNING
+#### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.3/D_pulex/inputs_KAP4_NCBI_small.txt
+##### job 
 
-#### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.3/D_pulex/inputs_KAP4_NCBI_SRA_medium.txt
+#### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.3/D_pulex/inputs_KAP4_NCBI_medium.txt
 ##### job
 
+#### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.3/D_pulex/inputs_KAP4_NCBI_SRA_small.txt
+##### job 1026212
+Dec 11 18:56:53 ..... finished successfully
+
+#### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.3/D_pulex/inputs_KAP4_NCBI_SRA_medium.txt
+##### job 1026220
+Dec-11 14:33:29.811 [TaskFinalizer-4] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:rnaseq_short_plane:star:run_star (1)'
 
 ### KAP106 NCBI, ZQ, & WW tests
 
@@ -48,12 +54,12 @@ Nov-29 20:49:43.965 [TaskFinalizer-6] ERROR nextflow.processor.TaskProcessor - E
 
 ### Software test
 
-#### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_SRA_RNA.txt
+#### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.2/D_pulex/inputs_KAP106_NCBI_SRA_RNA.txt
 ##### job 983971
 SUCCEEDED
 Nov 21 02:07:27 ..... finished successfully
 
-#### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.1/inputs_D_farinae.txt
+#### qsub run_EGAPx_v0.3_HPC.sh test/EGAPx_v0.1/inputs_D_farinae.txt
 ##### job 982938
 SUCCEEDED
 Completed at: 20-Nov-2024 02:23:00
@@ -154,6 +160,18 @@ ERROR
 
 
 ## EGAPx v0.2
+
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.3/D_pulex/inputs_KAP4_NCBI_small.txt
+##### job 
+
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.3/D_pulex/inputs_KAP4_NCBI_medium.txt
+##### job
+
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.3/D_pulex/inputs_KAP4_NCBI_SRA_small.txt
+##### job 1026399
+
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.3/D_pulex/inputs_KAP4_NCBI_SRA_medium.txt
+##### job 1026400
 
 ### KAP106 NCBI, ZQ, & WW tests
 
