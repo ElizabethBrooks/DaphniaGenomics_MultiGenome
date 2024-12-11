@@ -5,7 +5,7 @@
 ## Small tests
 
 #### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.3/D_pulex/inputs_KAP4_NCBI_SRA_small.txt
-##### job 
+##### job 1026202
 
 
 ### KAP106 NCBI, ZQ, & WW tests
