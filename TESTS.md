@@ -5,12 +5,14 @@
 ## Small tests
 
 #### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.3/D_pulex/inputs_KAP4_NCBI_SRA_small.txt
-##### job 1026202
+##### job 1026212
+RUNNING
+
+#### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.3/D_pulex/inputs_KAP4_NCBI_SRA_medium.txt
+##### job
 
 
 ### KAP106 NCBI, ZQ, & WW tests
-
-TO-DO: Attempt to resume runs
 
 #### qsub run_EGAPx_v0.3.1_HPC.sh D_pulex/inputs_KAP106_NCBI_SRA.txt 
 ##### job 984000

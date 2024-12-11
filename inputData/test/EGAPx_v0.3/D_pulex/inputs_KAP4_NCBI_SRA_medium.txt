@@ -1,0 +1,2 @@
+species: D_pulex_KAP4_NCBI_SRA_medium
+inputs_EGAPx: test/EGAPx_v0.3/D_pulex/inputs_KAP4_NCBI_SRA_medium.yaml
