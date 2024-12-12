@@ -5,9 +5,14 @@
 ## Small tests
 
 #### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.3/D_pulex/inputs_KAP4_NCBI_small.txt
-##### job 
+##### job 1026412
+Dec 11 21:34:43 ..... finished successfully
 
 #### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.3/D_pulex/inputs_KAP4_NCBI_medium.txt
+##### job 1026414
+Dec-11 17:04:37.683 [TaskFinalizer-4] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:rnaseq_short_plane:star:run_star (1)'
+
+#### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.3/D_pulex/inputs_KAP4_NCBI_ms.txt
 ##### job
 
 #### qsub run_EGAPx_v0.3.1_HPC.sh test/EGAPx_v0.3/D_pulex/inputs_KAP4_NCBI_SRA_small.txt
@@ -162,16 +167,24 @@ ERROR
 ## EGAPx v0.2
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.3/D_pulex/inputs_KAP4_NCBI_small.txt
-##### job 
+##### job 1026416
+RUNNING 
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.3/D_pulex/inputs_KAP4_NCBI_medium.txt
+##### job 1026417
+RUNNING
+
+#### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.3/D_pulex/inputs_KAP4_NCBI_ms.txt
 ##### job
+
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.3/D_pulex/inputs_KAP4_NCBI_SRA_small.txt
 ##### job 1026399
+RUNNING
 
 #### qsub run_EGAPx_v0.2_HPC.sh test/EGAPx_v0.3/D_pulex/inputs_KAP4_NCBI_SRA_medium.txt
 ##### job 1026400
+RUNNING
 
 ### KAP106 NCBI, ZQ, & WW tests
 
