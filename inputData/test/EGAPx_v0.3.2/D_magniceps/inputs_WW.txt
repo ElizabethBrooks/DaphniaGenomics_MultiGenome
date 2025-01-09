@@ -1,0 +1,2 @@
+species: D_magniceps_WW
+inputs_EGAPx: test/EGAPx_v0.3.2/D_magniceps/inputs_WW.yaml

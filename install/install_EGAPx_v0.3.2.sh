@@ -2,10 +2,10 @@
 
 # script to install and test run the EGAPx pipeline
 # https://github.com/ncbi/egapx?tab=readme-ov-file
-# usage: bash install_EGAPx_v0.3.1.sh
+# usage: bash install_EGAPx_v0.3.2.sh
 
 # retrieve software path
-softwarePath=$(grep "software_EGAPx_v0.3.1:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/software_EGAPx_v0.3.1://g")
+softwarePath=$(grep "software_EGAPx_v0.3.2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/software_EGAPx_v0.3.2://g")
 softwarePath=$(dirname $softwarePath)
 
 # move to software path
