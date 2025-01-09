@@ -5,7 +5,7 @@
 ## WW tests
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
-##### job 
+##### job 1070795
 
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
@@ -21,6 +21,10 @@
 
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+##### job 
+
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
 ##### job 
 
 

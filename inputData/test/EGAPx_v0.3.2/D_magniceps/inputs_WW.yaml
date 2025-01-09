@@ -1,5 +1,5 @@
 genome: /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/Daphnia_raw_data_WW/D.magniceps.masked.fasta
 taxid: 85469
 reads:
-  - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/Daphnia_raw_data_WW/RNA/magniceps.R1_001.fastq.gz
-  - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/Daphnia_raw_data_WW/RNA/magniceps.R2_001.fastq.gz
+  - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/Daphnia_raw_data_WW/RNA/magniceps.R1_001.fastq
+  - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/Daphnia_raw_data_WW/RNA/magniceps.R2_001.fastq

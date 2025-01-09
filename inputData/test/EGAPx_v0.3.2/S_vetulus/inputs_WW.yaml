@@ -1,5 +1,5 @@
 genome: /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/Daphnia_raw_data_WW/simocephalus_vetulus.masked.fasta
 taxid: 77651
 reads:
-  - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/Daphnia_raw_data_WW/RNA/Simocephalus.R1_001.fastq.gz
-  - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/Daphnia_raw_data_WW/RNA/Simocephalus.R2_001.fastq.gz
+  - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/Daphnia_raw_data_WW/RNA/Simocephalus.R1_001.fastq
+  - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/Daphnia_raw_data_WW/RNA/Simocephalus.R2_001.fastq

@@ -1,0 +1,5 @@
+genome: /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/Daphnia_raw_data_WW/D.dentifera_3.0.masked.fasta
+taxid: 42852
+reads:
+  - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/Daphnia_raw_data_WW/RNA/dentifera.R1_001.fastq
+  - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/Daphnia_raw_data_WW/RNA/dentifera.R2_001.fastq

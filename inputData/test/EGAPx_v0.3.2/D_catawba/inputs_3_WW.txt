@@ -1,0 +1,2 @@
+species: D_catawba_3_WW
+inputs_EGAPx: test/EGAPx_v0.3.2/D_catawba/inputs_3_WW.yaml
