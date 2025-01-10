@@ -4,36 +4,52 @@
 
 ## WW tests
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
-##### job 1070795
-
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
-##### job 
-
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
-##### job 
-
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/S_vetulus/inputs_WW.txt
-##### job 
-
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
-##### job 
-
-
 #### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
-##### job 
+##### job 1071029
 
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
-##### job 
+#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+##### job 1071033
+
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+##### job 1071035
+
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+##### job 1071036
 
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
-##### job 
+##### job 1071026
+
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+##### job 1071027
+
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+##### job 1071025
+
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_pulex/inputs_BEL_2_WW.txt
+##### job 1071604
+
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
+##### job 1070991
+
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
+##### job 1070992
+
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
+##### job 1070993
+
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/S_vetulus/inputs_WW.txt
+##### job 1071024
 
 
 
