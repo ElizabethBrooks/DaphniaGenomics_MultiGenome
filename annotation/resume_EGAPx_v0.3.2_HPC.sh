@@ -2,7 +2,7 @@
 #$ -M ebrooks5@nd.edu
 #$ -m abe
 #$ -r n
-#$ -N run_EGAPx_v0.3.2_jobOutput
+#$ -N resume_EGAPx_v0.3.2_jobOutput
 #$ -pe smp 63
 #$ -q largemem
 
@@ -37,30 +37,14 @@ outputsPath=$(grep "outputs_EGAPx_v0.3.2:" ../"inputData/inputs_annotations.txt"
 # setup outputs directory
 outputsPath=$outputsPath"/"$speciesName
 
-# make outputs directory
-mkdir $outputsPath
-
-#Check if the folder already exists
-if [ $? -ne 0 ]; then
-	echo "The $outputsPath directory already exsists... please remove before proceeding."
-	exit 1
-fi
-
-# make temporary data path
-mkdir $outputsPath"/temp_datapath"
-
 # move to outputs directory
 cd $outputsPath
 
 # status message
-echo "Beginning analysis of $speciesName..."
-
-# run EGAPx to copy config files
-#python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath
-python3 $softwarePath"/ui/egapx.py" $inputsPath -o $outputsPath
+echo "Resuming analysis of $speciesName..."
 
 # run EGAPx
-python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath
+python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath -resume
 
 # clean up, if accept.gff output file exsists
 #if [ ! -f $outputsPath"/accept.gff" ]; then
