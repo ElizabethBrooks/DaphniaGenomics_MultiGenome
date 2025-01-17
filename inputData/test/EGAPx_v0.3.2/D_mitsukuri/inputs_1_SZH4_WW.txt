@@ -1,0 +1,2 @@
+species: D_mitsukuri_1_SZH4_WW
+inputs_EGAPx: test/EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.yaml
