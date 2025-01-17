@@ -40,22 +40,22 @@ COMPLETED
 ##### job 1070991
 FAILED
 #### qsub resume_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
-##### job
-
+##### job 1081931
+COMPLETED
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
 ##### job 1070992
 FAILED
 #### qsub resume_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
-##### job
-
+##### job 1081943
+COMPLETED
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
 ##### job 1070993
 FAILED
 #### qsub resume_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
-##### job
-
+##### job 1081962
+COMPLETED
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/S_vetulus/inputs_WW.txt
 ##### job 1071024
