@@ -5,19 +5,19 @@
 ## WW (assembly & RNA) & ZQ (proteins) tests
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW_ZQ.txt
-##### job 
+##### job 1094828
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW_ZQ.txt
-##### job 
+##### job 1094830
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW_ZQ.txt
-##### job 
+##### job 1094831
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW_ZQ.txt
-##### job 
+##### job 1094832
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magniceps/inputs_WW_ZQ.txt
-##### job 
+##### job 1094833
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW_ZQ.txt
 ##### job 

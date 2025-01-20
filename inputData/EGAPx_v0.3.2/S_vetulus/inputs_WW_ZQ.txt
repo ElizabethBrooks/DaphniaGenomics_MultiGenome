@@ -1,2 +1,2 @@
 species: S_vetulus_WW_ZQ
-inputs_EGAPx: test/EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ.yaml
+inputs_EGAPx: EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ.yaml

@@ -1,2 +1,2 @@
 species: D_mitsukuri_1_SZH4_WW_ZQ
-inputs_EGAPx: test/EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW_ZQ.yaml
+inputs_EGAPx: EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW_ZQ.yaml

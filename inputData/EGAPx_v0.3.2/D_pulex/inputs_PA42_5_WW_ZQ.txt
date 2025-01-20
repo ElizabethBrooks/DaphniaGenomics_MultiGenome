@@ -1,2 +1,2 @@
 species: D_pulex_PA42_5_WW_ZQ
-inputs_EGAPx: test/EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW_ZQ.yaml
+inputs_EGAPx: EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW_ZQ.yaml
