@@ -1,0 +1,2 @@
+species: D_magna_NIES_SRA
+inputs_EGAPx: D_magna/inputs_NIES_SRA.yaml

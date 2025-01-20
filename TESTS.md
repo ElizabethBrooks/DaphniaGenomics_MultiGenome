@@ -2,6 +2,48 @@
 
 ## EGAPx v0.3.2
 
+## WW (assembly & RNA) & ZQ (proteins) tests
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
+##### job 
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+##### job 
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+##### job 
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+##### job 
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
+##### job 
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+##### job 
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+##### job 
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
+##### job 
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
+##### job 
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
+##### job 
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
+##### job 
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/S_vetulus/inputs_WW.txt
+##### job 
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+##### job
+
+
 ## WW tests
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
@@ -59,6 +101,10 @@ COMPLETED
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/S_vetulus/inputs_WW.txt
 ##### job 1071024
+COMPLETED
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+##### job 1082971
 COMPLETED
 
 

@@ -1,5 +1,6 @@
 genome: /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/Daphnia_raw_data_WW/D.pulex_PA42_5.0_real.masked.fasta
 taxid: 6669
+proteins: /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/D.pulex_PA42.5.0_annotation/D.pulex_PA42_5.0_real.masked.aa.fasta
 reads:
   - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/Daphnia_raw_data_WW/RNA/pa42.R1_001.fastq
   - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/Daphnia_raw_data_WW/RNA/pa42.R2_001.fastq
