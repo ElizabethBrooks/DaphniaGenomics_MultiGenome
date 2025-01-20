@@ -1,2 +1,0 @@
-species: D_obtusa_v2_WW
-inputs_EGAPx: test/EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.yaml

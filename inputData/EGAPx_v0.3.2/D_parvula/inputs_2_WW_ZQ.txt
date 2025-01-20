@@ -1,0 +1,2 @@
+species: D_parvula_2_WW_ZQ
+inputs_EGAPx: test/EGAPx_v0.3.2/D_parvula/inputs_2_WW_ZQ.yaml

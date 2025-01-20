@@ -1,2 +1,0 @@
-species: S_vetulus_WW
-inputs_EGAPx: test/EGAPx_v0.3.2/S_vetulus/inputs_WW.yaml

@@ -1,2 +1,0 @@
-species: D_pulex_KAP106_NMP_1.3_WW
-inputs_EGAPx: test/EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.yaml

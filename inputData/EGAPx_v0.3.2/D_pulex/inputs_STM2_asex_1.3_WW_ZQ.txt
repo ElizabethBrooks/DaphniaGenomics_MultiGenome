@@ -1,0 +1,2 @@
+species: D_pulex_STM2_asex_1.3_WW_ZQ
+inputs_EGAPx: test/EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW_ZQ.yaml

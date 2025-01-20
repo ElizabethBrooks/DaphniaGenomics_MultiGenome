@@ -1,2 +1,0 @@
-species: D_dentifera_3_WW
-inputs_EGAPx: test/EGAPx_v0.3.2/D_dentifera/inputs_3_WW.yaml

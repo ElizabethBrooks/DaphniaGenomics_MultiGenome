@@ -4,43 +4,47 @@
 
 ## WW (assembly & RNA) & ZQ (proteins) tests
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW_ZQ.txt
 ##### job 
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW_ZQ.txt
 ##### job 
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW_ZQ.txt
 ##### job 
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW_ZQ.txt
 ##### job 
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magniceps/inputs_WW_ZQ.txt
 ##### job 
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW_ZQ.txt
 ##### job 
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW_ZQ.txt
 ##### job 
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW_ZQ.txt
 ##### job 
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW_ZQ.txt
 ##### job 
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW_ZQ.txt
 ##### job 
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW_ZQ.txt
 ##### job 
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW.txt
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ.txt
 ##### job 
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW_ZQ.txt
+##### job
+
+# To-do: double check inputs
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_NCBI.txt
 ##### job
 
 
