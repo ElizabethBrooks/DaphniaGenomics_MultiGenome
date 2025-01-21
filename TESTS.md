@@ -6,45 +6,63 @@
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW_ZQ.txt
 ##### job 1094828
+RUNNING
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW_ZQ.txt
 ##### job 1094830
+RUNNING
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW_ZQ.txt
 ##### job 1094831
+RUNNING
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW_ZQ.txt
 ##### job 1094832
+RUNNING
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magniceps/inputs_WW_ZQ.txt
 ##### job 1094833
+QUEUED
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW_ZQ.txt
-##### job 
+##### job 1094864
+COMPLETED
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW_ZQ.txt
-##### job 
+##### job 1094865
+COMPLETED
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW_ZQ.txt
-##### job 
+##### job 1094866
+RUNNING
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW_ZQ.txt
-##### job 
+##### job 1094868
+COMPLETED
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW_ZQ.txt
-##### job 
+##### job 1094870
+RUNNING
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW_ZQ.txt
-##### job 
+##### job 1094871
+QUEUED
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ.txt
-##### job 
+##### job 1094873
+QUEUED
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW_ZQ.txt
+##### job 1094874
+QUEUED
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_NCBI.txt
 ##### job
 
-# To-do: double check inputs
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_NCBI.txt
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_NCBI.txt
+##### job
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ.txt
 ##### job
 
 
