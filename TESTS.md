@@ -149,7 +149,11 @@ FAILED
 miniprot: align.c:195: mp_extra_cal: Assertion `al == r->qe - r->qs' failed.
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ.txt
 ##### job 1096506
-RUNNING
+FAILED
+-> miniprot: align.c:195: mp_extra_cal: Assertion `al == r->qe - r->qs' failed.
+-> Process `egapx:target_proteins_plane:miniprot:run_miniprot (1)` terminated with an error exit status (134)
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ.txt
+##### job
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW_ZQ.txt
 ##### job 1094874
@@ -186,7 +190,8 @@ transcript   384
 RUNNING
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI.txt
-##### job 
+##### job 1096999
+RUNNING
 
 
 ## WW tests
