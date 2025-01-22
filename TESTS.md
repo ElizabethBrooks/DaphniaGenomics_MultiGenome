@@ -182,8 +182,11 @@ pseudogene   2404
 transcript   384
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_NCBI.txt
-##### job 
+##### job 1096980
+RUNNING
 
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI.txt
+##### job 
 
 
 ## WW tests
