@@ -191,11 +191,11 @@ transcript   384
 ##### job 1096980
 ABORTED?
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_NCBI.txt
-##### job 1098385
-RUNNING
-
+##### job 1098631
+FAILED
+error [nextflow.exception.ProcessUnrecoverableException]: Process requirement exceeds available CPUs -- req: 15; avail: 7
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_NCBI.txt
-##### job 
+##### job
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI.txt
 ##### job 1096999

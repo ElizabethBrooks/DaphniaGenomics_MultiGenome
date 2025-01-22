@@ -3,7 +3,7 @@
 #$ -m abe
 #$ -r n
 #$ -N run_EGAPx_v0.3.2_jobOutput
-#$ -pe smp 7
+#$ -pe smp 15
 #$ -q largemem
 
 # script to run the EGAPx v0.3.2 pipeline
