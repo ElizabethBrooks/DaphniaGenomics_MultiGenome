@@ -1,0 +1,7 @@
+genome: /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/Daphnia_raw_data_WW/D.galeata_M5.masked.fasta
+taxid: 27404
+proteins: /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/D.galeata_M5_annotation/D.galeata_M5.masked.fasta.pep.fasta
+reads:
+  - ERX2248063
+  - ERX2248039
+  - ERX2248015

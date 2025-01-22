@@ -2,68 +2,188 @@
 
 ## EGAPx v0.3.2
 
-## WW (assembly & RNA) & ZQ (proteins) tests
+## Clean up
+```
+rm -r /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/*/annot_builder_output
+rm -r /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/*/annotated_genome.asn
+rm -r /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/*/dag.dot
+rm -r /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/*/egapx_config
+rm -r /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/*/egapx_reads_metadata_jaz5oxoa.tsv
+rm -r /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/*/execution_logs
+rm -r /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/*/nextflow.log
+rm -r /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/*/resume.sh
+rm -r /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/*/run_work_dir.txt
+rm -r /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/*/run.trace.txt
+rm -r /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/*/stats
+rm -r /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/*/validated
+rm -r /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/*/work_dir_singularity.last
+```
+
+## WW (assembly & RNA), ZQ (proteins), & NCBI (as needed) tests
+Adding proteins appears to slightly shift the number of each identfied features.
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW_ZQ.txt
 ##### job 1094828
-RUNNING
+COMPLETED
+CDS          187948
+exon         216516
+gene         17076
+lnc_RNA      3406
+mRNA         22188
+pseudogene   376
+transcript   101
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW_ZQ.txt
 ##### job 1094830
-RUNNING
+COMPLETED
+CDS          229038
+exon         296364
+gene         24682
+lnc_RNA      5393
+mRNA         31517
+pseudogene   2425
+transcript   319
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW_ZQ.txt
 ##### job 1094831
-RUNNING
+COMPLETED
+CDS          220412
+exon         272830
+gene         21684
+lnc_RNA      4461
+mRNA         28413
+pseudogene   1568
+transcript   205
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW_ZQ.txt
 ##### job 1094832
-RUNNING
+COMPLETED
+CDS          213283
+exon         248589
+gene         21911
+lnc_RNA      2823
+mRNA         28383
+pseudogene   1647
+transcript   137
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magniceps/inputs_WW_ZQ.txt
 ##### job 1094833
-QUEUED
+COMPLETED
+CDS          187933
+exon         208363
+gene         18394
+lnc_RNA      2077
+mRNA         23774
+pseudogene   912
+transcript   91
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW_ZQ.txt
 ##### job 1094864
 COMPLETED
+CDS          195959
+exon         242263
+gene         22247
+lnc_RNA      5314
+mRNA         25837
+pseudogene   1406
+transcript   157
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW_ZQ.txt
 ##### job 1094865
 COMPLETED
+CDS          189952
+exon         221529
+gene         17279
+lnc_RNA      3731
+mRNA         22520
+pseudogene   558
+transcript   131
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW_ZQ.txt
 ##### job 1094866
-RUNNING
+COMPLETED
+CDS          201889
+exon         260010
+gene         20423
+lnc_RNA      5130
+mRNA         26170
+pseudogene   983
+transcript   241
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW_ZQ.txt
-##### job 1094868
+##### job 1095750
 COMPLETED
+CDS          186251
+exon         213738
+gene         21352
+lnc_RNA      3473
+mRNA         24472
+pseudogene   1157
+transcript   75
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW_ZQ.txt
 ##### job 1094870
-RUNNING
+COMPLETED
+CDS          200294
+exon         243798
+gene         23069
+lnc_RNA      3643
+mRNA         27379
+pseudogene   3598
+transcript   115
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW_ZQ.txt
 ##### job 1094871
-QUEUED
+COMPLETED
+CDS          192209
+exon         223374
+gene         21803
+lnc_RNA      3635
+mRNA         25481
+pseudogene   983
+transcript   114
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ.txt
 ##### job 1094873
-QUEUED
+FAILED
+miniprot: align.c:195: mp_extra_cal: Assertion `al == r->qe - r->qs' failed.
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ.txt
+##### job 1096506
+RUNNING
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW_ZQ.txt
 ##### job 1094874
-QUEUED
+COMPLETED
+CDS          201206
+exon         267696
+gene         21262
+lnc_RNA      5410
+mRNA         26812
+pseudogene   1239
+transcript   336
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_NCBI.txt
-##### job
+##### job 1095598
+RUNNING
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_NCBI.txt
-##### job
+##### job 1095613
+RUNNING
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ.txt
-##### job
+##### job 1095751
+COMPLETED
+CDS          210286
+exon         261532
+gene         26387
+lnc_RNA      5769
+mRNA         30051
+pseudogene   2404
+transcript   384
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_NCBI.txt
+##### job 
+
 
 
 ## WW tests
