@@ -155,7 +155,9 @@ FAILED
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ.txt
 changed genome assembly to ZQs from WWs
 ##### job 1097215
-RUNNING
+FAILED
+-> miniprot: align.c:195: mp_extra_cal: Assertion `al == r->qe - r->qs' failed.
+  .command.sh: line 3:    44 Aborted                 (core dumped) miniprot -t 31 -G 300000 -p 0.4 --outs=0.4 simocephalus_vetulus.masked.fasta 1.prots.faa > output/1.prots.paf
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW_ZQ.txt
 ##### job 1094874
@@ -171,6 +173,9 @@ transcript   336
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_NCBI.txt
 ##### job 1095598
 RUNNING
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_NCBI.txt
+changed assembly to ZQ's from NCBI's (to match protein data)
+##### job 
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_NCBI.txt
 ##### job 1095613
@@ -191,11 +196,8 @@ transcript   384
 ##### job 1096980
 ABORTED?
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_NCBI.txt
-##### job 1098631
-FAILED
-error [nextflow.exception.ProcessUnrecoverableException]: Process requirement exceeds available CPUs -- req: 15; avail: 7
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_NCBI.txt
-##### job
+##### job 1098766
+RUNNING
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI.txt
 ##### job 1096999
