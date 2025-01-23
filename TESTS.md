@@ -146,7 +146,7 @@ transcript   114
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ.txt
 ##### job 1094873
 FAILED
-miniprot: align.c:195: mp_extra_cal: Assertion `al == r->qe - r->qs' failed.
+-> miniprot: align.c:195: mp_extra_cal: Assertion `al == r->qe - r->qs' failed.
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ.txt
 ##### job 1096506
 FAILED
@@ -174,7 +174,7 @@ transcript   336
 ##### job 1095598
 RUNNING
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_NCBI.txt
-changed assembly to ZQ's from NCBI's (to match protein data)
+Changed assembly to ZQ's from NCBI's (to match protein data)
 ##### job 1098949
 RUNNING
 
@@ -198,20 +198,32 @@ transcript   384
 ABORTED?
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_NCBI.txt
 ##### job 1098766
-RUNNING
+ABORTED?
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI.txt
 ##### job 1096999
-RUNNING
+FAILED
+-> Process `egapx:gnomon_plane:chainer:run_chainer` input file name collision -- There are multiple input files for each of the following file names: indexed/D.sinensis_CHINA.masked.asn
+Moved files to the scratch space
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW_ZQ.txt
-##### job 
+##### job 1098982
+COMPLETED
+CDS          131932
+exon         146949
+gene         22147
+lnc_RNA      2670
+mRNA         21099
+pseudogene   1575
+transcript   71
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ.txt
-##### job 
+##### job 1098987
+FAILED
+-> Jan-23 10:33:36.407 [TaskFinalizer-2] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
 
 
-## WW tests
+## WW tests (only assembly and RNA data, no proteins)
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
 ##### job 1071029
@@ -273,6 +285,9 @@ COMPLETED
 #### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
 ##### job 1082971
 COMPLETED
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ.txt
+##### job 
 
 
 ## EGAPx v0.3.1
