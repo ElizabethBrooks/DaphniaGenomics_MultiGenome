@@ -2,7 +2,6 @@ genome: /afs/crc.nd.edu/group/pfrenderlab/mendel/ebrooks/daphnia_pulex/KAP4/NCBI
 taxid: 6669
 proteins: /afs/crc.nd.edu/group/pfrenderlab/mendel/ebrooks/daphnia_pulex/KAP4/NCBI/GCF_021134715.1/ncbi_dataset/data/GCF_021134715.1/protein.faa
 reads:
-  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP4_KAP106/SRP351713/SRR17282827_1.fasta
   - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP4_KAP106/SRP102491/SRR5378527_1.fasta
   - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP4_KAP106/SRP102491/SRR5378527_2.fasta
   - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP4_KAP106/SRP102491/SRR5378528_1.fasta
