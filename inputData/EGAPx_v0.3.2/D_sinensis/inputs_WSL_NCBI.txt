@@ -1,0 +1,2 @@
+species: D_sinensis_WSL_NCBI
+inputs_EGAPx: EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI.yaml

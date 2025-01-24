@@ -8,7 +8,7 @@ rm -r /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAP
 rm -r /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/*/annotated_genome.asn
 rm -r /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/*/dag.dot
 rm -r /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/*/egapx_config
-rm -r /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/*/egapx_reads_metadata_jaz5oxoa.tsv
+rm -r /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/*/egapx_reads_metadata_*.tsv
 rm -r /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/*/execution_logs
 rm -r /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/*/nextflow.log
 rm -r /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/*/resume.sh
@@ -17,6 +17,7 @@ rm -r /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAP
 rm -r /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/*/stats
 rm -r /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/*/validated
 rm -r /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/*/work_dir_singularity.last
+rm -r /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/*/.nextflow
 ```
 
 ## WW (assembly & RNA), ZQ (proteins), & NCBI (as needed) tests
@@ -150,14 +151,15 @@ FAILED
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ.txt
 ##### job 1096506
 FAILED
--> miniprot: align.c:195: mp_extra_cal: Assertion `al == r->qe - r->qs' failed.
--> Process `egapx:target_proteins_plane:miniprot:run_miniprot (1)` terminated with an error exit status (134)
+-> miniprot: align.c:195: mp_extra_cal: Assertion \`al == r->qe - r->qs' failed.
+-> Process \`egapx:target_proteins_plane:miniprot:run_miniprot (1)` terminated with an error exit status (134)
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ.txt
 changed genome assembly to ZQs from WWs
 ##### job 1097215
 FAILED
 -> miniprot: align.c:195: mp_extra_cal: Assertion `al == r->qe - r->qs' failed.
   .command.sh: line 3:    44 Aborted                 (core dumped) miniprot -t 31 -G 300000 -p 0.4 --outs=0.4 simocephalus_vetulus.masked.fasta 1.prots.faa > output/1.prots.paf
+-> Jan-22 09:17:23.672 [TaskFinalizer-3] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:target_proteins_plane:miniprot:run_miniprot (1)'
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW_ZQ.txt
 ##### job 1094874
@@ -205,6 +207,10 @@ ABORTED?
 FAILED
 -> Process `egapx:gnomon_plane:chainer:run_chainer` input file name collision -- There are multiple input files for each of the following file names: indexed/D.sinensis_CHINA.masked.asn
 Moved files to the scratch space
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI.txt
+##### job 
+
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW_ZQ.txt
 ##### job 1098982
@@ -287,8 +293,12 @@ COMPLETED
 COMPLETED
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ.txt
-##### job 
-
+##### job 1099851
+FAILED
+-> Jan-23 23:12:03.260 [TaskFinalizer-10] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ.txt
+##### job 1101901
+RUNNING
 
 
 ## EGAPx v0.3.1
