@@ -1,0 +1,2 @@
+species: D_galeata_M5_WW
+inputs_EGAPx: EGAPx_v0.3.2/D_galeata/inputs_M5_WW.yaml

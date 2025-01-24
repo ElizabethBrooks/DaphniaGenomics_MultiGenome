@@ -160,6 +160,9 @@ FAILED
 -> miniprot: align.c:195: mp_extra_cal: Assertion `al == r->qe - r->qs' failed.
   .command.sh: line 3:    44 Aborted                 (core dumped) miniprot -t 31 -G 300000 -p 0.4 --outs=0.4 simocephalus_vetulus.masked.fasta 1.prots.faa > output/1.prots.paf
 -> Jan-22 09:17:23.672 [TaskFinalizer-3] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:target_proteins_plane:miniprot:run_miniprot (1)'
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ.txt
+##### job 1102408
+RUNNING
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW_ZQ.txt
 ##### job 1094874
@@ -185,9 +188,9 @@ RUNNING
 FAILED
 -> Jan-24 12:52:59.047 [TaskFinalizer-7] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:rnaseq_short_plane:star:run_star (8)'
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_NCBI.txt
-##### job 
 Removed isoseq data
-
+##### job 1102382
+RUNNING
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ.txt
 ##### job 1095751
@@ -232,6 +235,9 @@ transcript   71
 ##### job 1098987
 FAILED
 -> Jan-23 10:33:36.407 [TaskFinalizer-2] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ.txt
+##### job 1102383
+RUNNING
 
 
 ## WW tests (only assembly and RNA data, no proteins)
@@ -305,6 +311,9 @@ FAILED
 ##### job 1101901
 FAILED
 -> Jan-24 09:42:31.315 [TaskFinalizer-10] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW.txt
+##### job
 
 
 ## EGAPx v0.3.1
