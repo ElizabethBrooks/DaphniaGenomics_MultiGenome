@@ -162,7 +162,8 @@ FAILED
 -> Jan-22 09:17:23.672 [TaskFinalizer-3] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:target_proteins_plane:miniprot:run_miniprot (1)'
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ.txt
 ##### job 1102408
-RUNNING
+FAILED
+-> Jan-24 23:42:54.306 [TaskFinalizer-9] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:target_proteins_plane:miniprot:run_miniprot (1)'
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW_ZQ.txt
 ##### job 1094874
@@ -177,11 +178,17 @@ transcript   336
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_NCBI.txt
 ##### job 1095598
-RUNNING
+FAILED
+-> WARN: Can't update history file: .nextflow/history
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_NCBI.txt
 Changed assembly to ZQ's from NCBI's (to match protein data)
 ##### job 1098949
-RUNNING
+FAILED
+-> WARN: Can't update history file: .nextflow/history
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_NCBI.txt
+Changed assembly to ZQ's from NCBI's (to match protein data)
+##### job 
+
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_NCBI.txt
 ##### job 1095613
@@ -209,6 +216,7 @@ ABORTED?
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_NCBI.txt
 ##### job 1098766
 ABORTED?
+## May need to email Matild, let Mike know what Wen says
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI.txt
 ##### job 1096999
@@ -218,7 +226,11 @@ Moved files to the scratch space
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI.txt
 ##### job 1101912
-RUNNING
+FAILED
+-> WARN: Can't update history file: .nextflow/history
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI.txt
+##### job
+
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW_ZQ.txt
 ##### job 1098982
@@ -237,7 +249,9 @@ FAILED
 -> Jan-23 10:33:36.407 [TaskFinalizer-2] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ.txt
 ##### job 1102383
-RUNNING
+FAILED
+-> Jan-24 23:57:35.405 [TaskFinalizer-10] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
+## Ask if this is the same genometpe of Lumholtzi? We can make RNA data
 
 
 ## WW tests (only assembly and RNA data, no proteins)
@@ -313,7 +327,8 @@ FAILED
 -> Jan-24 09:42:31.315 [TaskFinalizer-10] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW.txt
-##### job
+##### job 1102412
+ABORTED
 
 
 ## EGAPx v0.3.1
