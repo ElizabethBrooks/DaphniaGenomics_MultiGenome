@@ -1,6 +1,6 @@
-genome: /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/Daphnia_raw_data_WW/D.mitsukuri_1.0_SZH4.masked.fasta
+genome: /afs/crc.nd.edu/group/pfrenderlab/carson/Daphnia_raw_data_WW/D.mitsukuri_1.0_SZH4.masked.fasta
 taxid: 1969737
 proteins: /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/D.mitsukuri_SZH4_1.0_annotation/D.mitsukuri_1.0_SZH4.masked.aa.fasta
 reads:
-  - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/Daphnia_raw_data_WW/RNA/SZH4.R1_001.fastq
-  - /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/data/Daphnia_raw_data_WW/RNA/SZH4.R2_001.fastq
+  - /afs/crc.nd.edu/group/pfrenderlab/carson/Daphnia_raw_data_WW/RNA/SZH4.R1_001.fastq
+  - /afs/crc.nd.edu/group/pfrenderlab/carson/Daphnia_raw_data_WW/RNA/SZH4.R2_001.fastq

@@ -2,6 +2,32 @@
 
 ## EGAPx v0.3.2
 
+## Notes
+
+### S_vetelus 
+Has RNA data and annotation with out protein data, but errors arise when using protein data.
+
+### D_magna
+RUNNING
+Has NCBI data, but failed. Ran out of space on franklin.
+
+### D_pulex KAP4
+RUNNING
+Has NCBI data, but aborted.
+
+### D_galeata
+Has NCBI data, but aborts. The RNA data is HiSeq data.
+May need to email Matild, let Mike know what Wen says
+
+### D_sinensis WSL
+RUNNING
+Has NCBI data, but failed. Ran out of space on franklin and resuming aborted.
+
+### D_lumholtzi
+Has full set of data from WW, but fails.
+Ask if this is the same genometpe of Lumholtzi? We can make RNA data
+
+
 ## Clean up
 ```
 rm -r /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/*/annot_builder_output
@@ -185,10 +211,10 @@ Changed assembly to ZQ's from NCBI's (to match protein data)
 ##### job 1098949
 FAILED
 -> WARN: Can't update history file: .nextflow/history
+Ran out of space on franklin.
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_NCBI.txt
-Changed assembly to ZQ's from NCBI's (to match protein data)
-##### job 
-
+##### job 1110362
+RUNNING
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_NCBI.txt
 ##### job 1095613
@@ -197,6 +223,9 @@ FAILED
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_NCBI.txt
 Removed isoseq data
 ##### job 1102382
+Aborted?
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_NCBI.txt
+##### job 1122030
 RUNNING
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ.txt
@@ -217,6 +246,9 @@ ABORTED?
 ##### job 1098766
 ABORTED?
 ## May need to email Matild, let Mike know what Wen says
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_NCBI.txt
+##### job 
+
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI.txt
 ##### job 1096999
@@ -228,9 +260,13 @@ Moved files to the scratch space
 ##### job 1101912
 FAILED
 -> WARN: Can't update history file: .nextflow/history
+Ran out of space on franklin.
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI.txt
-##### job
-
+##### job 1110363
+Aborted?
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI.txt
+##### job 1122029
+RUNNING
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW_ZQ.txt
 ##### job 1098982
