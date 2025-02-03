@@ -4,28 +4,38 @@
 
 ## Notes
 
-### S_vetelus 
-Has RNA data and annotation with out protein data, but errors arise when using protein data.
-
 ### D_magna
-RUNNING
 Has NCBI data, but failed. Ran out of space on franklin.
+Failed again with no outputs.
+Trying again with updated list of SRA IDs (LRVO RNA data) from the 2016 paper "Daphnia magna transcriptome by RNA-Seq across 12 environmental stressors"
+
+### D_galeata
+Has NCBI data, but aborts. The RNA data is HiSeq data.
+May need to email Mathilde, let Mike know what Wen says. -> They don't have any galeata data
+Failed again.
+Trying again with updated list of SRA IDs from the 2021 paper "Hybridization Dynamics and Extensive Introgression in the Daphnia longispina Species Complex: New Insights from a High-Quality Daphnia galeata Reference Genome"
+
+### D_sinensis WSL
+Has NCBI data, but failed. Ran out of space on franklin and resuming aborted.
+Failed again.
+-> Feb-02 06:51:49.718 [TaskFinalizer-4] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
+Trying again with updated list of SRA IDs from the 2022 paper "Genetic Drift Shapes the Evolution of a Highly Dynamic Metapopulation"
 
 ### D_pulex KAP4
 RUNNING
 Has NCBI data, but aborted.
+Double check SRA with pub data.
 
-### D_galeata
-Has NCBI data, but aborts. The RNA data is HiSeq data.
-May need to email Matild, let Mike know what Wen says
-
-### D_sinensis WSL
-RUNNING
-Has NCBI data, but failed. Ran out of space on franklin and resuming aborted.
+### S_vetulus 
+Has RNA data and annotation with out protein data, but errors arise when using protein data.
+-> Jan-24 23:42:54.306 [TaskFinalizer-9] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:target_proteins_plane:miniprot:run_miniprot (1)'
+Waiting on a reply to the EGAPx GitHub issue.
 
 ### D_lumholtzi
 Has full set of data from WW, but fails.
 Ask if this is the same genometpe of Lumholtzi? We can make RNA data
+-> Jan-24 23:57:35.405 [TaskFinalizer-10] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
+Need to start a EGAPx GitHub issue.
 
 
 ## Clean up
@@ -48,6 +58,54 @@ rm -r /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAP
 
 ## WW (assembly & RNA), ZQ (proteins), & NCBI (as needed) tests
 Adding proteins appears to slightly shift the number of each identfied features.
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_NCBI.txt
+##### job 1095598
+FAILED
+-> WARN: Can't update history file: .nextflow/history
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_NCBI.txt
+Changed assembly to ZQ's from NCBI's (to match protein data)
+##### job 1098949
+FAILED
+-> WARN: Can't update history file: .nextflow/history
+Ran out of space on franklin.
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_NCBI.txt
+##### job 1110362
+ABORTED?
+-> no data
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_NCBI.txt
+##### job
+
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_NCBI.txt
+##### job 1096980
+ABORTED?
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_NCBI.txt
+##### job 1098766
+ABORTED?
+## May need to email Matild, let Mike know what Wen says
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_NCBI.txt
+##### job 1122038
+ABORTED?
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_NCBI.txt
+##### job 
+
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI.txt
+##### job 1101912
+FAILED
+-> WARN: Can't update history file: .nextflow/history
+Ran out of space on franklin.
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI.txt
+##### job 1110363
+ABORTED?
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI.txt
+##### job 1122029
+FAILED
+-> Feb-02 06:51:49.718 [TaskFinalizer-4] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI.txt
+##### job
+
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW_ZQ.txt
 ##### job 1094828
@@ -202,20 +260,6 @@ mRNA         26812
 pseudogene   1239
 transcript   336
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_NCBI.txt
-##### job 1095598
-FAILED
--> WARN: Can't update history file: .nextflow/history
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_NCBI.txt
-Changed assembly to ZQ's from NCBI's (to match protein data)
-##### job 1098949
-FAILED
--> WARN: Can't update history file: .nextflow/history
-Ran out of space on franklin.
-#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_NCBI.txt
-##### job 1110362
-RUNNING
-
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_NCBI.txt
 ##### job 1095613
 FAILED
@@ -239,34 +283,11 @@ mRNA         30051
 pseudogene   2404
 transcript   384
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_NCBI.txt
-##### job 1096980
-ABORTED?
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_NCBI.txt
-##### job 1098766
-ABORTED?
-## May need to email Matild, let Mike know what Wen says
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_NCBI.txt
-##### job 
-
-
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI.txt
 ##### job 1096999
 FAILED
 -> Process `egapx:gnomon_plane:chainer:run_chainer` input file name collision -- There are multiple input files for each of the following file names: indexed/D.sinensis_CHINA.masked.asn
 Moved files to the scratch space
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI.txt
-##### job 1101912
-FAILED
--> WARN: Can't update history file: .nextflow/history
-Ran out of space on franklin.
-#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI.txt
-##### job 1110363
-Aborted?
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI.txt
-##### job 1122029
-RUNNING
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW_ZQ.txt
 ##### job 1098982
