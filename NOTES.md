@@ -29,12 +29,13 @@ Trying again with updated list of SRA IDs from the 2021 paper "Hybridization Dyn
 --> Only WGA and WGS SRA data listed.
 
 ### D_sinensis (WSL)
-FAILED
+RUNNING
 Has NCBI data, but fails.
 -> Feb-02 06:51:49.718 [TaskFinalizer-4] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
 Trying again with updated list of SRA IDs from the 2022 paper "Genetic Drift Shapes the Evolution of a Highly Dynamic Metapopulation"
 -> Feb-03 16:39:10.872 [TaskFinalizer-3] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
 --> Need to start a EGAPx GitHub issue.
+Trying with no AA file.
 
 ### D_lumholtzi
 FAILED
@@ -53,6 +54,8 @@ Has RNA data and annotation with out protein data, but errors arise when using p
 - WRT your error, it looks like your input is being split into two jobs, and job (1) is failing but (2) is complete. We have previously seen memory errors with miniprot caused by clustering of difficult to align proteins, which we addressed by shuffling the protein input with seqkit. Please try that.
 - seqkit shuffle -2 proteins.faa -o shuffled.faa
 ./seqkit shuffle -2 /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/simocephalus_vetulus_annotation/simocephalus_vetulus.masked.aa.fasta -o /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/simocephalus_vetulus_annotation/simocephalus_vetulus.masked.aa_shuffled.fasta
+-> Feb-04 12:16:29.868 [TaskFinalizer-2] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:target_proteins_plane:miniprot:run_miniprot (1)'
+./seqkit shuffle -2 /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/simocephalus_vetulus_annotation/simocephalus_vetulus.masked.aa_shuffled.fasta -o /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/simocephalus_vetulus_annotation/simocephalus_vetulus.masked.aa_reShuffled.fasta
 
 
 ## Clean up
