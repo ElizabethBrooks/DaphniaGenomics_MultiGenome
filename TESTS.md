@@ -5,41 +5,6 @@
 ## WW (assembly & RNA), ZQ (proteins), & NCBI (as needed) tests
 Adding proteins appears to slightly shift the number of each identfied features.
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_NCBI.txt
-##### job 1095598
-FAILED
--> WARN: Can't update history file: .nextflow/history
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_NCBI.txt
-Changed assembly to ZQ's from NCBI's (to match protein data)
-##### job 1098949
-FAILED
--> WARN: Can't update history file: .nextflow/history
-Ran out of space on franklin.
-#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_NCBI.txt
-##### job 1110362
-ABORTED?
--> no data
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_NCBI.txt
-##### job 1131687
-RUNNING
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA.txt
-##### job 
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_NCBI.txt
-##### job 1095613
-FAILED
--> Jan-24 12:52:59.047 [TaskFinalizer-7] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:rnaseq_short_plane:star:run_star (8)'
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_NCBI.txt
-Removed isoseq data
-##### job 1102382
-Aborted?
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_NCBI.txt
-##### job 1122030
-RUNNING
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA.txt
-##### job 1141859
-RUNNING
-
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_NCBI.txt
 ##### job 1096980
 ABORTED?
@@ -107,6 +72,56 @@ FAILED
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ.txt
 ##### job 1141847
 RUNNING
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_NCBI.txt
+##### job 1095598
+FAILED
+-> WARN: Can't update history file: .nextflow/history
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_NCBI.txt
+Changed assembly to ZQ's from NCBI's (to match protein data)
+##### job 1098949
+FAILED
+-> WARN: Can't update history file: .nextflow/history
+Ran out of space on franklin.
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_NCBI.txt
+##### job 1110362
+ABORTED?
+-> no data
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_NCBI.txt
+##### job 1131687
+RUNNING
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA.txt
+##### job 1141864
+COMPLETED
+CDS          186937
+exon         219015
+gene         21108
+lnc_RNA      2282
+mRNA         24886
+pseudogene   3036
+transcript   226
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_NCBI.txt
+##### job 1095613
+FAILED
+-> Jan-24 12:52:59.047 [TaskFinalizer-7] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:rnaseq_short_plane:star:run_star (8)'
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_NCBI.txt
+Removed isoseq data
+##### job 1102382
+Aborted?
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_NCBI.txt
+##### job 1122030
+RUNNING
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA.txt
+##### job 1141859
+COMPLETED
+CDS          210878
+exon         246608
+gene         19542
+lnc_RNA      3665
+mRNA         25109
+pseudogene   1095
+transcript   79
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW_ZQ.txt
 ##### job 1094828
@@ -270,6 +285,10 @@ transcript   71
 
 
 ## WW tests (only assembly and RNA data, no proteins)
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_noAA.txt
+##### job
+
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
 ##### job 1071029
