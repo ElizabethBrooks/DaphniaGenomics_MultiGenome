@@ -1,2 +1,2 @@
-species: D_pulex_KAP4_NCBI
-inputs_EGAPx: EGAPx_v0.3.2/D_pulex/inputs_KAP4_NCBI.yaml
+species: D_pulex_KAP4_SRA
+inputs_EGAPx: EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA.yaml
