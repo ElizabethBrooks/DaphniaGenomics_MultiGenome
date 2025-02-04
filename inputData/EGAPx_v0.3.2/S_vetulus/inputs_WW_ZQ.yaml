@@ -1,6 +1,6 @@
 genome: /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/simocephalus_vetulus_annotation/simocephalus_vetulus.masked.fasta
 taxid: 77651
-proteins: /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/simocephalus_vetulus_annotation/simocephalus_vetulus.masked.aa.fasta
+proteins: /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/simocephalus_vetulus_annotation/simocephalus_vetulus.masked.aa_shuffled.fasta
 reads:
   - /afs/crc.nd.edu/group/pfrenderlab/carson/Daphnia_raw_data_WW/RNA/Simocephalus.R1_001.fastq
   - /afs/crc.nd.edu/group/pfrenderlab/carson/Daphnia_raw_data_WW/RNA/Simocephalus.R2_001.fastq

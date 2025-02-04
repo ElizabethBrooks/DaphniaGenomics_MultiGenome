@@ -3,25 +3,32 @@
 ## EGAPx v0.3.2
 
 ## Notes
+Send email to WW, ZQ, and Mike double checking the annotation species and genotypes. Are there any more that we need done?
 
-### D_magna
+### D_magna (NIES)
+RUNNING
 Has NCBI data, but failed. Ran out of space on franklin.
 Failed again with no outputs.
 Trying again with updated list of SRA IDs (LRVO RNA data) from the 2016 paper "Daphnia magna transcriptome by RNA-Seq across 12 environmental stressors"
+Ask Wen how did they (Wen) annotate? Did they use LRVO? Do we need NIES annotated? Do we need multiple magna annotated?
 
-### D_galeata
+### D_galeata (M5)
+FAILED
 Has NCBI data, but aborts. The RNA data is HiSeq data.
 May need to email Mathilde, let Mike know what Wen says. -> They don't have any galeata data
-Failed again.
+Failed again with no outputs.
 Trying again with updated list of SRA IDs from the 2021 paper "Hybridization Dynamics and Extensive Introgression in the Daphnia longispina Species Complex: New Insights from a High-Quality Daphnia galeata Reference Genome"
+Accidentally used WGA and WGS SRA data.
 
-### D_sinensis WSL
+### D_sinensis (WSL)
+FAILED
 Has NCBI data, but failed. Ran out of space on franklin and resuming aborted.
 Failed again.
 -> Feb-02 06:51:49.718 [TaskFinalizer-4] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
 Trying again with updated list of SRA IDs from the 2022 paper "Genetic Drift Shapes the Evolution of a Highly Dynamic Metapopulation"
+-> Feb-03 16:39:10.872 [TaskFinalizer-3] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
 
-### D_pulex KAP4
+### D_pulex (KAP4)
 RUNNING
 Has NCBI data, but aborted.
 Double check SRA with pub data.
@@ -29,7 +36,10 @@ Double check SRA with pub data.
 ### S_vetulus 
 Has RNA data and annotation with out protein data, but errors arise when using protein data.
 -> Jan-24 23:42:54.306 [TaskFinalizer-9] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:target_proteins_plane:miniprot:run_miniprot (1)'
-Waiting on a reply to the EGAPx GitHub issue.
+- We factor some extra QA and filtering steps into our pre-defined protein sets, and generally recommend using them verbatim. Also, including a same-species set of proteins has risk of recapitulating any errors, although EGAPx does include some logic to try and mitigate that. That said, for the cladocerans EGAPx does wind up using the quite general Arthropoda set which may not be optimal. We are continuing to work on the protein evidence logic and can hopefully improve the setup in the future.
+- WRT your error, it looks like your input is being split into two jobs, and job (1) is failing but (2) is complete. We have previously seen memory errors with miniprot caused by clustering of difficult to align proteins, which we addressed by shuffling the protein input with seqkit. Please try that.
+- seqkit shuffle -2 proteins.faa -o shuffled.faa
+./seqkit shuffle -2 /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/simocephalus_vetulus_annotation/simocephalus_vetulus.masked.aa.fasta -o /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/simocephalus_vetulus_annotation/simocephalus_vetulus.masked.aa_shuffled.fasta
 
 ### D_lumholtzi
 Has full set of data from WW, but fails.
@@ -74,8 +84,20 @@ Ran out of space on franklin.
 ABORTED?
 -> no data
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_NCBI.txt
-##### job
+##### job 1131687
+RUNNING
 
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_NCBI.txt
+##### job 1095613
+FAILED
+-> Jan-24 12:52:59.047 [TaskFinalizer-7] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:rnaseq_short_plane:star:run_star (8)'
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_NCBI.txt
+Removed isoseq data
+##### job 1102382
+Aborted?
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_NCBI.txt
+##### job 1122030
+RUNNING
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_NCBI.txt
 ##### job 1096980
@@ -87,9 +109,12 @@ ABORTED?
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_NCBI.txt
 ##### job 1122038
 ABORTED?
+-> no data
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_NCBI.txt
-##### job 
-
+##### job 1131689
+FAILED
+-> Feb-03 13:47:47.585 [TaskFinalizer-6] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:rnaseq_short_plane:fetch_sra_fasta:run_fetch_sra_fasta (1)'
+Accidentally used WGA and WGS SRA data.
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI.txt
 ##### job 1101912
@@ -104,6 +129,41 @@ ABORTED?
 FAILED
 -> Feb-02 06:51:49.718 [TaskFinalizer-4] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI.txt
+##### job 1131690
+FAILED
+-> Feb-03 16:39:10.872 [TaskFinalizer-3] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ.txt
+##### job 1098987
+FAILED
+-> Jan-23 10:33:36.407 [TaskFinalizer-2] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ.txt
+##### job 1102383
+FAILED
+-> Jan-24 23:57:35.405 [TaskFinalizer-10] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
+Ask if this is the same genometpe of Lumholtzi? We can make RNA data
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ.txt
+##### job 1094873
+FAILED
+-> miniprot: align.c:195: mp_extra_cal: Assertion `al == r->qe - r->qs' failed.
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ.txt
+##### job 1096506
+FAILED
+-> miniprot: align.c:195: mp_extra_cal: Assertion \`al == r->qe - r->qs' failed.
+-> Process \`egapx:target_proteins_plane:miniprot:run_miniprot (1)` terminated with an error exit status (134)
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ.txt
+changed genome assembly to ZQs from WWs
+##### job 1097215
+FAILED
+-> miniprot: align.c:195: mp_extra_cal: Assertion `al == r->qe - r->qs' failed.
+  .command.sh: line 3:    44 Aborted                 (core dumped) miniprot -t 31 -G 300000 -p 0.4 --outs=0.4 simocephalus_vetulus.masked.fasta 1.prots.faa > output/1.prots.paf
+-> Jan-22 09:17:23.672 [TaskFinalizer-3] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:target_proteins_plane:miniprot:run_miniprot (1)'
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ.txt
+##### job 1102408
+FAILED
+-> Jan-24 23:42:54.306 [TaskFinalizer-9] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:target_proteins_plane:miniprot:run_miniprot (1)'
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ.txt
 ##### job
 
 
@@ -228,27 +288,6 @@ mRNA         25481
 pseudogene   983
 transcript   114
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ.txt
-##### job 1094873
-FAILED
--> miniprot: align.c:195: mp_extra_cal: Assertion `al == r->qe - r->qs' failed.
-#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ.txt
-##### job 1096506
-FAILED
--> miniprot: align.c:195: mp_extra_cal: Assertion \`al == r->qe - r->qs' failed.
--> Process \`egapx:target_proteins_plane:miniprot:run_miniprot (1)` terminated with an error exit status (134)
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ.txt
-changed genome assembly to ZQs from WWs
-##### job 1097215
-FAILED
--> miniprot: align.c:195: mp_extra_cal: Assertion `al == r->qe - r->qs' failed.
-  .command.sh: line 3:    44 Aborted                 (core dumped) miniprot -t 31 -G 300000 -p 0.4 --outs=0.4 simocephalus_vetulus.masked.fasta 1.prots.faa > output/1.prots.paf
--> Jan-22 09:17:23.672 [TaskFinalizer-3] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:target_proteins_plane:miniprot:run_miniprot (1)'
-#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ.txt
-##### job 1102408
-FAILED
--> Jan-24 23:42:54.306 [TaskFinalizer-9] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:target_proteins_plane:miniprot:run_miniprot (1)'
-
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW_ZQ.txt
 ##### job 1094874
 COMPLETED
@@ -259,18 +298,6 @@ lnc_RNA      5410
 mRNA         26812
 pseudogene   1239
 transcript   336
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_NCBI.txt
-##### job 1095613
-FAILED
--> Jan-24 12:52:59.047 [TaskFinalizer-7] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:rnaseq_short_plane:star:run_star (8)'
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_NCBI.txt
-Removed isoseq data
-##### job 1102382
-Aborted?
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_NCBI.txt
-##### job 1122030
-RUNNING
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ.txt
 ##### job 1095751
@@ -299,16 +326,6 @@ lnc_RNA      2670
 mRNA         21099
 pseudogene   1575
 transcript   71
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ.txt
-##### job 1098987
-FAILED
--> Jan-23 10:33:36.407 [TaskFinalizer-2] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ.txt
-##### job 1102383
-FAILED
--> Jan-24 23:57:35.405 [TaskFinalizer-10] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
-## Ask if this is the same genometpe of Lumholtzi? We can make RNA data
 
 
 ## WW tests (only assembly and RNA data, no proteins)
