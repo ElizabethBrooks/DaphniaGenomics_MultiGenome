@@ -1,3 +1,0 @@
-species: D_magna_NIES_ZQ_NCBI
-inputs_EGAPx: EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_NCBI.yaml
-doi: 10.1038/sdata.2016.30
