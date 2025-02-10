@@ -4,7 +4,7 @@
 Send email to WW, ZQ, and Mike double checking the annotation species and genotypes. Are there any more that we need done?
 
 ### D_magna (NIES)
-RUNNING
+COMPLETED
 COMPLETED
 Has NCBI data, but failed. Ran out of space on franklin.
 Failed again with no outputs.
@@ -29,17 +29,26 @@ Trying again with updated list of SRA IDs from the 2021 paper "Hybridization Dyn
 --> Only WGA and WGS SRA data listed.
 
 ### D_sinensis (WSL)
-RUNNING
+FAILED
 Has NCBI data, but fails.
 -> Feb-02 06:51:49.718 [TaskFinalizer-4] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
 Trying again with updated list of SRA IDs from the 2022 paper "Genetic Drift Shapes the Evolution of a Highly Dynamic Metapopulation"
 -> Feb-03 16:39:10.872 [TaskFinalizer-3] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
 --> Need to start a EGAPx GitHub issue.
 Trying with no AA file.
+-> Feb-04 17:20:36.433 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
+--> Need to start a EGAPx GitHub issue.
+The D. sinensis genome is heavily contaminated. The FCS contamination report is here:
+https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/013/167/095/GCA_013167095.2_Dsi/GCA_013167095.2_Dsi_fcs_report.txt
+
+### D_sinensis (CHINA)
+RUNNING
+Updated SRA IDs.
+
 
 ### D_lumholtzi
 FAILED
-Has full set of data from WW, but fails.
+Has full set of data from WW, but fails even with out AA data.
 Ask if this is the same genometpe of Lumholtzi? We can make RNA data
 -> Jan-24 23:57:35.405 [TaskFinalizer-10] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
 What genotype of D. lumholtzi is the RNA data from? I'm running into some issues when trying to annotate D. lumholtzi and wanted to make sure the genotype for the RNA data was the same as the assembly. The assembly is one Zhiqiang sent us previously: 1_all_chromosome_assemblies_and_annotation/D.lumholtzi.2.0_annotation/D.lumholtzi_3.0.masked.fasta
@@ -47,7 +56,7 @@ What genotype of D. lumholtzi is the RNA data from? I'm running into some issues
 --> Need to start a EGAPx GitHub issue.
 
 ### S_vetulus 
-RUNNING
+FAILED
 Has RNA data and annotation with out protein data, but errors arise when using protein data.
 -> Jan-24 23:42:54.306 [TaskFinalizer-9] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:target_proteins_plane:miniprot:run_miniprot (1)'
 - We factor some extra QA and filtering steps into our pre-defined protein sets, and generally recommend using them verbatim. Also, including a same-species set of proteins has risk of recapitulating any errors, although EGAPx does include some logic to try and mitigate that. That said, for the cladocerans EGAPx does wind up using the quite general Arthropoda set which may not be optimal. We are continuing to work on the protein evidence logic and can hopefully improve the setup in the future.
@@ -56,6 +65,7 @@ Has RNA data and annotation with out protein data, but errors arise when using p
 ./seqkit shuffle -2 /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/simocephalus_vetulus_annotation/simocephalus_vetulus.masked.aa.fasta -o /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/simocephalus_vetulus_annotation/simocephalus_vetulus.masked.aa_shuffled.fasta
 -> Feb-04 12:16:29.868 [TaskFinalizer-2] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:target_proteins_plane:miniprot:run_miniprot (1)'
 ./seqkit shuffle -2 /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/simocephalus_vetulus_annotation/simocephalus_vetulus.masked.aa_shuffled.fasta -o /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/simocephalus_vetulus_annotation/simocephalus_vetulus.masked.aa_reShuffled.fasta
+Feb-05 00:52:17.907 [TaskFinalizer-2] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:target_proteins_plane:miniprot:run_miniprot (1)'
 
 
 ## Clean up

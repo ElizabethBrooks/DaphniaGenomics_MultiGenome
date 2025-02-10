@@ -74,8 +74,9 @@ FAILED
 FAILED
 -> Feb-04 12:16:29.868 [TaskFinalizer-2] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:target_proteins_plane:miniprot:run_miniprot (1)'
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ.txt
-##### job
-
+##### job 1142592
+FAILED
+-> Feb-05 00:52:17.907 [TaskFinalizer-2] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:target_proteins_plane:miniprot:run_miniprot (1)'
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_NCBI.txt
 ##### job 1095598
@@ -93,7 +94,14 @@ ABORTED?
 -> no data
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_NCBI.txt
 ##### job 1131687
-RUNNING
+COMPLETED
+CDS          208033
+exon         271818
+gene         25878
+lnc_RNA      8606
+mRNA         28421
+pseudogene   3062
+transcript   1022
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA.txt
 ##### job 1141864
 COMPLETED
@@ -275,6 +283,10 @@ transcript   384
 FAILED
 -> Process `egapx:gnomon_plane:chainer:run_chainer` input file name collision -- There are multiple input files for each of the following file names: indexed/D.sinensis_CHINA.masked.asn
 Moved files to the scratch space
+Updated SRA IDs
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI.txt
+##### job
+
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW_ZQ.txt
 ##### job 1098982
@@ -292,7 +304,8 @@ transcript   71
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_noAA.txt
 ##### job 1142475
-RUNNING
+FAILED
+-> Feb-04 17:20:36.433 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
 ##### job 1071029
