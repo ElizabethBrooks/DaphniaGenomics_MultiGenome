@@ -3,6 +3,79 @@
 ## Notes
 Send email to WW, ZQ, and Mike double checking the annotation species and genotypes. Are there any more that we need done?
 
+### D_galeata (M5)
+FAILED
+Has NCBI data, but aborts with no outputs. The RNA data is HiSeq data.
+May need to email Mathilde, let Mike know what Wen says. -> They don't have any galeata data
+Also, do you happen to have RNA data for the D. galeata M5 genotype? I'm running into errors using the RNA data that is available for D. galeata (M5) from the SRA.
+-> galeata is not our assembly. I don't know if RNAseq from SRA works. 
+Trying again with updated list of SRA IDs from the 2021 paper "Hybridization Dynamics and Extensive Introgression in the Daphnia longispina Species Complex: New Insights from a High-Quality Daphnia galeata Reference Genome"
+--> Only WGA and WGS SRA data listed.
+
+### S_vetulus 
+FAILED
+Has RNA data and annotation with out protein data, but errors arise when using protein data.
+-> Jan-24 23:42:54.306 [TaskFinalizer-9] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:target_proteins_plane:miniprot:run_miniprot (1)'
+- We factor some extra QA and filtering steps into our pre-defined protein sets, and generally recommend using them verbatim. Also, including a same-species set of proteins has risk of recapitulating any errors, although EGAPx does include some logic to try and mitigate that. That said, for the cladocerans EGAPx does wind up using the quite general Arthropoda set which may not be optimal. We are continuing to work on the protein evidence logic and can hopefully improve the setup in the future.
+- WRT your error, it looks like your input is being split into two jobs, and job (1) is failing but (2) is complete. We have previously seen memory errors with miniprot caused by clustering of difficult to align proteins, which we addressed by shuffling the protein input with seqkit. Please try that.
+- seqkit shuffle -2 proteins.faa -o shuffled.faa
+./seqkit shuffle -2 /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/simocephalus_vetulus_annotation/simocephalus_vetulus.masked.aa.fasta -o /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/simocephalus_vetulus_annotation/simocephalus_vetulus.masked.aa_shuffled.fasta
+-> Feb-04 12:16:29.868 [TaskFinalizer-2] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:target_proteins_plane:miniprot:run_miniprot (1)'
+./seqkit shuffle -2 /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/simocephalus_vetulus_annotation/simocephalus_vetulus.masked.aa_shuffled.fasta -o /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/simocephalus_vetulus_annotation/simocephalus_vetulus.masked.aa_reShuffled.fasta
+Feb-05 00:52:17.907 [TaskFinalizer-2] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:target_proteins_plane:miniprot:run_miniprot (1)'
+https://github.com/ncbi/egapx/issues/82
+-> Sent data to EGAPx devs to further explore the issue.
+I was able to reproduce this issue using EGAPx, and also miniprot in isolation.
+There seems to be at least one specific protein (g16410.t2) causing the miniprot issues. This one looks to be over 70k residues. But I'm not sure if it is specifically a length issue. I tried a few others including one that was ~60k (g12907.t1) and got output.
+Do you have any additional information about that protein, specifically its validity? Have you used this protein in other EGAPx runs that have completed successfully? Or other proteins in successful runs that are over 70k?
+If it is something you want to use, it would likely need to be diagnosed by the miniprot developers.
+
+### D_lumholtzi
+FAILED
+Has full set of data from WW, but fails even with out AA data.
+Ask if this is the same genometpe of Lumholtzi? We can make RNA data
+-> Jan-24 23:57:35.405 [TaskFinalizer-10] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
+What genotype of D. lumholtzi is the RNA data from? I'm running into some issues when trying to annotate D. lumholtzi and wanted to make sure the genotype for the RNA data was the same as the assembly. The assembly is one Zhiqiang sent us previously: 1_all_chromosome_assemblies_and_annotation/D.lumholtzi.2.0_annotation/D.lumholtzi_3.0.masked.fasta
+-> Yes, they are the same. Mike Pfrender did RNA work.  I extracted DNA and made the primary assembly. 
+--> Need to start a EGAPx GitHub issue.
+https://github.com/ncbi/egapx/issues/83
+---> Need to send the contents of the temp_datapath folder.
+We have a check for contamination so that is why EGAPx did not proceed. However, the messaging of the error could be clearer, we have made a note of that.
+You can take the above report and the genome, and run fcs.py to clean the genome using FCS-GX.
+https://github.com/ncbi/fcs/wiki/FCS-GX-quickstart#clean-the-genome
+After that, re-run egapx on the clean genome.
+https://github.com/ncbi/fcs/wiki/FCS-GX-quickstart
+export FCS_DEFAULT_IMAGE=fcs-gx.sif
+python3 ./fcs.py screen genome --fasta /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/D.lumholtzi.2.0_annotation/D.lumholtzi_3.0.masked.fasta --out-dir ./D_lumholtzi_gx_out/ --gx-db "$GXDB_LOC/gxdb" --tax-id 42856
+
+### D_sinensis (CHINA)
+FAILED
+Updated SRA IDs.
+-> Process `egapx:gnomon_plane:chainer:run_chainer` input file name collision -- There are multiple input files for each of the following file names: indexed/D.sinensis_CHINA.masked.asn
+-> Feb-11 02:32:35.114 [Actor Thread 14] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:gnomon_plane:chainer:run_chainer (2)'
+https://github.com/ncbi/egapx/issues/45
+
+### D_sinensis (WSL)
+RUNNING -> clean
+RUNNING -> clean, no AA
+Has NCBI data, but fails.
+-> Feb-02 06:51:49.718 [TaskFinalizer-4] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
+Trying again with updated list of SRA IDs from the 2022 paper "Genetic Drift Shapes the Evolution of a Highly Dynamic Metapopulation"
+-> Feb-03 16:39:10.872 [TaskFinalizer-3] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
+--> Need to start a EGAPx GitHub issue.
+Trying with no AA file.
+-> Feb-04 17:20:36.433 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
+--> Need to start a EGAPx GitHub issue.
+https://github.com/ncbi/egapx/issues/83
+The D. sinensis genome is heavily contaminated. The FCS contamination report is here:
+https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/013/167/095/GCA_013167095.2_Dsi/GCA_013167095.2_Dsi_fcs_report.txt
+We have a check for contamination so that is why EGAPx did not proceed. However, the messaging of the error could be clearer, we have made a note of that.
+You can take the above report and the genome, and run fcs.py to clean the genome using FCS-GX.
+https://github.com/ncbi/fcs/wiki/FCS-GX-quickstart#clean-the-genome
+After that, re-run egapx on the clean genome.
+-> cat /scratch365/ebrooks5/multi_genome_project/data/D_sinensis_ncbi_dataset/GCA_013167095.2/GCA_013167095.2_Dsi_genomic.fna | python3 ./fcs.py clean genome --action-report /scratch365/ebrooks5/FCS_GX/D_sinensis_data/GCA_013167095.2_Dsi_fcs_report.txt --output /scratch365/ebrooks5/FCS_GX/D_sinensis_data/GCA_013167095.2_Dsi_genomic_clean.fasta --contam-fasta-out /scratch365/ebrooks5/FCS_GX/D_sinensis_data/GCA_013167095.2_Dsi_genomic_contam.fasta
+-> Applied 95 actions; 4541444 bps dropped; 0 bps lowercased; 8218 bps hardmasked.
+
 ### D_magna (NIES)
 COMPLETED
 COMPLETED
@@ -18,54 +91,6 @@ RUNNING
 COMPLETED
 Has NCBI data, but aborted.
 Completed using RNA for the SRA study associated with the NCBI assembly bioproject for KAP4.
-
-### D_galeata (M5)
-FAILED
-Has NCBI data, but aborts with no outputs. The RNA data is HiSeq data.
-May need to email Mathilde, let Mike know what Wen says. -> They don't have any galeata data
-Also, do you happen to have RNA data for the D. galeata M5 genotype? I'm running into errors using the RNA data that is available for D. galeata (M5) from the SRA.
--> galeata is not our assembly. I don't know if RNAseq from SRA works. 
-Trying again with updated list of SRA IDs from the 2021 paper "Hybridization Dynamics and Extensive Introgression in the Daphnia longispina Species Complex: New Insights from a High-Quality Daphnia galeata Reference Genome"
---> Only WGA and WGS SRA data listed.
-
-### D_sinensis (WSL)
-FAILED
-Has NCBI data, but fails.
--> Feb-02 06:51:49.718 [TaskFinalizer-4] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
-Trying again with updated list of SRA IDs from the 2022 paper "Genetic Drift Shapes the Evolution of a Highly Dynamic Metapopulation"
--> Feb-03 16:39:10.872 [TaskFinalizer-3] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
---> Need to start a EGAPx GitHub issue.
-Trying with no AA file.
--> Feb-04 17:20:36.433 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
---> Need to start a EGAPx GitHub issue.
-The D. sinensis genome is heavily contaminated. The FCS contamination report is here:
-https://ftp.ncbi.nlm.nih.gov/genomes/all/GCA/013/167/095/GCA_013167095.2_Dsi/GCA_013167095.2_Dsi_fcs_report.txt
-
-### D_sinensis (CHINA)
-RUNNING
-Updated SRA IDs.
-
-
-### D_lumholtzi
-FAILED
-Has full set of data from WW, but fails even with out AA data.
-Ask if this is the same genometpe of Lumholtzi? We can make RNA data
--> Jan-24 23:57:35.405 [TaskFinalizer-10] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
-What genotype of D. lumholtzi is the RNA data from? I'm running into some issues when trying to annotate D. lumholtzi and wanted to make sure the genotype for the RNA data was the same as the assembly. The assembly is one Zhiqiang sent us previously: 1_all_chromosome_assemblies_and_annotation/D.lumholtzi.2.0_annotation/D.lumholtzi_3.0.masked.fasta
--> Yes, they are the same. Mike Pfrender did RNA work.  I extracted DNA and made the primary assembly. 
---> Need to start a EGAPx GitHub issue.
-
-### S_vetulus 
-FAILED
-Has RNA data and annotation with out protein data, but errors arise when using protein data.
--> Jan-24 23:42:54.306 [TaskFinalizer-9] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:target_proteins_plane:miniprot:run_miniprot (1)'
-- We factor some extra QA and filtering steps into our pre-defined protein sets, and generally recommend using them verbatim. Also, including a same-species set of proteins has risk of recapitulating any errors, although EGAPx does include some logic to try and mitigate that. That said, for the cladocerans EGAPx does wind up using the quite general Arthropoda set which may not be optimal. We are continuing to work on the protein evidence logic and can hopefully improve the setup in the future.
-- WRT your error, it looks like your input is being split into two jobs, and job (1) is failing but (2) is complete. We have previously seen memory errors with miniprot caused by clustering of difficult to align proteins, which we addressed by shuffling the protein input with seqkit. Please try that.
-- seqkit shuffle -2 proteins.faa -o shuffled.faa
-./seqkit shuffle -2 /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/simocephalus_vetulus_annotation/simocephalus_vetulus.masked.aa.fasta -o /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/simocephalus_vetulus_annotation/simocephalus_vetulus.masked.aa_shuffled.fasta
--> Feb-04 12:16:29.868 [TaskFinalizer-2] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:target_proteins_plane:miniprot:run_miniprot (1)'
-./seqkit shuffle -2 /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/simocephalus_vetulus_annotation/simocephalus_vetulus.masked.aa_shuffled.fasta -o /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/simocephalus_vetulus_annotation/simocephalus_vetulus.masked.aa_reShuffled.fasta
-Feb-05 00:52:17.907 [TaskFinalizer-2] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:target_proteins_plane:miniprot:run_miniprot (1)'
 
 
 ## Clean up

@@ -1,3 +1,0 @@
-species: D_sinensis_WSL_NCBI_noAA
-inputs_EGAPx: EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_noAA.yaml
-doi: 10.1093/molbev/msac264

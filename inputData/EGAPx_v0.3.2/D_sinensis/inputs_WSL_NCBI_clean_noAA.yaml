@@ -1,0 +1,6 @@
+genome: /scratch365/ebrooks5/FCS_GX/D_sinensis_data/GCA_013167095.2_Dsi_genomic_clean.fasta
+taxid: 1820382
+reads:
+  - SRR10389290
+  - SRR10389293
+  - SRR10389294

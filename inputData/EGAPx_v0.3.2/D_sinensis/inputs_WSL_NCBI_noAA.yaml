@@ -1,6 +1,0 @@
-genome: /scratch365/ebrooks5/multi_genome_project/data/D_sinensis_ncbi_dataset/GCA_013167095.2/GCA_013167095.2_Dsi_genomic.fna
-taxid: 1820382
-reads:
-  - SRR10389290
-  - SRR10389293
-  - SRR10389294
