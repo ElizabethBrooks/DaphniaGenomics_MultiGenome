@@ -21,6 +21,9 @@ ABORTED?
 FAILED
 -> Feb-03 13:47:47.585 [TaskFinalizer-6] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:rnaseq_short_plane:fetch_sra_fasta:run_fetch_sra_fasta (1)'
 Accidentally used WGA and WGS SRA data.
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+##### job
+
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI.txt
 ##### job 1096999
@@ -71,8 +74,8 @@ FAILED
 FAILED
 -> Jan-24 23:57:35.405 [TaskFinalizer-10] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
 Ask if this is the same genometpe of Lumholtzi? We can make RNA data
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ.txt
-##### job
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean.txt
+##### job 
 
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ.txt
@@ -406,13 +409,15 @@ FAILED
 ##### job 1101901
 FAILED
 -> Jan-24 09:42:31.315 [TaskFinalizer-10] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_noAA.txt
-##### job
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_oAA.txt
+##### job 
 
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW.txt
 ##### job 1102412
 ABORTED
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA_noAA.txt
+##### job
 
 
 ## EGAPx v0.3.1

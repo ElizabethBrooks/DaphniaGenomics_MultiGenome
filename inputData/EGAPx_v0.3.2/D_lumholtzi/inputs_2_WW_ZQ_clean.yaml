@@ -1,0 +1,6 @@
+genome: /scratch365/ebrooks5/FCS_GX/D_lumholtzi_gx_out/D.lumholtzi_3.0.masked_clean.fasta
+taxid: 42856
+proteins: /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/D.lumholtzi.2.0_annotation/D.lumholtzi_3.0.masked.aa.fasta
+reads:
+  - /afs/crc.nd.edu/group/pfrenderlab/carson/Daphnia_raw_data_WW/RNA/lumholtzi.R1_001.fastq
+  - /afs/crc.nd.edu/group/pfrenderlab/carson/Daphnia_raw_data_WW/RNA/lumholtzi.R2_001.fastq

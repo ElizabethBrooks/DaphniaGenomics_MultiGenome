@@ -40,7 +40,8 @@ cat /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_
 -> g16410.t2, g21760.t2, g12907.t1
 
 ### D_lumholtzi
-FAILED
+RUNNING -> clean
+RUNNING -> clean, no AA
 Has full set of data from WW, but fails even with out AA data.
 Ask if this is the same genometpe of Lumholtzi? We can make RNA data
 -> Jan-24 23:57:35.405 [TaskFinalizer-10] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
@@ -57,7 +58,6 @@ https://github.com/ncbi/fcs/wiki/FCS-GX-quickstart
 -> qsub screen_genome_FCS_GX.sh 
 --> job 1170458
 ---> bash clean_genome_FCS_GX.sh
-
 
 ### D_sinensis (CHINA)
 FAILED

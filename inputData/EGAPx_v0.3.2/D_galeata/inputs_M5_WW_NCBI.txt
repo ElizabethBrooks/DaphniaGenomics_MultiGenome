@@ -1,3 +1,0 @@
-species: D_galeata_M5_WW_NCBI
-inputs_EGAPx: EGAPx_v0.3.2/D_galeata/inputs_M5_WW_NCBI.yaml
-doi: 10.1093/gbe/evab267
