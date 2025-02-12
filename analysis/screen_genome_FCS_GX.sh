@@ -18,7 +18,7 @@ inputSpecies="D_lumholtzi"
 GXDB_LOC="/scratch365/ebrooks5/FCS_GX"
 
 # pre clean up
-rm -r $GXDB_LOC"/D_lumholtzi_gx_out"
+#rm -r $GXDB_LOC"/D_lumholtzi_gx_out"
 
 # move to DB directory
 cd $GXDB_LOC
