@@ -29,6 +29,15 @@ I was able to reproduce this issue using EGAPx, and also miniprot in isolation.
 There seems to be at least one specific protein (g16410.t2) causing the miniprot issues. This one looks to be over 70k residues. But I'm not sure if it is specifically a length issue. I tried a few others including one that was ~60k (g12907.t1) and got output.
 Do you have any additional information about that protein, specifically its validity? Have you used this protein in other EGAPx runs that have completed successfully? Or other proteins in successful runs that are over 70k?
 If it is something you want to use, it would likely need to be diagnosed by the miniprot developers.
+``` 
+for i in /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/*/*.aa.fasta; do echo $i; cat $i | sed "s/>.*/>/g" | tr -d "\n" | sed "s/>/\n/g" | awk '{print length}' | sort -n | tail; done
+```
+-> simocephalus_vetulus.masked.aa.fasta (41139, 60951, 61688, 78970)
+-> D.pulicaria_LARRY_HIC_final.aa.fasta (35784)
+```
+cat /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/FAILED/S_vetulus_WW_ZQ/S_vetulus_data/simocephalus_vetulus.masked.aa.fasta | tr -d "\n" | sed "s/>/>\n/g" | awk 'length > max_length { max_length = length; longest_line = $0 } END { print longest_line }'
+```
+-> g16410.t2, g21760.t2, g12907.t1
 
 ### D_lumholtzi
 FAILED
@@ -45,8 +54,9 @@ You can take the above report and the genome, and run fcs.py to clean the genome
 https://github.com/ncbi/fcs/wiki/FCS-GX-quickstart#clean-the-genome
 After that, re-run egapx on the clean genome.
 https://github.com/ncbi/fcs/wiki/FCS-GX-quickstart
-export FCS_DEFAULT_IMAGE=fcs-gx.sif
-python3 ./fcs.py screen genome --fasta /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/D.lumholtzi.2.0_annotation/D.lumholtzi_3.0.masked.fasta --out-dir ./D_lumholtzi_gx_out/ --gx-db "$GXDB_LOC/gxdb" --tax-id 42856
+-> qsub run_FCS_GX.sh 
+--> job 1170137
+--> screen_genome_FCS_GX.sh
 
 ### D_sinensis (CHINA)
 FAILED
@@ -73,11 +83,12 @@ We have a check for contamination so that is why EGAPx did not proceed. However,
 You can take the above report and the genome, and run fcs.py to clean the genome using FCS-GX.
 https://github.com/ncbi/fcs/wiki/FCS-GX-quickstart#clean-the-genome
 After that, re-run egapx on the clean genome.
--> cat /scratch365/ebrooks5/multi_genome_project/data/D_sinensis_ncbi_dataset/GCA_013167095.2/GCA_013167095.2_Dsi_genomic.fna | python3 ./fcs.py clean genome --action-report /scratch365/ebrooks5/FCS_GX/D_sinensis_data/GCA_013167095.2_Dsi_fcs_report.txt --output /scratch365/ebrooks5/FCS_GX/D_sinensis_data/GCA_013167095.2_Dsi_genomic_clean.fasta --contam-fasta-out /scratch365/ebrooks5/FCS_GX/D_sinensis_data/GCA_013167095.2_Dsi_genomic_contam.fasta
+```
+cat /scratch365/ebrooks5/multi_genome_project/data/D_sinensis_ncbi_dataset/GCA_013167095.2/GCA_013167095.2_Dsi_genomic.fna | python3 ./fcs.py clean genome --action-report /scratch365/ebrooks5/FCS_GX/D_sinensis_data/GCA_013167095.2_Dsi_fcs_report.txt --output /scratch365/ebrooks5/FCS_GX/D_sinensis_data/GCA_013167095.2_Dsi_genomic_clean.fasta --contam-fasta-out /scratch365/ebrooks5/FCS_GX/D_sinensis_data/GCA_013167095.2_Dsi_genomic_contam.fasta
+```
 -> Applied 95 actions; 4541444 bps dropped; 0 bps lowercased; 8218 bps hardmasked.
 
 ### D_magna (NIES)
-COMPLETED
 COMPLETED
 Has NCBI data, but failed. Ran out of space on franklin.
 Failed again with no outputs.
@@ -87,9 +98,7 @@ Completed with RNA from the SRA study associated with the NCBI assembly bioproje
 -> Only "RNA-Seq of Daphnia magna NIES:adult female whole body" available
 
 ### D_pulex (KAP4)
-RUNNING
 COMPLETED
-Has NCBI data, but aborted.
 Completed using RNA for the SRA study associated with the NCBI assembly bioproject for KAP4.
 
 
