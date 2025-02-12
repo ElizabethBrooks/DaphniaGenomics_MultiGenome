@@ -1,2 +1,2 @@
-species: D_lumholtzi_2_WW_ZQ_noAA
-inputs_EGAPx: EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_noAA.yaml
+species: D_lumholtzi_2_WW_ZQ_clean_noAA
+inputs_EGAPx: EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.yaml
