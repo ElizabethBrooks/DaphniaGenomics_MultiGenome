@@ -54,9 +54,10 @@ You can take the above report and the genome, and run fcs.py to clean the genome
 https://github.com/ncbi/fcs/wiki/FCS-GX-quickstart#clean-the-genome
 After that, re-run egapx on the clean genome.
 https://github.com/ncbi/fcs/wiki/FCS-GX-quickstart
--> qsub run_FCS_GX.sh 
---> job 1170137
---> screen_genome_FCS_GX.sh
+-> qsub screen_genome_FCS_GX.sh 
+--> job 1170458
+---> bash clean_genome_FCS_GX.sh
+
 
 ### D_sinensis (CHINA)
 FAILED
