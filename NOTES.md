@@ -4,13 +4,28 @@
 Send email to WW, ZQ, and Mike double checking the annotation species and genotypes. Are there any more that we need done?
 
 ### D_galeata (M5)
-FAILED
+RUNNING -> ENA
+RUNNING -> ENA, no AA
 Has NCBI data, but aborts with no outputs. The RNA data is HiSeq data.
 May need to email Mathilde, let Mike know what Wen says. -> They don't have any galeata data
 Also, do you happen to have RNA data for the D. galeata M5 genotype? I'm running into errors using the RNA data that is available for D. galeata (M5) from the SRA.
 -> galeata is not our assembly. I don't know if RNAseq from SRA works. 
 Trying again with updated list of SRA IDs from the 2021 paper "Hybridization Dynamics and Extensive Introgression in the Daphnia longispina Species Complex: New Insights from a High-Quality Daphnia galeata Reference Genome"
 --> Only WGA and WGS SRA data listed.
+-> data from Mike & Craig Jackson's email
+I do still have some D. galeata RNA-Seq data.
+It’s in the European Nucleotide Archive – guess they never uploaded it over into NCBI.
+This project I used:
+RNA-seq to investigate the effect of long term exposure to fish kairomones on gene expression in Daphnia galeata
+https://www.ebi.ac.uk/ena/browser/view/PRJEB29887
+I downloaded it from there using the ENA’s enaBrowserTools:
+https://github.com/enasequence/enaBrowserTools
+with command:
+enaBrowserTools-1.6/python3/enaGroupGet -f fastq ERP112242
+Looks like the ENA site can also produce a wget script to download all the data if you click ‘Download All’ above the list of FASTQ file.
+and I was also looking at this D. galeata dataset but I didn’t end up downloading it:
+Transcriptome of Daphnia galeata responds to the exposure to gut parasite Caullerya mesnili
+https://www.ebi.ac.uk/ena/browser/view/PRJNA492212
 
 ### S_vetulus 
 RUNNING
@@ -37,7 +52,10 @@ for i in /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosom
 ```
 cat /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/FAILED/S_vetulus_WW_ZQ/S_vetulus_data/simocephalus_vetulus.masked.aa.fasta | tr -d "\n" | sed "s/>/>\n/g" | awk 'length > max_length { max_length = length; longest_line = $0 } END { print longest_line }'
 ```
--> g16410.t2, g21760.t2, g12907.t1
+-> clean_run1
+--> removed g16410.t2, g21760.t2, and g12907.t1
+-> clean
+--> removed g16410.t2
 
 ### D_lumholtzi
 RUNNING -> clean
