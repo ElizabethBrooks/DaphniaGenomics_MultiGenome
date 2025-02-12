@@ -53,7 +53,14 @@ FAILED
 -> Feb-03 16:39:10.872 [TaskFinalizer-3] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean.txt
 ##### job 1170072
-RUNNING
+COMPLETED
+CDS          198192
+exon         252983
+gene         20335
+lnc_RNA      5286
+mRNA         25902
+pseudogene   1524
+transcript   158
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ.txt
 ##### job 1098987
@@ -94,8 +101,8 @@ FAILED
 FAILED
 -> Feb-05 00:52:17.907 [TaskFinalizer-2] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:target_proteins_plane:miniprot:run_miniprot (1)'
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_clean.txt
-##### job 
-
+##### job 1170186
+RUNNING
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_NCBI.txt
 ##### job 1095598
@@ -318,7 +325,14 @@ FAILED
 -> Feb-04 17:20:36.433 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 ##### job 1170066
-RUNNING
+COMPLETED
+CDS          189785
+exon         242796
+gene         18464
+lnc_RNA      5501
+mRNA         23561
+pseudogene   439
+transcript   122
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh test/EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
 ##### job 1071029

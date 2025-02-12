@@ -13,7 +13,7 @@ Trying again with updated list of SRA IDs from the 2021 paper "Hybridization Dyn
 --> Only WGA and WGS SRA data listed.
 
 ### S_vetulus 
-FAILED
+RUNNING
 Has RNA data and annotation with out protein data, but errors arise when using protein data.
 -> Jan-24 23:42:54.306 [TaskFinalizer-9] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:target_proteins_plane:miniprot:run_miniprot (1)'
 - We factor some extra QA and filtering steps into our pre-defined protein sets, and generally recommend using them verbatim. Also, including a same-species set of proteins has risk of recapitulating any errors, although EGAPx does include some logic to try and mitigate that. That said, for the cladocerans EGAPx does wind up using the quite general Arthropoda set which may not be optimal. We are continuing to work on the protein evidence logic and can hopefully improve the setup in the future.
@@ -33,7 +33,7 @@ If it is something you want to use, it would likely need to be diagnosed by the 
 for i in /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/*/*.aa.fasta; do echo $i; cat $i | sed "s/>.*/>/g" | tr -d "\n" | sed "s/>/\n/g" | awk '{print length}' | sort -n | tail; done
 ```
 -> simocephalus_vetulus.masked.aa.fasta (41139, 60951, 61688, 78970)
--> D.pulicaria_LARRY_HIC_final.aa.fasta (35784)
+-> D.pulicaria_LARRY_HIC_final.aa.fasta (35784) -> succeeded
 ```
 cat /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/FAILED/S_vetulus_WW_ZQ/S_vetulus_data/simocephalus_vetulus.masked.aa.fasta | tr -d "\n" | sed "s/>/>\n/g" | awk 'length > max_length { max_length = length; longest_line = $0 } END { print longest_line }'
 ```
@@ -66,8 +66,8 @@ Updated SRA IDs.
 https://github.com/ncbi/egapx/issues/45
 
 ### D_sinensis (WSL)
-RUNNING -> clean
-RUNNING -> clean, no AA
+COMPLETED -> clean
+COMPLETED -> clean, no AA
 Has NCBI data, but fails.
 -> Feb-02 06:51:49.718 [TaskFinalizer-4] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
 Trying again with updated list of SRA IDs from the 2022 paper "Genetic Drift Shapes the Evolution of a Highly Dynamic Metapopulation"
