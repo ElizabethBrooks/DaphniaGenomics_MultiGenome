@@ -1,0 +1,6 @@
+genome: /afs/crc.nd.edu/group/pfrenderlab/carson/Daphnia_raw_data_WW/D.sinensis_CHINA.masked.fasta
+taxid: 1820382
+reads:
+  - SRR10389290
+  - SRR10389293
+  - SRR10389294

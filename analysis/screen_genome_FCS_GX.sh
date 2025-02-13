@@ -8,7 +8,7 @@
 # script to screen a genome fasta for contamination
 # usage: qsub screen_genome_FCS_GX.sh
 # job 1170458 -> D_lumholtzi
-# job 
+# job 1172568 -> D_sinensis
 
 # retrieve the input genome
 #inputGenome="/afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/D.lumholtzi.2.0_annotation/D.lumholtzi_3.0.masked.fasta"

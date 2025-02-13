@@ -1,6 +1,6 @@
 genome: /afs/crc.nd.edu/group/pfrenderlab/carson/Daphnia_raw_data_WW/D.sinensis_CHINA.masked.fasta
 taxid: 1820382
-proteins: /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/D.sinensis_CHINA_annotation/D.sinensis_CHINA.masked.fasta
+proteins: /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/D.sinensis_CHINA_annotation/D.sinensis_CHINA.masked.aa.fasta
 reads:
   - SRR10389290
   - SRR10389293

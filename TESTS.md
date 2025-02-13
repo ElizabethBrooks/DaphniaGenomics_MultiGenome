@@ -37,6 +37,9 @@ FAILED
 -> Process `egapx:gnomon_plane:chainer:run_chainer` input file name collision -- There are multiple input files for each of the following file names: indexed/D.sinensis_CHINA.masked.asn
 -> Feb-11 02:32:35.114 [Actor Thread 14] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:gnomon_plane:chainer:run_chainer (2)'
 https://github.com/ncbi/egapx/issues/45
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI.txt
+##### job
+
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI.txt
 ##### job 1101912
@@ -348,6 +351,10 @@ transcript   71
 
 
 ## WW tests (only assembly and RNA data, no proteins)
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
+##### job
+
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_noAA.txt
 ##### job 1142475

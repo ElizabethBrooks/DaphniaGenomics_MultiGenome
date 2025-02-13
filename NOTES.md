@@ -78,11 +78,13 @@ https://github.com/ncbi/fcs/wiki/FCS-GX-quickstart
 ---> bash clean_genome_FCS_GX.sh
 
 ### D_sinensis (CHINA)
-FAILED
+RUNNING -> fixed
+RUNNING -> fixed, no AA
 Updated SRA IDs.
 -> Process `egapx:gnomon_plane:chainer:run_chainer` input file name collision -- There are multiple input files for each of the following file names: indexed/D.sinensis_CHINA.masked.asn
 -> Feb-11 02:32:35.114 [Actor Thread 14] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:gnomon_plane:chainer:run_chainer (2)'
 https://github.com/ncbi/egapx/issues/45
+Fixed typo in input protein file, which was set to the genome file path
 
 ### D_sinensis (WSL)
 COMPLETED -> clean
