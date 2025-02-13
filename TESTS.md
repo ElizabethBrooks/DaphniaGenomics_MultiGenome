@@ -23,7 +23,17 @@ FAILED
 Accidentally used WGA and WGS SRA data.
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
 ##### job 1170983
-RUNNING
+ABORTED
+Exit Status      = -1
+failed before writing exit_status because:
+shepherd exited with exit status 19: before writing exit_status
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+##### job
+
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ERP112242.txt
+##### job
+
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI.txt
 ##### job 1096999
@@ -38,8 +48,8 @@ FAILED
 -> Feb-11 02:32:35.114 [Actor Thread 14] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:gnomon_plane:chainer:run_chainer (2)'
 https://github.com/ncbi/egapx/issues/45
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI.txt
-##### job
-
+##### job 1172600
+RUNNING
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI.txt
 ##### job 1101912
@@ -353,8 +363,15 @@ transcript   71
 ## WW tests (only assembly and RNA data, no proteins)
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
-##### job
-
+##### job 1172603
+COMPLETED
+CDS          185634
+exon         238058
+gene         17806
+lnc_RNA      5207
+mRNA         23027
+pseudogene   397
+transcript   144
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_noAA.txt
 ##### job 1142475
@@ -456,7 +473,13 @@ transcript   246
 ABORTED
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA_noAA.txt
 ##### job 1170985
-RUNNING
+ABORTED
+Exit Status      = -1
+failed before writing exit_status because:
+shepherd exited with exit status 19: before writing exit_status
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA_noAA.txt
+##### job
+
 
 
 ## EGAPx v0.3.1

@@ -6,6 +6,7 @@ Send email to WW, ZQ, and Mike double checking the annotation species and genoty
 ### D_galeata (M5)
 RUNNING -> ENA
 RUNNING -> ENA, no AA
+RUNNING -> ERP112242 only 
 Has NCBI data, but aborts with no outputs. The RNA data is HiSeq data.
 May need to email Mathilde, let Mike know what Wen says. -> They don't have any galeata data
 Also, do you happen to have RNA data for the D. galeata M5 genotype? I'm running into errors using the RNA data that is available for D. galeata (M5) from the SRA.
@@ -78,8 +79,8 @@ https://github.com/ncbi/fcs/wiki/FCS-GX-quickstart
 ---> bash clean_genome_FCS_GX.sh
 
 ### D_sinensis (CHINA)
-RUNNING -> fixed
-RUNNING -> fixed, no AA
+COMPLETED -> fixed
+COMPLETED -> fixed, no AA
 Updated SRA IDs.
 -> Process `egapx:gnomon_plane:chainer:run_chainer` input file name collision -- There are multiple input files for each of the following file names: indexed/D.sinensis_CHINA.masked.asn
 -> Feb-11 02:32:35.114 [Actor Thread 14] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:gnomon_plane:chainer:run_chainer (2)'
