@@ -76,7 +76,14 @@ FAILED
 Ask if this is the same genometpe of Lumholtzi? We can make RNA data
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean.txt
 ##### job 1170995
-RUNNING
+COMPLETED
+CDS          199618
+exon         253862
+gene         17754
+lnc_RNA      5690
+mRNA         23766
+pseudogene   728
+transcript   309
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ.txt
 ##### job 1094873
@@ -117,8 +124,15 @@ mRNA         27437
 pseudogene   4119
 transcript   99
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_clean.txt
-##### job 
-
+##### job 1171066
+COMPLETED
+CDS          212039
+exon         252911
+gene         22697
+lnc_RNA      2812
+mRNA         27434
+pseudogene   4137
+transcript   99
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_NCBI.txt
 ##### job 1095598
@@ -421,7 +435,14 @@ FAILED
 -> Jan-24 09:42:31.315 [TaskFinalizer-10] ERROR nextflow.processor.TaskProcessor - Error executing process > 'egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype'
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
 ##### job 1170992
-RUNNING
+COMPLETED 
+CDS          199258
+exon         265754
+gene         16622
+lnc_RNA      6121
+mRNA         23717
+pseudogene   211
+transcript   246
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW.txt
 ##### job 1102412
