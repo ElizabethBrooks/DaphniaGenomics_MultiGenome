@@ -1,0 +1,2 @@
+species: D_galeata_M5_WW_ERP112242_noAA
+inputs_EGAPx: EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ERP112242_noAA.yaml

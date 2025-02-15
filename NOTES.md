@@ -1,7 +1,6 @@
 ## EGAPx v0.3.2
 
 ## Notes
-Send email to WW, ZQ, and Mike double checking the annotation species and genotypes. Are there any more that we need done?
 
 ### D_galeata (M5)
 RUNNING -> ENA

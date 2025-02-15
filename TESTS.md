@@ -28,9 +28,15 @@ Exit Status      = -1
 failed before writing exit_status because:
 shepherd exited with exit status 19: before writing exit_status
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+##### job 1173604
+ABORTED
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
 ##### job
 
 
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ERP112242.txt
+##### job 1173587
+ABORTED
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ERP112242.txt
 ##### job
 
@@ -478,8 +484,18 @@ Exit Status      = -1
 failed before writing exit_status because:
 shepherd exited with exit status 19: before writing exit_status
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA_noAA.txt
-##### job
+##### job 1173610
+COMPLETED
+CDS          209242
+exon         267131
+gene         21052
+lnc_RNA      7309
+mRNA         26759
+pseudogene   964
+transcript   352
 
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ERP112242_noAA.txt
+##### job
 
 
 ## EGAPx v0.3.1
