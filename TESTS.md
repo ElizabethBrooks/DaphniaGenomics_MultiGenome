@@ -497,6 +497,8 @@ transcript   352
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ERP112242_noAA.txt
 ##### job 1177022
 ABORTED
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ERP112242_noAA.txt
+##### job
 
 
 ## EGAPx v0.3.1
