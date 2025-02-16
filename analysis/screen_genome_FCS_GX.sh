@@ -9,14 +9,17 @@
 # usage: qsub screen_genome_FCS_GX.sh
 # job 1170458 -> D_lumholtzi
 # job 1172568 -> D_sinensis
+# job
 
 # retrieve the input genome
 #inputGenome="/afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/D.lumholtzi.2.0_annotation/D.lumholtzi_3.0.masked.fasta"
-inputGenome="/afs/crc.nd.edu/group/pfrenderlab/carson/Daphnia_raw_data_WW/D.sinensis_CHINA.masked.fasta"
+#inputGenome="/afs/crc.nd.edu/group/pfrenderlab/carson/Daphnia_raw_data_WW/D.sinensis_CHINA.masked.fasta"
+inputGenome="/afs/crc.nd.edu/group/pfrenderlab/carson/Daphnia_raw_data_WW/D.galeata_M5.masked.fasta"
 
 # set input species
 #inputSpecies="D_lumholtzi"
-inputSpecies="D_sinensis_CHINA"
+#inputSpecies="D_sinensis_CHINA"
+inputSpecies="D_galeata_M5"
 
 # set DB directory
 GXDB_LOC="/scratch365/ebrooks5/FCS_GX"

@@ -26,6 +26,10 @@ Looks like the ENA site can also produce a wget script to download all the data 
 and I was also looking at this D. galeata dataset but I didn’t end up downloading it:
 Transcriptome of Daphnia galeata responds to the exposure to gut parasite Caullerya mesnili
 https://www.ebi.ac.uk/ena/browser/view/PRJNA492212
+```
+cat /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/FAILED/D_galeata_data/D.galeata_M5.masked.fasta.pep.fasta | tr -d "\r" > /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/FAILED/D_galeata_data/D.galeata_M5.masked.fasta.pep_clean.fasta
+```
+
 
 ### S_vetulus 
 COMPLETED -> clean

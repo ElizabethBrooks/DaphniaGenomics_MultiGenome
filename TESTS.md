@@ -31,15 +31,15 @@ shepherd exited with exit status 19: before writing exit_status
 ##### job 1173604
 ABORTED
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
-##### job
-
+##### job 1177025
+ABORTED
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ERP112242.txt
 ##### job 1173587
 ABORTED
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ERP112242.txt
-##### job
-
+##### job 1177024
+ABORTED
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI.txt
 ##### job 1096999
@@ -495,7 +495,8 @@ pseudogene   964
 transcript   352
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ERP112242_noAA.txt
-##### job
+##### job 1177022
+ABORTED
 
 
 ## EGAPx v0.3.1
