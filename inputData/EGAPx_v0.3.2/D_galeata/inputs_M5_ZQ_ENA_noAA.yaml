@@ -1,4 +1,4 @@
-genome: /afs/crc.nd.edu/group/pfrenderlab/carson/Daphnia_raw_data_WW/D.galeata_M5.masked.fasta
+genome: /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/D.galeata_M5_annotation/D.galeata_M5.masked.chr.fasta
 taxid: 27404
 reads:
   - /scratch365/ebrooks5/multi_genome_project/data/D_galeata_ENA/ERP112242/ERR2929116/ERR2929116_1.fastq
