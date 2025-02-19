@@ -1,0 +1,2 @@
+species: D_pulex_CON21_WW_ZQ_noAA
+inputs_EGAPx: EGAPx_v0.3.2/D_pulex/inputs_CON21_WW_ZQ_noAA.yaml

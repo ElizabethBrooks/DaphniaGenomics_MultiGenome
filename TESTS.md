@@ -34,8 +34,8 @@ ABORTED
 ##### job 1177025
 ABORTED
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_ZQ_ENA_all.txt
-##### job
-
+##### job 1178865
+ABORTED
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ERP112242.txt
 ##### job 1173587
@@ -44,8 +44,8 @@ ABORTED
 ##### job 1177024
 ABORTED
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_ZQ_ENA.txt
-##### job 
-
+##### job 1178863
+ABORTED
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI.txt
 ##### job 1096999
@@ -61,7 +61,14 @@ FAILED
 https://github.com/ncbi/egapx/issues/45
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI.txt
 ##### job 1172600
-RUNNING
+COMPLETED
+CDS          194608
+exon         236714
+gene         19217
+lnc_RNA      4379
+mRNA         24279
+pseudogene   1086
+transcript   270
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI.txt
 ##### job 1101912
@@ -374,6 +381,22 @@ transcript   71
 
 ## WW tests (only assembly and RNA data, no proteins)
 
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+##### job 
+
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW_ZQ_noAA.txt
+##### job 
+
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+##### job
+
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+##### job
+
+
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
 ##### job 1172603
 COMPLETED
@@ -500,18 +523,32 @@ mRNA         26759
 pseudogene   964
 transcript   352
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_ZQ_ENA_all_noAA.txt
-##### job
-
+##### job 1178867
+ABORTED
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ERP112242_noAA.txt
 ##### job 1177022
 ABORTED
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ERP112242_noAA.txt
 ##### job 1178655
-RUNNING
+COMPLETED
+CDS          183627
+exon         224694
+gene         19066
+lnc_RNA      5158
+mRNA         23159
+pseudogene   1019
+transcript   152
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_ZQ_ENA_noAA.txt
-##### job
-
+##### job 1178868
+COMPLETED
+CDS          184204
+exon         225482
+gene         19082
+lnc_RNA      5163
+mRNA         23210
+pseudogene   1015
+transcript   162
 
 
 ## EGAPx v0.3.1

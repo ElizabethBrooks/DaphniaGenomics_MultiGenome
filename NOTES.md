@@ -2,10 +2,15 @@
 
 ## Notes
 
+- Add all remaining annotations that did not use protein data as input to the box folder.
+- Compare number of annotated features for annotations that used all data vs annotations not using protein data.
+- Trouble shoot D_gelata
+
 ### D_galeata (M5)
+RUNNING -> ENA all
+COMPLETED -> ENA all, no AA
 RUNNING -> ENA
-RUNNING -> ENA, no AA
-RUNNING -> ERP112242 only 
+COMPLETED -> ENA, no AA
 Has NCBI data, but aborts with no outputs. The RNA data is HiSeq data.
 May need to email Mathilde, let Mike know what Wen says. -> They don't have any galeata data
 Also, do you happen to have RNA data for the D. galeata M5 genotype? I'm running into errors using the RNA data that is available for D. galeata (M5) from the SRA.
@@ -26,10 +31,7 @@ Looks like the ENA site can also produce a wget script to download all the data 
 and I was also looking at this D. galeata dataset but I didn’t end up downloading it:
 Transcriptome of Daphnia galeata responds to the exposure to gut parasite Caullerya mesnili
 https://www.ebi.ac.uk/ena/browser/view/PRJNA492212
-```
-cat /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/FAILED/D_galeata_data/D.galeata_M5.masked.fasta.pep.fasta | tr -d "\r" > /Users/bamflappy/PfrenderLab/multi_genome_project/annotation_analysis/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_NCBI_tests/FAILED/D_galeata_data/D.galeata_M5.masked.fasta.pep_clean.fasta
-```
-
+-> switched to ZQ masked.chr.fasta file (12 seqeunces) from WW masked.fasta file (294 sequences)
 
 ### S_vetulus 
 COMPLETED -> clean
