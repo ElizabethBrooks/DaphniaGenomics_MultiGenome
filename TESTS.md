@@ -382,20 +382,48 @@ transcript   71
 ## WW tests (only assembly and RNA data, no proteins)
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
-##### job 
-
+##### job 1204190
+COMPLETED
+CDS          162879
+exon         193221
+gene         16950
+lnc_RNA      3567
+mRNA         20146
+pseudogene   944
+transcript   61
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW_ZQ_noAA.txt
-##### job 
-
+##### job 1204191
+COMPLETED
+CDS          114720
+exon         131683
+gene         17040
+lnc_RNA      2594
+mRNA         16004
+pseudogene   1664
+transcript   19
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
-##### job
-
+##### job 1204192
+COMPLETED
+CDS          188816
+exon         222983
+gene         19198
+lnc_RNA      3678
+mRNA         23485
+pseudogene   886
+transcript   80
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
-##### job
-
+##### job 1204193
+COMPLETED
+CDS          190365
+exon         248853
+gene         21806
+lnc_RNA      6845
+mRNA         25263
+pseudogene   1603
+transcript   241
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
 ##### job 1172603
