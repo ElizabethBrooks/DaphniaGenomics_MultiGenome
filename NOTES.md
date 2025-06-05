@@ -34,7 +34,7 @@ https://www.ebi.ac.uk/ena/browser/view/PRJNA492212
 -> switched to ZQ masked.chr.fasta file (12 seqeunces) from WW masked.fasta file (294 sequences)
 -> re-named pep sequences
 ```
-lineNum=1; while read line; do echo "Processing line $lineNum"; newLine=$(echo $line | sed "s/>$/>pep\.$lineNum/g"); lineNum=$(($lineNum+1)); echo $newLine >> /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/D.galeata_M5_annotation/D.galeata_M5.masked.fasta.pep_clean_renamed.fasta; done < /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/D.galeata_M5_annotation/D.galeata_M5.masked.fasta.pep_clean.fasta
+lineNum=1; while read line; do echo "Processing line $lineNum"; newLine=$(echo $line | sed "s/>.*$/>pep\.$lineNum/g"); lineNum=$(($lineNum+1)); echo $newLine >> /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/D.galeata_M5_annotation/D.galeata_M5.masked.fasta.pep_clean_renamed.fasta; done < /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/D.galeata_M5_annotation/D.galeata_M5.masked.fasta.pep_clean.fasta
 ```
 
 ### S_vetulus 
