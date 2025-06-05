@@ -7,9 +7,9 @@
 - Trouble shoot D_gelata
 
 ### D_galeata (M5)
-RUNNING -> ENA all
+RUNNING -> ENA all (pep_clean_renamed)
 COMPLETED -> ENA all, no AA
-RUNNING -> ENA
+RUNNING -> ENA (pep_clean_renamed)
 COMPLETED -> ENA, no AA
 Has NCBI data, but aborts with no outputs. The RNA data is HiSeq data.
 May need to email Mathilde, let Mike know what Wen says. -> They don't have any galeata data
@@ -32,6 +32,10 @@ and I was also looking at this D. galeata dataset but I didn’t end up download
 Transcriptome of Daphnia galeata responds to the exposure to gut parasite Caullerya mesnili
 https://www.ebi.ac.uk/ena/browser/view/PRJNA492212
 -> switched to ZQ masked.chr.fasta file (12 seqeunces) from WW masked.fasta file (294 sequences)
+-> re-named pep sequences
+```
+lineNum=1; while read line; do echo "Processing line $lineNum"; newLine=$(echo $line | sed "s/>$/>pep\.$lineNum/g"); lineNum=$(($lineNum+1)); echo $newLine >> /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/D.galeata_M5_annotation/D.galeata_M5.masked.fasta.pep_clean_renamed.fasta; done < /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/D.galeata_M5_annotation/D.galeata_M5.masked.fasta.pep_clean.fasta
+```
 
 ### S_vetulus 
 COMPLETED -> clean

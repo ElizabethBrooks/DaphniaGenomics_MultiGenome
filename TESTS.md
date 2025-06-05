@@ -36,6 +36,11 @@ ABORTED
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_ZQ_ENA_all.txt
 ##### job 1178865
 ABORTED
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_ZQ_ENA_all.txt
+##### job 1215729
+ABORTED
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_ZQ_ENA_all.txt
+##### job
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ERP112242.txt
 ##### job 1173587
@@ -46,6 +51,14 @@ ABORTED
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_ZQ_ENA.txt
 ##### job 1178863
 ABORTED
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_ZQ_ENA.txt
+##### job 1215730
+ABORTED
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_ZQ_ENA.txt
+##### job 1289018
+ABORTED
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_ZQ_ENA.txt
+##### job
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI.txt
 ##### job 1096999
@@ -553,6 +566,9 @@ transcript   352
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_ZQ_ENA_all_noAA.txt
 ##### job 1178867
 ABORTED
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_ZQ_ENA_all_noAA.txt
+##### job 1215731
+ABORTED
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ERP112242_noAA.txt
 ##### job 1177022
@@ -577,6 +593,9 @@ lnc_RNA      5163
 mRNA         23210
 pseudogene   1015
 transcript   162
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_ZQ_ENA_noAA.txt
+##### job 1215732
+ABORTED
 
 
 ## EGAPx v0.3.1
