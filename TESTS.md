@@ -39,8 +39,6 @@ ABORTED
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_ZQ_ENA_all.txt
 ##### job 1215729
 ABORTED
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_ZQ_ENA_all.txt
-##### job
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ERP112242.txt
 ##### job 1173587
@@ -57,8 +55,6 @@ ABORTED
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_ZQ_ENA.txt
 ##### job 1289018
 ABORTED
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_ZQ_ENA.txt
-##### job
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI.txt
 ##### job 1096999
@@ -393,6 +389,10 @@ transcript   71
 
 
 ## WW tests (only assembly and RNA data, no proteins)
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW_ZQ_noAA.txt
+##### job 
+
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
 ##### job 1204190

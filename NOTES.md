@@ -6,6 +6,9 @@
 - Compare number of annotated features for annotations that used all data vs annotations not using protein data.
 - Trouble shoot D_gelata
 
+### D_mitsukuri
+Need noAA
+
 ### D_galeata (M5)
 RUNNING -> ENA all (pep_clean_renamed)
 COMPLETED -> ENA all, no AA
