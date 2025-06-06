@@ -1,2 +1,2 @@
 species: D_melanica_CON6_ZQ_MP
-inputs_EGAPx: EGAPx_v0.3.2/D_magna/inputs_CON6_ZQ_MP.yaml
+inputs_EGAPx: EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP.yaml
