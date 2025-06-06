@@ -3,28 +3,39 @@
 ## EGAPx v0.4
 
 #### qsub run_EGAPx_v0.4_HPC.sh EGAPx_v0.4/D_ambigua/inputs_3_WW_ZQ.txt
-##### job 
+##### job 1768409
+RUNNING
 
 #### qsub run_EGAPx_v0.4_HPC.sh EGAPx_v0.4/D_arenata/inputs_2_WW_ZQ.txt
-##### job 
+##### job 1768411
+RUNNING
 
 #### qsub run_EGAPx_v0.4_HPC.sh EGAPx_v0.4/D_catawba/inputs_3_WW_ZQ.txt
-##### job 
+##### job 1768413
+RUNNING
 
 #### qsub run_EGAPx_v0.4_HPC.sh EGAPx_v0.4/D_dentifera/inputs_3_WW_ZQ.txt
-##### job 
+##### job 1768414
+ERROR
 
 #### qsub run_EGAPx_v0.4_HPC.sh EGAPx_v0.4/D_lumholtzi/inputs_2_WW_ZQ.txt
-##### job
+##### job 1768415
+RUNNING
 
 #### qsub run_EGAPx_v0.4_HPC.sh EGAPx_v0.4/D_lumholtzi/inputs_2_WW_ZQ_clean.txt
-##### job
+##### job 1768416
+RUNNING
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW_ZQ.txt
-##### job
+##### job 1768417
+RUNNING
 
 
 ## EGAPx v0.3.2
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP.txt
+##### job 
+RUNNING
 
 ## WW (assembly & RNA), ZQ (proteins), & NCBI (as needed) tests
 Adding proteins appears to slightly shift the number of each identfied features.
