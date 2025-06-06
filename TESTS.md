@@ -1,5 +1,24 @@
 # EGAPx Tests
 
+## EGAPx v0.4
+
+#### qsub run_EGAPx_v0.4_HPC.sh EGAPx_v0.4/D_ambigua/inputs_3_WW_ZQ.txt
+##### job
+
+
+#### qsub run_EGAPx_v0.4_HPC.sh EGAPx_v0.4/D_arenata/inputs_2_WW_ZQ.txt
+##### job 
+
+
+#### qsub run_EGAPx_v0.4_HPC.sh EGAPx_v0.4/D_catawba/inputs_3_WW_ZQ.txt
+##### job 
+
+
+#### qsub run_EGAPx_v0.4_HPC.sh EGAPx_v0.4/D_dentifera/inputs_3_WW_ZQ.txt
+##### job
+
+
+
 ## EGAPx v0.3.2
 
 ## WW (assembly & RNA), ZQ (proteins), & NCBI (as needed) tests
@@ -389,10 +408,6 @@ transcript   71
 
 
 ## WW tests (only assembly and RNA data, no proteins)
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW_ZQ_noAA.txt
-##### job 
-
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
 ##### job 1204190

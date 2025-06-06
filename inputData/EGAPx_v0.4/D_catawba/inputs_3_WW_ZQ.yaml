@@ -1,0 +1,7 @@
+genome: /afs/crc.nd.edu/group/pfrenderlab/carson/Daphnia_raw_data_WW/D.catawba.3.0.masked.fasta
+taxid: 247388
+proteins: /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/D.catawba_2.0_annotation/D.catawba.3.0.masked.aa.fasta
+long_reads: /scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNA_assembly/isoseq/D.catawba_isoseq_coding.fasta
+short_reads:
+  - /afs/crc.nd.edu/group/pfrenderlab/carson/Daphnia_raw_data_WW/RNA/catawba.R1_001.fastq
+  - /afs/crc.nd.edu/group/pfrenderlab/carson/Daphnia_raw_data_WW/RNA/catawba.R2_001.fastq
