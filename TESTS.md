@@ -3,20 +3,20 @@
 ## EGAPx v0.4
 
 #### qsub run_EGAPx_v0.4_HPC.sh EGAPx_v0.4/D_ambigua/inputs_3_WW_ZQ.txt
-##### job
-
+##### job 1766189
+COMPLETED
 
 #### qsub run_EGAPx_v0.4_HPC.sh EGAPx_v0.4/D_arenata/inputs_2_WW_ZQ.txt
-##### job 
-
+##### job 1766190
+COMPLETED
 
 #### qsub run_EGAPx_v0.4_HPC.sh EGAPx_v0.4/D_catawba/inputs_3_WW_ZQ.txt
-##### job 
-
+##### job 1766191
+COMPLETED
 
 #### qsub run_EGAPx_v0.4_HPC.sh EGAPx_v0.4/D_dentifera/inputs_3_WW_ZQ.txt
-##### job
-
+##### job 1766192
+COMPLETED
 
 
 ## EGAPx v0.3.2

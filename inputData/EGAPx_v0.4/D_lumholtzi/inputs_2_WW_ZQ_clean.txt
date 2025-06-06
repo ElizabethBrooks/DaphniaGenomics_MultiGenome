@@ -1,0 +1,2 @@
+species: D_lumholtzi_2_WW_ZQ_clean
+inputs_EGAPx: EGAPx_v0.4/D_lumholtzi/inputs_2_WW_ZQ_clean.yaml
