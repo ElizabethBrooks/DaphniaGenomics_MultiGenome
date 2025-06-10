@@ -4,38 +4,57 @@
 
 #### qsub run_EGAPx_v0.4_HPC.sh EGAPx_v0.4/D_ambigua/inputs_3_WW_ZQ.txt
 ##### job 1768409
-RUNNING
+FAILED
+eutil connection failure
+
+#### qsub run_EGAPx_v0.4_HPC.sh EGAPx_v0.4/D_ambigua/inputs_3_WW_ZQ_clean.txt
+##### job 
+-> cleaned the headers
+```
+cat /scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNA_assembly/isoseq/D.ambigua_isoseq.fasta | sed "s/|/_/g" | sed "s/(//g" | sed "s/)//g" | sed "s/+//g" | sed "s/\//_/g" | sed "s/-/_/g" | sed "s/:/_/g" > /scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNA_assembly/isoseq/D.ambigua_isoseq_clean.fasta
+```
 
 #### qsub run_EGAPx_v0.4_HPC.sh EGAPx_v0.4/D_arenata/inputs_2_WW_ZQ.txt
 ##### job 1768411
-RUNNING
+FAILED
+eutil connection failure
 
 #### qsub run_EGAPx_v0.4_HPC.sh EGAPx_v0.4/D_catawba/inputs_3_WW_ZQ.txt
 ##### job 1768413
-RUNNING
+FAILED
+eutil connection failure
 
 #### qsub run_EGAPx_v0.4_HPC.sh EGAPx_v0.4/D_dentifera/inputs_3_WW_ZQ.txt
 ##### job 1768414
-ERROR
+FAILED
+eutil connection failure
 
 #### qsub run_EGAPx_v0.4_HPC.sh EGAPx_v0.4/D_lumholtzi/inputs_2_WW_ZQ.txt
 ##### job 1768415
-RUNNING
+FAILED
+eutil connection failure
 
 #### qsub run_EGAPx_v0.4_HPC.sh EGAPx_v0.4/D_lumholtzi/inputs_2_WW_ZQ_clean.txt
 ##### job 1768416
-RUNNING
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW_ZQ.txt
-##### job 1768417
-RUNNING
-
+FAILED
+eutil connection failure
+```
+  00150/004/0006/R  8AF300968439BD81 0025/0005 2025-06-07T01:54:32.798324 d32cepyc196.crc.nd.edu UNK_CLIENT      UNK_SESSION              minimap2_wnode Error: LIB "wn_worker_thread.cpp", line 267: ncbi::CWorkerThread::x_DoJob() --- error processing job: (CObjReaderParseException::eNoDefline) CFastaReader: Input doesn't start with a defline or comment around line 1 (m_Pos = 1)
+```
 
 ## EGAPx v0.3.2
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP.txt
-##### job 
-RUNNING
+##### job 1768885
+FAILED
+```
+ Exiting because of *FATAL ERROR*: could not create FIFO file wrkarea/STAR.713102509432256GunGDr/D.melanica_1.0.masked-CON6_S47_L004_R1_001.fastq/D.melanica_1.0.masked-CON6_S47_L004_R1_001.fastq-_STARtmp/tmp.fifo.read1
+  SOLUTION: check the if run directory supports FIFO files.
+  If run partition does not support FIFO (e.g. Windows partitions FAT, NTFS), re-run on a Linux partition, or point --outTmpDir to a Linux partition.
+  
+  Jun 06 23:32:43 ...... FATAL ERROR, exiting
+  [main_samview] fail to read the header from "-".
+```
 
 ## WW (assembly & RNA), ZQ (proteins), & NCBI (as needed) tests
 Adding proteins appears to slightly shift the number of each identfied features.
