@@ -4,9 +4,9 @@
 #$ -r n
 #$ -N fastqc_MultiGenome_jobOutput
 
-#S cript to perform fastqc quality control of paired end reads
+# Script to perform fastqc quality control of paired end reads
 # Usage: qsub fastqc_shortReads.sh inputsFile
-# Usage Ex: qsub fastqc_shortReads.sh ShortReads/inputPaths_D_melanica.txt
+# Usage Ex: qsub fastqc_shortReads.sh shortReads/inputPaths_D_melanica.txt
 
 # Required modules for ND CRC servers
 module load bio/2.0
@@ -15,9 +15,9 @@ module load bio/2.0
 inputsFile=$1
 
 # Retrieve paired reads absolute path for alignment
-readPath=$(grep "pairedReads:" ../"InputData/"$inputsFile | tr -d " " | sed "s/pairedReads://g")
+readPath=$(grep "pairedReads:" ../"inputData/"$inputsFile | tr -d " " | sed "s/pairedReads://g")
 # Retrieve analysis outputs absolute path
-outputsPath=$(grep "outputs:" ../"InputData/"$inputsFile | tr -d " " | sed "s/outputs://g")
+outputsPath=$(grep "outputs:" ../"inputData/"$inputsFile | tr -d " " | sed "s/outputs://g")
 
 # Make a new directory for project analysis
 projectDir=$(basename $readPath)
