@@ -8,11 +8,13 @@ FAILED
 eutil connection failure
 
 #### qsub run_EGAPx_v0.4_HPC.sh EGAPx_v0.4/D_ambigua/inputs_3_WW_ZQ_clean.txt
-##### job 
+##### job 1773824
 -> cleaned the headers
 ```
 cat /scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNA_assembly/isoseq/D.ambigua_isoseq.fasta | sed "s/|/_/g" | sed "s/(//g" | sed "s/)//g" | sed "s/+//g" | sed "s/\//_/g" | sed "s/-/_/g" | sed "s/:/_/g" > /scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNA_assembly/isoseq/D.ambigua_isoseq_clean.fasta
 ```
+FAILED
+eutil connection failure
 
 #### qsub run_EGAPx_v0.4_HPC.sh EGAPx_v0.4/D_arenata/inputs_2_WW_ZQ.txt
 ##### job 1768411

@@ -9,7 +9,7 @@
 ### D_mitsukuri
 Need noAA
 
-### D_galeata (M5)
+### D_galeata (M5) -> what is the size distribution of scaffolds
 RUNNING -> ENA all (pep_clean_renamed)
 COMPLETED -> ENA all, no AA
 RUNNING -> ENA (pep_clean_renamed)
