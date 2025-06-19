@@ -2,5 +2,5 @@ genome: /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome
 taxid: 121629
 proteins: /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/D.melanica_CON6_annotation/D.melanica_1.0.masked.aa.fasta
 reads:
-  - /scratch365/ebrooks5/multi_genome_project/data/D_melanica_RNA/CON6_S47_L004_R1_001.fastq.gz
-  - /scratch365/ebrooks5/multi_genome_project/data/D_melanica_RNA/CON6_S47_L004_R2_001.fastq.gz
+  - /scratch365/ebrooks5/annotations_short_read_data_processed/Pfrender_MP-3535_250512_CMG/trimmed/CON6_S47_L004.R1_001.fq
+  - /scratch365/ebrooks5/annotations_short_read_data_processed/Pfrender_MP-3535_250512_CMG/trimmed/CON6_S47_L004.R2_001.fq
