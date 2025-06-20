@@ -57,6 +57,22 @@ FAILED
   Jun 06 23:32:43 ...... FATAL ERROR, exiting
   [main_samview] fail to read the header from "-".
 ```
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP.txt
+##### job 1798016
+FAILED
+```
+ImportError: /afs/crc.nd.edu/x86_64_linux/b/bio/0724/lib/python3.12/lib-dynload/_sqlite3.cpython-312-x86_64-linux-gnu.so: undefined symbol: sqlite3_deserialize
+```
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP.txt
+##### job 1799400
+COMPLETED
+CDS          217755
+exon         268137
+gene         22136
+lnc_RNA      4035
+mRNA         29315
+pseudogene   1541
+transcript   224
 
 ## WW (assembly & RNA), ZQ (proteins), & NCBI (as needed) tests
 Adding proteins appears to slightly shift the number of each identfied features.
@@ -444,7 +460,11 @@ pseudogene   1575
 transcript   71
 
 
-## WW tests (only assembly and RNA data, no proteins)
+## WW & ZQ tests (only assembly and RNA data, no proteins)
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+##### job
+
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
 ##### job 1204190
