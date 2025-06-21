@@ -46,6 +46,10 @@ eutil connection failure
 
 ## EGAPx v0.3.2
 
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_raw.txt
+##### job
+
+
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP.txt
 ##### job 1768885
 FAILED
@@ -462,9 +466,20 @@ transcript   71
 
 ## WW & ZQ tests (only assembly and RNA data, no proteins)
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_raw_noAA.txt
 ##### job
 
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+##### job 1800477
+COMPLETED
+CDS          203542
+exon         259253
+gene         18602
+lnc_RNA      4359
+mRNA         25818
+pseudogene   1514
+transcript   138
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
 ##### job 1204190

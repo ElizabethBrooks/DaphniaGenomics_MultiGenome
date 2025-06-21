@@ -6,8 +6,8 @@
 #$ -pe smp 8
 
 # Script to perform trimmomatic trimming of paired end reads
-# Usage: qsub trimmomatic_projects.sh inputsFile
-# Usage Ex: qsub trimmomatic_projects.sh ShortReads/inputPaths_D_melanica.txt
+# Usage: qsub trimmomatic_shortReads.sh inputsFile
+# Usage Ex: qsub trimmomatic_shortReads.sh ShortReads/inputPaths_D_melanica.txt
 ## job: 1795364
 
 # Required modules for ND CRC servers
