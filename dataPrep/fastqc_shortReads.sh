@@ -6,16 +6,18 @@
 
 # Script to perform fastqc quality control of paired end reads
 # Usage: qsub fastqc_shortReads.sh inputsFile
-# Usage Ex: qsub fastqc_shortReads.sh shortReads/inputPaths_D_melanica.txt raw
-## job: 1794738
-# Usage Ex: qsub fastqc_shortReads.sh shortReads/inputPaths_D_melanica.txt trimmed
+# Usage Ex: qsub fastqc_shortReads.sh shortReads/inputPaths_D_melanica.txt CON6 raw
+## job: 
+# Usage Ex: qsub fastqc_shortReads.sh shortReads/inputPaths_D_melanica.txt CON6 trimmed
 ## job: 
 
 # Required modules for ND CRC servers
 module load bio
 
-# Retrieve input argument of a inputs file
+# retrieve input arguments
 inputsFile=$1
+inputGenotype=$2
+inputsType=$3
 
 # Retrieve paired reads absolute path for alignment
 readPath=$(grep "pairedReads:" ../"inputData/"$inputsFile | tr -d " " | sed "s/pairedReads://g")
@@ -25,15 +27,15 @@ outputsPath=$(grep "outputs:" ../"inputData/"$inputsFile | tr -d " " | sed "s/ou
 # Make a new directory for project analysis
 projectDir=$(basename $readPath)
 outputsPath=$outputsPath"/"$projectDir
-mkdir $outputsPath
+#mkdir $outputsPath
 
 # check inputs type
-if [[ $2 == "trimmed" ]]; then
+if [[ $inputsType == "trimmed" ]]; then
 	# set the directory for inputs
 	readPath=$outputsPath"/trimmed"
 	# set the directory for analysis
 	qcOut=$outputsPath"/qc_trimmed"
-elif [[ $2 == "raw" ]]; then
+elif [[ $inputsType == "raw" ]]; then
 	# set the directory for analysis
 	qcOut=$outputsPath"/qc_raw"
 fi
@@ -55,7 +57,7 @@ versionFile=$qcOut"/software_version_summary.txt"
 fastqc -version > $versionFile
 
 # perform QC
-fastqc $readPath"/"*\.fastq.gz -o $qcOut
+fastqc $readPath"/"$inputGenotype*\.fastq.gz -o $qcOut
 
 # run multiqc
 multiqc $qcOut -o $qcOut -n "multiqc_raw"
