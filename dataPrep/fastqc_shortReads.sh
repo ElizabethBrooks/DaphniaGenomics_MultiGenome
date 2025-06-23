@@ -6,8 +6,10 @@
 
 # Script to perform fastqc quality control of paired end reads
 # Usage: qsub fastqc_shortReads.sh inputsFile
-# Usage Ex: qsub fastqc_shortReads.sh shortReads/inputPaths_D_melanica.txt
+# Usage Ex: qsub fastqc_shortReads.sh shortReads/inputPaths_D_melanica.txt raw
 ## job: 1794738
+# Usage Ex: qsub fastqc_shortReads.sh shortReads/inputPaths_D_melanica.txt trimmed
+## job: 
 
 # Required modules for ND CRC servers
 module load bio
@@ -25,14 +27,18 @@ projectDir=$(basename $readPath)
 outputsPath=$outputsPath"/"$projectDir
 mkdir $outputsPath
 
-# Name version output file
-versionFile=$outputsPath"/software_version_summary.txt"
-
-# Report software version
-fastqc -version > $versionFile
+# check inputs type
+if [[ $2 == "trimmed" ]]; then
+	# set the directory for inputs
+	readPath=$outputsPath"/trimmed"
+	# set the directory for analysis
+	qcOut=$outputsPath"/qc_trimmed"
+else if [[ $2 == "raw" ]]; then
+	# set the directory for analysis
+	qcOut=$outputsPath"/qc_raw"
+fi
 
 # Make a new directory for analysis
-qcOut=$outputsPath"/qc"
 mkdir $qcOut
 # Check if the folder already exists
 if [ $? -ne 0 ]; then
@@ -41,6 +47,12 @@ if [ $? -ne 0 ]; then
 fi
 # Move to the new directory
 cd $qcOut
+
+# Name version output file
+versionFile=$qcOut"/software_version_summary.txt"
+
+# Report software version
+fastqc -version > $versionFile
 
 # perform QC
 fastqc $readPath"/"*\.fastq.gz -o $qcOut
