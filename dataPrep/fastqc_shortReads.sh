@@ -34,10 +34,10 @@ if [[ $inputsType == "trimmed" ]]; then
 	# set the directory for inputs
 	readPath=$outputsPath"/trimmed"
 	# set the directory for analysis
-	qcOut=$outputsPath"/qc_trimmed"
+	qcOut=$outputsPath"/qc_trimmed_"$inputGenotype
 elif [[ $inputsType == "raw" ]]; then
 	# set the directory for analysis
-	qcOut=$outputsPath"/qc_raw"
+	qcOut=$outputsPath"/qc_raw_"$inputGenotype
 fi
 
 # Make a new directory for analysis
