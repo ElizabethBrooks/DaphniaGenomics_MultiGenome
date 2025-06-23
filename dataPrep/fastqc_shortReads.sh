@@ -33,7 +33,7 @@ if [[ $2 == "trimmed" ]]; then
 	readPath=$outputsPath"/trimmed"
 	# set the directory for analysis
 	qcOut=$outputsPath"/qc_trimmed"
-else if [[ $2 == "raw" ]]; then
+elif [[ $2 == "raw" ]]; then
 	# set the directory for analysis
 	qcOut=$outputsPath"/qc_raw"
 fi
