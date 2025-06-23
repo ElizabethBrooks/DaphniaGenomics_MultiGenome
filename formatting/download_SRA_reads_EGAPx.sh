@@ -118,6 +118,62 @@
 # usage ex: qsub download_SRA_reads_EGAPx.sh SK SRP173886
 # usage ex: qsub download_SRA_reads_EGAPx.sh SK SRP249341
 # jobs 854076 to 854084
+# NMP 
+# NFL92
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558595
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558594
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558607
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558606
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558599
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558598
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558597
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558596
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558601
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558600
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558593
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558592
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558605
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558604
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558603
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558602
+# KAP106
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554328
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554327
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554340
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554339
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554332
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554331
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554330
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554329
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554334
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554333
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554326
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554325
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554338
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554337
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554336
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554335
+# TEX58
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551834
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551833
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551846
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551845
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551838
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551837
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551836
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551835
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551840
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551839
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551832
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551831
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551844
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551843
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551842
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551841
+# NMP: jobs 
+
+# Required modules for ND CRC servers
+module load bio
 
 # retrieve input species
 inputSpecies=$1
