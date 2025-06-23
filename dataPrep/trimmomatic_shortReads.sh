@@ -8,7 +8,7 @@
 # Script to perform trimmomatic trimming of paired end reads
 # Usage: qsub trimmomatic_shortReads.sh inputsFile
 # Usage Ex: qsub trimmomatic_shortReads.sh ShortReads/inputPaths_D_melanica.txt
-## job: 1795364
+## job: 
 
 # Required modules for ND CRC servers
 module load bio/2.0
@@ -26,7 +26,7 @@ outputsPath=$(grep "outputs:" ../"inputData/"$inputsFile | tr -d " " | sed "s/ou
 # Make a new directory for project analysis
 projectDir=$(basename $readPath)
 outputsPath=$outputsPath"/"$projectDir
-mkdir $outputsPath
+#mkdir $outputsPath
 
 # Make a new directory for analysis
 trimOut=$outputsPath"/trimmed"
@@ -56,7 +56,7 @@ for f1 in "$readPath"/*_R1_001.fastq.gz; do
 	sampleTag=$(basename $f1 | sed 's/_R._001\.fastq\.gz//')
 	# Print status message
 	echo "Processing $sampleTag"
-	# phred score for trimming
+	# phred score for trimming (Illumina 1.9)
 	score=33
 	# Perform adapter trimming on paired reads using 8 threads
 	trimmomatic PE -threads 8 -phred"$score" $f1 $f2 $sampleTag".R1_001.fq.gz" $sampleTag"_uForward.fq.gz" $sampleTag".R2_001.fq.gz" $sampleTag"_uReverse.fq.gz" ILLUMINACLIP:"$adapterPath" LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:60 HEADCROP:10
