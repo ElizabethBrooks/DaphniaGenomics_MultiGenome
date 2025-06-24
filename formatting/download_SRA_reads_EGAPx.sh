@@ -170,7 +170,7 @@
 # usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551843
 # usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551842
 # usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551841
-# NMP: jobs 
+# NMP: jobs 1803905 to 1803952
 
 # Required modules for ND CRC servers
 module load bio

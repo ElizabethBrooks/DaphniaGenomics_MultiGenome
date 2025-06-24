@@ -7,7 +7,7 @@
 # Script to perform fastqc quality control of paired end reads
 # Usage: qsub fastqc_shortReads.sh inputsFile
 # Usage Ex: qsub fastqc_shortReads.sh shortReads/inputPaths_D_melanica.txt CON6 raw
-## job: 
+## job: 1803329
 # Usage Ex: qsub fastqc_shortReads.sh shortReads/inputPaths_D_melanica.txt CON6 trimmed
 ## job: 
 
@@ -57,7 +57,7 @@ versionFile=$qcOut"/software_version_summary.txt"
 fastqc -version > $versionFile
 
 # perform QC
-fastqc $readPath"/"$inputGenotype*\.fastq.gz -o $qcOut
+fastqc $readPath"/"$inputGenotype*\.f*q.gz -o $qcOut
 
 # run multiqc
 multiqc $qcOut -o $qcOut -n "multiqc_raw"
