@@ -1,0 +1,35 @@
+genome: /scratch365/ebrooks5/multi_genome_project/data/NMP/TEX58_MP_haplotype.fa
+taxid: 6669
+reads:
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551831/SRR25551831_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551831/SRR25551831_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551832/SRR25551832_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551832/SRR25551832_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551833/SRR25551833_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551833/SRR25551833_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551834/SRR25551834_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551834/SRR25551834_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551835/SRR25551835_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551835/SRR25551835_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551836/SRR25551836_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551836/SRR25551836_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551837/SRR25551837_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551837/SRR25551837_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551838/SRR25551838_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551838/SRR25551838_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551841/SRR25551841_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551841/SRR25551841_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551842/SRR25551842_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551842/SRR25551842_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551843/SRR25551843_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551843/SRR25551843_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551844/SRR25551844_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551844/SRR25551844_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551845/SRR25551845_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551845/SRR25551845_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551846/SRR25551846_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551846/SRR25551846_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551839/SRR25551839_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551839/SRR25551839_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551840/SRR25551840_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/TEX58/SRR25551840/SRR25551840_2.fasta

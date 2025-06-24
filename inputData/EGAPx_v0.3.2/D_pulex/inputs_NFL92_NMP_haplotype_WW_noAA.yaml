@@ -1,0 +1,35 @@
+genome: /scratch365/ebrooks5/multi_genome_project/data/NMP/NFL92_NMP_haplotype.fa
+taxid: 6669
+reads:
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558592/SRR25558592_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558592/SRR25558592_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558593/SRR25558593_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558593/SRR25558593_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558594/SRR25558594_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558594/SRR25558594_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558595/SRR25558595_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558595/SRR25558595_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558596/SRR25558596_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558596/SRR25558596_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558597/SRR25558597_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558597/SRR25558597_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558598/SRR25558598_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558598/SRR25558598_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558599/SRR25558599_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558599/SRR25558599_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558600/SRR25558600_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558600/SRR25558600_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558601/SRR25558601_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558601/SRR25558601_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558602/SRR25558602_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558602/SRR25558602_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558603/SRR25558603_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558603/SRR25558603_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558604/SRR25558604_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558604/SRR25558604_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558605/SRR25558605_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558605/SRR25558605_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558606/SRR25558606_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558606/SRR25558606_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558607/SRR25558607_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/NFL92/SRR25558607/SRR25558607_2.fasta

@@ -1,0 +1,35 @@
+genome: /scratch365/ebrooks5/multi_genome_project/data/NMP/KAP106_MP_haplotype.fa
+taxid: 6669
+reads:
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554325/SRR25554325_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554325/SRR25554325_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554326/SRR25554326_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554326/SRR25554326_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554327/SRR25554327_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554327/SRR25554327_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554328/SRR25554328_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554328/SRR25554328_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554329/SRR25554329_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554329/SRR25554329_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554330/SRR25554330_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554330/SRR25554330_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554331/SRR25554331_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554331/SRR25554331_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554332/SRR25554332_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554332/SRR25554332_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554333/SRR25554333_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554333/SRR25554333_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554334/SRR25554334_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554334/SRR25554334_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554335/SRR25554335_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554335/SRR25554335_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554336/SRR25554336_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554336/SRR25554336_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554337/SRR25554337_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554337/SRR25554337_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554338/SRR25554338_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554338/SRR25554338_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554339/SRR25554339_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554339/SRR25554339_2.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554340/SRR25554340_1.fasta
+  - /scratch365/ebrooks5/multi_genome_project/data/dump/KAP106/SRR25554340/SRR25554340_2.fasta
