@@ -9,7 +9,7 @@
 # Usage Ex: qsub fastqc_shortReads.sh shortReads/inputPaths_D_melanica.txt CON6 raw
 ## job: 1803329
 # Usage Ex: qsub fastqc_shortReads.sh shortReads/inputPaths_D_melanica.txt CON6 trimmed
-## job: 
+## job: 1804238
 
 # Required modules for ND CRC servers
 module load bio

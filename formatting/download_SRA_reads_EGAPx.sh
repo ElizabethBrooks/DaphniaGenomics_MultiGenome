@@ -206,7 +206,7 @@ mkdir $outDir
 cd $outDir
 
 # download formated reads
-prefetch $inputID
+prefetch $inputID --max-size 70G
 
 # status message
 echo "Beginning analysis..."
