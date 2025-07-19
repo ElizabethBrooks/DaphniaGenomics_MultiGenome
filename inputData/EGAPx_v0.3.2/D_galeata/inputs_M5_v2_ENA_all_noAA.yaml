@@ -1,4 +1,4 @@
-genome: /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/ENA_referenceGenomes_July2025/CAKKLH02.fasta
+genome: /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/ENA_referenceGenomes_July2025/CAKKLH02.cleaned.fasta
 taxid: 27404
 reads:
   - /scratch365/ebrooks5/multi_genome_project/data/D_galeata_ENA/SRP162395/SRR7892557/SRR7892557_1.fastq

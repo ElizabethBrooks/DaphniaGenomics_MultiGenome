@@ -46,6 +46,14 @@ eutil connection failure
 
 ## EGAPx v0.3.2
 
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ENA_noAA.txt
+##### job 
+RUNNING
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ENA_all_noAA.txt
+##### job 
+RUNNING
+
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_TEX58_MP_haplotype_WW_noAA.txt
 ##### job 1804314
 FAILED
