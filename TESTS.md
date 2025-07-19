@@ -46,29 +46,65 @@ eutil connection failure
 
 ## EGAPx v0.3.2
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_MP_haplotype_WW.txt
-##### job 
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_TEX58_MP_haplotype_WW_noAA.txt
+##### job 1804314
+FAILED
+sh /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/EGAPx_v0.3.2/tested_June2025/D_pulex_TEX58_MP_haplotype_WW_noAA/resume.sh
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_TEX58_MP_haplotype_WW_noAA.txt
+##### job 1895526
+RUNNING
 
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_TEX58_NMP_haplotype_WW_noAA.txt
+##### job 1804316
+FAILED
+sh /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/EGAPx_v0.3.2/tested_June2025/D_pulex_TEX58_NMP_haplotype_WW_noAA/resume.sh
+#### qsub resume_TEX58_NMP.sh
+##### job 1894959
+RUNNING
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_haplotype_WW.txt
-##### job 
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_MP_haplotype_WW_noAA.txt
+##### job 1804287
+COMPLETED
+CDS          242762
+exon         331505
+gene         19963
+lnc_RNA      5215
+mRNA         31033
+pseudogene   1129
+transcript   458
 
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_haplotype_WW_noAA.txt
+##### job 1804288
+COMPLETED
+CDS          246522
+exon         338625
+gene         20426
+lnc_RNA      5212
+mRNA         31496
+pseudogene   1309
+transcript   621
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_NFL92_MP_haplotype_WW.txt
-##### job 
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_NFL92_MP_haplotype_WW_noAA.txt
+##### job 1804290
+COMPLETED
+CDS          248950
+exon         354338
+gene         19559
+lnc_RNA      5116
+mRNA         31748
+pseudogene   1166
+transcript   600
 
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_NFL92_NMP_haplotype_WW.txt
-##### job 
-
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_TEX58_MP_haplotype_WW.txt
-##### job 
-
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_TEX58_NMP_haplotype_WW.txt
-##### job 
-
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_NFL92_NMP_haplotype_WW_noAA.txt
+##### job 1804291
+COMPLETED
+CDS          249281
+exon         351172
+gene         19888
+lnc_RNA      5201
+mRNA         31903
+pseudogene   1223
+transcript   560
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_raw.txt
 ##### job 1801380
