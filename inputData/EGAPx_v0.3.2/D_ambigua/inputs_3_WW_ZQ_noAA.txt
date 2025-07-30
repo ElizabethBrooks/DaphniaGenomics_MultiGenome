@@ -1,0 +1,2 @@
+species: D_ambigua_3_WW_ZQ_noAA
+inputs_EGAPx: EGAPx_v0.3.2/D_ambigua/inputs_3_WW_ZQ_noAA.yaml

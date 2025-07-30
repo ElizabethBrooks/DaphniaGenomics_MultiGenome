@@ -46,12 +46,23 @@ eutil connection failure
 
 ## EGAPx v0.3.2
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ENA_noAA.txt
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW_ZQ_noAA.txt.txt
 ##### job 
-RUNNING
+
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ENA_noAA.txt
+##### job 1904645
+COMPLETED
+CDS          2813
+exon         3986
+gene         566
+lnc_RNA      247
+mRNA         444
+pseudogene   11
+transcript   8
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ENA_all_noAA.txt
-##### job 
+##### job 1904646
 RUNNING
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_TEX58_MP_haplotype_WW_noAA.txt
