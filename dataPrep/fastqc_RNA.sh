@@ -6,14 +6,21 @@
 
 # script to perform fastqc quality control of paired end reads
 # usage: qsub fastqc_RNA.sh
+# job 2558845
 
 # Required modules for ND CRC servers
 module load bio
+
+# get the current directory
+curDir=$(pwd)
 
 # loop over each input file
 for inputsFile in ../inputData/counting/*; do
 	# Print status message
 	echo "Processing: $inputsFile"
+
+	# move back to the original directory
+	cd $curDir
 
 	# retrieve paired reads absolute path for alignment
 	readPath=$(grep "pairedReads:" $inputsFile | tr -d " " | sed "s/pairedReads://g")
