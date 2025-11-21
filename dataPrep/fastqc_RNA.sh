@@ -35,8 +35,8 @@ for inputsFile in ../inputData/counting/*; do
 	mkdir $qcOut
 	# Check if the folder already exists
 	if [ $? -ne 0 ]; then
-		echo "The $qcOut directory already exsists... please remove before proceeding."
-		exit 1
+		echo "The $qcOut directory already exsists... skipping!"
+		continue
 	fi
 	# Move to the new directory
 	cd $qcOut
