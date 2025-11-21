@@ -46,9 +46,23 @@ eutil connection failure
 
 ## EGAPx v0.3.2
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW_ZQ_noAA.txt.txt
-##### job 
-
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW_ZQ_noAA.txt
+##### job 1931271
+FAILED
+```
+File "/afs/crc.nd.edu/user/e/ebrooks5/miniconda3/lib/python3.9/http/client.py", line 289, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+```
+##### job 1948301
+COMPLETED
+CDS          183700
+exon         217179
+gene         16140
+lnc_RNA      3788
+mRNA         21655
+pseudogene   227
+transcript   47
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ENA_noAA.txt
 ##### job 1904645
@@ -63,7 +77,15 @@ transcript   8
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ENA_all_noAA.txt
 ##### job 1904646
-RUNNING
+COMPELTED
+Statistics for /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/EGAPx_v0.3.2/tested_June2025/D_galeata_M5_v2_ENA_all_noAA/complete.genomic.gff
+CDS          2899
+exon         4494
+gene         641
+lnc_RNA      332
+mRNA         480
+pseudogene   15
+transcript   19
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_TEX58_MP_haplotype_WW_noAA.txt
 ##### job 1804314
@@ -71,7 +93,15 @@ FAILED
 sh /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/EGAPx_v0.3.2/tested_June2025/D_pulex_TEX58_MP_haplotype_WW_noAA/resume.sh
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_TEX58_MP_haplotype_WW_noAA.txt
 ##### job 1895526
-RUNNING
+COMPLETED
+Statistics for /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/EGAPx_v0.3.2/tested_June2025/D_pulex_TEX58_MP_haplotype_WW_noAA/complete.genomic.gff
+CDS          232502
+exon         323697
+gene         18608
+lnc_RNA      4657
+mRNA         29624
+pseudogene   1132
+transcript   464
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_TEX58_NMP_haplotype_WW_noAA.txt
 ##### job 1804316
@@ -79,7 +109,11 @@ FAILED
 sh /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/EGAPx_v0.3.2/tested_June2025/D_pulex_TEX58_NMP_haplotype_WW_noAA/resume.sh
 #### qsub resume_TEX58_NMP.sh
 ##### job 1894959
-RUNNING
+COMPLETED
+Completed at: 28-Jul-2025 10:22:15
+Duration    : 11d 21h 30m 38s
+CPU hours   : 4'281.5
+Succeeded   : 755
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_MP_haplotype_WW_noAA.txt
 ##### job 1804287

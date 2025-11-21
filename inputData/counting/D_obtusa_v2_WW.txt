@@ -1,0 +1,4 @@
+pairedReads: /afs/crc.nd.edu/group/pfrenderlab/carson/Daphnia_raw_data_WW/RNA/obtusa.R1_001.fastq
+genomeReference: /scratch365/ebrooks5/annotations_not_using_protein_data/D_obtusa_v2_WW/complete.genomic.fna
+genomeFeatures: /scratch365/ebrooks5/annotations_not_using_protein_data/D_obtusa_v2_WW/complete.genomic.gff
+outputs: /scratch365/ebrooks5/multi_genome_project/counts/D_obtusa_v2_WW
