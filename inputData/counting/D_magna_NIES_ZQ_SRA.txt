@@ -1,4 +1,0 @@
-pairedReads: /scratch365/ebrooks5/multi_genome_project/data/dump/NIES/SRR15012076.fastq.gz
-genomeReference: /scratch365/ebrooks5/annotations_not_using_protein_data/D_magna_NIES_ZQ_SRA/complete.genomic.fna
-genomeFeatures: /scratch365/ebrooks5/annotations_not_using_protein_data/D_magna_NIES_ZQ_SRA/complete.genomic.gff
-outputs: /scratch365/ebrooks5/multi_genome_project/counts/D_magna_NIES_ZQ_SRA

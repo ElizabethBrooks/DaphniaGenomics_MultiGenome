@@ -1,4 +1,4 @@
 pairedReads: /afs/crc.nd.edu/group/pfrenderlab/carson/Daphnia_raw_data_WW/RNA/catawba.R1_001.fastq
 genomeReference: /scratch365/ebrooks5/annotations_not_using_protein_data/D_catawba_3_WW/complete.genomic.fna
-genomeFeatures: /scratch365/ebrooks5/annotations_not_using_protein_data/D_catawba_3_WW/complete.genomic.gff
+genomeFeatures: /scratch365/ebrooks5/annotations_not_using_protein_data/D_catawba_3_WW/complete.genomic.gtf
 outputs: /scratch365/ebrooks5/multi_genome_project/counts/D_catawba_3_WW

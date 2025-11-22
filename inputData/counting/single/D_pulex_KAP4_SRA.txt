@@ -1,0 +1,4 @@
+unpairedReads: /scratch365/ebrooks5/multi_genome_project/data/dump/D_pulex_KAP4_SRA_RNA/SRR17311954.fastq
+genomeReference: /scratch365/ebrooks5/annotations_not_using_protein_data/D_pulex_KAP4_SRA/complete.genomic.fna
+genomeFeatures: /scratch365/ebrooks5/annotations_not_using_protein_data/D_pulex_KAP4_SRA/complete.genomic.gtf
+outputs: /scratch365/ebrooks5/multi_genome_project/counts/D_pulex_KAP4_SRA
