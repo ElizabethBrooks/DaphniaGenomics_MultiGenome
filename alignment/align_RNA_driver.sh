@@ -1,5 +1,5 @@
 # script to drive the alignment of paired end reads
-# usage: bash align_multiple_RNA_driver.sh
+# usage: bash align_RNA_driver.sh
 # jobs 
 
 # Required modules for ND CRC servers
@@ -9,9 +9,9 @@ module load bio
 curDir=$(pwd)
 
 # loop over each input file
-for inputsFile in ../inputData/counting/single/*; do
+for inputsFile in ../inputData/counting/*/*; do
 	# submit alignment job
-	qsub align_multiple_RNA.sh $inputsFile
+	qsub align_RNA.sh $inputsFile
 done
 
 # Print status message

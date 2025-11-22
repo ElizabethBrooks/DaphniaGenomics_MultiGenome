@@ -2,10 +2,10 @@
 #$ -M ebrooks5@nd.edu
 #$ -m abe
 #$ -r n
-#$ -N align_multiple_RNA_jobOutput
+#$ -N align_RNA_jobOutput
 
 # script to align paired end reads
-# usage: qsub align_multiple_RNA.sh inputsFile
+# usage: qsub align_RNA.sh inputsFile
 
 # Required modules for ND CRC servers
 module load bio
@@ -36,7 +36,7 @@ mkdir $resOut
 # Check if the folder already exists
 if [ $? -ne 0 ]; then
 	echo "The $resOut directory already exsists... skipping!"
-	continue
+	exit 1
 fi
 # Move to the new directory
 cd $resOut
