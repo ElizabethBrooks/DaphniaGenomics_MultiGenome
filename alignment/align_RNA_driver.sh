@@ -2,9 +2,6 @@
 # usage: bash align_RNA_driver.sh
 # jobs 2559691 to 2559713
 
-# Required modules for ND CRC servers
-module load bio
-
 # get the current directory
 curDir=$(pwd)
 

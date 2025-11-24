@@ -8,7 +8,7 @@
 # usage: qsub trim_RNA.sh inputsFile
 
 # Required modules for ND CRC servers
-module load bio
+module load bio/2.0
 
 # set the adapter path
 adapterPath="/scratch365/ebrooks5/util/TruSeq3-PE.fa"
