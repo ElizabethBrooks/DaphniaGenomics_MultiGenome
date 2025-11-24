@@ -16,9 +16,6 @@ inputsFile=$1
 # Print status message
 echo "Processing: $inputsFile"
 
-# move back to the original directory
-cd $curDir
-
 # retrieve analysis outputs absolute path
 outputsPath=$(grep "outputs:" $inputsFile | tr -d " " | sed "s/outputs://g")
 
