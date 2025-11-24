@@ -38,10 +38,10 @@ mkdir $outputsPath
 resOut=$outputsPath"/trimmed"
 mkdir $resOut
 # Check if the folder already exists
-#if [ $? -ne 0 ]; then
-#	echo "The $resOut directory already exsists... skipping!"
-#	exit 1
-#fi
+if [ $? -ne 0 ]; then
+	echo "The $resOut directory already exsists... skipping!"
+	exit 1
+fi
 # Move to the new directory
 cd $resOut
 
@@ -81,6 +81,9 @@ for sampleFile in $readPath; do
 		trimmomatic PE -threads 8 -phred"$score" $sampleFile $readsDir"/"$readTwo $sampleTag".fq.gz" $sampleTag"_uForward.fq.gz" $readTwo".fq.gz" $readTwo"_uReverse.fq.gz" ILLUMINACLIP:$adapterPath":2:30:10" LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 HEADCROP:10
 	fi	
 done
+
+# remove the QC results
+rm -r $resOut"/trimmed/"*"_fastqc"
 
 # Print status message
 echo "Finished processing!"
