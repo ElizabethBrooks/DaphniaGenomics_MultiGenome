@@ -2,10 +2,10 @@
 #$ -M ebrooks5@nd.edu
 #$ -m abe
 #$ -r n
-#$ -N align_RNA_jobOutput
+#$ -N align_trimmed_RNA_jobOutput
 
 # script to align paired end reads
-# usage: qsub align_RNA.sh inputsFile
+# usage: qsub align_trimmed_RNA.sh inputsFile
 
 # Required modules for ND CRC servers
 module load bio
@@ -18,8 +18,6 @@ echo "Processing: $inputsFile"
 
 # retrieve paired reads absolute path for alignment
 readType=$(grep "Reads:" $inputsFile | cut -d " " -f1 | sed "s/Reads://g")
-# retrieve paired reads absolute path for alignment
-readPath=$(grep "Reads:" $inputsFile | cut -d " " -f2)
 # retrieve genome reference
 refPath=$(grep "genomeReference:" $inputsFile | cut -d " " -f2)
 # retrieve analysis outputs absolute path
@@ -27,11 +25,11 @@ outputsPath=$(grep "outputs:" $inputsFile | cut -d " " -f2)
 # retrieve species
 speciesTag=$(basename $outputsPath)
 
-# make a new directory for the analysis	
-mkdir $outputsPath
+# setup inputs path
+resIn=$outputsPath"/trimmed"
 
 # make a directory for the QC results
-resOut=$outputsPath"/aligned"
+resOut=$outputsPath"/aligned_trimmed"
 mkdir $resOut
 # Check if the folder already exists
 if [ $? -ne 0 ]; then
@@ -51,7 +49,7 @@ hisat2 --version > $versionFile
 hisat2-build $refPath $speciesTag"_build"
 
 # loop over each sample
-for sampleFile in $readPath; do
+for sampleFile in $resIn; do
 	# get sample tag
 	sampleTag=$(basename $sampleFile | rev | cut -d "." -f2- | rev)
 	# check read type
