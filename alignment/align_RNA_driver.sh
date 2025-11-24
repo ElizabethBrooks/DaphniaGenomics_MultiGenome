@@ -1,6 +1,6 @@
 # script to drive the alignment of paired end reads
 # usage: bash align_RNA_driver.sh
-# jobs 2559691 to 2559713
+# jobs 2559691 to 2559713, 2563669
 
 # get the current directory
 curDir=$(pwd)
