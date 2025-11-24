@@ -52,17 +52,15 @@ hisat2-build $refPath $speciesTag"_build"
 
 # loop over each sample
 for sampleFile in $readPath; do
+	# get sample tag
+	sampleTag=$(basename $sampleFile | rev | cut -d "." -f2- | rev)
 	# check read type
 	if [[ $readType == "unpaired" ]]; then
-		# get sample tag
-		sampleTag=$(basename $sampleFile | rev | cut -d "." -f2- | rev)
 		# align samples to the refence genome
 		hisat2 -x $speciesTag"_build" -U $sampleFile -S $sampleTag"_accepted_hits.sam" --summary-file $sampleTag"_alignedSummary.txt"
 	else
-		# get sample tag
-		sampleTag=$(basename $sampleFile | cut -d "." -f1)
 		# setup second read path
-		readTwo=$(echo $readPath | sed "s/R1_/R2_/g" | sed "s/_1\./_2./g")
+		readTwo=$(echo $sampleFile | sed "s/R1_/R2_/g" | sed "s/_1\./_2./g")
 		# align samples to the refence genome
 		hisat2 -x $speciesTag"_build" -1 $readPath -2 $readTwo -S $sampleTag"_accepted_hits.sam" --summary-file $sampleTag"_alignedSummary.txt"
 	fi	

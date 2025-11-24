@@ -1,4 +1,4 @@
-pairedReads: /scratch365/ebrooks5/multi_genome_project/data/dump/D_sinensis/*.fastq
+pairedReads: /scratch365/ebrooks5/multi_genome_project/data/dump/D_sinensis/*.fastq.gz
 genomeReference: /scratch365/ebrooks5/annotations_not_using_protein_data/D_sinensis_WSL_NCBI_clean/complete.genomic.fna
 genomeFeatures: /scratch365/ebrooks5/annotations_not_using_protein_data/D_sinensis_WSL_NCBI_clean/complete.genomic.gtf
 outputs: /scratch365/ebrooks5/multi_genome_project/counts/D_sinensis_WSL_NCBI_clean

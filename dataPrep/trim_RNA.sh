@@ -60,7 +60,7 @@ score=33
 # loop over each sample
 for sampleFile in $readPath; do
 	# get sample directory and tag
-	readsPath=$(dirname $sampleFile)
+	readsDir=$(dirname $sampleFile)
 	sampleTag=$(basename $sampleFile | rev | cut -d "." -f2- | rev)
 	# determine phred score for trimming
 	if grep -iF "Illumina 1.5" *"_fastqc/fastqc_data.txt"; then
@@ -76,9 +76,9 @@ for sampleFile in $readPath; do
 		trimmomatic SE -threads 8 -phred"$score" $sampleFile $sampleTag".fq.gz" ILLUMINACLIP:$adapterPath":2:30:10" LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 HEADCROP:10
 	else
 		# setup second read path
-		readTwo=$(basename $readPath | sed "s/R1_/R2_/g" | sed "s/_1\./_2./g")
+		readTwo=$(basename $sampleFile | sed "s/R1_/R2_/g" | sed "s/_1\./_2./g")
 		# Perform adapter trimming on paired reads using 8 threads
-		trimmomatic PE -threads 8 -phred"$score" $sampleFile $readsPath"/"$readTwo $sampleTag".fq.gz" $sampleTag"_uForward.fq.gz" $readTwo".fq.gz" $readTwo"_uReverse.fq.gz" ILLUMINACLIP:$adapterPath":2:30:10" LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 HEADCROP:10
+		trimmomatic PE -threads 8 -phred"$score" $sampleFile $readsDir"/"$readTwo $sampleTag".fq.gz" $sampleTag"_uForward.fq.gz" $readTwo".fq.gz" $readTwo"_uReverse.fq.gz" ILLUMINACLIP:$adapterPath":2:30:10" LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 HEADCROP:10
 	fi	
 done
 
