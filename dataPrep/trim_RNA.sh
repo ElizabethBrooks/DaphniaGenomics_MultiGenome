@@ -38,10 +38,10 @@ mkdir $outputsPath
 resOut=$outputsPath"/trimmed"
 mkdir $resOut
 # Check if the folder already exists
-if [ $? -ne 0 ]; then
-	echo "The $resOut directory already exsists... skipping!"
-	exit 1
-fi
+#if [ $? -ne 0 ]; then
+#	echo "The $resOut directory already exsists... skipping!"
+#	exit 1
+#fi
 # Move to the new directory
 cd $resOut
 

@@ -1,7 +1,7 @@
 # script to drive the alignment of paired end reads
 # usage: bash trim_RNA_driver.sh
 # jobs 2563671 to 2563692
-# jobs
+# jobs 
 
 # get the current directory
 curDir=$(pwd)
