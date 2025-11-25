@@ -7,16 +7,9 @@
 
 # script to align paired end reads
 # usage: qsub trim_RNA.sh inputsFile
-# usage: qsub trim_RNA.sh /afs/crc.nd.edu/group/hoth/eBrooks/DaphniaGenomics_MultiGenome/inputData/counting/single/D_pulex_KAP4_SRA.txt
-# job 2567302
-# usage: qsub trim_RNA.sh /afs/crc.nd.edu/group/hoth/eBrooks/DaphniaGenomics_MultiGenome/inputData/counting/single/D_melanica_CON6_ZQ_MP.txt
-# job 2567303
 
 # Required modules for ND CRC servers
 module load bio/2.0
-
-# set the adapter path
-adapterPath="/scratch365/ebrooks5/util/TruSeq3-PE.fa"
 
 # retrieve inputsFile
 inputsFile=$1
@@ -77,13 +70,17 @@ for sampleFile in $readPath; do
 	fi
 	# check read type
 	if [[ $readType == "unpaired" ]]; then
+		# set the adapter path
+		adapterPath="/scratch365/ebrooks5/util/TruSeq3-SE.fa"
 		# align samples to the refence genome
-		trimmomatic SE -threads 8 -phred"$score" $sampleFile $sampleTag".fq.gz" ILLUMINACLIP:$adapterPath":2:30:10" LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 HEADCROP:10
+		trimmomatic SE -threads 8 -phred"$score" $sampleFile $sampleTag".fq.gz" ILLUMINACLIP:$adapterPath":2:30:10" LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 HEADCROP:10 MINLEN:35
 	else
+		# set the adapter path
+		adapterPath="/scratch365/ebrooks5/util/TruSeq3-PE.fa"
 		# setup second read path
 		readTwo=$(basename $sampleFile | sed "s/R1_/R2_/g" | sed "s/_1\./_2./g")
 		# Perform adapter trimming on paired reads using 8 threads
-		trimmomatic PE -threads 8 -phred"$score" $sampleFile $readsDir"/"$readTwo $sampleTag".fq.gz" $sampleTag"_uForward.fq.gz" $readTwo".fq.gz" $readTwo"_uReverse.fq.gz" ILLUMINACLIP:$adapterPath":2:30:10" LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 HEADCROP:10
+		trimmomatic PE -threads 8 -phred"$score" $sampleFile $readsDir"/"$readTwo $sampleTag".fq.gz" $sampleTag"_uForward.fq.gz" $readTwo".fq.gz" $readTwo"_uReverse.fq.gz" ILLUMINACLIP:$adapterPath":2:30:10" LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 HEADCROP:10 MINLEN:35
 	fi	
 done
 
