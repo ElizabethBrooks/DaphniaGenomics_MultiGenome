@@ -3,9 +3,14 @@
 #$ -m abe
 #$ -r n
 #$ -N trim_RNA_jobOutput
+#$ -pe smp 8
 
 # script to align paired end reads
 # usage: qsub trim_RNA.sh inputsFile
+# usage: qsub trim_RNA.sh /afs/crc.nd.edu/group/hoth/eBrooks/DaphniaGenomics_MultiGenome/inputData/counting/single/D_pulex_KAP4_SRA.txt
+# job 
+# usage: qsub trim_RNA.sh /afs/crc.nd.edu/group/hoth/eBrooks/DaphniaGenomics_MultiGenome/inputData/counting/single/D_melanica_CON6_ZQ_MP.txt
+# job 
 
 # Required modules for ND CRC servers
 module load bio/2.0

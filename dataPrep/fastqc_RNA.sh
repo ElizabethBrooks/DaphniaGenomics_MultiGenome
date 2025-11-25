@@ -24,7 +24,7 @@ for inputsFile in ../inputData/counting/*/*; do
 	cd $curDir
 
 	# retrieve paired reads absolute path for alignment
-	readPath=$(grep "pairedReads:" $inputsFile | tr -d " " | sed "s/pairedReads://g")
+	readPath=$(grep "Reads:" $inputsFile | tr -d " " | sed "s/pairedReads://g")
 	# retrieve analysis outputs absolute path
 	outputsPath=$(grep "outputs:" $inputsFile | tr -d " " | sed "s/outputs://g")
 

@@ -3,6 +3,7 @@
 #$ -m abe
 #$ -r n
 #$ -N align_RNA_jobOutput
+#$ -pe smp 8
 
 # script to align paired end reads
 # usage: qsub align_RNA.sh inputsFile
@@ -57,12 +58,12 @@ for sampleFile in $readPath; do
 	# check read type
 	if [[ $readType == "unpaired" ]]; then
 		# align samples to the refence genome
-		hisat2 -x $speciesTag"_build" -U $sampleFile -S $sampleTag"_accepted_hits.sam" --summary-file $sampleTag"_alignedSummary.txt"
+		hisat2 --threads 8 -x $speciesTag"_build" -U $sampleFile -S $sampleTag"_accepted_hits.sam" --summary-file $sampleTag"_alignedSummary.txt"
 	else
 		# setup second read path
 		readTwo=$(echo $sampleFile | sed "s/R1_/R2_/g" | sed "s/_1\./_2./g")
 		# align samples to the refence genome
-		hisat2 -x $speciesTag"_build" -1 $sampleFile -2 $readTwo -S $sampleTag"_accepted_hits.sam" --summary-file $sampleTag"_alignedSummary.txt"
+		hisat2 --threads 8 -x $speciesTag"_build" -1 $sampleFile -2 $readTwo -S $sampleTag"_accepted_hits.sam" --summary-file $sampleTag"_alignedSummary.txt"
 	fi	
 done
 
