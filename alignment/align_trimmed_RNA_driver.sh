@@ -6,7 +6,8 @@
 curDir=$(pwd)
 
 # loop over each input file
-for inputsFile in ../inputData/counting/*/*; do
+#for inputsFile in ../inputData/counting/*/*; do
+for inputsFile in ../inputData/counting/single/*; do
 	# submit alignment job
 	qsub align_trimmed_RNA.sh $inputsFile
 done

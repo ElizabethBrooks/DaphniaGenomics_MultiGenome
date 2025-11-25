@@ -4,8 +4,7 @@
 
 # loop over each input file
 #for inputsFile in ../inputData/counting/*/*; do
-for inputsFile in ../inputData/counting/multiple/*; do
-#for inputsFile in ../inputData/counting/single/*; do
+for inputsFile in ../inputData/counting/single/*; do
 	# submit job script
 	qsub fastqc_trimmed_RNA.sh $inputsFile
 done
