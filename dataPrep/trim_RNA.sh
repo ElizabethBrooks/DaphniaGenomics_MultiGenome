@@ -8,13 +8,13 @@
 # script to align paired end reads
 # usage: qsub trim_RNA.sh inputsFile
 
-# Required modules for ND CRC servers
+# required modules for ND CRC servers
 module load bio/2.0
 
 # retrieve inputsFile
 inputsFile=$1
 
-# Print status message
+# print status message
 echo "Processing: $inputsFile"
 
 # retrieve paired reads absolute path for alignment
@@ -35,18 +35,18 @@ mkdir $outputsPath
 # make a directory for the results
 resOut=$outputsPath"/trimmed"
 mkdir $resOut
-# Check if the folder already exists
+# check if the folder already exists
 if [ $? -ne 0 ]; then
 	echo "The $resOut directory already exsists... skipping!"
 	exit 1
 fi
-# Move to the new directory
+# move to the new directory
 cd $resOut
 
-# Name version output file
+# name version output file
 versionFile=$resOut"/software_version_summary.txt"
 
-# Report software version
+# report software version
 fastqc -version > $versionFile
 
 # unzip the QC results
@@ -85,7 +85,7 @@ for sampleFile in $readPath; do
 done
 
 # remove the QC results
-rm -r $resOut"/trimmed/"*"_fastqc"
+rm -r $resOut"/"*"_fastqc"
 
-# Print status message
+# print status message
 echo "Finished processing!"

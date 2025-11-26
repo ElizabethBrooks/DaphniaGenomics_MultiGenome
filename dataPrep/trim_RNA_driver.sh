@@ -2,9 +2,6 @@
 # usage: bash trim_RNA_driver.sh
 # jobs 2567634 to 2567655
 
-# get the current directory
-curDir=$(pwd)
-
 # loop over each input file
 for inputsFile in ../inputData/counting/*/*; do
 	# submit job script
