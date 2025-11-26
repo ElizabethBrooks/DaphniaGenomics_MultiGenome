@@ -51,8 +51,9 @@ hisat2-build $refPath $speciesTag"_build"
 
 # loop over each sample
 for sampleFile in $resIn"/"*".fq.gz"; do
-	# get sample tag
+	# get sample tag and path
 	sampleTag=$(basename $sampleFile | rev | cut -d "." -f2- | rev)
+	samplePath=$(dirname $sampleFile)
 	# check read type
 	if [[ $readType == "unpaired" ]]; then
 		# align samples to the refence genome
@@ -61,9 +62,9 @@ for sampleFile in $resIn"/"*".fq.gz"; do
 		# check the read direction
 		if [[ $sampleFile == *"R1"* || $sampleFile == *"_1."* ]]; then
 			# setup second read path
-			readTwo=$(echo $sampleFile | sed "s/R1_/R2_/g" | sed "s/_1\./_2./g")
+			readTwo=$(basename $sampleFile | sed "s/R1_/R2_/g" | sed "s/_1\./_2./g")
 			# align samples to the refence genome
-			hisat2 --threads 8 -x $speciesTag"_build" -1 $sampleFile -2 $readTwo -S $sampleTag"_accepted_hits.sam" --summary-file $sampleTag"_alignedSummary.txt"
+			hisat2 --threads 8 -x $speciesTag"_build" -1 $sampleFile -2 $samplePath"/"$readTwo -S $sampleTag"_accepted_hits.sam" --summary-file $sampleTag"_alignedSummary.txt"
 		fi
 	fi	
 done
