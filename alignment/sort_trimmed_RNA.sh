@@ -7,6 +7,7 @@
 
 # script to perform samtools sorting of trimmed and aligned paired end reads
 # usage: qsub sort_trimmed_RNA.sh inputsFile
+# jobs 2574825 to 2574847
 
 # required modules for ND CRC servers
 module load bio

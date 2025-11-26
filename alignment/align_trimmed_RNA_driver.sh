@@ -1,6 +1,6 @@
 # script to drive the alignment of paired end reads
 # usage: bash align_trimmed_RNA_driver.sh
-# jobs 2570967 to 2570988
+# jobs 
 
 # loop over each input file
 for inputsFile in ../inputData/counting/*/*; do
