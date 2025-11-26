@@ -50,7 +50,7 @@ hisat2 --version > $versionFile
 hisat2-build $refPath $speciesTag"_build"
 
 # loop over each sample
-for sampleFile in $resIn; do
+for sampleFile in $resIn"/"*".fq.gz"; do
 	# get sample tag
 	sampleTag=$(basename $sampleFile | rev | cut -d "." -f2- | rev)
 	# check read type
