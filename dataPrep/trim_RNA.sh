@@ -78,7 +78,7 @@ for sampleFile in $readPath; do
 		# set the adapter path
 		adapterPath="/scratch365/ebrooks5/util/TruSeq3-PE.fa"
 		# setup second read path
-		readTwo=$(basename $sampleFile | sed "s/R1_/R2_/g" | sed "s/_1\./_2./g")
+		readTwo=$(basename $sampleFile | sed "s/R1_/R2_/g" | sed "s/_1\./_2./g" | sed "s/\.fastq//g")
 		# Perform adapter trimming on paired reads using 8 threads
 		trimmomatic PE -threads 8 -phred"$score" $sampleFile $readsDir"/"$readTwo $sampleTag".fq.gz" $sampleTag"_uForward.fq.gz" $readTwo".fq.gz" $readTwo"_uReverse.fq.gz" ILLUMINACLIP:$adapterPath":2:30:10" LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 HEADCROP:10 MINLEN:35
 	fi	
