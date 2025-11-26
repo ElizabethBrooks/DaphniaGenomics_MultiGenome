@@ -1,6 +1,6 @@
 # script to perform fastqc quality control of paired end reads
 # usage: bash fastqc_trimmed_RNA_driver.sh
-# jobs 
+# jobs 2569621 to 2569642
 
 # loop over each input file
 for inputsFile in ../inputData/counting/*/*; do
