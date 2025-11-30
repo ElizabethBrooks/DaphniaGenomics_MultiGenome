@@ -1,6 +1,6 @@
 # script to drive the counting of paired end reads
 # usage: bash count_trimmed_RNA_driver.sh
-# jobs 
+# jobs  
 
 # loop over each input file
 for inputsFile in ../inputData/counting/*/*; do

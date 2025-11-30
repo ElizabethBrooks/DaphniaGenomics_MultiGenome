@@ -18,8 +18,8 @@ echo "Processing: $inputsFile"
 
 # retrieve paired reads absolute path for alignment
 readType=$(grep "Reads:" $inputsFile | cut -d " " -f1 | sed "s/Reads://g")
-# retrieve genome reference
-refPath=$(grep "genomeReference:" $inputsFile | cut -d " " -f2)
+# retrieve genome features
+genomeFile=$(grep "genomeFeatures:" $inputsFile | cut -d " " -f2)
 # retrieve analysis outputs absolute path
 outputsPath=$(grep "outputs:" $inputsFile | cut -d " " -f2)
 # retrieve species
@@ -46,7 +46,7 @@ versionFile=$resOut"/software_version_summary.txt"
 htseq-count --help | tail -1 >> $versionFile
 
 # loop through all sorted forward and reverse paired reads and store the file locations in an array
-for samplePath in "$inputsPath"/*/; do
+for samplePath in "$resIn"/*/; do
 	# name of aligned file
 	sampleFile=$samplePath"accepted_hits.bam"
 	# trim file path from current folder name
