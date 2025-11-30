@@ -53,8 +53,10 @@ for samplePath in "$resIn"/*/; do
 	sampleTag=$(basename $samplePath)
 	# create directory for current sample outputs
 	mkdir $sampleTag
+	# status message
+	echo "Processing $sampleTag ..."
 	# count reads using htseq-count
-	htseq-count -f bam -s no -t gene $curAlignedSample $genomeFile > $sampleTag"/counts.txt"
+	htseq-count -f bam -s no -t gene $sampleFile $genomeFile > $sampleTag"/counts.txt"
 done
 
 # status message
