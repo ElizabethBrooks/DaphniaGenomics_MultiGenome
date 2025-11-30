@@ -1,4 +1,4 @@
-# script to drive the sorting of paired end reads
+# script to drive the counting of paired end reads
 # usage: bash count_trimmed_RNA_driver.sh
 # jobs 
 
