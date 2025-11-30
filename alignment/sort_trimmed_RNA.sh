@@ -7,7 +7,6 @@
 
 # script to perform samtools sorting of trimmed and aligned paired end reads
 # usage: qsub sort_trimmed_RNA.sh inputsFile
-# jobs 2574825 to 2574847
 
 # required modules for ND CRC servers
 module load bio
@@ -48,9 +47,9 @@ versionFile=$resOut"/software_version_summary.txt"
 samtools --version >> $versionFile
 
 # loop through all reads and sort sam/bam files for input to samtools
-for sampleFile in $resIn"/"*".fastq.fq_accepted_hits.sam"; do
+for sampleFile in $resIn"/"*".fq_accepted_hits.sam"; do
 	# get sample tag
-	sampleTag=$(basename $sampleFile | sed "s/\.fastq\.fq_accepted_hits\.sam//g")
+	sampleTag=$(basename $sampleFile | sed "s/\.fq_accepted_hits\.sam//g")
 	# create directory for current sample outputs
 	mkdir $sampleTag
 	# run samtools to prepare mapped reads for sorting
