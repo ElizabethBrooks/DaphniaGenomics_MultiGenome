@@ -8,7 +8,7 @@
 # usage: qsub count_htseq.sh inputsFile
 
 #Required modules for ND CRC servers
-module load bio
+module load bio/2.0
 
 #Retrieve input argument of a inputs file
 inputsFile=$1

@@ -1,11 +1,11 @@
 # script to drive the sorting of paired end reads
-# usage: bash sort_trimmed_RNA_driver.sh
-# jobs 2581726 to 2581747
+# usage: bash count_trimmed_RNA_driver.sh
+# jobs 
 
 # loop over each input file
 for inputsFile in ../inputData/counting/*/*; do
 	# submit alignment job
-	qsub sort_trimmed_RNA.sh $inputsFile
+	qsub count_trimmed_RNA.sh $inputsFile
 done
 
 # Print status message
