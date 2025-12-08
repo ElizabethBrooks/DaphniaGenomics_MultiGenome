@@ -52,13 +52,15 @@ for sampleFile in $resIn"/"*".fq_accepted_hits.sam"; do
 	sampleTag=$(basename $sampleFile | sed "s/\.fq_accepted_hits\.sam//g")
 	# create directory for current sample outputs
 	mkdir $sampleTag
-	# run samtools to prepare mapped reads for sorting
+	# run samtools to prepare mapped reads for name sorting
 	samtools sort -@ 8 -n -o $sampleTag"/sortedName.bam" -T "/tmp/"$sampleTag".sortedName.bam" $sampleFile
 	# run fixmate -m to update paired-end flags for singletons
-	samtools fixmate -m $sampleTag"/sortedName.bam" $sampleTag"/accepted_hits.bam"
+	samtools fixmate -m $sampleTag"/sortedName.bam" $sampleTag"/fixed.bam"
 	rm "$sampleTag"/sortedName.bam
+	# run samtools to prepare mapped reads for coordinate sorting
+	samtools sort -@ 8 -o $sampleTag"/sortedCoord.bam" -T "/tmp/"$sampleTag".sortedCoord.bam" $sampleTag"/fixed.bam"
 	# remove duplicate reads
-	samtools markdup -r $sampleTag"/accepted_hits.bam" $sampleTag"/noDups.bam"
+	samtools markdup -r $sampleTag"/sortedCoord.bam" $sampleTag"/accepted_hits.bam"
 done
 
 # status message
