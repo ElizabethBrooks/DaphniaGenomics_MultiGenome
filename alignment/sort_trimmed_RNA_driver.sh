@@ -3,7 +3,7 @@
 # run 1
 # jobs 2581726 to 2581747
 # run 2
-# jobs 
+# jobs 2618224 to 2618246
 
 # loop over each input file
 for inputsFile in ../inputData/counting/*/*; do

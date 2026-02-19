@@ -46,6 +46,7 @@ versionFile=$resOut"/software_version_summary.txt"
 # add software versions to outputs
 samtools --version >> $versionFile
 
+# TO-DO: add unpaired workflow
 # loop through all reads and sort sam/bam files for input to samtools
 for sampleFile in $resIn"/"*".fq_accepted_hits.sam"; do
 	# get sample tag
