@@ -19,7 +19,7 @@ The <i>install\_EGAPx.sh</i> script in the <b>install</b> directory can be used 
 
 Make sure to change the paths in the <i>inputs\_annotations.txt</i> file to where you would like to have the software installed and outputs generated.
 
-### Notes
+### Notes - EGAPx v0.1 to v0.4
 There are some things to keep in mind when running EGAPx.
 
 #### EGAPx Config

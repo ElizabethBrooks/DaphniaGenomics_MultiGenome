@@ -2,12 +2,12 @@
 #$ -M ebrooks5@nd.edu
 #$ -m abe
 #$ -r n
-#$ -N run_EGAPx_v0.3.2_jobOutput
+#$ -N run_EGAPx_v0.5_jobOutput
 #$ -pe smp 15
 
-# script to run the EGAPx v0.3.2 pipeline
-# usage: qsub run_EGAPx_v0.3.2_HPC.sh inputFile
-# usage ex: qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC.txt
+# script to run the EGAPx v0.5 pipeline
+# usage: qsub run_EGAPx_v0.5_HPC.sh inputFile
+# usage ex: qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_melanica/inputs_CON6_BC.txt
 
 # NOTE: the default /egapx/ui/assets/config/process_resources.config file specifies up to 31 cores (huge_Job)
 # our afs system has 263Gb RAM, 64 cores
@@ -30,12 +30,12 @@ repoDir=$(dirname $PWD)
 inputsPath=$repoDir"/inputData/"$inputsPath
 
 # retrieve software path
-softwarePath=$(grep "software_EGAPx_v0.3.2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/software_EGAPx_v0.3.2://g")
+softwarePath=$(grep "software_EGAPx_v0.5:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/software_EGAPx_v0.5://g")
 
 # retrieve outputs path
 # change this for different test runs
-#outputsPath=$(grep "outputs_EGAPx_v0.3.2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2://g")
-outputsPath=$(grep "outputs_EGAPx_v0.3.2_BC:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_BC://g")
+#outputsPath=$(grep "outputs_EGAPx_v0.3.2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.5://g")
+outputsPath=$(grep "outputs_EGAPx_v0.5_BC:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.5_BC://g")
 
 # setup outputs directory
 outputsPath=$outputsPath"/"$speciesName
@@ -63,13 +63,13 @@ echo "Beginning analysis of $speciesName..."
 # run EGAPx script to download necessary data for local running
 python3 $softwarePath"/egapx/ui/egapx.py" $inputsPath -dl -lc $outputsPath"/local_cache"
 
-# run EGAPx to copy config files
-#python3 $softwarePath"/ui/egapx.py" $inputsPath -o $outputsPath
+# run EGAPx to edit config files
+ui/egapx.py $inputsPath -e biowulf_cluster -w dfs_work -o dfs_out -lc ../local_cache
+echo "process.container = '/path_to_/egapx_0.5.0.sif'"  >> $softwarePath"/egapx_config/biowulf_cluster.config"
 
 # run EGAPx
-#python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath
+python3 $softwarePath"/egapx/ui/egapx.py" $inputsPath -e biowulf_cluster -w dfs_work -o dfs_out -lc ../local_cache
 
-# uncomment the following lines to reduce data storage
 # clean up, if accept.gff output file exsists
 #if [ ! -f $outputsPath"/accept.gff" ]; then
 	# run to resume annotation
