@@ -1,0 +1,2 @@
+species: D_similis_BGL_001_BC
+inputs_EGAPx: EGAPx_v0.3.2/D_similis/inputs_BGL_001_BC.yaml

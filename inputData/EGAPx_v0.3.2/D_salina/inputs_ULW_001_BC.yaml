@@ -1,0 +1,5 @@
+genome: /scratch365/ebrooks5/multi_genome_project/data/Daphnia_genomes/D_salina_ULW_001/Daphnia_salina_ULW_001.purged.fa
+taxid: 144207
+short_reads:
+  - /scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNAseq/pooled_annotation_RNA/D_salina_ULW_001/ULW_001_S45_L004_R1_001.fastq.gz
+  - /scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNAseq/pooled_annotation_RNA/D_salina_ULW_001/ULW_001_S45_L004_R2_001.fastq.gz

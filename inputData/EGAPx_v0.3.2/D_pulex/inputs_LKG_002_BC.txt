@@ -1,0 +1,2 @@
+species: D_pulex_LKG_002_BC
+inputs_EGAPx: EGAPx_v0.3.2/D_pulex/inputs_LKG_002_BC.yaml
