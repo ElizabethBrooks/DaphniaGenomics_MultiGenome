@@ -61,13 +61,13 @@ echo "Beginning analysis of $speciesName..."
 # the normal workflow uses remote NCBI data, which has been giving errors
 # https://github.com/ncbi/egapx/issues/214
 # run EGAPx script to download necessary data for local running
-python3 $softwarePath"/egapx/ui/egapx.py" $inputsPath -dl -lc $outputsPath"/local_cache"
+python3 $softwarePath"/egapx.py" $inputsPath -dl -lc $outputsPath"/local_cache"
 
 # run EGAPx to copy config files
-#python3 $softwarePath"/ui/egapx.py" $inputsPath -o $outputsPath
+#python3 $softwarePath"/egapx.py" $inputsPath -o $outputsPath
 
 # run EGAPx
-#python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath
+#python3 $softwarePath"/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath
 
 # uncomment the following lines to reduce data storage
 # clean up, if accept.gff output file exsists
