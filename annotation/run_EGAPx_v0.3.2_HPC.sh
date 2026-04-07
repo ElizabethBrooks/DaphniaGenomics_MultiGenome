@@ -12,6 +12,7 @@
 # NOTE: the default /egapx/ui/assets/config/process_resources.config file specifies up to 31 cores (huge_Job)
 # our afs system has 263Gb RAM, 64 cores
 # make sure to always leave 1 core free for general processes, so request up to 63 cores per job on our afs system
+# smaller annotation jobs do not need to request as many resources (for example, 15 cores is sufficient for the average run)
 
 # retrieve input file
 inputFile=$1
@@ -32,7 +33,9 @@ inputsPath=$repoDir"/inputData/"$inputsPath
 softwarePath=$(grep "software_EGAPx_v0.3.2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/software_EGAPx_v0.3.2://g")
 
 # retrieve outputs path
-outputsPath=$(grep "outputs_EGAPx_v0.3.2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2://g")
+# change this for different test runs
+#outputsPath=$(grep "outputs_EGAPx_v0.3.2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2://g")
+outputsPath=$(grep "outputs_EGAPx_v0.3.2_BC:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_BC://g")
 
 # setup outputs directory
 outputsPath=$outputsPath"/"$speciesName
