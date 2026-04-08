@@ -64,8 +64,8 @@ echo "Beginning analysis of $speciesName..."
 python3 $softwarePath"/egapx.py" $inputsPath -dl -lc $outputsPath"/local_cache"
 
 # run EGAPx to edit config files
-$softwarePath"/egapx.py" $inputsPath -e biowulf_cluster -w dfs_work -o dfs_out -lc ../local_cache
-echo "process.container = '/path_to_/egapx_0.5.0.sif'"  >> $softwarePath"/egapx_config/biowulf_cluster.config"
+$softwarePath"/egapx.py" $inputsPath -e biowulf_cluster -w dfs_work -o dfs_out -lc $outputsPath"/local_cache"
+#echo "process.container = '/path_to_/egapx_0.5.0.sif'"  >> $softwarePath"/egapx_config/biowulf_cluster.config"
 
 # run EGAPx
 python3 $softwarePath"/egapx.py" $inputsPath -e biowulf_cluster -w dfs_work -o dfs_out -lc ../local_cache

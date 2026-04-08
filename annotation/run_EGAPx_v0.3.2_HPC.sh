@@ -11,6 +11,7 @@
 ## job-1 790958
 ## job-2 793348
 ## job-3 793353 -> NOTE: Nextflow is not tested with Java 1.8.0_462 -- It's recommended the use of version 11 up to 23
+## job-test 793355 -> openjdk version "1.8.0_462"
 
 # NOTE: the default /egapx/ui/assets/config/process_resources.config file specifies up to 31 cores (huge_Job)
 # our afs system has 263Gb RAM, 64 cores
@@ -70,8 +71,7 @@ echo "Beginning analysis of $speciesName..."
 #python3 $softwarePath"/egapx.py" $inputsPath -o $outputsPath
 
 # run EGAPx
-java -version
-echo python3 $softwarePath"/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath
+python3 $softwarePath"/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath -lc $outputsPath"/local_cache"
 
 # uncomment the following lines to reduce data storage
 # clean up, if accept.gff output file exsists
