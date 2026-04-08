@@ -9,7 +9,7 @@
 # usage: qsub run_EGAPx_v0.3.2_HPC.sh inputFile
 # usage ex: qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC.txt
 ## job-1 790958
-## job-2
+## job-2 793348
 ## job-3
 
 # NOTE: the default /egapx/ui/assets/config/process_resources.config file specifies up to 31 cores (huge_Job)
@@ -67,10 +67,10 @@ echo "Beginning analysis of $speciesName..."
 #python3 $softwarePath"/egapx.py" $inputsPath -dl -lc $outputsPath"/local_cache"
 
 # run EGAPx to copy config files
-python3 $softwarePath"/egapx.py" $inputsPath -o $outputsPath
+#python3 $softwarePath"/egapx.py" $inputsPath -o $outputsPath
 
 # run EGAPx
-#python3 $softwarePath"/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath
+python3 $softwarePath"/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath
 
 # uncomment the following lines to reduce data storage
 # clean up, if accept.gff output file exsists
