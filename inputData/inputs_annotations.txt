@@ -1,7 +1,7 @@
 software_EGAPx: /afs/crc.nd.edu/user/e/ebrooks5/egapx
 software_EGAPx_v0.2: /afs/crc.nd.edu/user/e/ebrooks5/egapx_v0.2/egapx
 software_EGAPx_v0.3.1: /afs/crc.nd.edu/user/e/ebrooks5/egapx_v0.3.1/egapx
-software_EGAPx_v0.3.2: /afs/crc.nd.edu/user/e/ebrooks5/egapx_v0.3.2/egapx/ui
+software_EGAPx_v0.3.2: /afs/crc.nd.edu/user/e/ebrooks5/egapx_v0.3.2/egapx
 software_EGAPx_v0.4: /afs/crc.nd.edu/user/e/ebrooks5/egapx_v0.4/egapx
 software_EGAPx_v0.4: /afs/crc.nd.edu/user/e/ebrooks5/egapx_v0.5/egapx/ui
 software_BRAKER3: /afs/crc.nd.edu/user/e/ebrooks5/braker3

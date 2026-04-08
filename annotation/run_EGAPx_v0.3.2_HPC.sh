@@ -67,18 +67,31 @@ echo "Beginning analysis of $speciesName..."
 # the normal workflow uses remote NCBI data, which has been giving errors
 # https://github.com/ncbi/egapx/issues/214
 # run EGAPx script to download necessary data for local running
-python3 $softwarePath"/egapx.py" $inputsPath -dl -lc $outputsPath"/local_cache"
+python3 $softwarePath"/ui/egapx.py" $inputsPath -dl -lc $outputsPath"/local_cache"
 
 # run EGAPx to copy config files
 # test: 
-# first, updated cacheDir path in the biowulf_cluster.config file
-# python3 /afs/crc.nd.edu/user/e/ebrooks5/egapx_v0.3.2/egapx/ui/egapx.py /afs/crc.nd.edu/group/hoth/eBrooks/DaphniaGenomics_MultiGenome/inputData/EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP.yaml -e biowulf_cluster -w /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/tested_April2026/BC_tests/D_melanica_CON6_ZQ_MP/temp_datapath -o /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/tested_April2026/BC_tests/D_melanica_CON6_ZQ_MP -lc /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/tested_April2026/BC_tests/D_melanica_CON6_ZQ_MP/local_cache
-#python3 $softwarePath"/egapx.py" $inputsPath -o $outputsPath
-#python3 $softwarePath"/egapx.py" $inputsPath -e biowulf_cluster -w $outputsPath"/temp_datapath" -o $outputsPath -lc $outputsPath"/local_cache"
+# python3 /afs/crc.nd.edu/user/e/ebrooks5/egapx_v0.3.2/egapx/ui/egapx.py /afs/crc.nd.edu/group/hoth/eBrooks/DaphniaGenomics_MultiGenome/inputData/EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP.yaml -e singularity -w /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/tested_April2026/BC_tests/D_melanica_CON6_ZQ_MP/temp_datapath -o /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/tested_April2026/BC_tests/D_melanica_CON6_ZQ_MP -lc /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/tested_April2026/BC_tests/D_melanica_CON6_ZQ_MP/local_cache
+#python3 $softwarePath"/ui/egapx.py" $inputsPath -o $outputsPath
+#python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath -lc $outputsPath"/local_cache"
+
+# copy the updated config files
+# test: 
+# first, updated cache dir path (/scratch365/ebrooks5/egapx_v0.3.2/data/singularity) in the biowulf_cluster.config, biowulf_local.config, and slurm.config files
+# next, updated tmp dir path (/scratch365/ebrooks5/egapx_v0.3.2/data/tmp) in the slurm.config file
+# cp -r /afs/crc.nd.edu/user/e/ebrooks5/egapx_v0.3.2/egapx/egapx_config .
+#cp -r $softwarePath"/egapx_config" .
+
+# update the process container path (if using the biowulf_cluster, but that appears to be for slurm machines)
+# test:
+#echo "process.container = '/scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/tested_April2026/BC_tests/D_melanica_CON6_ZQ_MP/temp_datapath/singularity/ncbi-egapx-0.3.2-alpha.img'"  >> egapx_config/biowulf_cluster.config
+#echo "process.container = '/scratch365/ebrooks5/egapx_v0.3.2/data/singularity/ncbi-egapx-0.3.2-alpha.img'"  >> egapx_config/biowulf_cluster.config
 
 # run EGAPx
-#python3 $softwarePath"/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath -lc $outputsPath"/local_cache"
-#python3 $softwarePath"/egapx.py" $inputsPath -e biowulf_cluster -w $outputsPath"/temp_datapath" -o $outputsPath -lc $outputsPath"/local_cache"
+# test:
+# python3 /afs/crc.nd.edu/user/e/ebrooks5/egapx_v0.3.2/egapx/ui/egapx.py /afs/crc.nd.edu/group/hoth/eBrooks/DaphniaGenomics_MultiGenome/inputData/EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP.yaml -e singularity -w /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/tested_April2026/BC_tests/D_melanica_CON6_ZQ_MP/temp_datapath -o /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/tested_April2026/BC_tests/D_melanica_CON6_ZQ_MP -lc /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/tested_April2026/BC_tests/D_melanica_CON6_ZQ_MP/local_cache
+#python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath -lc $outputsPath"/local_cache"
+#python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath -lc $outputsPath"/local_cache"
 
 # uncomment the following lines to reduce data storage
 # clean up, if accept.gff output file exsists
