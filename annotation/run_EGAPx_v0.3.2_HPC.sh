@@ -8,15 +8,17 @@
 # script to run the EGAPx v0.3.2 pipeline
 # usage: qsub run_EGAPx_v0.3.2_HPC.sh inputFile
 # usage ex: qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC.txt
-## job-1 790958
-## job-2 793348
-## job-3 793353 -> NOTE: Nextflow is not tested with Java 1.8.0_462 -- It's recommended the use of version 11 up to 23
+## job 793353 -> NOTE: Nextflow is not tested with Java 1.8.0_462 -- It's recommended the use of version 11 up to 23
 ## job-test 793355 -> openjdk version "1.8.0_462"
+## job 
 
 # NOTE: the default /egapx/ui/assets/config/process_resources.config file specifies up to 31 cores (huge_Job)
 # our afs system has 263Gb RAM, 64 cores
 # make sure to always leave 1 core free for general processes, so request up to 63 cores per job on our afs system
 # smaller annotation jobs do not need to request as many resources (for example, 15 cores is sufficient for the average run)
+
+# load module with updated java version
+module load bio
 
 # retrieve input file
 inputFile=$1
@@ -45,16 +47,16 @@ outputsPath=$(grep "outputs_EGAPx_v0.3.2_BC:" ../"inputData/inputs_annotations.t
 outputsPath=$outputsPath"/"$speciesName
 
 # make outputs directory
-#mkdir $outputsPath
+mkdir $outputsPath
 
 # check if the folder already exists
-#if [ $? -ne 0 ]; then
-#	echo "The $outputsPath directory already exsists... please remove before proceeding."
-#	exit 1
-#fi
+if [ $? -ne 0 ]; then
+	echo "The $outputsPath directory already exsists... please remove before proceeding."
+	exit 1
+fi
 
 # make temporary data path
-#mkdir $outputsPath"/temp_datapath"
+mkdir $outputsPath"/temp_datapath"
 
 # move to outputs directory
 cd $outputsPath
@@ -65,13 +67,15 @@ echo "Beginning analysis of $speciesName..."
 # the normal workflow uses remote NCBI data, which has been giving errors
 # https://github.com/ncbi/egapx/issues/214
 # run EGAPx script to download necessary data for local running
-#python3 $softwarePath"/egapx.py" $inputsPath -dl -lc $outputsPath"/local_cache"
+python3 $softwarePath"/egapx.py" $inputsPath -dl -lc $outputsPath"/local_cache"
 
 # run EGAPx to copy config files
 #python3 $softwarePath"/egapx.py" $inputsPath -o $outputsPath
+python3 $softwarePath"/egapx.py" $inputsPath -e biowulf_cluster -w $outputsPath"/temp_datapath" -o $outputsPath -lc $outputsPath"/local_cache"
 
 # run EGAPx
-python3 $softwarePath"/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath -lc $outputsPath"/local_cache"
+#python3 $softwarePath"/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath -lc $outputsPath"/local_cache"
+python3 $softwarePath"/egapx.py" $inputsPath -e biowulf_cluster -w $outputsPath"/temp_datapath" -o $outputsPath -lc $outputsPath"/local_cache"
 
 # uncomment the following lines to reduce data storage
 # clean up, if accept.gff output file exsists

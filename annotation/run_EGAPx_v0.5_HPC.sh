@@ -14,6 +14,9 @@
 # make sure to always leave 1 core free for general processes, so request up to 63 cores per job on our afs system
 # smaller annotation jobs do not need to request as many resources (for example, 15 cores is sufficient for the average run)
 
+# load module with updated java version
+module load bio
+
 # retrieve input file
 inputFile=$1
 
