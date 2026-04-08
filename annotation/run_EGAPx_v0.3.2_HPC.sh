@@ -8,6 +8,9 @@
 # script to run the EGAPx v0.3.2 pipeline
 # usage: qsub run_EGAPx_v0.3.2_HPC.sh inputFile
 # usage ex: qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC.txt
+## job-1 790958
+## job-2
+## job-3
 
 # NOTE: the default /egapx/ui/assets/config/process_resources.config file specifies up to 31 cores (huge_Job)
 # our afs system has 263Gb RAM, 64 cores
@@ -61,10 +64,10 @@ echo "Beginning analysis of $speciesName..."
 # the normal workflow uses remote NCBI data, which has been giving errors
 # https://github.com/ncbi/egapx/issues/214
 # run EGAPx script to download necessary data for local running
-python3 $softwarePath"/egapx.py" $inputsPath -dl -lc $outputsPath"/local_cache"
+#python3 $softwarePath"/egapx.py" $inputsPath -dl -lc $outputsPath"/local_cache"
 
 # run EGAPx to copy config files
-#python3 $softwarePath"/egapx.py" $inputsPath -o $outputsPath
+python3 $softwarePath"/egapx.py" $inputsPath -o $outputsPath
 
 # run EGAPx
 #python3 $softwarePath"/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath
