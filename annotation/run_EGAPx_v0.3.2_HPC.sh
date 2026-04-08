@@ -11,7 +11,7 @@
 ## job (first test) -> NOTE: Nextflow is not tested with Java 1.8.0_462 -- It's recommended the use of version 11 up to 23
 ## job (java -version) -> openjdk version "1.8.0_462"
 ## job (module load bio) -> ImportError: /afs/crc.nd.edu/x86_64_linux/b/bio/0724/lib/python3.12/lib-dynload/_sqlite3.cpython-312-x86_64-linux-gnu.so: undefined symbol: sqlite3_deserialize
-## job (module load java/25.0.1) -> 797517
+## job (module load java/25.0.1) -> 
 
 # NOTE: the default /egapx/ui/assets/config/process_resources.config file specifies up to 31 cores (huge_Job)
 # our afs system has 263Gb RAM, 64 cores
@@ -48,13 +48,13 @@ outputsPath=$(grep "outputs_EGAPx_v0.3.2_BC:" ../"inputData/inputs_annotations.t
 outputsPath=$outputsPath"/"$speciesName
 
 # make outputs directory
-#mkdir $outputsPath
+mkdir $outputsPath
 
 # check if the folder already exists
-#if [ $? -ne 0 ]; then
-#	echo "The $outputsPath directory already exsists... please remove before proceeding."
-#	exit 1
-#fi
+if [ $? -ne 0 ]; then
+	echo "The $outputsPath directory already exsists... please remove before proceeding."
+	exit 1
+fi
 
 # make temporary data path
 mkdir $outputsPath"/temp_datapath"
@@ -68,7 +68,7 @@ echo "Beginning analysis of $speciesName..."
 # the normal workflow uses remote NCBI data, which has been giving errors
 # https://github.com/ncbi/egapx/issues/214
 # run EGAPx script to download necessary data for local running
-#python3 $softwarePath"/ui/egapx.py" $inputsPath -dl -lc $outputsPath"/local_cache"
+python3 $softwarePath"/ui/egapx.py" $inputsPath -dl -lc $outputsPath"/local_cache"
 
 # run EGAPx to copy config files
 # test: 
