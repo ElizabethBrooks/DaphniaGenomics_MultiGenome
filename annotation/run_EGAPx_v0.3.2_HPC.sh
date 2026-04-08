@@ -10,7 +10,7 @@
 # usage ex: qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC.txt
 ## job-1 790958
 ## job-2 793348
-## job-3 793353
+## job-3 793353 -> NOTE: Nextflow is not tested with Java 1.8.0_462 -- It's recommended the use of version 11 up to 23
 
 # NOTE: the default /egapx/ui/assets/config/process_resources.config file specifies up to 31 cores (huge_Job)
 # our afs system has 263Gb RAM, 64 cores
@@ -70,6 +70,7 @@ echo "Beginning analysis of $speciesName..."
 #python3 $softwarePath"/egapx.py" $inputsPath -o $outputsPath
 
 # run EGAPx
+java -version
 echo python3 $softwarePath"/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath
 
 # uncomment the following lines to reduce data storage
