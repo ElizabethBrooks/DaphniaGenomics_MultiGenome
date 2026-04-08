@@ -10,7 +10,7 @@
 # usage ex: qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC.txt
 ## job 793353 -> NOTE: Nextflow is not tested with Java 1.8.0_462 -- It's recommended the use of version 11 up to 23
 ## job-test 793355 -> openjdk version "1.8.0_462"
-## job 
+## job -> ImportError: /afs/crc.nd.edu/x86_64_linux/b/bio/0724/lib/python3.12/lib-dynload/_sqlite3.cpython-312-x86_64-linux-gnu.so: undefined symbol: sqlite3_deserialize
 
 # NOTE: the default /egapx/ui/assets/config/process_resources.config file specifies up to 31 cores (huge_Job)
 # our afs system has 263Gb RAM, 64 cores
@@ -18,7 +18,7 @@
 # smaller annotation jobs do not need to request as many resources (for example, 15 cores is sufficient for the average run)
 
 # load module with updated java version
-module load bio
+#module load bio
 
 # retrieve input file
 inputFile=$1
@@ -71,11 +71,11 @@ python3 $softwarePath"/egapx.py" $inputsPath -dl -lc $outputsPath"/local_cache"
 
 # run EGAPx to copy config files
 #python3 $softwarePath"/egapx.py" $inputsPath -o $outputsPath
-python3 $softwarePath"/egapx.py" $inputsPath -e biowulf_cluster -w $outputsPath"/temp_datapath" -o $outputsPath -lc $outputsPath"/local_cache"
+#python3 $softwarePath"/egapx.py" $inputsPath -e biowulf_cluster -w $outputsPath"/temp_datapath" -o $outputsPath -lc $outputsPath"/local_cache"
 
 # run EGAPx
 #python3 $softwarePath"/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath -lc $outputsPath"/local_cache"
-python3 $softwarePath"/egapx.py" $inputsPath -e biowulf_cluster -w $outputsPath"/temp_datapath" -o $outputsPath -lc $outputsPath"/local_cache"
+#python3 $softwarePath"/egapx.py" $inputsPath -e biowulf_cluster -w $outputsPath"/temp_datapath" -o $outputsPath -lc $outputsPath"/local_cache"
 
 # uncomment the following lines to reduce data storage
 # clean up, if accept.gff output file exsists
