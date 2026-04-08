@@ -70,6 +70,9 @@ echo "Beginning analysis of $speciesName..."
 python3 $softwarePath"/egapx.py" $inputsPath -dl -lc $outputsPath"/local_cache"
 
 # run EGAPx to copy config files
+# test: 
+# first, updated cacheDir path in the biowulf_cluster.config file
+# python3 /afs/crc.nd.edu/user/e/ebrooks5/egapx_v0.3.2/egapx/ui/egapx.py /afs/crc.nd.edu/group/hoth/eBrooks/DaphniaGenomics_MultiGenome/inputData/EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP.yaml -e biowulf_cluster -w /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/tested_April2026/BC_tests/D_melanica_CON6_ZQ_MP/temp_datapath -o /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/tested_April2026/BC_tests/D_melanica_CON6_ZQ_MP -lc /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/tested_April2026/BC_tests/D_melanica_CON6_ZQ_MP/local_cache
 #python3 $softwarePath"/egapx.py" $inputsPath -o $outputsPath
 #python3 $softwarePath"/egapx.py" $inputsPath -e biowulf_cluster -w $outputsPath"/temp_datapath" -o $outputsPath -lc $outputsPath"/local_cache"
 
