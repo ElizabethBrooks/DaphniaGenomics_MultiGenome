@@ -1,2 +1,2 @@
-species: Ceriodaphnia_sp_CUH_004_BC
-inputs_EGAPx: EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_CUH_004_BC.yaml
+species: D_salina_ULW_001_BC
+inputs_EGAPx: EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_ULW_001_BC.yaml
