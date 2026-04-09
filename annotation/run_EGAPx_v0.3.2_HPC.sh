@@ -11,15 +11,18 @@
 ## job (first test) -> NOTE: Nextflow is not tested with Java 1.8.0_462 -- It's recommended the use of version 11 up to 23
 ## job (java -version) -> openjdk version "1.8.0_462"
 ## job (module load bio) -> ImportError: /afs/crc.nd.edu/x86_64_linux/b/bio/0724/lib/python3.12/lib-dynload/_sqlite3.cpython-312-x86_64-linux-gnu.so: undefined symbol: sqlite3_deserialize
+## sqlite3 --version
+## conda install -c conda-forge sqlite=3.41.2
 ## job (module java/25.0.1, bio/3.0) -> ERROR: Cannot find Java or it's a wrong version -- please make sure that Java 8 or later (up to 22) is installed
+## job (module bio/egapx/0.1.1) -> Error: A JNI error has occurred, please check your installation and try again
 
 # NOTE: the default /egapx/ui/assets/config/process_resources.config file specifies up to 31 cores (huge_Job)
 # our afs system has 263Gb RAM, 64 cores
 # make sure to always leave 1 core free for general processes, so request up to 63 cores per job on our afs system
 # smaller annotation jobs do not need to request as many resources (for example, 15 cores is sufficient for the average run)
 
-# load module with updated java version
-module load bio/egapx/0.1.1
+# load java
+conda activate java_env
 
 # retrieve input file
 inputFile=$1
