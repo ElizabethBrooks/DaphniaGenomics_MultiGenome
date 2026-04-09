@@ -48,13 +48,13 @@ outputsPath=$(grep "outputs_EGAPx_v0.3.2_BC:" ../"inputData/inputs_annotations.t
 outputsPath=$outputsPath"/"$speciesName
 
 # make outputs directory
-mkdir $outputsPath
+#mkdir $outputsPath
 
 # check if the folder already exists
-if [ $? -ne 0 ]; then
-	echo "The $outputsPath directory already exsists... please remove before proceeding."
-	exit 1
-fi
+#if [ $? -ne 0 ]; then
+#	echo "The $outputsPath directory already exsists... please remove before proceeding."
+#	exit 1
+#fi
 
 # make temporary data path
 mkdir $outputsPath"/temp_datapath"
