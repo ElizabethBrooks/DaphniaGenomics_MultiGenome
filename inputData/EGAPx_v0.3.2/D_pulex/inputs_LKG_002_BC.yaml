@@ -1,5 +1,5 @@
 genome: /scratch365/ebrooks5/multi_genome_project/data/Daphnia_genomes/D_pulex_LKG_002/Daphnia_pulex_LKG_002_salt_tolerant.bp.p_ctg.fa
 taxid: 6669
-short_reads:
+reads:
   - /scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNAseq/pooled_annotation_RNA/D_pulex_LKG_002/LKG_002_S41_L004_R1_001.fastq.gz
   - /scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNAseq/pooled_annotation_RNA/D_pulex_LKG_002/LKG_002_S41_L004_R2_001.fastq.gz
