@@ -3,7 +3,15 @@
 ## EGAPx V0.3.2 - April 2026
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC.txt
-##### job 
+##### job 799005
+COMPLETED
+CDS          211507
+exon         273791
+gene         18851
+lnc_RNA      4691
+mRNA         26875
+pseudogene   1516
+transcript   204
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_BC.txt
 ##### job
