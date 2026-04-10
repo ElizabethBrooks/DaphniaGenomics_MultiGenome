@@ -13,16 +13,16 @@
 inputFile=$1
 
 # set input species
-inputSpecies=$(grep "species:" ../"inputData/"$inputFile | tr -d " " | sed "s/species: //g")
+inputSpecies=$(grep "species:" ../"inputData/"$inputFile | tr -d " " | sed "s/species://g")
 
 # setup yaml path
 inputYaml=$(echo $inputFile | sed "s/\.txt/.yaml/g")
 
 # retrieve the input genome
-inputGenome=$(grep "genome:" ../"inputData/"$inputYaml | tr -d " " | sed "s/genome: //g")
+inputGenome=$(grep "genome:" ../"inputData/"$inputYaml | tr -d " " | sed "s/genome://g")
 
 # retrieve input tax id
-taxInput=$(grep "taxid:" ../"inputData/"$inputYaml | tr -d " " | sed "s/taxid: //g")
+taxInput=$(grep "taxid:" ../"inputData/"$inputYaml | tr -d " " | sed "s/taxid://g")
 
 # set the outputs directory
 outputsPath="/scratch365/ebrooks5/multi_genome_project/data/Daphnia_genomes/cleaned_FCS_GX"

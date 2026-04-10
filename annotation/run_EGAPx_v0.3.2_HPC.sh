@@ -21,10 +21,10 @@ conda activate java_env
 inputFile=$1
 
 # retrieve species name
-speciesName=$(grep "species:" ../"inputData/"$inputFile | tr -d " " | sed "s/species: //g")
+speciesName=$(grep "species:" ../"inputData/"$inputFile | tr -d " " | sed "s/species://g")
 
 # retrieve inputs path
-inputsPath=$(grep "inputs_EGAPx:" ../"inputData/"$inputFile | tr -d " " | sed "s/inputs_EGAPx: //g")
+inputsPath=$(grep "inputs_EGAPx:" ../"inputData/"$inputFile | tr -d " " | sed "s/inputs_EGAPx://g")
 
 # retrieve repository directory
 repoDir=$(dirname $PWD)
