@@ -1,29 +1,45 @@
 #!/bin/bash
 
 # script to clean a genome fasta of contamination
-# usage: bash clean_genome_FCS_GX.sh
+# usage: bash clean_genome_FCS_GX.sh inputFile
+# usage ex: qsub clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC.txt
 
-# retrieve the input genome
-#inputGenome="/afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/D.lumholtzi.2.0_annotation/D.lumholtzi_3.0.masked.fasta"
-inputGenome="/afs/crc.nd.edu/group/pfrenderlab/carson/Daphnia_raw_data_WW/D.sinensis_CHINA.masked.fasta"
+# retrieve input file
+inputFile=$1
 
 # set input species
-#inputSpecies="D_lumholtzi"
-inputSpecies="D_sinensis_CHINA"
+inputSpecies=$(grep "species:" ../"inputData/"$inputFile | tr -d " " | sed "s/species: //g")
 
-# retrieve the input report
-#inputReport="/scratch365/ebrooks5/FCS_GX/D_lumholtzi_gx_out/D.lumholtzi_3.0.masked.42856.fcs_gx_report.txt"
-inputReport=$(ls /scratch365/ebrooks5/FCS_GX/D_sinensis_CHINA_gx_out/D.sinensis_CHINA.masked.*.fcs_gx_report.txt)
+# setup yaml path
+inputYaml=$(echo $inputFile | sed "s/\.txt/.yaml/g")
 
-# set output file names
-outputGenome=$(basename $inputGenome | sed "s/\.fasta/_clean.fasta/g")
-outputContam=$(basename $inputGenome | sed "s/\.fasta/_contam.fasta/g")
+# retrieve the input genome
+inputGenome=$(grep "genome:" ../"inputData/"$inputYaml | tr -d " " | sed "s/genome: //g")
+
+# retrieve input tax id
+taxInput=$(grep "taxid:" ../"inputData/"$inputYaml | tr -d " " | sed "s/taxid: //g")
+
+# set the outputs directory
+outputsPath="/scratch365/ebrooks5/multi_genome_project/data/Daphnia_genomes/cleaned_FCS_GX/"$inputSpecies
+
+# create the outputs directory
+mkdir $outputsPath
 
 # set DB directory
-GXDB_LOC="/scratch365/ebrooks5/FCS_GX"
+GXDB_LOC="/scratch365/ebrooks5/software/FCS_GX"
 
-# move to DB directory
-cd $GXDB_LOC
+# set the software path
+softwarePath="/scratch365/ebrooks5/software/FCS_GX"
+
+# retrieve the input report
+inputReport=$(ls $softwarePath"/"$inputSpecies"_gx_out/"*.fcs_gx_report.txt)
+
+# set output file names
+outputGenome=$outputsPath"/clean.fasta"
+outputContam=$outputsPath"/contam.fasta"
+
+# move to the software directory
+cd $softwarePath
 
 # export the fcs-gx sif
 export FCS_DEFAULT_IMAGE=fcs-gx.sif

@@ -14,19 +14,19 @@ pseudogene   1516
 transcript   204
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_BC.txt
-##### job 800194
+##### job 801883
 RUNNING
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_CUH_004_BC.txt
-##### job 800195
+##### job 801884
 RUNNING
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_BC.txt
-##### job 800196
+##### job 801885
 RUNNING
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_LKG_002_BC.txt
-##### job 800198
+##### job 801886
 RUNNING
 
 
