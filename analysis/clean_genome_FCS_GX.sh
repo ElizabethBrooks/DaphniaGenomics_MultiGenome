@@ -51,4 +51,4 @@ cd $softwarePath
 export FCS_DEFAULT_IMAGE=fcs-gx.sif
 
 # run fcs to clean the genome
-cat $inputGenome | python3 ./fcs.py clean genome --action-report $inputReport --output $GXDB_LOC"/"$inputSpecies"_gx_out/"$outputGenome --contam-fasta-out $GXDB_LOC"/"$inputSpecies"_gx_out/"$outputContam
+cat $inputGenome | python3 ./fcs.py clean genome --action-report $inputReport --output $outputGenome --contam-fasta-out $outputContam
