@@ -7,7 +7,7 @@
 
 # script to run the EGAPx v0.3.2 pipeline
 # usage: qsub run_EGAPx_v0.3.2_HPC.sh inputFile
-# usage ex: qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC.txt
+# usage ex: qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
 
 # NOTE: the default /egapx/ui/assets/config/process_resources.config file specifies up to 31 cores (huge_Job)
 # our afs system has 263Gb RAM, 64 cores

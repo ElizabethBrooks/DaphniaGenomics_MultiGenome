@@ -5,22 +5,27 @@
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC.txt
 ##### job 806865 -> TOTAL                                1       2166
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC.txt
+Applied 1 actions; 0 seqs dropped; 0 bps dropped; 0 bps lowercased; 2166 bps hardmasked.
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_BC.txt
 ##### job 806874 -> TOTAL                            164   19222206
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_BC.txt
+Applied 163 actions; 163 seqs dropped; 19194738 bps dropped; 0 bps lowercased; 0 bps hardmasked.
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_CUH_004_BC.txt
 ##### job 806875 -> TOTAL                            149   14852939
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_CUH_004_BC.txt
+Applied 144 actions; 144 seqs dropped; 14650723 bps dropped; 0 bps lowercased; 0 bps hardmasked.
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_BC.txt
 ##### job 806876 -> TOTAL                            133    9915301
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_BC.txt
+Applied 132 actions; 132 seqs dropped; 9892513 bps dropped; 0 bps lowercased; 0 bps hardmasked.
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_pulex/inputs_LKG_002_BC.txt
 ##### job 806877 -> TOTAL                            104    8588246
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_pulex/inputs_LKG_002_BC.txt
+Applied 104 actions; 104 seqs dropped; 8588246 bps dropped; 0 bps lowercased; 0 bps hardmasked.
 
 
 ## EGAPx V0.3.2 - April 2026
@@ -36,22 +41,22 @@ mRNA         26875
 pseudogene   1516
 transcript   204
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC.txt
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
 ##### job 
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_BC.txt
-##### job 
-
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_CUH_004_BC.txt
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_BC_clean.txt
 ##### job 
 
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_BC.txt
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_CUH_004_BC_clean.txt
 ##### job 
 
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_LKG_002_BC.txt
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_BC_clean.txt
+##### job 
+
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_LKG_002_BC_clean.txt
 ##### job 
 
 
