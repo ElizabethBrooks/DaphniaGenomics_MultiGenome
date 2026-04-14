@@ -2,7 +2,7 @@
 
 # script to clean a genome fasta of contamination
 # usage: bash clean_genome_FCS_GX.sh inputFile
-# usage ex: qsub clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC.txt
+# usage ex: bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC.txt
 
 # retrieve input file
 inputFile=$1
@@ -20,6 +20,12 @@ inputGenome=$(grep "genome:" ../"inputData/"$inputYaml | tr -d " " | sed "s/geno
 taxInput=$(grep "taxid:" ../"inputData/"$inputYaml | tr -d " " | sed "s/taxid://g")
 
 # set the outputs directory
+#outputsPath="/scratch365/ebrooks5/multi_genome_project/data/Daphnia_genomes/cleaned_FCS_GX"
+
+# create the outputs directory
+#mkdir $outputsPath
+
+# set the outputs directory
 outputsPath="/scratch365/ebrooks5/multi_genome_project/data/Daphnia_genomes/cleaned_FCS_GX/"$inputSpecies
 
 # create the outputs directory
@@ -32,7 +38,7 @@ GXDB_LOC="/scratch365/ebrooks5/software/FCS_GX"
 softwarePath="/scratch365/ebrooks5/software/FCS_GX"
 
 # retrieve the input report
-inputReport=$(ls $softwarePath"/"$inputSpecies"_gx_out/"*.fcs_gx_report.txt)
+inputReport=$(ls $GXDB_LOC"/"$inputSpecies"_gx_out/"*.fcs_gx_report.txt)
 
 # set output file names
 outputGenome=$outputsPath"/clean.fasta"

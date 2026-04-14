@@ -24,9 +24,6 @@ inputGenome=$(grep "genome:" ../"inputData/"$inputYaml | tr -d " " | sed "s/geno
 # retrieve input tax id
 taxInput=$(grep "taxid:" ../"inputData/"$inputYaml | tr -d " " | sed "s/taxid://g")
 
-# set the outputs directory
-outputsPath="/scratch365/ebrooks5/multi_genome_project/data/Daphnia_genomes/cleaned_FCS_GX"
-
 # set DB directory
 GXDB_LOC="/scratch365/ebrooks5/software/FCS_GX"
 

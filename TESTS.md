@@ -1,5 +1,28 @@
 # EGAPx Tests
 
+## FCS_GX - April 2026
+
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC.txt
+##### job 806865 -> TOTAL                                1       2166
+#### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC.txt
+
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_BC.txt
+##### job 806874 -> TOTAL                            164   19222206
+#### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_BC.txt
+
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_CUH_004_BC.txt
+##### job 806875 -> TOTAL                            149   14852939
+#### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_CUH_004_BC.txt
+
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_BC.txt
+##### job 806876 -> TOTAL                            133    9915301
+#### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_BC.txt
+
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_pulex/inputs_LKG_002_BC.txt
+##### job 806877 -> TOTAL                            104    8588246
+#### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_pulex/inputs_LKG_002_BC.txt
+
+
 ## EGAPx V0.3.2 - April 2026
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC.txt
@@ -13,21 +36,24 @@ mRNA         26875
 pseudogene   1516
 transcript   204
 
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC.txt
+##### job 
+
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_BC.txt
-##### job 801883
-RUNNING
+##### job 
+
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_CUH_004_BC.txt
-##### job 801884
-RUNNING
+##### job 
+
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_BC.txt
-##### job 801885
-RUNNING
+##### job 
+
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_LKG_002_BC.txt
-##### job 801886
-RUNNING
+##### job 
+
 
 
 ## EGAPx v0.4
