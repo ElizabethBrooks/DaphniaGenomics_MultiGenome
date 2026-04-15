@@ -1,0 +1,2 @@
+species: Latona_sp_BLK_101_BC_clean
+inputs_EGAPx: EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.yaml

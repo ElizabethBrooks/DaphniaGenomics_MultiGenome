@@ -7,25 +7,30 @@ Click [here](https://github.com/ElizabethBrooks/DaphniaGenomics_MultiGenome) for
 ## [EGAPx](https://github.com/ncbi/egapx/) Workflows
 There are two very similar workflows for EGAPx, local and HPC. The <i>local scripts</i> can be run locally on your system and the <i>HPC scripts</i> are setup for job submission to the ND CRC remote servers.
 
+While the <i>local scripts</i> are useful for testing the EGAPx software, the <i>HPC scripts</i> should be used for annotating genomes.
+
 Note that singularity needs to be installed on your system. The ND CRC servers already have singularity available.
 
 ### Steps
 1. Install, configure, and test the EGAPx software.
 2. Format any input files, such as the reads fasta files or yaml guide file.
-3. Run EGAPx using as many cores as possible and with sufficient data storage. This will depend on the size and number of input files, for example.
+3. Use FCS-GX to screen and clean genome fasta files, if necessary
+- EGAPx can fail to run on genomes that are contaminated.
+4. Run EGAPx using as many cores as possible and with sufficient data storage. 
+- This will depend on the size and number of input files, for example.
 
 ### Installation
-The <i>install\_EGAPx.sh</i> script in the <b>install</b> directory can be used to install EGAPx and its dependencies. 
+The scripts in the <b>install</b> directory can be used to install EGAPx and its dependencies. Make sure to use the script with the installation procedure appropriate for the version of EGAPx that you are using. 
 
 Make sure to change the paths in the <i>inputs\_annotations.txt</i> file to where you would like to have the software installed and outputs generated.
 
-### Notes - EGAPx v0.1 to v0.4
+### Notes 
 There are some things to keep in mind when running EGAPx.
 
-#### EGAPx Config
+#### EGAPx Config - EGAPx v0.1 to v0.4
 The <i>egapx/ui/assets/config/process\_resources.config</i> file specifies up to 31 cores (huge\_Job).
 
-The ND CRC [system specifications](https://docs.crc.nd.edu/new_user/quick_start.html) indicates that our afs system has 263Gb RAM, 64 cores. Make sure to leave 1 core free for general processes, so request up to 63 cores per job on our afs system.
+The ND CRC [system specifications](https://docs.crc.nd.edu/new_user/quick_start.html) indicates that our afs system has 263Gb RAM, 64 cores. Make sure to leave 1 core free for general processes, so request up to 63 cores per job on our afs system. Smaller annotation jobs do not need to request as many resources (for example, 15 cores is sufficient for the average run).
 
 The <i>EGAPx\_v0.2\_process\_resources.config</i> file in the <i>inputData</i> directory may be used to run EGAPx workflow jobs on the ND CRC remote servers.
 

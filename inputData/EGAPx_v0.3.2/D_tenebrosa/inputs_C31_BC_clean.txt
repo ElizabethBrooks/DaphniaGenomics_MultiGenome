@@ -1,0 +1,2 @@
+species: D_tenebrosa_C31_BC_clean
+inputs_EGAPx: EGAPx_v0.3.2/D_tenebrosa/inputs_C31_BC_clean.yaml
