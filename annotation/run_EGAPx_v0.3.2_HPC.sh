@@ -78,9 +78,18 @@ python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/
 	# run to resume annotation
 #	bash $outputsPath"/resume.sh"
 #else
-#    rm -r $outputsPath"/temp_datapath"
+#   rm -r $outputsPath"/temp_datapath"
+#	rm -r $outputsPath"/local_cache"
 	#rm -r $outputsPath"/work"
 	#rm -r $outputsPath"/annot_builder_output"
+	#rm -r $outputsPath"/egapx_config"
+	#rm -r $outputsPath"/execution_logs"
+	#rm -r $outputsPath"/validated"
+	#rm -r $outputsPath"/.nextflow"
+	#rm $outputsPath"/dag.dot"
+	#rm $outputsPath"/egapx_reads_metadata_e5ajupqo.tsv"
+	#rm $outputsPath"/run_work_dir.txt"
+	#rm $outputsPath"/work_dir_singularity.last"
 #fi
 
 # status message

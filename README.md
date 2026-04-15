@@ -15,9 +15,9 @@ Note that singularity needs to be installed on your system. The ND CRC servers a
 1. Install, configure, and test the EGAPx software.
 2. Format any input files, such as the reads fasta files or yaml guide file.
 3. Use FCS-GX to screen and clean genome fasta files, if necessary
-- EGAPx can fail to run on genomes that are contaminated.
+	- EGAPx can fail to run on genomes that are contaminated.
 4. Run EGAPx using as many cores as possible and with sufficient data storage. 
-- This will depend on the size and number of input files, for example.
+	- This will depend on the size and number of input files, for example.
 
 ### Installation
 The scripts in the <b>install</b> directory can be used to install EGAPx and its dependencies. Make sure to use the script with the installation procedure appropriate for the version of EGAPx that you are using. 
@@ -26,6 +26,10 @@ Make sure to change the paths in the <i>inputs\_annotations.txt</i> file to wher
 
 ### Notes 
 There are some things to keep in mind when running EGAPx.
+
+#### Offline Mode - April 2026
+
+The EGAPx software is currently experiencing issues with the normal workflow and accessing NCBI resources from the internet. Make sure to use the offline mode through the local cache option (-lc flag).
 
 #### EGAPx Config - EGAPx v0.1 to v0.4
 The <i>egapx/ui/assets/config/process\_resources.config</i> file specifies up to 31 cores (huge\_Job).

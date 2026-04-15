@@ -1,2 +1,2 @@
-species: D_magna_MCL001_BC_clean
-inputs_EGAPx: EGAPx_v0.3.2/D_magna/inputs_MCL001_BC_clean.yaml
+species: D_magna_MCL_001_BC_clean
+inputs_EGAPx: EGAPx_v0.3.2/D_magna/inputs_MCL_001_BC_clean.yaml

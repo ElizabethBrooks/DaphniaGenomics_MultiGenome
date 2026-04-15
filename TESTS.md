@@ -63,6 +63,10 @@ Applied 104 actions; 104 seqs dropped; 8588246 bps dropped; 0 bps lowercased; 0 
 ##### job 817687
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC.txt
 
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC.txt
+##### job 
+#### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC.txt
+
 
 ## EGAPx V0.3.2 - April 2026
 
@@ -79,18 +83,54 @@ transcript   204
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
 ##### job 816822
+CDS          210998
+exon         275901
+gene         18894
+lnc_RNA      4907
+mRNA         26784
+pseudogene   1515
+transcript   200
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_BC_clean.txt
 ##### job 816865
+CDS          234341
+exon         295532
+gene         18206
+lnc_RNA      7520
+mRNA         27436
+pseudogene   476
+transcript   363
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_CUH_004_BC_clean.txt
 ##### job 816866
+CDS          200334
+exon         232783
+gene         17494
+lnc_RNA      3540
+mRNA         24250
+pseudogene   135
+transcript   145
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_BC_clean.txt
 ##### job 816867
+CDS          224228
+exon         323192
+gene         19496
+lnc_RNA      9962
+mRNA         27903
+pseudogene   479
+transcript   680
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_LKG_002_BC_clean.txt
 ##### job 816868
+CDS          308939
+C_gene_segment 2
+exon         409408
+gene         31096
+lnc_RNA      7410
+mRNA         41871
+pseudogene   3130
+transcript   265
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_ESL_002_BC_clean.txt
 ##### job
