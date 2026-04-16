@@ -1,4 +1,4 @@
-genome: /scratch365/ebrooks5/multi_genome_project/data/Daphnia_genomes/cleaned_FCS_GX/D_tenebrosa_C31/clean.fasta
+genome: /scratch365/ebrooks5/multi_genome_project/data/Daphnia_genomes/cleaned_FCS_GX/D_tenebrosa_C31_BC/clean.fasta
 taxid: 521141
 reads:
   - /scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNAseq/pooled_annotation_RNA/D_tenebrosa_C31/D-tenebrosa_S49_L004_R1_001.fastq.gz

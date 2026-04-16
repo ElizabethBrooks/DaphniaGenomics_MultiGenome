@@ -1,4 +1,4 @@
-genome: /scratch365/ebrooks5/multi_genome_project/data/Daphnia_genomes/cleaned_FCS_GX/D_magna_LRVO/clean.fasta
+genome: /scratch365/ebrooks5/multi_genome_project/data/Daphnia_genomes/cleaned_FCS_GX/D_magna_LRVO_BC/clean.fasta
 taxid: 35525
 reads:
 	- /scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNAseq/D_magna_LRVO/ILMN_2404_ND_NM3348Pool_Jan2025/All_R2_S20_L003_R1_001.fastq.gz
