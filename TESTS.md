@@ -56,15 +56,16 @@ Applied 104 actions; 104 seqs dropped; 8588246 bps dropped; 0 bps lowercased; 0 
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_tenebrosa/inputs_C31_BC.txt
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_BC.txt
-##### job 817686
+##### job 817686 -> TOTAL                             63   14957666
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_BC.txt
+Applied 62 actions; 62 seqs dropped; 14909219 bps dropped; 0 bps lowercased; 0 bps hardmasked.
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC.txt
 ##### job 817687
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC.txt
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC.txt
-##### job 
+##### job 820301
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC.txt
 
 
@@ -154,7 +155,7 @@ transcript   265
 ##### job
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_BC_clean.txt
-##### job
+##### job 
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 ##### job
