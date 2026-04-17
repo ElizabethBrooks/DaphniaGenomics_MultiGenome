@@ -31,9 +31,17 @@ Applied 104 actions; 104 seqs dropped; 8588246 bps dropped; 0 bps lowercased; 0 
 ##### job 817676
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_pulicaria/inputs_ESL_002_BC.txt
 
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_pulicaria/inputs_ESL_002_BC_run2.txt
+##### job 
+#### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_pulicaria/inputs_ESL_002_BC_run2.txt
+
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_BC.txt
 ##### job 817678
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_BC.txt
+
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_BC_run2.txt
+##### job 
+#### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_BC_run2.txt
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_magna/inputs_MCL_001_BC.txt
 ##### job 817679 -> TOTAL                            503   75386905
@@ -50,8 +58,9 @@ Applied 107 actions; 106 seqs dropped; 12432393 bps dropped; 0 bps lowercased; 0
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_BC.txt
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_BC.txt
-##### job 822282
+##### job 822282 -> empty output job report
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_BC.txt
+Applied 171 actions; 171 seqs dropped; 28385625 bps dropped; 0 bps lowercased; 0 bps hardmasked.
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_tenebrosa/inputs_C31_BC.txt
 ##### job 817685 -> TOTAL                             50    9885271
@@ -165,7 +174,7 @@ region, 458
 ##### job
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_BC_clean.txt
-##### job
+##### job 826864
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_tenebrosa/inputs_C31_BC_clean.txt
 ##### job 821951
@@ -198,7 +207,7 @@ lnc_RNA, 4427
 pseudogene, 71
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
-##### job 826317
+##### job 826870
 
 
 ## EGAPx v0.4
