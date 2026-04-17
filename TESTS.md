@@ -148,7 +148,7 @@ transcript   265
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_MCL_001_BC_clean.txt
 ##### job 823199 -> /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/tested_April2026/BC_tests/D_magna_MCL_001_BC_clean_run1
  -- Check '/scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/tested_April2026/BC_tests/D_magna_MCL_001_BC_clean/nextflow.log' file for details
- ##### job 
+ ##### job 826335
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_BC_clean.txt
 ##### job 822278
