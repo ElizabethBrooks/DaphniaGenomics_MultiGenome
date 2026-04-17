@@ -7,7 +7,7 @@
 module load bio
 
 # set the outputs directory
-outputsPath="/scratch365/ebrooks5/multi_genome_project/data/pooled_annotation_RNA/MultiQC"
+outputsPath="/scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNAseq/pooled_annotation_RNA/MultiQC"
 
 # create the outputs directory
 mkdir $outputsPath

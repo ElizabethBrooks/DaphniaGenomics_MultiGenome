@@ -25,13 +25,13 @@ inputRNA=$(grep -A1 "reads:" ../"inputData/"$inputYaml | tail -1 | sed "s/^.*-\ 
 inputRNA=$(dirname $inputRNA)
 
 # set the outputs directory
-outputsPath="/scratch365/ebrooks5/multi_genome_project/data/pooled_annotation_RNA/QC"
+outputsPath="/scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNAseq/pooled_annotation_RNA/QC"
 
 # create the outputs directory
 mkdir $outputsPath
 
 # set the outputs directory
-outputsPath="/scratch365/ebrooks5/multi_genome_project/data/pooled_annotation_RNA/QC/"$inputSpecies
+outputsPath="/scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNAseq/pooled_annotation_RNA/QC/"$inputSpecies
 
 # make a new directory for analysis
 mkdir $outputsPath
