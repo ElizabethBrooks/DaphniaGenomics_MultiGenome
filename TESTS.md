@@ -32,7 +32,7 @@ Applied 104 actions; 104 seqs dropped; 8588246 bps dropped; 0 bps lowercased; 0 
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_pulicaria/inputs_ESL_002_BC.txt
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_pulicaria/inputs_ESL_002_BC_run2.txt
-##### job 
+##### job 826875
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_pulicaria/inputs_ESL_002_BC_run2.txt
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_BC.txt
@@ -40,7 +40,7 @@ Applied 104 actions; 104 seqs dropped; 8588246 bps dropped; 0 bps lowercased; 0 
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_BC.txt
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_BC_run2.txt
-##### job 
+##### job 826876
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_BC_run2.txt
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_magna/inputs_MCL_001_BC.txt
