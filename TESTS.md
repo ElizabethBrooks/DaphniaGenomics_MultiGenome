@@ -38,6 +38,7 @@ Applied 104 actions; 104 seqs dropped; 8588246 bps dropped; 0 bps lowercased; 0 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_magna/inputs_MCL_001_BC.txt
 ##### job 817679 -> TOTAL                            503   75386905
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_magna/inputs_MCL_001_BC.txt
+Applied 500 actions; 500 seqs dropped; 75234489 bps dropped; 0 bps lowercased; 0 bps hardmasked.
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_BC.txt
 ##### job 817681 -> TOTAL                            109   12503602
@@ -45,7 +46,7 @@ Applied 104 actions; 104 seqs dropped; 8588246 bps dropped; 0 bps lowercased; 0 
 Applied 107 actions; 106 seqs dropped; 12432393 bps dropped; 0 bps lowercased; 0 bps hardmasked.
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_BC.txt
-##### job 822281
+##### job 823185
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_BC.txt
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_BC.txt
@@ -68,8 +69,10 @@ Applied 62 actions; 62 seqs dropped; 14909219 bps dropped; 0 bps lowercased; 0 b
 Applied 155 actions; 155 seqs dropped; 16184552 bps dropped; 0 bps lowercased; 0 bps hardmasked.
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC.txt
-##### job 822283
+##### job 822283 -> empty output job report
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC.txt
+Warning: Ns at the beginning or end of the sequence: >CM058180.1 Daphnia magna isolate LRV0_1 linkage group LG10, whole genome shotgun sequence
+Applied 4 actions; 2 seqs dropped; 1064958 bps dropped; 0 bps lowercased; 10992 bps hardmasked.
 
 
 ## EGAPx V0.3.2 - April 2026
@@ -143,10 +146,20 @@ transcript   265
 ##### job
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_MCL_001_BC_clean.txt
-##### job
+##### job 823199 -> /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/tested_April2026/BC_tests/D_magna_MCL_001_BC_clean_run1
+ -- Check '/scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/tested_April2026/BC_tests/D_magna_MCL_001_BC_clean/nextflow.log' file for details
+ ##### job 
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_BC_clean.txt
 ##### job 822278
+CDS, 208034
+exon, 259638
+gene, 17127
+mRNA, 24363
+transcript, 336
+lnc_RNA, 6949
+pseudogene, 273
+region, 458
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_BC_clean.txt
 ##### job
@@ -156,12 +169,36 @@ transcript   265
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_tenebrosa/inputs_C31_BC_clean.txt
 ##### job 821951
+CDS, 233941
+exon, 299263
+gene, 27279
+mRNA, 31996
+transcript, 125
+lnc_RNA, 5724
+pseudogene, 2530
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_BC_clean.txt
 ##### job 821950
+CDS, 226987
+exon, 282271
+gene, 20868
+mRNA, 28841
+transcript, 225
+lnc_RNA, 4573
+pseudogene, 808
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 ##### job 822277
+CDS, 239055
+exon, 273076
+gene, 19055
+mRNA, 26478
+transcript, 164
+lnc_RNA, 4427
+pseudogene, 71
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+##### job 826317
 
 
 ## EGAPx v0.4
