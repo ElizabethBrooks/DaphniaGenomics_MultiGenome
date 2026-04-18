@@ -1,5 +1,56 @@
 # EGAPx Tests
 
+## QC - April 2026
+
+#### qsub fastqc_shortReads.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC.txt
+##### job 827701
+
+#### qsub fastqc_shortReads.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
+##### job 827708
+
+#### qsub fastqc_shortReads.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_BC_clean.txt
+##### job 827709
+
+#### qsub fastqc_shortReads.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_CUH_004_BC_clean.txt
+##### job 827710
+
+#### qsub fastqc_shortReads.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_BC_clean.txt
+##### job 827711
+
+#### qsub fastqc_shortReads.sh EGAPx_v0.3.2/D_pulex/inputs_LKG_002_BC_clean.txt
+##### job 827712
+
+#### qsub fastqc_shortReads.sh EGAPx_v0.3.2/D_pulicaria/inputs_ESL_002_BC_clean.txt
+##### job 827713
+
+#### qsub fastqc_shortReads.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_BC_clean.txt
+##### job 827714
+
+#### qsub fastqc_shortReads.sh EGAPx_v0.3.2/D_magna/inputs_MCL_001_BC_clean.txt
+##### job 827715
+
+#### qsub fastqc_shortReads.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_BC_clean.txt
+##### job 827716
+
+#### qsub fastqc_shortReads.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_BC_clean.txt
+##### job 827717
+
+#### qsub fastqc_shortReads.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_BC_clean.txt
+##### job 827718
+
+#### qsub fastqc_shortReads.sh EGAPx_v0.3.2/D_tenebrosa/inputs_C31_BC_clean.txt
+##### job 827719
+
+#### qsub fastqc_shortReads.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_BC_clean.txt
+##### job 827720
+
+#### qsub fastqc_shortReads.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+##### job 827721
+
+#### qsub fastqc_shortReads.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+##### job 827722
+
+
 ## FCS_GX - April 2026
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC.txt
@@ -28,20 +79,24 @@ Applied 132 actions; 132 seqs dropped; 9892513 bps dropped; 0 bps lowercased; 0 
 Applied 104 actions; 104 seqs dropped; 8588246 bps dropped; 0 bps lowercased; 0 bps hardmasked.
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_pulicaria/inputs_ESL_002_BC.txt
-##### job 817676
+##### job 817676 -> empty output job report
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_pulicaria/inputs_ESL_002_BC.txt
+Applied 275 actions; 274 seqs dropped; 32585198 bps dropped; 0 bps lowercased; 4250 bps hardmasked.
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_pulicaria/inputs_ESL_002_BC_run2.txt
-##### job 826875
+##### job 826875 -> TOTAL                            278   32716630
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_pulicaria/inputs_ESL_002_BC_run2.txt
+Applied 275 actions; 274 seqs dropped; 32585198 bps dropped; 0 bps lowercased; 4250 bps hardmasked.
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_BC.txt
-##### job 817678
+##### job 817678 -> empty output job report
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_BC.txt
+Applied 227 actions; 227 seqs dropped; 18220916 bps dropped; 0 bps lowercased; 0 bps hardmasked.
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_BC_run2.txt
-##### job 826876
+##### job 826876 -> TOTAL                            230   18306461
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_BC_run2.txt
+Applied 227 actions; 227 seqs dropped; 18220916 bps dropped; 0 bps lowercased; 0 bps hardmasked.
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_magna/inputs_MCL_001_BC.txt
 ##### job 817679 -> TOTAL                            503   75386905
@@ -54,8 +109,9 @@ Applied 500 actions; 500 seqs dropped; 75234489 bps dropped; 0 bps lowercased; 0
 Applied 107 actions; 106 seqs dropped; 12432393 bps dropped; 0 bps lowercased; 0 bps hardmasked.
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_BC.txt
-##### job 823185
+##### job 823185 -> TOTAL                            121   24271280
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_BC.txt
+Applied 121 actions; 121 seqs dropped; 24271280 bps dropped; 0 bps lowercased; 0 bps hardmasked.
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_BC.txt
 ##### job 822282 -> empty output job report
@@ -149,15 +205,16 @@ pseudogene   3130
 transcript   265
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_ESL_002_BC_clean.txt
-##### job
+##### job 828650
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_BC_clean.txt
-##### job
+##### job 828475
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_MCL_001_BC_clean.txt
 ##### job 823199 -> /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/tested_April2026/BC_tests/D_magna_MCL_001_BC_clean_run1
  -- Check '/scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/tested_April2026/BC_tests/D_magna_MCL_001_BC_clean/nextflow.log' file for details
  ##### job 826335
+ -- Check '/scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/tested_April2026/BC_tests/D_magna_MCL_001_BC_clean/nextflow.log' file for details
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_BC_clean.txt
 ##### job 822278
@@ -171,10 +228,17 @@ pseudogene, 273
 region, 458
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_BC_clean.txt
-##### job
+##### job 828651
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_BC_clean.txt
 ##### job 826864
+CDS          212337
+exon         263841
+gene         19655
+lnc_RNA      5025
+mRNA         26612
+pseudogene   943
+transcript   202
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_tenebrosa/inputs_C31_BC_clean.txt
 ##### job 821951
@@ -208,6 +272,13 @@ pseudogene, 71
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 ##### job 826870
+CDS          180848
+exon         228151
+gene         17598
+lnc_RNA      5570
+mRNA         22340
+pseudogene   538
+transcript   196
 
 
 ## EGAPx v0.4

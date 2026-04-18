@@ -7,7 +7,7 @@
 module load bio
 
 # set the outputs directory
-outputsPath="/scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNAseq/pooled_annotation_RNA/MultiQC"
+outputsPath="/scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNAseq/pooled_annotation_RNA/QC"
 
 # create the outputs directory
 mkdir $outputsPath
@@ -22,7 +22,7 @@ versionFile=$outputsPath"/software_version_summary.txt"
 multiqc -version > $versionFile
 
 # run multiqc
-multiqc $outputsPath -o $outputsPath -n "multiqc_raw"
+multiqc $outputsPath"/"* -o $outputsPath -n "multiqc_raw"
 
 # print status message
 echo "Analysis complete!"
