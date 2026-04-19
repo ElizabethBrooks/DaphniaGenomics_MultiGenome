@@ -103,6 +103,9 @@ Applied 227 actions; 227 seqs dropped; 18220916 bps dropped; 0 bps lowercased; 0
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_magna/inputs_MCL_001_BC.txt
 Applied 500 actions; 500 seqs dropped; 75234489 bps dropped; 0 bps lowercased; 0 bps hardmasked.
 
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_magna/inputs_MCL_001_BC_clean.txt
+##### job 828716 -> TOTAL                              0          0
+
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_BC.txt
 ##### job 817681 -> TOTAL                            109   12503602
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_BC.txt
@@ -206,15 +209,32 @@ transcript   265
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_ESL_002_BC_clean.txt
 ##### job 828650
+CDS          227925
+exon         287117
+gene         21939
+lnc_RNA      4429
+mRNA         29746
+pseudogene   1847
+transcript   110
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_BC_clean.txt
 ##### job 828475
+CDS          235407
+exon         298631
+gene         23025
+lnc_RNA      4690
+mRNA         30813
+pseudogene   2070
+transcript   147
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_MCL_001_BC_clean.txt
 ##### job 823199 -> /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/tested_April2026/BC_tests/D_magna_MCL_001_BC_clean_run1
  -- Check '/scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/tested_April2026/BC_tests/D_magna_MCL_001_BC_clean/nextflow.log' file for details
  ##### job 826335
  -- Check '/scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/tested_April2026/BC_tests/D_magna_MCL_001_BC_clean/nextflow.log' file for details
+-> https://github.com/ncbi/egapx/issues/114
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_MCL_001_BC_clean.txt
+##### job
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_BC_clean.txt
 ##### job 822278
@@ -229,6 +249,13 @@ region, 458
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_BC_clean.txt
 ##### job 828651
+CDS          214216
+exon         268405
+gene         20710
+lnc_RNA      3819
+mRNA         27910
+pseudogene   1893
+transcript   80
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_BC_clean.txt
 ##### job 826864

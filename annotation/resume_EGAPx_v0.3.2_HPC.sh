@@ -11,6 +11,10 @@
 # NOTE: the default /egapx/ui/assets/config/process_resources.config file specifies up to 31 cores (huge_Job)
 # our afs system has 263Gb RAM, 64 cores
 # make sure to always leave 1 core free for general processes, so request up to 63 cores per job on our afs system
+# smaller annotation jobs do not need to request as many resources (for example, 15 cores is sufficient for the average run)
+
+# load java
+conda activate java_env
 
 # retrieve input file
 inputFile=$1
@@ -31,7 +35,8 @@ inputsPath=$repoDir"/inputData/"$inputsPath
 softwarePath=$(grep "software_EGAPx_v0.3.2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/software_EGAPx_v0.3.2://g")
 
 # retrieve outputs path
-outputsPath=$(grep "outputs_EGAPx_v0.3.2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2://g")
+#outputsPath=$(grep "outputs_EGAPx_v0.3.2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2://g")
+outputsPath=$(grep "outputs_EGAPx_v0.3.2_BC:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_BC://g")
 
 # setup outputs directory
 outputsPath=$outputsPath"/"$speciesName
@@ -43,16 +48,27 @@ cd $outputsPath
 echo "Resuming analysis of $speciesName..."
 
 # run EGAPx
-python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath -resume
+#python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath -resume
+python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath -lc $outputsPath"/local_cache"
 
+# uncomment the following lines to reduce data storage
 # clean up, if accept.gff output file exsists
 #if [ ! -f $outputsPath"/accept.gff" ]; then
 	# run to resume annotation
 #	bash $outputsPath"/resume.sh"
 #else
-#    rm -r $outputsPath"/temp_datapath"
+#   rm -r $outputsPath"/temp_datapath"
+#	rm -r $outputsPath"/local_cache"
 	#rm -r $outputsPath"/work"
 	#rm -r $outputsPath"/annot_builder_output"
+	#rm -r $outputsPath"/egapx_config"
+	#rm -r $outputsPath"/execution_logs"
+	#rm -r $outputsPath"/validated"
+	#rm -r $outputsPath"/.nextflow"
+	#rm $outputsPath"/dag.dot"
+	#rm $outputsPath"/egapx_reads_metadata_e5ajupqo.tsv"
+	#rm $outputsPath"/run_work_dir.txt"
+	#rm $outputsPath"/work_dir_singularity.last"
 #fi
 
 # status message
