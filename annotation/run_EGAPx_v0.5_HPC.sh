@@ -14,8 +14,8 @@
 # make sure to always leave 1 core free for general processes, so request up to 63 cores per job on our afs system
 # smaller annotation jobs do not need to request as many resources (for example, 15 cores is sufficient for the average run)
 
-# load module with updated java version
-module load bio
+# load java
+conda activate java_env
 
 # retrieve input file
 inputFile=$1
@@ -63,14 +63,13 @@ echo "Beginning analysis of $speciesName..."
 # the normal workflow uses remote NCBI data, which has been giving errors
 # https://github.com/ncbi/egapx/issues/214
 # run EGAPx script to download necessary data for local running
-python3 $softwarePath"/egapx.py" $inputsPath -dl -lc $outputsPath"/local_cache"
+python3 $softwarePath"/ui/egapx.py" $inputsPath -dl -lc $outputsPath"/local_cache"
 
-# run EGAPx to edit config files
-$softwarePath"/egapx.py" $inputsPath -e biowulf_cluster -w dfs_work -o dfs_out -lc $outputsPath"/local_cache"
-#echo "process.container = '/path_to_/egapx_0.5.0.sif'"  >> $softwarePath"/egapx_config/biowulf_cluster.config"
+# run EGAPx to copy config files
+python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath -lc $outputsPath"/local_cache"
 
 # run EGAPx
-python3 $softwarePath"/egapx.py" $inputsPath -e biowulf_cluster -w dfs_work -o dfs_out -lc ../local_cache
+python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath -lc $outputsPath"/local_cache"
 
 # clean up, if accept.gff output file exsists
 #if [ ! -f $outputsPath"/accept.gff" ]; then

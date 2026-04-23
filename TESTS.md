@@ -2,9 +2,6 @@
 
 ## EGAPx v0.5 - April 2026
 
-#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_melanica/inputs_CON6_BC.txt
-##### job 
-
 #### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_melanica/inputs_CON6_BC_clean.txt
 ##### job 
 
