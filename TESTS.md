@@ -1,5 +1,55 @@
 # EGAPx Tests
 
+## EGAPx v0.5 - April 2026
+
+#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_melanica/inputs_CON6_BC.txt
+##### job 
+
+#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_melanica/inputs_CON6_BC_clean.txt
+##### job 
+
+#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_salina/inputs_ULW_001_BC_clean.txt
+##### job 
+
+#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/Ceriodaphnia_sp/inputs_CUH_004_BC_clean.txt
+##### job 
+
+#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_similis/inputs_BGL_001_BC_clean.txt
+##### job 
+
+#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_pulex/inputs_LKG_002_BC_clean.txt
+##### job 
+
+#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_pulicaria/inputs_ESL_002_BC_clean.txt
+##### job 
+
+#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_pulicaria/inputs_TF22_005_BC_clean.txt
+##### job 
+
+#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_magna/inputs_MCL_001_BC_clean.txt
+##### job 
+
+#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_mediterranea/inputs_CY_ORK_BC_clean.txt
+##### job 
+
+#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_schodleri/inputs_Mary_Lake_BC_clean.txt
+##### job 
+
+#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_retrocurva/inputs_BLK_001_BC_clean.txt
+##### job 
+
+#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_tenebrosa/inputs_C31_BC_clean.txt
+##### job 
+
+#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_mendotae/inputs_67B_BC_clean.txt
+##### job 
+
+#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/Latona_sp/inputs_BLK_101_BC_clean.txt
+##### job 
+
+#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_magna/inputs_LRVO_BC_clean.txt
+##### job 
+
 ## QC - April 2026
 
 #### qsub fastqc_shortReads.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC.txt
@@ -143,7 +193,7 @@ Warning: Ns at the beginning or end of the sequence: >CM058180.1 Daphnia magna i
 Applied 4 actions; 2 seqs dropped; 1064958 bps dropped; 0 bps lowercased; 10992 bps hardmasked.
 
 
-## EGAPx V0.3.2 - April 2026
+## EGAPx v0.3.2 - April 2026
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC.txt
 ##### job 799005
@@ -234,7 +284,8 @@ transcript   147
  -- Check '/scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/tested_April2026/BC_tests/D_magna_MCL_001_BC_clean/nextflow.log' file for details
 -> https://github.com/ncbi/egapx/issues/114
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_MCL_001_BC_clean.txt
-##### job
+##### job 840873
+ -- Check '/scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/tested_April2026/BC_tests/D_magna_MCL_001_BC_clean/nextflow.log' file for details
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_BC_clean.txt
 ##### job 822278

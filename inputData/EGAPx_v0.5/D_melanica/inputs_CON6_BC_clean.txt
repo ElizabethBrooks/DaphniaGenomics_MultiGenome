@@ -1,0 +1,2 @@
+species: D_melanica_CON6_BC_clean
+inputs_EGAPx: EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.yaml

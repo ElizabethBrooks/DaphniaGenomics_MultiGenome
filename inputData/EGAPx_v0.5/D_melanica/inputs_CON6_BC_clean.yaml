@@ -1,0 +1,5 @@
+genome: /scratch365/ebrooks5/multi_genome_project/data/Daphnia_genomes/cleaned_FCS_GX/D_melanica_CON6_BC/clean.fasta
+taxid: 121629
+short_reads:
+  - /scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNAseq/pooled_annotation_RNA/D_melanica_CON6/CON6_S47_L004_R1_001.fastq
+  - /scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNAseq/pooled_annotation_RNA/D_melanica_CON6/CON6_S47_L004_R2_001.fastq

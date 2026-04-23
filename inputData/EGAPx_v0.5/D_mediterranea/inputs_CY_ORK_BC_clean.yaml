@@ -1,0 +1,5 @@
+genome: /scratch365/ebrooks5/multi_genome_project/data/Daphnia_genomes/cleaned_FCS_GX/D_mediterranea_CY_ORK_BC/clean.fasta
+taxid: 575234
+short_reads:
+  - /scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNAseq/pooled_annotation_RNA/D_mediterranea_CY_ORK/CY_ORK_16_S38_L004_R1_001.fastq.gz
+  - /scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNAseq/pooled_annotation_RNA/D_mediterranea_CY_ORK/CY_ORK_16_S38_L004_R2_001.fastq.gz
