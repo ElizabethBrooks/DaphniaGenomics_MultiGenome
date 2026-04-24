@@ -48,7 +48,7 @@ echo "Resuming analysis of $speciesName..."
 
 # run EGAPx
 #python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath -resume
-python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath -lc $outputsPath"/local_cache" -max_prok_hits_pct 100 -resume
+python3 $softwarePath"/ui/egapx.py" $inputsPath -e singularity -w $outputsPath"/temp_datapath" -o $outputsPath -lc $outputsPath"/local_cache" -resume
 
 # uncomment the following lines to reduce data storage
 # clean up, if accept.gff output file exsists
