@@ -3,49 +3,352 @@
 ## EGAPx v0.5 - April 2026
 
 #### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_melanica/inputs_CON6_BC_clean.txt
-##### job 
-
-#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_salina/inputs_ULW_001_BC_clean.txt
-##### job 
-
-#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/Ceriodaphnia_sp/inputs_CUH_004_BC_clean.txt
-##### job 
-
-#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_similis/inputs_BGL_001_BC_clean.txt
-##### job 
-
-#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_pulex/inputs_LKG_002_BC_clean.txt
-##### job 
-
-#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_pulicaria/inputs_ESL_002_BC_clean.txt
-##### job 
-
-#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_pulicaria/inputs_TF22_005_BC_clean.txt
-##### job 
+##### job 849670
 
 #### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_magna/inputs_MCL_001_BC_clean.txt
-##### job 
+##### job 849671
+Error: (CException::eUnknown) Too many protein hits to proks (GP-23178). Set -max_prok_hits_pct to higher threshold to override. See putative contamination report: output/contam_rpt.tsv
+#### qsub resume_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_magna/inputs_MCL_001_BC_clean.txt
+##### job
+
+#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_salina/inputs_ULW_001_BC_clean.txt
+##### job 849673
+Overall Counts:
+  genes: 15396
+    genes (non-transcribed pseudo): 531
+    genes (has variants): 6699
+    genes (partial): 34
+    genes (Ig TCR segment): 0
+    genes (non coding): 2424
+    genes (protein coding): 12441
+    genes (major correction): 89
+    genes (premature stop): 20
+    genes (has frameshifts): 80
+  mRNAs: 25835
+    mRNAs (exon <= 3nt): 6
+    mRNAs (partial): 33
+    mRNAs (correction): 89
+    mRNAs (model): 25835
+    mRNAs (fully supported): 25284
+    mRNAs (ab initio > 5%): 306
+  non-coding RNAs: 6768
+    non-coding RNAs (exon <= 3nt): 0
+    non-coding RNAs (model): 6768
+    non-coding RNAs (fully supported): 6758
+  pseudo transcripts: 531
+    pseudo transcripts (exon <= 3nt): 1
+    pseudo transcripts (model): 531
+    pseudo transcripts (fully supported): 221
+    pseudo transcripts (ab initio > 5%): 0
+  CDSs: 25835
+    CDSs (partial): 33
+    CDSs (correction): 89
+    CDSs (model): 25835
+    CDSs (fully supported): 25284
+    CDSs (ab initio > 5%): 345
+    CDSs (model with correction): 89
+    CDSs (major correction): 89
+    CDSs (premature stop): 20
+    CDSs (has frameshifts): 80
+
+#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/Ceriodaphnia_sp/inputs_CUH_004_BC_clean.txt
+##### job 849674
+
+#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_similis/inputs_BGL_001_BC_clean.txt
+##### job 849675
+
+#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_pulex/inputs_LKG_002_BC_clean.txt
+##### job 849676
+Overall Counts:
+  genes: 31817
+    genes (non-transcribed pseudo): 3174
+    genes (has variants): 8880
+    genes (partial): 311
+    genes (Ig TCR segment): 0
+    genes (non coding): 3800
+    genes (protein coding): 24835
+    genes (major correction): 538
+    genes (premature stop): 91
+    genes (has frameshifts): 484
+  mRNAs: 40232
+    mRNAs (exon <= 3nt): 11
+    mRNAs (partial): 307
+    mRNAs (correction): 538
+    mRNAs (model): 40232
+    mRNAs (fully supported): 38623
+    mRNAs (ab initio > 5%): 889
+  non-coding RNAs: 8086
+    non-coding RNAs (exon <= 3nt): 0
+    non-coding RNAs (model): 8086
+    non-coding RNAs (fully supported): 8049
+  pseudo transcripts: 3199
+    pseudo transcripts (exon <= 3nt): 0
+    pseudo transcripts (model): 3199
+    pseudo transcripts (fully supported): 1811
+    pseudo transcripts (ab initio > 5%): 0
+  CDSs: 40232
+    CDSs (partial): 307
+    CDSs (correction): 538
+    CDSs (model): 40232
+    CDSs (fully supported): 38623
+    CDSs (ab initio > 5%): 972
+    CDSs (model with correction): 538
+    CDSs (major correction): 538
+    CDSs (premature stop): 91
+    CDSs (has frameshifts): 484
+
+#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_pulicaria/inputs_ESL_002_BC_clean.txt
+##### job 849677
+
+#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_pulicaria/inputs_TF22_005_BC_clean.txt
+##### job 849678
+Overall Counts:
+  genes: 23545
+    genes (non-transcribed pseudo): 2101
+    genes (has variants): 6503
+    genes (partial): 76
+    genes (Ig TCR segment): 0
+    genes (non coding): 2565
+    genes (protein coding): 18879
+    genes (major correction): 191
+    genes (premature stop): 40
+    genes (has frameshifts): 173
+  mRNAs: 29740
+    mRNAs (exon <= 3nt): 3
+    mRNAs (partial): 74
+    mRNAs (correction): 191
+    mRNAs (model): 29740
+    mRNAs (fully supported): 28515
+    mRNAs (ab initio > 5%): 691
+  non-coding RNAs: 5381
+    non-coding RNAs (exon <= 3nt): 0
+    non-coding RNAs (model): 5381
+    non-coding RNAs (fully supported): 5341
+  pseudo transcripts: 2103
+    pseudo transcripts (exon <= 3nt): 0
+    pseudo transcripts (model): 2103
+    pseudo transcripts (fully supported): 1144
+    pseudo transcripts (ab initio > 5%): 0
+  CDSs: 29740
+    CDSs (partial): 74
+    CDSs (correction): 191
+    CDSs (model): 29740
+    CDSs (fully supported): 28515
+    CDSs (ab initio > 5%): 764
+    CDSs (model with correction): 191
+    CDSs (major correction): 191
+    CDSs (premature stop): 40
+    CDSs (has frameshifts): 173
 
 #### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_mediterranea/inputs_CY_ORK_BC_clean.txt
-##### job 
+##### job 849679
 
 #### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_schodleri/inputs_Mary_Lake_BC_clean.txt
-##### job 
+##### job 849680
+Overall Counts:
+  genes: 21390
+    genes (non-transcribed pseudo): 1935
+    genes (has variants): 5848
+    genes (partial): 41
+    genes (Ig TCR segment): 0
+    genes (non coding): 2240
+    genes (protein coding): 17215
+    genes (major correction): 149
+    genes (premature stop): 50
+    genes (has frameshifts): 121
+  mRNAs: 27036
+    mRNAs (exon <= 3nt): 6
+    mRNAs (partial): 40
+    mRNAs (correction): 149
+    mRNAs (model): 27036
+    mRNAs (fully supported): 25860
+    mRNAs (ab initio > 5%): 680
+  non-coding RNAs: 4461
+    non-coding RNAs (exon <= 3nt): 0
+    non-coding RNAs (model): 4461
+    non-coding RNAs (fully supported): 4430
+  pseudo transcripts: 1937
+    pseudo transcripts (exon <= 3nt): 2
+    pseudo transcripts (model): 1937
+    pseudo transcripts (fully supported): 955
+    pseudo transcripts (ab initio > 5%): 0
+  CDSs: 27036
+    CDSs (partial): 40
+    CDSs (correction): 149
+    CDSs (model): 27036
+    CDSs (fully supported): 25860
+    CDSs (ab initio > 5%): 742
+    CDSs (model with correction): 149
+    CDSs (major correction): 149
+    CDSs (premature stop): 50
+    CDSs (has frameshifts): 121
 
 #### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_retrocurva/inputs_BLK_001_BC_clean.txt
-##### job 
+##### job 849681
+Overall Counts:
+  genes: 18567
+    genes (non-transcribed pseudo): 1000
+    genes (has variants): 5947
+    genes (partial): 54
+    genes (Ig TCR segment): 0
+    genes (non coding): 2183
+    genes (protein coding): 15383
+    genes (major correction): 142
+    genes (premature stop): 27
+    genes (has frameshifts): 131
+  mRNAs: 25691
+    mRNAs (exon <= 3nt): 2
+    mRNAs (partial): 54
+    mRNAs (correction): 142
+    mRNAs (model): 25691
+    mRNAs (fully supported): 24599
+    mRNAs (ab initio > 5%): 599
+  non-coding RNAs: 4596
+    non-coding RNAs (exon <= 3nt): 0
+    non-coding RNAs (model): 4596
+    non-coding RNAs (fully supported): 4583
+  pseudo transcripts: 1002
+    pseudo transcripts (exon <= 3nt): 1
+    pseudo transcripts (model): 1002
+    pseudo transcripts (fully supported): 526
+    pseudo transcripts (ab initio > 5%): 0
+  CDSs: 25691
+    CDSs (partial): 54
+    CDSs (correction): 142
+    CDSs (model): 25691
+    CDSs (fully supported): 24599
+    CDSs (ab initio > 5%): 667
+    CDSs (model with correction): 142
+    CDSs (major correction): 142
+    CDSs (premature stop): 27
+    CDSs (has frameshifts): 131
 
 #### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_tenebrosa/inputs_C31_BC_clean.txt
-##### job 
+##### job 849682
+Overall Counts:
+  genes: 25209
+    genes (non-transcribed pseudo): 2582
+    genes (has variants): 6844
+    genes (partial): 116
+    genes (Ig TCR segment): 0
+    genes (non coding): 3182
+    genes (protein coding): 19443
+    genes (major correction): 374
+    genes (premature stop): 80
+    genes (has frameshifts): 332
+  mRNAs: 30804
+    mRNAs (exon <= 3nt): 12
+    mRNAs (partial): 115
+    mRNAs (correction): 374
+    mRNAs (model): 30804
+    mRNAs (fully supported): 29019
+    mRNAs (ab initio > 5%): 1114
+  non-coding RNAs: 6162
+    non-coding RNAs (exon <= 3nt): 0
+    non-coding RNAs (model): 6162
+    non-coding RNAs (fully supported): 6102
+  pseudo transcripts: 2584
+    pseudo transcripts (exon <= 3nt): 9
+    pseudo transcripts (model): 2584
+    pseudo transcripts (fully supported): 1343
+    pseudo transcripts (ab initio > 5%): 0
+  CDSs: 30804
+    CDSs (partial): 115
+    CDSs (correction): 374
+    CDSs (model): 30804
+    CDSs (fully supported): 29019
+    CDSs (ab initio > 5%): 1228
+    CDSs (model with correction): 374
+    CDSs (major correction): 374
+    CDSs (premature stop): 80
+    CDSs (has frameshifts): 332
 
 #### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_mendotae/inputs_67B_BC_clean.txt
-##### job 
+##### job 849683
+Overall Counts:
+  genes: 19284
+    genes (non-transcribed pseudo): 801
+    genes (has variants): 6431
+    genes (partial): 27
+    genes (Ig TCR segment): 0
+    genes (non coding): 2114
+    genes (protein coding): 16368
+    genes (major correction): 109
+    genes (premature stop): 27
+    genes (has frameshifts): 100
+  mRNAs: 27662
+    mRNAs (exon <= 3nt): 7
+    mRNAs (partial): 27
+    mRNAs (correction): 109
+    mRNAs (model): 27662
+    mRNAs (fully supported): 26627
+    mRNAs (ab initio > 5%): 599
+  non-coding RNAs: 5571
+    non-coding RNAs (exon <= 3nt): 0
+    non-coding RNAs (model): 5571
+    non-coding RNAs (fully supported): 5553
+  pseudo transcripts: 812
+    pseudo transcripts (exon <= 3nt): 0
+    pseudo transcripts (model): 812
+    pseudo transcripts (fully supported): 342
+    pseudo transcripts (ab initio > 5%): 0
+  CDSs: 27662
+    CDSs (partial): 27
+    CDSs (correction): 109
+    CDSs (model): 27662
+    CDSs (fully supported): 26627
+    CDSs (ab initio > 5%): 666
+    CDSs (model with correction): 109
+    CDSs (major correction): 109
+    CDSs (premature stop): 27
+    CDSs (has frameshifts): 100
 
 #### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/Latona_sp/inputs_BLK_101_BC_clean.txt
-##### job 
+##### job 849684
+Overall Counts:
+  genes: 16891
+    genes (non-transcribed pseudo): 169
+    genes (has variants): 5624
+    genes (partial): 16
+    genes (Ig TCR segment): 0
+    genes (non coding): 1731
+    genes (protein coding): 14991
+    genes (major correction): 34
+    genes (premature stop): 8
+    genes (has frameshifts): 27
+  mRNAs: 25781
+    mRNAs (exon <= 3nt): 0
+    mRNAs (partial): 16
+    mRNAs (correction): 34
+    mRNAs (model): 25781
+    mRNAs (fully supported): 24799
+    mRNAs (ab initio > 5%): 568
+  non-coding RNAs: 3157
+    non-coding RNAs (exon <= 3nt): 0
+    non-coding RNAs (model): 3157
+    non-coding RNAs (fully supported): 3149
+  pseudo transcripts: 172
+    pseudo transcripts (exon <= 3nt): 0
+    pseudo transcripts (model): 172
+    pseudo transcripts (fully supported): 41
+    pseudo transcripts (ab initio > 5%): 0
+  CDSs: 25781
+    CDSs (partial): 16
+    CDSs (correction): 34
+    CDSs (model): 25781
+    CDSs (fully supported): 24799
+    CDSs (ab initio > 5%): 633
+    CDSs (model with correction): 34
+    CDSs (major correction): 34
+    CDSs (premature stop): 8
+    CDSs (has frameshifts): 27
 
 #### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_magna/inputs_LRVO_BC_clean.txt
-##### job 
+##### job 849699
+BUSCO lineage arthropoda_odb10 not found in /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.5/tested_April2026/BC_tests/D_magna_LRVO_BC_clean/local_cache or the data is not valid. Please run
+  egapx.py -lc /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.5/tested_April2026/BC_tests/D_magna_LRVO_BC_clean/local_cache -dl /afs/crc.nd.edu/group/hoth/eBrooks/DaphniaGenomics_MultiGenome/inputData/EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.yaml
+#### qsub run_EGAPx_v0.5_HPC.sh EGAPx_v0.5/D_magna/inputs_LRVO_BC_clean.txt
+##### job 850817
 
 ## QC - April 2026
 
