@@ -1,54 +1,95 @@
 # Analysis Tests
 
-# AGAT extracting - April 2026
+# AGAT extracting - April 2026 <- EGAPx v0.3.2 outputs
+
+qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
+qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_BC_clean.txt
+qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_CUH_004_BC_clean.txt
+qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_BC_clean.txt
+qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_LKG_002_BC_clean.txt
+qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_ESL_002_BC_clean.txt
+qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_BC_clean.txt
+qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_MCL_001_BC_clean.txt
+qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_BC_clean.txt
+qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_BC_clean.txt
+qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_BC_clean.txt
+qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_tenebrosa/inputs_C31_BC_clean.txt
+qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_BC_clean.txt
+qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+
+
+
+# AGAT filtering - April 2026 <- EGAPx v0.3.2 outputs
+
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_BC_clean.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_CUH_004_BC_clean.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_BC_clean.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_LKG_002_BC_clean.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_ESL_002_BC_clean.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_BC_clean.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_MCL_001_BC_clean.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_BC_clean.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_BC_clean.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_BC_clean.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_tenebrosa/inputs_C31_BC_clean.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_BC_clean.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+
+
+
+
+# AGAT extracting - April 2026 <- EGAPx v0.5 outputs
 
 #### qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
-##### job 
+##### job 855269
 
 #### qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_BC_clean.txt
-##### job 
+##### job 855270
 
 #### qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_CUH_004_BC_clean.txt
-##### job 
+##### job 855271
 
 #### qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_BC_clean.txt
-##### job 
+##### job 855273
 
 #### qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_LKG_002_BC_clean.txt
-##### job 
+##### job 855274
 
 #### qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_ESL_002_BC_clean.txt
-##### job 
+##### job 855275
 
 #### qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_BC_clean.txt
-##### job 
+##### job 855276
 
 #### qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_MCL_001_BC_clean.txt
-##### job 
+##### job 855277
 
 #### qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_BC_clean.txt
-##### job 
+##### job 855278
 
 #### qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_BC_clean.txt
-##### job 
+##### job 855279
 
 #### qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_BC_clean.txt
-##### job 
+##### job 855280
 
 #### qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_tenebrosa/inputs_C31_BC_clean.txt
-##### job 
+##### job 855281
 
 #### qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_BC_clean.txt
-##### job 
+##### job 855282
 
 #### qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
-##### job 
+##### job 855283
 
 #### qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
-##### job 
+##### job 855284
 
 
-# AGAT filtering - April 2026
+# AGAT filtering - April 2026 <- EGAPx v0.5 outputs
 
 #### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
 ##### job 855225
