@@ -46,7 +46,7 @@ echo "Beginning analysis of $speciesName..."
 singularity exec --bind $PWD:/AGAT $softwarePath"/agat_1.4.2--pl5321hdfd78af_0.sif" agat_sp_extract_sequences.pl -gff $outputsPath"/AGAT/output_longest.gff" -f $outputsPath"/complete.genomic.fna" -t mRNA -o $outputsPath"/AGAT/longest_mRNA.fa"
 
 # extract longest proteins
-singularity exec --bind $PWD:/AGAT $softwarePath"/agat_1.4.2--pl5321hdfd78af_0.sif" agat_sp_extract_sequences.pl -gff $outputsPath"/AGAT/output_longest.gff" -f $outputsPath"/complete.genomic.fna" -t protein -o $outputsPath"/AGAT/longest_protein.fa"
+#singularity exec --bind $PWD:/AGAT $softwarePath"/agat_1.4.2--pl5321hdfd78af_0.sif" agat_sp_extract_sequences.pl -gff $outputsPath"/AGAT/output_longest.gff" -f $outputsPath"/complete.genomic.fna" -t protein -o $outputsPath"/AGAT/longest_protein.fa"
 
 # status message
 echo "Analysis of $speciesName complete!"
