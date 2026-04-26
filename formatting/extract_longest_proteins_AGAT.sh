@@ -37,13 +37,13 @@ outputsPath=$outputsPath"/"$speciesName
 mkdir $outputsPath"/AGAT"
 
 # move to the AGAT software directory
-cd $outputsPath"/AGAT"
+cd $outputsPath
 
 # status message
 echo "Beginning analysis of $speciesName..."
 
 # extract longest proteins
-singularity exec --bind $PWD $softwarePath"/agat_1.4.2--pl5321hdfd78af_0.sif" agat_sp_extract_sequences.pl -gff $outputsPath"/AGAT/output_longest.gff" -f $outputsPath"/complete.genomic.fna" -p -o $outputsPath"/AGAT/longest_protein.fa"
+singularity exec --bind $PWD:/AGAT $softwarePath"/agat_1.4.2--pl5321hdfd78af_0.sif" agat_sp_extract_sequences.pl -gff $outputsPath"/AGAT/output_longest.gff" -f $outputsPath"/complete.genomic.fna" -p -o $outputsPath"/AGAT/longest_protein.fa"
 
 # status message
 echo "Analysis of $speciesName complete!"
