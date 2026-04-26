@@ -2,11 +2,11 @@
 #$ -M ebrooks5@nd.edu
 #$ -m abe
 #$ -r n
-#$ -N extract_AGAT_jobOutput
+#$ -N extract_mRNA_AGAT_jobOutput
 
 # script to keep only the longest isoforms in the input gff
-# usage: qsub extract_longest_isoforms_AGAT.sh inputFile
-# usage ex: qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
+# usage: qsub extract_longest_transcripts_AGAT.sh inputFile
+# usage ex: qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
 
 # retrieve input file
 inputFile=$1
@@ -37,16 +37,13 @@ outputsPath=$outputsPath"/"$speciesName
 mkdir $outputsPath"/AGAT"
 
 # move to the AGAT software directory
-cd $outputsPath
+cd $outputsPath"/AGAT"
 
 # status message
 echo "Beginning analysis of $speciesName..."
 
 # extract longest mRNA
-singularity exec --bind $PWD:/AGAT $softwarePath"/agat_1.4.2--pl5321hdfd78af_0.sif" agat_sp_extract_sequences.pl -gff $outputsPath"/AGAT/output_longest.gff" -f $outputsPath"/complete.genomic.fna" -t mRNA -o $outputsPath"/AGAT/longest_mRNA.fa"
-
-# extract longest proteins
-#singularity exec --bind $PWD:/AGAT $softwarePath"/agat_1.4.2--pl5321hdfd78af_0.sif" agat_sp_extract_sequences.pl -gff $outputsPath"/AGAT/output_longest.gff" -f $outputsPath"/complete.genomic.fna" -t protein -o $outputsPath"/AGAT/longest_protein.fa"
+singularity exec --bind $PWD $softwarePath"/agat_1.4.2--pl5321hdfd78af_0.sif" agat_sp_extract_sequences.pl -gff $outputsPath"/AGAT/output_longest.gff" -f $outputsPath"/complete.genomic.fna" -t mRNA -o $outputsPath"/AGAT/longest_mRNA.fa"
 
 # status message
 echo "Analysis of $speciesName complete!"

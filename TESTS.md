@@ -1,6 +1,25 @@
 # Analysis Tests
 
-# AGAT extracting - April 2026 <- EGAPx v0.3.2 outputs
+# AGAT extracting proteins - April 2026 <- EGAPx v0.3.2 outputs
+
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_BC_clean.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_CUH_004_BC_clean.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_BC_clean.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_LKG_002_BC_clean.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_ESL_002_BC_clean.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_BC_clean.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_MCL_001_BC_clean.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_BC_clean.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_BC_clean.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_BC_clean.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_tenebrosa/inputs_C31_BC_clean.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_BC_clean.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+
+
+# AGAT extracting transcripts - April 2026 <- EGAPx v0.3.2 outputs
 
 qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
 qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_BC_clean.txt
@@ -18,6 +37,21 @@ qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_BC_clea
 qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 
+Your job 855301 ("extract_AGAT_jobOutput") has been submitted
+Your job 855302 ("extract_AGAT_jobOutput") has been submitted
+Your job 855303 ("extract_AGAT_jobOutput") has been submitted
+Your job 855304 ("extract_AGAT_jobOutput") has been submitted
+Your job 855306 ("extract_AGAT_jobOutput") has been submitted
+Your job 855307 ("extract_AGAT_jobOutput") has been submitted
+Your job 855308 ("extract_AGAT_jobOutput") has been submitted
+Your job 855309 ("extract_AGAT_jobOutput") has been submitted
+Your job 855311 ("extract_AGAT_jobOutput") has been submitted
+Your job 855312 ("extract_AGAT_jobOutput") has been submitted
+Your job 855313 ("extract_AGAT_jobOutput") has been submitted
+Your job 855314 ("extract_AGAT_jobOutput") has been submitted
+Your job 855315 ("extract_AGAT_jobOutput") has been submitted
+Your job 855316 ("extract_AGAT_jobOutput") has been submitted
+Your job 855317 ("extract_AGAT_jobOutput") has been submitted
 
 
 # AGAT filtering - April 2026 <- EGAPx v0.3.2 outputs
@@ -38,7 +72,21 @@ qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_BC_clean.t
 qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 
-
+Your job 855285 ("run_AGAT_jobOutput") has been submitted
+Your job 855286 ("run_AGAT_jobOutput") has been submitted
+Your job 855287 ("run_AGAT_jobOutput") has been submitted
+Your job 855288 ("run_AGAT_jobOutput") has been submitted
+Your job 855289 ("run_AGAT_jobOutput") has been submitted
+Your job 855290 ("run_AGAT_jobOutput") has been submitted
+Your job 855291 ("run_AGAT_jobOutput") has been submitted
+Your job 855292 ("run_AGAT_jobOutput") has been submitted
+Your job 855293 ("run_AGAT_jobOutput") has been submitted
+Your job 855294 ("run_AGAT_jobOutput") has been submitted
+Your job 855295 ("run_AGAT_jobOutput") has been submitted
+Your job 855296 ("run_AGAT_jobOutput") has been submitted
+Your job 855297 ("run_AGAT_jobOutput") has been submitted
+Your job 855298 ("run_AGAT_jobOutput") has been submitted
+Your job 855299 ("run_AGAT_jobOutput") has been submitted
 
 
 # AGAT extracting - April 2026 <- EGAPx v0.5 outputs
