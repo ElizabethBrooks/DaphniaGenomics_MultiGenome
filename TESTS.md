@@ -1,5 +1,59 @@
 # Analysis Tests
 
+# BUSCO proteins - May 2026 <- EGAPx v0.3.2 outputs
+
+qsub check_proteins_busco.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
+qsub check_proteins_busco.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_BC_clean.txt
+qsub check_proteins_busco.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_CUH_004_BC_clean.txt
+qsub check_proteins_busco.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_BC_clean.txt
+qsub check_proteins_busco.sh EGAPx_v0.3.2/D_pulex/inputs_LKG_002_BC_clean.txt
+qsub check_proteins_busco.sh EGAPx_v0.3.2/D_pulicaria/inputs_ESL_002_BC_clean.txt
+qsub check_proteins_busco.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_BC_clean.txt
+qsub check_proteins_busco.sh EGAPx_v0.3.2/D_magna/inputs_MCL_001_BC_clean.txt
+qsub check_proteins_busco.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_BC_clean.txt
+qsub check_proteins_busco.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_BC_clean.txt
+qsub check_proteins_busco.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_BC_clean.txt
+qsub check_proteins_busco.sh EGAPx_v0.3.2/D_tenebrosa/inputs_C31_BC_clean.txt
+qsub check_proteins_busco.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_BC_clean.txt
+qsub check_proteins_busco.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+qsub check_proteins_busco.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+
+
+
+# BUSCO genome - May 2026 <- EGAPx v0.3.2 outputs
+
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_BC_clean.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_CUH_004_BC_clean.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_BC_clean.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_pulex/inputs_LKG_002_BC_clean.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_pulicaria/inputs_ESL_002_BC_clean.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_BC_clean.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_magna/inputs_MCL_001_BC_clean.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_BC_clean.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_BC_clean.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_BC_clean.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_tenebrosa/inputs_C31_BC_clean.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_BC_clean.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+
+Your job 883206 ("check_genome_busco_jobOutput") has been submitted
+Your job 883208 ("check_genome_busco_jobOutput") has been submitted
+Your job 883209 ("check_genome_busco_jobOutput") has been submitted
+Your job 883210 ("check_genome_busco_jobOutput") has been submitted
+Your job 883211 ("check_genome_busco_jobOutput") has been submitted
+Your job 883212 ("check_genome_busco_jobOutput") has been submitted
+Your job 883213 ("check_genome_busco_jobOutput") has been submitted
+Your job 883214 ("check_genome_busco_jobOutput") has been submitted
+Your job 883215 ("check_genome_busco_jobOutput") has been submitted
+Your job 883216 ("check_genome_busco_jobOutput") has been submitted
+Your job 883217 ("check_genome_busco_jobOutput") has been submitted
+Your job 883218 ("check_genome_busco_jobOutput") has been submitted
+Your job 883219 ("check_genome_busco_jobOutput") has been submitted
+Your job 883220 ("check_genome_busco_jobOutput") has been submitted
+Your job 883221 ("check_genome_busco_jobOutput") has been submitted
+
 # AGAT extracting cleaned proteins - May 2026 <- EGAPx v0.3.2 outputs
 
 qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
