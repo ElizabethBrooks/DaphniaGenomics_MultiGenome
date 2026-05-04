@@ -2,11 +2,11 @@
 #$ -M ebrooks5@nd.edu
 #$ -m abe
 #$ -r n
-#$ -N extract_prot_AGAT_jobOutput
+#$ -N extract_clean_prot_AGAT_jobOutput
 
 # script to keep only the longest isoforms in the input gff
-# usage: qsub extract_longest_proteins_AGAT.sh inputFile
-# usage ex: qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
+# usage: qsub extract_longest_proteins_cleaned_AGAT.sh inputFile
+# usage ex: qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
 
 # retrieve input file
 inputFile=$1

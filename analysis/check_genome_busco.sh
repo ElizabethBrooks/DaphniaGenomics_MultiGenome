@@ -2,11 +2,12 @@
 #$ -M ebrooks5@nd.edu
 #$ -m abe
 #$ -r n
-#$ -N run_gfftk_jobOutput
+#$ -N check_genome_busco_jobOutput
+#$ -pe smp 8
 
 # script to clean the input gff
-# usage: qsub clean_gff_gfftk.sh inputFile
-# usage ex: qsub clean_gff_gfftk.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
+# usage: qsub check_genome_busco.sh inputFile
+# usage ex: qsub check_genome_busco.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
 
 # retrieve input file
 inputFile=$1
@@ -33,7 +34,7 @@ outputsPath=$(grep "outputs_EGAPx_v0.3.2_BC:" ../"inputData/inputs_annotations.t
 outputsPath=$outputsPath"/"$speciesName
 
 # create outputs directory
-mkdir $outputsPath"/funannotate2"
+mkdir $outputsPath"/BUSCO"
 
 # move to the AGAT software directory
 cd $outputsPath
@@ -41,19 +42,16 @@ cd $outputsPath
 # status message
 echo "Beginning analysis of $speciesName..."
 
+# activate conda environment
+conda activate busco_env
+
 # export paths
-export FUNANNOTATE2_DB=/scratch365/ebrooks5/software/funannotate2_db
-#export AUGUSTUS_CONFIG_PATH=/afs/crc.nd.edu/user/e/ebrooks5/miniconda3/envs/funannotate2/config
-export AUGUSTUS_CONFIG_PATH=/afs/crc.nd.edu/user/e/ebrooks5/miniconda3/envs/augustus_env/config
+export PATH="/afs/crc.nd.edu/user/e/ebrooks5/miniconda3/bin/augustus:$PATH"
+export PATH="/afs/crc.nd.edu/user/e/ebrooks5/miniconda3/scripts:$PATH"
+export AUGUSTUS_CONFIG_PATH="afs/crc.nd.edu/user/e/ebrooks5/miniconda3/envs/augustus_env/config"
 
-# train ab initio prediction tools
-funannotate2 train -f $outputsPath"/complete.genomic.fna" -s $speciesTag --strain $strainTag --cpus 8 -o $outputsPath"/funannotate2" 
-
-# predict genes
-funannotate2 predict -i $outputsPath"/funannotate2" --cpus 8 --strain $strainTag
-
-# functionally annotate genes
-funannotate2 annotate -i $outputsPath"/funannotate2" --cpus 8
+# run busco
+busco -i $outputsPath"/complete.genomic.fna" -m "genome" -l "crustacea_odb12" -c 8 -o $outputsPath"/BUSCO"
 
 # status message
 echo "Analysis of $speciesName complete!"
