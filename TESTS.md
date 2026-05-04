@@ -1,5 +1,39 @@
 # Analysis Tests
 
+# AGAT convert gff - May 2026 <- EGAPx v0.3.2 outputs
+
+qsub convert_gff_gtf_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
+qsub convert_gff_gtf_AGAT.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_BC_clean.txt
+qsub convert_gff_gtf_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_CUH_004_BC_clean.txt
+qsub convert_gff_gtf_AGAT.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_BC_clean.txt
+qsub convert_gff_gtf_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_LKG_002_BC_clean.txt
+qsub convert_gff_gtf_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_ESL_002_BC_clean.txt
+qsub convert_gff_gtf_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_BC_clean.txt
+qsub convert_gff_gtf_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_MCL_001_BC_clean.txt
+qsub convert_gff_gtf_AGAT.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_BC_clean.txt
+qsub convert_gff_gtf_AGAT.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_BC_clean.txt
+qsub convert_gff_gtf_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_BC_clean.txt
+qsub convert_gff_gtf_AGAT.sh EGAPx_v0.3.2/D_tenebrosa/inputs_C31_BC_clean.txt
+qsub convert_gff_gtf_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_BC_clean.txt
+qsub convert_gff_gtf_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+qsub convert_gff_gtf_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+
+Your job 881643 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 881844 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 881846 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 881848 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 881850 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 881852 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 881854 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 881856 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 881858 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 881860 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 881862 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 881864 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 881866 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 881869 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 881871 ("extract_prot_AGAT_jobOutput") has been submitted
+
 # AGAT extracting proteins - April 2026 <- EGAPx v0.3.2 outputs
 
 qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
