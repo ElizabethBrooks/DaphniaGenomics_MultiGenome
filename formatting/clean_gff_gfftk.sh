@@ -2,11 +2,11 @@
 #$ -M ebrooks5@nd.edu
 #$ -m abe
 #$ -r n
-#$ -N extract_prot_AGAT_jobOutput
+#$ -N run_gfftk_jobOutput
 
-# script to keep only the longest isoforms in the input gff
-# usage: qsub extract_longest_proteins_AGAT.sh inputFile
-# usage ex: qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
+# script to clean the input gff
+# usage: qsub clean_gff_gfftk.sh inputFile
+# usage ex: qsub clean_gff_gfftk.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
 
 # retrieve input file
 inputFile=$1
@@ -23,9 +23,6 @@ repoDir=$(dirname $PWD)
 # setup inputs path
 inputsPath=$repoDir"/inputData/"$inputsPath
 
-# retrieve software path
-softwarePath=$(grep "software_AGAT:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/software_AGAT://g")
-
 # retrieve outputs path
 # change this for different test runs
 outputsPath=$(grep "outputs_EGAPx_v0.3.2_BC:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_BC://g")
@@ -34,7 +31,7 @@ outputsPath=$(grep "outputs_EGAPx_v0.3.2_BC:" ../"inputData/inputs_annotations.t
 outputsPath=$outputsPath"/"$speciesName
 
 # create outputs directory
-mkdir $outputsPath"/AGAT"
+mkdir $outputsPath"/GFFtk"
 
 # move to the AGAT software directory
 cd $outputsPath
@@ -42,8 +39,11 @@ cd $outputsPath
 # status message
 echo "Beginning analysis of $speciesName..."
 
-# extract longest proteins
-singularity exec --bind $PWD:/AGAT $softwarePath"/agat_1.4.2--pl5321hdfd78af_0.sif" agat_sp_extract_sequences.pl -gff $outputsPath"/AGAT/output_longest.gff" -f $outputsPath"/complete.genomic.fna" -p -o $outputsPath"/AGAT/longest_protein.fa" --clean_final_stop --clean_internal_stop
+# run gfftk
+gfftk sanitize -f $outputsPath"/complete.genomic.fna" -g $outputsPath"/AGAT/output_longest.gff" -o $outputsPath"/GFFtk/clean.gff3"
+
+# check stats
+gfftk stats -f $outputsPath"/complete.genomic.fna" -i $outputsPath"/GFFtk/clean.gff3"
 
 # status message
 echo "Analysis of $speciesName complete!"

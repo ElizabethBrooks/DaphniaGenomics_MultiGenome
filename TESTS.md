@@ -18,6 +18,22 @@ qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_BC_clea
 qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 
+Your job 861190 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 861193 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 861194 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 861195 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 861196 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 861197 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 861198 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 861199 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 861200 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 861201 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 861202 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 861203 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 861204 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 861205 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 861206 ("extract_prot_AGAT_jobOutput") has been submitted
+
 
 # AGAT extracting transcripts - April 2026 <- EGAPx v0.3.2 outputs
 
