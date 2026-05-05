@@ -43,7 +43,8 @@ cd $outputsPath
 echo "Beginning analysis of $speciesName..."
 
 # extract longest proteins
-singularity exec --bind $PWD:/AGAT_v1.4.2 $softwarePath"/agat_1.4.2--pl5321hdfd78af_0.sif" agat_convert_sp_gff2gtf.pl -gff $outputsPath"/AGAT_v1.4.2/output_longest.gff" -o $outputsPath"/AGAT_v1.4.2/output_longest.gtf"
+#singularity exec --bind $PWD:/AGAT_v1.4.2 $softwarePath"/agat_1.4.2--pl5321hdfd78af_0.sif" agat_convert_sp_gff2gtf.pl -gff $outputsPath"/AGAT_v1.4.2/output_longest.gff" -o $outputsPath"/AGAT_v1.4.2/output_longest.gtf"
+singularity exec --bind $PWD:/AGAT_v1.4.2 $softwarePath"/agat_1.4.2--pl5321hdfd78af_0.sif" agat_convert_sp_gff2gtf.pl -gff $outputsPath"/complete.genomic.gff" -o $outputsPath"/AGAT_v1.4.2/complete.genomic_converted.gtf"
 
 # status message
 echo "Analysis of $speciesName complete!"
