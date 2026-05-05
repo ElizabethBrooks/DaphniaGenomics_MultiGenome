@@ -18,7 +18,21 @@ qsub check_proteins_busco.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_BC_clean.txt
 qsub check_proteins_busco.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 qsub check_proteins_busco.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 
-
+Your job 883232 ("check_proteins_busco_jobOutput") has been submitted
+Your job 883233 ("check_proteins_busco_jobOutput") has been submitted
+Your job 883234 ("check_proteins_busco_jobOutput") has been submitted
+Your job 883235 ("check_proteins_busco_jobOutput") has been submitted
+Your job 883236 ("check_proteins_busco_jobOutput") has been submitted
+Your job 883237 ("check_proteins_busco_jobOutput") has been submitted
+Your job 883238 ("check_proteins_busco_jobOutput") has been submitted
+Your job 883239 ("check_proteins_busco_jobOutput") has been submitted
+Your job 883240 ("check_proteins_busco_jobOutput") has been submitted
+Your job 883241 ("check_proteins_busco_jobOutput") has been submitted
+Your job 883242 ("check_proteins_busco_jobOutput") has been submitted
+Your job 883243 ("check_proteins_busco_jobOutput") has been submitted
+Your job 883244 ("check_proteins_busco_jobOutput") has been submitted
+Your job 883245 ("check_proteins_busco_jobOutput") has been submitted
+Your job 883246 ("check_proteins_busco_jobOutput") has been submitted
 
 # BUSCO genome - May 2026 <- EGAPx v0.3.2 outputs
 

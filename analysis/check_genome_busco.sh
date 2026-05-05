@@ -37,7 +37,7 @@ outputsPath=$outputsPath"/"$speciesName
 mkdir $outputsPath"/BUSCO_genome"
 
 # move to the AGAT software directory
-cd $outputsPath
+cd $outputsPath"/BUSCO_genome"
 
 # status message
 echo "Beginning analysis of $speciesName..."
