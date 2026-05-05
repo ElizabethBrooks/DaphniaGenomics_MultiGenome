@@ -1,5 +1,11 @@
 # Analysis Tests
 
+# OrthoFinder orthos - May 2026 <- AGAT outputs
+
+qsub find_all_orthos_orthofinder_BC.sh
+
+Your job 883904 ("find_all_orthos_BC_jobOutput") has been submitted
+
 # BUSCO proteins (EGAPx) - May 2026 <- EGAPx v0.3.2 outputs
 
 qsub check_proteins_busco.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
@@ -34,7 +40,7 @@ Your job 883833 ("check_proteins_busco_jobOutput") has been submitted
 Your job 883834 ("check_proteins_busco_jobOutput") has been submitted
 Your job 883835 ("check_proteins_busco_jobOutput") has been submitted
 
-# BUSCO proteins (AGAT) - May 2026 <- EGAPx v0.3.2 outputs
+# BUSCO proteins (AGAT) - May 2026 <- AGAT outputs
 
 qsub check_proteins_busco.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
 qsub check_proteins_busco.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_BC_clean.txt

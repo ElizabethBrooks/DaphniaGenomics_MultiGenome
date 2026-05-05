@@ -28,7 +28,7 @@ echo "Beginning analysis of orthologs..."
 conda activate of_env
 
 # run orthofinder
-orthofinder -f $inputsPath -t 32 -a 8
+orthofinder -t 32 -a 8 -f $inputsPath -o $outputsPath
 
 # status message
 echo "Analysis of orthologs complete!"
