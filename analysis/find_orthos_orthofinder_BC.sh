@@ -1,0 +1,34 @@
+#!/bin/bash
+#$ -M ebrooks5@nd.edu
+#$ -m abe
+#$ -r n
+#$ -N find_orthos_BC_jobOutput
+#$ -pe smp 15
+
+# script to clean the input gff
+# usage: qsub find_orthos_orthofinder_BC.sh
+# usage ex: qsub find_orthos_orthofinder_BC.sh
+
+# setup inputs path
+inputsPath="/scratch365/ebrooks5/multi_genome_orthology/data/BC"
+
+# setup outputs path
+outputsPath="/scratch365/ebrooks5/multi_genome_orthology"
+
+# create outputs directory
+mkdir $outputsPath
+
+# move to the AGAT software directory
+cd $outputsPath
+
+# status message
+echo "Beginning analysis of orthologs..."
+
+# activate conda environment
+conda activate of_env
+
+# run orthofinder
+orthofinder -f $inputsPath -t 15 -a 4
+
+# status message
+echo "Analysis of orthologs complete!"
