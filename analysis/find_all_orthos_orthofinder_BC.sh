@@ -2,18 +2,18 @@
 #$ -M ebrooks5@nd.edu
 #$ -m abe
 #$ -r n
-#$ -N find_orthos_BC_jobOutput
-#$ -pe smp 15
+#$ -N find_all_orthos_BC_jobOutput
+#$ -pe smp 32
 
 # script to clean the input gff
-# usage: qsub find_orthos_orthofinder_BC.sh
-# usage ex: qsub find_orthos_orthofinder_BC.sh
+# usage: qsub find_all_orthos_orthofinder_BC.sh
+# usage ex: qsub find_all_orthos_orthofinder_BC.sh
 
 # setup inputs path
-inputsPath="/scratch365/ebrooks5/multi_genome_orthology/data/BC"
+inputsPath="/scratch365/ebrooks5/multi_genome_orthology/data/BC/all"
 
 # setup outputs path
-outputsPath="/scratch365/ebrooks5/multi_genome_orthology"
+outputsPath="/scratch365/ebrooks5/multi_genome_orthology/BC/all"
 
 # create outputs directory
 mkdir $outputsPath
@@ -28,7 +28,7 @@ echo "Beginning analysis of orthologs..."
 conda activate of_env
 
 # run orthofinder
-orthofinder -f $inputsPath -t 15 -a 4
+orthofinder -f $inputsPath -t 32 -a 8
 
 # status message
 echo "Analysis of orthologs complete!"
