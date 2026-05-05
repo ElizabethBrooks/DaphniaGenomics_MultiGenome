@@ -1,5 +1,24 @@
 # Analysis Tests
 
+# Cufflinks convert gff - May 2026 <- EGAPx v0.3.2 outputs
+
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_BC_clean.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_CUH_004_BC_clean.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_BC_clean.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_pulex/inputs_LKG_002_BC_clean.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_pulicaria/inputs_ESL_002_BC_clean.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_BC_clean.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_magna/inputs_MCL_001_BC_clean.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_BC_clean.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_BC_clean.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_BC_clean.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_tenebrosa/inputs_C31_BC_clean.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_BC_clean.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+
+
 # OrthoFinder orthos - May 2026 <- AGAT outputs
 
 ## all
