@@ -51,7 +51,8 @@ export PATH="/afs/crc.nd.edu/user/e/ebrooks5/miniconda3/scripts:$PATH"
 export AUGUSTUS_CONFIG_PATH="afs/crc.nd.edu/user/e/ebrooks5/miniconda3/envs/augustus_env/config"
 
 # run busco
-busco -i $outputsPath"/AGAT/longest_protein_cleaned.fa" -m "proteins" -l "crustacea_odb12" -c 8 -o "proteins"
+busco -i $outputsPath"/complete.proteins.faa" -m "proteins" -l "crustacea_odb12" -c 8 -o "proteins_EGAPx"
+#busco -i $outputsPath"/AGAT/longest_protein_cleaned.fa" -m "proteins" -l "crustacea_odb12" -c 8 -o "proteins_AGAT"
 
 # status message
 echo "Analysis of $speciesName complete!"
