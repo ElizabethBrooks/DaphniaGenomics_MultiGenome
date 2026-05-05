@@ -11,11 +11,11 @@
 
 # setup inputs path
 #inputsPath="/scratch365/ebrooks5/multi_genome_orthology/data/BC/all"
-inputsPath="/scratch365/ebrooks5/multi_genome_orthology/data/BC/DE_subset"
+inputsPath="/scratch365/ebrooks5/multi_genome_orthology/data/BC/DE_set"
 
 # setup outputs path
 #outputsPath="/scratch365/ebrooks5/multi_genome_orthology/BC/all"
-outputsPath="/scratch365/ebrooks5/multi_genome_orthology/BC/DE_subset"
+outputsPath="/scratch365/ebrooks5/multi_genome_orthology/BC/DE_set"
 
 # status message
 echo "Beginning analysis of orthologs..."
