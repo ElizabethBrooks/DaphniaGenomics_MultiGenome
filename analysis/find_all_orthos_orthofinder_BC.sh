@@ -15,12 +15,6 @@ inputsPath="/scratch365/ebrooks5/multi_genome_orthology/data/BC/all"
 # setup outputs path
 outputsPath="/scratch365/ebrooks5/multi_genome_orthology/BC/all"
 
-# create outputs directory
-mkdir $outputsPath
-
-# move to the AGAT software directory
-cd $outputsPath
-
 # status message
 echo "Beginning analysis of orthologs..."
 
