@@ -34,10 +34,10 @@ outputsPath=$(grep "outputs_EGAPx_v0.3.2_BC:" ../"inputData/inputs_annotations.t
 outputsPath=$outputsPath"/"$speciesName
 
 # create outputs directory
-mkdir $outputsPath"/BUSCO_genome"
+mkdir $outputsPath"/BUSCO"
 
 # move to the AGAT software directory
-cd $outputsPath"/BUSCO_genome"
+cd $outputsPath"/BUSCO"
 
 # status message
 echo "Beginning analysis of $speciesName..."
@@ -51,7 +51,7 @@ export PATH="/afs/crc.nd.edu/user/e/ebrooks5/miniconda3/scripts:$PATH"
 export AUGUSTUS_CONFIG_PATH="afs/crc.nd.edu/user/e/ebrooks5/miniconda3/envs/augustus_env/config"
 
 # run busco
-busco -i $outputsPath"/complete.genomic.fna" -m "genome" -l "crustacea_odb12" -c 8 -o $outputsPath"/BUSCO_genome"
+busco -i $outputsPath"/complete.genomic.fna" -m "genome" -l "crustacea_odb12" -c 8 -o "genome"
 
 # status message
 echo "Analysis of $speciesName complete!"

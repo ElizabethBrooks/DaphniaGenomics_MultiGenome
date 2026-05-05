@@ -18,21 +18,7 @@ qsub check_proteins_busco.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_BC_clean.txt
 qsub check_proteins_busco.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 qsub check_proteins_busco.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 
-Your job 883232 ("check_proteins_busco_jobOutput") has been submitted
-Your job 883233 ("check_proteins_busco_jobOutput") has been submitted
-Your job 883234 ("check_proteins_busco_jobOutput") has been submitted
-Your job 883235 ("check_proteins_busco_jobOutput") has been submitted
-Your job 883236 ("check_proteins_busco_jobOutput") has been submitted
-Your job 883237 ("check_proteins_busco_jobOutput") has been submitted
-Your job 883238 ("check_proteins_busco_jobOutput") has been submitted
-Your job 883239 ("check_proteins_busco_jobOutput") has been submitted
-Your job 883240 ("check_proteins_busco_jobOutput") has been submitted
-Your job 883241 ("check_proteins_busco_jobOutput") has been submitted
-Your job 883242 ("check_proteins_busco_jobOutput") has been submitted
-Your job 883243 ("check_proteins_busco_jobOutput") has been submitted
-Your job 883244 ("check_proteins_busco_jobOutput") has been submitted
-Your job 883245 ("check_proteins_busco_jobOutput") has been submitted
-Your job 883246 ("check_proteins_busco_jobOutput") has been submitted
+
 
 # BUSCO genome - May 2026 <- EGAPx v0.3.2 outputs
 
@@ -52,21 +38,21 @@ qsub check_genome_busco.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_BC_clean.txt
 qsub check_genome_busco.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 qsub check_genome_busco.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 
-Your job 883206 ("check_genome_busco_jobOutput") has been submitted
-Your job 883208 ("check_genome_busco_jobOutput") has been submitted
-Your job 883209 ("check_genome_busco_jobOutput") has been submitted
-Your job 883210 ("check_genome_busco_jobOutput") has been submitted
-Your job 883211 ("check_genome_busco_jobOutput") has been submitted
-Your job 883212 ("check_genome_busco_jobOutput") has been submitted
-Your job 883213 ("check_genome_busco_jobOutput") has been submitted
-Your job 883214 ("check_genome_busco_jobOutput") has been submitted
-Your job 883215 ("check_genome_busco_jobOutput") has been submitted
-Your job 883216 ("check_genome_busco_jobOutput") has been submitted
-Your job 883217 ("check_genome_busco_jobOutput") has been submitted
-Your job 883218 ("check_genome_busco_jobOutput") has been submitted
-Your job 883219 ("check_genome_busco_jobOutput") has been submitted
-Your job 883220 ("check_genome_busco_jobOutput") has been submitted
-Your job 883221 ("check_genome_busco_jobOutput") has been submitted
+Your job 883643 ("check_genome_busco_jobOutput") has been submitted
+Your job 883662 ("check_genome_busco_jobOutput") has been submitted
+Your job 883663 ("check_genome_busco_jobOutput") has been submitted
+Your job 883664 ("check_genome_busco_jobOutput") has been submitted
+Your job 883665 ("check_genome_busco_jobOutput") has been submitted
+Your job 883666 ("check_genome_busco_jobOutput") has been submitted
+Your job 883667 ("check_genome_busco_jobOutput") has been submitted
+Your job 883668 ("check_genome_busco_jobOutput") has been submitted
+Your job 883669 ("check_genome_busco_jobOutput") has been submitted
+Your job 883670 ("check_genome_busco_jobOutput") has been submitted
+Your job 883671 ("check_genome_busco_jobOutput") has been submitted
+Your job 883672 ("check_genome_busco_jobOutput") has been submitted
+Your job 883673 ("check_genome_busco_jobOutput") has been submitted
+Your job 883674 ("check_genome_busco_jobOutput") has been submitted
+Your job 883675 ("check_genome_busco_jobOutput") has been submitted
 
 # AGAT extracting cleaned proteins - May 2026 <- EGAPx v0.3.2 outputs
 
