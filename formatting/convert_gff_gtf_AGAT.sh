@@ -34,7 +34,7 @@ outputsPath=$(grep "outputs_EGAPx_v0.3.2_BC:" ../"inputData/inputs_annotations.t
 outputsPath=$outputsPath"/"$speciesName
 
 # create outputs directory
-mkdir $outputsPath"/AGAT"
+mkdir $outputsPath"/AGAT_v1.4.2"
 
 # move to the AGAT software directory
 cd $outputsPath
@@ -43,7 +43,7 @@ cd $outputsPath
 echo "Beginning analysis of $speciesName..."
 
 # extract longest proteins
-singularity exec --bind $PWD:/AGAT $softwarePath"/agat_1.4.2--pl5321hdfd78af_0.sif" agat_convert_sp_gff2gtf.pl -gff $outputsPath"/AGAT/output_longest.gff" -o $outputsPath"/AGAT/output_longest.gtf"
+singularity exec --bind $PWD:/AGAT_v1.4.2 $softwarePath"/agat_1.4.2--pl5321hdfd78af_0.sif" agat_convert_sp_gff2gtf.pl -gff $outputsPath"/AGAT_v1.4.2/output_longest.gff" -o $outputsPath"/AGAT_v1.4.2/output_longest.gtf"
 
 # status message
 echo "Analysis of $speciesName complete!"

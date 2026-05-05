@@ -34,10 +34,10 @@ outputsPath=$(grep "outputs_EGAPx_v0.3.2_BC:" ../"inputData/inputs_annotations.t
 outputsPath=$outputsPath"/"$speciesName
 
 # create outputs directory
-mkdir $outputsPath"/BUSCO"
+mkdir $outputsPath"/BUSCO_v6.0.0"
 
 # move to the AGAT software directory
-cd $outputsPath"/BUSCO"
+cd $outputsPath"/BUSCO_v6.0.0"
 
 # status message
 echo "Beginning analysis of $speciesName..."

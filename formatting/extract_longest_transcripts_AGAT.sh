@@ -34,7 +34,7 @@ outputsPath=$(grep "outputs_EGAPx_v0.3.2_BC:" ../"inputData/inputs_annotations.t
 outputsPath=$outputsPath"/"$speciesName
 
 # create outputs directory
-mkdir $outputsPath"/AGAT"
+mkdir $outputsPath"/AGAT_v1.4.2"
 
 # move to the AGAT software directory
 cd $outputsPath
@@ -43,7 +43,7 @@ cd $outputsPath
 echo "Beginning analysis of $speciesName..."
 
 # extract longest mRNA
-singularity exec --bind $PWD:/AGAT $softwarePath"/agat_1.4.2--pl5321hdfd78af_0.sif" agat_sp_extract_sequences.pl -gff $outputsPath"/AGAT/output_longest.gff" -f $outputsPath"/complete.genomic.fna" -t mRNA -o $outputsPath"/AGAT/longest_mRNA.fa"
+singularity exec --bind $PWD:/AGAT_v1.4.2 $softwarePath"/agat_1.4.2--pl5321hdfd78af_0.sif" agat_sp_extract_sequences.pl -gff $outputsPath"/AGAT_v1.4.2/output_longest.gff" -f $outputsPath"/complete.genomic.fna" -t mRNA -o $outputsPath"/AGAT_v1.4.2/longest_mRNA.fa"
 
 # status message
 echo "Analysis of $speciesName complete!"

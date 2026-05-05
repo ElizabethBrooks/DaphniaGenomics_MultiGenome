@@ -8,7 +8,7 @@ Your job 883908 ("find_all_orthos_BC_jobOutput") has been submitted
 
 ## DE_set
 qsub find_orthos_orthofinder_BC.sh
-Your job 883955 ("find_orthos_BC_jobOutput") has been submitted
+Your job 883961 ("find_orthos_BC_jobOutput") has been submitted
 
 # BUSCO proteins (EGAPx) - May 2026 <- EGAPx v0.3.2 outputs
 
