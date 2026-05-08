@@ -31,19 +31,19 @@ inputsPath=$repoDir"/inputData/"$inputsPath
 outputsPath=$(grep "outputs_EGAPx_v0.3.2_BC:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_BC://g")
 
 # setup outputs path
-outputsPath=$outputsPath"/"$speciesName
+outputsPath=$outputsPath"/"$speciesName"/AGAT"
 
 # create outputs directory
-mkdir $outputsPath"/AGAT/emapper_v2.1.3"
+mkdir $outputsPath"/emapper_v2.1.3"
 
-# move to the AGAT software directory
-cd $outputsPath"/AGAT/emapper_v2.1.3"
+# move to the outputs directory
+cd $outputsPath"/emapper_v2.1.3"
 
 # status message
 echo "Beginning analysis of $speciesName..."
 
 # run eggnog mapper
-emapper.py --cpu 15 -i $outputsPath"/AGAT/longest_protein_cleaned.fa" --itype "proteins" -m "diamond" --data_dir "/groups/mpfrende/Projects_2026/software/eggnog_db" -o $outputsPath"/AGAT/emapper_v2.1.3"
+emapper.py --cpu 15 -i $outputsPath"/longest_protein_cleaned.fa" --itype "proteins" -m "diamond" --data_dir "/groups/mpfrende/Projects_2026/software/eggnog_db" -o $outputsPath"/emapper_v2.1.3"
 
 # status message
 echo "Analysis of $speciesName complete!"

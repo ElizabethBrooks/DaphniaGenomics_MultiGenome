@@ -32,14 +32,13 @@ outputsPath=$(grep "outputs_EGAPx_v0.3.2_BC:" ../"inputData/inputs_annotations.t
 
 # setup outputs path
 outputsPath=$outputsPath"/"$speciesName
+#outputsPath=$outputsPath"/"$speciesName"/AGAT'
 
 # create outputs directory
 mkdir $outputsPath"/BUSCO_v6.0.0"
-#mkdir $outputsPath"/AGAT/BUSCO_v6.0.0"
 
-# move to the AGAT software directory
+# move to the outputs directory
 cd $outputsPath"/BUSCO_v6.0.0"
-#cd $outputsPath"/AGAT/BUSCO_v6.0.0"
 
 # status message
 echo "Beginning analysis of $speciesName..."
@@ -54,7 +53,7 @@ export AUGUSTUS_CONFIG_PATH="afs/crc.nd.edu/user/e/ebrooks5/miniconda3/envs/augu
 
 # run busco
 busco -i $outputsPath"/complete.proteins.faa" -m "proteins" -l "crustacea_odb12" -c 8 -o "proteins"
-#busco -i $outputsPath"/AGAT/longest_protein_cleaned.fa" -m "proteins" -l "crustacea_odb12" -c 8 -o "proteins"
+#busco -i $outputsPath"/longest_protein_cleaned.fa" -m "proteins" -l "crustacea_odb12" -c 8 -o "proteins"
 
 # status message
 echo "Analysis of $speciesName complete!"

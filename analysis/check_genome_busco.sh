@@ -36,7 +36,7 @@ outputsPath=$outputsPath"/"$speciesName
 # create outputs directory
 mkdir $outputsPath"/BUSCO_v6.0.0"
 
-# move to the AGAT software directory
+# move to the outputs directory
 cd $outputsPath"/BUSCO_v6.0.0"
 
 # status message
