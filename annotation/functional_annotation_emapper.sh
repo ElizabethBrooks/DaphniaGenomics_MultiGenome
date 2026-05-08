@@ -39,6 +39,9 @@ mkdir $outputsPath"/emapper_v2.1.3"
 # move to the outputs directory
 cd $outputsPath"/emapper_v2.1.3"
 
+# activate software environment
+conda activate emapper_env
+
 # status message
 echo "Beginning analysis of $speciesName..."
 
