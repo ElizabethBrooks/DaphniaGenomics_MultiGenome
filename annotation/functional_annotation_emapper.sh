@@ -31,7 +31,7 @@ inputsPath=$repoDir"/inputData/"$inputsPath
 outputsPath=$(grep "outputs_EGAPx_v0.3.2_BC:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_BC://g")
 
 # setup outputs path
-outputsPath=$outputsPath"/"$speciesName"/AGAT"
+outputsPath=$outputsPath"/"$speciesName"/AGAT_v1.4.2"
 
 # create outputs directory
 mkdir $outputsPath"/emapper_v2.1.3"
