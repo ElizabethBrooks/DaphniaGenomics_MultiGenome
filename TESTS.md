@@ -18,6 +18,21 @@ qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_BC_clean.tx
 qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 
+Your job 885010 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 885011 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 885012 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 885013 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 885014 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 885015 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 885016 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 885017 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 885018 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 885019 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 885020 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 885021 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 885022 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 885023 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 885024 ("convert_gff_cufflinks_jobOutput") has been submitted
 
 # OrthoFinder orthos - May 2026 <- AGAT outputs
 

@@ -2,12 +2,12 @@
 #$ -M ebrooks5@nd.edu
 #$ -m abe
 #$ -r n
-#$ -N check_proteins_busco_jobOutput
-#$ -pe smp 8
+#$ -N functional_annotation_emapper_jobOutput
+#$ -pe smp 15
 
 # script to clean the input gff
-# usage: qsub check_proteins_busco.sh inputFile
-# usage ex: qsub check_proteins_busco.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
+# usage: qsub functional_annotation_emapper.sh inputFile
+# usage ex: qsub functional_annotation_emapper.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
 
 # retrieve input file
 inputFile=$1
@@ -34,27 +34,16 @@ outputsPath=$(grep "outputs_EGAPx_v0.3.2_BC:" ../"inputData/inputs_annotations.t
 outputsPath=$outputsPath"/"$speciesName
 
 # create outputs directory
-mkdir $outputsPath"/BUSCO_v6.0.0"
-#mkdir $outputsPath"/AGAT/BUSCO_v6.0.0"
+mkdir $outputsPath"/AGAT/emapper_v2.1.3"
 
 # move to the AGAT software directory
-cd $outputsPath"/BUSCO_v6.0.0"
-#cd $outputsPath"/AGAT/BUSCO_v6.0.0"
+cd $outputsPath"/AGAT/emapper_v2.1.3"
 
 # status message
 echo "Beginning analysis of $speciesName..."
 
-# activate conda environment
-conda activate busco_env
-
-# export paths
-export PATH="/afs/crc.nd.edu/user/e/ebrooks5/miniconda3/bin/augustus:$PATH"
-export PATH="/afs/crc.nd.edu/user/e/ebrooks5/miniconda3/scripts:$PATH"
-export AUGUSTUS_CONFIG_PATH="afs/crc.nd.edu/user/e/ebrooks5/miniconda3/envs/augustus_env/config"
-
-# run busco
-busco -i $outputsPath"/complete.proteins.faa" -m "proteins" -l "crustacea_odb12" -c 8 -o "proteins"
-#busco -i $outputsPath"/AGAT/longest_protein_cleaned.fa" -m "proteins" -l "crustacea_odb12" -c 8 -o "proteins"
+# run eggnog mapper
+emapper.py --cpu 15 -i $outputsPath"/AGAT/longest_protein_cleaned.fa" --itype "proteins" -m "diamond" --data_dir "/groups/mpfrende/Projects_2026/software/eggnog_db" -o $outputsPath"/AGAT/emapper_v2.1.3"
 
 # status message
 echo "Analysis of $speciesName complete!"

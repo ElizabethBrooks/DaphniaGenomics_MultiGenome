@@ -10,12 +10,12 @@
 # usage ex: qsub find_orthos_orthofinder_BC.sh
 
 # setup inputs path
-#inputsPath="/scratch365/ebrooks5/multi_genome_orthology/data/BC/AGAT_v1.4.2/all"
-inputsPath="/scratch365/ebrooks5/multi_genome_orthology/data/BC/AGAT_v1.4.2/DE_set"
+#inputsPath="/scratch365/ebrooks5/multi_genome_orthology/data/BC/EGAPx_v0.3.2/AGAT_v1.4.2/all"
+inputsPath="/scratch365/ebrooks5/multi_genome_orthology/data/BC/EGAPx_v0.3.2/AGAT_v1.4.2/DE_set"
 
 # setup outputs path
-#outputsPath="/scratch365/ebrooks5/multi_genome_orthology/BC/AGAT_v1.4.2/all"
-outputsPath="/scratch365/ebrooks5/multi_genome_orthology/BC/AGAT_v1.4.2/DE_set"
+#outputsPath="/scratch365/ebrooks5/multi_genome_orthology/BC/EGAPx_v0.3.2/AGAT_v1.4.2/all"
+outputsPath="/scratch365/ebrooks5/multi_genome_orthology/BC/EGAPx_v0.3.2/AGAT_v1.4.2/DE_set"
 
 # status message
 echo "Beginning analysis of orthologs..."
