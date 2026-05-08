@@ -3,7 +3,7 @@
 #$ -m abe
 #$ -r n
 #$ -N functional_annotation_emapper_jobOutput
-#$ -pe smp 15
+#$ -pe smp 8
 
 # script to clean the input gff
 # usage: qsub functional_annotation_emapper.sh inputFile
@@ -43,7 +43,7 @@ cd $outputsPath"/emapper_v2.1.3"
 echo "Beginning analysis of $speciesName..."
 
 # run eggnog mapper
-emapper.py --cpu 15 -i $outputsPath"/longest_protein_cleaned.fa" --itype "proteins" -m "diamond" --data_dir "/groups/mpfrende/Projects_2026/software/eggnog_db" -o $outputsPath"/emapper_v2.1.3"
+emapper.py --cpu 8 -i $outputsPath"/longest_protein_cleaned.fa" --itype "proteins" -m "diamond" --data_dir "/groups/mpfrende/Projects_2026/software/eggnog_db" -o $outputsPath"/emapper_v2.1.3"
 
 # status message
 echo "Analysis of $speciesName complete!"
