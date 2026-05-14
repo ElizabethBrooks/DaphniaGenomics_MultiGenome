@@ -46,7 +46,7 @@ conda activate emapper_env
 echo "Beginning analysis of $speciesName..."
 
 # run eggnog mapper
-emapper.py --cpu 8 -i $outputsPath"/longest_protein_cleaned.fa" --itype "proteins" -m "diamond" -dmnd_args "--id 80 --query_cover 80" --evalue 0.00001 --go_evidence non-electronic --tax_scope 6656 --data_dir "/groups/mpfrende/Projects_2026/software/eggnog_db" -o "fa"
+emapper.py --cpu 8 -i $outputsPath"/longest_protein_cleaned.fa" --itype "proteins" -m "diamond" -dmnd_args "--id 80 --query_cover 80" --seed_ortholog_evalue 0.00001 --go_evidence non-electronic --tax_scope 6656 --data_dir "/groups/mpfrende/Projects_2026/software/eggnog_db" -o "fa"
 
 # re-format the annotations for topGO
 cat $outputsPath"/emapper_v2.1.3/fa.emapper.annotations" | cut -f1,10 | sed "s/^.*egapxtmp/egapxtmp/g" | sed "s/\-R.\t/\t/g" | grep -v "#" | grep -v "-" > $outputsPath"/emapper_v2.1.3/fa.emapper.annotations.fmt.txt"
