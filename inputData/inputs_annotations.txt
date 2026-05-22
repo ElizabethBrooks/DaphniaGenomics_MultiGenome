@@ -2,6 +2,7 @@ software_EGAPx: /afs/crc.nd.edu/user/e/ebrooks5/egapx
 software_EGAPx_v0.2: /afs/crc.nd.edu/user/e/ebrooks5/egapx_v0.2/egapx
 software_EGAPx_v0.3.1: /afs/crc.nd.edu/user/e/ebrooks5/egapx_v0.3.1/egapx
 software_EGAPx_v0.3.2: /afs/crc.nd.edu/user/e/ebrooks5/egapx_v0.3.2/egapx
+software_EGAPx_v0.3.2_new: /groups/mpfrende/Projects_2026/software/egapx_v0.3.2/egapx
 software_EGAPx_v0.4: /afs/crc.nd.edu/user/e/ebrooks5/egapx_v0.4/egapx
 software_EGAPx_v0.5: /afs/crc.nd.edu/user/e/ebrooks5/egapx_v0.5/egapx
 software_BRAKER3: /afs/crc.nd.edu/user/e/ebrooks5/braker3
@@ -15,6 +16,7 @@ outputs_EGAPx_v0.4: /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_ann
 outputs_EGAPx_v0.3.2_scratch: /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/tested_Jan2025/WW_ZQ_tests
 outputs_EGAPx_v0.3.2_noProteins: /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/Jan2025/WW_ZQ
 outputs_EGAPx_v0.3.2_BC: /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/April2026/BC
+outputs_EGAPx_v0.3.2_batch2: /groups/mpfrende/Projects_2026/multi_genome/EGAPx_v0.3.2/ZQ
 outputs_EGAPx_v0.5_BC: /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.5/April2026/BC
 outputs_BRAKER3: /scratch365/ebrooks5/multi_genome_project/BRAKER3
 outputs_SRA: /scratch365/ebrooks5/multi_genome_project/data/dump

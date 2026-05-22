@@ -1,0 +1,2 @@
+species: Ceriodaphnia_sp_dubia_ZQ
+inputs_EGAPx: EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.yaml
