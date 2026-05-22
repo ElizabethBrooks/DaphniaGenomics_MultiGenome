@@ -1,12 +1,50 @@
 # Analysis Tests
 
+## EGAPx v0.3.2 for ZQ - May 2026
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ_clean.txt
+##### job 
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ_clean.txt
+##### job 
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ_clean.txt
+##### job 
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+##### job 
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ_clean.txt
+##### job 
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+##### job 
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ_clean.txt
+##### job 
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+##### job 
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+##### job 
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+##### job 
+
+
 ## S. vetulus for BC - May 2026
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_clean.txt
-##### job 
+##### job 945483
+
+#### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC.txt
+
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_clean.txt
 ##### job 945474
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_BC_clean.txt
+##### job
 
 
 # eggNOG mapper functional annotations - May 2026

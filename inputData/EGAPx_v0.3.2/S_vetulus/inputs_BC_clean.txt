@@ -1,0 +1,2 @@
+species: S_vetulus_BC_clean
+inputs_EGAPx: EGAPx_v0.3.2/S_vetulus/inputs_BC_clean.yaml
