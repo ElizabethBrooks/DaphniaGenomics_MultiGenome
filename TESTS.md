@@ -1,9 +1,13 @@
 # Analysis Tests
 
-## EGAPx v0.3.2 - May 2026
+## S. vetulus for BC - May 2026
+
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_clean.txt
+##### job 
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_clean.txt
-##### job 
+##### job 945474
+
 
 # eggNOG mapper functional annotations - May 2026
 

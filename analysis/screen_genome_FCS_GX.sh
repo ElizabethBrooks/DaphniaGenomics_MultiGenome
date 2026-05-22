@@ -25,10 +25,12 @@ inputGenome=$(grep "genome:" ../"inputData/"$inputYaml | tr -d " " | sed "s/geno
 taxInput=$(grep "taxid:" ../"inputData/"$inputYaml | tr -d " " | sed "s/taxid://g")
 
 # set DB directory
-GXDB_LOC="/scratch365/ebrooks5/software/FCS_GX"
+#GXDB_LOC="/scratch365/ebrooks5/software/FCS_GX"
+GXDB_LOC="/groups/mpfrende/Projects_2026/software/FCS_GX"
 
 # set the software path
-softwarePath="/scratch365/ebrooks5/software/FCS_GX"
+#softwarePath="/scratch365/ebrooks5/software/FCS_GX"
+softwarePath="/groups/mpfrende/Projects_2026/software/FCS_GX"
 
 # move to the software directory
 cd $softwarePath
