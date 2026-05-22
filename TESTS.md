@@ -36,15 +36,15 @@
 ## S. vetulus for BC - May 2026
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/S_vetulus/inputs_BC.txt
-##### job 
-
-#### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/S_vetulus/inputs_BC.txt
-
+##### job 947173
+TOTAL                              0          0
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_clean.txt
 ##### job 945474
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_BC_clean.txt
-##### job
+
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noProt.txt
+##### job 
 
 
 # eggNOG mapper functional annotations - May 2026
