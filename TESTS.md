@@ -78,6 +78,10 @@ Your job 883908 ("find_all_orthos_BC_jobOutput") has been submitted
 qsub find_orthos_orthofinder_BC.sh
 Your job 920765 ("find_orthos_BC_jobOutput") has been submitted
 
+## compare_set
+qsub find_orthos_orthofinder_BC.sh
+Your job 945385 ("find_orthos_BC_jobOutput") has been submitted
+
 # BUSCO proteins (EGAPx) - May 2026 <- EGAPx v0.3.2 outputs
 
 qsub check_proteins_busco.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt

@@ -7,6 +7,7 @@
 # script to keep only the longest isoforms in the input gff
 # usage: qsub keep_longest_isoforms_AGAT.sh inputFile
 # usage ex: qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
+# usage ex: qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_clean.txt
 
 # retrieve input file
 inputFile=$1
@@ -28,7 +29,8 @@ softwarePath=$(grep "software_AGAT:" ../"inputData/inputs_annotations.txt" | tr 
 
 # retrieve outputs path
 # change this for different test runs
-outputsPath=$(grep "outputs_EGAPx_v0.3.2_BC:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_BC://g")
+#outputsPath=$(grep "outputs_EGAPx_v0.3.2_BC:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_BC://g")
+outputsPath=$(grep "outputs_EGAPx_v0.3.2_BC2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_BC2://g")
 
 # setup outputs path
 outputsPath=$outputsPath"/"$speciesName
