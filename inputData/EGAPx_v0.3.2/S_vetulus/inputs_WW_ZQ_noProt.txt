@@ -1,2 +1,0 @@
-species: S_vetulus_WW_ZQ_noProt
-inputs_EGAPx: EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noProt.yaml
