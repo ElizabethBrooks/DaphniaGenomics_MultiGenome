@@ -1,5 +1,10 @@
 # Analysis Tests
 
+## EGAPx v0.3.2 - May 2026
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_clean.txt
+##### job 
+
 # eggNOG mapper functional annotations - May 2026
 
 qsub functional_emapper.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
@@ -80,7 +85,7 @@ Your job 920765 ("find_orthos_BC_jobOutput") has been submitted
 
 ## compare_set
 qsub find_orthos_orthofinder_BC.sh
-Your job 945385 ("find_orthos_BC_jobOutput") has been submitted
+
 
 # BUSCO proteins (EGAPx) - May 2026 <- EGAPx v0.3.2 outputs
 
@@ -355,7 +360,6 @@ Your job 855296 ("run_AGAT_jobOutput") has been submitted
 Your job 855297 ("run_AGAT_jobOutput") has been submitted
 Your job 855298 ("run_AGAT_jobOutput") has been submitted
 Your job 855299 ("run_AGAT_jobOutput") has been submitted
-
 
 # AGAT extracting - April 2026 <- EGAPx v0.5 outputs
 
