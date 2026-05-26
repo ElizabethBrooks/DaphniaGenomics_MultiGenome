@@ -188,7 +188,8 @@ transcript   69
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC.txt
 ##### job 964990
 TOTAL                            210   18207687
-#### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+#### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC.txt
+Applied 155 actions; 155 seqs dropped; 16184552 bps dropped; 0 bps lowercased; 0 bps hardmasked.
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 ##### job 
 
