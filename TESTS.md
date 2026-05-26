@@ -1,4 +1,17 @@
-# Analysis Tests
+# Analysis & Tests
+
+# OrthoFinder orthos - May 2026 <- AGAT outputs
+
+## all
+qsub find_orthos_orthofinder_BC.sh
+Your job 883908 ("find_all_orthos_BC_jobOutput") has been submitted
+
+## DE_set
+qsub find_orthos_orthofinder_BC.sh
+Your job 920765 ("find_orthos_BC_jobOutput") has been submitted
+
+## compare_set
+qsub find_orthos_orthofinder_BC.sh
 
 ## EGAPx v0.3.2 for ZQ - May 2026
 
@@ -35,16 +48,33 @@
 
 ## S. vetulus for BC - May 2026
 
-#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/S_vetulus/inputs_BC.txt
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
 ##### job 947173
 TOTAL                              0          0
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_clean.txt
 ##### job 945474
 
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
+##### job 947693
+CDS          188811
+exon         218732
+gene         18162
+lnc_RNA      3458
+mRNA         23060
+pseudogene   454
+transcript   38
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noProt.txt
-##### job 
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
+qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
+qsub convert_gff_gtf_AGAT.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
+qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
+# qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
+# qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
+qsub functional_emapper.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
 
 
 # eggNOG mapper functional annotations - May 2026
@@ -114,20 +144,6 @@ Your job 885021 ("convert_gff_cufflinks_jobOutput") has been submitted
 Your job 885022 ("convert_gff_cufflinks_jobOutput") has been submitted
 Your job 885023 ("convert_gff_cufflinks_jobOutput") has been submitted
 Your job 885024 ("convert_gff_cufflinks_jobOutput") has been submitted
-
-# OrthoFinder orthos - May 2026 <- AGAT outputs
-
-## all
-qsub find_orthos_orthofinder_BC.sh
-Your job 883908 ("find_all_orthos_BC_jobOutput") has been submitted
-
-## DE_set
-qsub find_orthos_orthofinder_BC.sh
-Your job 920765 ("find_orthos_BC_jobOutput") has been submitted
-
-## compare_set
-qsub find_orthos_orthofinder_BC.sh
-
 
 # BUSCO proteins (EGAPx) - May 2026 <- EGAPx v0.3.2 outputs
 
