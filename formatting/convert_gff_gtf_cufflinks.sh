@@ -9,7 +9,7 @@
 # usage ex: qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
 
 # load software
-module load bio/2.0
+module load bio
 
 # retrieve input file
 inputFile=$1
