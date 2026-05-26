@@ -5,7 +5,7 @@
 #$ -N find_orthos_BC_jobOutput
 #$ -pe smp 32
 
-# script to find orthologs
+# script to find orthologs in the sets of cleaned longest proteins for each species
 # usage: qsub find_orthos_orthofinder_BC.sh
 
 # setup inputs path

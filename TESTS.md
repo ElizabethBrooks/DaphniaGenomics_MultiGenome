@@ -69,20 +69,27 @@ qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
 Your job 963819 ("run_AGAT_jobOutput") has been submitted
 
 qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
+Your job 964539 ("extract_mRNA_AGAT_jobOutput") has been submitted
 
 qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
+Your job 964602 ("extract_prot_AGAT_jobOutput") has been submitted
 
 qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
+Your job 964657 ("extract_clean_prot_AGAT_jobOutput") has been submitted
 
 qsub check_genome_busco.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
+Your job 964743 ("check_genome_busco_jobOutput") has been submitted
 
 qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
+Your job 964794 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
 
 qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
+Your job 964800 ("check_AGAT_proteins_busco_jobOutput") has been submitted
 
 qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
 
 qsub functional_emapper.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
+Your job 964868 ("functional_emapper_jobOutput") has been submitted
 
 
 # eggNOG mapper functional annotations - May 2026
