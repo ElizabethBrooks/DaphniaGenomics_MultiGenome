@@ -2,12 +2,12 @@
 #$ -M ebrooks5@nd.edu
 #$ -m abe
 #$ -r n
-#$ -N check_proteins_busco_jobOutput
+#$ -N check_AGAT_proteins_busco_jobOutput
 #$ -pe smp 8
 
 # script to clean the input gff
-# usage: qsub check_proteins_busco.sh inputFile
-# usage ex: qsub check_proteins_busco.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
+# usage: qsub check_AGAT_proteins_busco.sh inputFile
+# usage ex: qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
 
 # retrieve input file
 inputFile=$1
@@ -28,11 +28,13 @@ inputsPath=$repoDir"/inputData/"$inputsPath
 
 # retrieve outputs path
 # change this for different test runs
-outputsPath=$(grep "outputs_EGAPx_v0.3.2_BC:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_BC://g")
+#outputsPath=$(grep "outputs_EGAPx_v0.3.2_BC:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_BC://g")
+#outputsPath=$(grep "outputs_EGAPx_v0.3.2_BC2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_BC2://g")
+outputsPath=$(grep "outputs_EGAPx_v0.3.2_ZQ2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_ZQ2://g")
 
 # setup outputs path
-outputsPath=$outputsPath"/"$speciesName
-#outputsPath=$outputsPath"/"$speciesName"/AGAT_v1.4.2'
+#outputsPath=$outputsPath"/"$speciesName
+outputsPath=$outputsPath"/"$speciesName"/AGAT_v1.4.2"
 
 # create outputs directory
 mkdir $outputsPath"/BUSCO_v6.0.0"
@@ -49,11 +51,11 @@ conda activate busco_env
 # export paths
 export PATH="/afs/crc.nd.edu/user/e/ebrooks5/miniconda3/bin/augustus:$PATH"
 export PATH="/afs/crc.nd.edu/user/e/ebrooks5/miniconda3/scripts:$PATH"
-export AUGUSTUS_CONFIG_PATH="afs/crc.nd.edu/user/e/ebrooks5/miniconda3/envs/augustus_env/config"
+export AUGUSTUS_CONFIG_PATH="/afs/crc.nd.edu/user/e/ebrooks5/miniconda3/envs/augustus_env/config"
 
 # run busco
-busco -i $outputsPath"/complete.proteins.faa" -m "proteins" -l "crustacea_odb12" -c 8 -o "proteins"
-#busco -i $outputsPath"/longest_protein_cleaned.fa" -m "proteins" -l "crustacea_odb12" -c 8 -o "proteins"
+#busco -i $outputsPath"/complete.proteins.faa" -m "proteins" -l "crustacea_odb12" -c 8 -o "proteins"
+busco -i $outputsPath"/longest_protein_cleaned.fa" -m "proteins" -l "crustacea_odb12" -c 8 -o "proteins"
 
 # status message
 echo "Analysis of $speciesName complete!"

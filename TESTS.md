@@ -66,14 +66,22 @@ pseudogene   454
 transcript   38
 
 qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
-qsub extract_longest_isoforms_AGAT.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
+Your job 963819 ("run_AGAT_jobOutput") has been submitted
+
+qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
+
 qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
-qsub convert_gff_gtf_AGAT.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
+
 qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
+
 qsub check_genome_busco.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
-# qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
-# qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
+
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
+
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
+
 qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
+
 qsub functional_emapper.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
 
 

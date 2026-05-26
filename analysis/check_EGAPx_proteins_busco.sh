@@ -2,17 +2,20 @@
 #$ -M ebrooks5@nd.edu
 #$ -m abe
 #$ -r n
-#$ -N extract_prot_AGAT_jobOutput
+#$ -N check_EGAPx_proteins_busco_jobOutput
+#$ -pe smp 8
 
-# script to keep only the longest isoforms in the input gff
-# usage: qsub extract_longest_proteins_AGAT.sh inputFile
-# usage ex: qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
+# script to clean the input gff
+# usage: qsub check_EGAPx_proteins_busco.sh inputFile
+# usage ex: qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
 
 # retrieve input file
 inputFile=$1
 
 # retrieve species name
 speciesName=$(grep "species:" ../"inputData/"$inputFile | tr -d " " | sed "s/species://g")
+speciesTag=$(echo $speciesName | cut -d"_" -f1,2)
+strainTag=$(echo $speciesName | cut -d"_" -f3-)
 
 # retrieve inputs path
 inputsPath=$(grep "inputs_EGAPx:" ../"inputData/"$inputFile | tr -d " " | sed "s/inputs_EGAPx://g")
@@ -23,10 +26,6 @@ repoDir=$(dirname $PWD)
 # setup inputs path
 inputsPath=$repoDir"/inputData/"$inputsPath
 
-# retrieve software path
-#softwarePath=$(grep "software_AGAT:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/software_AGAT://g")
-softwarePath=$(grep "software_AGAT_new:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/software_AGAT_new://g")
-
 # retrieve outputs path
 # change this for different test runs
 #outputsPath=$(grep "outputs_EGAPx_v0.3.2_BC:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_BC://g")
@@ -35,18 +34,28 @@ outputsPath=$(grep "outputs_EGAPx_v0.3.2_ZQ2:" ../"inputData/inputs_annotations.
 
 # setup outputs path
 outputsPath=$outputsPath"/"$speciesName
+#outputsPath=$outputsPath"/"$speciesName"/AGAT_v1.4.2"
 
 # create outputs directory
-mkdir $outputsPath"/AGAT_v1.4.2"
+mkdir $outputsPath"/BUSCO_v6.0.0"
 
-# move to the AGAT software directory
-cd $outputsPath
+# move to the outputs directory
+cd $outputsPath"/BUSCO_v6.0.0"
 
 # status message
 echo "Beginning analysis of $speciesName..."
 
-# extract longest proteins
-singularity exec --bind $PWD:/AGAT_v1.4.2 $softwarePath"/agat_1.4.2--pl5321hdfd78af_0.sif" agat_sp_extract_sequences.pl -gff $outputsPath"/AGAT_v1.4.2/output_longest.gff" -f $outputsPath"/complete.genomic.fna" -p -o $outputsPath"/AGAT_v1.4.2/longest_protein.fa"
+# activate conda environment
+conda activate busco_env
+
+# export paths
+export PATH="/afs/crc.nd.edu/user/e/ebrooks5/miniconda3/bin/augustus:$PATH"
+export PATH="/afs/crc.nd.edu/user/e/ebrooks5/miniconda3/scripts:$PATH"
+export AUGUSTUS_CONFIG_PATH="/afs/crc.nd.edu/user/e/ebrooks5/miniconda3/envs/augustus_env/config"
+
+# run busco
+busco -i $outputsPath"/complete.proteins.faa" -m "proteins" -l "crustacea_odb12" -c 8 -o "proteins"
+#busco -i $outputsPath"/longest_protein_cleaned.fa" -m "proteins" -l "crustacea_odb12" -c 8 -o "proteins"
 
 # status message
 echo "Analysis of $speciesName complete!"
