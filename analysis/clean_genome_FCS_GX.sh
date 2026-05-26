@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# script to clean a genome fasta of contamination
+# script to clean a genome fasta of contamination using FCS-GX (v0.5.5)
 # usage: bash clean_genome_FCS_GX.sh inputFile
 # usage ex: bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC.txt
 
@@ -26,16 +26,19 @@ taxInput=$(grep "taxid:" ../"inputData/"$inputYaml | tr -d " " | sed "s/taxid://
 #mkdir $outputsPath
 
 # set the outputs directory
-outputsPath="/scratch365/ebrooks5/multi_genome_project/data/Daphnia_genomes/cleaned_FCS_GX/"$inputSpecies
+#outputsPath="/scratch365/ebrooks5/multi_genome_project/data/Daphnia_genomes/cleaned_FCS_GX/"$inputSpecies
+outputsPath="/groups/mpfrende/Projects_2026/multi_genome/FCS_GX_v0.5.5/"$inputSpecies
 
 # create the outputs directory
 mkdir $outputsPath
 
 # set DB directory
-GXDB_LOC="/scratch365/ebrooks5/software/FCS_GX"
+#GXDB_LOC="/scratch365/ebrooks5/software/FCS_GX"
+GXDB_LOC="/groups/mpfrende/Projects_2026/software/FCS_GX"
 
 # set the software path
-softwarePath="/scratch365/ebrooks5/software/FCS_GX"
+#softwarePath="/scratch365/ebrooks5/software/FCS_GX"
+softwarePath="/groups/mpfrende/Projects_2026/software/FCS_GX"
 
 # retrieve the input report
 inputReport=$(ls $GXDB_LOC"/"$inputSpecies"_gx_out/"*.fcs_gx_report.txt)

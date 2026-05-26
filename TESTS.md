@@ -20,15 +20,15 @@ transcript   391
 #### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
 ##### job 965060
 #### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
-##### job 
+##### job 965080
 #### qsub check_genome_busco.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
-##### job 
+##### job 965086
 #### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
-##### job 
+##### job 965087
 #### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
-##### job 
+##### job 965089
 #### qsub functional_emapper.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
-##### job 
+##### job 965105
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
 ##### job 947149
@@ -48,15 +48,15 @@ transcript   151
 #### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
 ##### job 965063
 #### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
-##### job 
+##### job 965081
 #### qsub check_genome_busco.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
-##### job 
+##### job 965092
 #### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
-##### job 
+##### job 965093
 #### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
-##### job 
+##### job 965094
 #### qsub functional_emapper.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
-##### job 
+##### job 965107
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
 ##### job 947150
@@ -76,15 +76,15 @@ transcript   676
 #### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
 ##### job 965066
 #### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
-##### job 
+##### job 965082
 #### qsub check_genome_busco.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
-##### job 
+##### job 965095
 #### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
-##### job 
+##### job 965097
 #### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
-##### job 
+##### job 965098
 #### qsub functional_emapper.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
-##### job  
+##### job 965109
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ.txt
 ##### job 947151
@@ -114,15 +114,15 @@ transcript   385
 #### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
 ##### job 965069
 #### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
-##### job 
+##### job 965083
 #### qsub check_genome_busco.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
-##### job 
+##### job 965099
 #### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
-##### job 
+##### job 965100
 #### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
-##### job 
+##### job 965101
 #### qsub functional_emapper.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
-##### job 
+##### job 965110
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ.txt
 ##### job 947153
@@ -152,15 +152,15 @@ transcript   69
 #### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
 ##### job 965072
 #### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
-##### job 
+##### job 965084
 #### qsub check_genome_busco.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
-##### job 
+##### job 965102
 #### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
-##### job 
+##### job 965103
 #### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
-##### job 
+##### job 965104
 #### qsub functional_emapper.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
-##### job 
+##### job 965111
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ.txt
 ##### job 947155
@@ -187,6 +187,7 @@ transcript   69
  -- Check '/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/ZQ/Latona_sp_BLK_101_BC/nextflow.log' file for details
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC.txt
 ##### job 964990
+TOTAL                            210   18207687
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 ##### job 
@@ -233,7 +234,7 @@ transcript   38
 #### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
 ##### job 964657
 #### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
-##### job 
+##### job 965075
 #### qsub check_genome_busco.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
 ##### job 964743
 #### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/S_vetulus/inputs_WW_ZQ_noAA.txt
