@@ -53,7 +53,7 @@ export PATH="/afs/crc.nd.edu/user/e/ebrooks5/miniconda3/scripts:$PATH"
 export AUGUSTUS_CONFIG_PATH="/afs/crc.nd.edu/user/e/ebrooks5/miniconda3/envs/augustus_env/config"
 
 # run busco
-busco -i $outputsPath"/complete.genomic.fna" -m "genome" -l "crustacea_odb12" -c 8 -o "genome"
+busco -i $outputsPath"/complete.genomic.fna" -m "genome" -l "crustacea_odb12" -c 8 -o "genome" -f
 
 # status message
 echo "Analysis of $speciesName complete!"

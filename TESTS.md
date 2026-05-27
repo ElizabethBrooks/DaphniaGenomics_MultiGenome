@@ -98,7 +98,7 @@ Applied 1 actions; 0 seqs dropped; 3881308 bps dropped; 0 bps lowercased; 0 bps 
 ##### job 969477
 05/27/2026 04:46:21 [102:3768693]: cgroup/OOM: Killed because of memory limit
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
-##### job
+##### job 972545
 
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
