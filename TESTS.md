@@ -221,7 +221,7 @@ transcript   165
 #### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 ##### job 972505
 #### qsub check_genome_busco.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
-##### job 972536
+##### job 972565
 #### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 ##### job 972507
 #### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
