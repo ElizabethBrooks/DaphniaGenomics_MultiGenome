@@ -91,8 +91,13 @@ transcript   676
  -- Check '/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/ZQ/D_pulicaria_TF22_005_ZQ/nextflow.log' file for details
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ.txt
 ##### job 964983
+TOTAL                              2    3884804
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ.txt
+Applied 1 actions; 0 seqs dropped; 3881308 bps dropped; 0 bps lowercased; 0 bps hardmasked.
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+##### job 969477
+05/27/2026 04:46:21 [102:3768693]: cgroup/OOM: Killed because of memory limit
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
 ##### job
 
 
@@ -129,9 +134,11 @@ transcript   385
  -- Check '/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/ZQ/D_mediterranea_CY_ORK_ZQ/nextflow.log' file for details
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ.txt
 ##### job 964985
-#### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+TOTAL                              4    4543187
+#### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ.txt
+Applied 4 actions; 3 seqs dropped; 4540374 bps dropped; 0 bps lowercased; 2813 bps hardmasked.
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
-##### job
+##### job 969478
 
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
@@ -167,9 +174,11 @@ transcript   69
  -- Check '/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/ZQ/D_retrocurva_BLK_001_ZQ/nextflow.log' file for details
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ.txt
 ##### job 964987
-#### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+TOTAL                              4    4376690
+#### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ.txt
+Applied 4 actions; 4 seqs dropped; 4376690 bps dropped; 0 bps lowercased; 0 bps hardmasked.
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
-##### job
+##### job 969480
 
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ.txt
@@ -177,9 +186,11 @@ transcript   69
  -- Check '/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/ZQ/D_mendotae_67B_ZQ/nextflow.log' file for details
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ.txt
 ##### job 964988
-#### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+TOTAL                              4    4376690
+#### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ.txt
+Applied 2 actions; 2 seqs dropped; 3798691 bps dropped; 0 bps lowercased; 0 bps hardmasked.
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
-##### job 
+##### job 969482
 
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC.txt
@@ -191,7 +202,32 @@ TOTAL                            210   18207687
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC.txt
 Applied 155 actions; 155 seqs dropped; 16184552 bps dropped; 0 bps lowercased; 0 bps hardmasked.
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
-##### job 
+##### job 968875
+CDS          239328
+exon         273400
+gene         18978
+lnc_RNA      4423
+mRNA         26518
+pseudogene   72
+transcript   165
+#### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+##### job 972495
+#### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+##### job 972501
+#### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+##### job 972502
+#### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+##### job 972503
+#### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+##### job 972505
+#### qsub check_genome_busco.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+##### job 972536
+#### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+##### job 972507
+#### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+##### job 972530
+#### qsub functional_emapper.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+##### job 972532
 
 
 ## OrthoFinder orthos for BC - May 2026 <- AGAT outputs

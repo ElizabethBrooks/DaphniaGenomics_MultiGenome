@@ -36,10 +36,10 @@ outputsPath=$(grep "outputs_EGAPx_v0.3.2_ZQ2:" ../"inputData/inputs_annotations.
 outputsPath=$outputsPath"/"$speciesName"/AGAT_v1.4.2"
 
 # create outputs directory
-mkdir $outputsPath"/emapper_v2.1.3"
+mkdir $outputsPath"/emapper_v2.1.13"
 
 # move to the outputs directory
-cd $outputsPath"/emapper_v2.1.3"
+cd $outputsPath"/emapper_v2.1.13"
 
 # activate software environment
 conda activate emapper_env
@@ -51,7 +51,7 @@ echo "Beginning analysis of $speciesName..."
 emapper.py --cpu 8 -i $outputsPath"/longest_protein_cleaned.fa" --itype "proteins" -m "diamond" --evalue 0.00001 --go_evidence non-electronic --tax_scope 6656 --data_dir "/groups/mpfrende/Projects_2026/software/eggnog_db" -o "fa"
 
 # re-format the annotations for topGO
-cat $outputsPath"/emapper_v2.1.3/fa.emapper.annotations" | cut -f1,10 | sed "s/^.*egapxtmp/egapxtmp/g" | sed "s/\-R.\t/\t/g" | grep -v "#" | grep -v "-" > $outputsPath"/emapper_v2.1.3/fa.emapper.annotations.fmt.txt"
+cat $outputsPath"/emapper_v2.1.13/fa.emapper.annotations" | cut -f1,10 | sed "s/^.*egapxtmp/egapxtmp/g" | sed "s/\-R.\t/\t/g" | grep -v "#" | grep -v "-" > $outputsPath"/emapper_v2.1.13/fa.emapper.annotations.fmt.txt"
 
 # status message
 echo "Analysis of $speciesName complete!"
