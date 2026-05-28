@@ -2,6 +2,18 @@
 
 ## EGAPx v0.3.2 for ZQ - May 2026
 
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+##### job 
+
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
+##### job 
+
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+##### job 
+
+
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
 ##### job 947141
 CDS          234614
@@ -50,9 +62,9 @@ transcript   151
 #### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
 ##### job 965081
 #### qsub check_genome_busco.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
-##### job 965092
+##### job 975290
 #### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
-##### job 965093
+##### job 975299
 #### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
 ##### job 965094
 #### qsub functional_emapper.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
@@ -78,9 +90,9 @@ transcript   676
 #### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
 ##### job 965082
 #### qsub check_genome_busco.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
-##### job 965095
+##### job 975318
 #### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
-##### job 965097
+##### job 975332
 #### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
 ##### job 965098
 #### qsub functional_emapper.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
@@ -99,7 +111,31 @@ Applied 1 actions; 0 seqs dropped; 3881308 bps dropped; 0 bps lowercased; 0 bps 
 05/27/2026 04:46:21 [102:3768693]: cgroup/OOM: Killed because of memory limit
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
 ##### job 972545
-
+CDS          213768
+exon         270569
+gene         20615
+lnc_RNA      4531
+mRNA         27465
+pseudogene   1650
+transcript   143
+#### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+##### job 976034
+#### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+##### job 976046
+#### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+##### job 976049
+#### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+##### job 976050
+#### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+##### job 976051
+#### qsub check_genome_busco.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+##### job 
+#### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+##### job 976057
+#### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+##### job 976058
+#### qsub functional_emapper.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+##### job 976059
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
 ##### job 947152
@@ -121,7 +157,7 @@ transcript   385
 #### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
 ##### job 965083
 #### qsub check_genome_busco.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
-##### job 965099
+##### job 975337
 #### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
 ##### job 965100
 #### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
@@ -139,7 +175,31 @@ TOTAL                              4    4543187
 Applied 4 actions; 3 seqs dropped; 4540374 bps dropped; 0 bps lowercased; 2813 bps hardmasked.
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
 ##### job 969478
-
+CDS          209132
+exon         260826
+gene         16809
+lnc_RNA      6971
+mRNA         24329
+pseudogene   276
+transcript   339
+#### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+##### job 975207
+#### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+##### job 975210
+#### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+##### job 975211
+#### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+##### job 975212
+#### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+##### job 975214
+#### qsub check_genome_busco.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+##### job 975250
+#### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+##### job 975239
+#### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+##### job 975217
+#### qsub functional_emapper.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+##### job 975218
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
 ##### job 947154
@@ -179,7 +239,31 @@ TOTAL                              4    4376690
 Applied 4 actions; 4 seqs dropped; 4376690 bps dropped; 0 bps lowercased; 0 bps hardmasked.
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
 ##### job 969480
-
+CDS          210195
+exon         260872
+gene         19470
+lnc_RNA      5010
+mRNA         26277
+pseudogene   899
+transcript   210
+#### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+##### job 974786
+#### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+##### job 974792
+#### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+##### job 974793
+#### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+##### job 974794
+#### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+##### job 974795
+#### qsub check_genome_busco.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+##### job 974801
+#### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+##### job 975340
+#### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+##### job 974804
+#### qsub functional_emapper.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+##### job 974807
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ.txt
 ##### job 947156
@@ -191,7 +275,31 @@ TOTAL                              4    4376690
 Applied 2 actions; 2 seqs dropped; 3798691 bps dropped; 0 bps lowercased; 0 bps hardmasked.
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
 ##### job 969482
-
+CDS          229902
+exon         285711
+gene         20283
+lnc_RNA      4624
+mRNA         29155
+pseudogene   825
+transcript   210
+#### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+##### job 974787
+#### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+##### job 974796
+#### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+##### job 974797
+#### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+##### job 974798
+#### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+##### job 974799
+#### qsub check_genome_busco.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+##### job 974800
+#### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+##### job 974803
+#### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+##### job 974805
+#### qsub functional_emapper.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+##### job 974806
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC.txt
 ##### job 947157
@@ -221,9 +329,11 @@ transcript   165
 #### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 ##### job 972505
 #### qsub check_genome_busco.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
-##### job 972565
+##### job 975339
+BUSCO analysis failed!
 #### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
-##### job 972507
+##### job 975342
+BUSCO analysis failed!
 #### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 ##### job 972530
 #### qsub functional_emapper.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
