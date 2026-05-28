@@ -4,18 +4,20 @@
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 ##### job 976100
-#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 ##### job
 
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
 ##### job 976101
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
+##### job
 
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
 ##### job 976102
-#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
-##### job
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+##### job 
 
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
