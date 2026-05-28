@@ -129,7 +129,7 @@ transcript   143
 #### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
 ##### job 976051
 #### qsub check_genome_busco.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
-##### job 
+##### job 976095
 #### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
 ##### job 976057
 #### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt

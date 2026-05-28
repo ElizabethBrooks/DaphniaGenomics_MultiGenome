@@ -18,6 +18,7 @@ outputs_EGAPx_v0.3.2_scratch: /scratch365/ebrooks5/multi_genome_project/EGAPx_v0
 outputs_EGAPx_v0.3.2_noProteins: /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/Jan2025/WW_ZQ
 outputs_EGAPx_v0.3.2_BC: /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.3.2/April2026/BC
 outputs_EGAPx_v0.3.2_BC2: /groups/mpfrende/Projects_2026/multi_genome/EGAPx_v0.3.2/BC
+outputs_EGAPx_v0.3.2_ZQ2: /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/ZQ
 outputs_EGAPx_v0.3.2_ZQ_B2: /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/ZQ/batch_2
 outputs_EGAPx_v0.3.2_ZQ_V2: /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/ZQ/version_2
 outputs_EGAPx_v0.5_BC: /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.5/April2026/BC
