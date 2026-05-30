@@ -31,7 +31,8 @@ inputsPath=$repoDir"/inputData/"$inputsPath
 #outputsPath=$(grep "outputs_EGAPx_v0.3.2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2://g")
 #outputsPath=$(grep "outputs_EGAPx_v0.3.2_BC2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_BC2://g")
 #outputsPath=$(grep "outputs_EGAPx_v0.3.2_ZQ2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_ZQ2://g")
-outputsPath=$(grep "outputs_EGAPx_v0.3.2_ZQ_V2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_ZQ_V2://g")
+outputsPath=$(grep "outputs_EGAPx_v0.3.2_ZQ_B2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_ZQ_V2://g")
+#outputsPath=$(grep "outputs_EGAPx_v0.3.2_ZQ_V2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_ZQ_V2://g")
 
 # setup outputs path
 outputsPath=$outputsPath"/"$speciesName
@@ -55,6 +56,12 @@ export AUGUSTUS_CONFIG_PATH="/afs/crc.nd.edu/user/e/ebrooks5/miniconda3/envs/aug
 
 # run busco
 busco -i $outputsPath"/complete.genomic.fna" -m "genome" -l "crustacea_odb12" -c 8 -o "genome" -f
+
+# clean up
+rm -r $outputsPath"/BUSCO_v6.0.0/busco_downloads"
+rm -r $outputsPath"/BUSCO_v6.0.0/genome/run_crustacea_odb12/busco_sequences"
+rm -r $outputsPath"/BUSCO_v6.0.0/genome/run_crustacea_odb12/hmmer_output"
+rm -r $outputsPath"/BUSCO_v6.0.0/genome/run_crustacea_odb12/miniprot_output"
 
 # status message
 echo "Analysis of $speciesName complete!"

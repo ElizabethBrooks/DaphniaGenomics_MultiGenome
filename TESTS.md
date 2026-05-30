@@ -1,5 +1,43 @@
 # Analysis & Tests
 
+## BUSCO for ZQ - May 2026
+
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+
 ## EGAPx v0.3.2 for ZQ - May 2026
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
@@ -20,7 +58,7 @@ TOTAL                              3    5400883
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
 Applied 3 actions; 3 seqs dropped; 5400883 bps dropped; 0 bps lowercased; 0 bps hardmasked.
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
-##### job 
+##### job 979131
 
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
