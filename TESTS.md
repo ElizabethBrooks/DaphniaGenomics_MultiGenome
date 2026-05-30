@@ -1,5 +1,30 @@
 # Analysis & Tests
 
+## emapper for ZQ batch 1 - May 2026
+
+qsub functional_emapper.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
+qsub functional_emapper.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+qsub functional_emapper.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+qsub functional_emapper.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+qsub functional_emapper.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+qsub functional_emapper.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
+qsub functional_emapper.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+qsub functional_emapper.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
+qsub functional_emapper.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+qsub functional_emapper.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+qsub functional_emapper.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+qsub functional_emapper.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+qsub functional_emapper.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
+qsub functional_emapper.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
+qsub functional_emapper.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
+qsub functional_emapper.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub functional_emapper.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
+qsub functional_emapper.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
+qsub functional_emapper.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+qsub functional_emapper.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
+qsub functional_emapper.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
+qsub functional_emapper.sh EGAPx_v0.3.2/S_vetulus/inputs_WW.txt
+
 ## BUSCO for ZQ batch 1 - May 2026
 
 qsub check_genome_busco.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
@@ -25,8 +50,239 @@ qsub check_genome_busco.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
 qsub check_genome_busco.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 qsub check_genome_busco.sh EGAPx_v0.3.2/S_vetulus/inputs_WW.txt
 
+Your job 980256 ("check_genome_busco_jobOutput") has been submitted
+Your job 980257 ("check_genome_busco_jobOutput") has been submitted
+Your job 980258 ("check_genome_busco_jobOutput") has been submitted
+Your job 980259 ("check_genome_busco_jobOutput") has been submitted
+Your job 980260 ("check_genome_busco_jobOutput") has been submitted
+Your job 980261 ("check_genome_busco_jobOutput") has been submitted
+Your job 980262 ("check_genome_busco_jobOutput") has been submitted
+Your job 980263 ("check_genome_busco_jobOutput") has been submitted
+Your job 980264 ("check_genome_busco_jobOutput") has been submitted
+Your job 980265 ("check_genome_busco_jobOutput") has been submitted
+Your job 980266 ("check_genome_busco_jobOutput") has been submitted
+Your job 980267 ("check_genome_busco_jobOutput") has been submitted
+Your job 980268 ("check_genome_busco_jobOutput") has been submitted
+Your job 980269 ("check_genome_busco_jobOutput") has been submitted
+Your job 980270 ("check_genome_busco_jobOutput") has been submitted
+Your job 980271 ("check_genome_busco_jobOutput") has been submitted
+Your job 980272 ("check_genome_busco_jobOutput") has been submitted
+Your job 980273 ("check_genome_busco_jobOutput") has been submitted
+Your job 980274 ("check_genome_busco_jobOutput") has been submitted
+Your job 980275 ("check_genome_busco_jobOutput") has been submitted
+Your job 980276 ("check_genome_busco_jobOutput") has been submitted
+Your job 980277 ("check_genome_busco_jobOutput") has been submitted
+
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
+qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/S_vetulus/inputs_WW.txt
+
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
+qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/S_vetulus/inputs_WW.txt
+
+## Formatting for ZQ batch 1 - May 2026
+
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
+qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/S_vetulus/inputs_WW.txt
+
+Your job 980278 ("run_AGAT_jobOutput") has been submitted
+Your job 980279 ("run_AGAT_jobOutput") has been submitted
+Your job 980280 ("run_AGAT_jobOutput") has been submitted
+Your job 980281 ("run_AGAT_jobOutput") has been submitted
+Your job 980282 ("run_AGAT_jobOutput") has been submitted
+Your job 980283 ("run_AGAT_jobOutput") has been submitted
+Your job 980284 ("run_AGAT_jobOutput") has been submitted
+Your job 980285 ("run_AGAT_jobOutput") has been submitted
+Your job 980286 ("run_AGAT_jobOutput") has been submitted
+Your job 980287 ("run_AGAT_jobOutput") has been submitted
+Your job 980288 ("run_AGAT_jobOutput") has been submitted
+Your job 980289 ("run_AGAT_jobOutput") has been submitted
+Your job 980290 ("run_AGAT_jobOutput") has been submitted
+Your job 980291 ("run_AGAT_jobOutput") has been submitted
+Your job 980292 ("run_AGAT_jobOutput") has been submitted
+Your job 980293 ("run_AGAT_jobOutput") has been submitted
+Your job 980294 ("run_AGAT_jobOutput") has been submitted
+Your job 980295 ("run_AGAT_jobOutput") has been submitted
+Your job 980296 ("run_AGAT_jobOutput") has been submitted
+Your job 980297 ("run_AGAT_jobOutput") has been submitted
+Your job 980298 ("run_AGAT_jobOutput") has been submitted
+Your job 980299 ("run_AGAT_jobOutput") has been submitted
+
+qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
+qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
+qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
+qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
+qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
+qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
+qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
+qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
+qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
+qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
+qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/S_vetulus/inputs_WW.txt
 
 
+
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
+qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/S_vetulus/inputs_WW.txt
+
+qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
+qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
+qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
+qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
+qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
+qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
+qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
+qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
+qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
+qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
+qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/S_vetulus/inputs_WW.txt
+
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
+qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/S_vetulus/inputs_WW.txt
+
+Your job 980300 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 980301 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 980302 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 980303 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 980304 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 980305 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 980306 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 980307 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 980308 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 980309 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 980310 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 980311 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 980312 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 980313 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 980314 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 980315 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 980316 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 980317 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 980318 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 980319 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 980320 ("convert_gff_cufflinks_jobOutput") has been submitted
+Your job 980321 ("convert_gff_cufflinks_jobOutput") has been submitted
 
 ## BUSCO for ZQ batch 2 - May 2026
 
