@@ -25,6 +25,29 @@ qsub functional_emapper.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
 qsub functional_emapper.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 qsub functional_emapper.sh EGAPx_v0.3.2/S_vetulus/inputs_WW.txt
 
+Your job 980480 ("functional_emapper_jobOutput") has been submitted
+Your job 980481 ("functional_emapper_jobOutput") has been submitted
+Your job 980482 ("functional_emapper_jobOutput") has been submitted
+Your job 980483 ("functional_emapper_jobOutput") has been submitted
+Your job 980484 ("functional_emapper_jobOutput") has been submitted
+Your job 980485 ("functional_emapper_jobOutput") has been submitted
+Your job 980486 ("functional_emapper_jobOutput") has been submitted
+Your job 980487 ("functional_emapper_jobOutput") has been submitted
+Your job 980488 ("functional_emapper_jobOutput") has been submitted
+Your job 980489 ("functional_emapper_jobOutput") has been submitted
+Your job 980490 ("functional_emapper_jobOutput") has been submitted
+Your job 980491 ("functional_emapper_jobOutput") has been submitted
+Your job 980492 ("functional_emapper_jobOutput") has been submitted
+Your job 980493 ("functional_emapper_jobOutput") has been submitted
+Your job 980494 ("functional_emapper_jobOutput") has been submitted
+Your job 980495 ("functional_emapper_jobOutput") has been submitted
+Your job 980496 ("functional_emapper_jobOutput") has been submitted
+Your job 980497 ("functional_emapper_jobOutput") has been submitted
+Your job 980498 ("functional_emapper_jobOutput") has been submitted
+Your job 980499 ("functional_emapper_jobOutput") has been submitted
+Your job 980500 ("functional_emapper_jobOutput") has been submitted
+Your job 980501 ("functional_emapper_jobOutput") has been submitted
+
 ## BUSCO for ZQ batch 1 - May 2026
 
 qsub check_genome_busco.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
@@ -96,6 +119,29 @@ qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_
 qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/S_vetulus/inputs_WW.txt
 
+Your job 980366 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 980367 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 980368 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 980369 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 980370 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 980371 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 980372 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 980373 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 980374 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 980375 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 980376 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 980377 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 980378 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 980379 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 980380 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 980381 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 980382 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 980383 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 980384 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 980385 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 980386 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 980387 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+
 qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
 qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
 qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
@@ -118,6 +164,29 @@ qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noA
 qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
 qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/S_vetulus/inputs_WW.txt
+
+Your job 980454 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 980455 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 980456 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 980457 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 980458 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 980459 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 980460 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 980461 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 980462 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 980463 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 980464 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 980465 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 980466 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 980467 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 980468 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 980469 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 980470 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 980471 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 980472 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 980473 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 980474 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 980475 ("check_AGAT_proteins_busco_jobOutput") has been submitted
 
 ## Formatting for ZQ batch 1 - May 2026
 
@@ -190,7 +259,28 @@ qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ
 qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/S_vetulus/inputs_WW.txt
 
-
+Your job 980344 ("extract_mRNA_AGAT_jobOutput") has been submitted
+Your job 980345 ("extract_mRNA_AGAT_jobOutput") has been submitted
+Your job 980346 ("extract_mRNA_AGAT_jobOutput") has been submitted
+Your job 980347 ("extract_mRNA_AGAT_jobOutput") has been submitted
+Your job 980348 ("extract_mRNA_AGAT_jobOutput") has been submitted
+Your job 980349 ("extract_mRNA_AGAT_jobOutput") has been submitted
+Your job 980350 ("extract_mRNA_AGAT_jobOutput") has been submitted
+Your job 980351 ("extract_mRNA_AGAT_jobOutput") has been submitted
+Your job 980352 ("extract_mRNA_AGAT_jobOutput") has been submitted
+Your job 980353 ("extract_mRNA_AGAT_jobOutput") has been submitted
+Your job 980354 ("extract_mRNA_AGAT_jobOutput") has been submitted
+Your job 980355 ("extract_mRNA_AGAT_jobOutput") has been submitted
+Your job 980356 ("extract_mRNA_AGAT_jobOutput") has been submitted
+Your job 980357 ("extract_mRNA_AGAT_jobOutput") has been submitted
+Your job 980358 ("extract_mRNA_AGAT_jobOutput") has been submitted
+Your job 980359 ("extract_mRNA_AGAT_jobOutput") has been submitted
+Your job 980360 ("extract_mRNA_AGAT_jobOutput") has been submitted
+Your job 980361 ("extract_mRNA_AGAT_jobOutput") has been submitted
+Your job 980362 ("extract_mRNA_AGAT_jobOutput") has been submitted
+Your job 980363 ("extract_mRNA_AGAT_jobOutput") has been submitted
+Your job 980364 ("extract_mRNA_AGAT_jobOutput") has been submitted
+Your job 980365 ("extract_mRNA_AGAT_jobOutput") has been submitted
 
 qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
 qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
@@ -215,6 +305,29 @@ qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NC
 qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/S_vetulus/inputs_WW.txt
 
+Your job 980388 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 980389 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 980390 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 980391 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 980392 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 980393 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 980394 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 980395 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 980396 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 980397 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 980398 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 980399 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 980400 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 980401 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 980402 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 980403 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 980404 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 980405 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 980406 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 980407 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 980408 ("extract_prot_AGAT_jobOutput") has been submitted
+Your job 980409 ("extract_prot_AGAT_jobOutput") has been submitted
+
 qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
 qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
 qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
@@ -237,6 +350,29 @@ qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK
 qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
 qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/S_vetulus/inputs_WW.txt
+
+Your job 980432 ("extract_clean_prot_AGAT_jobOutput") has been submitted
+Your job 980433 ("extract_clean_prot_AGAT_jobOutput") has been submitted
+Your job 980434 ("extract_clean_prot_AGAT_jobOutput") has been submitted
+Your job 980435 ("extract_clean_prot_AGAT_jobOutput") has been submitted
+Your job 980436 ("extract_clean_prot_AGAT_jobOutput") has been submitted
+Your job 980437 ("extract_clean_prot_AGAT_jobOutput") has been submitted
+Your job 980438 ("extract_clean_prot_AGAT_jobOutput") has been submitted
+Your job 980439 ("extract_clean_prot_AGAT_jobOutput") has been submitted
+Your job 980440 ("extract_clean_prot_AGAT_jobOutput") has been submitted
+Your job 980441 ("extract_clean_prot_AGAT_jobOutput") has been submitted
+Your job 980442 ("extract_clean_prot_AGAT_jobOutput") has been submitted
+Your job 980443 ("extract_clean_prot_AGAT_jobOutput") has been submitted
+Your job 980444 ("extract_clean_prot_AGAT_jobOutput") has been submitted
+Your job 980445 ("extract_clean_prot_AGAT_jobOutput") has been submitted
+Your job 980446 ("extract_clean_prot_AGAT_jobOutput") has been submitted
+Your job 980447 ("extract_clean_prot_AGAT_jobOutput") has been submitted
+Your job 980448 ("extract_clean_prot_AGAT_jobOutput") has been submitted
+Your job 980449 ("extract_clean_prot_AGAT_jobOutput") has been submitted
+Your job 980450 ("extract_clean_prot_AGAT_jobOutput") has been submitted
+Your job 980451 ("extract_clean_prot_AGAT_jobOutput") has been submitted
+Your job 980452 ("extract_clean_prot_AGAT_jobOutput") has been submitted
+Your job 980453 ("extract_clean_prot_AGAT_jobOutput") has been submitted
 
 qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
 qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
@@ -361,7 +497,31 @@ Your job 979854 ("check_AGAT_proteins_busco_jobOutput") has been submitted
 ##### job 976648
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 ##### job 978716
-
+CDS          185708
+exon         227702
+gene         19221
+lnc_RNA      5250
+mRNA         23270
+pseudogene   1041
+transcript   182
+#### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+##### job 
+#### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+##### job 
+#### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+##### job 
+#### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+##### job 
+#### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+##### job 
+#### qsub check_genome_busco.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+##### job 
+#### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+##### job 
+#### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+##### job 
+#### qsub functional_emapper.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+##### job 
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
 ##### job 976101
@@ -374,7 +534,31 @@ TOTAL                              3    5400883
 Applied 3 actions; 3 seqs dropped; 5400883 bps dropped; 0 bps lowercased; 0 bps hardmasked.
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
 ##### job 979131
-
+CDS          200527
+exon         270425
+gene         16774
+lnc_RNA      6119
+mRNA         24068
+pseudogene   227
+transcript   289
+#### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
+##### job 
+#### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
+##### job 
+#### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
+##### job 
+#### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
+##### job 
+#### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
+##### job 
+#### qsub check_genome_busco.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
+##### job 
+#### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
+##### job 
+#### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
+##### job 
+#### qsub functional_emapper.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
+##### job 
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
 ##### job 976102
