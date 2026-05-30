@@ -1,0 +1,5 @@
+genome: /afs/crc.nd.edu/group/pfrenderlab/carson/Daphnia_raw_data_WW/D.pulex_CON21.masked.fasta
+taxid: 6669
+reads:
+  - /afs/crc.nd.edu/group/pfrenderlab/carson/Daphnia_raw_data_WW/RNA/BEL2.R1_001.fastq
+  - /afs/crc.nd.edu/group/pfrenderlab/carson/Daphnia_raw_data_WW/RNA/BEL2.R2_001.fastq

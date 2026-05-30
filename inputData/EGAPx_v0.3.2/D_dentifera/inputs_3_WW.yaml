@@ -1,0 +1,5 @@
+genome: /afs/crc.nd.edu/group/pfrenderlab/carson/Daphnia_raw_data_WW/D.dentifera_3.0.masked.fasta
+taxid: 42852
+short_reads:
+  - /afs/crc.nd.edu/group/pfrenderlab/carson/Daphnia_raw_data_WW/RNA/dentifera.R1_001.fastq
+  - /afs/crc.nd.edu/group/pfrenderlab/carson/Daphnia_raw_data_WW/RNA/dentifera.R2_001.fastq

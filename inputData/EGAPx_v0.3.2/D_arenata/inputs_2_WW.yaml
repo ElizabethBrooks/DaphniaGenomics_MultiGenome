@@ -1,0 +1,5 @@
+genome: /afs/crc.nd.edu/group/pfrenderlab/carson/Daphnia_raw_data_WW/D.arenata.2.0.masked.fasta
+taxid: 121628
+reads:
+  - /afs/crc.nd.edu/group/pfrenderlab/carson/Daphnia_raw_data_WW/RNA/arenata.R1_001.fastq
+  - /afs/crc.nd.edu/group/pfrenderlab/carson/Daphnia_raw_data_WW/RNA/arenata.R2_001.fastq

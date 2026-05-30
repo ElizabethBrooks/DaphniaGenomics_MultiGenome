@@ -1,8 +1,35 @@
 # Analysis & Tests
 
-## BUSCO for ZQ - May 2026
+## BUSCO for ZQ batch 1 - May 2026
 
-qsub check_genome_busco.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
+qsub check_genome_busco.sh EGAPx_v0.3.2/S_vetulus/inputs_WW.txt
+
+
+
+
+## BUSCO for ZQ batch 2 - May 2026
+
 qsub check_genome_busco.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
 qsub check_genome_busco.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
 qsub check_genome_busco.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
@@ -14,7 +41,17 @@ qsub check_genome_busco.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
 qsub check_genome_busco.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
 qsub check_genome_busco.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 
-qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+Your job 979824 ("check_genome_busco_jobOutput") has been submitted
+Your job 979825 ("check_genome_busco_jobOutput") has been submitted
+Your job 979826 ("check_genome_busco_jobOutput") has been submitted
+Your job 979827 ("check_genome_busco_jobOutput") has been submitted
+Your job 979828 ("check_genome_busco_jobOutput") has been submitted
+Your job 979829 ("check_genome_busco_jobOutput") has been submitted
+Your job 979830 ("check_genome_busco_jobOutput") has been submitted
+Your job 979831 ("check_genome_busco_jobOutput") has been submitted
+Your job 979832 ("check_genome_busco_jobOutput") has been submitted
+Your job 979833 ("check_genome_busco_jobOutput") has been submitted
+
 qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
 qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
 qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
@@ -26,7 +63,17 @@ qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_c
 qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
 qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 
-qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+Your job 979834 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 979835 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 979836 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 979837 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 979838 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 979839 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 979840 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 979841 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 979842 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+Your job 979843 ("check_EGAPx_proteins_busco_jobOutput") has been submitted
+
 qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
 qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
 qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
@@ -37,6 +84,18 @@ qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.t
 qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
 qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
 qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+
+Your job 979845 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 979846 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 979847 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 979848 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 979849 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 979850 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 979851 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 979852 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 979853 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+Your job 979854 ("check_AGAT_proteins_busco_jobOutput") has been submitted
+
 
 ## EGAPx v0.3.2 for ZQ - May 2026
 
