@@ -1,0 +1,2 @@
+species: D_longicephala_AUS_NCBI
+inputs_EGAPx: EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.yaml
