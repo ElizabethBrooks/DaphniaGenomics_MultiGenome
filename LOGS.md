@@ -1,6 +1,12 @@
 # Analysis & Tests
 
-## NCBI - June 2026
+## other genomes - June 2026
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+##### job 
+
+
+## NCBI genomes - June 2026
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
 ##### job 1010000
@@ -27,11 +33,10 @@
 ##### job 1010050
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
-##### job 
+##### job 1011457
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
-##### job 
-
+##### job 1011462
 
 
 ## version 2 for ZQ - June 2026

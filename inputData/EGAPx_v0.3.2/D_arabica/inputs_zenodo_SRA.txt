@@ -1,0 +1,2 @@
+species: inputs_zenodo_SRA
+inputs_EGAPx: EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.yaml
