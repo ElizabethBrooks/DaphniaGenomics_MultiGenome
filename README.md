@@ -12,12 +12,22 @@ While the <i>local scripts</i> are useful for testing the EGAPx software, the <i
 Note that singularity needs to be installed on your system. The ND CRC servers already have singularity available.
 
 ### Steps
-1. Install, configure, and test the EGAPx software.
-2. Format any input files, such as the reads fasta files or yaml guide file.
-3. Use FCS-GX to screen and clean genome fasta files, if necessary
+1. Install, configure, and test the EGAPx software (see the <i>install</i> directory).
+2. Format any input files, such as the reads fasta files or yaml guide file (see the <i>formatting</i> directory).
+3. Use FCS-GX to screen (screen_genome_FCS_GX.sh) and clean (clean_genome_FCS_GX.sh) genome fasta files, if necessary
 	- EGAPx can fail to run on genomes that are contaminated.
-4. Run EGAPx using as many cores as possible and with sufficient data storage. 
+4. Run EGAPx (run_EGAPx_v0.3.2_HPC.sh) using as many cores as possible and with sufficient data storage. 
 	- This will depend on the size and number of input files, for example.
+	- We found that 15 cores is sufficient and additional cores are not efficiently utilized, and do not improve performance.
+5. Run AGAT (keep_longest_isoforms_AGAT) to keep the longest isoforms
+6. Run AGAT (extract_longest_transcripts_AGAT.sh) to extract the longest isoforms
+7. Run AGAT (extract_longest_proteins_AGAT.sh) to extract the longest proteins
+8. Run AGAT (extract_longest_proteins_cleaned_AGAT.sh) to extract a cleaned version of the longest proteins file, which is ready for downstream analysis
+9. Run cufflinks (convert_gff_gtf_cufflinks.sh) to convert the AGAT curated gff to gtf for downstream analysis
+10. Run BUSCO (check_genome_busco.sh) to check the completeness of the genome
+11. Run BUSCO (check_EGAPx_proteins_busco.sh) to check the completeness of the EGAPx proteins
+12. Run BUSCO (check_AGAT_proteins_busco.sh) to check the completeness of the AGAT proteins
+13. Run emapper (functional_emapper.sh) to generate annotations, including GO terms
 
 ### Installation
 The scripts in the <b>install</b> directory can be used to install EGAPx and its dependencies. Make sure to use the script with the installation procedure appropriate for the version of EGAPx that you are using. 

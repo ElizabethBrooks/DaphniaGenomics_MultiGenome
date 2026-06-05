@@ -1,5 +1,28 @@
 # Analysis & Tests
 
+## version 2 for ZQ - June 2026
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+##### job 
+#### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+##### job 
+#### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+##### job 
+#### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+##### job 
+#### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+##### job 
+#### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+##### job 
+#### qsub check_genome_busco.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+##### job 
+#### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+##### job 
+#### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+##### job 
+#### qsub functional_emapper.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+##### job 
+
 ## emapper for ZQ batch 1 - May 2026
 
 qsub functional_emapper.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
@@ -505,23 +528,23 @@ mRNA         23270
 pseudogene   1041
 transcript   182
 #### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
-##### job 
+##### job 980543
 #### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
-##### job 
+##### job 980567
 #### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
-##### job 
+##### job 980578
 #### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
-##### job 
+##### job 980593
 #### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
-##### job 
+##### job 980601
 #### qsub check_genome_busco.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
-##### job 
+##### job 980602
 #### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
-##### job 
+##### job 980608
 #### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
-##### job 
+##### job 980615
 #### qsub functional_emapper.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
-##### job 
+##### job 980620
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
 ##### job 976101
@@ -542,23 +565,23 @@ mRNA         24068
 pseudogene   227
 transcript   289
 #### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
-##### job 
+##### job 980545
 #### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
-##### job 
+##### job 980570
 #### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
-##### job 
+##### job 980579
 #### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
-##### job 
+##### job 980598
 #### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
-##### job 
+##### job 980600
 #### qsub check_genome_busco.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
-##### job 
+##### job 980603
 #### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
-##### job 
+##### job 980609
 #### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
-##### job 
+##### job 980616
 #### qsub functional_emapper.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
-##### job 
+##### job 980619
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
 ##### job 976102
@@ -582,11 +605,11 @@ transcript   218
 #### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
 ##### job 978701
 #### qsub check_genome_busco.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
-##### job 978720
+##### job 980604
 #### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
-##### job 978746
+##### job 980614
 #### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
-##### job 978781
+##### job 980618
 #### qsub functional_emapper.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
 ##### job 978782
 
