@@ -1,0 +1,4 @@
+genome: /groups/mpfrende/Projects_2026/multi_genome/data/NCBI_genomes/Branchinecta_sandiegonensis.fna
+taxid: 577406
+reads:
+  - SRP512976

@@ -1,0 +1,2 @@
+species: Chydorus_sphaericus_JWP1_NCBI
+inputs_EGAPx: EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.yaml
