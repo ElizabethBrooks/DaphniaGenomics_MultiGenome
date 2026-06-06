@@ -1,0 +1,5 @@
+genome: /groups/mpfrende/Projects_2026/multi_genome/data/CNGBdb_data/D.dubium.genome.chr.v20210728.fasta
+taxid: 743458
+reads:
+  - /groups/mpfrende/Projects_2026/multi_genome/data/CNGBdb_data/Clean_Ddubium_1.fq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/CNGBdb_data/Clean_Ddubium_2.fq.gz

@@ -1,0 +1,2 @@
+species: Diaphanosoma_dubium_CNGBdb
+inputs_EGAPx: EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.yaml
