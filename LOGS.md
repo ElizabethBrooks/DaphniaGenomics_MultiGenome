@@ -7,27 +7,30 @@
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 ##### job 1010007
-ERROR
+Set in error state
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+##### job 1021263
+sorting job failed for SRR24520090
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 ##### job
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI.txt
 ##### job 1010020
-ERROR
+Set in error state
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI.txt
-##### job
+##### job 1021264
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 ##### job 1010025
-ERROR
+Set in error state
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
-##### job
+##### job 1021265
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
 ##### job 1010031
-ERROR
+Set in error state
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
-##### job
+##### job 1021266
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 ##### job 1010037
@@ -43,24 +46,33 @@ ERROR
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
 ##### job 1013562
-ERROR
+Set in error state
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
-##### job
+##### job 1021269
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 ##### job 1013576
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
-##### job 
+##### job 1021272
 
 
 ## version 2 for ZQ - June 2026
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
 ##### job 1007556
-ERROR
+Set in error state
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
 ##### job 1020749
+CDS          199616
+exon         231536
+gene         17250
+lnc_RNA      3424
+mRNA         24106
+pseudogene   133
+transcript   126
+#### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+##### job 
 #### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
 ##### job 
 #### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
