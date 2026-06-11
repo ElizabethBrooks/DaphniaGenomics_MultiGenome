@@ -5,62 +5,54 @@
 #$ -N fastqc_MultiGenome_jobOutput
 
 # Script to perform fastqc quality control of paired end reads
-# Usage: qsub fastqc_shortReads.sh inputsFile
-# Usage Ex: qsub fastqc_shortReads.sh shortReads/inputPaths_D_melanica.txt CON6 raw
-## job: 1803329
-# Usage Ex: qsub fastqc_shortReads.sh shortReads/inputPaths_D_melanica.txt CON6 trimmed
-## job: 1804238
+# usage: qsub fastqc_shortReads.sh inputsFile
+# usage Ex: qsub fastqc_shortReads.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC.txt
 
-# Required modules for ND CRC servers
+# required modules for ND CRC servers
 module load bio
 
-# retrieve input arguments
-inputsFile=$1
-inputGenotype=$2
-inputsType=$3
+# retrieve input file
+inputFile=$1
 
-# Retrieve paired reads absolute path for alignment
-readPath=$(grep "pairedReads:" ../"inputData/"$inputsFile | tr -d " " | sed "s/pairedReads://g")
-# Retrieve analysis outputs absolute path
-outputsPath=$(grep "outputs:" ../"inputData/"$inputsFile | tr -d " " | sed "s/outputs://g")
+# set input species
+inputSpecies=$(grep "species:" ../"inputData/"$inputFile | tr -d " " | sed "s/species://g")
 
-# Make a new directory for project analysis
-projectDir=$(basename $readPath)
-outputsPath=$outputsPath"/"$projectDir
-#mkdir $outputsPath
+# setup yaml path
+inputYaml=$(echo $inputFile | sed "s/\.txt/.yaml/g")
 
-# check inputs type
-if [[ $inputsType == "trimmed" ]]; then
-	# set the directory for inputs
-	readPath=$outputsPath"/trimmed"
-	# set the directory for analysis
-	qcOut=$outputsPath"/qc_trimmed_"$inputGenotype
-elif [[ $inputsType == "raw" ]]; then
-	# set the directory for analysis
-	qcOut=$outputsPath"/qc_raw_"$inputGenotype
-fi
+# retrieve the input RNA
+inputRNA=$(grep -A1 "reads:" ../"inputData/"$inputYaml | tail -1 | sed "s/^.*-\ //g")
+inputRNA=$(dirname $inputRNA)
 
-# Make a new directory for analysis
-mkdir $qcOut
-# Check if the folder already exists
+# set the outputs directory
+outputsPath="/scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNAseq/pooled_annotation_RNA/QC"
+
+# create the outputs directory
+mkdir $outputsPath
+
+# set the outputs directory
+outputsPath="/scratch365/ebrooks5/multi_genome_project/data/Daphnia_RNAseq/pooled_annotation_RNA/QC/"$inputSpecies
+
+# make a new directory for analysis
+mkdir $outputsPath
+
+# check if the folder already exists
 if [ $? -ne 0 ]; then
-	echo "The $qcOut directory already exsists... please remove before proceeding."
+	echo "The $outputsPath directory already exsists... please remove before proceeding."
 	exit 1
 fi
-# Move to the new directory
-cd $qcOut
 
-# Name version output file
-versionFile=$qcOut"/software_version_summary.txt"
+# move to the new directory
+cd $outputsPath
 
-# Report software version
+# name version output file
+versionFile=$outputsPath"/software_version_summary.txt"
+
+# report software version
 fastqc -version > $versionFile
 
 # perform QC
-fastqc $readPath"/"$inputGenotype*\.f*q.gz -o $qcOut
+fastqc $inputRNA"/"* -o $outputsPath
 
-# run multiqc
-multiqc $qcOut -o $qcOut -n "multiqc_raw"
-
-# Print status message
+# print status message
 echo "Analysis complete!"

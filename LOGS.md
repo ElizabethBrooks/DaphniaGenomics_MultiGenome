@@ -72,25 +72,25 @@ mRNA         24106
 pseudogene   133
 transcript   126
 #### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-##### job 
+##### job 1028506
 #### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-##### job 
+##### job 1028515
 #### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-##### job 
+##### job 1028518
 #### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-##### job 
+##### job 1028519
 #### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-##### job 
+##### job 1028520
 #### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-##### job 
+##### job 1028521
 #### qsub check_genome_busco.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-##### job 
+##### job 1028523
 #### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-##### job 
+##### job 1028524
 #### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-##### job 
+##### job 1028526
 #### qsub functional_emapper.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-##### job 
+##### job 1028530
 
 ## emapper for ZQ batch 1 - May 2026
 
