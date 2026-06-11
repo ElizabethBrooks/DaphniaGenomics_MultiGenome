@@ -23,7 +23,7 @@ outputs_EGAPx_v0.3.2_ZQ_B1: /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2
 outputs_EGAPx_v0.3.2_ZQ_B2: /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/ZQ/batch_2
 outputs_EGAPx_v0.3.2_ZQ_V2: /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/ZQ/version_2
 outputs_EGAPx_v0.3.2_NCBI: /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/NCBI
-outputs_EGAPx_v0.3.2_zenodo: /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/zenodo
+outputs_EGAPx_v0.3.2_zenodo: /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/NCBI_zenodo_CNGBdb
 outputs_EGAPx_v0.3.2_CNGBdb: /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/CNGBdb
 outputs_EGAPx_v0.5_BC: /scratch365/ebrooks5/multi_genome_project/EGAPx_v0.5/April2026/BC
 outputs_BRAKER3: /scratch365/ebrooks5/multi_genome_project/BRAKER3
