@@ -12,25 +12,34 @@ Set in error state
 ##### job 1021263
 sorting job failed for SRR24520090
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
-##### job
+##### job 1054617
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI.txt
 ##### job 1010020
 Set in error state
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI.txt
 ##### job 1021264
+Plus 62 more processes waiting for tasks…
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI.txt
+##### job 1054621
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 ##### job 1010025
 Set in error state
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 ##### job 1021265
+Plus 62 more processes waiting for tasks…
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+##### job 1054629
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
 ##### job 1010031
 Set in error state
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
 ##### job 1021266
+Plus 62 more processes waiting for tasks…
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+##### job 1054631
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 ##### job 1010037
@@ -49,12 +58,21 @@ Set in error state
 Set in error state
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
 ##### job 1021269
+Plus 62 more processes waiting for tasks…
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
+##### job 1054632
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 ##### job 1013576
+Plus 62 more processes waiting for tasks…
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+##### job 1054634
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 ##### job 1021272
+Plus 59 more processes waiting for tasks…
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+##### job 1054639
 
 
 ## version 2 for ZQ - June 2026
