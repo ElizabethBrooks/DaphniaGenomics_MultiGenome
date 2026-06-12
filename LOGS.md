@@ -13,6 +13,10 @@ Set in error state
 sorting job failed for SRR24520090
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 ##### job 1054617
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+##### job 1059616
+
+#### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI.txt
 ##### job 1010020
@@ -65,15 +69,41 @@ Plus 62 more processes waiting for tasks…
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 ##### job 1013576
 Plus 62 more processes waiting for tasks…
-#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
-##### job 1054634
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+##### job 1054710
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 ##### job 1021272
 Plus 59 more processes waiting for tasks…
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 ##### job 1054639
-
+CDS          56981
+V_gene_segment 1
+exon         57837
+gene         10134
+lnc_RNA      197
+mRNA         9957
+pseudogene   52
+#### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+##### job 
+#### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+##### job 
+#### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+##### job 
+#### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+##### job 
+#### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+##### job 
+#### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+##### job 
+#### qsub check_genome_busco.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+##### job 
+#### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+##### job 
+#### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+##### job 
+#### qsub functional_emapper.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+##### job
 
 ## version 2 for ZQ - June 2026
 
@@ -3739,6 +3769,170 @@ typo in yaml file
 ##### job 915292 
 SUCCEEDED
 
+# KAP4_KAP106
+# usage: qsub download_SRA_reads_EGAPx.sh species ID
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP4_KAP106 DRP002580
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP4_KAP106 ERP110882
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP4_KAP106 SRP068113
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP4_KAP106 SRP102491
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP4_KAP106 SRP134187
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP4_KAP106 SRP135935
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP4_KAP106 SRP151839
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP4_KAP106 SRP249545
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP4_KAP106 SRP253589
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP4_KAP106 SRP270794
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP4_KAP106 SRP300422
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP4_KAP106 SRP351713
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP4_KAP106 SRR17282827
+## jobs 798391, 798392, 798393, 798394, 798395, 798396, 798397, 798398, 798399, 798400, 798401, 798402, 798403
+# NIES
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP057045
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP113320
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP142416
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP151236
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP161660
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP168044
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP173886
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP256437
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP259943
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP262286
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP262288
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP278637
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP282875
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP326419
+# usage ex: qsub download_SRA_reads_EGAPx.sh NIES SRP330012
+## jobs 798404, 798405, 798407, 798409, 798410, 798411, 798412, 798413, 798414, 798415, 798416, 798417, 798418, 798419, 798420
+# CSIRO-1
+# usage ex: qsub download_SRA_reads_EGAPx.sh CSIRO_1 DRP010011
+# usage ex: qsub download_SRA_reads_EGAPx.sh CSIRO_1 SRP151839
+# usage ex: qsub download_SRA_reads_EGAPx.sh CSIRO_1 SRP161660
+# usage ex: qsub download_SRA_reads_EGAPx.sh CSIRO_1 SRP228147
+# usage ex: qsub download_SRA_reads_EGAPx.sh CSIRO_1 SRP259943
+# usage ex: qsub download_SRA_reads_EGAPx.sh CSIRO_1 SRP278637
+# usage ex: qsub download_SRA_reads_EGAPx.sh CSIRO_1 SRP364750
+# usage ex: qsub download_SRA_reads_EGAPx.sh CSIRO_1 SRP420986
+# usage ex: qsub download_SRA_reads_EGAPx.sh CSIRO_1 SRP421109
+# usage ex: qsub download_SRA_reads_EGAPx.sh CSIRO_1 SRP444802
+# jobs 853675, 853676, 853677, 853678, 853679, 853680, 853681, 853682, 853683, 853684
+# Xinb3
+# usage ex: qsub download_SRA_reads_EGAPx.sh Xinb3 SRP064876
+# job 853986
+# LRV0_1
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138010
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138011
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138012
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138013
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138014
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138015
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138016
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138017
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138018
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138019
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138020
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138021
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138022
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138023
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138024
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138025
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138026
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138027
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138028
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138029
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138030
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138031
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138032
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138033
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138034
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138035
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138036
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138037
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138038
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138039
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138040
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138041
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138042
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138043
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138044
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138045
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138046
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138047
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138048
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138049
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138050
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138051
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138052
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138053
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138054
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138055
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138056
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138057
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138058
+# usage ex: qsub download_SRA_reads_EGAPx.sh LRV0_1 SRR18138059
+# jobs 854123 to 854172
+# SK
+# usage ex: qsub download_SRA_reads_EGAPx.sh SK ERP107028
+# usage ex: qsub download_SRA_reads_EGAPx.sh SK SRP057045
+# usage ex: qsub download_SRA_reads_EGAPx.sh SK SRP113320
+# usage ex: qsub download_SRA_reads_EGAPx.sh SK SRP142416
+# usage ex: qsub download_SRA_reads_EGAPx.sh SK SRP151236
+# usage ex: qsub download_SRA_reads_EGAPx.sh SK SRP161660
+# usage ex: qsub download_SRA_reads_EGAPx.sh SK SRP168044
+# usage ex: qsub download_SRA_reads_EGAPx.sh SK SRP173886
+# usage ex: qsub download_SRA_reads_EGAPx.sh SK SRP249341
+# jobs 854076 to 854084
+# NMP 
+# NFL92
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558595
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558594
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558607
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558606
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558599
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558598
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558597
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558596
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558601
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558600
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558593
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558592
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558605
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558604
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558603
+# usage ex: qsub download_SRA_reads_EGAPx.sh NFL92 SRR25558602
+# KAP106
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554328
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554327
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554340
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554339
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554332
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554331
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554330
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554329
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554334
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554333
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554326
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554325
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554338
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554337
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554336
+# usage ex: qsub download_SRA_reads_EGAPx.sh KAP106 SRR25554335
+# TEX58
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551834
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551833
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551846
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551845
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551838
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551837
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551836
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551835
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551840
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551839
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551832
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551831
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551844
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551843
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551842
+# usage ex: qsub download_SRA_reads_EGAPx.sh TEX58 SRR25551841
+# NMP: jobs 1803905 to 1803952
 
 ## EGAPx v0.1
 
