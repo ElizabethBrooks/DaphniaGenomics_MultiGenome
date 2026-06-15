@@ -4,6 +4,8 @@
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
 ##### job 1010000
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
+##### job 
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 ##### job 1010007
@@ -13,10 +15,10 @@ Set in error state
 sorting job failed for SRR24520090
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 ##### job 1054617
+error [java.lang.InterruptedException]: java.lang.InterruptedException
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 ##### job 1059616
-
-#### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+TOTAL                              0          0
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI.txt
 ##### job 1010020
@@ -26,6 +28,11 @@ Set in error state
 Plus 62 more processes waiting for tasks…
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI.txt
 ##### job 1054621
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI.txt
+##### job 1059649
+TOTAL                             25    4163945
+#### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI.txt
+##### job 1097732
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 ##### job 1010025
@@ -35,6 +42,9 @@ Set in error state
 Plus 62 more processes waiting for tasks…
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 ##### job 1054629
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+##### job 1059650
+TOTAL                              0          0
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
 ##### job 1010031
@@ -44,18 +54,33 @@ Set in error state
 Plus 62 more processes waiting for tasks…
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
 ##### job 1054631
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+##### job 1059652
+TOTAL                              0          0
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 ##### job 1010037
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+##### job 1059654
+TOTAL                              0          0
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
 ##### job 1010044
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+##### job 1059659
+TOTAL                              0          0
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 ##### job 1010050
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+##### job 1059660
+TOTAL                              0          0
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 ##### job 1011457
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
+##### job 1059662
+TOTAL                              0          0
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
 ##### job 1013562
@@ -65,12 +90,20 @@ Set in error state
 Plus 62 more processes waiting for tasks…
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
 ##### job 1054632
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
+##### job 1059663
+TOTAL                              0          0
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 ##### job 1013576
 Plus 62 more processes waiting for tasks…
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 ##### job 1054710
+Jun-12 10:44:45.243 [TaskFinalizer-1] DEBUG nextflow.Session - Session aborted -- Cause: Process `egapx:rnaseq_short_plane:star:run_star (6)` terminated with an error exit status (3)
+error [java.lang.InterruptedException]: java.lang.InterruptedException
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+##### job 1059666
+TOTAL                              0          0
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 ##### job 1021272
@@ -85,25 +118,26 @@ lnc_RNA      197
 mRNA         9957
 pseudogene   52
 #### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
-##### job 
+##### job 1059627
 #### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
-##### job 
+##### job 1059628
 #### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
-##### job 
+##### job 1059636
 #### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
-##### job 
+##### job 1059637
 #### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
-##### job 
+##### job 1059639
 #### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
-##### job 
+##### job 1059640
 #### qsub check_genome_busco.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
-##### job 
+##### job 1059644
 #### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
-##### job 
+##### job 1059667
 #### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
-##### job 
+##### job 1059669
 #### qsub functional_emapper.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
-##### job
+##### job 1059670
+
 
 ## version 2 for ZQ - June 2026
 
