@@ -1,0 +1,2 @@
+species: Eulimnadia_texana_JT4_NCBI_clean
+inputs_EGAPx: EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.yaml

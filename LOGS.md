@@ -36,8 +36,10 @@ Plus 62 more processes waiting for tasks…
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI.txt
 ##### job 1059649
 TOTAL                             25    4163945
-#### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI.txt
-##### job 1097732
+#### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI.txt
+Applied 23 actions; 23 seqs dropped; 4137756 bps dropped; 0 bps lowercased; 0 bps hardmasked.
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+##### job
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 ##### job 1010025
