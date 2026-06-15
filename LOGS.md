@@ -4,8 +4,12 @@
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
 ##### job 1010000
+==> run_EGAPx_v0.3.2_jobOutput.po1010000 <==
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
-##### job 
+##### job 1097737
+TOTAL                              0          0
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
+##### job
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 ##### job 1010007
@@ -28,6 +32,7 @@ Set in error state
 Plus 62 more processes waiting for tasks…
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI.txt
 ##### job 1054621
+Plus 62 more processes waiting for tasks…
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI.txt
 ##### job 1059649
 TOTAL                             25    4163945
@@ -60,24 +65,28 @@ TOTAL                              0          0
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 ##### job 1010037
+Beginning analysis of Artemia_tibetiana_Qi_NCBI...
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 ##### job 1059654
 TOTAL                              0          0
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
 ##### job 1010044
+Plus 62 more processes waiting for tasks…
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
 ##### job 1059659
 TOTAL                              0          0
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 ##### job 1010050
+Plus 31 more processes waiting for tasks…
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 ##### job 1059660
 TOTAL                              0          0
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 ##### job 1011457
+Plus 37 more processes waiting for tasks…
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 ##### job 1059662
 TOTAL                              0          0
