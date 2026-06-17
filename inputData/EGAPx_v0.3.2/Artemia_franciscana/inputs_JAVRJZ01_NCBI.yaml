@@ -1,8 +1,6 @@
 genome: /groups/mpfrende/Projects_2026/multi_genome/data/NCBI_genomes/Artemia_franciscana.fna
 taxid: 6661
 reads:
-  - SRP139396
-  - SRP187005
   - SRP274490
   - SRP383959
   - SRP405011
