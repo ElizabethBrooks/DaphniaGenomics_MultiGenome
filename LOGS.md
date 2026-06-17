@@ -141,7 +141,7 @@ error [java.lang.InterruptedException]: java.lang.InterruptedException
 ##### job 1059666
 TOTAL                              0          0
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
-##### job
+##### job 1104151
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 ##### job 1021272
