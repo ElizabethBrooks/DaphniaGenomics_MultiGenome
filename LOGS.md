@@ -179,6 +179,29 @@ pseudogene   52
 
 ## version 2 for ZQ - June 2026
 
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+##### job 
+#### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+##### job 
+#### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+##### job 
+#### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+##### job 
+#### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+##### job 
+#### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+##### job 
+#### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+##### job 
+#### qsub check_genome_busco.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+##### job 
+#### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+##### job 
+#### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+##### job 
+#### qsub functional_emapper.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+##### job
+
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
 ##### job 1007556
 Set in error state
