@@ -230,7 +230,7 @@ mRNA         28251
 pseudogene   361
 transcript   607
 #### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
-##### job 
+##### job 1105692
 #### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 ##### job 
 #### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
