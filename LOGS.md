@@ -234,13 +234,13 @@ transcript   607
 #### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 ##### job 1105910
 #### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
-##### job 
+##### job 1105921
 #### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
-##### job 
+##### job 1105922
 #### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
-##### job 
+##### job 1105923
 #### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
-##### job 
+##### job 1105925
 #### qsub check_genome_busco.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 ##### job 
 #### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
