@@ -28,6 +28,33 @@ error [java.lang.InterruptedException]: java.lang.InterruptedException
 TOTAL                              0          0
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 ##### job 1104161
+CDS          173216
+exon         190209
+gene         21500
+lnc_RNA      3209
+mRNA         21883
+pseudogene   129
+transcript   9
+#### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+##### job 
+#### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+##### job 
+#### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+##### job 
+#### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+##### job 
+#### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+##### job 
+#### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+##### job 
+#### qsub check_genome_busco.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+##### job 
+#### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+##### job 
+#### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+##### job 
+#### qsub functional_emapper.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+##### job
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI.txt
 ##### job 1010020
@@ -105,6 +132,32 @@ Plus 37 more processes waiting for tasks…
 TOTAL                              0          0
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 ##### job 1104154
+CDS          79033
+exon         81919
+gene         9874
+lnc_RNA      1102
+mRNA         8865
+pseudogene   86
+#### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
+##### job 
+#### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
+##### job 
+#### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
+##### job 
+#### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
+##### job 
+#### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
+##### job 
+#### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
+##### job 
+#### qsub check_genome_busco.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
+##### job 
+#### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
+##### job 
+#### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
+##### job 
+#### qsub functional_emapper.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
+##### job
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 ##### job 1010050
@@ -114,6 +167,33 @@ Plus 31 more processes waiting for tasks…
 TOTAL                              0          0
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 ##### job 1104153
+CDS          110269
+exon         119918
+gene         10844
+lnc_RNA      1317
+mRNA         13056
+pseudogene   106
+transcript   10
+#### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+##### job 
+#### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+##### job 
+#### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+##### job 
+#### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+##### job 
+#### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+##### job 
+#### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+##### job 
+#### qsub check_genome_busco.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+##### job 
+#### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+##### job 
+#### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+##### job 
+#### qsub functional_emapper.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+##### job
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
 ##### job 1013562
@@ -142,6 +222,33 @@ error [java.lang.InterruptedException]: java.lang.InterruptedException
 TOTAL                              0          0
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 ##### job 1104151
+CDS          223438
+exon         338106
+gene         19048
+lnc_RNA      7454
+mRNA         28251
+pseudogene   361
+transcript   607
+#### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+##### job 
+#### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+##### job 
+#### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+##### job 
+#### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+##### job 
+#### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+##### job 
+#### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+##### job 
+#### qsub check_genome_busco.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+##### job 
+#### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+##### job 
+#### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+##### job 
+#### qsub functional_emapper.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+##### job
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 ##### job 1021272
@@ -181,7 +288,7 @@ pseudogene   52
 
 #### bash cache_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
 #### qsub run_cached_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
-##### job 
+##### job 1105243
 #### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
 ##### job 
 #### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
