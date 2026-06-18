@@ -41,6 +41,13 @@ There are some things to keep in mind when running EGAPx.
 
 The EGAPx software is currently experiencing issues with the normal workflow and accessing NCBI resources from the internet. Make sure to use the offline mode through the local cache option (-lc flag).
 
+##### KNOWN ISSUE
+
+Sometime when downloading the gnomon/2 directory it'll fail randomly with an error message that ends with:
+ftplib.error_temp: 421 Idle timeout (60 seconds): closing control connection
+
+Just ignore it and re-submit the job.
+
 #### EGAPx Config - EGAPx v0.1 to v0.4
 The <i>egapx/ui/assets/config/process\_resources.config</i> file specifies up to 31 cores (huge\_Job).
 
