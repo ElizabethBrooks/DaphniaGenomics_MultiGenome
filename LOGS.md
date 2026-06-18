@@ -40,13 +40,13 @@ transcript   9
 #### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 ##### job 1105907
 #### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
-##### job 
+##### job 1105934
 #### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
-##### job 
+##### job 1105935
 #### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
-##### job 
+##### job 1105936
 #### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
-##### job 
+##### job 1105938
 #### qsub check_genome_busco.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 ##### job 
 #### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
@@ -143,13 +143,13 @@ pseudogene   86
 #### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 ##### job 1105908
 #### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
-##### job 
+##### job 1105930
 #### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
-##### job 
+##### job 1105931
 #### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
-##### job 
+##### job 1105932
 #### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
-##### job 
+##### job 1105933
 #### qsub check_genome_busco.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 ##### job 
 #### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
@@ -179,13 +179,13 @@ transcript   10
 #### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 ##### job 1105909
 #### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
-##### job 
+##### job 1105926
 #### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
-##### job 
+##### job 1105927
 #### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
-##### job 
+##### job 1105928
 #### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
-##### job 
+##### job 1105929
 #### qsub check_genome_busco.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 ##### job 
 #### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
