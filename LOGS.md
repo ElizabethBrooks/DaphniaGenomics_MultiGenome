@@ -50,7 +50,7 @@ transcript   9
 #### qsub check_genome_busco.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 ##### job 1105976
 #### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
-##### job 
+##### job 1106159
 #### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 ##### job 
 #### qsub functional_emapper.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
@@ -153,7 +153,7 @@ pseudogene   86
 #### qsub check_genome_busco.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 ##### job 1105975
 #### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
-##### job 
+##### job 1106171
 #### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 ##### job 
 #### qsub functional_emapper.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
@@ -189,7 +189,7 @@ transcript   10
 #### qsub check_genome_busco.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 ##### job 1105973
 #### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
-##### job 
+##### job 1106181
 #### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 ##### job 
 #### qsub functional_emapper.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
@@ -248,7 +248,7 @@ transcript   607
 #### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 ##### job 1106149
 #### qsub functional_emapper.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
-##### job
+##### job 1106248
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 ##### job 1021272
