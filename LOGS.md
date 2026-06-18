@@ -38,7 +38,7 @@ transcript   9
 #### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 ##### job 1105877
 #### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
-##### job 
+##### job 1105907
 #### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 ##### job 
 #### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
@@ -141,7 +141,7 @@ pseudogene   86
 #### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 ##### job 1105881
 #### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
-##### job 
+##### job 1105908
 #### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 ##### job 
 #### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
@@ -177,7 +177,7 @@ transcript   10
 #### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 ##### job 1105884
 #### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
-##### job 
+##### job 1105909
 #### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 ##### job 
 #### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
