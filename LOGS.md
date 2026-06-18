@@ -242,7 +242,7 @@ transcript   607
 #### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 ##### job 1105925
 #### qsub check_genome_busco.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
-##### job 
+##### job 1105968
 #### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 ##### job 
 #### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
