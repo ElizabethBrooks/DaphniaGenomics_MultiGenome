@@ -15,7 +15,108 @@ Plus 62 more processes waiting for tasks…
 ##### job 1104162
 Plus 62 more processes waiting for tasks…
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
-##### job 1108634
+##### job 
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI.txt
+##### job 1010020
+Set in error state
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI.txt
+##### job 1021264
+Plus 62 more processes waiting for tasks…
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI.txt
+##### job 1054621
+Plus 62 more processes waiting for tasks…
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI.txt
+##### job 1059649
+TOTAL                             25    4163945
+#### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI.txt
+Applied 23 actions; 23 seqs dropped; 4137756 bps dropped; 0 bps lowercased; 0 bps hardmasked.
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+##### job 1098352
+Plus 62 more processes waiting for tasks…
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+##### job 1104160
+Plus 62 more processes waiting for tasks…
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+##### job 
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+##### job 1010025
+Set in error state
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+##### job 1021265
+Plus 62 more processes waiting for tasks…
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+##### job 1054629
+Plus 62 more processes waiting for tasks…
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+##### job 1059650
+TOTAL                              0          0
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+##### job 1104159
+Plus 62 more processes waiting for tasks…
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+##### job 
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+##### job 1010031
+Set in error state
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+##### job 1021266
+Plus 62 more processes waiting for tasks…
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+##### job 1054631
+Plus 62 more processes waiting for tasks…
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+##### job 1059652
+TOTAL                              0          0
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+##### job 1104157
+Plus 62 more processes waiting for tasks…
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+##### job 
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+##### job 1010037
+==> run_EGAPx_v0.3.2_jobOutput.po1010037 <==
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+##### job 1059654
+TOTAL                              0          0
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+##### job 1104156
+Plus 62 more processes waiting for tasks…
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+##### job 
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+##### job 1010044
+Plus 62 more processes waiting for tasks…
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+##### job 1059659
+TOTAL                              0          0
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+##### job 1104155
+Plus 62 more processes waiting for tasks…
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+##### job 
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
+##### job 1013562
+Set in error state
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
+##### job 1021269
+Plus 62 more processes waiting for tasks…
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
+##### job 1054632
+Plus 62 more processes waiting for tasks…
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
+##### job 1059663
+TOTAL                              0          0
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
+##### job 1104152
+Plus 62 more processes waiting for tasks…
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
+##### job 
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 ##### job 1010007
@@ -58,89 +159,6 @@ transcript   9
 ##### job 1106255
 #### qsub functional_emapper.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 ##### job 1106254
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI.txt
-##### job 1010020
-Set in error state
-#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI.txt
-##### job 1021264
-Plus 62 more processes waiting for tasks…
-#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI.txt
-##### job 1054621
-Plus 62 more processes waiting for tasks…
-#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI.txt
-##### job 1059649
-TOTAL                             25    4163945
-#### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI.txt
-Applied 23 actions; 23 seqs dropped; 4137756 bps dropped; 0 bps lowercased; 0 bps hardmasked.
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
-##### job 1098352
-Plus 62 more processes waiting for tasks…
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
-##### job 1104160
-Plus 62 more processes waiting for tasks…
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
-##### job 1108636
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
-##### job 1010025
-Set in error state
-#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
-##### job 1021265
-Plus 62 more processes waiting for tasks…
-#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
-##### job 1054629
-Plus 62 more processes waiting for tasks…
-#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
-##### job 1059650
-TOTAL                              0          0
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
-##### job 1104159
-Plus 62 more processes waiting for tasks…
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
-##### job 1108637
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
-##### job 1010031
-Set in error state
-#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
-##### job 1021266
-Plus 62 more processes waiting for tasks…
-#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
-##### job 1054631
-Plus 62 more processes waiting for tasks…
-#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
-##### job 1059652
-TOTAL                              0          0
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
-##### job 1104157
-Plus 62 more processes waiting for tasks…
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
-##### job 1108639
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
-##### job 1010037
-==> run_EGAPx_v0.3.2_jobOutput.po1010037 <==
-#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
-##### job 1059654
-TOTAL                              0          0
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
-##### job 1104156
-Plus 62 more processes waiting for tasks…
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
-##### job 1108640
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
-##### job 1010044
-Plus 62 more processes waiting for tasks…
-#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
-##### job 1059659
-TOTAL                              0          0
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
-##### job 1104155
-Plus 62 more processes waiting for tasks…
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
-##### job 1108641
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 ##### job 1011457
@@ -212,24 +230,6 @@ transcript   10
 ##### job 1106257
 #### qsub functional_emapper.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 ##### job 1106251
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
-##### job 1013562
-Set in error state
-#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
-##### job 1021269
-Plus 62 more processes waiting for tasks…
-#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
-##### job 1054632
-Plus 62 more processes waiting for tasks…
-#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
-##### job 1059663
-TOTAL                              0          0
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
-##### job 1104152
-Plus 62 more processes waiting for tasks…
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
-##### job 1108642
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 ##### job 1013576
@@ -312,6 +312,10 @@ pseudogene   52
 ##### job 1105243
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
 ##### job 1108073
+Note: detected page-faults (disk-thrashing) - GX may run slowly.
+Consider placing gxdb into non-swappable ramfs/tmpfs, or use `vmtouch -l`.
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+##### job 
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
 
 #### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
@@ -372,7 +376,7 @@ transcript   126
 #### qsub align_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
 ##### job 1108646
 #### qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-##### job
+##### job 1108724
 
 
 ## emapper for ZQ batch 1 - May 2026
