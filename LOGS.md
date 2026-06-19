@@ -284,7 +284,7 @@ transcript   126
 ##### job 1108724
 Total sequence length (bp)                                  121197166
 #### qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-##### job 
+##### job 1108917
 
 
 ## emapper for ZQ batch 1 - May 2026

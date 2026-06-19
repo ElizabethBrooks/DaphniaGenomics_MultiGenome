@@ -3,7 +3,7 @@
 #$ -m abe
 #$ -r n
 #$ -N run_FCS_GX_jobOutput
-#$ -pe smp 15
+#$ -pe smp 8
 
 # script to screen a genome fasta for contamination
 # usage: qsub screen_genome_FCS_GX.sh inputsFile
@@ -39,7 +39,7 @@ cd $softwarePath
 export FCS_DEFAULT_IMAGE=fcs-gx.sif
 
 # set the number of threads
-export GX_NUM_CORES=15
+export GX_NUM_CORES=8
 
 # run fcs to screen the genome
 python3 ./fcs.py screen genome --fasta $inputGenome --out-dir $GXDB_LOC"/"$inputSpecies"_gx_out" --gx-db $GXDB_LOC"/gxdb" --tax-id $taxInput
