@@ -2,11 +2,14 @@
 #$ -M ebrooks5@nd.edu
 #$ -m abe
 #$ -r n
-#$ -N short_introns_AGAT_jobOutput
+#$ -N evaluate_assembly_QUAST_jobOutput
 
-# script to list all the introns inferior to a certain size (default = 10) in the input gff
-# usage: qsub list_short_introns_AGAT.sh inputFile
-# usage ex: qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
+# script to run QUAST to evaluate genome assemblies by computing various metrics
+# usage: qsub evaluate_assembly_QUAST.sh inputFile
+# usage ex: qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
+
+# load software
+conda activate my_quast
 
 # retrieve input file
 inputFile=$1
@@ -43,16 +46,21 @@ outputsPath=$(grep "outputs_EGAPx_v0.3.2_ZQ_V2:" ../"inputData/inputs_annotation
 outputsPath=$outputsPath"/"$speciesName
 
 # create outputs directory
-mkdir $outputsPath"/AGAT_v1.4.2"
-
-# move to the AGAT software directory
-cd $outputsPath
+mkdir $outputsPath"/QUAST_v5.3.0"
 
 # status message
 echo "Beginning analysis of $speciesName..."
 
-# run AGAT
-singularity exec --bind $PWD:/AGAT_v1.4.2 $softwarePath"/agat_1.4.2--pl5321hdfd78af_0.sif" agat_sp_list_short_introns.pl -gff $outputsPath"/complete.genomic.gff" -o $outputsPath"/AGAT_v1.4.2/short_introns.txt"
+# create contig files
+mkdir $outputsPath"/QUAST_v5.3.0/contigs"
+cd $outputsPath"/QUAST_v5.3.0/contigs"
+awk '/^>/ {gsub(/[ \t]/, "_", $0); out=substr($1,2)".fasta"; print $0 > out; next} {print >> out}' $outputsPath"/complete.genomic.fna"
+
+# move to the outputs directory
+cd $outputsPath
+
+# run QUAST
+quast $outputsPath"/QUAST_v5.3.0/contigs/"* -t 8 -r $outputsPath"/complete.genomic.fna" -g $outputsPath"/complete.genomic.gff" -o $outputsPath"/QUAST_v5.3.0" -e -f --rna-finding
 
 # status message
 echo "Analysis of $speciesName complete!"
