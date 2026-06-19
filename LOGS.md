@@ -284,6 +284,9 @@ transcript   126
 ##### job 1108724
 Total sequence length (bp)                                  121197166
 #### qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+##### job 1108967
+Total sequence length (bp)                                  121197166
+#### qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
 ##### job 
 
 

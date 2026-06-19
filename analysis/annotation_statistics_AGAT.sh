@@ -4,7 +4,7 @@
 #$ -r n
 #$ -N stats_AGAT_jobOutput
 
-# script to keep only the longest isoforms in the input gff
+# script to provides exhaustive statistics of the input gff
 # usage: qsub annotation_statistics_AGAT.sh inputFile
 # usage ex: qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
 

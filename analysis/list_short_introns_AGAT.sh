@@ -2,11 +2,11 @@
 #$ -M ebrooks5@nd.edu
 #$ -m abe
 #$ -r n
-#$ -N fun_stats_AGAT_jobOutput
+#$ -N short_introns_AGAT_jobOutput
 
-# script to summerize functional information in the input gff
-# usage: qsub functional_statistics_AGAT.sh inputFile
-# usage ex: qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
+# script to list all the introns inferior to a certain size (default = 10) in the input gff
+# usage: qsub list_short_introns_AGAT.sh inputFile
+# usage ex: qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
 
 # retrieve input file
 inputFile=$1
@@ -52,7 +52,7 @@ cd $outputsPath
 echo "Beginning analysis of $speciesName..."
 
 # run AGAT
-singularity exec --bind $PWD:/AGAT_v1.4.2 $softwarePath"/agat_1.4.2--pl5321hdfd78af_0.sif" agat_sp_functional_statistics.pl -gff $outputsPath"/complete.genomic.gff" -g $outputsPath"/complete.genomic.fna" -o $outputsPath"/AGAT_v1.4.2/functional_stats"
+singularity exec --bind $PWD:/AGAT_v1.4.2 $softwarePath"/agat_1.4.2--pl5321hdfd78af_0.sif" agat_sp_list_short_introns.pl -gff $outputsPath"/complete.genomic.gff" -o $outputsPath"/AGAT_v1.4.2/short_introns"
 
 # status message
 echo "Analysis of $speciesName complete!"
