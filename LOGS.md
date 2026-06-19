@@ -219,7 +219,7 @@ pseudogene   52
 Note: detected page-faults (disk-thrashing) - GX may run slowly.
 Consider placing gxdb into non-swappable ramfs/tmpfs, or use `vmtouch -l`.
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
-##### job 1108770
+##### job 1108919
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
 
 #### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt

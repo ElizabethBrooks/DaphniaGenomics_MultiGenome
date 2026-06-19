@@ -52,7 +52,7 @@ cd $outputsPath
 echo "Beginning analysis of $speciesName..."
 
 # run AGAT
-singularity exec --bind $PWD:/AGAT_v1.4.2 $softwarePath"/agat_1.4.2--pl5321hdfd78af_0.sif" agat_sp_statistics.pl -gff $outputsPath"/complete.genomic.gff" -f $outputsPath"/complete.genomic.fna" -o $outputsPath"/AGAT_v1.4.2/annotation_stats.txt"
+singularity exec --bind $PWD:/AGAT_v1.4.2 $softwarePath"/agat_1.4.2--pl5321hdfd78af_0.sif" agat_sp_statistics.pl -gff $outputsPath"/complete.genomic.gff" -g $outputsPath"/complete.genomic.fna" -o $outputsPath"/AGAT_v1.4.2/annotation_stats.txt"
 
 # status message
 echo "Analysis of $speciesName complete!"
