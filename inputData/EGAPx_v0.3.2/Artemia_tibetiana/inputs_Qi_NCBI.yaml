@@ -1,5 +1,5 @@
 genome: /groups/mpfrende/Projects_2026/multi_genome/data/NCBI_genomes/Artemia_sp.fna
 taxid: 351233
 reads:
-  - SRP341145
-  - SRP042651
+  - SRX565020
+  - SRX565019

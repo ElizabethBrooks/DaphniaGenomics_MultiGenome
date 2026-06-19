@@ -1,12 +1,4 @@
 genome: /groups/mpfrende/Projects_2026/multi_genome/data/NCBI_genomes/Daphnia_longicephala.fna
 taxid: 85468
 reads:
-  - DRP010011
-  - SRP151839
-  - SRP161660
-  - SRP259943
-  - SRP278637
   - SRP364750
-  - SRP420986
-  - SRP421109
-  - SRP073469

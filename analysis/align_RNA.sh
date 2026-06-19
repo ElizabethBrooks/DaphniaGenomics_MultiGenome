@@ -58,6 +58,8 @@ cd $outputsPath"/HISAT2_v2.2.2"
 # status message
 echo "Beginning analysis of $speciesName..."
 
+echo $refPath
+
 # generate reference genome build files
 hisat2-build $refPath $speciesName"_build"
 
