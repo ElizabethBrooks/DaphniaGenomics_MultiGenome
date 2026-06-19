@@ -15,7 +15,7 @@ Plus 62 more processes waiting for tasks…
 ##### job 1104162
 Plus 62 more processes waiting for tasks…
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
-##### job
+##### job 1108634
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 ##### job 1010007
@@ -80,7 +80,7 @@ Plus 62 more processes waiting for tasks…
 ##### job 1104160
 Plus 62 more processes waiting for tasks…
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
-##### job
+##### job 1108636
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 ##### job 1010025
@@ -98,7 +98,7 @@ TOTAL                              0          0
 ##### job 1104159
 Plus 62 more processes waiting for tasks…
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
-##### job
+##### job 1108637
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
 ##### job 1010031
@@ -116,7 +116,7 @@ TOTAL                              0          0
 ##### job 1104157
 Plus 62 more processes waiting for tasks…
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
-##### job
+##### job 1108639
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 ##### job 1010037
@@ -128,7 +128,7 @@ TOTAL                              0          0
 ##### job 1104156
 Plus 62 more processes waiting for tasks…
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
-##### job
+##### job 1108640
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
 ##### job 1010044
@@ -140,7 +140,7 @@ TOTAL                              0          0
 ##### job 1104155
 Plus 62 more processes waiting for tasks…
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
-##### job
+##### job 1108641
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 ##### job 1011457
@@ -229,7 +229,7 @@ TOTAL                              0          0
 ##### job 1104152
 Plus 62 more processes waiting for tasks…
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
-##### job
+##### job 1108642
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 ##### job 1013576
@@ -334,6 +334,8 @@ pseudogene   52
 ##### job 
 #### qsub functional_emapper.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
 ##### job
+#### qsub align_RNA.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+##### job 1108675
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
 ##### job 1007556
@@ -368,7 +370,10 @@ transcript   126
 #### qsub functional_emapper.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
 ##### job 1028530
 #### qsub align_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-##### 
+##### job 1108646
+#### qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+##### job
+
 
 ## emapper for ZQ batch 1 - May 2026
 
