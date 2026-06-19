@@ -49,7 +49,7 @@ outputsPath=$outputsPath"/"$speciesName
 
 # create outputs directories
 mkdir $outputsPath"/FastQC_v0.12.1"
-mkdir $outputsPath"/MultiQC_v1.33"
+mkdir $outputsPath"/FastQC_v0.12.1/MultiQC_v1.33"
 
 # move to the outputs directory
 cd $outputsPath"/FastQC_v0.12.1"
@@ -61,7 +61,7 @@ echo "Beginning analysis of $speciesName..."
 fastqc $readPath -o $outputsPath
 
 # run multiqc
-multiqc $outputsPath -o $outputsPath"/MultiQC_v1.33" -n "multiqc"
+multiqc $outputsPath -o $outputsPath"/FastQC_v0.12.1/MultiQC_v1.33" -n "multiqc"
 
 # Print status message
 echo "Finished processing!"
