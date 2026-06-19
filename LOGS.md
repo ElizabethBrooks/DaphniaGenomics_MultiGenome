@@ -290,7 +290,7 @@ Total sequence length (bp)                                  121197166
 ##### job 1108977
 Parsing Finished
 #### qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-##### job
+##### job 
 
 
 ## emapper for ZQ batch 1 - May 2026

@@ -62,5 +62,8 @@ cd $outputsPath
 # run QUAST
 quast $outputsPath"/QUAST_v5.3.0/contigs/"* -t 8 -r $outputsPath"/complete.genomic.fna" -g $outputsPath"/complete.genomic.gff" -o $outputsPath"/QUAST_v5.3.0" -e -f --rna-finding
 
+# clean up
+rm -r $outputsPath"/QUAST_v5.3.0/contigs"
+
 # status message
 echo "Analysis of $speciesName complete!"
