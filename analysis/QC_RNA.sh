@@ -2,14 +2,13 @@
 #$ -M ebrooks5@nd.edu
 #$ -m abe
 #$ -r n
-#$ -N align_RNA_jobOutput
-#$ -pe smp 8
+#$ -N QC_RNA_jobOutput
 
 # script to align paired end reads
-# usage: qsub align_RNA.sh inputsFile
-# usage: qsub align_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+# usage: qsub QC_RNA.sh inputsFile
+# usage: qsub QC_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
 
-# Required modules for ND CRC servers
+# Required modules for servers
 module load bio
 
 # retrieve input file
@@ -48,46 +47,21 @@ outputsPath=$(grep "outputs_EGAPx_v0.3.2_ZQ_V2:" ../"inputData/inputs_annotation
 # setup outputs path
 outputsPath=$outputsPath"/"$speciesName
 
-# create outputs directory
-mkdir $outputsPath"/HISAT2_v2.2.2"
+# create outputs directories
+mkdir $outputsPath"/FastQC_v0.12.1"
+mkdir $outputsPath"/MultiQC_v1.33"
 
 # move to the outputs directory
-cd $outputsPath"/HISAT2_v2.2.2"
+cd $outputsPath"/FastQC_v0.12.1"
 
 # status message
 echo "Beginning analysis of $speciesName..."
 
-# generate reference genome build files
-hisat2-build $refPath $speciesName"_build"
+# perform QC
+fastqc $readPath -o $outputsPath
 
-# check read type, assuming the second read file is listed last
-readTest=$(echo $readPath | tail -1)
-if [[ $readTest == *"_R2_001"* ]]; then
-	readType="paired"
-else
-	readType="unpaired"
-fi
-
-# loop over each sample
-loopNum=1
-for sampleFile in $readPath; do
-	# get sample tag
-	sampleTag=$(basename $sampleFile | rev | cut -d "." -f2- | rev)
-	# check read type
-	if [[ $readType == "unpaired" ]]; then
-		# align samples to the refence genome
-		hisat2 --threads 8 -x $speciesName"_build" -U $sampleFile -S $sampleTag"_accepted_hits.sam" --summary-file $sampleTag"_alignedSummary.txt"
-	else # paired reads
-		if [[ $(($loopNum % 2)) == 0 ]]; then # handle in pairs
-			# setup second read path
-			readTwo=$(echo $sampleFile | sed "s/_R1_/_R2_/g" | sed "s/_1\./_2./g")
-			# align samples to the refence genome
-			hisat2 --threads 8 -x $speciesName"_build" -1 $sampleFile -2 $readTwo -S $sampleTag"_accepted_hits.sam" --summary-file $sampleTag"_alignedSummary.txt"
-		fi
-	fi	
-	# incrememnt counter
-	loopNum=$(($loopNum+1))
-done
+# run multiqc
+multiqc $outputsPath -o $outputsPath"/MultiQC_v1.33" -n "multiqc"
 
 # Print status message
 echo "Finished processing!"
