@@ -53,7 +53,7 @@ rm -r $outputsPath"/work"
 rm -r $outputsPath"/annot_builder_output"
 rm -r $outputsPath"/egapx_config"
 rm -r $outputsPath"/execution_logs"
-rm -r $outputsPath"/validated"
+rm -r $outputsPath"/validated" # keep in future
 rm -r $outputsPath"/.nextflow"
 rm $outputsPath"/dag.dot"
 rm $outputsPath"/egapx_reads_metadata_"*".tsv"

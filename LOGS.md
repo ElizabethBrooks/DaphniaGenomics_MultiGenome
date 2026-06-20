@@ -8,23 +8,11 @@ TOTAL                              0          0
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
 ##### job 1109074
 
-#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI.txt
-##### job 1059649
-TOTAL                             25    4163945
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
-##### job 1109075
-
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 ##### job 1059650
 TOTAL                              0          0
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 ##### job 1109076
-
-#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
-##### job 1059652
-TOTAL                              0          0
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
-##### job 1109077
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 ##### job 1059654
@@ -32,17 +20,110 @@ TOTAL                              0          0
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 ##### job 1109078
 
-#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
-##### job 1059659
-TOTAL                              0          0
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
-##### job 1109080
-
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
 ##### job 1059663
 TOTAL                              0          0
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
 ##### job 1109081
+
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI.txt
+##### job 1059649
+TOTAL                             25    4163945
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+##### job 1109075
+CDS          163933
+exon         186035
+gene         16159
+lnc_RNA      2655
+mRNA         20751
+pseudogene   105
+transcript   66
+#### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+##### job 
+#### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+##### job 
+#### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+##### job 
+#### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+##### job 
+#### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+##### job 
+#### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+##### job 
+#### qsub check_genome_busco.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+##### job 
+#### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+##### job 
+#### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+##### job 
+#### qsub functional_emapper.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+##### job
+
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+##### job 1059652
+TOTAL                              0          0
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+##### job 1109077
+CDS          131201
+exon         152021
+gene         14005
+lnc_RNA      1383
+mRNA         17849
+pseudogene   2145
+transcript   61
+#### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+##### job 
+#### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+##### job 
+#### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+##### job 
+#### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+##### job 
+#### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+##### job 
+#### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+##### job 
+#### qsub check_genome_busco.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+##### job 
+#### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+##### job 
+#### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+##### job 
+#### qsub functional_emapper.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+##### job
+
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+##### job 1059659
+TOTAL                              0          0
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+##### job 1109080
+CDS          80952
+exon         86503
+gene         10775
+lnc_RNA      1327
+mRNA         10248
+pseudogene   130
+transcript   8
+#### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+##### job 
+#### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+##### job 
+#### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+##### job 
+#### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+##### job 
+#### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+##### job 
+#### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+##### job 
+#### qsub check_genome_busco.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+##### job 
+#### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+##### job 
+#### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+##### job 
+#### qsub functional_emapper.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+##### job
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 ##### job 1059616
@@ -224,7 +305,7 @@ TOTAL                              5    5186263
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
 Applied 5 actions; 5 seqs dropped; 5186263 bps dropped; 0 bps lowercased; 0 bps hardmasked.
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
-##### job 
+##### job 1109627
 #### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
 ##### job 
 #### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
@@ -304,12 +385,15 @@ NOTICEs: 2; WARNINGs: 2; non-fatal ERRORs: 0
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ.txt
 ##### job 1109407
+TOTAL                             24    2895612
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ.txt
+Applied 24 actions; 23 seqs dropped; 2895612 bps dropped; 0 bps lowercased; 0 bps hardmasked.
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_noAA.txt
 ##### job 1109488
+TOTAL                            100    4678041
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_noAA.txt
-
+Applied 96 actions; 93 seqs dropped; 4587400 bps dropped; 0 bps lowercased; 8218 bps hardmasked.
 
 
 ## emapper for ZQ batch 1 - May 2026

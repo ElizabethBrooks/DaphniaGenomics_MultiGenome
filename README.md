@@ -71,7 +71,7 @@ A carefully vetted masking library can be useful for identifying gene prediction
 
 ###### SRA
 
-If EGAPx is taking an inordinately long time to run, double check that the SRA project IDs only includes RNA sequencing data. The EGAPx software will hang and the run will not complete if there is DNA sequencing data mixed in with the RNA data.
+If EGAPx is taking an inordinately long time to run, double check that the SRA project IDs only includes RNA sequencing data for the desired species. The EGAPx software will hang and the run will not complete if there is DNA sequencing data or RNA for other (more distant) species mixed in with the RNA data for the species being annotated.
 
 ###### IsoSeq
 
