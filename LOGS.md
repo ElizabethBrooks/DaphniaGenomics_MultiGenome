@@ -220,8 +220,11 @@ Note: detected page-faults (disk-thrashing) - GX may run slowly.
 Consider placing gxdb into non-swappable ramfs/tmpfs, or use `vmtouch -l`.
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
 ##### job 1108919
+TOTAL                              5    5186263
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
-
+Applied 5 actions; 5 seqs dropped; 5186263 bps dropped; 0 bps lowercased; 0 bps hardmasked.
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+##### job 
 #### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
 ##### job 
 #### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
@@ -278,7 +281,8 @@ transcript   126
 #### qsub functional_emapper.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
 ##### job 1028530
 #### qsub QC_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-##### job 1109088
+##### job 1109089
+multiqc | MultiQC complete
 #### qsub align_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
 ##### job 1108646
 63.03% overall alignment rate
@@ -293,6 +297,7 @@ Total sequence length (bp)                                  121197166
 Parsing Finished
 #### qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
 ##### job 1109064
+NOTICEs: 2; WARNINGs: 2; non-fatal ERRORs: 0
 
 
 ## emapper for ZQ batch 1 - May 2026
