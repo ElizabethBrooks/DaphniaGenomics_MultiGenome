@@ -223,29 +223,29 @@ Consider placing gxdb into non-swappable ramfs/tmpfs, or use `vmtouch -l`.
 TOTAL                              5    5186263
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
 Applied 5 actions; 5 seqs dropped; 5186263 bps dropped; 0 bps lowercased; 0 bps hardmasked.
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
-##### job 1109255
-#### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
 ##### job 
-#### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+#### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
 ##### job 
-#### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+#### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
 ##### job 
-#### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+#### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
 ##### job 
-#### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+#### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
 ##### job 
-#### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+#### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
 ##### job 
-#### qsub check_genome_busco.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+#### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
 ##### job 
-#### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+#### qsub check_genome_busco.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
 ##### job 
-#### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+#### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
 ##### job 
-#### qsub functional_emapper.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+#### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
+##### job 
+#### qsub functional_emapper.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
 ##### job
-#### qsub align_RNA.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+#### qsub align_RNA.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
 ##### job 
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
@@ -307,7 +307,7 @@ NOTICEs: 2; WARNINGs: 2; non-fatal ERRORs: 0
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ.txt
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_noAA.txt
-##### job 
+##### job 1109488
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_noAA.txt
 
 
