@@ -224,7 +224,7 @@ TOTAL                              5    5186263
 #### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
 Applied 5 actions; 5 seqs dropped; 5186263 bps dropped; 0 bps lowercased; 0 bps hardmasked.
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
-##### job 
+##### job 1109255
 #### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
 ##### job 
 #### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
@@ -298,6 +298,18 @@ Parsing Finished
 #### qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
 ##### job 1109064
 NOTICEs: 2; WARNINGs: 2; non-fatal ERRORs: 0
+
+
+## cleaning
+
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ.txt
+##### job 1109407
+#### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ.txt
+
+#### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_noAA.txt
+##### job 
+#### bash clean_genome_FCS_GX.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_noAA.txt
+
 
 
 ## emapper for ZQ batch 1 - May 2026
