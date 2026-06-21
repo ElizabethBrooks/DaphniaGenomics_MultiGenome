@@ -23,23 +23,23 @@ transcript   11
 #### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 ##### job 1111639
 #### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
-##### job 
+##### job 1111644
 #### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
-##### job 
+##### job 1111646
 #### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
-##### job 
+##### job 1111647
 #### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
-##### job 
+##### job 1111648
 #### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
-##### job 
+##### job 1111649
 #### qsub check_genome_busco.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
-##### job 
+##### job 1111650
 #### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
-##### job 
+##### job 1111672
 #### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
-##### job 
+##### job 1111697
 #### qsub functional_emapper.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
-##### job
+##### job 
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
 ##### job 1097737
