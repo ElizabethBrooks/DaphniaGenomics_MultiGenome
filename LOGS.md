@@ -21,7 +21,7 @@ mRNA         12917
 pseudogene   2193
 transcript   11
 #### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
-##### job 
+##### job 1111639
 #### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 ##### job 
 #### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
