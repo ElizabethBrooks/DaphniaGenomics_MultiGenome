@@ -2,6 +2,9 @@
 
 ## NCBI, zenodo, and CNGBdb genomes - June 2026
 
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset.txt
+##### job 
+
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 ##### job 1059650
 TOTAL                              0          0
@@ -39,7 +42,7 @@ transcript   11
 #### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 ##### job 1111697
 #### qsub functional_emapper.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
-##### job 
+##### job 1111699
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
 ##### job 1097737
