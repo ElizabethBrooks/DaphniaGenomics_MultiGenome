@@ -25,7 +25,7 @@ qsub QC_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
-qsub QC_RNA.sh EGAPx_v0.3.2/S_vetulus/inputs_WW.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
 
 Your job 1116984 ("QC_RNA_jobOutput") has been submitted
 Your job 1116985 ("QC_RNA_jobOutput") has been submitted
@@ -47,8 +47,7 @@ Your job 1116997 ("QC_RNA_jobOutput") has been submitted
 Your job 1116998 ("QC_RNA_jobOutput") has been submitted
 Your job 1116999 ("QC_RNA_jobOutput") has been submitted
 Skipping 'SRR17311954' which didn't exist, or couldn't be read
-Your job  ("QC_RNA_jobOutput") has been submitted
-
+Your job 1117025 ("QC_RNA_jobOutput") has been submitted
 Your job 1117002 ("QC_RNA_jobOutput") has been submitted
 Your job 1117003 ("QC_RNA_jobOutput") has been submitted
 Skipping '/groups/mpfrende/Projects_2026/multi_genome/data_test/D_pulicaria/LK16/trimmed_for_reannotation/18CRep1_ATCACG_L001_R1.fq' which didn't exist, or couldn't be read
@@ -56,8 +55,7 @@ Your job 1117004 ("QC_RNA_jobOutput") has been submitted
 Skipping 'SRR10389290' which didn't exist, or couldn't be read
 Your job 1117005 ("QC_RNA_jobOutput") has been submitted
 Skipping 'SRR10389290' which didn't exist, or couldn't be read
-Your job 1117006 ("QC_RNA_jobOutput") has been submitted
-grep: ../inputData/EGAPx_v0.3.2/S_vetulus/inputs_WW.txt: No such file or directory
+Your job  ("QC_RNA_jobOutput") has been submitted
 
 
 ### batch 2

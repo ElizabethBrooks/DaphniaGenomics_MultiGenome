@@ -1,2 +1,2 @@
-species: S_vetulus_WW
-inputs_EGAPx: EGAPx_v0.3.2/S_vetulus/inputs_WW.yaml
+species: Simocephalus_vetulus_WW
+inputs_EGAPx: EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.yaml
