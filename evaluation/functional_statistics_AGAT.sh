@@ -47,6 +47,7 @@ outputsPath=$outputsPath"/"$speciesName
 
 # create outputs directory
 mkdir $outputsPath"/AGAT_v1.4.2"
+mkdir $outputsPath"/AGAT_v1.4.2/functional_stats"
 
 # move to the inputs directory
 cd $inputsDir
