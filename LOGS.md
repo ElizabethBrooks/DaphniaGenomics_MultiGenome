@@ -1,11 +1,5 @@
 # Logs of Analysis & Tests
 
-## re-run
-
-qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
-
-
-
 ## evaluation
 
 ### NCBI, zenodo, and CNGBdb genomes
@@ -25,9 +19,10 @@ qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 ### batch 1
 
 qsub QC_RNA.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
-qsub QC_RNA.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
 
-
+Your job  ("QC_RNA_jobOutput") has been submitted
+Your job 1117087 ("QC_RNA_jobOutput") has been submitted
 
 qsub QC_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
@@ -158,6 +153,12 @@ Parsing Finished
 #### qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
 ##### job 1109064
 NOTICEs: 2; WARNINGs: 2; non-fatal ERRORs: 0
+
+
+## re-run
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
+##### job 1117067
 
 
 ## NCBI, zenodo, and CNGBdb genomes - June 2026
