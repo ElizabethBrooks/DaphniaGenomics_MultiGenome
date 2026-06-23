@@ -29,9 +29,6 @@ inputsPath=$repoDir"/inputData/"$inputsPath
 # retrieve paired reads absolute path for alignment
 readPath=$(awk '/reads:/{flag=1; next} flag' $inputsPath | sed "s/^.*-\ //g")
 
-# retrieve genome reference
-refPath=$(grep "genome:" $inputsPath | cut -d " " -f2)
-
 # retrieve outputs path
 # change this for different test runs
 outputsPath=$(grep "outputs_EGAPx_v0.3.2_analysis:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_analysis://g")

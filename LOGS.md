@@ -18,25 +18,12 @@ qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
 ### batch 1
 
-qsub QC_RNA.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
-qsub QC_RNA.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
+qsub QC_SRA_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub QC_SRA_RNA.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+qsub QC_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
+qsub QC_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 
-Your job  ("QC_RNA_jobOutput") has been submitted
-Your job 1117087 ("QC_RNA_jobOutput") has been submitted
 
-qsub QC_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
-qsub QC_RNA.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
-qsub QC_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
-qsub QC_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
-
-Your job 1116990 ("QC_RNA_jobOutput") has been submitted
-Skipping 'SRR15012076' which didn't exist, or couldn't be read
-Your job 1116999 ("QC_RNA_jobOutput") has been submitted
-Skipping 'SRR17311954' which didn't exist, or couldn't be read
-Your job 1117004 ("QC_RNA_jobOutput") has been submitted
-Skipping 'SRR10389290' which didn't exist, or couldn't be read
-Your job 1117005 ("QC_RNA_jobOutput") has been submitted
-Skipping 'SRR10389290' which didn't exist, or couldn't be read
 
 qsub QC_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
 
@@ -58,6 +45,8 @@ qsub QC_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
 
 Your job 1116984 ("QC_RNA_jobOutput") has been submitted
 Your job 1116985 ("QC_RNA_jobOutput") has been submitted
@@ -74,6 +63,8 @@ Your job 1116998 ("QC_RNA_jobOutput") has been submitted
 Your job 1117025 ("QC_RNA_jobOutput") has been submitted
 Your job 1117002 ("QC_RNA_jobOutput") has been submitted
 Your job 1117034 ("QC_RNA_jobOutput") has been submitted
+Your job 1117115 ("QC_RNA_jobOutput") has been submitted
+Your job 1117087 ("QC_RNA_jobOutput") has been submitted
 
 
 ### batch 2
@@ -111,6 +102,8 @@ qsub QC_RNA.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
 Your job 1116909 ("QC_RNA_jobOutput") has been submitted
 Your job 1116917 ("QC_RNA_jobOutput") has been submitted
 Your job 1116926 ("QC_RNA_jobOutput") has been submitted
+Started analysis of ERR2929116_1.fastq
+null
 Your job 1116927 ("QC_RNA_jobOutput") has been submitted
 Your job 1116928 ("QC_RNA_jobOutput") has been submitted
 
@@ -163,17 +156,17 @@ NOTICEs: 2; WARNINGs: 2; non-fatal ERRORs: 0
 
 ## NCBI, zenodo, and CNGBdb genomes - June 2026
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
-##### job 1116954
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset.txt
-##### job 1113263
-
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 ##### job 1059650
 TOTAL                              0          0
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 ##### job 1109076
+Plus 37 more processes waiting for tasks…
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset.txt
+##### job 1113263
+Plus 62 more processes waiting for tasks…
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
+##### job 1116954
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 ##### job 1059654

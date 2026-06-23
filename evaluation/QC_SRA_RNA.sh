@@ -6,7 +6,6 @@
 
 # script to align paired end reads
 # usage: qsub QC_SRA_RNA.sh inputsFile
-# usage: qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
 
 # Required modules for servers
 module load bio
@@ -29,9 +28,6 @@ inputsPath=$repoDir"/inputData/"$inputsPath
 # retrieve paired reads absolute path for alignment
 readPath=$(awk '/reads:/{flag=1; next} flag' $inputsPath | sed "s/^.*-\ //g")
 
-# retrieve genome reference
-refPath=$(grep "genome:" $inputsPath | cut -d " " -f2)
-
 # retrieve outputs path
 # change this for different test runs
 outputsPath=$(grep "outputs_EGAPx_v0.3.2_analysis:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_analysis://g")
@@ -41,20 +37,46 @@ outputsPath=$outputsPath"/"$speciesName
 
 # create outputs directories
 mkdir $outputsPath
+mkdir $outputsPath"/SRA"
 mkdir $outputsPath"/FastQC_v0.12.1"
 mkdir $outputsPath"/FastQC_v0.12.1/MultiQC_v1.33"
 
-# move to the outputs directory
-cd $outputsPath"/FastQC_v0.12.1"
+# loop over each SRA ID
+for inputID in $readPath; do
+	# name SRA ID outputs directory
+	outDir=$outputsPath"/SRA/"$inputID
+	# make SRA ID directory for the formatted data
+	mkdir $outDir
+	# move to outputs directory, since SRA tools caches data in the working directory
+	cd $outDir
+	# download formated reads
+	prefetch $inputID --max-size 70G
+	# status message
+	echo "Beginning SRA read processing..."
+	# loop over each SRA ID retrieved using prefetch
+	for i in $outDir"/"*"/"; do
+		# retrieve SRA ID
+		sraID=$(basename $i)
+		# status message
+		echo "Processing $sraID ..."
+		# retrieve SRA data
+		$softwarePath"/"fasterq-dump --skip-technical --threads 8 --split-files --seq-defline ">\$ac.\$si.\$ri" --fasta -O $outDir"/"  ./$sraID
+		# print status message
+		echo "Finished SRA read processing!"
+	done
+done
 
 # status message
 echo "Beginning analysis of $speciesName..."
 
+# move to the outputs directory
+cd $outputsPath"/FastQC_v0.12.1"
+
 # perform QC
-fastqc $readPath -o $outputsPath"/FastQC_v0.12.1"
+fastqc $outputsPath"/SRA/"*"/"* -o $outputsPath"/FastQC_v0.12.1"
 
 # run multiqc
-multiqc $outputsPath -o $outputsPath"/FastQC_v0.12.1/MultiQC_v1.33" -n "multiqc"
+multiqc $outputsPath"/FastQC_v0.12.1" -o $outputsPath"/FastQC_v0.12.1/MultiQC_v1.33" -n "multiqc"
 
-# Print status message
+# print status message
 echo "Finished processing!"
