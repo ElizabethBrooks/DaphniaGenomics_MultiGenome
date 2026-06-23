@@ -49,7 +49,7 @@ outputsPath=$outputsPath"/"$speciesName
 mkdir $outputsPath"/AGAT_v1.4.2"
 
 # move to the software directory
-cd $softwarePath
+cd $softwarePath"/AGAT_v1.4.2"
 
 # status message
 echo "Beginning analysis of $speciesName..."
