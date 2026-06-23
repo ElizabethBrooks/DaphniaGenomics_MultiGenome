@@ -1,61 +1,83 @@
 # Logs of Analysis & Tests
 
+## re-run
+
+qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+
+
 ## evaluation
 
+### NCBI, zenodo, and CNGBdb genomes
+
+qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
+qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+qsub QC_SRA_RNA.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
+qsub QC_SRA_RNA.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
+qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
+qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+
 ### batch 1
+
+qsub QC_RNA.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+
+
+
+qsub QC_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
+
+Your job 1116990 ("QC_RNA_jobOutput") has been submitted
+Skipping 'SRR15012076' which didn't exist, or couldn't be read
+Your job 1116999 ("QC_RNA_jobOutput") has been submitted
+Skipping 'SRR17311954' which didn't exist, or couldn't be read
+Your job 1117004 ("QC_RNA_jobOutput") has been submitted
+Skipping 'SRR10389290' which didn't exist, or couldn't be read
+Your job 1117005 ("QC_RNA_jobOutput") has been submitted
+Skipping 'SRR10389290' which didn't exist, or couldn't be read
+
+qsub QC_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+
+Your job 1116988 ("QC_RNA_jobOutput") has been submitted
+Skipping '/groups/mpfrende/Projects_2026/multi_genome/data/D_galeata_ENA/ERP112242/ERR2929116/ERR2929116_1.fastq' which didn't exist, or couldn't be read
 
 qsub QC_RNA.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
-qsub QC_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
-qsub QC_RNA.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
-qsub QC_RNA.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
-qsub QC_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
-qsub QC_RNA.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
-qsub QC_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
-qsub QC_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
 
 Your job 1116984 ("QC_RNA_jobOutput") has been submitted
 Your job 1116985 ("QC_RNA_jobOutput") has been submitted
 Your job 1116986 ("QC_RNA_jobOutput") has been submitted
 Your job 1116987 ("QC_RNA_jobOutput") has been submitted
-Your job 1116988 ("QC_RNA_jobOutput") has been submitted
-Skipping '/groups/mpfrende/Projects_2026/multi_genome/data/D_galeata_ENA/ERP112242/ERR2929116/ERR2929116_1.fastq' which didn't exist, or couldn't be read
 Your job 1116989 ("QC_RNA_jobOutput") has been submitted
-Your job 1116990 ("QC_RNA_jobOutput") has been submitted
-Skipping 'SRR15012076' which didn't exist, or couldn't be read
 Your job 1116991 ("QC_RNA_jobOutput") has been submitted
-Your job 1116992 ("QC_RNA_jobOutput") has been submitted
-Skipping '/groups/mpfrende/Projects_2026/multi_genome/data/annotations_short_read_data_processed/Pfrender_MP-3535_250512_CMG/trimmed/CON6_S47_L004.R1_001.fq' which didn't exist, or couldn't be read
 Your job 1116993 ("QC_RNA_jobOutput") has been submitted
 Your job 1116994 ("QC_RNA_jobOutput") has been submitted
 Your job 1116995 ("QC_RNA_jobOutput") has been submitted
 Your job 1116996 ("QC_RNA_jobOutput") has been submitted
 Your job 1116997 ("QC_RNA_jobOutput") has been submitted
 Your job 1116998 ("QC_RNA_jobOutput") has been submitted
-Your job 1116999 ("QC_RNA_jobOutput") has been submitted
-Skipping 'SRR17311954' which didn't exist, or couldn't be read
 Your job 1117025 ("QC_RNA_jobOutput") has been submitted
 Your job 1117002 ("QC_RNA_jobOutput") has been submitted
-Your job 1117003 ("QC_RNA_jobOutput") has been submitted
-Skipping '/groups/mpfrende/Projects_2026/multi_genome/data_test/D_pulicaria/LK16/trimmed_for_reannotation/18CRep1_ATCACG_L001_R1.fq' which didn't exist, or couldn't be read
-Your job 1117004 ("QC_RNA_jobOutput") has been submitted
-Skipping 'SRR10389290' which didn't exist, or couldn't be read
-Your job 1117005 ("QC_RNA_jobOutput") has been submitted
-Skipping 'SRR10389290' which didn't exist, or couldn't be read
-Your job  ("QC_RNA_jobOutput") has been submitted
+Your job 1117034 ("QC_RNA_jobOutput") has been submitted
 
 
 ### batch 2
