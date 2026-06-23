@@ -1,0 +1,6 @@
+genome: /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/D.pulex_CON21.masked.fasta
+taxid: 6669
+proteins: /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/D.pulex_CON21_annotation/D.pulex_CON21.masked.aa.fasta
+reads:
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/RNA/BEL2.R1_001.fastq
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/RNA/BEL2.R2_001.fastq

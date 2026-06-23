@@ -1,0 +1,10 @@
+genome: /groups/mpfrende/Projects_2026/multi_genome/data/NCBI_genomes/Artemia_franciscana.fna
+taxid: 6661
+reads:
+  - SRX8857654
+  - SRX8857653
+  - SRX8857652
+  - SRX8857651
+  - SRX8857650
+  - SRP383959
+  - SRP473619

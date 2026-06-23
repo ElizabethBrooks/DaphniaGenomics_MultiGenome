@@ -1,0 +1,4 @@
+genome: /groups/mpfrende/Projects_2026/multi_genome/data/NCBI_genomes/Artemia_sinica.fna
+taxid: 112780
+reads:
+  - SRP093929

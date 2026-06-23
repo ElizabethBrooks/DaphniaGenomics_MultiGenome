@@ -1,4 +1,4 @@
-genome: /afs/crc.nd.edu/group/pfrenderlab/mendel/DaphniaGenomes/1_all_chromosome_assemblies_and_annotation_June2024/D.magna_NIES_annotation/D.magna_NIES.masked.fasta
+genome: /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_genomes/1_all_chromosome_assemblies_and_annotation_June2024/D.magna_NIES_annotation/D.magna_NIES.masked.fasta
 taxid: 35525
 reads:
   - SRR15012076

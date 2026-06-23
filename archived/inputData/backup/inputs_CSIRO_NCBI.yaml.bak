@@ -1,0 +1,4 @@
+genome: /groups/mpfrende/Projects_2026/multi_genome/data/NCBI_genomes/Daphnia_carinata.fna
+taxid: 120202
+reads:
+  - SRP364750
