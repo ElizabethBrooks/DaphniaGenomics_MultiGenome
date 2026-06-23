@@ -48,8 +48,8 @@ outputsPath=$outputsPath"/"$speciesName
 # create outputs directory
 mkdir $outputsPath"/AGAT_v1.4.2"
 
-# move to the AGAT software directory
-cd $outputsPath
+# move to the inputs directory
+cd $inputsDir
 
 # status message
 echo "Beginning analysis of $speciesName..."
