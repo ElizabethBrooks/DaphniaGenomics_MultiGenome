@@ -51,7 +51,7 @@ for inputID in $readPath; do
 	# status message
 	echo "Beginning SRA read processing..."
 	# retrieve SRA data
-	fasterq-dump --threads 8 --split-files -O $outputsPath"/SRA/"  ./$inputID
+	fasterq-dump $inputID --threads 8 --split-files -O $outputsPath"/SRA/"
 	# print status message
 	echo "Finished SRA read processing!"
 done

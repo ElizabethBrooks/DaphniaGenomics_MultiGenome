@@ -5,6 +5,7 @@
 ### NCBI, zenodo, and CNGBdb genomes
 
 qsub QC_RNA.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
@@ -17,6 +18,8 @@ qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 
 Your job 1117597 ("QC_RNA_jobOutput") has been submitted
+
+
 
 ### batch 1
 
@@ -61,6 +64,7 @@ Your job 1117002 ("QC_RNA_jobOutput") has been submitted
 Your job 1117034 ("QC_RNA_jobOutput") has been submitted
 Your job 1117115 ("QC_RNA_jobOutput") has been submitted
 Your job 1117087 ("QC_RNA_jobOutput") has been submitted
+
 
 
 ### batch 2
