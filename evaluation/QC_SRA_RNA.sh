@@ -2,7 +2,7 @@
 #$ -M ebrooks5@nd.edu
 #$ -m abe
 #$ -r n
-#$ -N QC_RNA_jobOutput
+#$ -N QC_SRA_RNA_jobOutput
 
 # script to align paired end reads
 # usage: qsub QC_SRA_RNA.sh inputsFile
@@ -41,14 +41,11 @@ mkdir $outputsPath"/SRA"
 mkdir $outputsPath"/FastQC_v0.12.1"
 mkdir $outputsPath"/FastQC_v0.12.1/MultiQC_v1.33"
 
+# move to outputs directory, since SRA tools caches data in the working directory
+cd $outputsPath"/SRA"
+
 # loop over each SRA ID
 for inputID in $readPath; do
-	# name SRA ID outputs directory
-	outDir=$outputsPath"/SRA/"$inputID
-	# make SRA ID directory for the formatted data
-	mkdir $outDir
-	# move to outputs directory, since SRA tools caches data in the working directory
-	cd $outDir
 	# download formated reads
 	prefetch $inputID --max-size 70G
 	# status message
@@ -60,7 +57,7 @@ for inputID in $readPath; do
 		# status message
 		echo "Processing $sraID ..."
 		# retrieve SRA data
-		$softwarePath"/"fasterq-dump --skip-technical --threads 8 --split-files --seq-defline ">\$ac.\$si.\$ri" --fasta -O $outDir"/"  ./$sraID
+		$softwarePath"/"fasterq-dump --skip-technical --threads 8 --split-files --seq-defline ">\$ac.\$si.\$ri" --fasta -O $outputsPath"/SRA/"  ./$sraID
 		# print status message
 		echo "Finished SRA read processing!"
 	done
