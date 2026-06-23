@@ -2,7 +2,27 @@
 
 ## evaluation
 
-#### qsub QC_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_noAA.txt
+
+Your job 1116923 ("QC_RNA_jobOutput") has been submitted
+Your job 1116924 ("QC_RNA_jobOutput") has been submitted
+Skipping 'SRR10389290' which didn't exist, or couldn't be read
+
+### version 2
+
+qsub QC_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+
+Your job 1116909 ("QC_RNA_jobOutput") has been submitted
+Your job 1116917 ("QC_RNA_jobOutput") has been submitted
+Your job 1116926 ("QC_RNA_jobOutput") has been submitted
+Your job 1116927 ("QC_RNA_jobOutput") has been submitted
+Your job 1116928 ("QC_RNA_jobOutput") has been submitted
+
 
 #### qsub align_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
 
@@ -38,6 +58,9 @@ NOTICEs: 2; WARNINGs: 2; non-fatal ERRORs: 0
 
 
 ## NCBI, zenodo, and CNGBdb genomes - June 2026
+
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
+##### job 
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset.txt
 ##### job 1113263
