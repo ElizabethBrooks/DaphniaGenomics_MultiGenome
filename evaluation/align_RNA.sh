@@ -76,10 +76,15 @@ for sampleFile in $readPath; do
 			# align samples to the refence genome
 			hisat2 --threads 8 -x $speciesName"_build" -1 $sampleFile -2 $readTwo -S $sampleTag"_accepted_hits.sam" --summary-file $sampleTag"_alignedSummary.txt"
 		fi
-	fi	
+	fi
+	# run samtolls stats
+	samtools stats -@ 8 $sampleTag"_accepted_hits.sam" > $sampleTag".stats"
 	# incrememnt counter
 	loopNum=$(($loopNum+1))
 done
+
+# run multiqc to aggegrate the reports
+multiqc $outputsPath"/HISAT2_v2.2.2" -o $outputsPath"/HISAT2_v2.2.2" -n "multiqc"
 
 # Print status message
 echo "Finished processing!"

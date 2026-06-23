@@ -19,7 +19,16 @@ qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 
 Your job 1117597 ("QC_RNA_jobOutput") has been submitted
 
-
+Your job 1117720 ("QC_SRA_RNA_jobOutput") has been submitted
+Your job 1117721 ("QC_SRA_RNA_jobOutput") has been submitted
+Your job 1117722 ("QC_SRA_RNA_jobOutput") has been submitted
+Your job 1117723 ("QC_SRA_RNA_jobOutput") has been submitted
+Your job 1117724 ("QC_SRA_RNA_jobOutput") has been submitted
+Your job 1117725 ("QC_SRA_RNA_jobOutput") has been submitted
+Your job 1117726 ("QC_SRA_RNA_jobOutput") has been submitted
+Your job 1117727 ("QC_SRA_RNA_jobOutput") has been submitted
+Your job 1117728 ("QC_SRA_RNA_jobOutput") has been submitted
+Your job 1117729 ("QC_SRA_RNA_jobOutput") has been submitted
 
 ### batch 1
 
@@ -96,30 +105,68 @@ Your job 1116980 ("QC_RNA_jobOutput") has been submitted
 
 ### version 2
 
+#### QC RNA
+
 qsub QC_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
-qsub QC_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+#### qsub QC_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 
 Your job 1116909 ("QC_RNA_jobOutput") has been submitted
 Your job 1116917 ("QC_RNA_jobOutput") has been submitted
-Your job 1116926 ("QC_RNA_jobOutput") has been submitted
-Started analysis of ERR2929116_1.fastq
-null
 Your job 1116927 ("QC_RNA_jobOutput") has been submitted
 Your job 1116928 ("QC_RNA_jobOutput") has been submitted
 
+#### align RNA
 
-#### qsub align_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub align_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+#### qsub align_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 
-#### qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+#### annotation statistics
 
-#### qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+#### qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 
-#### qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+#### functional statistics
 
-#### qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+
+#### list short introns
+
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+
+#### evaluate assembly
+
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 
 
 ## evaluation tests
