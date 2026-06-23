@@ -23,7 +23,6 @@ qsub QC_SRA_RNA.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 
-Your job  ("QC_RNA_jobOutput") has been submitted
 
 
 qsub QC_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt

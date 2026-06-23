@@ -37,23 +37,23 @@ outputsPath=$outputsPath"/"$speciesName
 
 # create outputs directories
 mkdir $outputsPath
-mkdir $outputsPath"/SRA"
+mkdir $outputsPath"/ENA"
 mkdir $outputsPath"/FastQC_v0.12.1"
 mkdir $outputsPath"/FastQC_v0.12.1/MultiQC_v1.33"
 
-# move to outputs directory, since SRA tools caches data in the working directory
-cd $outputsPath"/SRA"
+# move to outputs directory, since ENA tools caches data in the working directory
+cd $outputsPath"/ENA"
 
-# loop over each SRA ID
+# loop over each ENA ID
 for inputID in $readPath; do
 	# download formated reads
 	prefetch $inputID --max-size 70G
 	# status message
-	echo "Beginning SRA read processing..."
-	# retrieve SRA data
-	$softwarePath"/"fasterq-dump --skip-technical --threads 8 --split-files --seq-defline ">\$ac.\$si.\$ri" --fasta -O $outputsPath"/SRA/"  ./$inputID
+	echo "Beginning ENA read processing..."
+	# download ENA data
+	enaBrowserTools-1.6/python3/enaGroupGet -f fastq $inputID		
 	# print status message
-	echo "Finished SRA read processing!"
+	echo "Finished ENA read processing!"
 done
 
 # status message
@@ -63,7 +63,7 @@ echo "Beginning analysis of $speciesName..."
 cd $outputsPath"/FastQC_v0.12.1"
 
 # perform QC
-fastqc $outputsPath"/SRA/"*"/"* -o $outputsPath"/FastQC_v0.12.1"
+fastqc $outputsPath"/ENA/"* -o $outputsPath"/FastQC_v0.12.1"
 
 # run multiqc
 multiqc $outputsPath"/FastQC_v0.12.1" -o $outputsPath"/FastQC_v0.12.1/MultiQC_v1.33" -n "multiqc"

@@ -30,4 +30,4 @@ mkdir $outputsPath
 cd $outputsPath
 
 # download ENA data
-enaBrowserTools-1.6/python3/enaGroupGet -f fastq inputIDs
+enaBrowserTools-1.6/python3/enaGroupGet -f fastq $inputIDs
