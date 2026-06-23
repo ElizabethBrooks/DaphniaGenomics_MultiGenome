@@ -1,4 +1,4 @@
-genome:  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_genomes/1_all_chromosome_assemblies_and_annotation_June2024/D.pulicaria_LK16_1.3_annotation/D.pulicaria_LARRY_HIC_final.fasta
+genome: /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_genomes/1_all_chromosome_assemblies_and_annotation_June2024/D.pulicaria_LK16_1.3_annotation/D.pulicaria_LARRY_HIC_final.fasta
 taxid: 35523
 reads:
  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_pulicaria_LK16/18CRep1_ATCACG_L001_R1_001.fastq.gz
