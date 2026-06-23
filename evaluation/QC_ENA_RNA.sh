@@ -7,8 +7,8 @@
 # script to align paired end reads
 # usage: qsub QC_SRA_RNA.sh inputsFile
 
-# Required modules for servers
-module load bio
+# load enaBrowserTools
+conda activate my_ena
 
 # retrieve input file
 inputFile=$1
@@ -46,8 +46,6 @@ cd $outputsPath"/ENA"
 
 # loop over each ENA ID
 for inputID in $readPath; do
-	# download formated reads
-	prefetch $inputID --max-size 70G
 	# status message
 	echo "Beginning ENA read processing..."
 	# download ENA data
@@ -56,8 +54,14 @@ for inputID in $readPath; do
 	echo "Finished ENA read processing!"
 done
 
+# deactivate conda environment
+conda deactivate
+
 # status message
 echo "Beginning analysis of $speciesName..."
+
+# Required modules for servers
+module load bio
 
 # move to the outputs directory
 cd $outputsPath"/FastQC_v0.12.1"

@@ -51,7 +51,7 @@ for inputID in $readPath; do
 	# status message
 	echo "Beginning SRA read processing..."
 	# retrieve SRA data
-	$softwarePath"/"fasterq-dump --skip-technical --threads 8 --split-files --seq-defline ">\$ac.\$si.\$ri" --fasta -O $outputsPath"/SRA/"  ./$inputID
+	fasterq-dump --skip-technical --threads 8 --split-files --seq-defline ">\$ac.\$si.\$ri" --fasta -O $outputsPath"/SRA/"  ./$inputID
 	# print status message
 	echo "Finished SRA read processing!"
 done

@@ -25,11 +25,6 @@ qsub QC_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 
 
 
-qsub QC_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
-
-Your job 1116988 ("QC_RNA_jobOutput") has been submitted
-Skipping '/groups/mpfrende/Projects_2026/multi_genome/data/D_galeata_ENA/ERP112242/ERR2929116/ERR2929116_1.fastq' which didn't exist, or couldn't be read
-
 qsub QC_RNA.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
@@ -47,6 +42,7 @@ qsub QC_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
+#### qsub QC_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
 
 Your job 1116984 ("QC_RNA_jobOutput") has been submitted
 Your job 1116985 ("QC_RNA_jobOutput") has been submitted
