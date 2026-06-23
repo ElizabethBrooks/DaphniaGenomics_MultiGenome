@@ -40,6 +40,7 @@ outputsPath=$(grep "outputs_EGAPx_v0.3.2_analysis:" ../"inputData/inputs_annotat
 outputsPath=$outputsPath"/"$speciesName
 
 # create outputs directories
+mkdir $outputsPath
 mkdir $outputsPath"/FastQC_v0.12.1"
 mkdir $outputsPath"/FastQC_v0.12.1/MultiQC_v1.33"
 
