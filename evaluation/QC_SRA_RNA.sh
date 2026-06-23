@@ -63,7 +63,7 @@ echo "Beginning analysis of $speciesName..."
 cd $outputsPath"/FastQC_v0.12.1"
 
 # perform QC
-fastqc $outputsPath"/SRA/"*"/"* -o $outputsPath"/FastQC_v0.12.1"
+fastqc $outputsPath"/SRA/"*".fasta" -o $outputsPath"/FastQC_v0.12.1"
 
 # run multiqc
 multiqc $outputsPath"/FastQC_v0.12.1" -o $outputsPath"/FastQC_v0.12.1/MultiQC_v1.33" -n "multiqc"
