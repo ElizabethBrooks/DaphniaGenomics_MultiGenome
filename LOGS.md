@@ -1,9 +1,52 @@
-# Analysis & Tests
+# Logs of Analysis & Tests
+
+## evaluation
+
+#### qsub QC_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+##### job 
+
+#### qsub align_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+##### job 
+
+#### qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+##### job 
+
+#### qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+##### job 
+
+#### qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+##### job 
+
+#### qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+##### job 
+
+
+## evaluation tests
+
+#### qsub QC_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+##### job 1109089
+multiqc | MultiQC complete
+#### qsub align_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+##### job 1108646
+63.03% overall alignment rate
+#### qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+##### job 1108724
+Total sequence length (bp)                                  121197166
+#### qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+##### job 1108967
+Total sequence length (bp)                                  121197166
+#### qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+##### job 1108977
+Parsing Finished
+#### qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+##### job 1109064
+NOTICEs: 2; WARNINGs: 2; non-fatal ERRORs: 0
+
 
 ## NCBI, zenodo, and CNGBdb genomes - June 2026
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset.txt
-##### job 
+##### job 1113263
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 ##### job 1059650
@@ -450,24 +493,6 @@ transcript   126
 ##### job 1028526
 #### qsub functional_emapper.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
 ##### job 1028530
-#### qsub QC_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-##### job 1109089
-multiqc | MultiQC complete
-#### qsub align_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-##### job 1108646
-63.03% overall alignment rate
-#### qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-##### job 1108724
-Total sequence length (bp)                                  121197166
-#### qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-##### job 1108967
-Total sequence length (bp)                                  121197166
-#### qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-##### job 1108977
-Parsing Finished
-#### qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-##### job 1109064
-NOTICEs: 2; WARNINGs: 2; non-fatal ERRORs: 0
 
 
 ## cleaning
