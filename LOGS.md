@@ -139,7 +139,7 @@ qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
 
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
-Your job 1117772 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1117773 ("fun_stats_AGAT_jobOutput") has been submitted
 
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
