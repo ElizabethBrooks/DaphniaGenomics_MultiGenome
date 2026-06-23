@@ -4,6 +4,7 @@
 
 ### NCBI, zenodo, and CNGBdb genomes
 
+qsub QC_RNA.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
@@ -14,16 +15,10 @@ qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
-qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+
+Your job 1117597 ("QC_RNA_jobOutput") has been submitted
 
 ### batch 1
-
-qsub QC_SRA_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
-qsub QC_SRA_RNA.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
-qsub QC_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
-qsub QC_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
-
-
 
 qsub QC_RNA.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
@@ -42,6 +37,11 @@ qsub QC_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
+
+qsub QC_SRA_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub QC_SRA_RNA.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+qsub QC_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
+qsub QC_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 #### qsub QC_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
 
 Your job 1116984 ("QC_RNA_jobOutput") has been submitted
