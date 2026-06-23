@@ -65,7 +65,10 @@ Your job 1117034 ("QC_RNA_jobOutput") has been submitted
 Your job 1117115 ("QC_RNA_jobOutput") has been submitted
 Your job 1117087 ("QC_RNA_jobOutput") has been submitted
 
-
+Your job 1117632 ("QC_SRA_RNA_jobOutput") has been submitted
+Your job 1117633 ("QC_SRA_RNA_jobOutput") has been submitted
+Your job 1117634 ("QC_SRA_RNA_jobOutput") has been submitted
+Your job 1117635 ("QC_SRA_RNA_jobOutput") has been submitted
 
 ### batch 2
 
