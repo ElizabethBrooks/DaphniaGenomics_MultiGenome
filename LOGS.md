@@ -142,7 +142,7 @@ qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.tx
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 
-Your job 1117767 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1117768 ("fun_stats_AGAT_jobOutput") has been submitted
 
 
 #### list short introns
