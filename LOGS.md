@@ -5,7 +5,6 @@
 ### NCBI, zenodo, and CNGBdb genomes
 
 qsub QC_RNA.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
-
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
@@ -18,7 +17,6 @@ qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 
 Your job 1117597 ("QC_RNA_jobOutput") has been submitted
-
 Your job 1117720 ("QC_SRA_RNA_jobOutput") has been submitted
 Your job 1117721 ("QC_SRA_RNA_jobOutput") has been submitted
 Your job 1117722 ("QC_SRA_RNA_jobOutput") has been submitted
@@ -49,12 +47,11 @@ qsub QC_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
-
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
-#### qsub QC_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
 
 Your job 1116984 ("QC_RNA_jobOutput") has been submitted
 Your job 1116985 ("QC_RNA_jobOutput") has been submitted
@@ -73,11 +70,11 @@ Your job 1117002 ("QC_RNA_jobOutput") has been submitted
 Your job 1117034 ("QC_RNA_jobOutput") has been submitted
 Your job 1117115 ("QC_RNA_jobOutput") has been submitted
 Your job 1117087 ("QC_RNA_jobOutput") has been submitted
-
 Your job 1117632 ("QC_SRA_RNA_jobOutput") has been submitted
 Your job 1117633 ("QC_SRA_RNA_jobOutput") has been submitted
 Your job 1117634 ("QC_SRA_RNA_jobOutput") has been submitted
 Your job 1117635 ("QC_SRA_RNA_jobOutput") has been submitted
+Your job 1118699 ("QC_RNA_jobOutput") has been submitted
 
 ### batch 2
 
@@ -111,12 +108,13 @@ qsub QC_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
-#### qsub QC_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 
 Your job 1116909 ("QC_RNA_jobOutput") has been submitted
 Your job 1116917 ("QC_RNA_jobOutput") has been submitted
 Your job 1116927 ("QC_RNA_jobOutput") has been submitted
 Your job 1116928 ("QC_RNA_jobOutput") has been submitted
+Your job 1118756 ("QC_RNA_jobOutput") has been submitted
 
 qsub QC_RNA.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
@@ -131,6 +129,11 @@ qsub align_RNA.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
 qsub align_RNA.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
 qsub align_RNA.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
 #### qsub align_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+
+Your job 1118705 ("align_RNA_jobOutput") has been submitted
+Your job 1118707 ("align_RNA_jobOutput") has been submitted
+Your job 1118708 ("align_RNA_jobOutput") has been submitted
+Your job 1118709 ("align_RNA_jobOutput") has been submitted
 
 #### annotation statistics
 
@@ -221,6 +224,13 @@ NOTICEs: 2; WARNINGs: 2; non-fatal ERRORs: 0
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
 ##### job 1117067
+CDS          107766
+exon         119716
+gene         14979
+lnc_RNA      169
+mRNA         14953
+pseudogene   1859
+transcript   3
 
 
 ## NCBI, zenodo, and CNGBdb genomes - June 2026
@@ -236,6 +246,8 @@ Plus 37 more processes waiting for tasks…
 Plus 62 more processes waiting for tasks…
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
 ##### job 1116954
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_KNU.txt
+##### job
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 ##### job 1059654
