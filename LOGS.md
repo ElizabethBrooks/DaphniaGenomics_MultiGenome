@@ -128,12 +128,13 @@ qsub align_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
 qsub align_RNA.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
 qsub align_RNA.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
 qsub align_RNA.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
-#### qsub align_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 
 Your job 1118705 ("align_RNA_jobOutput") has been submitted
 Your job 1118707 ("align_RNA_jobOutput") has been submitted
 Your job 1118708 ("align_RNA_jobOutput") has been submitted
 Your job 1118709 ("align_RNA_jobOutput") has been submitted
+
 
 #### annotation statistics
 
@@ -245,7 +246,7 @@ Plus 37 more processes waiting for tasks…
 ##### job 1113263
 Plus 62 more processes waiting for tasks…
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset.txt
-##### job
+##### job 1118802
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
 ##### job 1116954
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_KNU.txt
