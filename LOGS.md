@@ -63,7 +63,9 @@ Your job 1118923 ("align_SRA_RNA_jobOutput") has been submitted
 
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
+
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+
 
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
@@ -75,6 +77,8 @@ qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRL
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+
+
 
 #### functional statistics
 
@@ -224,6 +228,7 @@ Your job 1118901 ("align_RNA_jobOutput") has been submitted
 Your job 1118902 ("align_RNA_jobOutput") has been submitted
 Your job 1118903 ("align_RNA_jobOutput") has been submitted
 Your job 1118905 ("align_RNA_jobOutput") has been submitted
+samtools stats: failed to open "ERR2929127_2.fastq_accepted_hits.sam": No such file or directory
 Your job 1118910 ("align_SRA_RNA_jobOutput") has been submitted
 Your job 1118911 ("align_SRA_RNA_jobOutput") has been submitted
 Your job 1118912 ("align_SRA_RNA_jobOutput") has been submitted
@@ -257,29 +262,7 @@ qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_no
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
 #### qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_trimmed_reRun.txt
 
-Your job 1119046 ("stats_AGAT_jobOutput") has been submitted
-Your job 1119047 ("stats_AGAT_jobOutput") has been submitted
-Your job 1119048 ("stats_AGAT_jobOutput") has been submitted
-Your job 1119049 ("stats_AGAT_jobOutput") has been submitted
-Your job 1119050 ("stats_AGAT_jobOutput") has been submitted
-Your job 1119051 ("stats_AGAT_jobOutput") has been submitted
-Your job 1119052 ("stats_AGAT_jobOutput") has been submitted
-Your job 1119053 ("stats_AGAT_jobOutput") has been submitted
-Your job 1119054 ("stats_AGAT_jobOutput") has been submitted
-Your job 1119055 ("stats_AGAT_jobOutput") has been submitted
-Your job 1119056 ("stats_AGAT_jobOutput") has been submitted
-Your job 1119057 ("stats_AGAT_jobOutput") has been submitted
-Your job 1119058 ("stats_AGAT_jobOutput") has been submitted
-Your job 1119059 ("stats_AGAT_jobOutput") has been submitted
-Your job 1119060 ("stats_AGAT_jobOutput") has been submitted
-Your job 1119061 ("stats_AGAT_jobOutput") has been submitted
-Your job 1119062 ("stats_AGAT_jobOutput") has been submitted
-Your job 1119063 ("stats_AGAT_jobOutput") has been submitted
-Your job 1119064 ("stats_AGAT_jobOutput") has been submitted
-Your job 1119065 ("stats_AGAT_jobOutput") has been submitted
-Your job 1119066 ("stats_AGAT_jobOutput") has been submitted
-Your job 1119067 ("stats_AGAT_jobOutput") has been submitted
-Your job 1119068 ("stats_AGAT_jobOutput") has been submitted
+
 
 #### functional statistics
 

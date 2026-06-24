@@ -56,6 +56,9 @@ cd $inputsDir
 # status message
 echo "Beginning analysis of $speciesName..."
 
+# pre-clean
+rm $outputsPath"/AGAT_v1.4.2/short_introns.txt"
+
 # run AGAT
 agat_sp_list_short_introns.pl -gff $inputsDir"/complete.genomic.gff" -o $outputsPath"/AGAT_v1.4.2/short_introns.txt"
 

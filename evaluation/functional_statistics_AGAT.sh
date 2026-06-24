@@ -57,6 +57,9 @@ cd $outputsPath
 # status message
 echo "Beginning analysis of $speciesName..."
 
+# pre-clean
+rm -r $outputsPath"/AGAT_v1.4.2/functional_stats"
+
 # run AGAT
 agat_sp_functional_statistics.pl -gff $inputsDir"/complete.genomic.gff" -g $inputsDir"/complete.genomic.fna" -o $outputsPath"/AGAT_v1.4.2/functional_stats"
 
