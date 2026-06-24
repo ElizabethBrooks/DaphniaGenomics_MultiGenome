@@ -63,9 +63,12 @@ Your job 1118923 ("align_SRA_RNA_jobOutput") has been submitted
 
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
+Your job 1119160 ("stats_AGAT_jobOutput") has been submitted
+ls: cannot access '/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/zenodo/Diaphanosoma_dubium_CNGBdb/complete.genomic.gff': No such file or directory
 
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 
+Your job 1119159 ("stats_AGAT_jobOutput") has been submitted
 
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
@@ -78,7 +81,20 @@ qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 
-
+Your job 1119148 ("stats_AGAT_jobOutput") has been submitted
+ls: cannot access '/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/NCBI/Artemia_franciscana_JAVRJZ01_NCBI_subset_ZU/complete.genomic.gff': No such file or directory
+Your job 1119149 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119150 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119151 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119152 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119153 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119154 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119156 ("stats_AGAT_jobOutput") has been submitted
+ls: cannot access '/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/NCBI/Chydorus_sphaericus_JWP1_NCBI/complete.genomic.gff': No such file or directory
+Your job 1119157 ("stats_AGAT_jobOutput") has been submitted
+ls: cannot access '/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/NCBI/Branchinecta_lynchi_BRLY_NCBI/complete.genomic.gff': No such file or directory
+Your job 1119158 ("stats_AGAT_jobOutput") has been submitted
+ls: cannot access '/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/NCBI/Branchinecta_sandiegonensis_CCGP_NCBI/complete.genomic.gff': No such file or directory
 
 #### functional statistics
 
@@ -233,6 +249,7 @@ Your job 1118910 ("align_SRA_RNA_jobOutput") has been submitted
 Your job 1118911 ("align_SRA_RNA_jobOutput") has been submitted
 Your job 1118912 ("align_SRA_RNA_jobOutput") has been submitted
 Your job 1118913 ("align_SRA_RNA_jobOutput") has been submitted
+samtools stats: failed to open "SRR10389294_2_accepted_hits.sam": No such file or directory
 Your job 1118904 ("align_RNA_jobOutput") has been submitted
 
 #### annotation statistics
@@ -262,7 +279,30 @@ qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_no
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
 #### qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_trimmed_reRun.txt
 
-
+Your job 1119125 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119126 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119127 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119128 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119129 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119130 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119131 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119132 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119133 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119134 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119135 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119136 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119137 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119138 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119893 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119140 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119141 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119142 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119143 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119144 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119145 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119146 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119147 ("stats_AGAT_jobOutput") has been submitted
+ls: cannot access '/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/ZQ/batch_1//complete.genomic.gff': No such file or directory
 
 #### functional statistics
 
