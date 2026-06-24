@@ -455,6 +455,30 @@ qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
 #### qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_trimmed_reRun.txt
 
+Your job 1120055 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120056 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120057 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120058 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120059 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120060 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120061 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120062 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120063 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120064 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120065 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120066 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120067 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120068 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120069 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120070 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120071 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120072 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120073 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120074 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120075 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120076 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120077 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+
 
 ### batch 2
 
@@ -590,6 +614,17 @@ qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+
+Your job 1120045 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120046 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120047 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120048 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120049 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120050 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120051 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120052 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120053 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120054 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 
 ### version 2
