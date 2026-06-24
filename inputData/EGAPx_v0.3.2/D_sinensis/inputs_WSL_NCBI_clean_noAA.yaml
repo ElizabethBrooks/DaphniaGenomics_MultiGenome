@@ -1,4 +1,4 @@
-genome: /groups/mpfrende/Projects_2026/multi_genome/data/FCS_GX/D_sinensis_data/GCA_013167095.2_Dsi_genomic_clean.fasta
+genome: /groups/mpfrende/Projects_2026/multi_genome/FCS_GX_v0.5.5/D_sinensis_WSL_NCBI_noAA/clean.fasta
 taxid: 1820382
 reads:
   - SRR10389290
