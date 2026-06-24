@@ -63,7 +63,7 @@ Your job 1118923 ("align_SRA_RNA_jobOutput") has been submitted
 
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
-
+Your job 1119957 ("stats_AGAT_jobOutput") has been submitted
 
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 
