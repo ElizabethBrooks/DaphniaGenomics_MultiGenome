@@ -4,6 +4,8 @@
 
 ### NCBI, zenodo, and CNGBdb genomes
 
+#### QC RNA
+
 qsub QC_RNA.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
@@ -28,7 +30,27 @@ Your job 1117727 ("QC_SRA_RNA_jobOutput") has been submitted
 Your job 1117728 ("QC_SRA_RNA_jobOutput") has been submitted
 Your job 1117729 ("QC_SRA_RNA_jobOutput") has been submitted
 
+#### align RNA
+
+qsub align_RNA.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+
+Your job 1118906 ("align_RNA_jobOutput") has been submitted
+
+qsub align_SRA_RNA.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
+qsub align_SRA_RNA.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+qsub align_SRA_RNA.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
+qsub align_SRA_RNA.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
+qsub align_SRA_RNA.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+qsub align_SRA_RNA.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+qsub align_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+qsub align_SRA_RNA.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+qsub align_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
+qsub align_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+
+
 ### batch 1
+
+#### QC RNA
 
 qsub QC_RNA.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
@@ -76,7 +98,55 @@ Your job 1117634 ("QC_SRA_RNA_jobOutput") has been submitted
 Your job 1117635 ("QC_SRA_RNA_jobOutput") has been submitted
 Your job 1118699 ("QC_RNA_jobOutput") has been submitted
 
+#### align RNA
+
+qsub align_RNA.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
+qsub align_RNA.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+
+Your job 1118888 ("align_RNA_jobOutput") has been submitted
+Your job 1118889 ("align_RNA_jobOutput") has been submitted
+Your job 1118890 ("align_RNA_jobOutput") has been submitted
+Your job 1118891 ("align_RNA_jobOutput") has been submitted
+Your job 1118892 ("align_RNA_jobOutput") has been submitted
+Your job 1118893 ("align_RNA_jobOutput") has been submitted
+Your job 1118894 ("align_RNA_jobOutput") has been submitted
+Your job 1118895 ("align_RNA_jobOutput") has been submitted
+Your job 1118896 ("align_RNA_jobOutput") has been submitted
+Your job 1118897 ("align_RNA_jobOutput") has been submitted
+Your job 1118898 ("align_RNA_jobOutput") has been submitted
+Your job 1118899 ("align_RNA_jobOutput") has been submitted
+Your job 1118900 ("align_RNA_jobOutput") has been submitted
+Your job 1118901 ("align_RNA_jobOutput") has been submitted
+Your job 1118902 ("align_RNA_jobOutput") has been submitted
+Your job 1118903 ("align_RNA_jobOutput") has been submitted
+Your job 1118904 ("align_RNA_jobOutput") has been submitted
+Your job 1118905 ("align_RNA_jobOutput") has been submitted
+
+qsub align_SRA_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub align_SRA_RNA.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+qsub align_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
+qsub align_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
+
+
 ### batch 2
+
+#### QC RNA
 
 qsub QC_RNA.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
@@ -99,6 +169,31 @@ Your job 1116977 ("QC_RNA_jobOutput") has been submitted
 Your job 1116978 ("QC_RNA_jobOutput") has been submitted
 Your job 1116979 ("QC_RNA_jobOutput") has been submitted
 Your job 1116980 ("QC_RNA_jobOutput") has been submitted
+
+#### align RNA
+
+qsub align_RNA.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+qsub align_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+qsub align_RNA.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+
+Your job 1118878 ("align_RNA_jobOutput") has been submitted
+Your job 1118879 ("align_RNA_jobOutput") has been submitted
+Your job 1118880 ("align_RNA_jobOutput") has been submitted
+Your job 1118881 ("align_RNA_jobOutput") has been submitted
+Your job 1118882 ("align_RNA_jobOutput") has been submitted
+Your job 1118883 ("align_RNA_jobOutput") has been submitted
+Your job 1118884 ("align_RNA_jobOutput") has been submitted
+Your job 1118885 ("align_RNA_jobOutput") has been submitted
+Your job 1118886 ("align_RNA_jobOutput") has been submitted
+Your job 1118887 ("align_RNA_jobOutput") has been submitted
+
 
 ### version 2
 
@@ -134,7 +229,7 @@ Your job 1118705 ("align_RNA_jobOutput") has been submitted
 Your job 1118707 ("align_RNA_jobOutput") has been submitted
 Your job 1118708 ("align_RNA_jobOutput") has been submitted
 Your job 1118709 ("align_RNA_jobOutput") has been submitted
-
+Your job 1118853 ("align_RNA_jobOutput") has been submitted
 
 #### annotation statistics
 
