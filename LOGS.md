@@ -88,7 +88,9 @@ Your job 1119152 ("stats_AGAT_jobOutput") has been submitted
 Your job 1119153 ("stats_AGAT_jobOutput") has been submitted
 Your job 1119154 ("stats_AGAT_jobOutput") has been submitted
 Your job 1119156 ("stats_AGAT_jobOutput") has been submitted
-
+Your job 1119904 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119905 ("stats_AGAT_jobOutput") has been submitted
+Your job 1119906 ("stats_AGAT_jobOutput") has been submitted
 
 #### functional statistics
 
