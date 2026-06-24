@@ -505,7 +505,16 @@ qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_c
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 
-
+Your job 1119977 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119978 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119980 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119981 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119982 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119983 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119984 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119985 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119986 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119987 ("fun_stats_AGAT_jobOutput") has been submitted
 
 #### list short introns
 
@@ -519,6 +528,17 @@ qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+
+Your job 1119998 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1119999 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120000 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120001 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120002 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120003 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120004 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120005 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120006 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120007 ("short_introns_AGAT_jobOutput") has been submitted
 
 #### evaluate assembly
 
