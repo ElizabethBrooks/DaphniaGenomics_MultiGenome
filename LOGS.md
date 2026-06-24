@@ -139,6 +139,16 @@ qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCB
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 #### qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
 
+Your job 1120033 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120034 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120035 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120036 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120037 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120038 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120039 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120040 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120041 ("short_introns_AGAT_jobOutput") has been submitted
+
 #### evaluate assembly
 
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
