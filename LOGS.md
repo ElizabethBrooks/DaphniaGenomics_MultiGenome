@@ -130,6 +130,8 @@ Your job 1120042 ("short_introns_AGAT_jobOutput") has been submitted
 
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 
+Your job 1120044 ("short_introns_AGAT_jobOutput") has been submitted
+
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
