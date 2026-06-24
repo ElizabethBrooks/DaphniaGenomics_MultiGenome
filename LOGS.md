@@ -126,6 +126,8 @@ Your job 1119956 ("fun_stats_AGAT_jobOutput") has been submitted
 
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
+Your job 1120042 ("short_introns_AGAT_jobOutput") has been submitted
+
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
