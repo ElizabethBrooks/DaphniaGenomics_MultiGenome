@@ -6,7 +6,6 @@
 
 # script to summerize functional information in the input gff
 # usage: qsub functional_statistics_AGAT.sh inputFile
-# usage ex: qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
 
 # retrieve input file
 inputFile=$1
@@ -53,6 +52,9 @@ cd $inputsDir
 
 # status message
 echo "Beginning analysis of $speciesName..."
+
+# retrieve agat config
+singularity exec --bind $PWD $softwarePath"/agat_1.4.2--pl5321hdfd78af_0.sif" agat config --expose
 
 # run AGAT
 singularity exec --bind $PWD $softwarePath"/agat_1.4.2--pl5321hdfd78af_0.sif" agat_sp_functional_statistics.pl -gff $inputsDir"/complete.genomic.gff" -g $inputsDir"/complete.genomic.fna" -o $outputsPath"/AGAT_v1.4.2/functional_stats"
