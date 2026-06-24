@@ -140,6 +140,12 @@ qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_cl
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 
+Your job 1117843 ("stats_AGAT_jobOutput") has been submitted
+Your job 1117844 ("stats_AGAT_jobOutput") has been submitted
+Your job 1117845 ("stats_AGAT_jobOutput") has been submitted
+Your job 1117846 ("stats_AGAT_jobOutput") has been submitted
+Your job 1117847 ("stats_AGAT_jobOutput") has been submitted
+
 #### functional statistics
 
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
@@ -149,15 +155,10 @@ qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 
 Your job 1117820 ("fun_stats_AGAT_jobOutput") has been submitted
-Total sequence length (bp)                                  121197166
 Your job 1117821 ("fun_stats_AGAT_jobOutput") has been submitted
-Total sequence length (bp)                                  163420104
 Your job 1117825 ("fun_stats_AGAT_jobOutput") has been submitted
-Total sequence length (bp)                                  126099571
 Your job 1117811 ("fun_stats_AGAT_jobOutput") has been submitted
-Total sequence length (bp)                                  137956195
 Your job 1117807 ("fun_stats_AGAT_jobOutput") has been submitted
-Total sequence length (bp)                                  132154278
 
 #### list short introns
 
@@ -167,6 +168,12 @@ qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 
+Your job 1117851 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1117852 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1117853 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1117854 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1117855 ("short_introns_AGAT_jobOutput") has been submitted
+
 #### evaluate assembly
 
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
@@ -175,6 +182,11 @@ qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 
+Your job 1117856 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1117857 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1117858 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1117859 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1117860 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 ## evaluation tests
 
