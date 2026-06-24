@@ -1,7 +1,7 @@
 genome: /groups/mpfrende/Projects_2026/multi_genome/data/zenodo_data/Daphnia_arabica.fasta
 taxid: 2937293
 reads:
-  - SRX18356997
-  - SRX18356996
-  - SRX18356995
-  - SRX18356994
+  - SRR22386942
+  - SRR22386943
+  - SRR22386944
+  - SRR22386945

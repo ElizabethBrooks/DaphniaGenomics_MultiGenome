@@ -17,6 +17,7 @@ qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+#### qsub QC_SRA_RNA.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 
 Your job 1117597 ("QC_RNA_jobOutput") has been submitted
 Your job 1117720 ("QC_SRA_RNA_jobOutput") has been submitted
@@ -29,13 +30,11 @@ Your job 1117726 ("QC_SRA_RNA_jobOutput") has been submitted
 Your job 1117727 ("QC_SRA_RNA_jobOutput") has been submitted
 Your job 1117728 ("QC_SRA_RNA_jobOutput") has been submitted
 Your job 1117729 ("QC_SRA_RNA_jobOutput") has been submitted
+#### Your job 1118953 ("QC_SRA_RNA_jobOutput") has been submitted
 
 #### align RNA
 
 qsub align_RNA.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
-
-Your job 1118906 ("align_RNA_jobOutput") has been submitted
-
 qsub align_SRA_RNA.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
 qsub align_SRA_RNA.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 qsub align_SRA_RNA.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
@@ -46,6 +45,79 @@ qsub align_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
 qsub align_SRA_RNA.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 qsub align_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub align_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+#### qsub align_SRA_RNA.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+
+Your job 1118906 ("align_RNA_jobOutput") has been submitted
+Your job 1118914 ("align_SRA_RNA_jobOutput") has been submitted
+Your job 1118915 ("align_SRA_RNA_jobOutput") has been submitted
+Your job 1118916 ("align_SRA_RNA_jobOutput") has been submitted
+Your job 1118917 ("align_SRA_RNA_jobOutput") has been submitted
+Your job 1118918 ("align_SRA_RNA_jobOutput") has been submitted
+Your job 1118919 ("align_SRA_RNA_jobOutput") has been submitted
+Your job 1118920 ("align_SRA_RNA_jobOutput") has been submitted
+Your job 1118921 ("align_SRA_RNA_jobOutput") has been submitted
+Your job 1118922 ("align_SRA_RNA_jobOutput") has been submitted
+Your job 1118923 ("align_SRA_RNA_jobOutput") has been submitted
+
+#### annotation statistics
+
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+
+#### functional statistics
+
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+
+#### list short introns
+
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+
+#### evaluate assembly
+
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 
 
 ### batch 1
@@ -118,6 +190,10 @@ qsub align_RNA.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
 qsub align_RNA.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
 qsub align_RNA.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
 qsub align_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+qsub align_SRA_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub align_SRA_RNA.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+qsub align_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
+qsub align_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 
 Your job 1118888 ("align_RNA_jobOutput") has been submitted
 Your job 1118889 ("align_RNA_jobOutput") has been submitted
@@ -137,11 +213,110 @@ Your job 1118902 ("align_RNA_jobOutput") has been submitted
 Your job 1118903 ("align_RNA_jobOutput") has been submitted
 Your job 1118904 ("align_RNA_jobOutput") has been submitted
 Your job 1118905 ("align_RNA_jobOutput") has been submitted
+Your job 1118910 ("align_SRA_RNA_jobOutput") has been submitted
+Your job 1118911 ("align_SRA_RNA_jobOutput") has been submitted
+Your job 1118912 ("align_SRA_RNA_jobOutput") has been submitted
+Your job 1118913 ("align_SRA_RNA_jobOutput") has been submitted
 
-qsub align_SRA_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
-qsub align_SRA_RNA.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
-qsub align_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
-qsub align_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
+#### annotation statistics
+
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
+
+#### functional statistics
+
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
+
+#### list short introns
+
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
+
+#### evaluate assembly
+
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 
 
 ### batch 2
@@ -193,6 +368,58 @@ Your job 1118884 ("align_RNA_jobOutput") has been submitted
 Your job 1118885 ("align_RNA_jobOutput") has been submitted
 Your job 1118886 ("align_RNA_jobOutput") has been submitted
 Your job 1118887 ("align_RNA_jobOutput") has been submitted
+
+#### annotation statistics
+
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+
+#### functional statistics
+
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+
+#### list short introns
+
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+
+#### evaluate assembly
+
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 
 
 ### version 2
