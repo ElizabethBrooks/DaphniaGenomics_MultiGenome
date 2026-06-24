@@ -1,4 +1,4 @@
-genome: /groups/mpfrende/Projects_2026/multi_genome/data/FCS_GX/D_lumholtzi_gx_out/D.lumholtzi_3.0.masked_clean.fasta
+genome: /groups/mpfrende/Projects_2026/multi_genome/FCS_GX_v0.5.5/D_lumholtzi_2_WW_ZQ/clean.fasta
 taxid: 42856
 reads:
   - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/RNA/lumholtzi.R1_001.fastq
