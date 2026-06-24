@@ -63,8 +63,7 @@ Your job 1118923 ("align_SRA_RNA_jobOutput") has been submitted
 
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
-Your job 1119160 ("stats_AGAT_jobOutput") has been submitted
-ls: cannot access '/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/zenodo/Diaphanosoma_dubium_CNGBdb/complete.genomic.gff': No such file or directory
+
 
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 
@@ -108,6 +107,16 @@ qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 #### qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
+
+Your job 1119948 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119949 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119950 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119951 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119952 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119953 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119954 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119955 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119956 ("fun_stats_AGAT_jobOutput") has been submitted
 
 #### list short introns
 
