@@ -95,7 +95,11 @@ Your job 1119906 ("stats_AGAT_jobOutput") has been submitted
 
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
+Your job 1119973 ("fun_stats_AGAT_jobOutput") has been submitted
+
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+
+Your job 1119966 ("fun_stats_AGAT_jobOutput") has been submitted
 
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
@@ -501,16 +505,7 @@ qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_c
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 
-Your job 1119908 ("fun_stats_AGAT_jobOutput") has been submitted
-Your job 1119909 ("fun_stats_AGAT_jobOutput") has been submitted
-Your job 1119910 ("fun_stats_AGAT_jobOutput") has been submitted
-Your job 1119911 ("fun_stats_AGAT_jobOutput") has been submitted
-Your job 1119912 ("fun_stats_AGAT_jobOutput") has been submitted
-Your job 1119913 ("fun_stats_AGAT_jobOutput") has been submitted
-Your job 1119914 ("fun_stats_AGAT_jobOutput") has been submitted
-Your job 1119915 ("fun_stats_AGAT_jobOutput") has been submitted
-Your job 1119916 ("fun_stats_AGAT_jobOutput") has been submitted
-Your job 1119917 ("fun_stats_AGAT_jobOutput") has been submitted
+
 
 #### list short introns
 
