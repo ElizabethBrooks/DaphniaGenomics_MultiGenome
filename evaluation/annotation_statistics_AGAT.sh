@@ -6,7 +6,9 @@
 
 # script to provides exhaustive statistics of the input gff
 # usage: qsub annotation_statistics_AGAT.sh inputFile
-# usage ex: qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
+
+# load software
+conda activate my_agat
 
 # retrieve input file
 inputFile=$1
@@ -49,13 +51,13 @@ outputsPath=$outputsPath"/"$speciesName
 mkdir $outputsPath"/AGAT_v1.4.2"
 
 # move to the outputs directory
-cd $outputsPath
+cd $inputsDir
 
 # status message
 echo "Beginning analysis of $speciesName..."
 
 # run AGAT
-singularity exec --bind $PWD:/AGAT_v1.4.2 $softwarePath"/agat_1.4.2--pl5321hdfd78af_0.sif" agat_sp_statistics.pl -gff $inputsDir"/complete.genomic.gff" -g $inputsDir"/complete.genomic.fna" -o $outputsPath"/AGAT_v1.4.2/annotation_stats.txt"
+agat_sp_statistics.pl -gff $inputsDir"/complete.genomic.gff" -g $inputsDir"/complete.genomic.fna" -o $outputsPath"/AGAT_v1.4.2/annotation_stats.txt"
 
 # status message
 echo "Analysis of $speciesName complete!"
