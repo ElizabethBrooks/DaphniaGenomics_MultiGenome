@@ -98,7 +98,6 @@ qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBd
 
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 
-qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
@@ -108,6 +107,7 @@ qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRL
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+#### qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
 
 #### list short introns
 
@@ -115,7 +115,6 @@ qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.t
 
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 
-qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
@@ -125,6 +124,7 @@ qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_N
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+#### qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
 
 #### evaluate assembly
 
@@ -132,7 +132,6 @@ qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.t
 
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 
-qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
@@ -142,6 +141,7 @@ qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_N
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+#### qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
 
 
 ### batch 1
@@ -325,6 +325,30 @@ qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
 #### qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_trimmed_reRun.txt
+
+Your job 1119918 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119919 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119920 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119921 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119922 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119923 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119924 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119925 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119926 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119927 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119928 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119929 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119930 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119931 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119932 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119933 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119934 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119935 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119936 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119937 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119938 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119939 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119940 ("fun_stats_AGAT_jobOutput") has been submitted
 
 #### list short introns
 
