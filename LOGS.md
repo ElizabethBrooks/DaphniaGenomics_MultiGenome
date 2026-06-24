@@ -390,6 +390,30 @@ qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
 #### qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_trimmed_reRun.txt
 
+Your job 1120009 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120010 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120011 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120012 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120013 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120015 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120016 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120017 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120018 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120019 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120020 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120021 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120022 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120023 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120024 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120025 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120026 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120027 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120028 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120029 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120030 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120031 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120032 ("short_introns_AGAT_jobOutput") has been submitted
+
 #### evaluate assembly
 
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
