@@ -73,8 +73,6 @@ A carefully vetted masking library can be useful for identifying gene prediction
 
 If EGAPx is taking an inordinately long time to run, double check that the SRA project IDs only includes RNA sequencing data for the desired species. The EGAPx software will hang and the run will not complete if there is DNA sequencing data or RNA for other (more distant) species mixed in with the RNA data for the species being annotated.
 
-Also, be sure to check the RNA-seq library selection for each SRA sample. It appears that oligo(dT) selected RNA-seq data causes EGAPx to hang.
-
 ###### IsoSeq
 
 
