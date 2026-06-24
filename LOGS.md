@@ -294,6 +294,7 @@ Your job 1119136 ("stats_AGAT_jobOutput") has been submitted
 Your job 1119137 ("stats_AGAT_jobOutput") has been submitted
 Your job 1119138 ("stats_AGAT_jobOutput") has been submitted
 Your job 1119893 ("stats_AGAT_jobOutput") has been submitted
+ls: cannot access '/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/ZQ/batch_1/Simocephalus_vetulus_WW/complete.genomic.gff': No such file or directory
 Your job 1119140 ("stats_AGAT_jobOutput") has been submitted
 Your job 1119141 ("stats_AGAT_jobOutput") has been submitted
 Your job 1119142 ("stats_AGAT_jobOutput") has been submitted

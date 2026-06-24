@@ -49,6 +49,7 @@ outputsPath=$(grep "outputs_EGAPx_v0.3.2_analysis:" ../"inputData/inputs_annotat
 outputsPath=$outputsPath"/"$speciesName
 
 # create outputs directory
+mkdir $outputsPath
 mkdir $outputsPath"/QUAST_v5.3.0"
 
 # status message
