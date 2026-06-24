@@ -146,7 +146,7 @@ qsub QC_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
 qsub QC_RNA.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
-qsub QC_RNA.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_trimmed_reRun.txt
 
 Your job 1116984 ("QC_RNA_jobOutput") has been submitted
 Your job 1116985 ("QC_RNA_jobOutput") has been submitted
@@ -170,7 +170,7 @@ Your job 1117634 ("QC_SRA_RNA_jobOutput") has been submitted
 Your job 1117635 ("QC_SRA_RNA_jobOutput") has been submitted
 Your job 1118699 ("QC_RNA_jobOutput") has been submitted
 Your job 1117087 ("QC_RNA_jobOutput") has been submitted
-Your job 1118994 ("QC_RNA_jobOutput") has been submitted
+Your job 1119002 ("QC_RNA_jobOutput") has been submitted
 
 #### align RNA
 
@@ -196,13 +196,14 @@ qsub align_SRA_RNA.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
 qsub align_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
 qsub align_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 qsub align_RNA.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
-#### qsub align_RNA.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+#### qsub align_RNA.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_trimmed_reRun.txt
 
 Your job 1118888 ("align_RNA_jobOutput") has been submitted
 Your job 1118889 ("align_RNA_jobOutput") has been submitted
 Your job 1118890 ("align_RNA_jobOutput") has been submitted
 Your job 1118891 ("align_RNA_jobOutput") has been submitted
 Your job 1118892 ("align_RNA_jobOutput") has been submitted
+samtools stats: failed to open "lumholtzi.R2_001_accepted_hits.sam": No such file or directory
 Your job 1118893 ("align_RNA_jobOutput") has been submitted
 Your job 1118894 ("align_RNA_jobOutput") has been submitted
 Your job 1118895 ("align_RNA_jobOutput") has been submitted
@@ -245,7 +246,8 @@ qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
-#### qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+#### qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_trimmed_reRun.txt
 
 #### functional statistics
 
@@ -271,7 +273,8 @@ qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
-#### qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+#### qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_trimmed_reRun.txt
 
 #### list short introns
 
@@ -297,7 +300,8 @@ qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
-#### qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+#### qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_trimmed_reRun.txt
 
 #### evaluate assembly
 
@@ -323,7 +327,8 @@ qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
-#### qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+#### qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_trimmed_reRun.txt
 
 
 ### batch 2
@@ -574,7 +579,8 @@ pseudogene   1859
 transcript   3
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_trimmed_reRun.txt
-##### job
+##### job 1118998
+
 
 ## NCBI, zenodo, and CNGBdb genomes - June 2026
 
