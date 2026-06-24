@@ -157,7 +157,11 @@ Your job 1120041 ("short_introns_AGAT_jobOutput") has been submitted
 
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
+Your job 1120088 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+
+Your job 1120089 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
@@ -169,6 +173,16 @@ qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCB
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 #### qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
+
+Your job 1120079 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120080 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120081 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120082 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120083 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120084 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120085 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120086 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120087 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 
 ### batch 1

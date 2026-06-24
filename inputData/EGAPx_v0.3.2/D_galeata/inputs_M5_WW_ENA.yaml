@@ -1,4 +1,4 @@
-genome: /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/Daphnia_genomes/1_all_chromosome_assemblies_and_annotation_June2024/D.galeata_M5_annotation/D.galeata_M5.masked.chr_clean.fasta
+genome: /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_genomes/1_all_chromosome_assemblies_and_annotation_June2024/D.galeata_M5_annotation/D.galeata_M5.masked.chr_clean.fasta
 taxid: 27404
 reads:
   - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_galeata_ENA/ERR2929116_1.fastq.gz
