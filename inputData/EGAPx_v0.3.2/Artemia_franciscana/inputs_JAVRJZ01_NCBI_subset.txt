@@ -1,2 +1,0 @@
-species: Artemia_franciscana_JAVRJZ01_NCBI_subset
-inputs_EGAPx: EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset.yaml

@@ -95,7 +95,7 @@ mv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/NCBI/Branchinec
 mv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/NCBI/Chydorus_sphaericus_JWP1_NCBI .
 mv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/NCBI/Branchinecta_lynchi_BRLY_NCBI .
 mv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/NCBI/Branchinecta_sandiegonensis_CCGP_NCBI .
-#### mv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/NCBI/Artemia_franciscana_JAVRJZ01_NCBI_subset_KNU .
+#### mv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/NCBI/inputs_JAVRJZ01_NCBI .
 
 #### all
 
@@ -125,7 +125,7 @@ qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
-#### qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_KNU.txt
+#### qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
 Your job 1117721 ("QC_SRA_RNA_jobOutput") has been submitted
 Your job 1117722 ("QC_SRA_RNA_jobOutput") has been submitted
@@ -156,7 +156,7 @@ qsub align_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
 qsub align_SRA_RNA.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 qsub align_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub align_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
-#### qsub align_SRA_RNA.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_KNU.txt
+#### qsub align_SRA_RNA.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
 Your job 1118915 ("align_SRA_RNA_jobOutput") has been submitted
 Your job 1118916 ("align_SRA_RNA_jobOutput") has been submitted
@@ -187,7 +187,7 @@ qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRL
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
-#### qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_KNU.txt
+#### qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
 Your job 1119149 ("stats_AGAT_jobOutput") has been submitted
 Your job 1119150 ("stats_AGAT_jobOutput") has been submitted
@@ -219,7 +219,7 @@ qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRL
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
-#### qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
+#### qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
 Your job 1119948 ("fun_stats_AGAT_jobOutput") has been submitted
 Your job 1119949 ("fun_stats_AGAT_jobOutput") has been submitted
@@ -250,7 +250,7 @@ qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_N
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
-#### qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
+#### qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
 Your job 1120033 ("short_introns_AGAT_jobOutput") has been submitted
 Your job 1120034 ("short_introns_AGAT_jobOutput") has been submitted
@@ -281,7 +281,7 @@ qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_N
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
-#### qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
+#### qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
 Your job 1120079 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 Your job 1120080 ("evaluate_assembly_QUAST_jobOutput") has been submitted
@@ -880,9 +880,14 @@ lnc_RNA      169
 mRNA         14953
 pseudogene   1859
 transcript   3
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun2.txt
+##### job
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_trimmed_reRun.txt
 ##### job 1118998
+00161/000/0000/P  931000A1A3CA51A1 0033/0014 2026-06-25T03:48:45.824277 d32cepyc184.crc.nd.edu UNK_CLIENT      UNK_SESSION              star_wnode Error: CORELIB(106.16) "ncbiapp.cpp", line 699: ncbi::CNcbiApplicationAPI::x_TryMain() --- Application's execution failed (CException::eUnknown) 1 jobs failed
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_trimmed_reRun.txt
+##### job
 
 
 ## NCBI, zenodo, and CNGBdb genomes - June 2026
@@ -890,20 +895,8 @@ transcript   3
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 ##### job 1059650
 TOTAL                              0          0
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset.txt
-##### job 1113263
-Plus 62 more processes waiting for tasks…
-#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset.txt
-##### job 1118802
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
-##### job 1116954
-Second-pass: computing bestness scores
-#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_ZU.txt
-##### job 1121290
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_subset_KNU.txt
-##### job 1118769
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
-##### job
+##### job 1121555
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 ##### job 1059654
