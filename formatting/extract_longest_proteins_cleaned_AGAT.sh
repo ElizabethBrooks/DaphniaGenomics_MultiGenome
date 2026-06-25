@@ -55,6 +55,9 @@ cd $outputsPath
 # status message
 echo "Beginning analysis of $speciesName..."
 
+# pre clean
+rm $outputsPath"/AGAT_v1.4.2/longest_protein_cleaned.fa"
+
 # extract longest proteins
 agat_sp_extract_sequences.pl -gff $outputsPath"/AGAT_v1.4.2/output_longest.gff" -f $outputsPath"/complete.genomic.fna" -p -o $outputsPath"/AGAT_v1.4.2/longest_protein_cleaned.fa" --clean_final_stop --clean_internal_stop
 

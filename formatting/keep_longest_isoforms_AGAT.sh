@@ -55,6 +55,9 @@ cd $outputsPath
 # status message
 echo "Beginning analysis of $speciesName..."
 
+# pre clean
+rm $outputsPath"/AGAT_v1.4.2/output_longest.gff"
+
 # run AGAT
 agat_sp_keep_longest_isoform.pl -gff $outputsPath"/complete.genomic.gff" -o $outputsPath"/AGAT_v1.4.2/output_longest.gff"
 

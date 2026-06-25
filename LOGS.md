@@ -30,7 +30,7 @@ cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_lumh
 cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_lumholtzi_2_v2_WW_ZQ_clean .
 cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_carinata_CSIRO_NCBI .
 cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_longicephala_AUS_NCBI .
-# cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_magna_LRVO_BC_clean .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_magna_LRVO_BC_clean .
 cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_magna_MCL_001_BC_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_magna_MLC_001_BC_clean
 cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_similis_BGL_001_ZQ .
 cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_mediterranea_CY_ORK_ZQ_clean .
@@ -960,9 +960,9 @@ error [java.lang.InterruptedException]: java.lang.InterruptedException
 ## BC
 
 #### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
-##### job 
+##### job 1122942
 #### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
-##### job 
+##### job 1123087
 #### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 ##### job 
 #### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
@@ -970,9 +970,9 @@ error [java.lang.InterruptedException]: java.lang.InterruptedException
 #### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 ##### job 
 #### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
-##### job 
+##### job 1122991
 #### qsub check_genome_busco.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
-##### job 
+##### job 1122999
 #### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 ##### job 
 #### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
