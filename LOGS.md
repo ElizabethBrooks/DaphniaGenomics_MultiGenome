@@ -192,6 +192,8 @@ qsub star_align_RNA.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
 qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 
+Your job 1123725 ("align_SRA_RNA_jobOutput") has been submitted
+
 qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
 qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
@@ -203,6 +205,15 @@ qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 #### qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
+Your job 1123711 ("align_SRA_RNA_jobOutput") has been submitted
+Your job 1123712 ("align_SRA_RNA_jobOutput") has been submitted
+Your job 1123713 ("align_SRA_RNA_jobOutput") has been submitted
+Your job 1123714 ("align_SRA_RNA_jobOutput") has been submitted
+Your job 1123715 ("align_SRA_RNA_jobOutput") has been submitted
+Your job 1123716 ("align_SRA_RNA_jobOutput") has been submitted
+Your job 1123717 ("align_SRA_RNA_jobOutput") has been submitted
+Your job 1123718 ("align_SRA_RNA_jobOutput") has been submitted
+Your job 1123719 ("align_SRA_RNA_jobOutput") has been submitted
 
 #### align RNA
 
@@ -908,7 +919,7 @@ qsub star_align_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 
 Your job 1123604 ("star_align_RNA_jobOutput") has been submitted
 Your job 1123628 ("star_align_RNA_jobOutput") has been submitted
-Your job  ("star_align_RNA_jobOutput") has been submitted
+Your job 1123683 ("star_align_RNA_jobOutput") has been submitted
 Your job  ("star_align_RNA_jobOutput") has been submitted
 Your job 1123631 ("star_align_RNA_jobOutput") has been submitted
 
