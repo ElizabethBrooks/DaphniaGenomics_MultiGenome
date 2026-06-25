@@ -9,6 +9,7 @@
 # usage: qsub star_align_RNA.sh inputsFile
 
 # load software
+module load bio
 conda activate my_star
 
 # retrieve input file
@@ -100,6 +101,7 @@ for sampleFile in $readPath; do
 		# align samples to the refence genome
 		STAR \
 		  --runMode alignReads \
+		  --readFilesCommand zcat \
 		  --runThreadN 8 \
 		  --genomeDir $speciesName"_star_index" \
 		  --readFilesIn $sampleFile \
@@ -112,6 +114,7 @@ for sampleFile in $readPath; do
 			# align samples to the refence genome
 			STAR \
 			  --runMode alignReads \
+			  --readFilesCommand zcat \
 			  --runThreadN 8 \
 			  --genomeDir $speciesName"_star_index" \
 			  --readFilesIn $sampleFile $readTwo \

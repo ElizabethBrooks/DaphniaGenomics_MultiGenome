@@ -906,6 +906,7 @@ qsub star_align_RNA.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
 qsub star_align_RNA.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
 qsub star_align_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 
+Your job  ("star_align_RNA_jobOutput") has been submitted
 
 
 #### align RNA

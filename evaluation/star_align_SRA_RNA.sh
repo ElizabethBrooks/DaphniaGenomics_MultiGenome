@@ -8,8 +8,9 @@
 # script to align paired end reads
 # usage: qsub align_SRA_RNA.sh inputsFile
 
-# Required modules for ND CRC servers
+# load software
 module load bio
+conda activate my_star
 
 # retrieve input file
 inputFile=$1
