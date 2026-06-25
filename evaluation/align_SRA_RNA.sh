@@ -42,6 +42,7 @@ readPath=$outputsPath"/SRA/"*".fastq"
 
 # create outputs directory
 mkdir $outputsPath"/HISAT2_v2.2.2"
+mkdir $outputsPath"/HISAT2_v2.2.2/MultiQC_v1.33"
 
 # move to the outputs directory
 cd $outputsPath"/HISAT2_v2.2.2"
@@ -66,25 +67,25 @@ for sampleFile in $readPath; do
 	# get sample tag
 	sampleTag=$(basename $sampleFile | rev | cut -d "." -f2- | rev)
 	# check read type
-	if [[ $readType == "unpaired" ]]; then
+	if [[ $readType == "unpaired" ]]; then # single reads
 		# align samples to the refence genome
-		hisat2 --threads 8 -x $speciesName"_build" -U $sampleFile -S $sampleTag"_accepted_hits.sam" --summary-file $sampleTag"_alignedSummary.txt"
+		hisat2 --threads 8 -x $speciesName"_build" -U $sampleFile -S $sampleTag"_accepted_hits.bam" --summary-file $sampleTag"_alignedSummary.txt"
 	else # paired reads
 		if [[ $(($loopNum % 2)) == 0 ]]; then # handle in pairs
 			# setup second read path
 			readTwo=$(echo $sampleFile | sed "s/_R1_/_R2_/g" | sed "s/_1\./_2./g")
 			# align samples to the refence genome
-			hisat2 --threads 8 -x $speciesName"_build" -1 $sampleFile -2 $readTwo -S $sampleTag"_accepted_hits.sam" --summary-file $sampleTag"_alignedSummary.txt"
+			hisat2 --threads 8 -x $speciesName"_build" -1 $sampleFile -2 $readTwo -S $sampleTag"_accepted_hits.bam" --summary-file $sampleTag"_alignedSummary.txt"
 		fi
 	fi
 	# run samtolls stats
-	samtools stats -@ 8 $sampleTag"_accepted_hits.sam" > $sampleTag".stats"
+	samtools stats -@ 8 $sampleTag"_accepted_hits.bam" > $sampleTag".stats"
 	# incrememnt counter
 	loopNum=$(($loopNum+1))
 done
 
 # run multiqc to aggegrate the reports
-multiqc $outputsPath"/HISAT2_v2.2.2" -o $outputsPath"/HISAT2_v2.2.2" -n "multiqc"
+multiqc $outputsPath"/HISAT2_v2.2.2" -o $outputsPath"/HISAT2_v2.2.2/MultiQC_v1.33" -n "multiqc"
 
 # Print status message
 echo "Finished processing!"
