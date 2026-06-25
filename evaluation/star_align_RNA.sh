@@ -51,11 +51,11 @@ inputsDir=$inputsDir"/"$speciesName
 outputsPath=$outputsPath"/"$speciesName
 
 # pre clean
-# rm -r $outputsPath"/STAR_v2.7.11b"
+rm -r $outputsPath"/STAR_v2.7.11b"
 
-# # create outputs directory
-# mkdir $outputsPath"/STAR_v2.7.11b"
-# mkdir $outputsPath"/STAR_v2.7.11b/MultiQC_v1.33"
+# create outputs directory
+mkdir $outputsPath"/STAR_v2.7.11b"
+mkdir $outputsPath"/STAR_v2.7.11b/MultiQC_v1.33"
 
 # move to the outputs directory
 cd $outputsPath"/STAR_v2.7.11b"
@@ -64,24 +64,24 @@ cd $outputsPath"/STAR_v2.7.11b"
 echo "Beginning analysis of $speciesName..."
 
 # get read length
-# firstFile=$(ls -1 $readPath | head -1)
-# readLength=$(zcat -f $firstFile | head -n 2 | awk 'NR%4==2' | awk '{print length}')
-# overhangInput=$(($readLength-1))
+firstFile=$(ls -1 $readPath | head -1)
+readLength=$(zcat -f $firstFile | head -n 2 | awk 'NR%4==2' | awk '{print length}')
+overhangInput=$(($readLength-1))
 
-# # get genome size
-# nBases=$(cat $inputsDir"/complete.genomic.fna" | grep -v "^>" | tr -d -c "AGCTNagtcn" | wc -m)
-# logSize=$(awk "BEGIN { print log($nBases) / log(2) }")
-# gSize=$(echo "($logSize / 2) - 1" | bc)
+# get genome size
+nBases=$(cat $inputsDir"/complete.genomic.fna" | grep -v "^>" | tr -d -c "AGCTNagtcn" | wc -m)
+logSize=$(awk "BEGIN { print log($nBases) / log(2) }")
+gSize=$(echo "($logSize / 2) - 1" | bc)
 
-# # generate reference genome build files
-# mkdir $speciesName"_star_index"
-# STAR --runMode genomeGenerate \
-#      --runThreadN 8 \
-#      --genomeDir $speciesName"_star_index" \
-#      --genomeFastaFiles $refPath \
-#      --sjdbGTFfile $inputsDir"/complete.genomic.gff" \
-#      --sjdbOverhang $overhangInput \
-#      --genomeSAindexNbases $gSize
+# generate reference genome build files
+mkdir $speciesName"_star_index"
+STAR --runMode genomeGenerate \
+     --runThreadN 8 \
+     --genomeDir $speciesName"_star_index" \
+     --genomeFastaFiles $refPath \
+     --sjdbGTFfile $inputsDir"/complete.genomic.gff" \
+     --sjdbOverhang $overhangInput \
+     --genomeSAindexNbases $gSize
 
 # check read type, assuming the second read file is listed last
 readTest=$(echo $readPath | tail -1)
@@ -97,36 +97,36 @@ for sampleFile in $readPath; do
 	# get sample tag
 	sampleTag=$(basename $sampleFile | rev | cut -d "." -f2- | rev)
 	# check read type
-	# if [[ $readType == "unpaired" ]]; then # single reads
-	# 	# compress reads, if not already
-	# 	if [[ "$sampleFile" != *.gz ]]; then gzip "$sampleFile"; fi
-	# 	# align samples to the refence genome
-	# 	STAR \
-	# 	  --runMode alignReads \
-	# 	  --readFilesCommand zcat \
-	# 	  --runThreadN 8 \
-	# 	  --genomeDir $speciesName"_star_index" \
-	# 	  --readFilesIn $sampleFile \
-	# 	  --outSAMtype BAM SortedByCoordinate \
-	# 	  --outFileNamePrefix $sampleTag
-	# else # paired reads
-	# 	if [[ $(($loopNum % 2)) == 0 ]]; then # handle in pairs
-	# 		# setup second read path
-	# 		readTwo=$(echo $sampleFile | sed "s/_R1_/_R2_/g" | sed "s/_1\./_2./g")
-	# 		# compress reads, if not already
-	# 		if [[ "$sampleFile" != *.gz ]]; then gzip "$sampleFile"; fi
-	# 		if [[ "$readTwo" != *.gz ]]; then gzip "$readTwo"; fi
-	# 		# align samples to the refence genome
-	# 		STAR \
-	# 		  --runMode alignReads \
-	# 		  --readFilesCommand zcat \
-	# 		  --runThreadN 8 \
-	# 		  --genomeDir $speciesName"_star_index" \
-	# 		  --readFilesIn $sampleFile $readTwo \
-	# 		  --outSAMtype BAM SortedByCoordinate \
-	# 		  --outFileNamePrefix $sampleTag
-	# 	fi
-	# fi
+	if [[ $readType == "unpaired" ]]; then # single reads
+		# compress reads, if not already
+		if [[ "$sampleFile" != *.gz ]]; then gzip "$sampleFile"; fi
+		# align samples to the refence genome
+		STAR \
+		  --runMode alignReads \
+		  --readFilesCommand zcat \
+		  --runThreadN 8 \
+		  --genomeDir $speciesName"_star_index" \
+		  --readFilesIn $sampleFile \
+		  --outSAMtype BAM SortedByCoordinate \
+		  --outFileNamePrefix $sampleTag
+	else # paired reads
+		if [[ $(($loopNum % 2)) == 0 ]]; then # handle in pairs
+			# setup second read path
+			readTwo=$(echo $sampleFile | sed "s/_R1_/_R2_/g" | sed "s/_1\./_2./g")
+			# compress reads, if not already
+			if [[ "$sampleFile" != *.gz ]]; then gzip "$sampleFile"; fi
+			if [[ "$readTwo" != *.gz ]]; then gzip "$readTwo"; fi
+			# align samples to the refence genome
+			STAR \
+			  --runMode alignReads \
+			  --readFilesCommand zcat \
+			  --runThreadN 8 \
+			  --genomeDir $speciesName"_star_index" \
+			  --readFilesIn $sampleFile $readTwo \
+			  --outSAMtype BAM SortedByCoordinate \
+			  --outFileNamePrefix $sampleTag
+		fi
+	fi
 	# run samtolls stats
 	samtools stats -@ 8 $sampleTag".fastqAligned.sortedByCoord.out.bam" > $sampleTag".stats"
 	# incrememnt counter
