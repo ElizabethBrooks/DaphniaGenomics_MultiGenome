@@ -12,6 +12,49 @@ multiqc /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/all_RNA/Fa
 
 ### organization
 
+#### tree set
+
+mkdir /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA
+cd /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Eulimnadia_texana_JT4_NCBI_clean .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Latona_sp_BLK_101_BC_clean .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Diaphanosoma_dubium_CNGBdb .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Chydorus_sphaericus_JWP1_NCBI .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Simocephalus_vetulus_WW .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Ceriodaphnia_sp_dubia_ZQ .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Ceriodaphnia_sp_dubia_v2_ZQ .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_arabica_zenodo_SRA .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_sinensis_CHINA_ZQ_NCBI_noAA .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_sinensis_WSL_NCBI_clean_noAA .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_lumholtzi_2_WW_ZQ_clean_noAA.
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_lumholtzi_2_v2_WW_ZQ_clean .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_carinata_CSIRO_NCBI .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_longicephala_AUS_NCBI .
+# cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_magna_LRVO_BC_clean .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_magna_MCL_001_BC_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_magna_MLC_001_BC_clean
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_similis_BGL_001_ZQ .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_mediterranea_CY_ORK_ZQ_clean .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_salina_ULW_001_ZQ.
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_arenata_2_WW .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_melanica_CON6_ZQ_MP_noAA .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_melanica_CON6_v2_ZQ_MP .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_pulicaria_TF22_005_ZQ_clean .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_schodleri_Mary_Lake_ZQ .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_pulex_KAP4_SRA_noAA .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_pulex_BEL2_WW .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_mitsukuri_1_SZH4_WW .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_catawba_3_WW .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_retrocurva_BLK_001_ZQ_clean .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_obtusa_v2_WW .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_ambigua_3_WW .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_parvula_2_WW .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_dentifera_3_WW .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_galeata_M5_WW_ENA .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_galeata_M5_v2_ZQ_ENA .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_mendotae_67B_ZQ_clean .
+cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_magniceps_WW .
+
+
 #### tests
 
 mkdir /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tests
@@ -104,9 +147,13 @@ mkdir /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/all_RNA/Fast
 for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/*/FastQC_v0.12.1/*; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); baseName=$(basename $i); cp -v $i /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/all_RNA/FastQC_v0.12.1/$newName_$baseName; done
 
 
-### NCBI, zenodo, and CNGBdb genomes
+### BC, NCBI, zenodo, and CNGBdb genomes
 
 #### QC RNA
+
+qsub QC_RNA.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+
+Your job 1122762 ("QC_RNA_jobOutput") has been submitted
 
 qsub QC_RNA.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
@@ -139,6 +186,9 @@ Your job 1117729 ("QC_SRA_RNA_jobOutput") has been submitted
 
 #### align RNA
 
+qsub align_RNA.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+
+
 qsub align_RNA.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
 Your job 1118906 ("align_RNA_jobOutput") has been submitted
@@ -169,6 +219,9 @@ Your job 1118922 ("align_SRA_RNA_jobOutput") has been submitted
 Your job 1118923 ("align_SRA_RNA_jobOutput") has been submitted
 
 #### annotation statistics
+
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+
 
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
@@ -202,6 +255,9 @@ Your job 1119906 ("stats_AGAT_jobOutput") has been submitted
 
 #### functional statistics
 
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+
+
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
 Your job 1119973 ("fun_stats_AGAT_jobOutput") has been submitted
@@ -233,6 +289,9 @@ Your job 1119956 ("fun_stats_AGAT_jobOutput") has been submitted
 
 #### list short introns
 
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+
+
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
 Your job 1120042 ("short_introns_AGAT_jobOutput") has been submitted
@@ -263,6 +322,9 @@ Your job 1120040 ("short_introns_AGAT_jobOutput") has been submitted
 Your job 1120041 ("short_introns_AGAT_jobOutput") has been submitted
 
 #### evaluate assembly
+
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+
 
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
@@ -899,7 +961,7 @@ TOTAL                              0          0
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 ##### job 1121612
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_72hr.txt
-##### job 
+##### job 1121969
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 ##### job 1059654
