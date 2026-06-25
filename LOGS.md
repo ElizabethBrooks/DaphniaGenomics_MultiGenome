@@ -222,6 +222,7 @@ Your job 1118923 ("align_SRA_RNA_jobOutput") has been submitted
 
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 
+Your job 1122842 ("stats_AGAT_jobOutput") has been submitted
 
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
@@ -257,7 +258,7 @@ Your job 1119906 ("stats_AGAT_jobOutput") has been submitted
 
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 
-Your job 1122805 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1122811 ("fun_stats_AGAT_jobOutput") has been submitted
 
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
@@ -292,6 +293,7 @@ Your job 1119956 ("fun_stats_AGAT_jobOutput") has been submitted
 
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 
+Your job 1122827 ("short_introns_AGAT_jobOutput") has been submitted
 
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
@@ -326,6 +328,7 @@ Your job 1120041 ("short_introns_AGAT_jobOutput") has been submitted
 
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 
+Your job 1122852 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
@@ -953,6 +956,29 @@ error [java.lang.InterruptedException]: java.lang.InterruptedException
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_trimmed_reRun.txt
 ##### job 1121605
 
+
+## BC
+
+#### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+##### job 
+#### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+##### job 
+#### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+##### job 
+#### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+##### job 
+#### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+##### job 
+#### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+##### job 
+#### qsub check_genome_busco.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+##### job 
+#### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+##### job 
+#### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+##### job 
+#### qsub functional_emapper.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+##### job 
 
 ## NCBI, zenodo, and CNGBdb genomes - June 2026
 
