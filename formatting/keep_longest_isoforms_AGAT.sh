@@ -8,6 +8,9 @@
 # usage: qsub keep_longest_isoforms_AGAT.sh inputFile
 # usage ex: qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
 
+# load software
+conda activate my_agat
+
 # retrieve input file
 inputFile=$1
 
@@ -53,7 +56,7 @@ cd $outputsPath
 echo "Beginning analysis of $speciesName..."
 
 # run AGAT
-singularity exec --bind $PWD:/AGAT_v1.4.2 $softwarePath"/agat_1.4.2--pl5321hdfd78af_0.sif" agat_sp_keep_longest_isoform.pl -gff $outputsPath"/complete.genomic.gff" -o $outputsPath"/AGAT_v1.4.2/output_longest.gff"
+agat_sp_keep_longest_isoform.pl -gff $outputsPath"/complete.genomic.gff" -o $outputsPath"/AGAT_v1.4.2/output_longest.gff"
 
 # status message
 echo "Analysis of $speciesName complete!"

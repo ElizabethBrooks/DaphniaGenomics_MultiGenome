@@ -8,6 +8,9 @@
 # usage: qsub extract_longest_transcripts_AGAT.sh inputFile
 # usage ex: qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
 
+# load software
+conda activate my_agat
+
 # retrieve input file
 inputFile=$1
 
@@ -53,7 +56,7 @@ cd $outputsPath
 echo "Beginning analysis of $speciesName..."
 
 # extract longest mRNA
-singularity exec --bind $PWD:/AGAT_v1.4.2 $softwarePath"/agat_1.4.2--pl5321hdfd78af_0.sif" agat_sp_extract_sequences.pl -gff $outputsPath"/AGAT_v1.4.2/output_longest.gff" -f $outputsPath"/complete.genomic.fna" -t mRNA -o $outputsPath"/AGAT_v1.4.2/longest_mRNA.fa"
+agat_sp_extract_sequences.pl -gff $outputsPath"/AGAT_v1.4.2/output_longest.gff" -f $outputsPath"/complete.genomic.fna" -t mRNA -o $outputsPath"/AGAT_v1.4.2/longest_mRNA.fa"
 
 # status message
 echo "Analysis of $speciesName complete!"
