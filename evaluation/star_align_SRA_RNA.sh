@@ -98,6 +98,8 @@ for sampleFile in $readPath; do
 	sampleTag=$(basename $sampleFile | rev | cut -d "." -f2- | rev)
 	# check read type
 	if [[ $readType == "unpaired" ]]; then # single reads
+		# compress reads, if not already
+		if [[ "$sampleFile" != *.gz ]]; then gzip "$sampleFile"; fi
 		# align samples to the refence genome
 		STAR \
 		  --runMode alignReads \
@@ -110,6 +112,9 @@ for sampleFile in $readPath; do
 		if [[ $(($loopNum % 2)) == 0 ]]; then # handle in pairs
 			# setup second read path
 			readTwo=$(echo $sampleFile | sed "s/_R1_/_R2_/g" | sed "s/_1\./_2./g")
+			# compress reads, if not already
+			if [[ "$sampleFile" != *.gz ]]; then gzip "$sampleFile"; fi
+			if [[ "$readTwo" != *.gz ]]; then gzip "$readTwo"; fi
 			# align samples to the refence genome
 			STAR \
 			  --runMode alignReads \

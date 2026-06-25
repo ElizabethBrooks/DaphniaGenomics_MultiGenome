@@ -908,8 +908,8 @@ qsub star_align_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 
 Your job 1123604 ("star_align_RNA_jobOutput") has been submitted
 Your job 1123628 ("star_align_RNA_jobOutput") has been submitted
-Your job 1123629 ("star_align_RNA_jobOutput") has been submitted
-Your job 1123630 ("star_align_RNA_jobOutput") has been submitted
+Your job  ("star_align_RNA_jobOutput") has been submitted
+Your job  ("star_align_RNA_jobOutput") has been submitted
 Your job 1123631 ("star_align_RNA_jobOutput") has been submitted
 
 #### align RNA
