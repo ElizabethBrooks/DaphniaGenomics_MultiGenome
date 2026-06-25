@@ -7,7 +7,6 @@
 
 # script to star align paired end reads
 # usage: qsub star_align_RNA.sh inputsFile
-# usage: qsub star_align_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
 
 # load software
 conda activate my_star
@@ -50,6 +49,9 @@ outputsPath=$(grep "outputs_EGAPx_v0.3.2_analysis:" ../"inputData/inputs_annotat
 inputsDir=$inputsDir"/"$speciesName
 outputsPath=$outputsPath"/"$speciesName
 
+# pre clean
+rm -r $outputsPath"/STAR_v2.7.11b"
+
 # create outputs directory
 mkdir $outputsPath"/STAR_v2.7.11b"
 mkdir $outputsPath"/STAR_v2.7.11b/MultiQC_v1.33"
@@ -65,6 +67,11 @@ firstFile=$(ls -1 $readPath | head -1)
 readLength=$(zcat -f $firstFile | head -n 2 | awk 'NR%4==2' | awk '{print length}')
 overhangInput=$(($readLength-1))
 
+# get genome size
+nBases=$(cat $inputsDir"/complete.genomic.fna" | grep -v "^>" | tr -d -c "AGCTNagtcn" | wc -m)
+logSize=$(awk "BEGIN { print log($nBases) / log(2) }")
+gSize=$(echo "($logSize / 2) - 1" | bc)
+
 # generate reference genome build files
 mkdir $speciesName"_star_index"
 STAR --runMode genomeGenerate \
@@ -72,7 +79,8 @@ STAR --runMode genomeGenerate \
      --genomeDir $speciesName"_star_index" \
      --genomeFastaFiles $refPath \
      --sjdbGTFfile $inputsDir"/complete.genomic.gff" \
-     --sjdbOverhang $overhangInput
+     --sjdbOverhang $overhangInput \
+     --genomeSAindexNbases $gSize
 
 # check read type, assuming the second read file is listed last
 readTest=$(echo $readPath | tail -1)
