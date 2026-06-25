@@ -960,7 +960,7 @@ error [java.lang.InterruptedException]: java.lang.InterruptedException
 ## BC
 
 #### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
-##### job 1122874
+##### job 
 #### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 ##### job 
 #### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
