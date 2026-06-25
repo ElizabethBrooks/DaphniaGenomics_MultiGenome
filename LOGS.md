@@ -964,17 +964,17 @@ error [java.lang.InterruptedException]: java.lang.InterruptedException
 #### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 ##### job 1123087
 #### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
-##### job 
+##### job 1123172
 #### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
-##### job 
+##### job 1123177
 #### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
-##### job 
+##### job 1123193
 #### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 ##### job 1122991
 #### qsub check_genome_busco.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 ##### job 1122999
 #### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
-##### job 
+##### job 1123198
 #### qsub check_AGAT_proteins_busco.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 ##### job 
 #### qsub functional_emapper.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
