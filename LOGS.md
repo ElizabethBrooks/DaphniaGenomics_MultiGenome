@@ -881,13 +881,13 @@ mRNA         14953
 pseudogene   1859
 transcript   3
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun2.txt
-##### job
+##### job 1121606
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_trimmed_reRun.txt
 ##### job 1118998
 00161/000/0000/P  931000A1A3CA51A1 0033/0014 2026-06-25T03:48:45.824277 d32cepyc184.crc.nd.edu UNK_CLIENT      UNK_SESSION              star_wnode Error: CORELIB(106.16) "ncbiapp.cpp", line 699: ncbi::CNcbiApplicationAPI::x_TryMain() --- Application's execution failed (CException::eUnknown) 1 jobs failed
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_trimmed_reRun.txt
-##### job
+##### job 1121605
 
 
 ## NCBI, zenodo, and CNGBdb genomes - June 2026
