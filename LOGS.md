@@ -257,6 +257,7 @@ Your job 1119906 ("stats_AGAT_jobOutput") has been submitted
 
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 
+Your job 1122805 ("fun_stats_AGAT_jobOutput") has been submitted
 
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
