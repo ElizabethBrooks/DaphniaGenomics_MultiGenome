@@ -188,6 +188,7 @@ Your job 1117729 ("QC_SRA_RNA_jobOutput") has been submitted
 
 qsub align_RNA.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 
+Your job 1123488 ("align_RNA_jobOutput") has been submitted
 
 qsub align_RNA.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
@@ -955,6 +956,7 @@ task: name=egapx:rnaseq_short_plane:rnaseq_collapse:run_gpx_make_outputs; work-d
 error [java.lang.InterruptedException]: java.lang.InterruptedException
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_trimmed_reRun.txt
 ##### job 1121605
+00167/000/0000/P  530000A7A3D83B11 0033/0014 2026-06-25T19:38:29.123378 d32cepyc193.crc.nd.edu UNK_CLIENT      UNK_SESSION              star_wnode Error: CORELIB(106.16) "ncbiapp.cpp", line 699: ncbi::CNcbiApplicationAPI::x_TryMain() --- Application's execution failed (CException::eUnknown) 1 jobs failed
 
 
 ## BC
