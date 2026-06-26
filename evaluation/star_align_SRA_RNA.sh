@@ -2,7 +2,7 @@
 #$ -M ebrooks5@nd.edu
 #$ -m abe
 #$ -r n
-#$ -N align_SRA_RNA_jobOutput
+#$ -N star_align_SRA_RNA_jobOutput
 #$ -pe smp 8
 
 # script to align paired end reads

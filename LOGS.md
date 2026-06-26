@@ -206,14 +206,23 @@ qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_
 #### qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
 Your job 1123711 ("align_SRA_RNA_jobOutput") has been submitted
+samtools stats: failed to open "SRR1324825_accepted_hits.bam": No such file or directory
 Your job 1123712 ("align_SRA_RNA_jobOutput") has been submitted
+samtools stats: failed to open "SRR24914548_2_accepted_hits.bam": No such file or directory
 Your job 1123713 ("align_SRA_RNA_jobOutput") has been submitted
+samtools stats: failed to open "SRR24914548_2_accepted_hits.bam": No such file or directory
 Your job 1123714 ("align_SRA_RNA_jobOutput") has been submitted
+samtools stats: failed to open "SRR5140143_2_accepted_hits.bam": No such file or directory
 Your job 1123715 ("align_SRA_RNA_jobOutput") has been submitted
+samtools stats: failed to open "SRR5054900_2_accepted_hits.bam": No such file or directory
 Your job 1123716 ("align_SRA_RNA_jobOutput") has been submitted
+samtools stats: failed to open "SRR5140142_2_accepted_hits.bam": No such file or directory
 Your job 1123717 ("align_SRA_RNA_jobOutput") has been submitted
+samtools stats: failed to open "SRR24520089_2_accepted_hits.bam": No such file or directory
 Your job 1123718 ("align_SRA_RNA_jobOutput") has been submitted
+samtools stats: failed to open "SRR29348129_2_accepted_hits.bam": No such file or directory
 Your job 1123719 ("align_SRA_RNA_jobOutput") has been submitted
+samtools stats: failed to open "SRR29348129_2_accepted_hits.bam": No such file or directory
 
 #### align RNA
 
@@ -473,9 +482,13 @@ qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
 qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 
 Your job 1123750 ("align_SRA_RNA_jobOutput") has been submitted
+samtools stats: failed to open "SRR17311954_2.fastqAligned.sortedByCoord.out.bam": No such file or directory
 Your job 1123751 ("align_SRA_RNA_jobOutput") has been submitted
+samtools stats: failed to open "SRR15012076_2.fastqAligned.sortedByCoord.out.bam": No such file or directory
 Your job 1123753 ("align_SRA_RNA_jobOutput") has been submitted
+samtools stats: failed to open "SRR10389294_2.fastqAligned.sortedByCoord.out.bam": No such file or directory
 Your job 1123755 ("align_SRA_RNA_jobOutput") has been submitted
+samtools stats: failed to open "SRR10389294_2.fastqAligned.sortedByCoord.out.bam": No such file or directory
 
 #### align RNA
 
@@ -926,7 +939,8 @@ qsub star_align_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 Your job 1123604 ("star_align_RNA_jobOutput") has been submitted
 Your job 1123628 ("star_align_RNA_jobOutput") has been submitted
 Your job 1123683 ("star_align_RNA_jobOutput") has been submitted
-Your job  ("star_align_RNA_jobOutput") has been submitted
+samtools stats: failed to open "lumholtzi.R2_001_accepted_hits.bam": No such file or directory
+Your job 1127260 ("star_align_RNA_jobOutput") has been submitted
 Your job 1123631 ("star_align_RNA_jobOutput") has been submitted
 
 #### align RNA
@@ -1041,6 +1055,13 @@ pseudogene   1859
 transcript   3
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun2.txt
 ##### job 1121606
+CDS          107761
+exon         119720
+gene         14980
+lnc_RNA      170
+mRNA         14953
+pseudogene   1859
+transcript   3
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_trimmed_reRun.txt
 ##### job 1118998
@@ -1083,6 +1104,9 @@ TOTAL                              0          0
 ##### job 1121612
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_72hr.txt
 ##### job 1121969
+Second-pass: computing bestness scores
+#### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_72hr.txt
+##### job
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 ##### job 1059654
