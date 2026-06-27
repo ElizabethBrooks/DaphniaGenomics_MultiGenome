@@ -1106,6 +1106,10 @@ TOTAL                              0          0
 ##### job 1121969
 Second-pass: computing bestness scores
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_72hr.txt
+##### job 1135300
+Jun-27 12:02:08.053 [TaskFinalizer-7] DEBUG nextflow.Session - Session aborted -- Cause: Process `egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype` terminated with an error exit status (3)
+-> https://github.com/ncbi/egapx/issues/61
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_72hr.txt
 ##### job
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
