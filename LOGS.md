@@ -16,43 +16,43 @@ multiqc /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/all_RNA/Fa
 
 mkdir /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA
 cd /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Eulimnadia_texana_JT4_NCBI_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Eulimnadia_texana
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Latona_sp_BLK_101_BC_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Latona_sp
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Diaphanosoma_dubium_CNGBdb /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Diaphanosoma_dubium
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Chydorus_sphaericus_JWP1_NCBI /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Chydorus_sphaericus
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Simocephalus_vetulus_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Simocephalus_vetulus
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Ceriodaphnia_sp_dubia_ZQ /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Ceriodaphnia_sp_dubia
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Ceriodaphnia_sp_dubia_v2_ZQ /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Ceriodaphnia_sp_dubia_v2
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_arabica_zenodo_SRA /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_arabica
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_sinensis_CHINA_ZQ_NCBI_noAA /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_sinensis_CHINA
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_sinensis_WSL_NCBI_clean_noAA /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_sinensis_WSL
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_lumholtzi_2_WW_ZQ_clean_noAA /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_lumholtzi
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_lumholtzi_2_v2_WW_ZQ_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_lumholtzi_v2
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_carinata_CSIRO_NCBI /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_carinata
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_longicephala_AUS_NCBI /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_longicephala
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_magna_LRVO_BC_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_magna_LRVO
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_magna_MCL_001_BC_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_magna_MLC
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_similis_BGL_001_ZQ /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_similis
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_mediterranea_CY_ORK_ZQ_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_mediterranea
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_salina_ULW_001_ZQ/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_salina
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_arenata_2_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_arenata
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_melanica_CON6_ZQ_MP_noAA /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_melanica
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_melanica_CON6_v2_ZQ_MP /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_melanica_v2
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_pulicaria_TF22_005_ZQ_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_pulicaria
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_schodleri_Mary_Lake_ZQ /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_schodleri
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_pulex_KAP4_SRA_noAA /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_pulex_KAP4
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_pulex_BEL2_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_pulex_BEL2
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_mitsukuri_1_SZH4_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_mitsukuri
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_catawba_3_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_catawba
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_retrocurva_BLK_001_ZQ_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_retrocurva
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_obtusa_v2_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_obtusa
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_ambigua_3_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_ambigua
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_parvula_2_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_parvula
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_dentifera_3_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_dentifera
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_galeata_M5_WW_ENA /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_galeata
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_galeata_M5_v2_ZQ_ENA /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_galeata_v2
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_mendotae_67B_ZQ_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_mendotae
-cp /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_magniceps_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_magniceps
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Eulimnadia_texana_JT4_NCBI_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Eulimnadia_texana
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Latona_sp_BLK_101_BC_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Latona_sp
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Diaphanosoma_dubium_CNGBdb /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Diaphanosoma_dubium
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Chydorus_sphaericus_JWP1_NCBI /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Chydorus_sphaericus
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Simocephalus_vetulus_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Simocephalus_vetulus
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Ceriodaphnia_sp_dubia_ZQ /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Ceriodaphnia_sp_dubia
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Ceriodaphnia_sp_dubia_v2_ZQ /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Ceriodaphnia_sp_dubia_v2
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_arabica_zenodo_SRA /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_arabica
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_sinensis_CHINA_ZQ_NCBI_noAA /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_sinensis_CHINA
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_sinensis_WSL_NCBI_clean_noAA /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_sinensis_WSL
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_lumholtzi_2_WW_ZQ_clean_noAA /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_lumholtzi
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_lumholtzi_2_v2_WW_ZQ_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_lumholtzi_v2
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_carinata_CSIRO_NCBI /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_carinata
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_longicephala_AUS_NCBI /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_longicephala
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_magna_LRVO_BC_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_magna_LRVO
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_magna_MCL_001_BC_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_magna_MLC
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_similis_BGL_001_ZQ /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_similis
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_mediterranea_CY_ORK_ZQ_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_mediterranea
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_salina_ULW_001_ZQ/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_salina
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_arenata_2_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_arenata
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_melanica_CON6_ZQ_MP_noAA /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_melanica
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_melanica_CON6_v2_ZQ_MP /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_melanica_v2
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_pulicaria_TF22_005_ZQ_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_pulicaria
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_schodleri_Mary_Lake_ZQ /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_schodleri
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_pulex_KAP4_SRA_noAA /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_pulex_KAP4
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_pulex_BEL2_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_pulex_BEL2
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_mitsukuri_1_SZH4_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_mitsukuri
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_catawba_3_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_catawba
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_retrocurva_BLK_001_ZQ_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_retrocurva
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_obtusa_v2_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_obtusa
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_ambigua_3_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_ambigua
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_parvula_2_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_parvula
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_dentifera_3_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_dentifera
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_galeata_M5_WW_ENA /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_galeata
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_galeata_M5_v2_ZQ_ENA /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_galeata_v2
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_mendotae_67B_ZQ_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_mendotae
+rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_magniceps_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_magniceps
 
 
 #### tests
@@ -144,7 +144,7 @@ mv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/NCBI/Branchinec
 
 mkdir /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/all_RNA
 mkdir /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/all_RNA/FastQC_v0.12.1
-for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/*/FastQC_v0.12.1/*; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); baseName=$(basename $i); cp -v $i /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/all_RNA/FastQC_v0.12.1/$newName_$baseName; done
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/*/FastQC_v0.12.1/*; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); baseName=$(basename $i); rsync -rv -v $i /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/all_RNA/FastQC_v0.12.1/$newName_$baseName; done
 
 
 ### BC, NCBI, zenodo, and CNGBdb genomes
@@ -1069,7 +1069,7 @@ task: name=egapx:rnaseq_short_plane:rnaseq_collapse:run_gpx_make_outputs; work-d
 error [java.lang.InterruptedException]: java.lang.InterruptedException
 #### qsub resume_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_trimmed_reRun.txt
 ##### job 1121605
-00167/000/0000/P  530000A7A3D83B11 0033/0014 2026-06-25T19:38:29.123378 d32cepyc193.crc.nd.edu UNK_CLIENT      UNK_SESSION              star_wnode Error: CORELIB(106.16) "ncbiapp.cpp", line 699: ncbi::CNcbiApplicationAPI::x_TryMain() --- Application's execution failed (CException::eUnknown) 1 jobs failed
+00167/000/0000/P  530000A7A3D83B11 0033/0014 2026-06-25T19:38:29.123378 d32cepyc193.crc.nd.edu UNK_CLIENT      UNK_SESSION              star_wnode Error: CORELIB(106.16) "ncbiapp.rsync -rvp", line 699: ncbi::CNcbiApplicationAPI::x_TryMain() --- Application's execution failed (CException::eUnknown) 1 jobs failed
 
 
 ## BC
@@ -1102,6 +1102,7 @@ error [java.lang.InterruptedException]: java.lang.InterruptedException
 TOTAL                              0          0
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 ##### job 1121612
+Second-pass: computing bestness scores
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_72hr.txt
 ##### job 1121969
 Second-pass: computing bestness scores
@@ -1110,7 +1111,8 @@ Second-pass: computing bestness scores
 Jun-27 12:02:08.053 [TaskFinalizer-7] DEBUG nextflow.Session - Session aborted -- Cause: Process `egapx:annot_proc_plane:gnomon_biotype:run_gnomon_biotype` terminated with an error exit status (3)
 -> https://github.com/ncbi/egapx/issues/61
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_72hr.txt
-##### job
+##### job 1140692
+Second-pass: computing bestness scores
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 ##### job 1059654
@@ -3919,7 +3921,7 @@ eutil connection failure
 FAILED
 eutil connection failure
 ```
-  00150/004/0006/R  8AF300968439BD81 0025/0005 2025-06-07T01:54:32.798324 d32cepyc196.crc.nd.edu UNK_CLIENT      UNK_SESSION              minimap2_wnode Error: LIB "wn_worker_thread.cpp", line 267: ncbi::CWorkerThread::x_DoJob() --- error processing job: (CObjReaderParseException::eNoDefline) CFastaReader: Input doesn't start with a defline or comment around line 1 (m_Pos = 1)
+  00150/004/0006/R  8AF300968439BD81 0025/0005 2025-06-07T01:54:32.798324 d32cepyc196.crc.nd.edu UNK_CLIENT      UNK_SESSION              minimap2_wnode Error: LIB "wn_worker_thread.rsync -rvp", line 267: ncbi::CWorkerThread::x_DoJob() --- error processing job: (CObjReaderParseException::eNoDefline) CFastaReader: Input doesn't start with a defline or comment around line 1 (m_Pos = 1)
 ```
 
 ## EGAPx v0.3.2
@@ -3990,7 +3992,7 @@ sh /afs/crc.nd.edu/group/pfrenderlab/franklin/daphnia_EGAPx_annotations/EGAPx_v0
 COMPLETED
 Completed at: 28-Jul-2025 10:22:15
 Duration    : 11d 21h 30m 38s
-CPU hours   : 4'281.5
+rsync -rvU hours   : 4'281.5
 Succeeded   : 755
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_MP_haplotype_WW_noAA.txt
@@ -4063,7 +4065,7 @@ FAILED
 ##### job 1798016
 FAILED
 ```
-ImportError: /afs/crc.nd.edu/x86_64_linux/b/bio/0724/lib/python3.12/lib-dynload/_sqlite3.cpython-312-x86_64-linux-gnu.so: undefined symbol: sqlite3_deserialize
+ImportError: /afs/crc.nd.edu/x86_64_linux/b/bio/0724/lib/python3.12/lib-dynload/_sqlite3.rsync -rvython-312-x86_64-linux-gnu.so: undefined symbol: sqlite3_deserialize
 ```
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP.txt
 ##### job 1799400
@@ -4764,7 +4766,7 @@ Nov 21 02:07:27 ..... finished successfully
 SUCCEEDED
 Completed at: 20-Nov-2024 02:23:00
 Duration    : 1m 47s
-CPU hours   : 4.8 (100% cached)
+rsync -rvU hours   : 4.8 (100% cached)
 Succeeded   : 0
 Cached      : 83
 
@@ -4908,7 +4910,7 @@ transcript   3795
 Waiting for file transfers to complete (1 files)
 Completed at: 09-Dec-2024 21:50:27
 Duration    : 7d 12h 8m 20s
-CPU hours   : 18'643.2 (39.2% cached)
+rsync -rvU hours   : 18'643.2 (39.2% cached)
 Succeeded   : 1'399
 Cached      : 61
 Failed      : 4
@@ -5166,7 +5168,7 @@ ERROR? -> gff was produced but statistics were not output
 Waiting for file transfers to complete (1 files)
 Completed at: 31-Oct-2024 18:18:21
 Duration    : 13h 21s
-CPU hours   : 43'391.9 (98.1% cached)
+rsync -rvU hours   : 43'391.9 (98.1% cached)
 Succeeded   : 363
 Cached      : 427
 
