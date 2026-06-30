@@ -36,6 +36,7 @@ rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_simili
 rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_mediterranea_CY_ORK_ZQ_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_mediterranea
 rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_salina_ULW_001_ZQ/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_salina
 rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_arenata_2_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_arenata
+
 rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_melanica_CON6_ZQ_MP_noAA /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_melanica
 rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_melanica_CON6_v2_ZQ_MP /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_melanica_v2
 rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_pulicaria_TF22_005_ZQ_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_pulicaria
@@ -940,6 +941,7 @@ Your job 1123604 ("star_align_RNA_jobOutput") has been submitted
 Your job 1123628 ("star_align_RNA_jobOutput") has been submitted
 Your job 1123683 ("star_align_RNA_jobOutput") has been submitted
 samtools stats: failed to open "lumholtzi.R2_001_accepted_hits.bam": No such file or directory
+Your job 1149637 ("star_align_RNA_jobOutput") has been submitted
 Your job 1127260 ("star_align_RNA_jobOutput") has been submitted
 Your job 1123631 ("star_align_RNA_jobOutput") has been submitted
 
