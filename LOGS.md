@@ -816,6 +816,16 @@ qsub star_align_RNA.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
 qsub star_align_RNA.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
 qsub star_align_RNA.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 
+Your job 1149678 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149679 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149680 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149681 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149682 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149683 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149684 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149685 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149686 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149687 ("star_align_RNA_jobOutput") has been submitted
 
 #### align RNA
 
