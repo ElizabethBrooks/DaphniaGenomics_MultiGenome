@@ -189,6 +189,8 @@ Your job 1117729 ("QC_SRA_RNA_jobOutput") has been submitted
 
 qsub star_align_RNA.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 
+Your job 1149688 ("star_align_RNA_jobOutput") has been submitted
+
 qsub star_align_RNA.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
 Your job 1149644 ("star_align_RNA_jobOutput") has been submitted
@@ -513,14 +515,7 @@ qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
 qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
 qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 
-Your job 1123750 ("align_SRA_RNA_jobOutput") has been submitted
-samtools stats: failed to open "SRR17311954_2.fastqAligned.sortedByCoord.out.bam": No such file or directory
-Your job 1123751 ("align_SRA_RNA_jobOutput") has been submitted
-samtools stats: failed to open "SRR15012076_2.fastqAligned.sortedByCoord.out.bam": No such file or directory
-Your job 1123753 ("align_SRA_RNA_jobOutput") has been submitted
-samtools stats: failed to open "SRR10389294_2.fastqAligned.sortedByCoord.out.bam": No such file or directory
-Your job 1123755 ("align_SRA_RNA_jobOutput") has been submitted
-samtools stats: failed to open "SRR10389294_2.fastqAligned.sortedByCoord.out.bam": No such file or directory
+
 
 #### align RNA
 
