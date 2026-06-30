@@ -191,6 +191,8 @@ qsub star_align_RNA.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 
 qsub star_align_RNA.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
+Your job 1149644 ("star_align_RNA_jobOutput") has been submitted
+
 qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 
 Your job 1123737 ("align_SRA_RNA_jobOutput") has been submitted
@@ -224,6 +226,16 @@ Your job 1123718 ("align_SRA_RNA_jobOutput") has been submitted
 samtools stats: failed to open "SRR29348129_2_accepted_hits.bam": No such file or directory
 Your job 1123719 ("align_SRA_RNA_jobOutput") has been submitted
 samtools stats: failed to open "SRR29348129_2_accepted_hits.bam": No such file or directory
+
+Your job 1149646 ("star_align_SRA_RNA_jobOutput") has been submitted
+Your job 1149648 ("star_align_SRA_RNA_jobOutput") has been submitted
+Your job 1149649 ("star_align_SRA_RNA_jobOutput") has been submitted
+Your job 1149650 ("star_align_SRA_RNA_jobOutput") has been submitted
+Your job 1149651 ("star_align_SRA_RNA_jobOutput") has been submitted
+Your job 1149652 ("star_align_SRA_RNA_jobOutput") has been submitted
+Your job 1149653 ("star_align_SRA_RNA_jobOutput") has been submitted
+Your job 1149654 ("star_align_SRA_RNA_jobOutput") has been submitted
+Your job 1149655 ("star_align_SRA_RNA_jobOutput") has been submitted
 
 #### align RNA
 
@@ -476,6 +488,25 @@ qsub star_align_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
 qsub star_align_RNA.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
 qsub star_align_RNA.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_trimmed_reRun.txt
 
+Your job 1149658 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149659 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149660 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149661 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149662 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149663 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149664 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149665 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149666 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149667 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149668 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149669 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149670 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149672 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149673 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149674 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149675 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149676 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149677 ("star_align_RNA_jobOutput") has been submitted
 
 qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
 qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
