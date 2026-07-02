@@ -1,5 +1,5 @@
 genome: /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/D.mitsukuri_1.0_SZH4.masked.fasta
 taxid: 1969737
 reads:
-  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/RNA/SZH4.R1_001.fastq
-  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/RNA/SZH4.R2_001.fastq
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/RNA/SZH4.R1_001.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/RNA/SZH4.R2_001.fastq.gz

@@ -1,5 +1,5 @@
 genome: /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/D.parvula_2.0.masked.fasta
 taxid: 132684
 reads:
-  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/RNA/parvula.R1_001.fastq
-  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/RNA/parvula.R2_001.fastq
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/RNA/parvula.R1_001.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/RNA/parvula.R2_001.fastq.gz

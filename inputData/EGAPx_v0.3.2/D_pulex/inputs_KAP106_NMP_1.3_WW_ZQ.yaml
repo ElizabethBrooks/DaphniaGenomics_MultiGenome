@@ -2,5 +2,5 @@ genome: /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/D.p
 taxid: 6669
 proteins: /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_genomes/1_all_chromosome_assemblies_and_annotation_June2024/D.pulex_KAP106_annotation/D.pulex_KAP106_NMP_1.3.masked.aa.fasta
 reads:
-  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/RNA/KAP106.R1_001.fastq
-  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/RNA/KAP106.R2_001.fastq
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/RNA/KAP106.R1_001.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/RNA/KAP106.R2_001.fastq.gz

@@ -1,5 +1,5 @@
 genome: /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_genomes/version_2/D.lumholtzi.v2.genomic.fasta
 taxid: 42856
 reads:
-  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/RNA/lumholtzi.R1_001.fastq
-  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/RNA/lumholtzi.R2_001.fastq
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/RNA/lumholtzi.R1_001.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/RNA/lumholtzi.R2_001.fastq.gz
