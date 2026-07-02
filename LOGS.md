@@ -63,43 +63,7 @@ qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 #### qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
-Your job 1123711 ("align_SRA_RNA_jobOutput") has been submitted
-samtools stats: failed to open "SRR1324825_accepted_hits.bam": No such file or directory
-Your job 1123712 ("align_SRA_RNA_jobOutput") has been submitted
-samtools stats: failed to open "SRR24914548_2_accepted_hits.bam": No such file or directory
-Your job 1123713 ("align_SRA_RNA_jobOutput") has been submitted
-samtools stats: failed to open "SRR24914548_2_accepted_hits.bam": No such file or directory
-Your job 1123714 ("align_SRA_RNA_jobOutput") has been submitted
-samtools stats: failed to open "SRR5140143_2_accepted_hits.bam": No such file or directory
-Your job 1123715 ("align_SRA_RNA_jobOutput") has been submitted
-samtools stats: failed to open "SRR5054900_2_accepted_hits.bam": No such file or directory
-Your job 1123716 ("align_SRA_RNA_jobOutput") has been submitted
-samtools stats: failed to open "SRR5140142_2_accepted_hits.bam": No such file or directory
-Your job 1123717 ("align_SRA_RNA_jobOutput") has been submitted
-samtools stats: failed to open "SRR24520089_2_accepted_hits.bam": No such file or directory
-Your job 1123718 ("align_SRA_RNA_jobOutput") has been submitted
-samtools stats: failed to open "SRR29348129_2_accepted_hits.bam": No such file or directory
-Your job 1123719 ("align_SRA_RNA_jobOutput") has been submitted
-samtools stats: failed to open "SRR29348129_2_accepted_hits.bam": No such file or directory
 
-Your job 1149646 ("star_align_SRA_RNA_jobOutput") has been submitted
-multiqc | No analysis results found. Cleaning up…
-Your job 1149648 ("star_align_SRA_RNA_jobOutput") has been submitted
-multiqc | No analysis results found. Cleaning up…
-Your job 1149649 ("star_align_SRA_RNA_jobOutput") has been submitted
-multiqc | No analysis results found. Cleaning up…
-Your job 1149650 ("star_align_SRA_RNA_jobOutput") has been submitted
-multiqc | No analysis results found. Cleaning up…
-Your job 1149651 ("star_align_SRA_RNA_jobOutput") has been submitted
-multiqc | No analysis results found. Cleaning up…
-Your job 1149652 ("star_align_SRA_RNA_jobOutput") has been submitted
-multiqc | No analysis results found. Cleaning up…
-Your job 1149653 ("star_align_SRA_RNA_jobOutput") has been submitted
-multiqc | No analysis results found. Cleaning up…
-Your job 1149654 ("star_align_SRA_RNA_jobOutput") has been submitted
-multiqc | No analysis results found. Cleaning up…
-Your job 1149655 ("star_align_SRA_RNA_jobOutput") has been submitted
-multiqc | No analysis results found. Cleaning up…
 
 #### align RNA
 
@@ -377,7 +341,10 @@ qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
 qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
 qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 
-
+Your job 1154110 ("star_align_SRA_RNA_jobOutput") has been submitted
+Your job 1154111 ("star_align_SRA_RNA_jobOutput") has been submitted
+Your job 1154112 ("star_align_SRA_RNA_jobOutput") has been submitted
+Your job 1154113 ("star_align_SRA_RNA_jobOutput") has been submitted
 
 #### align RNA
 
