@@ -352,21 +352,32 @@ qsub star_align_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
 qsub star_align_RNA.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
 qsub star_align_RNA.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_trimmed_reRun.txt
 
-
+Your job 1154087 ("star_align_RNA_jobOutput") has been submitted
+Your job 1154088 ("star_align_RNA_jobOutput") has been submitted
+Your job 1154089 ("star_align_RNA_jobOutput") has been submitted
+Your job 1154090 ("star_align_RNA_jobOutput") has been submitted
+Your job 1154091 ("star_align_RNA_jobOutput") has been submitted
+Your job 1154092 ("star_align_RNA_jobOutput") has been submitted
+Your job 1154093 ("star_align_RNA_jobOutput") has been submitted
+Your job 1154094 ("star_align_RNA_jobOutput") has been submitted
+Your job 1154095 ("star_align_RNA_jobOutput") has been submitted
+Your job 1154096 ("star_align_RNA_jobOutput") has been submitted
+Your job 1154097 ("star_align_RNA_jobOutput") has been submitted
+Your job 1154098 ("star_align_RNA_jobOutput") has been submitted
+Your job 1154099 ("star_align_RNA_jobOutput") has been submitted
+Your job 1154100 ("star_align_RNA_jobOutput") has been submitted
+Your job 1154101 ("star_align_RNA_jobOutput") has been submitted
+Your job 1154102 ("star_align_RNA_jobOutput") has been submitted
+Your job 1154103 ("star_align_RNA_jobOutput") has been submitted
+Your job 1154104 ("star_align_RNA_jobOutput") has been submitted
+Your job 1154105 ("star_align_RNA_jobOutput") has been submitted
 
 qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
 qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
 qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
 qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 
-Your job 1149690 ("star_align_SRA_RNA_jobOutput") has been submitted
-multiqc | No analysis results found. Cleaning up…
-Your job 1149691 ("star_align_SRA_RNA_jobOutput") has been submitted
-multiqc | No analysis results found. Cleaning up…
-Your job 1149692 ("star_align_SRA_RNA_jobOutput") has been submitted
-multiqc | No analysis results found. Cleaning up…
-Your job 1149693 ("star_align_SRA_RNA_jobOutput") has been submitted
-multiqc | No analysis results found. Cleaning up…
+
 
 #### align RNA
 

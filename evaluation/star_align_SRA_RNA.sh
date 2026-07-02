@@ -103,6 +103,7 @@ for sampleFile in $readPath; do
 		# align samples to the refence genome
 		STAR \
 		  --runMode alignReads \
+		  --readFilesCommand zcat \
 		  --runThreadN 8 \
 		  --genomeDir $speciesName"_star_index" \
 		  --readFilesIn $sampleFile \
@@ -118,6 +119,7 @@ for sampleFile in $readPath; do
 			# align samples to the refence genome
 			STAR \
 			  --runMode alignReads \
+			  --readFilesCommand zcat \
 			  --runThreadN 8 \
 			  --genomeDir $speciesName"_star_index" \
 			  --readFilesIn $sampleFile $readTwo \
