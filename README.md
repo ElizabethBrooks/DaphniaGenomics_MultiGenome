@@ -75,11 +75,9 @@ If EGAPx is taking an inordinately long time to run, double check that the SRA p
 
 ###### IsoSeq
 
-
 [EGAPx does not yet support IsoSeq data. We're starting to work on it now, but please stick to just short reads with the current version.](https://github.com/ncbi/egapx/issues/66)
 
 [Note we don't yet have support for PacBio reads in EGAPx (but we're starting to work on it). As configured, your PacBio input will be aligned with STAR and processed as if they are short reads.](https://github.com/ncbi/egapx/issues/63) STAR can align IsoSeq, but we use customized STAR parameters and have implemented some downstream processing to deal with some types of STAR alignment artifacts, and I can't predict how that will behave with longer reads. You could try with and without the PacBio to see which gives better results (e.g. running BUSCO on the final annotation using the laurasiatheria_odb10 reference set, and counting gene features with NCBIOrtholog Dbxrefs in the final GFF3 to get the count of orthologs). But I don't think that's related to the error you're seeing.
-
 
 [Our initial release is aimed at gathering initial feedback on execution in a variety of compute environments, and is not yet feature complete.](https://github.com/ncbi/egapx/issues/2) We haven't added support for aligning IsoSeq data yet, but do plan to add it in a future version. Also note that to date for RefSeq we've always used IsoSeq in combination with Illumina data to help identify alignment artifacts and low frequency events. With increasing IsoSeq read depth and some additional filtering we're anticipating being able to annotate with only IsoSeq, but it's likely that Illumina will still help especially with longer genes/transcripts. So if you have the samples and budget I would consider also running some on a short read platform.
 
