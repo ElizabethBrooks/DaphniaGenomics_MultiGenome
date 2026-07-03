@@ -1,2 +1,0 @@
-species: D_pulicaria_LK16_MP_ZQ_noAA_reRun2
-inputs_EGAPx: EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun2.yaml
