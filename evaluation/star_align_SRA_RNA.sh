@@ -48,7 +48,7 @@ inputsDir=$inputsDir"/"$speciesName
 outputsPath=$outputsPath"/"$speciesName
 
 # retrieve paired reads absolute path for alignment
-readPath=$outputsPath"/SRA/"*".fastq"
+readPath=$outputsPath"/SRA/"*".fastq"*
 
 # pre clean
 rm -r $outputsPath"/STAR_v2.7.11b"
