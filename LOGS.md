@@ -63,14 +63,18 @@ qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_
 #### qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
 Your job 1154116 ("star_align_SRA_RNA_jobOutput") has been submitted
+multiqc | No analysis results found. Cleaning up…
 Your job 1154117 ("star_align_SRA_RNA_jobOutput") has been submitted
 Your job 1154118 ("star_align_SRA_RNA_jobOutput") has been submitted
 Your job 1154119 ("star_align_SRA_RNA_jobOutput") has been submitted
 Your job 1154120 ("star_align_SRA_RNA_jobOutput") has been submitted
 Your job 1154121 ("star_align_SRA_RNA_jobOutput") has been submitted
+multiqc | No analysis results found. Cleaning up…
 Your job 1154122 ("star_align_SRA_RNA_jobOutput") has been submitted
+multiqc | No analysis results found. Cleaning up…
 Your job 1154123 ("star_align_SRA_RNA_jobOutput") has been submitted
 Your job 1154124 ("star_align_SRA_RNA_jobOutput") has been submitted
+multiqc | No analysis results found. Cleaning up…
 
 #### align RNA
 
@@ -333,6 +337,7 @@ Your job 1154093 ("star_align_RNA_jobOutput") has been submitted
 Your job 1154094 ("star_align_RNA_jobOutput") has been submitted
 Your job 1154095 ("star_align_RNA_jobOutput") has been submitted
 Your job 1154096 ("star_align_RNA_jobOutput") has been submitted
+multiqc | No analysis results found. Cleaning up…
 Your job 1154097 ("star_align_RNA_jobOutput") has been submitted
 Your job 1154098 ("star_align_RNA_jobOutput") has been submitted
 Your job 1154099 ("star_align_RNA_jobOutput") has been submitted
@@ -340,8 +345,11 @@ Your job 1154100 ("star_align_RNA_jobOutput") has been submitted
 Your job 1154101 ("star_align_RNA_jobOutput") has been submitted
 Your job 1154102 ("star_align_RNA_jobOutput") has been submitted
 Your job 1154103 ("star_align_RNA_jobOutput") has been submitted
+multiqc | No analysis results found. Cleaning up…
 Your job 1154104 ("star_align_RNA_jobOutput") has been submitted
+multiqc | No analysis results found. Cleaning up…
 Your job 1154105 ("star_align_RNA_jobOutput") has been submitted
+multiqc | No analysis results found. Cleaning up…
 
 qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
 qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
@@ -349,8 +357,11 @@ qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
 qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 
 Your job 1154110 ("star_align_SRA_RNA_jobOutput") has been submitted
+multiqc | No analysis results found. Cleaning up…
 Your job 1154111 ("star_align_SRA_RNA_jobOutput") has been submitted
+multiqc | No analysis results found. Cleaning up…
 Your job 1154112 ("star_align_SRA_RNA_jobOutput") has been submitted
+multiqc | No analysis results found. Cleaning up…
 Your job 1154113 ("star_align_SRA_RNA_jobOutput") has been submitted
 
 #### align RNA
@@ -811,7 +822,7 @@ qsub star_align_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 
 Your job 1123604 ("star_align_RNA_jobOutput") has been submitted
 Your job 1123628 ("star_align_RNA_jobOutput") has been submitted
-Your job 1154060 ("star_align_RNA_jobOutput") has been submitted
+Your job 1155238 ("star_align_RNA_jobOutput") has been submitted
 Your job 1127260 ("star_align_RNA_jobOutput") has been submitted
 Your job 1123631 ("star_align_RNA_jobOutput") has been submitted
 
