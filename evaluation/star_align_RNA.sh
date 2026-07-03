@@ -35,10 +35,10 @@ refPath=$(grep "genome:" $inputsPath | cut -d " " -f2)
 
 # retrieve inputs directory
 # change this for different test runs
-#inputsDir=$(grep "outputs_EGAPx_v0.3.2_ZQ_V2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_ZQ_V2://g")
+inputsDir=$(grep "outputs_EGAPx_v0.3.2_ZQ_V2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_ZQ_V2://g")
 #inputsDir=$(grep "outputs_EGAPx_v0.3.2_NCBI:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_NCBI://g")
 #inputsDir=$(grep "outputs_EGAPx_v0.3.2_zenodo:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_zenodo://g")
-inputsDir=$(grep "outputs_EGAPx_v0.3.2_CNGBdb:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_CNGBdb://g")
+#inputsDir=$(grep "outputs_EGAPx_v0.3.2_CNGBdb:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_CNGBdb://g")
 #inputsDir=$(grep "outputs_EGAPx_v0.3.2_ZQ_B1:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_ZQ_B1://g")
 #inputsDir=$(grep "outputs_EGAPx_v0.3.2_ZQ_B2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_ZQ_B2://g")
 #inputsDir=$(grep "outputs_EGAPx_v0.3.2_BC:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_BC://g")
@@ -105,6 +105,7 @@ for sampleFile in $readPath; do
 		  --runMode alignReads \
 		  --readFilesCommand zcat \
 		  --runThreadN 8 \
+		  --limitBAMsortRAM 30000000000 \
 		  --genomeDir $speciesName"_star_index" \
 		  --readFilesIn $sampleFile \
 		  --outSAMtype BAM SortedByCoordinate \
@@ -121,6 +122,7 @@ for sampleFile in $readPath; do
 			  --runMode alignReads \
 			  --readFilesCommand zcat \
 			  --runThreadN 8 \
+			  --limitBAMsortRAM 30000000000 \
 			  --genomeDir $speciesName"_star_index" \
 			  --readFilesIn $sampleFile $readTwo \
 			  --outSAMtype BAM SortedByCoordinate \

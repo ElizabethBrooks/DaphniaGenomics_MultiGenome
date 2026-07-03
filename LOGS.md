@@ -45,6 +45,7 @@ Your job 1149688 ("star_align_RNA_jobOutput") has been submitted
 
 qsub star_align_RNA.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
+Your job 1154126 ("star_align_RNA_jobOutput") has been submitted
 
 qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 

@@ -77,6 +77,7 @@ gSize=$(echo "($logSize / 2) - 1" | bc)
 mkdir $speciesName"_star_index"
 STAR --runMode genomeGenerate \
      --runThreadN 8 \
+     --limitBAMsortRAM 30000000000 \
      --genomeDir $speciesName"_star_index" \
      --genomeFastaFiles $refPath \
      --sjdbGTFfile $inputsDir"/complete.genomic.gff" \
@@ -105,6 +106,7 @@ for sampleFile in $readPath; do
 		  --runMode alignReads \
 		  --readFilesCommand zcat \
 		  --runThreadN 8 \
+		  --limitBAMsortRAM 30000000000 \
 		  --genomeDir $speciesName"_star_index" \
 		  --readFilesIn $sampleFile \
 		  --outSAMtype BAM SortedByCoordinate \
