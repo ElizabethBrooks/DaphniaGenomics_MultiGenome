@@ -62,19 +62,15 @@ qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 #### qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
-Your job 1154116 ("star_align_SRA_RNA_jobOutput") has been submitted
-multiqc | No analysis results found. Cleaning up…
+Your job 1155263 ("star_align_SRA_RNA_jobOutput") has been submitted
 Your job 1154117 ("star_align_SRA_RNA_jobOutput") has been submitted
 Your job 1154118 ("star_align_SRA_RNA_jobOutput") has been submitted
 Your job 1154119 ("star_align_SRA_RNA_jobOutput") has been submitted
 Your job 1154120 ("star_align_SRA_RNA_jobOutput") has been submitted
-Your job 1154121 ("star_align_SRA_RNA_jobOutput") has been submitted
-multiqc | No analysis results found. Cleaning up…
-Your job 1154122 ("star_align_SRA_RNA_jobOutput") has been submitted
-multiqc | No analysis results found. Cleaning up…
+Your job 1155270 ("star_align_SRA_RNA_jobOutput") has been submitted
+Your job 1155269 ("star_align_SRA_RNA_jobOutput") has been submitted
 Your job 1154123 ("star_align_SRA_RNA_jobOutput") has been submitted
-Your job 1154124 ("star_align_SRA_RNA_jobOutput") has been submitted
-multiqc | No analysis results found. Cleaning up…
+Your job 1155266 ("star_align_SRA_RNA_jobOutput") has been submitted
 
 #### align RNA
 
