@@ -5,7 +5,7 @@
 ### NCBI, zenodo, and CNGBdb genomes - July 2026
 
 #### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_72hr.txt
-##### job
+##### job 
 
 #### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 ##### job 
@@ -252,10 +252,12 @@ qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_
 #### qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
 Your job 1120079 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+qdel
 Your job 1120080 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 Your job 1120081 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 Your job 1120082 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 Your job 1120083 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+qdel
 Your job 1120084 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 Your job 1120085 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 Your job 1120086 ("evaluate_assembly_QUAST_jobOutput") has been submitted
