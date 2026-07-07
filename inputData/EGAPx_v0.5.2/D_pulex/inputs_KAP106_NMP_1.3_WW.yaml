@@ -1,0 +1,5 @@
+genome: /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/D.pulex_KAP106_NMP_1.3.masked.fasta
+taxid: 6669
+reads:
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/RNA/KAP106.R1_001.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/RNA/KAP106.R2_001.fastq.gz

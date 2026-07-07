@@ -1,0 +1,2 @@
+species: Branchinecta_sandiegonensis_CCGP_NCBI
+inputs_EGAPx: EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.yaml

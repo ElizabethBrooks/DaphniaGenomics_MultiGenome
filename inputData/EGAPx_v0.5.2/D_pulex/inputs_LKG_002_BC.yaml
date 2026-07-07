@@ -1,0 +1,5 @@
+genome: /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_genomes/D_pulex_LKG_002/Daphnia_pulex_LKG_002_salt_tolerant.bp.p_ctg.fa
+taxid: 6669
+reads:
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/pooled_annotation_RNA/D_pulex_LKG_002/LKG_002_S41_L004_R1_001.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/pooled_annotation_RNA/D_pulex_LKG_002/LKG_002_S41_L004_R2_001.fastq.gz

@@ -1,0 +1,27 @@
+genome: /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_genomes/1_all_chromosome_assemblies_and_annotation_June2024/D.galeata_M5_annotation/D.galeata_M5.masked.chr_clean.fasta
+taxid: 27404
+reads:
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_galeata_ENA/ERR2929116_1.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_galeata_ENA/ERR2929116_2.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_galeata_ENA/ERR2929117_1.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_galeata_ENA/ERR2929117_2.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_galeata_ENA/ERR2929118_1.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_galeata_ENA/ERR2929118_2.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_galeata_ENA/ERR2929119_1.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_galeata_ENA/ERR2929119_2.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_galeata_ENA/ERR2929120_1.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_galeata_ENA/ERR2929120_2.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_galeata_ENA/ERR2929121_1.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_galeata_ENA/ERR2929121_2.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_galeata_ENA/ERR2929122_1.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_galeata_ENA/ERR2929122_2.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_galeata_ENA/ERR2929123_1.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_galeata_ENA/ERR2929123_2.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_galeata_ENA/ERR2929124_1.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_galeata_ENA/ERR2929124_2.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_galeata_ENA/ERR2929125_1.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_galeata_ENA/ERR2929125_2.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_galeata_ENA/ERR2929126_1.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_galeata_ENA/ERR2929126_2.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_galeata_ENA/ERR2929127_1.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_galeata_ENA/ERR2929127_2.fastq.gz

@@ -1,0 +1,6 @@
+genome: /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/D.pulex_PA42_5.0_real.masked.fasta
+taxid: 6669
+proteins: /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_genomes/1_all_chromosome_assemblies_and_annotation_June2024/D.pulex_PA42.5.0_annotation/D.pulex_PA42_5.0_real.masked.aa.fasta
+reads:
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/RNA/pa42.R1_001.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/RNA/pa42.R2_001.fastq.gz

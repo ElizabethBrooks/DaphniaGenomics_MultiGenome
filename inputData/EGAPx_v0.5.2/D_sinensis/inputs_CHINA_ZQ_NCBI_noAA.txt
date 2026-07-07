@@ -1,0 +1,2 @@
+species: D_sinensis_CHINA_ZQ_NCBI_noAA
+inputs_EGAPx: EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.yaml

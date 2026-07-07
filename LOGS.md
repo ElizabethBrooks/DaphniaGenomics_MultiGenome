@@ -1,5 +1,18 @@
 # Logs of Analysis & Tests
 
+## Annotations
+
+### NCBI, zenodo, and CNGBdb genomes - July 2026
+
+#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_72hr.txt
+##### job
+
+#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+##### job 
+
+
+## Evaluation
+
 ### BC, NCBI, zenodo, and CNGBdb genomes
 
 #### QC RNA
@@ -299,7 +312,8 @@ Your job 1117633 ("QC_SRA_RNA_jobOutput") has been submitted
 Your job 1117634 ("QC_SRA_RNA_jobOutput") has been submitted
 Your job 1117635 ("QC_SRA_RNA_jobOutput") has been submitted
 Your job 1118699 ("QC_RNA_jobOutput") has been submitted
-Your job 1117087 ("QC_RNA_jobOutput") has been submitted
+Your job 1155272 ("QC_RNA_jobOutput") has been submitted
+Existing reports found, adding suffix to filenames. Use '--force' to overwrite
 Your job 1155262 ("QC_RNA_jobOutput") has been submitted
 #### Your job 1119002 ("QC_RNA_jobOutput") has been submitted
 
@@ -343,7 +357,7 @@ Your job 1154100 ("star_align_RNA_jobOutput") has been submitted
 Your job 1154101 ("star_align_RNA_jobOutput") has been submitted
 Your job 1154102 ("star_align_RNA_jobOutput") has been submitted
 Your job 1155256 ("star_align_RNA_jobOutput") has been submitted
-Your job 1155257 ("star_align_RNA_jobOutput") has been submitted
+Your job 1155275 ("star_align_RNA_jobOutput") has been submitted
 Your job 1155258 ("star_align_RNA_jobOutput") has been submitted
 
 qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
@@ -404,7 +418,7 @@ Your job 1118910 ("align_SRA_RNA_jobOutput") has been submitted
 Your job 1118911 ("align_SRA_RNA_jobOutput") has been submitted
 Your job 1118912 ("align_SRA_RNA_jobOutput") has been submitted
 Your job 1120102 ("align_SRA_RNA_jobOutput") has been submitted
-Your job 1118904 ("align_RNA_jobOutput") has been submitted
+Your job 1155276 ("align_RNA_jobOutput") has been submitted
 Your job 1155253 ("align_RNA_jobOutput") has been submitted
 #### Your job 1120108 ("align_RNA_jobOutput") has been submitted
 
@@ -918,8 +932,9 @@ Parsing Finished
 ##### job 1109064
 NOTICEs: 2; WARNINGs: 2; non-fatal ERRORs: 0
 
+## Annotations
 
-## re-run
+### re-run
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
 ##### job 1117067
@@ -949,7 +964,7 @@ error [java.lang.InterruptedException]: java.lang.InterruptedException
 00167/000/0000/P  530000A7A3D83B11 0033/0014 2026-06-25T19:38:29.123378 d32cepyc193.crc.nd.edu UNK_CLIENT      UNK_SESSION              star_wnode Error: CORELIB(106.16) "ncbiapp.rsync -rvp", line 699: ncbi::CNcbiApplicationAPI::x_TryMain() --- Application's execution failed (CException::eUnknown) 1 jobs failed
 
 
-## BC
+### BC
 
 #### qsub clean_EGAPx_outputs.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 ##### job 1122942
@@ -972,7 +987,7 @@ error [java.lang.InterruptedException]: java.lang.InterruptedException
 #### qsub functional_emapper.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 ##### job 1123275
 
-## NCBI, zenodo, and CNGBdb genomes - June 2026
+### NCBI, zenodo, and CNGBdb genomes - June 2026
 
 #### qsub screen_genome_FCS_GX.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 ##### job 1059650
@@ -1354,7 +1369,7 @@ pseudogene   52
 ##### job 1059670
 
 
-## version 2 for ZQ - June 2026
+### version 2 for ZQ - June 2026
 
 #### bash cache_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
 #### qsub run_cached_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt

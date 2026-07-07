@@ -1,0 +1,4 @@
+genome: /groups/mpfrende/Projects_2026/multi_genome/data/NCBI_genomes/Chydorus_sphaericus.fna
+taxid: 77745
+reads:
+  - SRR24520089

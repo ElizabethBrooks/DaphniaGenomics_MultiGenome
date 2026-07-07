@@ -1,0 +1,7 @@
+genome: /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/D.sinensis_CHINA.masked.fasta
+taxid: 1820382
+proteins: /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_genomes/1_all_chromosome_assemblies_and_annotation_June2024/D.sinensis_CHINA_annotation/D.sinensis_CHINA.masked.aa.fasta
+reads:
+  - SRR10389290
+  - SRR10389293
+  - SRR10389294

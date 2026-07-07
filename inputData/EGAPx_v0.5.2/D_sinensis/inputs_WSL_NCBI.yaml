@@ -1,0 +1,7 @@
+genome: /groups/mpfrende/Projects_2026/multi_genome/data/D_sinensis_ncbi_dataset/GCA_013167095.2/GCA_013167095.2_Dsi_genomic.fna
+taxid: 1820382
+proteins: /groups/mpfrende/Projects_2026/multi_genome/data/D_sinensis_ncbi_dataset/GCA_013167095.2/protein.faa
+reads:
+  - SRR10389290
+  - SRR10389293
+  - SRR10389294

@@ -1,0 +1,6 @@
+genome: /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/D.arenata.2.0.masked.fasta
+taxid: 121628
+proteins: /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_genomes/1_all_chromosome_assemblies_and_annotation_June2024/D.arenata.2.0_annotation/D.arenata.2.0.masked.aa.fasta
+reads:
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/RNA/arenata.R1_001.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/RNA/arenata.R2_001.fastq.gz

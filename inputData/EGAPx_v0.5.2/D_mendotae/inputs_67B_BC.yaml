@@ -1,0 +1,5 @@
+genome: /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_genomes/D_mendotae_67B/Daphnia_mendotae_67B.purged.fa
+taxid: 132683
+reads:
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/pooled_annotation_RNA/D_mendotae_67B/D-mendotae_S48_L004_R1_001.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/pooled_annotation_RNA/D_mendotae_67B/D-mendotae_S48_L004_R2_001.fastq.gz

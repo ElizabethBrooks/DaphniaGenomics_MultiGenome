@@ -1,0 +1,2 @@
+species: D_retrocurva_BLK_001_BC_clean
+inputs_EGAPx: EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_BC_clean.yaml

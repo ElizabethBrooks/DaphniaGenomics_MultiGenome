@@ -1,0 +1,5 @@
+genome: /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_genomes/2_second_batch/D_mendotae/Daphnia_mendotae.genomic.fasta
+taxid: 132683
+reads:
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/pooled_annotation_RNA/D_mendotae_67B/D-mendotae_S48_L004_R1_001.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/pooled_annotation_RNA/D_mendotae_67B/D-mendotae_S48_L004_R2_001.fastq.gz

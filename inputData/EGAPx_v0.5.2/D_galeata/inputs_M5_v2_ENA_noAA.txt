@@ -1,0 +1,3 @@
+species: D_galeata_M5_v2_ENA_noAA
+inputs_EGAPx: EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ENA_noAA.yaml
+doi: 10.1093/gbe/evab267

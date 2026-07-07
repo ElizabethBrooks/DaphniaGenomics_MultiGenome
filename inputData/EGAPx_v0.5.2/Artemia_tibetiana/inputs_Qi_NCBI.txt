@@ -1,0 +1,2 @@
+species: Artemia_tibetiana_Qi_NCBI
+inputs_EGAPx: EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.yaml

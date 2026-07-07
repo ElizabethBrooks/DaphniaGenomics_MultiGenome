@@ -1,0 +1,5 @@
+genome: /groups/mpfrende/Projects_2026/multi_genome/FCS_GX_v0.5.5/Latona_sp_BLK_101_BC/clean.fasta
+taxid: 3044097
+reads:
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/pooled_annotation_RNA/Latona_sp_BLK_101/BLK_101_S50_L004_R1_001.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/pooled_annotation_RNA/Latona_sp_BLK_101/BLK_101_S50_L004_R2_001.fastq.gz

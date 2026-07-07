@@ -1,0 +1,2 @@
+species: Branchinecta_lynchi_BRLY_NCBI
+inputs_EGAPx: EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.yaml

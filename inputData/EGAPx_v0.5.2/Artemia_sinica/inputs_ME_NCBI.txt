@@ -1,0 +1,2 @@
+species: Artemia_sinica_ME_NCBI
+inputs_EGAPx: EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.yaml

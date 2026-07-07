@@ -1,0 +1,6 @@
+genome: /groups/mpfrende/Projects_2026/multi_genome/data/FCS_GX/D_lumholtzi_gx_out/D.lumholtzi_3.0.masked_clean.fasta
+taxid: 42856
+proteins: /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_genomes/1_all_chromosome_assemblies_and_annotation_June2024/D.lumholtzi.2.0_annotation/D.lumholtzi_3.0.masked.aa.fasta
+reads:
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/RNA/lumholtzi.R1_001.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_raw_data_WW/RNA/lumholtzi.R2_001.fastq.gz

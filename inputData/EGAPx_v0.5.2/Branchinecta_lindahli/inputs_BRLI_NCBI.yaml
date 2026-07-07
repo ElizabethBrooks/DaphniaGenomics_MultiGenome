@@ -1,0 +1,4 @@
+genome: /groups/mpfrende/Projects_2026/multi_genome/data/NCBI_genomes/Branchinecta_lindahli.fna
+taxid: 91573
+reads:
+  - SRR5140142

@@ -1,0 +1,5 @@
+genome: /groups/mpfrende/Projects_2026/multi_genome/data/NCBI_genomes/Branchinecta_lynchi.fna
+taxid: 577405
+reads:
+  - SRR29348128
+  - SRR29348129

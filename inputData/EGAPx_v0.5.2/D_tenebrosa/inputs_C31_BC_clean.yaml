@@ -1,0 +1,5 @@
+genome: /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_genomes/cleaned_FCS_GX/D_tenebrosa_C31_BC/clean.fasta
+taxid: 521141
+reads:
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/pooled_annotation_RNA/D_tenebrosa_C31/D-tenebrosa_S49_L004_R1_001.fastq.gz
+  - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/pooled_annotation_RNA/D_tenebrosa_C31/D-tenebrosa_S49_L004_R2_001.fastq.gz
