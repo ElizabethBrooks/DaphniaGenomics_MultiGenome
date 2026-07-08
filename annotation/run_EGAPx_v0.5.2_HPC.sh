@@ -41,8 +41,8 @@ softwarePath=$(grep "software_EGAPx_v0.5.2:" ../"inputData/inputs_annotations.tx
 #outputsPath=$(grep "outputs_EGAPx_v0.5.2_ZQ_B2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.5.2_ZQ_B2://g")
 #outputsPath=$(grep "outputs_EGAPx_v0.5.2_ZQ_V2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.5.2_ZQ_V2://g")
 #outputsPath=$(grep "outputs_EGAPx_v0.5.2_BC:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.5.2_BC://g")
-outputsPath=$(grep "outputs_EGAPx_v0.5.2_NCBI:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.5.2_NCBI://g")
-#outputsPath=$(grep "outputs_EGAPx_v0.5.2_zenodo:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.5.2_zenodo://g")
+#outputsPath=$(grep "outputs_EGAPx_v0.5.2_NCBI:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.5.2_NCBI://g")
+outputsPath=$(grep "outputs_EGAPx_v0.5.2_zenodo:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.5.2_zenodo://g")
 #outputsPath=$(grep "outputs_EGAPx_v0.5.2_CNGBdb:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.5.2_CNGBdb://g")
 
 # make outputs directory
