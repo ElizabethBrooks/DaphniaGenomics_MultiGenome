@@ -5,42 +5,42 @@
 ### NCBI, zenodo, and CNGBdb genomes - July 2026
 
 #### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_72hr.txt
-##### job 1165558
-
-#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
-##### job 1165560
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
-##### job 1166455
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
-##### job 1166456
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
-##### job 1166457
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
-##### job 1166458
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
-##### job 1166459
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
-##### job 1166460
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
-##### job 1166461
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
-##### job 1166462
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
-##### job 1166463
-
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 ##### job 
 
-#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+##### job 
+
+#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+##### job 
+
+#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/D_carinata/inputs_CSIRO_NCBI.txt
+##### job
+
+#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/D_longicephala/inputs_AUS_NCBI.txt
+##### job
+
+#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+##### job
+
+#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Artemia_sinica/inputs_ME_NCBI.txt
+##### job
+
+#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+##### job
+
+#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+##### job 
+
+#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
+##### job
+
+#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+##### job 
+
+#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/D_arabica/inputs_zenodo_SRA.txt
+##### job 
+
+#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 ##### job 
 
 
