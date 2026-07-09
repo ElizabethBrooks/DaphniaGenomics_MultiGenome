@@ -6,9 +6,11 @@
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
