@@ -123,72 +123,95 @@ bash plot_telomeres.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
 
 
 ## Annotations EGAPx v0.5.2
