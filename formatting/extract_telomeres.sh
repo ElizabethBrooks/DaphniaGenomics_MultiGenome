@@ -54,8 +54,11 @@ cd $outputsPath"/tidk_0.2.65"
 # status message
 echo "Beginning analysis of $speciesName..."
 
+# retrieve most abundant telomeric repeat
+telomere=$(head -2 $outputsPath"/tidk_0.2.65/telomeric_repeat.tsv" | tail -1 | cut -f1)
+
 # extract telomere sequences
-tidk search -s $outputsPath"/tidk_0.2.65/telomeric_repeat.tsv" -o "telomere_sequences" -d $outputsPath"/tidk_0.2.65" $inputsDir"/complete.genomic.fna"
+tidk search -s $telomere -o "telomere_sequences" -d $outputsPath"/tidk_0.2.65" $inputsDir"/complete.genomic.fna"
 
 # status message
 echo "Analysis of $speciesName complete!"

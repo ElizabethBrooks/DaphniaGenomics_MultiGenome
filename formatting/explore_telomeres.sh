@@ -1,11 +1,7 @@
 #!/bin/bash
-#$ -M ebrooks5@nd.edu
-#$ -m abe
-#$ -r n
-#$ -N explore_telomeres_jobOutput
 
 # script to extract telomere sequences
-# usage: qsub explore_telomeres.sh inputFile
+# usage: bash explore_telomeres.sh inputFile
 
 # load software
 conda activate my_tidk

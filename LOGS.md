@@ -4,7 +4,8 @@
 
 ### BC, NCBI, zenodo, and CNGBdb genomes
 
-qsub explore_telomeres.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+bash explore_telomeres.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+bash extract_telomeres.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 
 
 ## Annotations EGAPx v0.5.2
