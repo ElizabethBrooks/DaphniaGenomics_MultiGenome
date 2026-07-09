@@ -6,6 +6,12 @@
 
 #### batch 1
 
+## TO-DO: copy over STAR results
+mkdir /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/STAR_v2.7.11b/
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/*/STAR_v2.7.11b/*\.stats; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); baseName=$(basename $i); rsync -v $i /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/STAR_v2.7.11b/$newName"_"$baseName; done
+mkdir /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/STAR_v2.7.11b/MultiQC_v1.33
+multiqc /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/STAR_v2.7.11b -o /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/STAR_v2.7.11b/MultiQC_v1.33 -n "multiqc" --fn_as_s_name --export
+
 mkdir /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/AGAT_v1.4.2
 for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/*/AGAT_v1.4.2/annotation_stats.txt; do echo $i; dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); baseName=$(basename $i); cat $i | grep -A35 "\- lnc_rna \-" | tail -35 | sed "s/^/$newName,/g" | sed "s/(.*)//g" | tr ' ' '_' | tr -s '_' | sed "s/90_/ninety_/g" | sed "s/_[0-9]/,&/" | sed "s/_,/,/g" | tr -s ',' | sed "s/,_/,/g" > /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/AGAT_v1.4.2/$newName"_lnc_rna_"$baseName; done
 for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/*/AGAT_v1.4.2/annotation_stats.txt; do echo $i; dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); baseName=$(basename $i); cat $i | grep -A111 "\- mrna \-" | tail -111 | sed "s/^/$newName,/g" | sed "s/(.*)//g" | tr ' ' '_' | tr -s '_' | sed "s/90_/ninety_/g" | sed "s/_[0-9]/,&/" | sed "s/_,/,/g" | tr -s ',' | sed "s/,_/,/g" > /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/AGAT_v1.4.2/$newName"_mrna_"$baseName; done
@@ -260,6 +266,8 @@ cat /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/addit
 ### organization
 
 #### tree set
+
+## TO-DO: add batch sub-directories
 
 #mkdir /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA
 #cd /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA
