@@ -6,7 +6,6 @@
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
-canonical_repeat_unit	count_repeat_runs_gt_100
 AACTT	1041
 AAAGG	702
 AAATC	617
@@ -14,43 +13,182 @@ AAAAG	486
 
 bash explore_telomeres.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+AACCG	1286
+AAAAG	1130
+AAATG	676
+AATTC	453
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+AATAT	2357
+AAAAG	2231
+AATAC	1419
+AACCG	1247
+AATCT	1246
+AAGCC	1109
+ACACG	1089
+AAACC	956
+ACCCC	900
+ACGTC	781
+CCCCG	727
+ACTAT	676
+AAATT	669
+ACTCG	627
+ACAGC	611
+AAGAC	608
+AATCC	581
+ACATG	499
+AAAAT	448
+AAACG	440
+AACAG	436
+AAAGG	429
+AAAAC	359
+AACTC	343
+AAGAG	332
+AATTC	328
+ATCGC	269
+AAATC	211
+AACCC	209
 
 bash explore_telomeres.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+ACTAT	825
+AAATC	766
+AAATG	763
+AAAGT	746
+AAAAC	706
+ACCCC	684
+AATCT	528
+AATTC	503
+AAAAT	490
+AACCT	477
+AATAT	448
+AACAG	436
+AATCC	433
+AAGAT	411
+AAACT	389
+AAGAG	385
+AACTC	344
+AAAAG	333
+AGAGG	317
+AATAG	294
+AATGT	279
+AAATT	223
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
+AAATT	1303
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
+AAAAC	12999
+AAATT	4581
+AGCAT	1123
+AAAAT	510
+AACCT	494
 
 bash explore_telomeres.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+AAAAC	680
 
 bash explore_telomeres.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+ACAGG	1466
+AATAC	1317
+AAGGT	1130
+AATCT	1121
+AAAAT	1115
+AAATG	1079
+ACGAG	952
+ATCCC	859
+AATGC	819
+AAAGT	780
+AACAC	775
+ACATG	773
+AATAG	728
+AAAAC	633
+ACCCC	608
+AATTC	596
+AAAAG	578
+ACGAT	548
+AAGTC	543
+AAGAT	537
+AGGGG	534
+AAGAC	507
+AGAGG	506
+AGGAT	458
+AAACG	449
+AAGGG	448
+ACCTG	440
+AACTT	421
+ACCCT	415
+AAAGC	414
+AGATG	406
+AACAG	401
+AATAT	396
+AAATC	382
+AACCT	377
+AAACT	371
+AACAT	359
+ATATC	343
+ACTAT	339
+ACCTC	321
+AATGG	316
+AAACC	310
+AATGT	259
+AAATT	245
+AAAGG	241
+AATCG	234
+AACCC	229
+AATCC	227
 
 bash explore_telomeres.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+AAAAG	4807
+AAGCC	2367
+AAAAT	935
+AACTG	881
+ACCGG	752
+AATTC	655
+AACAG	488
+AGGAT	396
+AATCC	329
+AACCT	256
+AAATG	243
 
 bash explore_telomeres.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+AAAGG	1553
+AAAAT	589
+AACCT	316
 
 bash explore_telomeres.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
+AAAAG	2451
+AAATG	456
+AAAAC	398
+AAGAC	316
+AACCT	302
+AACTC	298
+AAGTC	260
+AAACT	238
 
 bash explore_telomeres.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+AAAAT	44806
+AAGAC	14779
+AAAAC	12877
+AAGTC	2397
+ATATC	1006
+AACCT	799
+AAACT	316
+AAACG	313
 
 
 ### version 2
 
 bash explore_telomeres.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-canonical_repeat_unit	count_repeat_runs_gt_100
 ACCCT	1558
 AACCT	1240
 AAAAC	1022
@@ -59,7 +197,6 @@ AAGAG	867
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
-canonical_repeat_unit	count_repeat_runs_gt_100
 AATGC	13667
 AAAAG	11548
 AAAAT	2120
@@ -70,7 +207,6 @@ AAAAC	295
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
-canonical_repeat_unit	count_repeat_runs_gt_100
 AACCC	16186
 ACGCT	1201
 AAAAC	616
@@ -79,7 +215,6 @@ AACCT	613
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
-canonical_repeat_unit	count_repeat_runs_gt_100
 AATTC	944
 AAATT	770
 AAATC	566
@@ -87,7 +222,6 @@ AACCT	214
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
-canonical_repeat_unit	count_repeat_runs_gt_100
 ACCAG	1800
 AATTC	1794
 AAAAT	892
