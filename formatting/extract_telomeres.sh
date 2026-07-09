@@ -25,10 +25,6 @@ repoDir=$(dirname $PWD)
 # setup inputs path
 inputsPath=$repoDir"/inputData/"$inputsPath
 
-# retrieve software path
-#softwarePath=$(grep "software_AGAT:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/software_AGAT://g")
-softwarePath=$(grep "software_AGAT_new:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/software_AGAT_new://g")
-
 # retrieve inputs directory
 # change this for different test runs
 #inputsDir=$(grep "outputs_EGAPx_v0.3.2_ZQ_V2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_ZQ_V2://g")
@@ -44,6 +40,9 @@ inputsDir=$inputsDir"/"$speciesName
 
 # retrieve outputs path
 outputsPath=$(grep "outputs_EGAPx_v0.3.2_telomeres:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_telomeres://g")
+
+# setup species directory
+outputsPath=$outputsPath"/"$speciesName
 
 # create outputs directory
 mkdir $outputsPath
