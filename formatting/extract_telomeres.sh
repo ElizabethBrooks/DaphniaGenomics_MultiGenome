@@ -55,7 +55,7 @@ cd $outputsPath"/tidk_0.2.65"
 echo "Beginning analysis of $speciesName..."
 
 # extract telomere sequences
-tidk search -s $outputsPath"/tidk_0.2.65/telomeric_repeat.tsv" -f $inputsDir"/complete.genomic.fna" -o "telomere_sequences" -d $outputsPath"/tidk_0.2.65"
+tidk search -s $outputsPath"/tidk_0.2.65/telomeric_repeat.tsv" -o "telomere_sequences" -d $outputsPath"/tidk_0.2.65" $inputsDir"/complete.genomic.fna"
 
 # status message
 echo "Analysis of $speciesName complete!"
