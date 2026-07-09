@@ -51,7 +51,7 @@ cd $outputsPath"/tidk_0.2.65/length_6_test"
 echo "Beginning analysis of $speciesName..."
 
 # explore for telomeric repeats
-tidk explore --length 6 --minimum 5 --maximum 12 $inputsDir"/complete.genomic.fna" > $outputsPath"/tidk_0.2.65/telomeric_repeat.tsv"
+tidk explore --length 6 --minimum 6 --maximum 12 $inputsDir"/complete.genomic.fna" > $outputsPath"/tidk_0.2.65/telomeric_repeat.tsv"
 
 # status message
 echo "Analysis of $speciesName complete!"
