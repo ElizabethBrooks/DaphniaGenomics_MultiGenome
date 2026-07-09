@@ -40,9 +40,6 @@ outputsPath=$(grep "outputs_EGAPx_v0.3.2_telomeres:" ../"inputData/inputs_annota
 # setup species directory
 outputsPath=$outputsPath"/"$speciesName
 
-# create outputs directory
-mkdir $outputsPath"/tidk_0.2.65"
-
 # move to the outputs directory
 cd $outputsPath"/tidk_0.2.65"
 

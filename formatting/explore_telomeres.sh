@@ -27,9 +27,9 @@ inputsPath=$repoDir"/inputData/"$inputsPath
 #inputsDir=$(grep "outputs_EGAPx_v0.3.2_NCBI:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_NCBI://g")
 #inputsDir=$(grep "outputs_EGAPx_v0.3.2_zenodo:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_zenodo://g")
 #inputsDir=$(grep "outputs_EGAPx_v0.3.2_CNGBdb:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_CNGBdb://g")
-inputsDir=$(grep "outputs_EGAPx_v0.3.2_ZQ_B1:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_ZQ_B1://g")
+#inputsDir=$(grep "outputs_EGAPx_v0.3.2_ZQ_B1:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_ZQ_B1://g")
 #inputsDir=$(grep "outputs_EGAPx_v0.3.2_ZQ_B2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_ZQ_B2://g")
-#inputsDir=$(grep "outputs_EGAPx_v0.3.2_BC:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_BC://g")
+inputsDir=$(grep "outputs_EGAPx_v0.3.2_BC:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_BC://g")
 
 # setup inputs directory path
 inputsDir=$inputsDir"/"$speciesName
@@ -42,16 +42,16 @@ outputsPath=$outputsPath"/"$speciesName
 
 # create outputs directory
 mkdir $outputsPath
-mkdir $outputsPath"/tidk_0.2.65"
+mkdir $outputsPath"/tidk_0.2.65/length_6_test"
 
 # move to the outputs directory
-cd $outputsPath"/tidk_0.2.65"
+cd $outputsPath"/tidk_0.2.65/length_6_test"
 
 # status message
 echo "Beginning analysis of $speciesName..."
 
 # explore for telomeric repeats
-tidk explore --length 5 --minimum 5 --maximum 12 $inputsDir"/complete.genomic.fna" > $outputsPath"/tidk_0.2.65/telomeric_repeat.tsv"
+tidk explore --length 6 --minimum 5 --maximum 12 $inputsDir"/complete.genomic.fna" > $outputsPath"/tidk_0.2.65/telomeric_repeat.tsv"
 
 # status message
 echo "Analysis of $speciesName complete!"
