@@ -80,33 +80,43 @@ bash plot_telomeres.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 
 
 ### Batch 1
