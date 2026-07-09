@@ -14,33 +14,43 @@ bash plot_telomeres.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 
 bash explore_telomeres.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 bash extract_telomeres.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+bash plot_telomeres.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 
 
 ### version 2
