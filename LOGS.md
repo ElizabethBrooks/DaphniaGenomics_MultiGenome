@@ -215,13 +215,19 @@ bash plot_telomeres.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
 ### BC, NCBI, zenodo, and CNGBdb genomes - July 2026
 
 #### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/D_magna/inputs_LRVO_BC_clean.txt
-##### job 1172780
+##### job 
+
+#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+##### job 
+
+#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/D_arabica/inputs_zenodo_SRA.txt
+##### job 
 
 #### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_72hr.txt
-##### job 1172763
+##### job 
 
 #### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
-##### job 1172765
+##### job 
 
 #### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 ##### job 
@@ -248,12 +254,6 @@ bash plot_telomeres.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
 ##### job
 
 #### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
-##### job 
-
-#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/D_arabica/inputs_zenodo_SRA.txt
-##### job 
-
-#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 ##### job 
 
 
