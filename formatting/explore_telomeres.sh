@@ -35,23 +35,24 @@ inputsDir=$(grep "outputs_EGAPx_v0.3.2_BC:" ../"inputData/inputs_annotations.txt
 inputsDir=$inputsDir"/"$speciesName
 
 # retrieve outputs path
-outputsPath=$(grep "outputs_EGAPx_v0.3.2_telomeres:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_telomeres://g")
+#outputsPath=$(grep "outputs_EGAPx_v0.3.2_telomeres:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_telomeres://g")
+outputsPath=$(grep "outputs_EGAPx_v0.3.2_telomeres_min4_max12:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_telomeres_min4_max12://g")
 
 # setup species directory
 outputsPath=$outputsPath"/"$speciesName
 
 # create outputs directory
 mkdir $outputsPath
-mkdir $outputsPath"/tidk_0.2.65/test"
+mkdir $outputsPath"/tidk_0.2.65"
 
 # move to the outputs directory
-cd $outputsPath"/tidk_0.2.65/test"
+cd $outputsPath"/tidk_0.2.65"
 
 # status message
 echo "Beginning analysis of $speciesName..."
 
 # explore for telomeric repeats
-tidk explore --minimum 5 --maximum 12 $inputsDir"/complete.genomic.fna" > $outputsPath"/tidk_0.2.65/test/telomeric_repeat.tsv"
+tidk explore --minimum 4 --maximum 12 $inputsDir"/complete.genomic.fna" > $outputsPath"/tidk_0.2.65/telomeric_repeat.tsv"
 
 # status message
 echo "Analysis of $speciesName complete!"
