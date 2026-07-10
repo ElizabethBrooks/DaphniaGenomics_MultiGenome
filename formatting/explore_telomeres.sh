@@ -38,6 +38,9 @@ inputsDir=$inputsDir"/"$speciesName
 #outputsPath=$(grep "outputs_EGAPx_v0.3.2_telomeres:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_telomeres://g")
 outputsPath=$(grep "outputs_EGAPx_v0.3.2_telomeres_min4_max12:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_telomeres_min4_max12://g")
 
+# create outputs directory
+mkdir $outputsPath
+
 # setup species directory
 outputsPath=$outputsPath"/"$speciesName
 
