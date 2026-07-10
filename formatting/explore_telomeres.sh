@@ -42,16 +42,16 @@ outputsPath=$outputsPath"/"$speciesName
 
 # create outputs directory
 mkdir $outputsPath
-mkdir $outputsPath"/tidk_0.2.65"
+mkdir $outputsPath"/tidk_0.2.65/min_4_test"
 
 # move to the outputs directory
-cd $outputsPath"/tidk_0.2.65"
+cd $outputsPath"/tidk_0.2.65/min_4_test"
 
 # status message
 echo "Beginning analysis of $speciesName..."
 
 # explore for telomeric repeats
-tidk explore --length 5 --minimum 5 --maximum 12 $inputsDir"/complete.genomic.fna" > $outputsPath"/tidk_0.2.65/telomeric_repeat.tsv"
+tidk explore --length 5 --minimum 4 --maximum 12 $inputsDir"/complete.genomic.fna" > $outputsPath"/tidk_0.2.65/telomeric_repeat.tsv"
 
 # status message
 echo "Analysis of $speciesName complete!"
