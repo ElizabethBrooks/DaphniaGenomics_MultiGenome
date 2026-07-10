@@ -215,63 +215,13 @@ bash plot_telomeres.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
 ### BC, NCBI, zenodo, and CNGBdb genomes - July 2026
 
 #### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/D_magna/inputs_LRVO_BC_clean.txt
-##### job 1170629
+##### job 
 
 #### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_72hr.txt
 ##### job 
-Note: cmsearch plane is disabled in params.
-Note: trnascan plane is disabled in params.
-ERROR ~ Error executing process > 'egapx:target_proteins_plane:miniprot:run_miniprot (4)'
-
-Caused by:
-  Process `egapx:target_proteins_plane:miniprot:run_miniprot (4)` terminated with an error exit status (137)
-
-
-Command executed:
-
-  mkdir -p output
-  miniprot -t 15 -G 600000 -p 0.4 --outs=0.4  Artemia_franciscana.fasta aligns.4.faa > output/aligns.4.paf
-
-Command exit status:
-  137
-
-Command output:
-  (empty)
-
-Command error:
-  INFO:    Environment variable SINGULARITYENV_NXF_TASK_WORKDIR is set, but APPTAINERENV_NXF_TASK_WORKDIR is preferred
-  INFO:    Environment variable SINGULARITYENV_NXF_DEBUG is set, but APPTAINERENV_NXF_DEBUG is preferred
-  + mkdir -p output
-  + miniprot -t 15 -G 600000 -p 0.4 --outs=0.4 Artemia_franciscana.fasta aligns.4.faa
-  [M::mp_ntseq_read@5.468*0.65] read 1270737767 bases in 6482 contigs
-  [M::mp_idx_build@5.469*0.65] 9934140 blocks
-  [M::mp_idx_build@9.674*3.55] collected syncmers
-  [M::mp_idx_build@12.680*2.94] 468515151 kmer-block pairs
-  [M::mp_idx_print_stat] 2324639 distinct k-mers; mean occ of infrequent k-mers: 190.87; 754 frequent k-mers accounting for 24946056 occurrences
-  [M::worker_pipeline::122.937*6.88] mapped 3417 sequences
-  [M::worker_pipeline::230.051*7.04] mapped 3543 sequences
-  [M::worker_pipeline::334.822*7.14] mapped 3517 sequences
-  [M::worker_pipeline::437.632*7.18] mapped 3510 sequences
-  .command.sh: line 3:    43 Killed                  miniprot -t 15 -G 600000 -p 0.4 --outs=0.4 Artemia_franciscana.fasta aligns.4.faa > output/aligns.4.paf
-
-Work dir:
-  /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.5.2/NCBI/Artemia_franciscana_JAVRJZ01_NCBI_72hr/temp_datapath/9e/80338e064b3ff22612ed73b210ffc5
-
-Container:
-  /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.5.2/NCBI/Artemia_franciscana_JAVRJZ01_NCBI_72hr/temp_datapath/singularity/ncbi-egapx-0.5.2.img
-
-Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
-
- -- Check '/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.5.2/NCBI/Artemia_franciscana_JAVRJZ01_NCBI_72hr/nextflow/nextflow.log' file for details
-
-None
-To resume execution, run: sh /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.5.2/NCBI/Artemia_franciscana_JAVRJZ01_NCBI_72hr/nextflow/resume.sh
-
 
 #### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
-##### job 1166530
-    def sra_metadata_query(sra_uids_list: list[str], run_filter: set[str] | None = None) -> list[SraMetadata]:
-TypeError: unsupported operand type(s) for |: 'types.GenericAlias' and 'NoneType'
+##### job 
 
 #### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 ##### job 

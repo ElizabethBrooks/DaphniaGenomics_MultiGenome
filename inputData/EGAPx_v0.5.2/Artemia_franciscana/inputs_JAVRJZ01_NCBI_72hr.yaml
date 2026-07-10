@@ -3,3 +3,8 @@ taxid: 112780
 short_reads:
   - SRR37687499
   - SRR37687503
+cmsearch:
+  enabled: false
+trnascan:
+  enabled: false
+  

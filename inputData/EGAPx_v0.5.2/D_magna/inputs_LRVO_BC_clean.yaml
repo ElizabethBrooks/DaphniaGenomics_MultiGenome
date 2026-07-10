@@ -1,6 +1,6 @@
 genome: /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_genomes/cleaned_FCS_GX/D_magna_LRVO_BC/clean.fasta
 taxid: 35525
-reads:
+short_reads:
   - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_magna_LRVO/ILMN_2404_ND_NM3348Pool_Jan2025/All_R2_S20_L003_R1_001.fastq.gz
   - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_magna_LRVO/ILMN_2404_ND_NM3348Pool_Jan2025/All_R2_S20_L003_R2_001.fastq.gz
   - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_magna_LRVO/ILMN_2404_ND_NM3348Pool_Jan2025/All_R3_S21_L003_R1_001.fastq.gz
@@ -49,3 +49,7 @@ reads:
   - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_magna_LRVO/ILMN_2404_ND_NM3348Pool_Jan2025/PFOS_R3_S5_L003_R2_001.fastq.gz
   - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_magna_LRVO/ILMN_2404_ND_NM3348Pool_Jan2025/PFOS_R4_S6_L003_R1_001.fastq.gz
   - /groups/mpfrende/Projects_2026/multi_genome/data/Daphnia_RNAseq/D_magna_LRVO/ILMN_2404_ND_NM3348Pool_Jan2025/PFOS_R4_S6_L003_R2_001.fastq.gz
+cmsearch:
+  enabled: false
+trnascan:
+  enabled: false

@@ -27,3 +27,7 @@ short_reads:
   - SRR37687519
   - SRR37687520
   - SRR37687521
+cmsearch:
+  enabled: false
+trnascan:
+  enabled: false

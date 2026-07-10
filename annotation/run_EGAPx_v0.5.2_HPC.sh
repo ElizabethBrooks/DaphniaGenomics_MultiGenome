@@ -15,7 +15,8 @@
 # smaller annotation jobs do not need to request as many resources (for example, 15 cores is sufficient for the average run)
 
 # load java
-conda activate java_env
+conda activate my_python
+conda activate --stack java_env
 
 # retrieve input file
 inputFile=$1

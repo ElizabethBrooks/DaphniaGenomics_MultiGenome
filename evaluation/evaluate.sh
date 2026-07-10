@@ -6,7 +6,6 @@
 
 #### batch 1
 
-## TO-DO: copy over STAR results
 mkdir /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/STAR_v2.7.11b/
 for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/*/STAR_v2.7.11b/*\.stats; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); baseName=$(basename $i); rsync -v $i /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/STAR_v2.7.11b/$newName"_"$baseName; done
 mkdir /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/STAR_v2.7.11b/MultiQC_v1.33
@@ -267,50 +266,48 @@ cat /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/addit
 
 #### tree set
 
-## TO-DO: add batch sub-directories
-
 #mkdir /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA
 #cd /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Artemia_sinica_ME_NCBI /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Artemia_sinica
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Artemia_tibetiana_Qi_NCBI /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Artemia_tibetiana
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Branchinecta_lindahli_BRLI_NCBI /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Branchinecta_lindahli
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Branchinecta_lynchi_BRLY_NCBI /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Branchinecta_lynchi
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Branchinecta_sandiegonensis_CCGP_NCBI /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Branchinecta_sandiegonensis
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Eulimnadia_texana_JT4_NCBI_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Eulimnadia_texana
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Latona_sp_BLK_101_BC_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Latona_sp
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Diaphanosoma_dubium_CNGBdb /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Diaphanosoma_dubium
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Chydorus_sphaericus_JWP1_NCBI /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Chydorus_sphaericus
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Simocephalus_vetulus_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Simocephalus_vetulus
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Ceriodaphnia_sp_dubia_ZQ /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Ceriodaphnia_sp_dubia
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Ceriodaphnia_sp_dubia_v2_ZQ /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/Ceriodaphnia_sp_dubia_v2
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_arabica_zenodo_SRA /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_arabica
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_sinensis_CHINA_ZQ_NCBI_noAA /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_sinensis_CHINA
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_sinensis_WSL_NCBI_clean_noAA /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_sinensis_WSL
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_lumholtzi_2_WW_ZQ_clean_noAA /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_lumholtzi
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_lumholtzi_2_v2_WW_ZQ_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_lumholtzi_v2
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_carinata_CSIRO_NCBI /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_carinata
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_longicephala_AUS_NCBI /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_longicephala
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_magna_LRVO_BC_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_magna_LRVO
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_magna_MLC_001_ZQ /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_magna_MLC
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_similis_BGL_001_ZQ /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_similis
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_mediterranea_CY_ORK_ZQ_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_mediterranea
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_salina_ULW_001_ZQ/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_salina
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_arenata_2_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_arenata
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_melanica_CON6_ZQ_MP_noAA /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_melanica
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_melanica_CON6_v2_ZQ_MP /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_melanica_v2
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_pulicaria_TF22_005_ZQ_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_pulicaria
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_schodleri_Mary_Lake_ZQ /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_schodleri
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_pulex_KAP4_SRA_noAA /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_pulex_KAP4
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_pulex_BEL2_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_pulex_BEL2
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_mitsukuri_1_SZH4_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_mitsukuri
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_catawba_3_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_catawba
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_retrocurva_BLK_001_ZQ_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_retrocurva
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_obtusa_v2_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_obtusa
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_ambigua_3_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_ambigua
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_parvula_2_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_parvula
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_dentifera_3_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_dentifera
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_galeata_M5_WW_ENA /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_galeata
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_galeata_M5_v2_ZQ_ENA /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_galeata_v2
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_mendotae_67B_ZQ_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_mendotae
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_mendotae_67B_v2_ZQ_clean /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_mendotae_v2
-#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_magniceps_WW /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/D_magniceps
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Artemia_sinica_ME_NCBI/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/additional/Artemia_sinica
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Artemia_tibetiana_Qi_NCBI/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/additional/Artemia_tibetiana
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Branchinecta_lindahli_BRLI_NCBI/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/additional/Branchinecta_lindahli
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Branchinecta_lynchi_BRLY_NCBI/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/additional/Branchinecta_lynchi
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Branchinecta_sandiegonensis_CCGP_NCBI/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/additional/Branchinecta_sandiegonensis
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Eulimnadia_texana_JT4_NCBI_clean/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/additional/Eulimnadia_texana
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Latona_sp_BLK_101_BC_clean/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_2/Latona_sp
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Diaphanosoma_dubium_CNGBdb/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/additional/Diaphanosoma_dubium
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Chydorus_sphaericus_JWP1_NCBI/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/additional/Chydorus_sphaericus
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Simocephalus_vetulus_WW/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/Simocephalus_vetulus
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Ceriodaphnia_sp_dubia_ZQ/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_2/Ceriodaphnia_sp_dubia
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/Ceriodaphnia_sp_dubia_v2_ZQ/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/version_2/Ceriodaphnia_sp_dubia_v2
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_arabica_zenodo_SRA/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/additional/D_arabica
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_sinensis_CHINA_ZQ_NCBI_noAA/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/D_sinensis_CHINA
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_sinensis_WSL_NCBI_clean_noAA/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/D_sinensis_WSL
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_lumholtzi_2_WW_ZQ_clean_noAA/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/D_lumholtzi
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_lumholtzi_2_v2_WW_ZQ_clean/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/version_2/D_lumholtzi_v2
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_carinata_CSIRO_NCBI/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/additional/D_carinata
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_longicephala_AUS_NCBI/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/additional/D_longicephala
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_magna_LRVO_BC_clean/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/additional/D_magna_LRVO
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_magna_MLC_001_ZQ/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_2/D_magna_MLC
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_similis_BGL_001_ZQ/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_2/D_similis
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_mediterranea_CY_ORK_ZQ_clean/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_2/D_mediterranea
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_salina_ULW_001_ZQ/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_2/D_salina
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_arenata_2_WW/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/D_arenata
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_melanica_CON6_ZQ_MP_noAA/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/D_melanica
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_melanica_CON6_v2_ZQ_MP/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/version_2/D_melanica_v2
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_pulicaria_TF22_005_ZQ_clean/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_2/D_pulicaria
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_schodleri_Mary_Lake_ZQ/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_2/D_schodleri
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_pulex_KAP4_SRA_noAA/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/D_pulex_KAP4
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_pulex_BEL2_WW/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/D_pulex_BEL2
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_mitsukuri_1_SZH4_WW/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/D_mitsukuri
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_catawba_3_WW/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/D_catawba
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_retrocurva_BLK_001_ZQ_clean/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_2/D_retrocurva
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_obtusa_v2_WW/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/D_obtusa
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_ambigua_3_WW/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/D_ambigua
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_parvula_2_WW/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/D_parvula
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_dentifera_3_WW/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/D_dentifera
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_galeata_M5_WW_ENA/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/D_galeata
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_galeata_M5_v2_ZQ_ENA/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/version_2/D_galeata_v2
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_mendotae_67B_ZQ_clean/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_2/D_mendotae
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_mendotae_67B_v2_ZQ_clean/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/version_2/D_mendotae_v2
+#rsync -rv /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/D_magniceps_WW/* /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/D_magniceps
