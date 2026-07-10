@@ -35,7 +35,8 @@ inputsDir=$(grep "outputs_EGAPx_v0.3.2_ZQ_B1:" ../"inputData/inputs_annotations.
 inputsDir=$inputsDir"/"$speciesName
 
 # retrieve outputs path
-outputsPath=$(grep "outputs_EGAPx_v0.3.2_telomeres:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_telomeres://g")
+#outputsPath=$(grep "outputs_EGAPx_v0.3.2_telomeres:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_telomeres://g")
+outputsPath=$(grep "outputs_EGAPx_v0.3.2_telomeres_min4_max12:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_telomeres_min4_max12://g")
 
 # setup species directory
 outputsPath=$outputsPath"/"$speciesName
