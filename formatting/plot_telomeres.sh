@@ -39,8 +39,8 @@ telomere=$(head -2 $outputsPath"/tidk_0.2.65/telomeric_repeat.tsv" | tail -1 | c
 
 # extract telomere sequences
 tidk plot -t $outputsPath"/tidk_0.2.65/most_common_telomeric_repeat_windows.tsv" -o "most_common_telomeric_repeat"
-tidk plot -t $outputsPath"/tidk_0.2.65/AACCT_telomeric_repeat_windows.tsv" -o "most_common_telomeric_repeat"
-tidk plot -t $outputsPath"/tidk_0.2.65/AACCTAACCT_telomeric_repeat_windows.tsv" -o "most_common_telomeric_repeat"
+tidk plot -t $outputsPath"/tidk_0.2.65/AACCT_telomeric_repeat_windows.tsv" -o "AACCT_telomeric_repeat"
+tidk plot -t $outputsPath"/tidk_0.2.65/AACCTAACCT_telomeric_repeat_windows.tsv" -o "AACCTAACCT_telomeric_repeat"
 
 # status message
 echo "Analysis of $speciesName complete!"
