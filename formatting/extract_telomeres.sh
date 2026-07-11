@@ -48,18 +48,17 @@ cd $outputsPath"/tidk_0.2.65"
 echo "Beginning analysis of $speciesName..."
 
 # retrieve most abundant telomeric repeat
-#telomere=$(head -2 $outputsPath"/tidk_0.2.65/telomeric_repeat.tsv" | tail -1 | cut -f1)
-telomere="AACCT"
-#telomere="AACCTAACCT"
-
-# setup outfile file name
-#outName="most_common"
-outName="AACCT"
-#outName="AACCTAACCT"
+#telomere1=$(head -2 $outputsPath"/tidk_0.2.65/telomeric_repeat.tsv" | tail -1 | cut -f1)
+telomere2="AACCT"
+telomere3="AACCTAACCT"
 
 # extract telomere sequences
-tidk search -s $telomere -o $outName -d $outputsPath"/tidk_0.2.65" $inputsDir"/complete.genomic.fna"
-#tidk search -s $telomere -o $outName -d $outputsPath"/tidk_0.2.65" /groups/mpfrende/Projects_2026/multi_genome/data/NCBI_genomes/Artemia_franciscana.fna
+#tidk search -s $telomere1 -o "most_common" -d $outputsPath"/tidk_0.2.65" $inputsDir"/complete.genomic.fna"
+tidk search -s $telomere2 -o "AACCT" -d $outputsPath"/tidk_0.2.65" $inputsDir"/complete.genomic.fna"
+tidk search -s $telomere3 -o "AACCTAACCT" -d $outputsPath"/tidk_0.2.65" $inputsDir"/complete.genomic.fna"
+#tidk search -s $telomere1 -o "most_common" -d $outputsPath"/tidk_0.2.65" /groups/mpfrende/Projects_2026/multi_genome/data/NCBI_genomes/Artemia_franciscana.fna
+#tidk search -s $telomere2 -o "AACCT" -d $outputsPath"/tidk_0.2.65" /groups/mpfrende/Projects_2026/multi_genome/data/NCBI_genomes/Artemia_franciscana.fna
+#tidk search -s $telomere3 -o "AACCTAACCT" -d $outputsPath"/tidk_0.2.65" /groups/mpfrende/Projects_2026/multi_genome/data/NCBI_genomes/Artemia_franciscana.fna
 
 # status message
 echo "Analysis of $speciesName complete!"
