@@ -1,8 +1,8 @@
 # script to plot annotation stats
 
 # create and set working directory
-dir.create("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation/tree_RNA/BUSCO_v6.0.0")
-setwd("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation/tree_RNA/BUSCO_v6.0.0")
+dir.create("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/BUSCO_v6.0.0")
+setwd("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/BUSCO_v6.0.0")
 
 # turn off scientific notation
 options(scipen=999)
@@ -11,22 +11,22 @@ options(scipen=999)
 library(ggplot2)
 
 # read in BUSCO genome stats csv
-genome_stats_batch_1 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation/tree_RNA/batch_1/BUSCO_v6.0.0/short_summary.specific.crustacea_odb12.genome.csv", colClasses = c("character", "numeric"))
-genome_stats_batch_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation/tree_RNA/batch_2/BUSCO_v6.0.0/short_summary.specific.crustacea_odb12.genome.csv", colClasses = c("character", "numeric"))
-genome_stats_version_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation/tree_RNA/version_2/BUSCO_v6.0.0/short_summary.specific.crustacea_odb12.genome.csv", colClasses = c("character", "numeric"))
-genome_stats_add <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation/tree_RNA/additional/BUSCO_v6.0.0/short_summary.specific.crustacea_odb12.genome.csv", colClasses = c("character", "numeric"))
+genome_stats_batch_1 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/batch_1/BUSCO_v6.0.0/short_summary.specific.crustacea_odb12.genome.csv", colClasses = c("character", "numeric"))
+genome_stats_batch_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/batch_2/BUSCO_v6.0.0/short_summary.specific.crustacea_odb12.genome.csv.fmt.csv", colClasses = c("character", "numeric"))
+genome_stats_version_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/version_2/BUSCO_v6.0.0/short_summary.specific.crustacea_odb12.genome.csv.fmt.csv", colClasses = c("character", "numeric"))
+genome_stats_add <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/additional/BUSCO_v6.0.0/short_summary.specific.crustacea_odb12.genome.csv.fmt.csv", colClasses = c("character", "numeric"))
 
 # read in BUSCO proteins stats csv
-proteins_stats_batch_1 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation/tree_RNA/batch_1/BUSCO_v6.0.0/short_summary.specific.crustacea_odb12.proteins.csv", colClasses = c("character", "numeric"))
-proteins_stats_batch_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation/tree_RNA/batch_2/BUSCO_v6.0.0/short_summary.specific.crustacea_odb12.proteins.csv", colClasses = c("character", "numeric"))
-proteins_stats_version_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation/tree_RNA/version_2/BUSCO_v6.0.0/short_summary.specific.crustacea_odb12.proteins.csv", colClasses = c("character", "numeric"))
-proteins_stats_add <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation/tree_RNA/additional/BUSCO_v6.0.0/short_summary.specific.crustacea_odb12.proteins.csv", colClasses = c("character", "numeric"))
+proteins_stats_batch_1 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/batch_1/BUSCO_v6.0.0/short_summary.specific.crustacea_odb12.proteins.csv", colClasses = c("character", "numeric"))
+proteins_stats_batch_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/batch_2/BUSCO_v6.0.0/short_summary.specific.crustacea_odb12.proteins.csv.fmt.csv", colClasses = c("character", "numeric"))
+proteins_stats_version_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/version_2/BUSCO_v6.0.0/short_summary.specific.crustacea_odb12.proteins.csv.fmt.csv", colClasses = c("character", "numeric"))
+proteins_stats_add <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/additional/BUSCO_v6.0.0/short_summary.specific.crustacea_odb12.proteins.csv.fmt.csv", colClasses = c("character", "numeric"))
 
 # read in AGAT BUSCO proteins stats csv
-agat_stats_batch_1 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation/tree_RNA/batch_1/AGAT_v1.4.2/BUSCO_v6.0.0/short_summary.specific.crustacea_odb12.proteins.csv", colClasses = c("character", "numeric"))
-agat_stats_batch_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation/tree_RNA/batch_2/AGAT_v1.4.2/BUSCO_v6.0.0/short_summary.specific.crustacea_odb12.proteins.csv", colClasses = c("character", "numeric"))
-agat_stats_version_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation/tree_RNA/version_2/AGAT_v1.4.2/BUSCO_v6.0.0/short_summary.specific.crustacea_odb12.proteins.csv", colClasses = c("character", "numeric"))
-agat_stats_add <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation/tree_RNA/additional/AGAT_v1.4.2/BUSCO_v6.0.0/short_summary.specific.crustacea_odb12.proteins.csv", colClasses = c("character", "numeric"))
+agat_stats_batch_1 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/batch_1/AGAT_v1.4.2/BUSCO_v6.0.0/short_summary.specific.crustacea_odb12.proteins.csv", colClasses = c("character", "numeric"))
+agat_stats_batch_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/batch_2/AGAT_v1.4.2/BUSCO_v6.0.0/short_summary.specific.crustacea_odb12.proteins.csv.fmt.csv", colClasses = c("character", "numeric"))
+agat_stats_version_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/version_2/AGAT_v1.4.2/BUSCO_v6.0.0/short_summary.specific.crustacea_odb12.proteins.csv.fmt.csv", colClasses = c("character", "numeric"))
+agat_stats_add <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/additional/AGAT_v1.4.2/BUSCO_v6.0.0/short_summary.specific.crustacea_odb12.proteins.csv.fmt.csv", colClasses = c("character", "numeric"))
 
 # add genome batch column
 genome_stats_batch_1$batch <- "batch_1"
@@ -58,12 +58,20 @@ busco_stats <- data.frame(
 )
 
 # set species order
-species_order <- rev(c("D_pulicaria", "D_schodleri", "D_melanica_v2", "D_melanica", "D_pulex_KAP4", "D_pulex_BEL2", 
+#species_order <- rev(c("D_pulicaria", "D_schodleri", "D_melanica_v2", "D_melanica", "D_pulex_KAP4", "D_pulex_BEL2", 
+#                       "D_arenata", "D_mitsukuri", "D_catawba", "D_retrocurva", "D_obtusa", "D_ambigua", "D_parvula",
+#                       "D_magniceps", "D_dentifera", "D_galeata_v2", "D_galeata", "D_mendotae_v2", "D_mendotae", "D_mediterranea", 
+#                       "D_salina", "D_magna_LRVO", "D_magna_MLC", "D_similis", "D_carinata", "D_longicephala", 
+#                       "D_lumholtzi_v2", "D_lumholtzi", "D_arabica", "D_sinensis_WSL", "D_sinensis_CHINA", 
+#                       "Ceriodaphnia_sp_dubia_v2", "Ceriodaphnia_sp_dubia", "Simocephalus_vetulus", "Chydorus_sphaericus",
+#                       "Diaphanosoma_dubium", "Latona_sp", "Eulimnadia_texana", "Branchinecta_lindahli", 
+#                       "Branchinecta_lynchi", "Branchinecta_sandiegonensis", "Artemia_sinica", "Artemia_tibetiana"))
+species_order <- rev(c("D_pulicaria", "D_schodleri", "D_melanica", "D_pulex_KAP4", "D_pulex_BEL2", 
                        "D_arenata", "D_mitsukuri", "D_catawba", "D_retrocurva", "D_obtusa", "D_ambigua", "D_parvula",
-                       "D_magniceps", "D_dentifera", "D_galeata_v2", "D_galeata", "D_mendotae_v2", "D_mendotae", "D_mediterranea", 
+                       "D_magniceps", "D_dentifera", "D_galeata", "D_mendotae", "D_mediterranea", 
                        "D_salina", "D_magna_LRVO", "D_magna_MLC", "D_similis", "D_carinata", "D_longicephala", 
-                       "D_lumholtzi_v2", "D_lumholtzi", "D_arabica", "D_sinensis_WSL", "D_sinensis_CHINA", 
-                       "Ceriodaphnia_sp_dubia_v2", "Ceriodaphnia_sp_dubia", "Simocephalus_vetulus", "Chydorus_sphaericus",
+                       "D_lumholtzi", "D_arabica", "D_sinensis_WSL", "D_sinensis_CHINA", 
+                       "Ceriodaphnia_sp_dubia", "Simocephalus_vetulus", "Chydorus_sphaericus",
                        "Diaphanosoma_dubium", "Latona_sp", "Eulimnadia_texana", "Branchinecta_lindahli", 
                        "Branchinecta_lynchi", "Branchinecta_sandiegonensis", "Artemia_sinica", "Artemia_tibetiana"))
 

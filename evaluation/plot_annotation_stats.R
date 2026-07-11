@@ -1,8 +1,8 @@
 # script to plot annotation stats
 
 # create and set working directory
-dir.create("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation/tree_RNA/AGAT_v1.4.2")
-setwd("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation/tree_RNA/AGAT_v1.4.2")
+dir.create("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/AGAT_v1.4.2")
+setwd("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/AGAT_v1.4.2")
 
 # turn off scientific notation
 options(scipen=999)
@@ -11,22 +11,22 @@ options(scipen=999)
 library(ggplot2)
 
 # read in mrna stats csv
-mrna_stats_batch_1 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation/tree_RNA/batch_1/AGAT_v1.4.2/mrna_annotation_stats.csv", colClasses = c("character", "character", "numeric"))
-mrna_stats_batch_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation/tree_RNA/batch_2/AGAT_v1.4.2/mrna_annotation_stats.csv", colClasses = c("character", "character", "numeric"))
-mrna_stats_version_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation/tree_RNA/version_2/AGAT_v1.4.2/mrna_annotation_stats.csv", colClasses = c("character", "character", "numeric"))
-mrna_stats_add <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation/tree_RNA/additional/AGAT_v1.4.2/mrna_annotation_stats.csv", colClasses = c("character", "character", "numeric"))
+mrna_stats_batch_1 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/batch_1/AGAT_v1.4.2/mrna_annotation_stats.csv", colClasses = c("character", "character", "numeric"))
+mrna_stats_batch_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/batch_2/AGAT_v1.4.2/mrna_annotation_stats.csv.fmt.csv", colClasses = c("character", "character", "numeric"))
+mrna_stats_version_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/version_2/AGAT_v1.4.2/mrna_annotation_stats.csv.fmt.csv", colClasses = c("character", "character", "numeric"))
+mrna_stats_add <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/additional/AGAT_v1.4.2/mrna_annotation_stats.csv.fmt.csv", colClasses = c("character", "character", "numeric"))
 
 # read in rna stats csv
-rna_stats_batch_1 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation/tree_RNA/batch_1/AGAT_v1.4.2/rna_annotation_stats.csv", colClasses = c("character", "character", "numeric"))
-rna_stats_batch_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation/tree_RNA/batch_2/AGAT_v1.4.2/rna_annotation_stats.csv", colClasses = c("character", "character", "numeric"))
-rna_stats_version_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation/tree_RNA/version_2/AGAT_v1.4.2/rna_annotation_stats.csv", colClasses = c("character", "character", "numeric"))
-rna_stats_add <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation/tree_RNA/additional/AGAT_v1.4.2/rna_annotation_stats.csv", colClasses = c("character", "character", "numeric"))
+rna_stats_batch_1 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/batch_1/AGAT_v1.4.2/rna_annotation_stats.csv", colClasses = c("character", "character", "numeric"))
+rna_stats_batch_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/batch_2/AGAT_v1.4.2/rna_annotation_stats.csv.fmt.csv", colClasses = c("character", "character", "numeric"))
+rna_stats_version_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/version_2/AGAT_v1.4.2/rna_annotation_stats.csv.fmt.csv", colClasses = c("character", "character", "numeric"))
+rna_stats_add <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/additional/AGAT_v1.4.2/rna_annotation_stats.csv.fmt.csv", colClasses = c("character", "character", "numeric"))
 
 # read in lnc_rna stats csv
-lnc_rna_stats_batch_1 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation/tree_RNA/batch_1/AGAT_v1.4.2/lnc_rna_annotation_stats.csv", colClasses = c("character", "character", "numeric"))
-lnc_rna_stats_batch_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation/tree_RNA/batch_2/AGAT_v1.4.2/lnc_rna_annotation_stats.csv", colClasses = c("character", "character", "numeric"))
-lnc_rna_stats_version_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation/tree_RNA/version_2/AGAT_v1.4.2/lnc_rna_annotation_stats.csv", colClasses = c("character", "character", "numeric"))
-lnc_rna_stats_add <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation/tree_RNA/additional/AGAT_v1.4.2/lnc_rna_annotation_stats.csv", colClasses = c("character", "character", "numeric"))
+lnc_rna_stats_batch_1 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/batch_1/AGAT_v1.4.2/lnc_rna_annotation_stats.csv", colClasses = c("character", "character", "numeric"))
+lnc_rna_stats_batch_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/batch_2/AGAT_v1.4.2/lnc_rna_annotation_stats.csv.fmt.csv", colClasses = c("character", "character", "numeric"))
+lnc_rna_stats_version_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/version_2/AGAT_v1.4.2/lnc_rna_annotation_stats.csv.fmt.csv", colClasses = c("character", "character", "numeric"))
+lnc_rna_stats_add <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/additional/AGAT_v1.4.2/lnc_rna_annotation_stats.csv.fmt.csv", colClasses = c("character", "character", "numeric"))
 
 # add mrna batch column
 mrna_stats_batch_1$batch <- "batch_1"
@@ -52,14 +52,22 @@ rna_stats <- rbind(rna_stats_batch_1, rna_stats_batch_2, rna_stats_version_2, rn
 lnc_rna_stats <- rbind(lnc_rna_stats_batch_1, lnc_rna_stats_batch_2, lnc_rna_stats_version_2, lnc_rna_stats_add)
 
 # set species order
-species_order <- rev(c("D_pulicaria", "D_schodleri", "D_melanica_v2", "D_melanica", "D_pulex_KAP4", "D_pulex_BEL2", 
-                   "D_arenata", "D_mitsukuri", "D_catawba", "D_retrocurva", "D_obtusa", "D_ambigua", "D_parvula",
-                   "D_magniceps", "D_dentifera", "D_galeata_v2", "D_galeata", "D_mendotae", "D_mediterranea", 
-                   "D_salina", "D_magna_LRVO", "D_magna_MLC", "D_similis", "D_carinata", "D_longicephala", 
-                   "D_lumholtzi_v2", "D_lumholtzi", "D_arabica", "D_sinensis_WSL", "D_sinensis_CHINA", 
-                   "Ceriodaphnia_sp_dubia_v2", "Ceriodaphnia_sp_dubia", "Simocephalus_vetulus", "Chydorus_sphaericus",
-                   "Diaphanosoma_dubium", "Latona_sp", "Eulimnadia_texana", "Branchinecta_lindahli", 
-                   "Branchinecta_lynchi", "Branchinecta_sandiegonensis", "Artemia_sinica", "Artemia_tibetiana"))
+#species_order <- rev(c("D_pulicaria", "D_schodleri", "D_melanica_v2", "D_melanica", "D_pulex_KAP4", "D_pulex_BEL2", 
+#                       "D_arenata", "D_mitsukuri", "D_catawba", "D_retrocurva", "D_obtusa", "D_ambigua", "D_parvula",
+#                       "D_magniceps", "D_dentifera", "D_galeata_v2", "D_galeata", "D_mendotae_v2", "D_mendotae", "D_mediterranea", 
+#                       "D_salina", "D_magna_LRVO", "D_magna_MLC", "D_similis", "D_carinata", "D_longicephala", 
+#                       "D_lumholtzi_v2", "D_lumholtzi", "D_arabica", "D_sinensis_WSL", "D_sinensis_CHINA", 
+#                       "Ceriodaphnia_sp_dubia_v2", "Ceriodaphnia_sp_dubia", "Simocephalus_vetulus", "Chydorus_sphaericus",
+#                       "Diaphanosoma_dubium", "Latona_sp", "Eulimnadia_texana", "Branchinecta_lindahli", 
+#                       "Branchinecta_lynchi", "Branchinecta_sandiegonensis", "Artemia_sinica", "Artemia_tibetiana"))
+species_order <- rev(c("D_pulicaria", "D_schodleri", "D_melanica", "D_pulex_KAP4", "D_pulex_BEL2", 
+                       "D_arenata", "D_mitsukuri", "D_catawba", "D_retrocurva", "D_obtusa", "D_ambigua", "D_parvula",
+                       "D_magniceps", "D_dentifera", "D_galeata", "D_mendotae", "D_mediterranea", 
+                       "D_salina", "D_magna_LRVO", "D_magna_MLC", "D_similis", "D_carinata", "D_longicephala", 
+                       "D_lumholtzi", "D_arabica", "D_sinensis_WSL", "D_sinensis_CHINA", 
+                       "Ceriodaphnia_sp_dubia", "Simocephalus_vetulus", "Chydorus_sphaericus",
+                       "Diaphanosoma_dubium", "Latona_sp", "Eulimnadia_texana", "Branchinecta_lindahli", 
+                       "Branchinecta_lynchi", "Branchinecta_sandiegonensis", "Artemia_sinica", "Artemia_tibetiana"))
 
 # set of gene counts
 num_species <- length(unique(mrna_stats$species))
