@@ -27,7 +27,7 @@ inputsPath=$repoDir"/inputData/"$inputsPath
 #inputsDir=$(grep "outputs_EGAPx_v0.3.2_CNGBdb:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_CNGBdb://g")
 #inputsDir=$(grep "outputs_EGAPx_v0.3.2_zenodo:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_zenodo://g")
 #inputsDir=$(grep "outputs_EGAPx_v0.3.2_NCBI:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_NCBI://g")
-#inputsDir=$(grep "outputs_EGAPx_v0.3.2_ZQ_V2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_ZQ_V2://g")
+inputsDir=$(grep "outputs_EGAPx_v0.3.2_ZQ_V2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_ZQ_V2://g")
 #inputsDir=$(grep "outputs_EGAPx_v0.3.2_ZQ_B2:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_ZQ_B2://g")
 #inputsDir=$(grep "outputs_EGAPx_v0.3.2_ZQ_B1:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_ZQ_B1://g")
 
@@ -54,12 +54,12 @@ telomere2="AACCT"
 telomere3="AACCTAACCT"
 
 # extract telomere sequences
-#tidk search -s $telomere1 -o "most_common" -d $outputsPath"/tidk_0.2.65" $inputsDir"/complete.genomic.fna"
-#tidk search -s $telomere2 -o "AACCT" -d $outputsPath"/tidk_0.2.65" $inputsDir"/complete.genomic.fna"
-#tidk search -s $telomere3 -o "AACCTAACCT" -d $outputsPath"/tidk_0.2.65" $inputsDir"/complete.genomic.fna"
-tidk search -s $telomere1 -o "most_common" -d $outputsPath"/tidk_0.2.65" /groups/mpfrende/Projects_2026/multi_genome/data/NCBI_genomes/Artemia_franciscana.fna
-tidk search -s $telomere2 -o "AACCT" -d $outputsPath"/tidk_0.2.65" /groups/mpfrende/Projects_2026/multi_genome/data/NCBI_genomes/Artemia_franciscana.fna
-tidk search -s $telomere3 -o "AACCTAACCT" -d $outputsPath"/tidk_0.2.65" /groups/mpfrende/Projects_2026/multi_genome/data/NCBI_genomes/Artemia_franciscana.fna
+tidk search -s $telomere1 -o "most_common" -d $outputsPath"/tidk_0.2.65" $inputsDir"/complete.genomic.fna"
+tidk search -s $telomere2 -o "AACCT" -d $outputsPath"/tidk_0.2.65" $inputsDir"/complete.genomic.fna"
+tidk search -s $telomere3 -o "AACCTAACCT" -d $outputsPath"/tidk_0.2.65" $inputsDir"/complete.genomic.fna"
+#tidk search -s $telomere1 -o "most_common" -d $outputsPath"/tidk_0.2.65" /groups/mpfrende/Projects_2026/multi_genome/data/NCBI_genomes/Artemia_franciscana.fna
+#tidk search -s $telomere2 -o "AACCT" -d $outputsPath"/tidk_0.2.65" /groups/mpfrende/Projects_2026/multi_genome/data/NCBI_genomes/Artemia_franciscana.fna
+#tidk search -s $telomere3 -o "AACCTAACCT" -d $outputsPath"/tidk_0.2.65" /groups/mpfrende/Projects_2026/multi_genome/data/NCBI_genomes/Artemia_franciscana.fna
 
 # status message
 echo "Analysis of $speciesName complete!"
