@@ -21,7 +21,8 @@ trm_data <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/telomere
 #                       "D_lumholtzi_v2", "D_lumholtzi", "D_arabica", "D_sinensis_WSL", "D_sinensis_CHINA", 
 #                       "Ceriodaphnia_sp_dubia_v2", "Ceriodaphnia_sp_dubia", "Simocephalus_vetulus", "Chydorus_sphaericus",
 #                       "Diaphanosoma_dubium", "Latona_sp", "Eulimnadia_texana", "Branchinecta_lindahli", 
-#                       "Branchinecta_lynchi", "Branchinecta_sandiegonensis", "Artemia_sinica", "Artemia_tibetiana"))
+#                       "Branchinecta_lynchi", "Branchinecta_sandiegonensis", "Artemia_sinica", 
+#                       "Artemia_tibetiana", "Artemia_franciscana"))
 species_order <- rev(c("D_pulicaria", "D_schodleri", "D_melanica", "D_pulex_KAP4", "D_pulex_BEL2", 
                        "D_arenata", "D_mitsukuri", "D_catawba", "D_retrocurva", "D_obtusa", "D_ambigua", "D_parvula",
                        "D_magniceps", "D_dentifera", "D_galeata", "D_mendotae", "D_mediterranea", 
@@ -29,7 +30,8 @@ species_order <- rev(c("D_pulicaria", "D_schodleri", "D_melanica", "D_pulex_KAP4
                        "D_lumholtzi", "D_arabica", "D_sinensis_WSL", "D_sinensis_CHINA", 
                        "Ceriodaphnia_sp_dubia", "Simocephalus_vetulus", "Chydorus_sphaericus",
                        "Diaphanosoma_dubium", "Latona_sp", "Eulimnadia_texana", "Branchinecta_lindahli", 
-                       "Branchinecta_lynchi", "Branchinecta_sandiegonensis", "Artemia_sinica", "Artemia_tibetiana"))
+                       "Branchinecta_lynchi", "Branchinecta_sandiegonensis", "Artemia_sinica", 
+                       "Artemia_tibetiana", "Artemia_franciscana"))
 
 # filter rows by TRM length
 trm_data_4 <- trm_data[nchar(trm_data$TRM) == 4, ]

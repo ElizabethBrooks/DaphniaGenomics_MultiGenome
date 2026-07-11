@@ -7,7 +7,7 @@
 
 # script to clean the input gff
 # usage: qsub check_genome_busco.sh inputFile
-# usage ex: qsub check_genome_busco.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
+# usage ex: qsub check_genome_busco.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
 # retrieve input file
 inputFile=$1
@@ -37,10 +37,11 @@ inputsPath=$repoDir"/inputData/"$inputsPath
 #outputsPath=$(grep "outputs_EGAPx_v0.3.2_NCBI:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_NCBI://g")
 #outputsPath=$(grep "outputs_EGAPx_v0.3.2_zenodo:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_zenodo://g")
 #outputsPath=$(grep "outputs_EGAPx_v0.3.2_CNGBdb:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_CNGBdb://g")
-outputsPath=$(grep "outputs_EGAPx_v0.3.2_BC:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_BC://g")
+#outputsPath=$(grep "outputs_EGAPx_v0.3.2_BC:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_BC://g")
 
 # setup outputs path
-outputsPath=$outputsPath"/"$speciesName
+#outputsPath=$outputsPath"/"$speciesName
+outputsPath="/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/test/Artemia_franciscana_JAVRJZ01_NCBI"
 
 # create outputs directory
 mkdir $outputsPath"/BUSCO_v6.0.0"
@@ -60,7 +61,8 @@ export PATH="/afs/crc.nd.edu/user/e/ebrooks5/miniconda3/scripts:$PATH"
 export AUGUSTUS_CONFIG_PATH="/afs/crc.nd.edu/user/e/ebrooks5/miniconda3/envs/augustus_env/config"
 
 # run busco
-busco -i $outputsPath"/complete.genomic.fna" -m "genome" -l "crustacea_odb12" -c 8 -o "genome" -f
+#busco -i $outputsPath"/complete.genomic.fna" -m "genome" -l "crustacea_odb12" -c 8 -o "genome" -f
+busco -i "/groups/mpfrende/Projects_2026/multi_genome/data/NCBI_genomes/Artemia_franciscana.fna" -m "genome" -l "crustacea_odb12" -c 8 -o "genome" -f
 
 # clean up
 rm -r $outputsPath"/BUSCO_v6.0.0/busco_downloads"
