@@ -23,7 +23,7 @@ inputsPath=$repoDir"/inputData/"$inputsPath
 
 # retrieve outputs path
 #outputsPath=$(grep "outputs_EGAPx_v0.3.2_telomeres:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_telomeres://g")
-outputsPath=$(grep "outputs_EGAPx_v0.3.2_telomeres_min4_max12:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_telomeres_min4_max12://g")
+outputsPath=$(grep "outputs_EGAPx_v0.3.2_telomeres_min4_max15:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_EGAPx_v0.3.2_telomeres_min4_max15://g")
 
 # setup species directory
 outputsPath=$outputsPath"/"$speciesName

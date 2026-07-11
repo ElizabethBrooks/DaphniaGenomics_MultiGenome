@@ -64,7 +64,7 @@ species_order <- rev(c("D_pulicaria", "D_schodleri", "D_melanica", "D_pulex_KAP4
                        "D_arenata", "D_mitsukuri", "D_catawba", "D_retrocurva", "D_obtusa", "D_ambigua", "D_parvula",
                        "D_magniceps", "D_dentifera", "D_galeata", "D_mendotae", "D_mediterranea", 
                        "D_salina", "D_magna_LRVO", "D_magna_MLC", "D_similis", "D_carinata", "D_longicephala", 
-                       "D_lumholtzi", "D_arabica", "D_sinensis_WSL", "D_sinensis_CHINA", 
+                       "D_lumholtzi", "D_arabica", "D_sinensis_WSL", "D_sinensis", 
                        "Ceriodaphnia_sp_dubia", "Simocephalus_vetulus", "Chydorus_sphaericus",
                        "Diaphanosoma_dubium", "Latona_sp", "Eulimnadia_texana", "Branchinecta_lindahli", 
                        "Branchinecta_lynchi", "Branchinecta_sandiegonensis", "Artemia_sinica", "Artemia_tibetiana"))
