@@ -15,41 +15,47 @@ mrna_stats_batch_1 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_projec
 mrna_stats_batch_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/batch_2/AGAT_v1.4.2/mrna_annotation_stats.csv.fmt.csv", colClasses = c("character", "character", "numeric"))
 mrna_stats_version_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/version_2/AGAT_v1.4.2/mrna_annotation_stats.csv.fmt.csv", colClasses = c("character", "character", "numeric"))
 mrna_stats_add <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/additional/AGAT_v1.4.2/mrna_annotation_stats.csv.fmt.csv", colClasses = c("character", "character", "numeric"))
+mrna_stats_egapx <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/EGAPx_v0.5.2/AGAT_v1.4.2/mrna_annotation_stats.csv.fmt.csv", colClasses = c("character", "character", "numeric"))
 
 # read in rna stats csv
-rna_stats_batch_1 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/batch_1/AGAT_v1.4.2/rna_annotation_stats.csv", colClasses = c("character", "character", "numeric"))
-rna_stats_batch_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/batch_2/AGAT_v1.4.2/rna_annotation_stats.csv.fmt.csv", colClasses = c("character", "character", "numeric"))
-rna_stats_version_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/version_2/AGAT_v1.4.2/rna_annotation_stats.csv.fmt.csv", colClasses = c("character", "character", "numeric"))
-rna_stats_add <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/additional/AGAT_v1.4.2/rna_annotation_stats.csv.fmt.csv", colClasses = c("character", "character", "numeric"))
+#rna_stats_batch_1 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/batch_1/AGAT_v1.4.2/rna_annotation_stats.csv", colClasses = c("character", "character", "numeric"))
+#rna_stats_batch_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/batch_2/AGAT_v1.4.2/rna_annotation_stats.csv.fmt.csv", colClasses = c("character", "character", "numeric"))
+#rna_stats_version_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/version_2/AGAT_v1.4.2/rna_annotation_stats.csv.fmt.csv", colClasses = c("character", "character", "numeric"))
+#rna_stats_add <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/additional/AGAT_v1.4.2/rna_annotation_stats.csv.fmt.csv", colClasses = c("character", "character", "numeric"))
+#rna_stats_egapx <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/EGAPx_v0.5.2/AGAT_v1.4.2/rna_annotation_stats.csv.fmt.csv", colClasses = c("character", "character", "numeric"))
 
 # read in lnc_rna stats csv
 lnc_rna_stats_batch_1 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/batch_1/AGAT_v1.4.2/lnc_rna_annotation_stats.csv", colClasses = c("character", "character", "numeric"))
 lnc_rna_stats_batch_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/batch_2/AGAT_v1.4.2/lnc_rna_annotation_stats.csv.fmt.csv", colClasses = c("character", "character", "numeric"))
 lnc_rna_stats_version_2 <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/version_2/AGAT_v1.4.2/lnc_rna_annotation_stats.csv.fmt.csv", colClasses = c("character", "character", "numeric"))
 lnc_rna_stats_add <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/additional/AGAT_v1.4.2/lnc_rna_annotation_stats.csv.fmt.csv", colClasses = c("character", "character", "numeric"))
+lnc_rna_stats_egapx <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/EGAPx_v0.5.2/AGAT_v1.4.2/lnc_rna_annotation_stats.csv.fmt.csv", colClasses = c("character", "character", "numeric"))
 
 # add mrna batch column
 mrna_stats_batch_1$batch <- "batch_1"
 mrna_stats_batch_2$batch <- "batch_2"
 mrna_stats_version_2$batch <- "version_2"
 mrna_stats_add$batch <- "additional"
+mrna_stats_egapx$batch <- "egapx"
 
 # add rna batch column
-rna_stats_batch_1$batch <- "batch_1"
-rna_stats_batch_2$batch <- "batch_2"
-rna_stats_version_2$batch <- "version_2"
-rna_stats_add$batch <- "additional"
+#rna_stats_batch_1$batch <- "batch_1"
+#rna_stats_batch_2$batch <- "batch_2"
+#rna_stats_version_2$batch <- "version_2"
+#rna_stats_add$batch <- "additional"
+#rna_stats_egapx$batch <- "egapx"
 
 # add lnc_rna batch column
 lnc_rna_stats_batch_1$batch <- "batch_1"
 lnc_rna_stats_batch_2$batch <- "batch_2"
 lnc_rna_stats_version_2$batch <- "version_2"
 lnc_rna_stats_add$batch <- "additional"
+lnc_rna_stats_egapx$batch <- "egapx"
 
 # combine data sets
-mrna_stats <- rbind(mrna_stats_batch_1, mrna_stats_batch_2, mrna_stats_version_2, mrna_stats_add)
-rna_stats <- rbind(rna_stats_batch_1, rna_stats_batch_2, rna_stats_version_2, rna_stats_add)
-lnc_rna_stats <- rbind(lnc_rna_stats_batch_1, lnc_rna_stats_batch_2, lnc_rna_stats_version_2, lnc_rna_stats_add)
+mrna_stats <- rbind(mrna_stats_batch_1, mrna_stats_batch_2, mrna_stats_version_2, mrna_stats_add, mrna_stats_egapx)
+#rna_stats <- rbind(rna_stats_batch_1, rna_stats_batch_2, rna_stats_version_2, rna_stats_add)
+lnc_rna_stats <- rbind(lnc_rna_stats_batch_1, lnc_rna_stats_batch_2, lnc_rna_stats_version_2, lnc_rna_stats_add, lnc_rna_stats_egapx)
 
 # set species order
 #species_order <- rev(c("D_pulicaria", "D_schodleri", "D_melanica_v2", "D_melanica", "D_pulex_KAP4", "D_pulex_BEL2", 
@@ -64,27 +70,34 @@ species_order <- rev(c("D_pulicaria", "D_schodleri", "D_melanica", "D_pulex_KAP4
                        "D_arenata", "D_mitsukuri", "D_catawba", "D_retrocurva", "D_obtusa", "D_ambigua", "D_parvula",
                        "D_magniceps", "D_dentifera", "D_galeata", "D_mendotae", "D_mediterranea", 
                        "D_salina", "D_magna_LRVO", "D_magna_MLC", "D_similis", "D_carinata", "D_longicephala", 
-                       "D_lumholtzi", "D_arabica", "D_sinensis_WSL", "D_sinensis", 
-                       "Ceriodaphnia_sp_dubia", "Simocephalus_vetulus", "Chydorus_sphaericus",
+                       "D_lumholtzi", "D_arabica", "D_sinensis", "Ceriodaphnia_sp_dubia", "Simocephalus_vetulus", "Chydorus_sphaericus",
                        "Diaphanosoma_dubium", "Latona_sp", "Eulimnadia_texana", "Branchinecta_lindahli", 
-                       "Branchinecta_lynchi", "Branchinecta_sandiegonensis", "Artemia_sinica", "Artemia_tibetiana"))
+                       "Branchinecta_lynchi", "Branchinecta_sandiegonensis", "Artemia_sinica", "Artemia_tibetiana", "Artemia_franciscana"))
 
 # set of gene counts
 num_species <- length(unique(mrna_stats$species))
 gene_counts_stats <- data.frame(
-  species = c(unique(mrna_stats$species), unique(rna_stats$species), unique(lnc_rna_stats$species)), 
-  stat = c(rep("mRNA", num_species), rep("RNA", num_species), rep("lncRNA", num_species)),
-  number = c(mrna_stats[mrna_stats$stat == "Number_of_gene", "number"], rna_stats[rna_stats$stat == "Number_of_pseudogene", "number"], lnc_rna_stats[lnc_rna_stats$stat == "Number_of_gene", "number"])
+  species = c(unique(mrna_stats$species), 
+              #unique(rna_stats$species), 
+              unique(lnc_rna_stats$species)), 
+  stat = c(rep("mRNA", num_species), 
+           #rep("RNA", num_species), 
+           rep("lncRNA", num_species)),
+  number = c(mrna_stats[mrna_stats$stat == "Number_of_gene", "number"], 
+             #rna_stats[rna_stats$stat == "Number_of_pseudogene", "number"], 
+             lnc_rna_stats[lnc_rna_stats$stat == "Number_of_gene", "number"])
 )
 gene_counts_comb <- data.frame(
   species = unique(mrna_stats$species), 
   mRNA = as.numeric(mrna_stats[mrna_stats$stat == "Number_of_gene", "number"]), 
-  RNA = as.numeric(rna_stats[rna_stats$stat == "Number_of_pseudogene", "number"]), 
+#  RNA = as.numeric(rna_stats[rna_stats$stat == "Number_of_pseudogene", "number"]), 
   lncRNA = as.numeric(lnc_rna_stats[lnc_rna_stats$stat == "Number_of_gene", "number"])
 )
 gene_counts <- data.frame(
   species = gene_counts_comb[, "species"],
-  counts = rowSums(gene_counts_comb[, c("mRNA", "RNA", "lncRNA")])
+  counts = rowSums(gene_counts_comb[, c("mRNA", 
+                                        #"RNA", 
+                                        "lncRNA")])
 )
 
 # mrna subset 1 of Number_of_gene, Number_of_mrna, Number_of_cds, Number_of_exon
@@ -95,10 +108,10 @@ mrna_stats_subset1 <- mrna_stats[mrna_stats$stat == "Number_of_gene" | mrna_stat
 mrna_stats_subset2 <- mrna_stats[mrna_stats$stat == "Number_gene_overlapping" | mrna_stats$stat == "Number_of_single_exon_gene" | mrna_stats$stat == "Number_of_single_exon_mrna",]
 
 # rna subset 1 of Number_of_pseudogene, Number_of_rna, Number_of_exon
-rna_stats_subset1 <- rna_stats[rna_stats$stat == "Number_of_pseudogene" | rna_stats$stat == "Number_of_rna" | rna_stats$stat == "Number_of_exon",]
+#rna_stats_subset1 <- rna_stats[rna_stats$stat == "Number_of_pseudogene" | rna_stats$stat == "Number_of_rna" | rna_stats$stat == "Number_of_exon",]
 
 # rna subset 2 of Number_pseudogene_overlapping, Number_of_single_exon_pseudogene, Number_of_single_exon_rna
-rna_stats_subset2 <- rna_stats[rna_stats$stat == "Number_gene_overlapping" | rna_stats$stat == "Number_of_single_exon_gene" | rna_stats$stat == "Number_of_single_exon_rna",]
+#rna_stats_subset2 <- rna_stats[rna_stats$stat == "Number_gene_overlapping" | rna_stats$stat == "Number_of_single_exon_gene" | rna_stats$stat == "Number_of_single_exon_rna",]
 
 # lnc_rna subset 1 of Number_of_gene, Number_of_lnc_rna, Number_of_exon
 lnc_rna_stats_subset1 <- lnc_rna_stats[lnc_rna_stats$stat == "Number_of_gene" | lnc_rna_stats$stat == "Number_of_lnc_rna" | lnc_rna_stats$stat == "Number_of_exon",]
@@ -139,20 +152,20 @@ mrna_stats_subset2_plot <- ggplot(mrna_stats_subset2, aes(fill=stat, y=number, x
 ggsave("mrna_stats_subset2.png", plot = mrna_stats_subset2_plot, device = "png", width = 12, height = 8, units = "in")
 
 # dodged bar plot of stats for rna subset 1
-rna_stats_subset1_plot <- ggplot(rna_stats_subset1, aes(fill=stat, y=number, x=factor(species, species_order))) + 
-  geom_bar(position="dodge", stat="identity") +
-  coord_flip() +
-  labs(x="Species", y="Number", fill = "RNA") +
-  theme_bw() 
-ggsave("rna_stats_subset1.png", plot = rna_stats_subset1_plot, device = "png", width = 12, height = 8, units = "in")
+#rna_stats_subset1_plot <- ggplot(rna_stats_subset1, aes(fill=stat, y=number, x=factor(species, species_order))) + 
+#  geom_bar(position="dodge", stat="identity") +
+#  coord_flip() +
+#  labs(x="Species", y="Number", fill = "RNA") +
+#  theme_bw() 
+#ggsave("rna_stats_subset1.png", plot = rna_stats_subset1_plot, device = "png", width = 12, height = 8, units = "in")
 
 # dodged bar plot of stats for rna subset 2
-rna_stats_subset2_plot <- ggplot(rna_stats_subset2, aes(fill=stat, y=number, x=factor(species, species_order))) + 
-  geom_bar(position="dodge", stat="identity") +
-  coord_flip() +
-  labs(x="Species", y="Number", fill = "RNA") +
-  theme_bw()
-ggsave("rna_stats_subset2.png", plot = rna_stats_subset2_plot, device = "png", width = 12, height = 8, units = "in")
+#rna_stats_subset2_plot <- ggplot(rna_stats_subset2, aes(fill=stat, y=number, x=factor(species, species_order))) + 
+#  geom_bar(position="dodge", stat="identity") +
+#  coord_flip() +
+#  labs(x="Species", y="Number", fill = "RNA") +
+#  theme_bw()
+#ggsave("rna_stats_subset2.png", plot = rna_stats_subset2_plot, device = "png", width = 12, height = 8, units = "in")
 
 # dodged bar plot of stats for lnc_rna subset 1
 lnc_rna_stats_subset1_plot <- ggplot(lnc_rna_stats_subset1, aes(fill=stat, y=number, x=factor(species, species_order))) + 

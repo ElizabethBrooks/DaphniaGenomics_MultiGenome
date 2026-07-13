@@ -306,7 +306,7 @@ qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
-#### qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+qsub QC_SRA_RNA.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
 Your job 1117721 ("QC_SRA_RNA_jobOutput") has been submitted
 Your job 1117722 ("QC_SRA_RNA_jobOutput") has been submitted
@@ -317,6 +317,7 @@ Your job 1117726 ("QC_SRA_RNA_jobOutput") has been submitted
 Your job 1117727 ("QC_SRA_RNA_jobOutput") has been submitted
 Your job 1117728 ("QC_SRA_RNA_jobOutput") has been submitted
 Your job 1117729 ("QC_SRA_RNA_jobOutput") has been submitted
+Your job 1182815 ("QC_SRA_RNA_jobOutput") has been submitted
 
 #### star align RNA
 
@@ -341,7 +342,7 @@ qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.t
 qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
-#### qsub star_align_SRA_RNA.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+qsub star_align_SRA_RNA.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
 Your job 1155263 ("star_align_SRA_RNA_jobOutput") has been submitted
 Your job 1154117 ("star_align_SRA_RNA_jobOutput") has been submitted
@@ -352,6 +353,7 @@ Your job 1155270 ("star_align_SRA_RNA_jobOutput") has been submitted
 Your job 1155269 ("star_align_SRA_RNA_jobOutput") has been submitted
 Your job 1154123 ("star_align_SRA_RNA_jobOutput") has been submitted
 Your job 1155266 ("star_align_SRA_RNA_jobOutput") has been submitted
+Your job 1182817 ("star_align_SRA_RNA_jobOutput") has been submitted
 
 #### align RNA
 
@@ -376,7 +378,7 @@ qsub align_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
 qsub align_SRA_RNA.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 qsub align_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub align_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
-#### qsub align_SRA_RNA.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+qsub align_SRA_RNA.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
 Your job 1118915 ("align_SRA_RNA_jobOutput") has been submitted
 Your job 1118916 ("align_SRA_RNA_jobOutput") has been submitted
@@ -387,6 +389,7 @@ Your job 1118920 ("align_SRA_RNA_jobOutput") has been submitted
 Your job 1118921 ("align_SRA_RNA_jobOutput") has been submitted
 Your job 1118922 ("align_SRA_RNA_jobOutput") has been submitted
 Your job 1118923 ("align_SRA_RNA_jobOutput") has been submitted
+Your job 1182814 ("align_SRA_RNA_jobOutput") has been submitted
 
 #### annotation statistics
 
@@ -520,7 +523,7 @@ qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_N
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
-#### qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+#### qsub evaluate_assembly_QUAST.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
 Your job 1120079 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 qdel
