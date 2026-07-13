@@ -459,7 +459,7 @@ Your job 1119953 ("fun_stats_AGAT_jobOutput") has been submitted
 Your job 1119954 ("fun_stats_AGAT_jobOutput") has been submitted
 Your job 1119955 ("fun_stats_AGAT_jobOutput") has been submitted
 Your job 1119956 ("fun_stats_AGAT_jobOutput") has been submitted
-Your job 1182808 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1182810 ("fun_stats_AGAT_jobOutput") has been submitted
 
 #### list short introns
 
@@ -484,7 +484,7 @@ qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_N
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
-#### qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
 Your job 1120033 ("short_introns_AGAT_jobOutput") has been submitted
 Your job 1120034 ("short_introns_AGAT_jobOutput") has been submitted
@@ -495,6 +495,7 @@ Your job 1120038 ("short_introns_AGAT_jobOutput") has been submitted
 Your job 1120039 ("short_introns_AGAT_jobOutput") has been submitted
 Your job 1120040 ("short_introns_AGAT_jobOutput") has been submitted
 Your job 1120041 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1182811 ("short_introns_AGAT_jobOutput") has been submitted
 
 #### evaluate assembly
 
