@@ -229,6 +229,27 @@ Analysis of Artemia_franciscana_JAVRJZ01_NCBI_72hr complete!
 
 #### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 ##### job 1173420
+Analysis of Artemia_franciscana_JAVRJZ01_NCBI complete!
+#### qsub clean_EGAPx_outputs.sh EGAPx_v0.5.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+##### job 
+#### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.5.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+##### job 
+#### qsub extract_longest_transcripts_AGAT.sh EGAPx_v0.5.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+##### job 
+#### qsub extract_longest_proteins_AGAT.sh EGAPx_v0.5.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+##### job 
+#### qsub extract_longest_proteins_cleaned_AGAT.sh EGAPx_v0.5.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+##### job 
+#### qsub convert_gff_gtf_cufflinks.sh EGAPx_v0.5.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+##### job 
+#### qsub check_genome_busco.sh EGAPx_v0.5.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+##### job 
+#### qsub check_EGAPx_proteins_busco.sh EGAPx_v0.5.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+##### job 
+#### qsub check_AGAT_proteins_busco.sh EGAPx_v0.5.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+##### job 
+#### qsub functional_emapper.sh EGAPx_v0.5.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+##### job
 
 #### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 ##### job 
