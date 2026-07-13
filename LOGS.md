@@ -448,7 +448,7 @@ qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRL
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
-#### qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
 Your job 1119948 ("fun_stats_AGAT_jobOutput") has been submitted
 Your job 1119949 ("fun_stats_AGAT_jobOutput") has been submitted
@@ -459,6 +459,7 @@ Your job 1119953 ("fun_stats_AGAT_jobOutput") has been submitted
 Your job 1119954 ("fun_stats_AGAT_jobOutput") has been submitted
 Your job 1119955 ("fun_stats_AGAT_jobOutput") has been submitted
 Your job 1119956 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1182808 ("fun_stats_AGAT_jobOutput") has been submitted
 
 #### list short introns
 
