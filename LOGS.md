@@ -230,7 +230,7 @@ Analysis of Artemia_franciscana_JAVRJZ01_NCBI_72hr complete!
 #### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 ##### job 1173420
 Analysis of Artemia_franciscana_JAVRJZ01_NCBI complete!
-#### qsub clean_EGAPx_outputs.sh EGAPx_v0.5.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+#### qsub clean_EGAPx_v0.5.2_outputs.sh EGAPx_v0.5.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 ##### job 
 #### qsub keep_longest_isoforms_AGAT.sh EGAPx_v0.5.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 ##### job 
