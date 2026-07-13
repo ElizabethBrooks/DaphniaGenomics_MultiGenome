@@ -246,6 +246,8 @@ Analysis of Artemia_franciscana_JAVRJZ01_NCBI complete!
 ##### job 1182729
 #### qsub check_AGAT_proteins_busco.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 ##### job 1182740
+#### qsub check_genome_busco.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+##### job 1182791
 #### qsub functional_emapper.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 ##### job
 
