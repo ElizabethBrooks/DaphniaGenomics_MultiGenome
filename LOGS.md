@@ -411,7 +411,7 @@ qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRL
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
-#### qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
 Your job 1119149 ("stats_AGAT_jobOutput") has been submitted
 Your job 1119150 ("stats_AGAT_jobOutput") has been submitted
@@ -423,6 +423,7 @@ Your job 1119156 ("stats_AGAT_jobOutput") has been submitted
 Your job 1119904 ("stats_AGAT_jobOutput") has been submitted
 Your job 1119905 ("stats_AGAT_jobOutput") has been submitted
 Your job 1119906 ("stats_AGAT_jobOutput") has been submitted
+Your job  ("stats_AGAT_jobOutput") has been submitted
 
 #### functional statistics
 
