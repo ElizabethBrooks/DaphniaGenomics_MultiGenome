@@ -46,6 +46,7 @@ rm -r $outputsPath"/temp_datapath"
 rm -r $outputsPath"/egapx_config"
 rm -r $outputsPath"/nextflow/execution_logs"
 rm -r $outputsPath"/.nextflow"
+rm -r $outputsPath"/work_dir_singularity.last"
 
 # status message
 echo "Analysis of $speciesName complete!"
