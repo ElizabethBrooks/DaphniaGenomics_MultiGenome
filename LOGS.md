@@ -945,6 +945,20 @@ Your job 1120077 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 ### batch 2
 
+#### genome size
+
+qsub get_genome_size.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+
+
 #### QC RNA
 
 qsub QC_RNA.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
@@ -1115,6 +1129,20 @@ Your job 1120054 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 
 ### version 2
+
+#### genome size
+
+qsub get_genome_size.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+
+Your job 1186673 ("get_genome_size_jobOutput") has been submitted
+Your job 1186674 ("get_genome_size_jobOutput") has been submitted
+Your job 1186675 ("get_genome_size_jobOutput") has been submitted
+Your job 1186676 ("get_genome_size_jobOutput") has been submitted
+Your job 1186677 ("get_genome_size_jobOutput") has been submitted
 
 #### QC RNA
 
