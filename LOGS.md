@@ -307,6 +307,16 @@ qsub get_genome_size.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 qsub get_genome_size.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub get_genome_size.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 
+Your job 1186662 ("get_genome_size_jobOutput") has been submitted
+Your job 1186663 ("get_genome_size_jobOutput") has been submitted
+Your job 1186664 ("get_genome_size_jobOutput") has been submitted
+Your job 1186665 ("get_genome_size_jobOutput") has been submitted
+Your job 1186666 ("get_genome_size_jobOutput") has been submitted
+Your job 1186667 ("get_genome_size_jobOutput") has been submitted
+Your job 1186668 ("get_genome_size_jobOutput") has been submitted
+Your job 1186669 ("get_genome_size_jobOutput") has been submitted
+Your job 1186670 ("get_genome_size_jobOutput") has been submitted
+
 qsub get_genome_size.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
 Your job 1186632 ("get_genome_size_jobOutput") has been submitted
