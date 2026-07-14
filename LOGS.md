@@ -291,7 +291,11 @@ Your job 1186636 ("get_genome_size_jobOutput") has been submitted
 
 qsub get_genome_size.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
+Your job 1186637 ("get_genome_size_jobOutput") has been submitted
+
 qsub get_genome_size.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+
+Your job 1186659 ("get_genome_size_jobOutput") has been submitted
 
 qsub get_genome_size.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 qsub get_genome_size.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
