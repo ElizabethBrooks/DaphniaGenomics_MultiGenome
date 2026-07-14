@@ -606,7 +606,29 @@ qsub get_genome_size.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
 qsub get_genome_size.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
 qsub get_genome_size.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
 
-
+Your job 1186695 ("get_genome_size_jobOutput") has been submitted
+Your job 1186696 ("get_genome_size_jobOutput") has been submitted
+Your job 1186697 ("get_genome_size_jobOutput") has been submitted
+Your job 1186698 ("get_genome_size_jobOutput") has been submitted
+Your job 1186699 ("get_genome_size_jobOutput") has been submitted
+Your job 1186700 ("get_genome_size_jobOutput") has been submitted
+Your job 1186701 ("get_genome_size_jobOutput") has been submitted
+Your job 1186702 ("get_genome_size_jobOutput") has been submitted
+Your job 1186703 ("get_genome_size_jobOutput") has been submitted
+Your job 1186704 ("get_genome_size_jobOutput") has been submitted
+Your job 1186705 ("get_genome_size_jobOutput") has been submitted
+Your job 1186706 ("get_genome_size_jobOutput") has been submitted
+Your job 1186707 ("get_genome_size_jobOutput") has been submitted
+Your job 1186708 ("get_genome_size_jobOutput") has been submitted
+Your job 1186709 ("get_genome_size_jobOutput") has been submitted
+Your job 1186710 ("get_genome_size_jobOutput") has been submitted
+Your job 1186711 ("get_genome_size_jobOutput") has been submitted
+Your job 1186712 ("get_genome_size_jobOutput") has been submitted
+Your job 1186714 ("get_genome_size_jobOutput") has been submitted
+Your job 1186715 ("get_genome_size_jobOutput") has been submitted
+Your job 1186716 ("get_genome_size_jobOutput") has been submitted
+Your job 1186717 ("get_genome_size_jobOutput") has been submitted
+Your job 1186718 ("get_genome_size_jobOutput") has been submitted
 
 #### QC RNA
 
