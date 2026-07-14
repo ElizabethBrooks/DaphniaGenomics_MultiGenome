@@ -303,6 +303,8 @@ qsub get_genome_size.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCB
 
 qsub get_genome_size.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
+Your job 1186632 ("get_genome_size_jobOutput") has been submitted
+
 #### QC RNA
 
 qsub QC_RNA.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
