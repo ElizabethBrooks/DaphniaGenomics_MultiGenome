@@ -54,7 +54,7 @@ cd $outputsPath
 echo "Beginning analysis of $speciesName..."
 
 # run AGAT
-size=$(cat $inputsDir"/complete.genomic.gff" | awk '/^>/ {next} {sum += length($0)} END {print sum}')
+size=$(cat $inputsDir"/complete.genomic.fna" | awk '/^>/ {next} {sum += length($0)} END {print sum}')
 
 # output species and size
 echo $speciesName","$size > $outputsPath"/size/genome.csv"
