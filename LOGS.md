@@ -580,6 +580,34 @@ Your job 1120087 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 ### batch 1
 
+#### genome size
+
+qsub get_genome_size.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+
+
+
 #### QC RNA
 
 qsub QC_RNA.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
@@ -958,6 +986,16 @@ qsub get_genome_size.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
 qsub get_genome_size.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
 qsub get_genome_size.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 
+Your job 1186680 ("get_genome_size_jobOutput") has been submitted
+Your job 1186681 ("get_genome_size_jobOutput") has been submitted
+Your job 1186682 ("get_genome_size_jobOutput") has been submitted
+Your job 1186683 ("get_genome_size_jobOutput") has been submitted
+Your job 1186684 ("get_genome_size_jobOutput") has been submitted
+Your job 1186685 ("get_genome_size_jobOutput") has been submitted
+Your job 1186686 ("get_genome_size_jobOutput") has been submitted
+Your job 1186687 ("get_genome_size_jobOutput") has been submitted
+Your job 1186688 ("get_genome_size_jobOutput") has been submitted
+Your job 1186689 ("get_genome_size_jobOutput") has been submitted
 
 #### QC RNA
 
