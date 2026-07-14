@@ -287,6 +287,8 @@ Analysis of Artemia_franciscana_JAVRJZ01_NCBI complete!
 
 qsub get_genome_size.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 
+Your job 1186636 ("get_genome_size_jobOutput") has been submitted
+
 qsub get_genome_size.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
 qsub get_genome_size.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
