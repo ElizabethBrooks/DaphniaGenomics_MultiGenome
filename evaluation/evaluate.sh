@@ -28,6 +28,11 @@ cat /Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/EG
 echo "species,busco" > /Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/EGAPx_v0.5.2/BUSCO_v6.0.0/short_summary.specific.crustacea_odb12.proteins.csv
 cat /Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/EGAPx_v0.5.2/BUSCO_v6.0.0/*_short_summary.specific.crustacea_odb12.proteins.txt >> /Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/EGAPx_v0.5.2/BUSCO_v6.0.0/short_summary.specific.crustacea_odb12.proteins.csv
 
+mkdir /Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/EGAPx_v0.5.2/AGAT_v1.4.2/BUSCO_v6.0.0
+for i in /Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/EGAPx_v0.5.2/*/AGAT_v1.4.2/BUSCO_v6.0.0/proteins/short_summary.specific.crustacea_odb12.proteins.txt; do echo $i; dirName=$(dirname $i); nextDir=$(dirname $dirName); nextNextDir=$(dirname $nextDir); newDir=$(dirname $nextNextDir); newName=$(basename $newDir); baseName=$(basename $i); cat $i | grep "C:" | cut -d":" -f2 | sed "s/%\[S//g" | sed "s/^/$newName,/g" > /Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/EGAPx_v0.5.2/AGAT_v1.4.2/BUSCO_v6.0.0/$newName"_"$baseName; done
+echo "species,busco" > /Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/EGAPx_v0.5.2/AGAT_v1.4.2/BUSCO_v6.0.0/short_summary.specific.crustacea_odb12.proteins.csv
+cat /Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/EGAPx_v0.5.2/AGAT_v1.4.2/BUSCO_v6.0.0/*_short_summary.specific.crustacea_odb12.proteins.txt >> /Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/EGAPx_v0.5.2/AGAT_v1.4.2/BUSCO_v6.0.0/short_summary.specific.crustacea_odb12.proteins.csv
+
 #### batch 1
 
 #mkdir /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/tree_RNA/batch_1/STAR_v2.7.11b/

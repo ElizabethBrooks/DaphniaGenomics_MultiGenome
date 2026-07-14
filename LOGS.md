@@ -283,6 +283,26 @@ Analysis of Artemia_franciscana_JAVRJZ01_NCBI complete!
 
 ### BC, NCBI, zenodo, and CNGBdb genomes
 
+#### genome size
+
+qsub get_genome_size.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+
+qsub get_genome_size.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+
+qsub get_genome_size.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+
+qsub get_genome_size.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+
+qsub get_genome_size.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+
 #### QC RNA
 
 qsub QC_RNA.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
@@ -306,6 +326,7 @@ qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub QC_SRA_RNA.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+
 qsub QC_SRA_RNA.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
 Your job 1117721 ("QC_SRA_RNA_jobOutput") has been submitted
@@ -317,6 +338,7 @@ Your job 1117726 ("QC_SRA_RNA_jobOutput") has been submitted
 Your job 1117727 ("QC_SRA_RNA_jobOutput") has been submitted
 Your job 1117728 ("QC_SRA_RNA_jobOutput") has been submitted
 Your job 1117729 ("QC_SRA_RNA_jobOutput") has been submitted
+
 Your job 1182815 ("QC_SRA_RNA_jobOutput") has been submitted
 
 #### star align RNA
