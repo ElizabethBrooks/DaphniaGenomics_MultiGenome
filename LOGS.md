@@ -285,11 +285,13 @@ Analysis of Artemia_franciscana_JAVRJZ01_NCBI complete!
 
 #### introns
 
-qsub manage_introns_AGAT.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+
+
 qsub add_introns_AGAT.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 qsub introns_functional_statistics_AGAT.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
-Your job 1190492 ("manage_introns_AGAT_jobOutput") has been submitted
 Your job 1190576 ("add_introns_AGAT_jobOutput") has been submitted
 Your job 1190679 ("introns_fun_stats_AGAT_jobOutput") has been submitted
 
