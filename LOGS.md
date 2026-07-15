@@ -329,7 +329,11 @@ Your job 1191041 ("introns_fun_stats_AGAT_jobOutput") has been submitted
 
 qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
+Your job 1191068 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+
 qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+
+Your job 1191069 ("introns_fun_stats_AGAT_jobOutput") has been submitted
 
 qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
@@ -340,6 +344,16 @@ qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_lindahli/in
 qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+
+Your job 1191070 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191071 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191072 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191073 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191074 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191075 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191076 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191077 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191078 ("introns_fun_stats_AGAT_jobOutput") has been submitted
 
 qsub introns_functional_statistics_AGAT.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
@@ -639,6 +653,337 @@ Your job 1120085 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 Your job 1120086 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 Your job 1120087 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
+### version 2
+
+#### add introns to gff
+
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+
+
+#### introns stats
+
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+
+
+#### genome size
+
+qsub get_genome_size.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+
+Your job 1186673 ("get_genome_size_jobOutput") has been submitted
+Your job 1186674 ("get_genome_size_jobOutput") has been submitted
+Your job 1186675 ("get_genome_size_jobOutput") has been submitted
+Your job 1186676 ("get_genome_size_jobOutput") has been submitted
+Your job 1186677 ("get_genome_size_jobOutput") has been submitted
+
+#### QC RNA
+
+qsub QC_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+
+Your job 1116909 ("QC_RNA_jobOutput") has been submitted
+Your job 1116917 ("QC_RNA_jobOutput") has been submitted
+Your job 1116927 ("QC_RNA_jobOutput") has been submitted
+Your job 1116928 ("QC_RNA_jobOutput") has been submitted
+Your job 1118756 ("QC_RNA_jobOutput") has been submitted
+
+qsub QC_RNA.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
+
+Your job 1117841 ("QC_RNA_jobOutput") has been submitted
+Your job 1117842 ("QC_RNA_jobOutput") has been submitted
+
+#### star align RNA
+
+qsub star_align_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub star_align_RNA.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
+qsub star_align_RNA.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
+qsub star_align_RNA.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+qsub star_align_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+
+Your job 1123604 ("star_align_RNA_jobOutput") has been submitted
+Your job 1123628 ("star_align_RNA_jobOutput") has been submitted
+Your job 1155238 ("star_align_RNA_jobOutput") has been submitted
+Your job 1127260 ("star_align_RNA_jobOutput") has been submitted
+Your job 1123631 ("star_align_RNA_jobOutput") has been submitted
+
+#### align RNA
+
+qsub align_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+
+Your job 1118705 ("align_RNA_jobOutput") has been submitted
+Your job 1118707 ("align_RNA_jobOutput") has been submitted
+Your job 1118708 ("align_RNA_jobOutput") has been submitted
+Your job 1118709 ("align_RNA_jobOutput") has been submitted
+Your job 1118853 ("align_RNA_jobOutput") has been submitted
+
+#### annotation statistics
+
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+
+Your job 1117843 ("stats_AGAT_jobOutput") has been submitted
+Your job 1117844 ("stats_AGAT_jobOutput") has been submitted
+Your job 1117845 ("stats_AGAT_jobOutput") has been submitted
+Your job 1117846 ("stats_AGAT_jobOutput") has been submitted
+Your job 1117847 ("stats_AGAT_jobOutput") has been submitted
+
+#### functional statistics
+
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+
+Your job 1117820 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1117821 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1117825 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1117811 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1117807 ("fun_stats_AGAT_jobOutput") has been submitted
+
+#### list short introns
+
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+
+Your job 1117851 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1117852 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1117853 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1117854 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1117855 ("short_introns_AGAT_jobOutput") has been submitted
+
+#### evaluate assembly
+
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+
+Your job 1117856 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1117857 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1117858 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1117859 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1117860 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+
+### batch 2
+
+#### genome size
+
+qsub get_genome_size.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+
+Your job 1186680 ("get_genome_size_jobOutput") has been submitted
+Your job 1186681 ("get_genome_size_jobOutput") has been submitted
+Your job 1186682 ("get_genome_size_jobOutput") has been submitted
+Your job 1186683 ("get_genome_size_jobOutput") has been submitted
+Your job 1186684 ("get_genome_size_jobOutput") has been submitted
+Your job 1186685 ("get_genome_size_jobOutput") has been submitted
+Your job 1186686 ("get_genome_size_jobOutput") has been submitted
+Your job 1186687 ("get_genome_size_jobOutput") has been submitted
+Your job 1186688 ("get_genome_size_jobOutput") has been submitted
+Your job 1186689 ("get_genome_size_jobOutput") has been submitted
+
+#### QC RNA
+
+qsub QC_RNA.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+qsub QC_RNA.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+
+Your job 1116970 ("QC_RNA_jobOutput") has been submitted
+Your job 1116971 ("QC_RNA_jobOutput") has been submitted
+Your job 1116972 ("QC_RNA_jobOutput") has been submitted
+Your job 1116973 ("QC_RNA_jobOutput") has been submitted
+Your job 1116974 ("QC_RNA_jobOutput") has been submitted
+Your job 1116975 ("QC_RNA_jobOutput") has been submitted
+Your job 1116977 ("QC_RNA_jobOutput") has been submitted
+Your job 1116978 ("QC_RNA_jobOutput") has been submitted
+Your job 1116979 ("QC_RNA_jobOutput") has been submitted
+Your job 1116980 ("QC_RNA_jobOutput") has been submitted
+
+#### star align RNA
+
+qsub star_align_RNA.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+qsub star_align_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
+qsub star_align_RNA.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+qsub star_align_RNA.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+qsub star_align_RNA.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+qsub star_align_RNA.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+qsub star_align_RNA.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+qsub star_align_RNA.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+qsub star_align_RNA.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+qsub star_align_RNA.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+
+Your job 1149678 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149679 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149680 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149681 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149682 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149683 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149684 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149685 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149686 ("star_align_RNA_jobOutput") has been submitted
+Your job 1149687 ("star_align_RNA_jobOutput") has been submitted
+
+#### align RNA
+
+qsub align_RNA.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+qsub align_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+qsub align_RNA.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+qsub align_RNA.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+
+Your job 1118878 ("align_RNA_jobOutput") has been submitted
+Your job 1118879 ("align_RNA_jobOutput") has been submitted
+Your job 1118880 ("align_RNA_jobOutput") has been submitted
+Your job 1118881 ("align_RNA_jobOutput") has been submitted
+Your job 1118882 ("align_RNA_jobOutput") has been submitted
+Your job 1118883 ("align_RNA_jobOutput") has been submitted
+Your job 1118884 ("align_RNA_jobOutput") has been submitted
+Your job 1118885 ("align_RNA_jobOutput") has been submitted
+Your job 1118886 ("align_RNA_jobOutput") has been submitted
+Your job 1118887 ("align_RNA_jobOutput") has been submitted
+
+#### annotation statistics
+
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+
+Your job 1118975 ("stats_AGAT_jobOutput") has been submitted
+Your job 1118976 ("stats_AGAT_jobOutput") has been submitted
+Your job 1118977 ("stats_AGAT_jobOutput") has been submitted
+Your job 1118978 ("stats_AGAT_jobOutput") has been submitted
+Your job 1118979 ("stats_AGAT_jobOutput") has been submitted
+Your job 1118980 ("stats_AGAT_jobOutput") has been submitted
+Your job 1118981 ("stats_AGAT_jobOutput") has been submitted
+Your job 1118982 ("stats_AGAT_jobOutput") has been submitted
+Your job 1118983 ("stats_AGAT_jobOutput") has been submitted
+Your job 1118984 ("stats_AGAT_jobOutput") has been submitted
+
+#### functional statistics
+
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+
+Your job 1119977 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119978 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119980 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119981 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119982 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119983 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119984 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119985 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119986 ("fun_stats_AGAT_jobOutput") has been submitted
+Your job 1119987 ("fun_stats_AGAT_jobOutput") has been submitted
+
+#### list short introns
+
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+
+Your job 1119998 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1119999 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120000 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120001 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120002 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120003 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120004 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120005 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120006 ("short_introns_AGAT_jobOutput") has been submitted
+Your job 1120007 ("short_introns_AGAT_jobOutput") has been submitted
+
+#### evaluate assembly
+
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+
+Your job 1120045 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120046 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120047 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120048 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120049 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120050 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120051 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120052 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120053 ("evaluate_assembly_QUAST_jobOutput") has been submitted
+Your job 1120054 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 ### batch 1
 
@@ -1054,321 +1399,6 @@ Your job 1120075 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 Your job 1120076 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 Your job 1120077 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
-
-### batch 2
-
-#### genome size
-
-qsub get_genome_size.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
-qsub get_genome_size.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
-qsub get_genome_size.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
-qsub get_genome_size.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
-qsub get_genome_size.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
-qsub get_genome_size.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
-qsub get_genome_size.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
-qsub get_genome_size.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
-qsub get_genome_size.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
-qsub get_genome_size.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
-
-Your job 1186680 ("get_genome_size_jobOutput") has been submitted
-Your job 1186681 ("get_genome_size_jobOutput") has been submitted
-Your job 1186682 ("get_genome_size_jobOutput") has been submitted
-Your job 1186683 ("get_genome_size_jobOutput") has been submitted
-Your job 1186684 ("get_genome_size_jobOutput") has been submitted
-Your job 1186685 ("get_genome_size_jobOutput") has been submitted
-Your job 1186686 ("get_genome_size_jobOutput") has been submitted
-Your job 1186687 ("get_genome_size_jobOutput") has been submitted
-Your job 1186688 ("get_genome_size_jobOutput") has been submitted
-Your job 1186689 ("get_genome_size_jobOutput") has been submitted
-
-#### QC RNA
-
-qsub QC_RNA.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
-qsub QC_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
-qsub QC_RNA.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
-qsub QC_RNA.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
-qsub QC_RNA.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
-qsub QC_RNA.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
-qsub QC_RNA.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
-qsub QC_RNA.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
-qsub QC_RNA.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
-qsub QC_RNA.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
-
-Your job 1116970 ("QC_RNA_jobOutput") has been submitted
-Your job 1116971 ("QC_RNA_jobOutput") has been submitted
-Your job 1116972 ("QC_RNA_jobOutput") has been submitted
-Your job 1116973 ("QC_RNA_jobOutput") has been submitted
-Your job 1116974 ("QC_RNA_jobOutput") has been submitted
-Your job 1116975 ("QC_RNA_jobOutput") has been submitted
-Your job 1116977 ("QC_RNA_jobOutput") has been submitted
-Your job 1116978 ("QC_RNA_jobOutput") has been submitted
-Your job 1116979 ("QC_RNA_jobOutput") has been submitted
-Your job 1116980 ("QC_RNA_jobOutput") has been submitted
-
-#### star align RNA
-
-qsub star_align_RNA.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
-qsub star_align_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
-qsub star_align_RNA.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
-qsub star_align_RNA.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
-qsub star_align_RNA.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
-qsub star_align_RNA.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
-qsub star_align_RNA.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
-qsub star_align_RNA.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
-qsub star_align_RNA.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
-qsub star_align_RNA.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
-
-Your job 1149678 ("star_align_RNA_jobOutput") has been submitted
-Your job 1149679 ("star_align_RNA_jobOutput") has been submitted
-Your job 1149680 ("star_align_RNA_jobOutput") has been submitted
-Your job 1149681 ("star_align_RNA_jobOutput") has been submitted
-Your job 1149682 ("star_align_RNA_jobOutput") has been submitted
-Your job 1149683 ("star_align_RNA_jobOutput") has been submitted
-Your job 1149684 ("star_align_RNA_jobOutput") has been submitted
-Your job 1149685 ("star_align_RNA_jobOutput") has been submitted
-Your job 1149686 ("star_align_RNA_jobOutput") has been submitted
-Your job 1149687 ("star_align_RNA_jobOutput") has been submitted
-
-#### align RNA
-
-qsub align_RNA.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
-qsub align_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
-qsub align_RNA.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
-qsub align_RNA.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
-qsub align_RNA.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
-qsub align_RNA.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
-qsub align_RNA.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
-qsub align_RNA.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
-qsub align_RNA.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
-qsub align_RNA.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
-
-Your job 1118878 ("align_RNA_jobOutput") has been submitted
-Your job 1118879 ("align_RNA_jobOutput") has been submitted
-Your job 1118880 ("align_RNA_jobOutput") has been submitted
-Your job 1118881 ("align_RNA_jobOutput") has been submitted
-Your job 1118882 ("align_RNA_jobOutput") has been submitted
-Your job 1118883 ("align_RNA_jobOutput") has been submitted
-Your job 1118884 ("align_RNA_jobOutput") has been submitted
-Your job 1118885 ("align_RNA_jobOutput") has been submitted
-Your job 1118886 ("align_RNA_jobOutput") has been submitted
-Your job 1118887 ("align_RNA_jobOutput") has been submitted
-
-#### annotation statistics
-
-qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
-qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
-qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
-qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
-qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
-qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
-qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
-qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
-qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
-qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
-
-Your job 1118975 ("stats_AGAT_jobOutput") has been submitted
-Your job 1118976 ("stats_AGAT_jobOutput") has been submitted
-Your job 1118977 ("stats_AGAT_jobOutput") has been submitted
-Your job 1118978 ("stats_AGAT_jobOutput") has been submitted
-Your job 1118979 ("stats_AGAT_jobOutput") has been submitted
-Your job 1118980 ("stats_AGAT_jobOutput") has been submitted
-Your job 1118981 ("stats_AGAT_jobOutput") has been submitted
-Your job 1118982 ("stats_AGAT_jobOutput") has been submitted
-Your job 1118983 ("stats_AGAT_jobOutput") has been submitted
-Your job 1118984 ("stats_AGAT_jobOutput") has been submitted
-
-#### functional statistics
-
-qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
-qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
-qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
-qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
-qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
-qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
-qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
-qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
-qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
-qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
-
-Your job 1119977 ("fun_stats_AGAT_jobOutput") has been submitted
-Your job 1119978 ("fun_stats_AGAT_jobOutput") has been submitted
-Your job 1119980 ("fun_stats_AGAT_jobOutput") has been submitted
-Your job 1119981 ("fun_stats_AGAT_jobOutput") has been submitted
-Your job 1119982 ("fun_stats_AGAT_jobOutput") has been submitted
-Your job 1119983 ("fun_stats_AGAT_jobOutput") has been submitted
-Your job 1119984 ("fun_stats_AGAT_jobOutput") has been submitted
-Your job 1119985 ("fun_stats_AGAT_jobOutput") has been submitted
-Your job 1119986 ("fun_stats_AGAT_jobOutput") has been submitted
-Your job 1119987 ("fun_stats_AGAT_jobOutput") has been submitted
-
-#### list short introns
-
-qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
-qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
-qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
-qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
-qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
-qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
-qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
-qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
-qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
-qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
-
-Your job 1119998 ("short_introns_AGAT_jobOutput") has been submitted
-Your job 1119999 ("short_introns_AGAT_jobOutput") has been submitted
-Your job 1120000 ("short_introns_AGAT_jobOutput") has been submitted
-Your job 1120001 ("short_introns_AGAT_jobOutput") has been submitted
-Your job 1120002 ("short_introns_AGAT_jobOutput") has been submitted
-Your job 1120003 ("short_introns_AGAT_jobOutput") has been submitted
-Your job 1120004 ("short_introns_AGAT_jobOutput") has been submitted
-Your job 1120005 ("short_introns_AGAT_jobOutput") has been submitted
-Your job 1120006 ("short_introns_AGAT_jobOutput") has been submitted
-Your job 1120007 ("short_introns_AGAT_jobOutput") has been submitted
-
-#### evaluate assembly
-
-qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
-qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
-qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
-qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
-qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
-qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
-qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
-qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
-qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
-qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
-
-Your job 1120045 ("evaluate_assembly_QUAST_jobOutput") has been submitted
-Your job 1120046 ("evaluate_assembly_QUAST_jobOutput") has been submitted
-Your job 1120047 ("evaluate_assembly_QUAST_jobOutput") has been submitted
-Your job 1120048 ("evaluate_assembly_QUAST_jobOutput") has been submitted
-Your job 1120049 ("evaluate_assembly_QUAST_jobOutput") has been submitted
-Your job 1120050 ("evaluate_assembly_QUAST_jobOutput") has been submitted
-Your job 1120051 ("evaluate_assembly_QUAST_jobOutput") has been submitted
-Your job 1120052 ("evaluate_assembly_QUAST_jobOutput") has been submitted
-Your job 1120053 ("evaluate_assembly_QUAST_jobOutput") has been submitted
-Your job 1120054 ("evaluate_assembly_QUAST_jobOutput") has been submitted
-
-
-### version 2
-
-#### genome size
-
-qsub get_genome_size.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-qsub get_genome_size.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
-qsub get_genome_size.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
-qsub get_genome_size.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
-qsub get_genome_size.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
-
-Your job 1186673 ("get_genome_size_jobOutput") has been submitted
-Your job 1186674 ("get_genome_size_jobOutput") has been submitted
-Your job 1186675 ("get_genome_size_jobOutput") has been submitted
-Your job 1186676 ("get_genome_size_jobOutput") has been submitted
-Your job 1186677 ("get_genome_size_jobOutput") has been submitted
-
-#### QC RNA
-
-qsub QC_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-qsub QC_RNA.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
-qsub QC_RNA.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
-qsub QC_RNA.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
-qsub QC_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
-
-Your job 1116909 ("QC_RNA_jobOutput") has been submitted
-Your job 1116917 ("QC_RNA_jobOutput") has been submitted
-Your job 1116927 ("QC_RNA_jobOutput") has been submitted
-Your job 1116928 ("QC_RNA_jobOutput") has been submitted
-Your job 1118756 ("QC_RNA_jobOutput") has been submitted
-
-qsub QC_RNA.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
-qsub QC_RNA.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
-
-Your job 1117841 ("QC_RNA_jobOutput") has been submitted
-Your job 1117842 ("QC_RNA_jobOutput") has been submitted
-
-#### star align RNA
-
-qsub star_align_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-qsub star_align_RNA.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
-qsub star_align_RNA.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
-qsub star_align_RNA.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
-qsub star_align_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
-
-Your job 1123604 ("star_align_RNA_jobOutput") has been submitted
-Your job 1123628 ("star_align_RNA_jobOutput") has been submitted
-Your job 1155238 ("star_align_RNA_jobOutput") has been submitted
-Your job 1127260 ("star_align_RNA_jobOutput") has been submitted
-Your job 1123631 ("star_align_RNA_jobOutput") has been submitted
-
-#### align RNA
-
-qsub align_RNA.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-qsub align_RNA.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
-qsub align_RNA.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
-qsub align_RNA.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
-qsub align_RNA.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
-
-Your job 1118705 ("align_RNA_jobOutput") has been submitted
-Your job 1118707 ("align_RNA_jobOutput") has been submitted
-Your job 1118708 ("align_RNA_jobOutput") has been submitted
-Your job 1118709 ("align_RNA_jobOutput") has been submitted
-Your job 1118853 ("align_RNA_jobOutput") has been submitted
-
-#### annotation statistics
-
-qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
-qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
-qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
-qsub annotation_statistics_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
-
-Your job 1117843 ("stats_AGAT_jobOutput") has been submitted
-Your job 1117844 ("stats_AGAT_jobOutput") has been submitted
-Your job 1117845 ("stats_AGAT_jobOutput") has been submitted
-Your job 1117846 ("stats_AGAT_jobOutput") has been submitted
-Your job 1117847 ("stats_AGAT_jobOutput") has been submitted
-
-#### functional statistics
-
-qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
-qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
-qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
-qsub functional_statistics_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
-
-Your job 1117820 ("fun_stats_AGAT_jobOutput") has been submitted
-Your job 1117821 ("fun_stats_AGAT_jobOutput") has been submitted
-Your job 1117825 ("fun_stats_AGAT_jobOutput") has been submitted
-Your job 1117811 ("fun_stats_AGAT_jobOutput") has been submitted
-Your job 1117807 ("fun_stats_AGAT_jobOutput") has been submitted
-
-#### list short introns
-
-qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
-qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
-qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
-qsub list_short_introns_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
-
-Your job 1117851 ("short_introns_AGAT_jobOutput") has been submitted
-Your job 1117852 ("short_introns_AGAT_jobOutput") has been submitted
-Your job 1117853 ("short_introns_AGAT_jobOutput") has been submitted
-Your job 1117854 ("short_introns_AGAT_jobOutput") has been submitted
-Your job 1117855 ("short_introns_AGAT_jobOutput") has been submitted
-
-#### evaluate assembly
-
-qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
-qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
-qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
-qsub evaluate_assembly_QUAST.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
-
-Your job 1117856 ("evaluate_assembly_QUAST_jobOutput") has been submitted
-Your job 1117857 ("evaluate_assembly_QUAST_jobOutput") has been submitted
-Your job 1117858 ("evaluate_assembly_QUAST_jobOutput") has been submitted
-Your job 1117859 ("evaluate_assembly_QUAST_jobOutput") has been submitted
-Your job 1117860 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 ## evaluation tests
 
