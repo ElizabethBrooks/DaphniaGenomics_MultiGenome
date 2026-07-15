@@ -663,6 +663,11 @@ qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
 qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
 qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 
+Your job 1191081 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191082 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191083 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191084 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191085 ("add_introns_AGAT_jobOutput") has been submitted
 
 #### introns stats
 
@@ -672,6 +677,11 @@ qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_
 qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
 qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 
+Your job 1191087 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191088 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191089 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191090 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191091 ("introns_fun_stats_AGAT_jobOutput") has been submitted
 
 #### genome size
 
@@ -792,6 +802,34 @@ Your job 1117859 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 Your job 1117860 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 ### batch 2
+
+#### add introns to gff
+
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+
+
+#### introns stats
+
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+
 
 #### genome size
 
@@ -986,6 +1024,60 @@ Your job 1120053 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 Your job 1120054 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 ### batch 1
+
+#### add introns to gff
+
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+
+
+#### introns stats
+
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
+qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+
 
 #### genome size
 
