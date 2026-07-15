@@ -2,10 +2,10 @@
 #$ -M ebrooks5@nd.edu
 #$ -m abe
 #$ -r n
-#$ -N manage_introns_AGAT_jobOutput
+#$ -N add_introns_AGAT_jobOutput
 
-# script to manage the introns data from the input gff
-# usage: qsub manage_introns_AGAT.sh inputFile
+# script to add the introns data from the input gff
+# usage: qsub add_introns_AGAT.sh inputFile
 
 # load software
 conda activate my_agat
@@ -61,10 +61,10 @@ cd $inputsDir
 echo "Beginning analysis of $speciesName..."
 
 # pre-clean
-rm -r $outputsPath"/AGAT_v1.4.2/introns"
+rm $outputsPath"/AGAT_v1.4.2/introns.gff"
 
 # run AGAT
-agat_sp_manage_introns.pl --gff $inputsDir"/complete.genomic.gff" -o $outputsPath"/AGAT_v1.4.2/introns" --plot
+agat_sp_add_introns.pl --gff $inputsDir"/complete.genomic.gff" -o $outputsPath"/AGAT_v1.4.2/introns.gff"
 
 # status message
 echo "Analysis of $speciesName complete!"
