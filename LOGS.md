@@ -291,6 +291,7 @@ qsub introns_functional_statistics_AGAT.sh EGAPx_v0.5.2/Artemia_franciscana/inpu
 
 Your job 1190492 ("manage_introns_AGAT_jobOutput") has been submitted
 Your job 1190576 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1190679 ("introns_fun_stats_AGAT_jobOutput") has been submitted
 
 #### genome size
 
