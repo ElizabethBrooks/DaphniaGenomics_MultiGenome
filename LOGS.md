@@ -291,7 +291,11 @@ Your job 1191035 ("add_introns_AGAT_jobOutput") has been submitted
 
 qsub add_introns_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
+Your job 1191044 ("add_introns_AGAT_jobOutput") has been submitted
+
 qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+
+Your job 1191049 ("add_introns_AGAT_jobOutput") has been submitted
 
 qsub add_introns_AGAT.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
@@ -303,6 +307,16 @@ qsub add_introns_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 qsub add_introns_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub add_introns_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 
+Your job 1191051 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191052 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191053 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191054 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191055 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191056 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191058 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191059 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191060 ("add_introns_AGAT_jobOutput") has been submitted
+
 qsub add_introns_AGAT.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
 Your job 1190576 ("add_introns_AGAT_jobOutput") has been submitted
@@ -310,6 +324,8 @@ Your job 1190576 ("add_introns_AGAT_jobOutput") has been submitted
 #### introns stats
 
 qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+
+Your job 1191041 ("introns_fun_stats_AGAT_jobOutput") has been submitted
 
 qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
