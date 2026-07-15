@@ -816,6 +816,16 @@ qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
 qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
 qsub add_introns_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 
+Your job 1191092 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191093 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191095 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191096 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191097 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191098 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191099 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191100 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191101 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191102 ("add_introns_AGAT_jobOutput") has been submitted
 
 #### introns stats
 
@@ -830,6 +840,16 @@ qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_
 qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
 qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 
+Your job 1191157 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191158 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191159 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191160 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191161 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191162 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191163 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191164 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191166 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191167 ("introns_fun_stats_AGAT_jobOutput") has been submitted
 
 #### genome size
 
@@ -1051,6 +1071,29 @@ qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
 qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
 qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
 
+Your job 1191103 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191104 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191105 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191106 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191107 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191108 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191109 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191110 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191111 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191112 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191113 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191114 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191115 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191116 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191117 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191118 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191119 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191120 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191121 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191122 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191123 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191124 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1191126 ("add_introns_AGAT_jobOutput") has been submitted
 
 #### introns stats
 
