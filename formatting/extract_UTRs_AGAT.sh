@@ -57,8 +57,10 @@ rm $outputsPath"/AGAT_v1.4.2/five_prime_utrs.fa"
 rm $outputsPath"/AGAT_v1.4.2/three_prime_utrs.fa"
 
 # extract UTRs
-agat_sp_extract_sequences.pl --gff $outputsPath"/AGAT_v1.4.2/output_longest.gff" --fasta $outputsPath"/complete.genomic.fna" --type five_prime_UTR --full --output $outputsPath"/AGAT_v1.4.2/five_prime_utrs.fa"
-agat_sp_extract_sequences.pl --gff $outputsPath"/AGAT_v1.4.2/output_longest.gff" --fasta $outputsPath"/complete.genomic.fna" --type three_prime_UTR --full --output $outputsPath"/AGAT_v1.4.2/three_prime_utrs.fa"
+#agat_sp_extract_sequences.pl --gff $outputsPath"/AGAT_v1.4.2/output_longest.gff" --fasta $outputsPath"/complete.genomic.fna" --type five_prime_UTR --full --output $outputsPath"/AGAT_v1.4.2/five_prime_utrs.fa"
+#agat_sp_extract_sequences.pl --gff $outputsPath"/AGAT_v1.4.2/output_longest.gff" --fasta $outputsPath"/complete.genomic.fna" --type three_prime_UTR --full --output $outputsPath"/AGAT_v1.4.2/three_prime_utrs.fa"
+agat_sp_extract_sequences.pl --gff $outputsPath"/AGAT_v1.4.2/output_longest.gff" --fasta $outputsPath"/complete.genomic.fna" --type five_prime_UTR --output $outputsPath"/AGAT_v1.4.2/five_prime_utrs.fa"
+agat_sp_extract_sequences.pl --gff $outputsPath"/AGAT_v1.4.2/output_longest.gff" --fasta $outputsPath"/complete.genomic.fna" --type three_prime_UTR --output $outputsPath"/AGAT_v1.4.2/three_prime_utrs.fa"
 
 # status message
 echo "Analysis of $speciesName complete!"
