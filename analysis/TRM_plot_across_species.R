@@ -6,17 +6,19 @@ library(ggplot2)
 
 # set working directory
 #work_dir <- "/Users/bamflappy/PfrenderLab/multi_genome_project/telomeres_min4_max12_tree_species_including_versions"
-work_dir <- "/Users/bamflappy/PfrenderLab/multi_genome_project/telomeres_min4_max12_tree_species"
+#work_dir <- "/Users/bamflappy/PfrenderLab/multi_genome_project/telomeres_min4_max12_tree_species"
+work_dir <- "/Users/bamflappy/PfrenderLab/multi_genome_project/telomeres_min4_max15"
 setwd(work_dir)
 
 # read in TRM data
 #trm_data <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/telomeres_min4_max12_tree_species_including_versions/telomeric_repeat_formatted.csv")
-trm_data <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/telomeres_min4_max12_tree_species/telomeric_repeat_formatted.csv")
+#trm_data <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/telomeres_min4_max12_tree_species/telomeric_repeat_formatted.csv")
+trm_data <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/telomeres_min4_max15/telomeric_repeat_formatted.fmt.csv")
 
 # set species order
 species_order <- rev(c("D_pulicaria", "D_schodleri", "D_melanica", "D_pulex_KAP4", "D_pulex_BEL2", 
                        "D_arenata", "D_mitsukuri", "D_catawba", "D_retrocurva", "D_obtusa", 
-                       "D_ambigua", "D_parvula", "D_magniceps", "D_dentifera", "D_galeata", 
+                       "D_ambigua", "D_magniceps", "D_dentifera", "D_galeata", 
                        "D_mendotae", "D_mediterranea", "D_salina", "D_magna_LRVO", "D_magna_MLC", 
                        "D_similis", "D_carinata", "D_longicephala", "D_lumholtzi", "D_arabica", 
                        "D_sinensis", "Ceriodaphnia_sp_dubia", "Simocephalus_vetulus", 
@@ -34,6 +36,9 @@ trm_data_9 <- trm_data[nchar(trm_data$TRM) == 9, ]
 trm_data_10 <- trm_data[nchar(trm_data$TRM) == 10, ]
 trm_data_11 <- trm_data[nchar(trm_data$TRM) == 11, ]
 trm_data_12 <- trm_data[nchar(trm_data$TRM) == 12, ]
+trm_data_13 <- trm_data[nchar(trm_data$TRM) == 13, ]
+trm_data_14 <- trm_data[nchar(trm_data$TRM) == 14, ]
+trm_data_15 <- trm_data[nchar(trm_data$TRM) == 15, ]
 
 # plots of TRMs of length 4
 trm_data_4_plot <- ggplot(trm_data_4, aes(x = TRM, y = factor(species, species_order), fill = counts)) +
@@ -124,3 +129,33 @@ trm_data_12_plot <- ggplot(trm_data_12, aes(x = TRM, y = factor(species, species
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)) +
   coord_fixed()
 ggsave("trm_data_length_12.png", plot = trm_data_12_plot, device = "png", width = 12, height = 8, units = "in")
+
+# plots of TRMs of length 13
+trm_data_13_plot <- ggplot(trm_data_13, aes(x = TRM, y = factor(species, species_order), fill = counts)) +
+  geom_tile(color = "white", lwd = 0.5, linetype = 1) +
+  scale_fill_viridis_c(option = "magma") +
+  labs(x = "TRM", y = "Species", fill = "Counts") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)) +
+  coord_fixed()
+ggsave("trm_data_length_13.png", plot = trm_data_13_plot, device = "png", width = 12, height = 8, units = "in")
+
+# plots of TRMs of length 14
+trm_data_14_plot <- ggplot(trm_data_14, aes(x = TRM, y = factor(species, species_order), fill = counts)) +
+  geom_tile(color = "white", lwd = 0.5, linetype = 1) +
+  scale_fill_viridis_c(option = "magma") +
+  labs(x = "TRM", y = "Species", fill = "Counts") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)) +
+  coord_fixed()
+ggsave("trm_data_length_14.png", plot = trm_data_14_plot, device = "png", width = 12, height = 8, units = "in")
+
+# plots of TRMs of length 15
+trm_data_15_plot <- ggplot(trm_data_15, aes(x = TRM, y = factor(species, species_order), fill = counts)) +
+  geom_tile(color = "white", lwd = 0.5, linetype = 1) +
+  scale_fill_viridis_c(option = "magma") +
+  labs(x = "TRM", y = "Species", fill = "Counts") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1)) +
+  coord_fixed()
+ggsave("trm_data_length_15.png", plot = trm_data_15_plot, device = "png", width = 12, height = 8, units = "in")

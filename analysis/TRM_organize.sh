@@ -20,3 +20,10 @@ for i in /Users/bamflappy/PfrenderLab/multi_genome_project/telomeres_min4_max12_
 echo "TRM,counts,species" > /Users/bamflappy/PfrenderLab/multi_genome_project/telomeres_min4_max12_tree_species/telomeric_repeat_formatted.csv
 
 for i in /Users/bamflappy/PfrenderLab/multi_genome_project/telomeres_min4_max12_tree_species/*/*/tidk_0.2.65/telomeric_repeat.tsv.fmt.csv; do cat $i >> /Users/bamflappy/PfrenderLab/multi_genome_project/telomeres_min4_max12_tree_species/telomeric_repeat_formatted.csv; done        
+
+# organize window 4 to 15 TRM data for analysis
+for i in /Users/bamflappy/PfrenderLab/multi_genome_project/telomeres_min4_max15/*/tidk_0.2.65/telomeric_repeat.tsv; do echo $i; dirName=$(dirname $i); dirName2=$(dirname $dirName); specName=$(basename $dirName2); cat $i | tail -n+2 | sed "s/$/,$specName/g" | tr '\t' ','  > $i.fmt.csv; done
+
+echo "TRM,counts,species" > /Users/bamflappy/PfrenderLab/multi_genome_project/telomeres_min4_max15/telomeric_repeat_formatted.csv
+
+for i in /Users/bamflappy/PfrenderLab/multi_genome_project/telomeres_min4_max15/*/tidk_0.2.65/telomeric_repeat.tsv.fmt.csv; do cat $i >> /Users/bamflappy/PfrenderLab/multi_genome_project/telomeres_min4_max15/telomeric_repeat_formatted.csv; done        

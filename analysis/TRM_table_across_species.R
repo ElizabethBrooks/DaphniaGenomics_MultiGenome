@@ -6,12 +6,14 @@ library(dplyr)
 
 # set working directory
 #work_dir <- "/Users/bamflappy/PfrenderLab/multi_genome_project/telomeres_min4_max12_tree_species_including_versions"
-work_dir <- "/Users/bamflappy/PfrenderLab/multi_genome_project/telomeres_min4_max12_tree_species"
+#work_dir <- "/Users/bamflappy/PfrenderLab/multi_genome_project/telomeres_min4_max12_tree_species"
+work_dir <- "/Users/bamflappy/PfrenderLab/multi_genome_project/telomeres_min4_max15"
 setwd(work_dir)
 
 # read in TRM data
 #trm_data <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/telomeres_min4_max12_tree_species_including_versions/telomeric_repeat_formatted.csv")
-trm_data <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/telomeres_min4_max12_tree_species/telomeric_repeat_formatted.csv")
+#trm_data <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/telomeres_min4_max12_tree_species/telomeric_repeat_formatted.csv")
+trm_data <- read.csv("/Users/bamflappy/PfrenderLab/multi_genome_project/telomeres_min4_max15/telomeric_repeat_formatted.csv")
 
 # split the TRM data by species
 #split_trm <- split(trm_data, trm_data$species)

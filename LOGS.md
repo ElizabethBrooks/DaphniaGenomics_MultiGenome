@@ -283,6 +283,11 @@ Analysis of Artemia_franciscana_JAVRJZ01_NCBI complete!
 
 ### BC, NCBI, zenodo, and CNGBdb genomes
 
+#### extract UTRs
+
+qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+
+
 #### add introns to gff
 
 qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
@@ -1121,6 +1126,29 @@ qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_E
 qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
 qsub introns_functional_statistics_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
 
+Your job 1191172 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191173 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191174 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191176 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191177 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191178 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191179 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191180 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191181 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191182 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191183 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191184 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191185 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191186 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191187 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191188 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191189 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191190 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191191 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191192 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191193 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191194 ("introns_fun_stats_AGAT_jobOutput") has been submitted
+Your job 1191195 ("introns_fun_stats_AGAT_jobOutput") has been submitted
 
 #### genome size
 
