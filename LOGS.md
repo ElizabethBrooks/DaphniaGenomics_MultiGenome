@@ -293,6 +293,11 @@ Analysis of Artemia_franciscana_JAVRJZ01_NCBI complete!
 
 ### BC, NCBI, zenodo, and CNGBdb genomes
 
+#### extract introns
+
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+
+
 #### extract UTRs
 
 qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
@@ -1133,6 +1138,7 @@ Your job 1120054 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 #### extract UTRs
 
+qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
 qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
 qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
 qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
@@ -1155,6 +1161,7 @@ qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
 qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
 
+Your job 1210949 ("extract_UTRs_AGAT_jobOutput") has been submitted
 Your job 1210626 ("extract_UTRs_AGAT_jobOutput") has been submitted
 Your job 1210627 ("extract_UTRs_AGAT_jobOutput") has been submitted
 Your job 1210628 ("extract_UTRs_AGAT_jobOutput") has been submitted
