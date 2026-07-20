@@ -2,11 +2,11 @@
 
 ## Outgroup annotations
 
-#### qsub QC_RNA.sh EGAPx_v0.3.2/Apis_mellifera/inputs_DH4_NCBI.txt
-##### job
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Apis_mellifera/inputs_DH4_NCBI.txt
+##### job 1209902
 
-#### qsub QC_RNA.sh EGAPx_v0.3.2/Tribolium_castaneum/inputs_GA2_NCBI.txt
-##### job
+#### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Tribolium_castaneum/inputs_GA2_NCBI.txt
+##### job 1209903
 
 
 
