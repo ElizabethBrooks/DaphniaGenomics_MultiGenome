@@ -1,0 +1,16 @@
+genome: /groups/mpfrende/Projects_2026/multi_genome/data/NCBI_genomes/Tribolium_castaneum.fna
+taxid: 7070
+reads:
+  - DRP006442
+  - ERP001667
+  - SRP033773
+  - SRP049677
+  - SRP266045
+  - SRP308436
+  - SRP312168
+  - SRP319782
+  - SRP327600
+  - SRP376224
+  - SRP378691
+  - SRP396598
+  - SRP403730

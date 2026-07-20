@@ -1,0 +1,2 @@
+species: Tribolium_castaneum_GA2_NCBI
+inputs_EGAPx: EGAPx_v0.3.2/Tribolium_castaneum/inputs_GA2_NCBI.yaml

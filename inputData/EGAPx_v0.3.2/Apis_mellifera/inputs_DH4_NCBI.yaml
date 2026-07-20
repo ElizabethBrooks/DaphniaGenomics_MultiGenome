@@ -1,0 +1,13 @@
+genome: /groups/mpfrende/Projects_2026/multi_genome/data/NCBI_genomes/Apis_mellifera.fna
+taxid: 7460
+reads:
+  - SRP001899
+  - SRP003528
+  - SRP013261
+  - SRP019928
+  - SRP041189
+  - SRP062201
+  - SRP068487
+  - SRP069272
+  - SRP083114
+  - SRP106949

@@ -1,5 +1,15 @@
 # Logs of Analysis & Tests
 
+## Outgroup annotations
+
+#### qsub QC_RNA.sh EGAPx_v0.3.2/Apis_mellifera/inputs_DH4_NCBI.txt
+##### job
+
+#### qsub QC_RNA.sh EGAPx_v0.3.2/Tribolium_castaneum/inputs_GA2_NCBI.txt
+##### job
+
+
+
 ## Telomere Sequences
 
 ### BC, NCBI, zenodo, and CNGBdb genomes
@@ -291,7 +301,7 @@ Your job 1202259 ("extract_UTRs_AGAT_jobOutput") has been submitted
 
 qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
-Your job 1202481 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1202590 ("extract_UTRs_AGAT_jobOutput") has been submitted
 
 
 #### add introns to gff

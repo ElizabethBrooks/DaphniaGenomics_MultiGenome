@@ -1,0 +1,2 @@
+species: Apis_mellifera_DH4_NCBI
+inputs_EGAPx: EGAPx_v0.3.2/Apis_mellifera/inputs_DH4_NCBI.yaml
