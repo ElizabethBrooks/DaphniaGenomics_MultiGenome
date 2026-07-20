@@ -305,7 +305,7 @@ Your job 1202590 ("extract_UTRs_AGAT_jobOutput") has been submitted
 
 qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 
-Your job 1210011 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210688 ("extract_UTRs_AGAT_jobOutput") has been submitted
 
 qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
@@ -317,19 +317,19 @@ qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
 qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 
-Your job 1210015 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210016 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210018 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210019 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210020 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210021 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210022 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210023 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210024 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210679 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210680 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210681 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210682 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210683 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210684 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210685 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210686 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210687 ("extract_UTRs_AGAT_jobOutput") has been submitted
 
 qsub extract_UTRs_AGAT.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
-Your job 1210025 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210674 ("extract_UTRs_AGAT_jobOutput") has been submitted
 
 #### add introns to gff
 
@@ -711,11 +711,11 @@ qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
 qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
 qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 
-Your job 1210028 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210029 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210030 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210031 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210032 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210669 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210670 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210671 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210672 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210673 ("extract_UTRs_AGAT_jobOutput") has been submitted
 
 #### add introns to gff
 
@@ -878,16 +878,16 @@ qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
 qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
 qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 
-Your job 1210037 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210039 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210041 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210043 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210045 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210047 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210048 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210050 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210052 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210054 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210650 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210651 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210653 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210654 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210655 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210657 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210658 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210659 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210660 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210661 ("extract_UTRs_AGAT_jobOutput") has been submitted
 
 #### add introns to gff
 
@@ -1155,27 +1155,27 @@ qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
 qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
 
-Your job 1210062 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210063 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210064 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210065 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210066 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210067 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210069 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210070 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210071 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210072 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210073 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210074 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210075 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210076 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210077 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210078 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210079 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210080 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210081 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210082 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210083 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210626 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210627 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210628 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210629 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210630 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210631 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210632 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210633 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210634 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210635 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210636 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210637 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210638 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210639 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210640 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210641 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210642 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210643 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210644 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210645 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210646 ("extract_UTRs_AGAT_jobOutput") has been submitted
 
 #### add introns to gff
 
