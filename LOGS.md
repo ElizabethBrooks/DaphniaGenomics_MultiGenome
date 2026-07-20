@@ -711,6 +711,11 @@ qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
 qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
 qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 
+Your job 1210028 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210029 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210030 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210031 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210032 ("extract_UTRs_AGAT_jobOutput") has been submitted
 
 #### add introns to gff
 
@@ -859,6 +864,30 @@ Your job 1117859 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 Your job 1117860 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 ### batch 2
+
+#### extract UTRs
+
+qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
+qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+
+Your job 1210037 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210039 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210041 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210043 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210045 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210047 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210048 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210050 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210052 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210054 ("extract_UTRs_AGAT_jobOutput") has been submitted
 
 #### add introns to gff
 
@@ -1102,6 +1131,11 @@ Your job 1120054 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 ### batch 1
 
+#### extract UTRs
+
+qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+
+
 #### add introns to gff
 
 qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
@@ -1125,8 +1159,8 @@ qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
 qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
 qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
-qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
 qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA_reRun.txt
 
 Your job 1191103 ("add_introns_AGAT_jobOutput") has been submitted
 Your job 1191104 ("add_introns_AGAT_jobOutput") has been submitted
