@@ -303,6 +303,29 @@ qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
 Your job 1202590 ("extract_UTRs_AGAT_jobOutput") has been submitted
 
+qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+
+Your job 1210011 ("extract_UTRs_AGAT_jobOutput") has been submitted
+
+qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
+qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
+qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
+qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+
+Your job 1210015 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210016 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210018 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210019 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210020 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210021 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210022 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210023 ("extract_UTRs_AGAT_jobOutput") has been submitted
+Your job 1210024 ("extract_UTRs_AGAT_jobOutput") has been submitted
 
 #### add introns to gff
 
