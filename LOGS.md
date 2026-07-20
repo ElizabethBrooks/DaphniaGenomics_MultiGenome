@@ -732,11 +732,11 @@ qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
 qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
 qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 
-Your job 1191081 ("add_introns_AGAT_jobOutput") has been submitted
-Your job 1191082 ("add_introns_AGAT_jobOutput") has been submitted
-Your job 1191083 ("add_introns_AGAT_jobOutput") has been submitted
-Your job 1191084 ("add_introns_AGAT_jobOutput") has been submitted
-Your job 1191085 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1212102 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1212103 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1212104 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1212105 ("add_introns_AGAT_jobOutput") has been submitted
+Your job 1212106 ("add_introns_AGAT_jobOutput") has been submitted
 
 #### introns stats
 
