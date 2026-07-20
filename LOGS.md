@@ -327,6 +327,10 @@ Your job 1210022 ("extract_UTRs_AGAT_jobOutput") has been submitted
 Your job 1210023 ("extract_UTRs_AGAT_jobOutput") has been submitted
 Your job 1210024 ("extract_UTRs_AGAT_jobOutput") has been submitted
 
+qsub extract_UTRs_AGAT.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+
+Your job 1210025 ("extract_UTRs_AGAT_jobOutput") has been submitted
+
 #### add introns to gff
 
 qsub add_introns_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
@@ -698,6 +702,15 @@ Your job 1120086 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 Your job 1120087 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 ### version 2
+
+#### extract UTRs
+
+qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
+qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+
 
 #### add introns to gff
 
