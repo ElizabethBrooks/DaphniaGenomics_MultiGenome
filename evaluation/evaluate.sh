@@ -2,6 +2,33 @@
 
 # evaluation of annotations
 
+### UTR means and modes
+
+module load bio
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/*/complete.genomic.fna; do samtools faidx $i; done
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/complete.genomic.fna; do samtools faidx $i; done
+
+outFile="/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/three_prime_UTR_means.txt"
+echo "species,mean" >> $outFile
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/*/AGAT_v1.4.2/three_prime_utrs.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | awk '/^>/ { if (seq_len > 0) { sum += seq_len; count++ }; seq_len = 0; next } { seq_len += length($0) } END { if (seq_len > 0) { sum += seq_len; count++ }; if (count > 0) print sum / count; else print 0 }'); echo $newName","$seqMean >> $outFile; done
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/AGAT_v1.4.2/three_prime_utrs.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | awk '/^>/ { if (seq_len > 0) { sum += seq_len; count++ }; seq_len = 0; next } { seq_len += length($0) } END { if (seq_len > 0) { sum += seq_len; count++ }; if (count > 0) print sum / count; else print 0 }'); echo $newName","$seqMean >> $outFile; done
+
+outFile="/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/three_prime_UTR_modes.txt"
+echo "species,mean" >> $outFile
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/*/AGAT_v1.4.2/three_prime_utrs.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | awk '$0 ~ ">" {if (c) print c; c=0} $0 !~ ">" {c+=length($0)} END {print c}' | sort -n | uniq -c | sort -nr | head -n 1 | awk '{print $NF}'); echo $newName","$seqMean >> $outFile; done
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/AGAT_v1.4.2/three_prime_utrs.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | awk '$0 ~ ">" {if (c) print c; c=0} $0 !~ ">" {c+=length($0)} END {print c}' | sort -n | uniq -c | sort -nr | head -n 1 | awk '{print $NF}'); echo $newName","$seqMean >> $outFile; done
+
+outFile="/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/five_prime_UTR_means.txt"
+echo "species,mean" >> $outFile
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/*/AGAT_v1.4.2/five_prime_utrs.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | awk '/^>/ { if (seq_len > 0) { sum += seq_len; count++ }; seq_len = 0; next } { seq_len += length($0) } END { if (seq_len > 0) { sum += seq_len; count++ }; if (count > 0) print sum / count; else print 0 }'); echo $newName","$seqMean >> $outFile; done
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/AGAT_v1.4.2/five_prime_utrs.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | awk '/^>/ { if (seq_len > 0) { sum += seq_len; count++ }; seq_len = 0; next } { seq_len += length($0) } END { if (seq_len > 0) { sum += seq_len; count++ }; if (count > 0) print sum / count; else print 0 }'); echo $newName","$seqMean >> $outFile; done
+
+outFile="/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/five_prime_UTR_modes.txt"
+echo "species,mean" >> $outFile
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/*/AGAT_v1.4.2/five_prime_utrs.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | awk '$0 ~ ">" {if (c) print c; c=0} $0 !~ ">" {c+=length($0)} END {print c}' | sort -n | uniq -c | sort -nr | head -n 1 | awk '{print $NF}'); echo $newName","$seqMean >> $outFile; done
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/AGAT_v1.4.2/five_prime_utrs.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | awk '$0 ~ ">" {if (c) print c; c=0} $0 !~ ">" {c+=length($0)} END {print c}' | sort -n | uniq -c | sort -nr | head -n 1 | awk '{print $NF}'); echo $newName","$seqMean >> $outFile; done
+
+
 ### STAR alignment
 
 mkdir /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/new_tree_RNA/additional/STAR_v2.7.11b
