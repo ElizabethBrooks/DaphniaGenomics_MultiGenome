@@ -297,7 +297,7 @@ Analysis of Artemia_franciscana_JAVRJZ01_NCBI complete!
 
 qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 
-Your job 1212013 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212141 ("extract_introns_AGAT_jobOutput") has been submitted
 
 
 #### extract UTRs

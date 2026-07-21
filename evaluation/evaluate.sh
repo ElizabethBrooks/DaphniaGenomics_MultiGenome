@@ -2,7 +2,13 @@
 
 # evaluation of annotations
 
-### UTR means and modes
+### introns means and modes
+
+cat /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/BC/D_magna_LRVO_BC_clean/AGAT_v1.4.2/introns.fa | grep ">" | grep "gene_biotype=protein_coding" | cut -d" " -f3 | sort | uniq -c | awk '{print $(NF-1)}' | awk '{sum+=$1} END {print sum/NR}'
+cat /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/BC/D_magna_LRVO_BC_clean/AGAT_v1.4.2/introns.fa | grep ">" | grep "gene_biotype=protein_coding" | cut -d" " -f3 | sort | uniq -c | awk '{print $(NF-1)}' | uniq -c | sort -nr | head -n 1 | awk '{print $NF}'
+
+
+### UTRs means and modes
 
 outFile="/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/three_prime_UTR_means.txt"
 echo "species,mean" > $outFile
