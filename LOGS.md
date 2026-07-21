@@ -741,6 +741,20 @@ Your job 1120087 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 ### version 2
 
+#### extract introns
+
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+
+Your job 1212174 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212175 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212176 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212177 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212178 ("extract_introns_AGAT_jobOutput") has been submitted
+
 #### extract UTRs
 
 qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
