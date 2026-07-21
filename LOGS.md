@@ -293,7 +293,7 @@ Your job 1214586 ("extract_features_AGAT_jobOutput") has been submitted
 
 qsub extract_features_AGAT.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
-Your job 1214587 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1214859 ("extract_features_AGAT_jobOutput") has been submitted
 
 #### add introns to gff
 
