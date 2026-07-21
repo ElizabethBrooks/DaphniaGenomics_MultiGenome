@@ -293,6 +293,44 @@ Analysis of Artemia_franciscana_JAVRJZ01_NCBI complete!
 
 ### BC, NCBI, zenodo, and CNGBdb genomes
 
+#### extract lncRNAs
+
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+
+Your job 1212407 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+
+Your job 1212408 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+
+Your job 1212411 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+
+Your job 1212412 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212413 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212414 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212415 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212416 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212417 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212418 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212419 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212420 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+
+Your job 1212422 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+
 #### extract introns
 
 qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
