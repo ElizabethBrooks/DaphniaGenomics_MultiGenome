@@ -327,6 +327,10 @@ Your job 1212169 ("extract_introns_AGAT_jobOutput") has been submitted
 Your job 1212170 ("extract_introns_AGAT_jobOutput") has been submitted
 Your job 1212171 ("extract_introns_AGAT_jobOutput") has been submitted
 
+qsub extract_introns_AGAT.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+
+Your job 1212172 ("extract_introns_AGAT_jobOutput") has been submitted
+
 #### extract UTRs
 
 qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
