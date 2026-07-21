@@ -224,15 +224,6 @@ bash plot_telomeres.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
 
 ### BC, NCBI, zenodo, and CNGBdb genomes - July 2026
 
-#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/D_magna/inputs_LRVO_BC_clean.txt
-##### job 
-
-#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
-##### job 
-
-#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/D_arabica/inputs_zenodo_SRA.txt
-##### job 
-
 #### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI_72hr.txt
 ##### job 1173419
 Analysis of Artemia_franciscana_JAVRJZ01_NCBI_72hr complete!
@@ -259,34 +250,7 @@ Analysis of Artemia_franciscana_JAVRJZ01_NCBI complete!
 #### qsub check_genome_busco.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 ##### job 1182791
 #### qsub functional_emapper.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
-##### job
-
-#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
-##### job 
-
-#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/D_carinata/inputs_CSIRO_NCBI.txt
-##### job
-
-#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/D_longicephala/inputs_AUS_NCBI.txt
-##### job
-
-#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
-##### job
-
-#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Artemia_sinica/inputs_ME_NCBI.txt
-##### job
-
-#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
-##### job
-
-#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
-##### job 
-
-#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
-##### job
-
-#### qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
-##### job 
+##### job 1214570
 
 
 ## Evaluation
@@ -878,7 +842,16 @@ qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.
 qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
 qsub extract_features_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 
-
+Your job 1212700 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212701 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212702 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212703 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212704 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212705 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212706 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212708 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212709 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212710 ("extract_features_AGAT_jobOutput") has been submitted
 
 #### add introns to gff
 
@@ -1147,7 +1120,28 @@ qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA
 qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
 qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
 
-
+Your job 1212711 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212712 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212713 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212714 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212715 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212716 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212717 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212718 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212719 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212720 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212721 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212722 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212723 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212724 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212725 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212726 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212727 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212728 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212729 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212730 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212731 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1212732 ("extract_features_AGAT_jobOutput") has been submitted
 
 #### add introns to gff
 
