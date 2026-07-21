@@ -2,6 +2,36 @@
 
 # evaluation of annotations
 
+### lncRNAs means and modes
+
+outFile="/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/lncRNAs_means.txt"
+echo "species,mean" > $outFile
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/*/AGAT_v1.4.2/lncRNAs.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | awk '/^>/ { if (seq_len > 0) { sum += seq_len; count++ }; seq_len = 0; next } { seq_len += length($0) } END { if (seq_len > 0) { sum += seq_len; count++ }; if (count > 0) print sum / count; else print 0 }'); echo $newName","$seqMean >> $outFile; done
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/AGAT_v1.4.2/lncRNAs.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | awk '/^>/ { if (seq_len > 0) { sum += seq_len; count++ }; seq_len = 0; next } { seq_len += length($0) } END { if (seq_len > 0) { sum += seq_len; count++ }; if (count > 0) print sum / count; else print 0 }'); echo $newName","$seqMean >> $outFile; done
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.5.2/*/*/AGAT_v1.4.2/lncRNAs.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | awk '/^>/ { if (seq_len > 0) { sum += seq_len; count++ }; seq_len = 0; next } { seq_len += length($0) } END { if (seq_len > 0) { sum += seq_len; count++ }; if (count > 0) print sum / count; else print 0 }'); echo $newName","$seqMean >> $outFile; done
+
+outFile="/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/lncRNAs_modes.txt"
+echo "species,mode" > $outFile
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/*/AGAT_v1.4.2/lncRNAs.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | awk '$0 ~ ">" {if (c) print c; c=0} $0 !~ ">" {c+=length($0)} END {print c}' | sort -n | uniq -c | sort -nr | head -n 1 | awk '{print $NF}'); echo $newName","$seqMean >> $outFile; done
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/AGAT_v1.4.2/lncRNAs.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | awk '$0 ~ ">" {if (c) print c; c=0} $0 !~ ">" {c+=length($0)} END {print c}' | sort -n | uniq -c | sort -nr | head -n 1 | awk '{print $NF}'); echo $newName","$seqMean >> $outFile; done
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.5.2/*/*/AGAT_v1.4.2/lncRNAs.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | awk '$0 ~ ">" {if (c) print c; c=0} $0 !~ ">" {c+=length($0)} END {print c}' | sort -n | uniq -c | sort -nr | head -n 1 | awk '{print $NF}'); echo $newName","$seqMean >> $outFile; done
+
+
+### lncRNAs per gene means and modes
+
+outFile="/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/lncRNAs_per_gene_means.txt"
+echo "species,mean" > $outFile
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/*/AGAT_v1.4.2/lncRNAs.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | grep ">" | cut -d" " -f3 | sort | uniq -c | awk '{print $(NF-1)}' | awk '{sum+=$1} END {print sum/NR}'); echo $newName","$seqMean >> $outFile; done
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/AGAT_v1.4.2/lncRNAs.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | grep ">" | cut -d" " -f3 | sort | uniq -c | awk '{print $(NF-1)}' | awk '{sum+=$1} END {print sum/NR}'); echo $newName","$seqMean >> $outFile; done
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.5.2/*/*/AGAT_v1.4.2/lncRNAs.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | grep ">" | cut -d" " -f3 | sort | uniq -c | awk '{print $(NF-1)}' | awk '{sum+=$1} END {print sum/NR}'); echo $newName","$seqMean >> $outFile; done
+
+outFile="/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/lncRNAs_per_gene_modes.txt"
+echo "species,mean" > $outFile
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/*/AGAT_v1.4.2/lncRNAs.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | grep ">" | cut -d" " -f3 | sort | uniq -c | awk '{print $(NF-1)}' | uniq -c | sort -nr | head -n 1 | awk '{print $NF}'); echo $newName","$seqMean >> $outFile; done
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/AGAT_v1.4.2/lncRNAs.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | grep ">" | cut -d" " -f3 | sort | uniq -c | awk '{print $(NF-1)}' | uniq -c | sort -nr | head -n 1 | awk '{print $NF}'); echo $newName","$seqMean >> $outFile; done
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.5.2/*/*/AGAT_v1.4.2/lncRNAs.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | grep ">" | cut -d" " -f3 | sort | uniq -c | awk '{print $(NF-1)}' | uniq -c | sort -nr | head -n 1 | awk '{print $NF}'); echo $newName","$seqMean >> $outFile; done
+
+
 ### introns means and modes
 
 outFile="/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/introns_means.txt"

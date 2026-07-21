@@ -56,8 +56,8 @@ echo "Beginning analysis of $speciesName..."
 rm $outputsPath"/AGAT_v1.4.2/introns.fa"
 
 # extract introns
-agat_sp_extract_sequences.pl --gff $outputsPath"/AGAT_v1.4.2/introns.gff" --fasta $outputsPath"/complete.genomic.fna" --type lnc_RNA --keep_parent_attributes --output $outputsPath"/AGAT_v1.4.2/introns.fa"
-#agat_sp_extract_sequences.pl --gff $outputsPath"/AGAT_v1.4.2/introns.gff" --fasta $outputsPath"/complete.genomic.fna" --type lncRNA --keep_parent_attributes --output $outputsPath"/AGAT_v1.4.2/introns.fa"
+agat_sp_extract_sequences.pl --gff $outputsPath"/AGAT_v1.4.2/introns.gff" --fasta $outputsPath"/complete.genomic.fna" --type lnc_RNA --keep_parent_attributes --output $outputsPath"/AGAT_v1.4.2/lncRNAs.fa"
+#agat_sp_extract_sequences.pl --gff $outputsPath"/AGAT_v1.4.2/introns.gff" --fasta $outputsPath"/complete.genomic.fna" --type lncRNA --keep_parent_attributes --output $outputsPath"/AGAT_v1.4.2/lncRNAs.fa"
 
 # status message
 echo "Analysis of $speciesName complete!"

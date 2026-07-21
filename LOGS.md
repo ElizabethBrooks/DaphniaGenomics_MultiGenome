@@ -779,6 +779,20 @@ Your job 1120087 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 ### version 2
 
+#### extract lncRNAs
+
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+
+Your job 1212423 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212424 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212425 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212426 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212427 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+
 #### extract introns
 
 qsub extract_introns_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
@@ -954,6 +968,30 @@ Your job 1117859 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 Your job 1117860 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 ### batch 2
+
+#### extract lncRNAs
+
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+
+Your job 1212428 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212429 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212430 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212431 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212432 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212433 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212434 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212435 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212436 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212437 ("extract_lncRNA_AGAT_jobOutput") has been submitted
 
 #### extract introns
 
@@ -1244,6 +1282,54 @@ Your job 1120053 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 Your job 1120054 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 ### batch 1
+
+#### extract lncRNAs
+
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+
+Your job 1212438 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212439 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212440 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212441 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212442 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212443 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212444 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212445 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212446 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212447 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212448 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212449 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212450 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212451 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212452 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212453 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212454 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212455 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212456 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212457 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212458 ("extract_lncRNA_AGAT_jobOutput") has been submitted
+Your job 1212459 ("extract_lncRNA_AGAT_jobOutput") has been submitted
 
 #### extract introns
 
