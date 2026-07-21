@@ -293,119 +293,31 @@ Analysis of Artemia_franciscana_JAVRJZ01_NCBI complete!
 
 ### BC, NCBI, zenodo, and CNGBdb genomes
 
-#### extract lncRNAs
+#### extract features
 
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 
-Your job 1212407 ("extract_lncRNA_AGAT_jobOutput") has been submitted
 
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
-Your job 1212408 ("extract_lncRNA_AGAT_jobOutput") has been submitted
 
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 
-Your job 1212411 ("extract_lncRNA_AGAT_jobOutput") has been submitted
 
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 
-Your job 1212412 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212413 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212414 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212415 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212416 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212417 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212418 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212419 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212420 ("extract_lncRNA_AGAT_jobOutput") has been submitted
 
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+qsub extract_features_AGAT.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
-Your job 1212422 ("extract_lncRNA_AGAT_jobOutput") has been submitted
 
-#### extract introns
-
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
-
-Your job 1212141 ("extract_introns_AGAT_jobOutput") has been submitted
-
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
-
-Your job 1212160 ("extract_introns_AGAT_jobOutput") has been submitted
-
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
-
-Your job 1212162 ("extract_introns_AGAT_jobOutput") has been submitted
-
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
-
-Your job 1212163 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212164 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212165 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212166 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212167 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212168 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212169 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212170 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212171 ("extract_introns_AGAT_jobOutput") has been submitted
-
-qsub extract_introns_AGAT.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
-
-Your job 1212172 ("extract_introns_AGAT_jobOutput") has been submitted
-
-#### extract UTRs
-
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
-
-Your job 1202259 ("extract_UTRs_AGAT_jobOutput") has been submitted
-
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
-
-Your job 1202590 ("extract_UTRs_AGAT_jobOutput") has been submitted
-
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
-
-Your job 1210688 ("extract_UTRs_AGAT_jobOutput") has been submitted
-
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
-
-Your job 1210679 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210680 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210681 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210682 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210683 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210684 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210685 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210686 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210687 ("extract_UTRs_AGAT_jobOutput") has been submitted
-
-qsub extract_UTRs_AGAT.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
-
-Your job 1210674 ("extract_UTRs_AGAT_jobOutput") has been submitted
 
 #### add introns to gff
 
@@ -779,47 +691,14 @@ Your job 1120087 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 ### version 2
 
-#### extract lncRNAs
+#### extract features
 
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 
-Your job 1212423 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212424 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212425 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212426 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212427 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-
-#### extract introns
-
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
-
-Your job 1212174 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212175 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212176 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212177 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212178 ("extract_introns_AGAT_jobOutput") has been submitted
-
-#### extract UTRs
-
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
-
-Your job 1210669 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210670 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210671 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210672 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210673 ("extract_UTRs_AGAT_jobOutput") has been submitted
 
 #### add introns to gff
 
@@ -969,77 +848,20 @@ Your job 1117860 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 ### batch 2
 
-#### extract lncRNAs
+#### extract features
 
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 
-Your job 1212428 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212429 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212430 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212431 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212432 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212433 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212434 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212435 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212436 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212437 ("extract_lncRNA_AGAT_jobOutput") has been submitted
 
-#### extract introns
-
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
-
-Your job 1212179 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212180 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212181 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212182 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212183 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212184 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212185 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212186 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212187 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212188 ("extract_introns_AGAT_jobOutput") has been submitted
-
-#### extract UTRs
-
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
-
-Your job 1210650 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210651 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210653 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210654 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210655 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210657 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210658 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210659 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210660 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210661 ("extract_UTRs_AGAT_jobOutput") has been submitted
 
 #### add introns to gff
 
@@ -1283,149 +1105,32 @@ Your job 1120054 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 ### batch 1
 
-#### extract lncRNAs
+#### extract features
 
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
-qsub extract_lncRNA_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
 
-Your job 1212438 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212439 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212440 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212441 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212442 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212443 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212444 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212445 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212446 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212447 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212448 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212449 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212450 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212451 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212452 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212453 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212454 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212455 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212456 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212457 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212458 ("extract_lncRNA_AGAT_jobOutput") has been submitted
-Your job 1212459 ("extract_lncRNA_AGAT_jobOutput") has been submitted
 
-#### extract introns
-
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
-qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
-
-Your job 1212189 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212190 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212191 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212192 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212193 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212194 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212195 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212196 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212197 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212198 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212199 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212200 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212201 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212202 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212203 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212204 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212205 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212206 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212207 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212208 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212209 ("extract_introns_AGAT_jobOutput") has been submitted
-Your job 1212210 ("extract_introns_AGAT_jobOutput") has been submitted
-
-#### extract UTRs
-
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
-qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
-
-Your job 1210949 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210626 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210627 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210628 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210629 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210630 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210631 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210632 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210633 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210634 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210635 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210636 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210637 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210638 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210639 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210640 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210641 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210642 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210643 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210644 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210645 ("extract_UTRs_AGAT_jobOutput") has been submitted
-Your job 1210646 ("extract_UTRs_AGAT_jobOutput") has been submitted
 
 #### add introns to gff
 
