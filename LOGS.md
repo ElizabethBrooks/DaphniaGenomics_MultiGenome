@@ -917,6 +917,30 @@ Your job 1117860 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 ### batch 2
 
+#### extract introns
+
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+
+Your job 1212179 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212180 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212181 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212182 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212183 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212184 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212185 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212186 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212187 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212188 ("extract_introns_AGAT_jobOutput") has been submitted
+
 #### extract UTRs
 
 qsub extract_UTRs_AGAT.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
@@ -1182,6 +1206,54 @@ Your job 1120053 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 Your job 1120054 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 ### batch 1
+
+#### extract introns
+
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+
+Your job 1212189 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212190 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212191 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212192 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212193 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212194 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212195 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212196 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212197 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212198 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212199 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212200 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212201 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212202 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212203 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212204 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212205 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212206 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212207 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212208 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212209 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212210 ("extract_introns_AGAT_jobOutput") has been submitted
 
 #### extract UTRs
 
