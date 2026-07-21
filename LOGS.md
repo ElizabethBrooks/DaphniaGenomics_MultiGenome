@@ -261,15 +261,15 @@ Analysis of Artemia_franciscana_JAVRJZ01_NCBI complete!
 
 qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 
-Your job 1214572 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215006 ("extract_features_AGAT_jobOutput") has been submitted
 
 qsub extract_features_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
-Your job 1214574 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215007 ("extract_features_AGAT_jobOutput") has been submitted
 
 qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 
-Your job 1214575 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215008 ("extract_features_AGAT_jobOutput") has been submitted
 
 qsub extract_features_AGAT.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
@@ -281,19 +281,19 @@ qsub extract_features_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.
 qsub extract_features_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub extract_features_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 
-Your job 1214577 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214578 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214579 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214580 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214581 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214582 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214584 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214585 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214586 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215009 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215010 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215011 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215012 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215013 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215014 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215015 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215016 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215017 ("extract_features_AGAT_jobOutput") has been submitted
 
 qsub extract_features_AGAT.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
-Your job 1214859 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1214998 ("extract_features_AGAT_jobOutput") has been submitted
 
 #### add introns to gff
 
