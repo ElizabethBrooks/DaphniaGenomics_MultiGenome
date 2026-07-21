@@ -299,6 +299,33 @@ qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 
 Your job 1212141 ("extract_introns_AGAT_jobOutput") has been submitted
 
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+
+Your job 1212160 ("extract_introns_AGAT_jobOutput") has been submitted
+
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+
+Your job 1212162 ("extract_introns_AGAT_jobOutput") has been submitted
+
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
+qsub extract_introns_AGAT.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+
+Your job 1212163 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212164 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212165 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212166 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212167 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212168 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212169 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212170 ("extract_introns_AGAT_jobOutput") has been submitted
+Your job 1212171 ("extract_introns_AGAT_jobOutput") has been submitted
 
 #### extract UTRs
 
