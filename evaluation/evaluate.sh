@@ -2,7 +2,19 @@
 
 # evaluation of annotations
 
+### formatting
+
 for i in /Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/all/*/*.txt; do cat $i | grep -Ev "D_galeata_M5_WW_ENA|D_magna_NIES_ZQ_SRA_noAA|D_melanica_CON6_ZQ_MP_noAA|D_parvula_2_WW|D_pulex_CON21_WW|D_pulex_KAP106_NMP_1.3_WW|D_pulex_PA42_5_WW|D_pulex_STM2_asex_1.3_WW|D_pulicaria_LK16_MP_ZQ_noAA|D_sinensis_CHINA_ZQ_NCBI_noAA|Ceriodaphnia_sp_dubia_ZQ" > $i".fmt.csv"; done
+
+
+### fractional genome content
+
+outFile="/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/fractional_genome_content.csv"
+echo "species,exon,intron,utr,lncRNA_exon,lncRNA_intron" > $outFile
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/*/AGAT_v1.4.2/fractional_genome_content.fa; do cat $i | tail -n+2 >> $outFile; done
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/AGAT_v1.4.2/fractional_genome_content.fa; do cat $i | tail -n+2 >> $outFile; done
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.5.2/*/*/AGAT_v1.4.2/fractional_genome_content.fa; do cat $i | tail -n+2 >> $outFile; done
+
 
 ### exons merged means and modes
 
@@ -11,7 +23,6 @@ echo "species,mean" > $outFile
 for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/*/AGAT_v1.4.2/exons_merged.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | awk '/^>/ {printf("\n%s\n",$0);next;} {printf("%s",$0);}' | grep -A1 "gene_biotype=protein_coding" | sed '/^$/d' | awk '/^>/ { if (seq_len > 0) { sum += seq_len; count++ }; seq_len = 0; next } { seq_len += length($0) } END { if (seq_len > 0) { sum += seq_len; count++ }; if (count > 0) print sum / count; else print 0 }'); echo $newName","$seqMean >> $outFile; done
 for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/AGAT_v1.4.2/exons_merged.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | awk '/^>/ {printf("\n%s\n",$0);next;} {printf("%s",$0);}' | grep -A1 "gene_biotype=protein_coding" | sed '/^$/d' | awk '/^>/ { if (seq_len > 0) { sum += seq_len; count++ }; seq_len = 0; next } { seq_len += length($0) } END { if (seq_len > 0) { sum += seq_len; count++ }; if (count > 0) print sum / count; else print 0 }'); echo $newName","$seqMean >> $outFile; done
 for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.5.2/*/*/AGAT_v1.4.2/exons_merged.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | awk '/^>/ {printf("\n%s\n",$0);next;} {printf("%s",$0);}' | grep -A1 "gene_biotype=protein_coding" | sed '/^$/d' | awk '/^>/ { if (seq_len > 0) { sum += seq_len; count++ }; seq_len = 0; next } { seq_len += length($0) } END { if (seq_len > 0) { sum += seq_len; count++ }; if (count > 0) print sum / count; else print 0 }'); echo $newName","$seqMean >> $outFile; done
-
 
 outFile="/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/exons_merged_modes.txt"
 echo "species,mode" > $outFile

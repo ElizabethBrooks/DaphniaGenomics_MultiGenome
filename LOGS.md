@@ -261,15 +261,15 @@ Analysis of Artemia_franciscana_JAVRJZ01_NCBI complete!
 
 qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
 
-Your job 1216730 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216844 ("fractional_genome_content_jobOutput") has been submitted
 
 qsub get_fractional_genome_content.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
 
-Your job 1216731 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216843 ("fractional_genome_content_jobOutput") has been submitted
 
 qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 
-Your job 1216734 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216842 ("fractional_genome_content_jobOutput") has been submitted
 
 qsub get_fractional_genome_content.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
 qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
@@ -281,19 +281,19 @@ qsub get_fractional_genome_content.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JW
 qsub get_fractional_genome_content.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
 qsub get_fractional_genome_content.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 
-Your job 1216735 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216736 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216737 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216738 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216739 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216740 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216741 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216742 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216743 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216833 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216834 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216835 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216836 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216837 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216838 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216839 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216840 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216841 ("fractional_genome_content_jobOutput") has been submitted
 
 qsub get_fractional_genome_content.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
-Your job 1216744 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216832 ("fractional_genome_content_jobOutput") has been submitted
 
 #### extract features
 
@@ -713,11 +713,11 @@ qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ
 qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
 qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 
-Your job 1216749 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216750 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216751 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216752 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216753 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216826 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216828 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216829 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216830 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216831 ("fractional_genome_content_jobOutput") has been submitted
 
 #### extract features
 
@@ -894,16 +894,16 @@ qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_Z
 qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
 qsub get_fractional_genome_content.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 
-Your job 1216754 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216755 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216756 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216757 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216758 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216759 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216760 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216761 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216762 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216763 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216816 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216817 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216818 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216819 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216820 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216821 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216822 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216823 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216824 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216825 ("fractional_genome_content_jobOutput") has been submitted
 
 #### extract features
 
@@ -1196,28 +1196,28 @@ qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_cl
 qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
 qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
 
-Your job 1216764 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216765 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216766 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216767 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216768 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216769 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216770 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216771 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216772 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216773 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216774 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216775 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216776 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216777 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216778 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216779 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216780 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216781 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216782 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216783 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216784 ("fractional_genome_content_jobOutput") has been submitted
-Your job 1216785 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216789 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216790 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216791 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216792 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216793 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216794 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216795 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216796 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216797 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216798 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216799 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216800 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216801 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216802 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216803 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216804 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216805 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216806 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216807 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216808 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216810 ("fractional_genome_content_jobOutput") has been submitted
+Your job 1216811 ("fractional_genome_content_jobOutput") has been submitted
 
 #### extract features
 

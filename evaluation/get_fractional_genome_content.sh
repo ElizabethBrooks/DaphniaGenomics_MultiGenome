@@ -36,9 +36,6 @@ outputsPath=$(grep "outputs_EGAPx_v0.3.2_BC:" ../"inputData/inputs_annotations.t
 # setup outputs path
 outputsPath=$outputsPath"/"$speciesName
 
-# create outputs directory
-mkdir $outputsPath"/AGAT_v1.4.2"
-
 # move to the AGAT software directory
 cd $outputsPath
 
@@ -73,8 +70,8 @@ lncRNAExonFrac=$(echo "scale=10; $lncRNAExonLength/$size" | bc)
 lncRNAIntronFrac=$(echo "scale=10; $lncRNAIntronLength/$size" | bc)
 
 # output results
-echo "species,exon,intron,utr,lncRNA_exon,lncRNA_intron" > $outputsPath"/AGAT_v1.4.2/fractional_genome_content.fa"
-echo $speciesName","$exonFrac","$intronFrac","$utrFrac","$lncRNAExonFrac","$lncRNAIntronFrac >> $outputsPath"/AGAT_v1.4.2/fractional_genome_content.fa"
+echo "species,exon,intron,utr,lncRNA_exon,lncRNA_intron" > $outputsPath"/AGAT_v1.4.2/fractional_genome_content.txt"
+echo $speciesName","$exonFrac","$intronFrac","$utrFrac","$lncRNAExonFrac","$lncRNAIntronFrac >> $outputsPath"/AGAT_v1.4.2/fractional_genome_content.txt"
 
 # status message
 echo "Analysis of $speciesName complete!"
