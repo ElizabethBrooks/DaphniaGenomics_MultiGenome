@@ -53,22 +53,18 @@ cd $outputsPath
 echo "Beginning analysis of $speciesName..."
 
 # pre clean
-#rm $outputsPath"/AGAT_v1.4.2/lncRNAs.fa"
+rm $outputsPath"/AGAT_v1.4.2/lncRNAs.fa"
 rm $outputsPath"/AGAT_v1.4.2/lncRNAs_merged.fa"
-rm $outputsPath"/AGAT_v1.4.2/lncRNAs_split.fa"
-rm $outputsPath"/AGAT_v1.4.2/five_prime_utrs.fa"
-rm $outputsPath"/AGAT_v1.4.2/three_prime_utrs.fa"
 rm $outputsPath"/AGAT_v1.4.2/five_prime_utrs_merged.fa"
 rm $outputsPath"/AGAT_v1.4.2/three_prime_utrs_merged.fa"
 #rm $outputsPath"/AGAT_v1.4.2/five_prime_utrs_split.fa"
 #rm $outputsPath"/AGAT_v1.4.2/three_prime_utrs_split.fa"
 #rm $outputsPath"/AGAT_v1.4.2/exons.fa"
 rm $outputsPath"/AGAT_v1.4.2/exons_merged.fa"
-rm $outputsPath"/AGAT_v1.4.2/cds.fa"
-#rm $outputsPath"/AGAT_v1.4.2/introns.fa"
+rm $outputsPath"/AGAT_v1.4.2/introns.fa"
 
 # extract lnc RNAs
-#agat_sp_extract_sequences.pl --gff $outputsPath"/complete.genomic.gff" --fasta $outputsPath"/complete.genomic.fna" --type lnc_RNA --output $outputsPath"/AGAT_v1.4.2/lncRNAs.fa"
+agat_sp_extract_sequences.pl --gff $outputsPath"/complete.genomic.gff" --fasta $outputsPath"/complete.genomic.fna" --type lnc_RNA --output $outputsPath"/AGAT_v1.4.2/lncRNAs.fa"
 #agat_sp_extract_sequences.pl --gff $outputsPath"/complete.genomic.gff" --fasta $outputsPath"/complete.genomic.fna" --type lncRNA --output $outputsPath"/AGAT_v1.4.2/lncRNAs.fa"
 
 # extract merged lnc RNAs
@@ -90,7 +86,7 @@ agat_sp_extract_sequences.pl --gff $outputsPath"/complete.genomic.gff" --fasta $
 agat_sp_extract_sequences.pl --gff $outputsPath"/complete.genomic.gff" --fasta $outputsPath"/complete.genomic.fna" --type exon --merge --keep_parent_attributes --output $outputsPath"/AGAT_v1.4.2/exons_merged.fa"
 
 # extract introns
-#agat_sp_extract_sequences.pl --gff $outputsPath"/AGAT_v1.4.2/introns.gff" --fasta $outputsPath"/complete.genomic.fna" --type intron --keep_parent_attributes --output $outputsPath"/AGAT_v1.4.2/introns.fa"
+agat_sp_extract_sequences.pl --gff $outputsPath"/AGAT_v1.4.2/introns.gff" --fasta $outputsPath"/complete.genomic.fna" --type intron --keep_parent_attributes --output $outputsPath"/AGAT_v1.4.2/introns.fa"
 
 # status message
 echo "Analysis of $speciesName complete!"

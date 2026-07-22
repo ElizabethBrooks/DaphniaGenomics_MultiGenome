@@ -257,6 +257,27 @@ Analysis of Artemia_franciscana_JAVRJZ01_NCBI complete!
 
 ### BC, NCBI, zenodo, and CNGBdb genomes
 
+#### fractional genome content
+
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+
+qsub get_fractional_genome_content.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+
+
 #### extract features
 
 qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
@@ -667,6 +688,15 @@ Your job 1120087 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 ### version 2
 
+#### fractional genome content
+
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+
+
 #### extract features
 
 qsub extract_features_AGAT.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
@@ -675,11 +705,11 @@ qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
 qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
 qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
 
-Your job 1214588 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214589 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214590 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214591 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214592 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215018 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215019 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215020 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215021 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215022 ("extract_features_AGAT_jobOutput") has been submitted
 
 #### add introns to gff
 
@@ -829,6 +859,20 @@ Your job 1117860 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 ### batch 2
 
+#### fractional genome content
+
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+
+
 #### extract features
 
 qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
@@ -842,16 +886,16 @@ qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.
 qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
 qsub extract_features_AGAT.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
 
-Your job 1214594 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214595 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214596 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214597 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214598 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214599 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214600 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214601 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214602 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214603 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215023 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215024 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215025 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215026 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215027 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215028 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215029 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215030 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215031 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215032 ("extract_features_AGAT_jobOutput") has been submitted
 
 #### add introns to gff
 
@@ -1095,6 +1139,32 @@ Your job 1120054 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 ### batch 1
 
+#### fractional genome content
+
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+
+
 #### extract features
 
 qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
@@ -1120,28 +1190,28 @@ qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA
 qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
 qsub extract_features_AGAT.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
 
-Your job 1214606 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214607 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214608 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214609 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214610 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214611 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214612 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214613 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214614 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214615 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214616 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214617 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214618 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214619 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214620 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214621 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214622 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214623 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214624 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214625 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214626 ("extract_features_AGAT_jobOutput") has been submitted
-Your job 1214627 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215033 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215034 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215035 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215036 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215037 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215038 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215039 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215040 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215041 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215042 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215043 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215044 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215045 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215046 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215047 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215048 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215049 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215050 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215051 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215052 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215053 ("extract_features_AGAT_jobOutput") has been submitted
+Your job 1215054 ("extract_features_AGAT_jobOutput") has been submitted
 
 #### add introns to gff
 
