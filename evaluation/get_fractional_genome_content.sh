@@ -66,11 +66,11 @@ lncRNAExonLength=$(cat $outputsPath"/AGAT_v1.4.2/exons_merged.fa" | awk '/^>/ {p
 lncRNAIntronLength=$(cat $outputsPath"/AGAT_v1.4.2/introns.fa" | awk '/^>/ {printf("\n%s\n",$0);next;} {printf("%s",$0);}' | grep -A1 "lncRNA" | sed '/^$/d' | awk '!/^>/ {total += length($0)} END {print total}')
 
 # fractional genome content
-exonFrac=$(($exonLength/$size))
-intronFrac=$(($intronLength/$size))
-utrFrac=$(($utrLength/$size))
-lncRNAExonFrac=$(($lncRNAExonLength/$size))
-lncRNAIntronFrac=$(($lncRNAIntronLength/$size))
+exonFrac=$(echo "scale=10; $exonLength/$size" | bc)
+intronFrac=$(echo "scale=10; $intronLength/$size" | bc)
+utrFrac=$(echo "scale=10; $utrLength/$size" | bc)
+lncRNAExonFrac=$(echo "scale=10; $lncRNAExonLength/$size" | bc)
+lncRNAIntronFrac=$(echo "scale=10; $lncRNAIntronLength/$size" | bc)
 
 # output results
 echo "species,exon,intron,utr,lncRNA_exon,lncRNA_intron" > $outputsPath"/AGAT_v1.4.2/fractional_genome_content.fa"
