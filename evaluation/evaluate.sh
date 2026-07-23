@@ -7,6 +7,15 @@
 for i in /Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/all/*/*.txt; do cat $i | grep -Ev "D_galeata_M5_WW_ENA|D_magna_NIES_ZQ_SRA_noAA|D_melanica_CON6_ZQ_MP_noAA|D_parvula_2_WW|D_pulex_CON21_WW|D_pulex_KAP106_NMP_1.3_WW|D_pulex_PA42_5_WW|D_pulex_STM2_asex_1.3_WW|D_pulicaria_LK16_MP_ZQ_noAA|D_sinensis_CHINA_ZQ_NCBI_noAA|Ceriodaphnia_sp_dubia_ZQ" > $i".fmt.csv"; done
 
 
+### genome size
+
+outFile="/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/genome_sizes.csv"
+echo "species,size,bp,mb" > $outFile
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/*/size/genome.csv; do cat $i | tail -n+2 >> $outFile; done
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/size/genome.csv; do cat $i | tail -n+2 >> $outFile; done
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.5.2/*/*/size/genome.csv; do cat $i | tail -n+2 >> $outFile; done
+
+
 ### fractional genome content
 
 outFile="/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/fractional_genome_content.csv"
@@ -29,6 +38,15 @@ echo "species,mode" > $outFile
 for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/*/AGAT_v1.4.2/exons_merged.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | awk '/^>/ {printf("\n%s\n",$0);next;} {printf("%s",$0);}' | grep -A1 "gene_biotype=protein_coding" | sed '/^$/d' | awk '$0 ~ ">" {if (c) print c; c=0} $0 !~ ">" {c+=length($0)} END {print c}' | sort -n | uniq -c | sort -nr | head -n 1 | awk '{print $NF}'); echo $newName","$seqMean >> $outFile; done
 for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/AGAT_v1.4.2/exons_merged.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | awk '/^>/ {printf("\n%s\n",$0);next;} {printf("%s",$0);}' | grep -A1 "gene_biotype=protein_coding" | sed '/^$/d' | awk '$0 ~ ">" {if (c) print c; c=0} $0 !~ ">" {c+=length($0)} END {print c}' | sort -n | uniq -c | sort -nr | head -n 1 | awk '{print $NF}'); echo $newName","$seqMean >> $outFile; done
 for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.5.2/*/*/AGAT_v1.4.2/exons_merged.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | awk '/^>/ {printf("\n%s\n",$0);next;} {printf("%s",$0);}' | grep -A1 "gene_biotype=protein_coding" | sed '/^$/d' | awk '$0 ~ ">" {if (c) print c; c=0} $0 !~ ">" {c+=length($0)} END {print c}' | sort -n | uniq -c | sort -nr | head -n 1 | awk '{print $NF}'); echo $newName","$seqMean >> $outFile; done
+
+
+### lncRNAs numbers
+
+outFile="/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/lncRNAs_numbers.txt"
+echo "species,number" > $outFile
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/*/AGAT_v1.4.2/lncRNAs_merged.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | grep ">" | cut -d" " -f2 | sort | uniq -c | wc -l); echo $newName","$seqMean >> $outFile; done
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/AGAT_v1.4.2/lncRNAs_merged.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | grep ">" | cut -d" " -f2 | sort | uniq -c | wc -l); echo $newName","$seqMean >> $outFile; done
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.5.2/*/*/AGAT_v1.4.2/lncRNAs_merged.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | grep ">" | cut -d" " -f2 | sort | uniq -c | wc -l); echo $newName","$seqMean >> $outFile; done
 
 
 ### lncRNAs merged means and modes

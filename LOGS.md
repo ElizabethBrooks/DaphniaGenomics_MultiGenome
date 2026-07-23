@@ -257,6 +257,44 @@ Analysis of Artemia_franciscana_JAVRJZ01_NCBI complete!
 
 ### BC, NCBI, zenodo, and CNGBdb genomes
 
+#### genome size
+
+qsub get_genome_size.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+
+Your job 1217095 ("get_genome_size_jobOutput") has been submitted
+
+qsub get_genome_size.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+
+Your job 1217096 ("get_genome_size_jobOutput") has been submitted
+
+qsub get_genome_size.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+
+Your job 1217097 ("get_genome_size_jobOutput") has been submitted
+
+qsub get_genome_size.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+
+Your job 1217098 ("get_genome_size_jobOutput") has been submitted
+Your job 1217099 ("get_genome_size_jobOutput") has been submitted
+Your job 1217100 ("get_genome_size_jobOutput") has been submitted
+Your job 1217101 ("get_genome_size_jobOutput") has been submitted
+Your job 1217102 ("get_genome_size_jobOutput") has been submitted
+Your job 1217103 ("get_genome_size_jobOutput") has been submitted
+Your job 1217104 ("get_genome_size_jobOutput") has been submitted
+Your job 1217105 ("get_genome_size_jobOutput") has been submitted
+Your job 1217106 ("get_genome_size_jobOutput") has been submitted
+
+qsub get_genome_size.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+
+Your job 1217110 ("get_genome_size_jobOutput") has been submitted
+
 #### fractional genome content
 
 qsub get_fractional_genome_content.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
@@ -705,6 +743,20 @@ Your job 1120087 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 ### version 2
 
+#### genome size
+
+qsub get_genome_size.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+
+Your job 1217111 ("get_genome_size_jobOutput") has been submitted
+Your job 1217112 ("get_genome_size_jobOutput") has been submitted
+Your job 1217113 ("get_genome_size_jobOutput") has been submitted
+Your job 1217114 ("get_genome_size_jobOutput") has been submitted
+Your job 1217115 ("get_genome_size_jobOutput") has been submitted
+
 #### fractional genome content
 
 qsub get_fractional_genome_content.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
@@ -880,6 +932,30 @@ Your job 1117859 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 Your job 1117860 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 ### batch 2
+
+#### genome size
+
+qsub get_genome_size.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+
+Your job 1217116 ("get_genome_size_jobOutput") has been submitted
+Your job 1217117 ("get_genome_size_jobOutput") has been submitted
+Your job 1217118 ("get_genome_size_jobOutput") has been submitted
+Your job 1217119 ("get_genome_size_jobOutput") has been submitted
+Your job 1217120 ("get_genome_size_jobOutput") has been submitted
+Your job 1217121 ("get_genome_size_jobOutput") has been submitted
+Your job 1217122 ("get_genome_size_jobOutput") has been submitted
+Your job 1217123 ("get_genome_size_jobOutput") has been submitted
+Your job 1217124 ("get_genome_size_jobOutput") has been submitted
+Your job 1217125 ("get_genome_size_jobOutput") has been submitted
 
 #### fractional genome content
 
@@ -1170,6 +1246,54 @@ Your job 1120053 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 Your job 1120054 ("evaluate_assembly_QUAST_jobOutput") has been submitted
 
 ### batch 1
+
+#### genome size
+
+qsub get_genome_size.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_sinensis/inputs_CHINA_ZQ_NCBI_noAA.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+qsub get_genome_size.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+
+Your job 1217126 ("get_genome_size_jobOutput") has been submitted
+Your job 1217127 ("get_genome_size_jobOutput") has been submitted
+Your job 1217128 ("get_genome_size_jobOutput") has been submitted
+Your job 1217129 ("get_genome_size_jobOutput") has been submitted
+Your job 1217130 ("get_genome_size_jobOutput") has been submitted
+Your job 1217131 ("get_genome_size_jobOutput") has been submitted
+Your job 1217132 ("get_genome_size_jobOutput") has been submitted
+Your job 1217133 ("get_genome_size_jobOutput") has been submitted
+Your job 1217134 ("get_genome_size_jobOutput") has been submitted
+Your job 1217135 ("get_genome_size_jobOutput") has been submitted
+Your job 1217136 ("get_genome_size_jobOutput") has been submitted
+Your job 1217137 ("get_genome_size_jobOutput") has been submitted
+Your job 1217138 ("get_genome_size_jobOutput") has been submitted
+Your job 1217139 ("get_genome_size_jobOutput") has been submitted
+Your job 1217140 ("get_genome_size_jobOutput") has been submitted
+Your job 1217141 ("get_genome_size_jobOutput") has been submitted
+Your job 1217142 ("get_genome_size_jobOutput") has been submitted
+Your job 1217143 ("get_genome_size_jobOutput") has been submitted
+Your job 1217144 ("get_genome_size_jobOutput") has been submitted
+Your job 1217145 ("get_genome_size_jobOutput") has been submitted
+Your job 1217146 ("get_genome_size_jobOutput") has been submitted
+Your job 1217147 ("get_genome_size_jobOutput") has been submitted
 
 #### fractional genome content
 
