@@ -34,19 +34,19 @@ trm_wide[is.na(trm_wide)] <- 0
 trm_sorted_desc <- trm_wide %>% arrange(desc(nchar(TRM)))
 
 # export table
-write.csv(trm_sorted_desc, "telomeric_repeat_descending_wide.csv", quote = FALSE, row.names = FALSE)
+write.csv(trm_sorted_desc, "telomeric_repeats_all_descending.csv", quote = FALSE, row.names = FALSE)
 
 # sort by ascending order (longest to shortest)
 trm_sorted_asc <- trm_wide %>% arrange(str_length(TRM))
 
 # export table
-write.csv(trm_sorted_asc, "telomeric_repeat_ascending_wide.csv", quote = FALSE, row.names = FALSE)
+write.csv(trm_sorted_asc, "telomeric_repeats_all.csv", quote = FALSE, row.names = FALSE)
 
 # filter to the top 5 most common TRMs across species
 trm_common <- trm_sorted_desc[trm_sorted_desc$TRM == "AACCT" | trm_sorted_desc$TRM == "AACCTAACCTAACCT" | trm_sorted_desc$TRM == "AACCTAACCT" | trm_sorted_desc$TRM == "AAAT" | trm_sorted_desc$TRM == "AAAAT",]
 
 # export table
-write.csv(trm_common, "telomeric_common_wide.csv", quote = FALSE, row.names = FALSE)
+write.csv(trm_common, "telomeric_repeats_common.csv", quote = FALSE, row.names = FALSE)
 
 # data frame for TRM counts
 trm_counts <- data.frame(
@@ -62,4 +62,4 @@ for (i in 2:ncol(trm_sorted_asc)) {
 }
 
 # export table
-write.csv(trm_counts, "telomeric_counts_wide.csv", quote = FALSE, row.names = FALSE)
+write.csv(trm_counts, "telomeric_repeat_counts.csv", quote = FALSE, row.names = FALSE)
