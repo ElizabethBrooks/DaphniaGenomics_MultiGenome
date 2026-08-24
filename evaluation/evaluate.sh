@@ -25,7 +25,7 @@ for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/AGAT_v1.4.2/fr
 for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.5.2/*/*/AGAT_v1.4.2/fractional_genome_content.fa; do cat $i | tail -n+2 >> $outFile; done
 
 
-### exons merged means and modes
+### protein coding exons merged means and modes
 
 outFile="/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/exons_merged_means.txt"
 echo "species,mean" > $outFile
@@ -111,7 +111,7 @@ for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/AGAT_v1.4.2/in
 for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.5.2/*/*/AGAT_v1.4.2/introns.fa; do dirName=$(dirname $i); newDir=$(dirname $dirName); newName=$(basename $newDir); seqMean=$(cat $i | awk '/^>/ {printf("\n%s\n",$0);next;} {printf("%s",$0);}' | grep -A1 "gene_biotype=protein_coding" | sed '/^$/d' | awk '$0 ~ ">" {if (c) print c; c=0} $0 !~ ">" {c+=length($0)} END {print c}' | sort -n | uniq -c | sort -nr | head -n 1 | awk '{print $NF}'); echo $newName","$seqMean >> $outFile; done
 
 
-### introns per gene means and modes
+### protein coding introns per gene means and modes
 
 outFile="/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/introns_per_gene_means.txt"
 echo "species,mean" > $outFile
