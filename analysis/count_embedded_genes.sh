@@ -61,10 +61,12 @@ awk '$3 == "gene"' $outputsPath"/complete.genomic.gff" > $outputsPath"/gene_anal
 awk '$3 == "gene"' $outputsPath"/AGAT_v1.4.2/output_longest.gff" > $outputsPath"/gene_analysis/longest_genes.gff"
 
 # find embedded genes using bedtools
-bedtools intersect -a $outputsPath"/gene_analysis/genes.gff" -b $outputsPath"/gene_analysis/genes.gff" -f 1.0 -e -c | awk '$NF > 1' > $outputsPath"/gene_analysis/"$outFile
+#bedtools intersect -a $outputsPath"/gene_analysis/genes.gff" -b $outputsPath"/gene_analysis/genes.gff" -f 1.0 -e -c | awk '$NF > 1' | wc -l > $outputsPath"/gene_analysis/"$outFile
+bedtools intersect -a $outputsPath"/gene_analysis/genes.gff" -b $outputsPath"/gene_analysis/genes.gff" -f 1.0 -e -c | wc -l > $outputsPath"/gene_analysis/"$outFile
 
 # find embedded longest genes using bedtools
-bedtools intersect -a $outputsPath"/gene_analysis/longest_genes.gff" -b $outputsPath"/gene_analysis/longest_genes.gff" -f 1.0 -e -c | awk '$NF > 1' > $outputsPath"/gene_analysis/"$outFileLongest
+#bedtools intersect -a $outputsPath"/gene_analysis/longest_genes.gff" -b $outputsPath"/gene_analysis/longest_genes.gff" -f 1.0 -e -c | awk '$NF > 1' | wc -l > $outputsPath"/gene_analysis/"$outFileLongest
+bedtools intersect -a $outputsPath"/gene_analysis/longest_genes.gff" -b $outputsPath"/gene_analysis/longest_genes.gff" -f 1.0 -e -c | wc -l > $outputsPath"/gene_analysis/"$outFileLongest
 
 # status message
 echo "Analysis of $speciesName complete!"
