@@ -9,6 +9,168 @@
 ##### job 1209903
 
 
+## gene analysis
+
+### BC, NCBI, zenodo, and CNGBdb genomes
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/Diaphanosoma_dubium/inputs_CNGBdb.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/Artemia_tibetiana/inputs_Qi_NCBI.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/Eulimnadia_texana/inputs_JT4_NCBI_clean.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/Artemia_sinica/inputs_ME_NCBI.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/Branchinecta_lindahli/inputs_BRLI_NCBI.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/Chydorus_sphaericus/inputs_JWP1_NCBI.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+bash count_embedded_genes.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
+
+### version 2
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+
+
+### Batch 2
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_ZQ.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_ZQ_clean.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/Latona_sp/inputs_BLK_101_BC_clean.txt
+
+
+### Batch 1
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_WW_ZQ_clean_noAA.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_pulex/inputs_CON21_WW.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_pulex/inputs_KAP106_NMP_1.3_WW.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_pulex/inputs_PA42_5_WW.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_pulex/inputs_STM2_asex_1.3_WW.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_ZQ_MP_noAA.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_galeata/inputs_M5_WW_ENA.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_magna/inputs_NIES_ZQ_SRA_noAA.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
+
+bash count_single_exon_genes.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+bash count_embedded_genes.sh EGAPx_v0.3.2/D_pulicaria/inputs_LK16_MP_ZQ_noAA.txt
+
 
 ## Telomere Sequences
 
