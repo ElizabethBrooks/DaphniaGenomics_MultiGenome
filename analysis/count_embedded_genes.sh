@@ -55,7 +55,7 @@ outFile="embedded_gene_count.txt"
 outFileLongest="embedded_longest_gene_count.txt"
 
 # retrieve gene feature info
-awk '$3 == "gene"' $outputsPath"/complete.proteins.gff" > $outputsPath"/gene_analysis/genes.gff"
+awk '$3 == "gene"' $outputsPath"/complete.genomic.gff" > $outputsPath"/gene_analysis/genes.gff"
 
 # retrieve longest gene feature info
 awk '$3 == "gene"' $outputsPath"/AGAT_v1.4.2/output_longest.gff" > $outputsPath"/gene_analysis/longest_genes.gff"

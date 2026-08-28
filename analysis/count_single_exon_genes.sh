@@ -52,7 +52,7 @@ outFile="single_exon_gene_count.txt"
 outFileLongest="single_exon_longest_gene_count.txt"
 
 # count single exon genes in the genome
-cat $outputsPath"/complete.proteins.gff" | awk '$3 == "exon"' | grep -o 'Parent=[^;]*' | cut -d= -f2 | sort | uniq -c | awk '$1 == 1' | wc -l > $outputsPath"/gene_analysis/"$outFile
+cat $outputsPath"/complete.genomic.gff" | awk '$3 == "exon"' | grep -o 'Parent=[^;]*' | cut -d= -f2 | sort | uniq -c | awk '$1 == 1' | wc -l > $outputsPath"/gene_analysis/"$outFile
 
 # count single exon genes for the longest proteins
 cat $outputsPath"/AGAT_v1.4.2/output_longest.gff" | awk '$3 == "exon"' | grep -o 'Parent=[^;]*' | cut -d= -f2 | sort | uniq -c | awk '$1 == 1' | wc -l > $outputsPath"/gene_analysis/"$outFileLongest
