@@ -49,9 +49,6 @@ bash count_embedded_genes.sh EGAPx_v0.3.2/Branchinecta_lynchi/inputs_BRLY_NCBI.t
 bash count_single_exon_genes.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 bash count_embedded_genes.sh EGAPx_v0.3.2/Branchinecta_sandiegonensis/inputs_CCGP_NCBI.txt
 
-bash count_single_exon_genes.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
-bash count_embedded_genes.sh EGAPx_v0.3.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
-
 bash count_single_exon_genes.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 bash count_embedded_genes.sh EGAPx_v0.5.2/Artemia_franciscana/inputs_JAVRJZ01_NCBI.txt
 
