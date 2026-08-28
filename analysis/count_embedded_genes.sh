@@ -5,7 +5,7 @@
 # usage ex: bash count_embedded_genes.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
 
 # load software 
-module load bio
+conda activate my_bedtools
 
 # retrieve input file
 inputFile=$1
