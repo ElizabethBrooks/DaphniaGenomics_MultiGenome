@@ -5,7 +5,7 @@
 # usage ex: bash count_embedded_genes.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_BC_clean.txt
 
 # load software 
-conda activate my_bedtools
+#conda activate my_bedtools
 
 # retrieve input file
 inputFile=$1
@@ -61,10 +61,10 @@ awk '$3 == "gene"' $outputsPath"/complete.genomic.gff" > $outputsPath"/gene_anal
 awk '$3 == "gene"' $outputsPath"/AGAT_v1.4.2/output_longest.gff" > $outputsPath"/gene_analysis/longest_genes.gff"
 
 # find embedded genes using bedtools
-bedtools intersect -a $outputsPath"/genes.gff" -b $outputsPath"/genes.gff" -u | wc -l > $outputsPath"/gene_analysis/"$outFile
+bedtools intersect -a $outputsPath"/gene_analysis/genes.gff" -b $outputsPath"/genes.gff" -u | wc -l > $outputsPath"/gene_analysis/"$outFile
 
 # find embedded longest genes using bedtools
-bedtools intersect -a $outputsPath"/longest_genes.gff" -b $outputsPath"/longest_genes.gff" -u | wc -l > $outputsPath"/gene_analysis/"$outFileLongest
+bedtools intersect -a $outputsPath"/gene_analysis/longest_genes.gff" -b $outputsPath"/longest_genes.gff" -u | wc -l > $outputsPath"/gene_analysis/"$outFileLongest
 
 # status message
 echo "Analysis of $speciesName complete!"
