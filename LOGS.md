@@ -1,5 +1,39 @@
 # Logs of Analysis & Tests
 
+## transcript assembly
+
+### 25 Daphnia species and two outgroups (Simocephalus vetulus and Ceriodaphnia. Dubia)
+
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
+
+
 ## Outgroup annotations
 
 #### qsub run_EGAPx_v0.3.2_HPC.sh EGAPx_v0.3.2/Apis_mellifera/inputs_DH4_NCBI.txt

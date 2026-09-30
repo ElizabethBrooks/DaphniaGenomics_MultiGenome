@@ -55,7 +55,7 @@ hisat2-build $refPath $speciesName"_build"
 
 # check read type, assuming the second read file is listed last
 readTest=$(echo $readPath | tail -1)
-if [[ $readTest == *"_R2_001"* ]]; then
+if [[ $readTest == *"R2_"* ]]; then
 	readType="paired"
 else
 	readType="unpaired"
@@ -73,7 +73,7 @@ for sampleFile in $readPath; do
 	else # paired reads
 		if [[ $(($loopNum % 2)) == 0 ]]; then # handle in pairs
 			# setup second read path
-			readTwo=$(echo $sampleFile | sed "s/_R1_/_R2_/g" | sed "s/_1\./_2./g")
+			readTwo=$(echo $sampleFile | sed "s/R1_/R2_/g" | sed "s/_1\./_2./g")
 			# align samples to the refence genome
 			hisat2 --threads 8 -x $speciesName"_build" -1 $sampleFile -2 $readTwo -S $sampleTag"_accepted_hits.bam" --summary-file $sampleTag"_alignedSummary.txt"
 		fi

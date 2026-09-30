@@ -4,7 +4,22 @@
 
 ### formatting
 
-for i in /Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/all/*/*.txt; do cat $i | grep -Ev "D_galeata_M5_WW_ENA|D_magna_NIES_ZQ_SRA_noAA|D_melanica_CON6_ZQ_MP_noAA|D_parvula_2_WW|D_pulex_CON21_WW|D_pulex_KAP106_NMP_1.3_WW|D_pulex_PA42_5_WW|D_pulex_STM2_asex_1.3_WW|D_pulicaria_LK16_MP_ZQ_noAA|D_sinensis_CHINA_ZQ_NCBI_noAA|Ceriodaphnia_sp_dubia_ZQ" > $i".fmt.csv"; done
+for i in /Users/bamflappy/PfrenderLab/multi_genome_project/evaluation_tree_species/all/*/*.txt; do cat $i | grep -Ev "D_galeata_M5_WW_ENA|D_magna_NIES_ZQ_SRA_noAA|D_melanica_CON6_ZQ_MP_noAA|D_pulex_CON21_WW|D_pulex_KAP106_NMP_1.3_WW|D_pulex_PA42_5_WW|D_pulex_STM2_asex_1.3_WW|D_pulicaria_LK16_MP_ZQ_noAA|D_sinensis_CHINA_ZQ_NCBI_noAA|Ceriodaphnia_sp_dubia_ZQ|Diaphanosoma_dubium_CNGBdb" | sed -E 's/(_1|_2|_3|_001|_101|_005|_WW|_ZQ|_BC|_MP|_NCBI|_CNGBdb|_zenodo|_v2|_SRA|_ENA|_clean|_noAA|_SZH4|_WSL|_CY_ORK|_67B|_TF22|_BLK|_ULW|_BGL|_Mary_Lake|_M5|_CON6|_67B|_ME|_Qi|_BRLI|_BRLY|_CCGP|_JWP1|_CSIRO|_AUS|_JT4|_JAVRJZ01)//g' > $i".fmt.csv"; done
+for i in /Users/bamflappy/PfrenderLab/multi_genome_project/gene_analysis/*.csv; do cat $i | grep -Ev "D_galeata_M5_WW_ENA|D_magna_NIES_ZQ_SRA_noAA|D_melanica_CON6_ZQ_MP_noAA|D_pulex_CON21_WW|D_pulex_KAP106_NMP_1.3_WW|D_pulex_PA42_5_WW|D_pulex_STM2_asex_1.3_WW|D_pulicaria_LK16_MP_ZQ_noAA|D_sinensis_CHINA_ZQ_NCBI_noAA|Ceriodaphnia_sp_dubia_ZQ|Diaphanosoma_dubium_CNGBdb" | sed -E 's/(_1|_2|_3|_001|_101|_005|_WW|_ZQ|_BC|_MP|_NCBI|_CNGBdb|_zenodo|_v2|_SRA|_ENA|_clean|_noAA|_SZH4|_WSL|_CY_ORK|_67B|_TF22|_BLK|_ULW|_BGL|_Mary_Lake|_M5|_CON6|_67B|_ME|_Qi|_BRLI|_BRLY|_CCGP|_JWP1|_CSIRO|_AUS|_JT4|_JAVRJZ01)//g' > $i".fmt.csv"; done
+
+### genome size
+
+outFile="/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/single_exon_gene_counts.csv"
+echo "species,count" > $outFile
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/*/gene_analysis/single_exon_gene_count.txt; do specName=$(ls $i | cut -d"/" -f); geneCount=$(cat $i); echo $specName","$geneCount >> $outFile; done
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/gene_analysis/single_exon_gene_count.txt; do specName=$(ls $i | cut -d"/" -f8); geneCount=$(cat $i); echo $specName","$geneCount >> $outFile; done
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.5.2/*/*/gene_analysis/single_exon_gene_count.txt; do specName=$(ls $i | cut -d"/" -f8); geneCount=$(cat $i); echo $specName","$geneCount >> $outFile; done
+
+outFile="/temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/analysis/embedded_gene_counts.csv"
+echo "species,count" > $outFile
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/*/gene_analysis/embedded_gene_count.txt; do specName=$(ls $i | cut -d"/" -f9); geneCount=$(cat $i); echo $specName","$geneCount >> $outFile; done
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.3.2/*/*/gene_analysis/embedded_gene_count.txt; do specName=$(ls $i | cut -d"/" -f8); geneCount=$(cat $i); echo $specName","$geneCount >> $outFile; done
+for i in /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.5.2/*/*/gene_analysis/embedded_gene_count.txt; do specName=$(ls $i | cut -d"/" -f8); geneCount=$(cat $i); echo $specName","$geneCount >> $outFile; done
 
 
 ### genome size

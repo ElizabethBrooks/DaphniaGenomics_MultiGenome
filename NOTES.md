@@ -1,5 +1,20 @@
 ## EGAPx v0.3.2
 
+## Bacterial contigs
+
+retrocurva BLK - contig 15
+mediterania - contig 422
+
+And in the short read data used for MLRow?
+
+FCS_GX removed the contaminated contigs.
+
+## To-Do
+
+Elizabeth - can you summarize the 0 intron genes across these genomes? How many and what is the distribution across genomes? Same question for the embedded genes. If you wan to discuss let me know.
+
+I think the level of conservation for these would be interesting and I wonder how they fit into ZQs scheme for the pangenome
+
 ## Annotation Status
 
 The [EGAPx\_daphnia\_annotation\_log](https://docs.google.com/spreadsheets/d/10nzxceWsXgf_4hcc5mAFBi7NVG6NLLwm38dv_k6yeUM/edit?usp=sharing) spreadsheet shows the annotation information and status for each Daphnia species in our analysis.
