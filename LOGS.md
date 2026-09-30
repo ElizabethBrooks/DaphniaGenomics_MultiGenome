@@ -28,8 +28,29 @@ qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
 qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
 qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
 
-Your job 1487125 ("assemble_RNA_jobOutput") has been submitted
-Your job 1487155 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487224 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487222 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487225 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487226 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487227 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487228 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487229 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487230 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487231 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487232 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487233 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487234 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487235 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487236 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487237 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487238 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487239 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487240 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487241 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487242 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487243 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487244 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487245 ("assemble_RNA_jobOutput") has been submitted
 
 qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
