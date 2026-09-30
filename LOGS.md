@@ -1,5 +1,13 @@
 # Logs of Analysis & Tests
 
+## EGAPx v0.5.2 annotations
+
+qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/D_pulex/inputs_KAP4_NCBI.txt
+
+
+qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/D_pulex/inputs_KAP4_NCBI_long.txt
+
+
 ## download SRA data for Trinity
 
 qsub download_SRA_reads_Trinity.sh D_arabica_zenodo_SRA SRR22386942
@@ -15,18 +23,18 @@ qsub download_SRA_reads_Trinity.sh D_sinensis_WSL_NCBI_clean_noAA SRR10389290
 qsub download_SRA_reads_Trinity.sh D_sinensis_WSL_NCBI_clean_noAA SRR10389293
 qsub download_SRA_reads_Trinity.sh D_sinensis_WSL_NCBI_clean_noAA SRR10389294
 
-Your job 1488495 ("download_SRA_Trinity_jobOutput") has been submitted
-Your job 1488502 ("download_SRA_Trinity_jobOutput") has been submitted
-Your job 1488503 ("download_SRA_Trinity_jobOutput") has been submitted
-Your job 1488504 ("download_SRA_Trinity_jobOutput") has been submitted
-Your job 1488505 ("download_SRA_Trinity_jobOutput") has been submitted
-Your job 1488506 ("download_SRA_Trinity_jobOutput") has been submitted
-Your job 1488507 ("download_SRA_Trinity_jobOutput") has been submitted
-Your job 1488508 ("download_SRA_Trinity_jobOutput") has been submitted
-Your job 1488509 ("download_SRA_Trinity_jobOutput") has been submitted
-Your job 1488510 ("download_SRA_Trinity_jobOutput") has been submitted
-Your job 1488511 ("download_SRA_Trinity_jobOutput") has been submitted
-Your job 1488512 ("download_SRA_Trinity_jobOutput") has been submitted
+Your job 1488572 ("download_SRA_Trinity_jobOutput") has been submitted
+Your job 1488573 ("download_SRA_Trinity_jobOutput") has been submitted
+Your job 1488574 ("download_SRA_Trinity_jobOutput") has been submitted
+Your job 1488575 ("download_SRA_Trinity_jobOutput") has been submitted
+Your job 1488576 ("download_SRA_Trinity_jobOutput") has been submitted
+Your job 1488577 ("download_SRA_Trinity_jobOutput") has been submitted
+Your job 1488578 ("download_SRA_Trinity_jobOutput") has been submitted
+Your job 1488579 ("download_SRA_Trinity_jobOutput") has been submitted
+Your job 1488580 ("download_SRA_Trinity_jobOutput") has been submitted
+Your job 1488582 ("download_SRA_Trinity_jobOutput") has been submitted
+Your job 1488583 ("download_SRA_Trinity_jobOutput") has been submitted
+Your job 1488584 ("download_SRA_Trinity_jobOutput") has been submitted
 
 
 ## transcript assembly
