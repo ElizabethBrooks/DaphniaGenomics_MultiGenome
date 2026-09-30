@@ -57,7 +57,7 @@ for i in $outDir"/"*"/"; do
 	# status message
 	echo "Processing $sraID ..."
 	# retrieve SRA data in fastq format
-	$softwarePath"/"fasterq-dump --threads 8 --split-files --defline-seq "@$sn[_$rn]/$ri" --fasta -O $outDir"/"  ./$sraID
+	$softwarePath"/"fasterq-dump --threads 8 --split-files --seq-defline "@$sn[_$rn]/$ri" -O $outDir"/"  ./$sraID
 done
 
 # status message

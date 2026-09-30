@@ -15,6 +15,19 @@ qsub download_SRA_reads_Trinity.sh D_sinensis_WSL_NCBI_clean_noAA SRR10389290
 qsub download_SRA_reads_Trinity.sh D_sinensis_WSL_NCBI_clean_noAA SRR10389293
 qsub download_SRA_reads_Trinity.sh D_sinensis_WSL_NCBI_clean_noAA SRR10389294
 
+Your job 1488495 ("download_SRA_Trinity_jobOutput") has been submitted
+Your job 1488502 ("download_SRA_Trinity_jobOutput") has been submitted
+Your job 1488503 ("download_SRA_Trinity_jobOutput") has been submitted
+Your job 1488504 ("download_SRA_Trinity_jobOutput") has been submitted
+Your job 1488505 ("download_SRA_Trinity_jobOutput") has been submitted
+Your job 1488506 ("download_SRA_Trinity_jobOutput") has been submitted
+Your job 1488507 ("download_SRA_Trinity_jobOutput") has been submitted
+Your job 1488508 ("download_SRA_Trinity_jobOutput") has been submitted
+Your job 1488509 ("download_SRA_Trinity_jobOutput") has been submitted
+Your job 1488510 ("download_SRA_Trinity_jobOutput") has been submitted
+Your job 1488511 ("download_SRA_Trinity_jobOutput") has been submitted
+Your job 1488512 ("download_SRA_Trinity_jobOutput") has been submitted
+
 
 ## transcript assembly
 
