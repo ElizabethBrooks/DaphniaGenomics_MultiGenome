@@ -5,9 +5,6 @@
 ### 25 Daphnia species and two outgroups (Simocephalus vetulus and Ceriodaphnia. Dubia)
 
 qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
 qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
 qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
 qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
@@ -30,10 +27,15 @@ qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
 qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
 qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
 qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
+
+Your job 1487125 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487132 ("assemble_RNA_jobOutput") has been submitted
+
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
+qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
 qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
 qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
-
-Your job 1487119 ("assemble_RNA_jobOutput") has been submitted
 
 
 ## Outgroup annotations
