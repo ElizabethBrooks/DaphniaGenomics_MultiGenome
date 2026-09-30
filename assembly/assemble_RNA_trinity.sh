@@ -41,10 +41,10 @@ outputsPath=$outputsPath"/"$speciesName
 
 # create outputs directory
 mkdir $outputsPath
-mkdir $softPath"/trinity_out_dir"
+mkdir $outputsPath"/trinity_out_dir"
 
 # move to the software directory
-cd $outputsPath
+cd $softPath
 
 # status message
 echo "Beginning analysis of $speciesName..."
