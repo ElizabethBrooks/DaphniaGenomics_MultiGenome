@@ -38,10 +38,10 @@ outputsPath=$(grep "outputs_Trinity:" ../"inputData/inputs_annotations.txt" | tr
 outputsPath=$outputsPath"/"$speciesName
 
 # create outputs directory
-mkdir $outputsPath"/Trinity_v2.15.2"
+mkdir $outputsPath
 
 # move to the outputs directory
-cd $outputsPath"/Trinity_v2.15.2"
+cd $outputsPath
 
 # status message
 echo "Beginning analysis of $speciesName..."
