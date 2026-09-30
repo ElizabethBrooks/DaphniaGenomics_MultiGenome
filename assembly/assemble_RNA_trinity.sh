@@ -44,7 +44,7 @@ mkdir $outputsPath
 mkdir $outputsPath"/trinity_out_dir"
 
 # move to the software directory
-cd $softPath
+cd $outputsPath
 
 # status message
 echo "Beginning analysis of $speciesName..."
