@@ -33,6 +33,8 @@ qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
 qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
 qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 
+Your job 1487119 ("assemble_RNA_jobOutput") has been submitted
+
 
 ## Outgroup annotations
 

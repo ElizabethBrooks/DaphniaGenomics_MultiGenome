@@ -85,7 +85,7 @@ STAR --runMode genomeGenerate \
 
 # check read type, assuming the second read file is listed last
 readTest=$(echo $readPath | tail -1)
-if [[ $readTest == *"R2_"* ]]; then
+if [[ $readTest == *"R2_001"* ]]; then
 	readType="paired"
 else
 	readType="unpaired"
@@ -113,7 +113,7 @@ for sampleFile in $readPath; do
 	else # paired reads
 		if [[ $(($loopNum % 2)) == 0 ]]; then # handle in pairs
 			# setup second read path
-			readTwo=$(echo $sampleFile | sed "s/R1_/R2_/g" | sed "s/_1\./_2./g")
+			readTwo=$(echo $sampleFile | sed "s/R1_001/R2_001/g" | sed "s/_1\./_2./g")
 			# compress reads, if not already
 			if [[ "$sampleFile" != *.gz ]]; then gzip "$sampleFile"; fi
 			if [[ "$readTwo" != *.gz ]]; then gzip "$readTwo"; fi

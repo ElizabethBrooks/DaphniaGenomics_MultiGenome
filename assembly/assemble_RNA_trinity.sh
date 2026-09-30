@@ -48,7 +48,7 @@ echo "Beginning analysis of $speciesName..."
 
 # check read type, assuming the second read file is listed last
 readTest=$(echo $readPath | tail -1)
-if [[ $readTest == *"R2_"* ]]; then
+if [[ $readTest == *"R2_001"* ]]; then
 	readType="paired"
 else
 	readType="unpaired"
@@ -62,8 +62,8 @@ if [[ $readType == "unpaired" ]]; then # single reads
 	    --CPU 8 --max_memory 10G
 else # paired reads
 	# setup read paths
-	readsOne=$(echo $readPath | grep "R1_" | tr '\n' ',' | sed "s/,$//g")
-	readsTwo=$(echo $readPath | grep "R2_" | tr '\n' ',' | sed "s/,$//g")
+	readsOne=$(echo $readPath | grep "R1_001" | tr '\n' ',' | sed "s/,$//g")
+	readsTwo=$(echo $readPath | grep "R2_001" | tr '\n' ',' | sed "s/,$//g")
 	# run trinity
 	Trinity --seqType fq --SS_lib_type RF  \
 		--left $readsOne \
