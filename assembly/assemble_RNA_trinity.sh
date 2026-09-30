@@ -28,7 +28,7 @@ repoDir=$(dirname $PWD)
 inputsPath=$repoDir"/inputData/"$inputsPath
 
 # retrieve paired reads absolute path for alignment
-readPath=$(awk '/reads:/{flag=1; next} flag' $inputsPath | sed "s/^.*-\ //g")
+readPath=$(cat $inputsPath | awk '/reads:/{flag=1; next} flag' | sed "s/^.*-\ //g")
 
 # retrieve outputs path
 # change this for different test runs
@@ -47,8 +47,7 @@ cd $outputsPath
 echo "Beginning analysis of $speciesName..."
 
 # check read type, assuming the second read file is listed last
-readTest=$(echo $readPath | tail -1)
-if [[ $readTest == *"R2_001"* ]]; then
+if [[ $readPath == *"R2_001"* ]]; then
 	readType="paired"
 else
 	readType="unpaired"
@@ -56,14 +55,16 @@ fi
 
 # check read type
 if [[ $readType == "unpaired" ]]; then # single reads
-# run trinity
-	Trinity --seqType fq --SS_lib_type F  \
-		--single $readPath \
-	    --CPU 8 --max_memory 10G
+	# setup read paths
+	readsOne=$(echo $readPath | tr ' ' ',' | sed "s/,$//g")
+	# run trinity
+	#Trinity --seqType fq --SS_lib_type F  \
+	#	--single $readPath \
+	#    --CPU 8 --max_memory 10G
 else # paired reads
 	# setup read paths
-	readsOne=$(echo $readPath | grep "R1_001" | tr '\n' ',' | sed "s/,$//g")
-	readsTwo=$(echo $readPath | grep "R2_001" | tr '\n' ',' | sed "s/,$//g")
+	readsOne=$(cat $inputsPath | awk '/reads:/{flag=1; next} flag' | sed "s/^.*-\ //g" | grep "R1_001" | tr '\n' ',' | sed "s/,$//g")
+	readsTwo=$(cat $inputsPath | awk '/reads:/{flag=1; next} flag' | sed "s/^.*-\ //g" | grep "R2_001" | tr '\n' ',' | sed "s/,$//g")
 	# test
 	echo "Read path:"
 	echo $readPath
