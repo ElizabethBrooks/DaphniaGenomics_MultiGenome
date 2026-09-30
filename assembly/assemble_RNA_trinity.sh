@@ -65,15 +65,17 @@ else # paired reads
 	readsOne=$(echo $readPath | grep "R1_001" | tr '\n' ',' | sed "s/,$//g")
 	readsTwo=$(echo $readPath | grep "R2_001" | tr '\n' ',' | sed "s/,$//g")
 	# test
+	echo "Read path:"
+	echo $readPath
 	echo "Reads one:"
 	echo $readsOne
 	echo "Reads two:"
 	echo $readsTwo
 	# run trinity
-	Trinity --seqType fq --SS_lib_type RF  \
-		--left $readsOne \
-	    --right $readsTwo \
-	    --CPU 8 --max_memory 10G
+	#Trinity --seqType fq --SS_lib_type RF  \
+	#	--left $readsOne \
+	#    --right $readsTwo \
+	#    --CPU 8 --max_memory 10G
 fi
 
 # Print status message
