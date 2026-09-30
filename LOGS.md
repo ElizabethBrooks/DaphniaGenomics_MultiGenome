@@ -29,7 +29,7 @@ qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
 qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
 
 Your job 1487125 ("assemble_RNA_jobOutput") has been submitted
-Your job 1487132 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487155 ("assemble_RNA_jobOutput") has been submitted
 
 qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
 qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt

@@ -10,7 +10,10 @@
 # usage: qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
 
 # Required modules for ND CRC servers
-module load bio/trinity
+#module load bio/trinity
+
+# retrieve software path
+outputsPath=$(grep "software_Trinity:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/software_Trinity://g")
 
 # retrieve input file
 inputFile=$1
@@ -31,7 +34,6 @@ inputsPath=$repoDir"/inputData/"$inputsPath
 readPath=$(cat $inputsPath | awk '/reads:/{flag=1; next} flag' | sed "s/^.*-\ //g")
 
 # retrieve outputs path
-# change this for different test runs
 outputsPath=$(grep "outputs_Trinity:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_Trinity://g")
 
 # setup outputs path
@@ -40,8 +42,8 @@ outputsPath=$outputsPath"/"$speciesName
 # create outputs directory
 mkdir $outputsPath
 
-# move to the outputs directory
-cd $outputsPath
+# move to the software directory
+cd $softPath
 
 # status message
 echo "Beginning analysis of $speciesName..."
@@ -58,18 +60,26 @@ if [[ $readType == "unpaired" ]]; then # single reads
 	# setup read paths
 	readsOne=$(echo $readPath | tr ' ' ',' | sed "s/,$//g")
 	# run trinity
-	Trinity --seqType fq --SS_lib_type F  \
-		--single $readPath \
-	    --CPU 8 --max_memory 10G
+	singularity exec -e trinityrnaseq.v2.15.2.simg  Trinity \
+		--seqType fq \
+		--SS_lib_type F  \
+		--single $readsOne \
+	    --CPU 8 \
+	    --max_memory 10G \
+	    --output $outputsPath
 else # paired reads
 	# setup read paths
 	readsOne=$(cat $inputsPath | awk '/reads:/{flag=1; next} flag' | sed "s/^.*-\ //g" | grep "R1_001" | tr '\n' ',' | sed "s/,$//g")
 	readsTwo=$(cat $inputsPath | awk '/reads:/{flag=1; next} flag' | sed "s/^.*-\ //g" | grep "R2_001" | tr '\n' ',' | sed "s/,$//g")
 	# run trinity
-	Trinity --seqType fq --SS_lib_type RF  \
+	singularity exec -e trinityrnaseq.v2.15.2.simg  Trinity \
+		--seqType fq \
+		--SS_lib_type RF  \
 		--left $readsOne \
 	    --right $readsTwo \
-	    --CPU 8 --max_memory 10G
+	    --CPU 8 \
+	    --max_memory 10G \
+	    --output $outputsPath
 fi
 
 # Print status message
