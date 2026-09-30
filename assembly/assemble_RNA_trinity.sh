@@ -13,7 +13,7 @@
 #module load bio/trinity
 
 # retrieve software path
-outputsPath=$(grep "software_Trinity:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/software_Trinity://g")
+softPath=$(grep "software_Trinity:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/software_Trinity://g")
 
 # retrieve input file
 inputFile=$1
