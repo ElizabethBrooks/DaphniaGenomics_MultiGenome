@@ -1,62 +1,126 @@
 # Logs of Analysis & Tests
 
+## download SRA data for Trinity
+
+qsub download_SRA_reads_Trinity.sh D_arabica_zenodo_SRA SRR22386942
+qsub download_SRA_reads_Trinity.sh D_arabica_zenodo_SRA SRR22386943
+qsub download_SRA_reads_Trinity.sh D_arabica_zenodo_SRA SRR22386944
+qsub download_SRA_reads_Trinity.sh D_arabica_zenodo_SRA SRR22386945
+qsub download_SRA_reads_Trinity.sh D_carinata_CSIRO_NCBI SRR18361604
+qsub download_SRA_reads_Trinity.sh D_carinata_CSIRO_NCBI SRR24914548
+qsub download_SRA_reads_Trinity.sh D_longicephala_AUS_NCBI SRR18361604
+qsub download_SRA_reads_Trinity.sh D_longicephala_AUS_NCBI SRR24914548
+qsub download_SRA_reads_Trinity.sh D_pulex_KAP4_SRA_noAA SRR17311954
+qsub download_SRA_reads_Trinity.sh D_sinensis_WSL_NCBI_clean_noAA SRR10389290
+qsub download_SRA_reads_Trinity.sh D_sinensis_WSL_NCBI_clean_noAA SRR10389293
+qsub download_SRA_reads_Trinity.sh D_sinensis_WSL_NCBI_clean_noAA SRR10389294
+
+
 ## transcript assembly
 
 ### 25 Daphnia species and two outgroups (Simocephalus vetulus and Ceriodaphnia. Dubia)
 
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
+qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
+qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_mendotae/inputs_67B_v2_ZQ_clean.txt
+qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_lumholtzi/inputs_2_v2_WW_ZQ_clean.txt
+qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_melanica/inputs_CON6_v2_ZQ_MP.txt
+qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_galeata/inputs_M5_v2_ZQ_ENA.txt
+qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_salina/inputs_ULW_001_ZQ.txt
+qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_similis/inputs_BGL_001_ZQ.txt
+qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_pulicaria/inputs_TF22_005_ZQ_clean.txt
+qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_magna/inputs_MLC_001_ZQ.txt
+qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_mediterranea/inputs_CY_ORK_ZQ_clean.txt
+qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_schodleri/inputs_Mary_Lake_ZQ.txt
+qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_retrocurva/inputs_BLK_001_ZQ_clean.txt
+qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_ambigua/inputs_3_WW.txt
+qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_arenata/inputs_2_WW.txt
+qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_catawba/inputs_3_WW.txt
+qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_dentifera/inputs_3_WW.txt
+qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_magniceps/inputs_WW.txt
+qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_mitsukuri/inputs_1_SZH4_WW.txt
+qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_obtusa/inputs_v2_WW.txt
+qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_parvula/inputs_2_WW.txt
+qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
+qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
 
-Your job 1487224 ("assemble_RNA_jobOutput") has been submitted
-Your job 1487222 ("assemble_RNA_jobOutput") has been submitted
-Your job 1487225 ("assemble_RNA_jobOutput") has been submitted
-Your job 1487226 ("assemble_RNA_jobOutput") has been submitted
-Your job 1487227 ("assemble_RNA_jobOutput") has been submitted
-Your job 1487228 ("assemble_RNA_jobOutput") has been submitted
-Your job 1487229 ("assemble_RNA_jobOutput") has been submitted
-Your job 1487230 ("assemble_RNA_jobOutput") has been submitted
-Your job 1487231 ("assemble_RNA_jobOutput") has been submitted
-Your job 1487232 ("assemble_RNA_jobOutput") has been submitted
-Your job 1487233 ("assemble_RNA_jobOutput") has been submitted
-Your job 1487234 ("assemble_RNA_jobOutput") has been submitted
-Your job 1487235 ("assemble_RNA_jobOutput") has been submitted
-Your job 1487236 ("assemble_RNA_jobOutput") has been submitted
-Your job 1487237 ("assemble_RNA_jobOutput") has been submitted
-Your job 1487238 ("assemble_RNA_jobOutput") has been submitted
-Your job 1487239 ("assemble_RNA_jobOutput") has been submitted
-Your job 1487240 ("assemble_RNA_jobOutput") has been submitted
-Your job 1487241 ("assemble_RNA_jobOutput") has been submitted
-Your job 1487242 ("assemble_RNA_jobOutput") has been submitted
-Your job 1487243 ("assemble_RNA_jobOutput") has been submitted
-Your job 1487244 ("assemble_RNA_jobOutput") has been submitted
-Your job 1487245 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487246 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487247 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487248 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487249 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487250 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487251 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487252 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487253 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487254 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487255 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487256 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487257 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487258 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487259 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487260 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487261 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487262 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487263 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487264 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487265 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487266 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487267 ("assemble_RNA_jobOutput") has been submitted
+Your job 1487268 ("assemble_RNA_jobOutput") has been submitted
 
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
-qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
+qmod -c 1487246
+qmod -c 1487247
+qmod -c 1487248
+qmod -c 1487249
+qmod -c 1487250
+qmod -c 1487251
+qmod -c 1487252
+qmod -c 1487253
+qmod -c 1487254
+qmod -c 1487255
+qmod -c 1487256
+qmod -c 1487257
+qmod -c 1487258
+qmod -c 1487259
+qmod -c 1487260
+qmod -c 1487261
+qmod -c 1487262
+qmod -c 1487263
+qmod -c 1487264
+qmod -c 1487265
+qmod -c 1487266
+qmod -c 1487267
+qmod -c 1487268
+
+ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487246
+ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487247
+ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487248
+ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487249
+ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487250
+Job 1487251 is not in error state
+ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487252
+ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487253
+ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487254
+ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487255
+ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487256
+ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487257
+ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487258
+ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487259
+ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487260
+ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487261
+ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487262
+ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487263
+ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487264
+ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487265
+ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487266
+ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487267
+ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487268
+
+qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
+qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
+qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 
 
 ## Outgroup annotations

@@ -42,4 +42,5 @@ outputs_EGAPx_v0.5.2_analysis: /temp180/mpfrende/ebrooks5/multi_genome/EGAPx_v0.
 outputs_Trinity: /temp180/mpfrende/ebrooks5/multi_genome/Trinity_v2.15.2
 outputs_BRAKER3: /scratch365/ebrooks5/multi_genome_project/BRAKER3
 outputs_SRA: /scratch365/ebrooks5/multi_genome_project/data/dump
+outputs_SRA_Trinity: /temp180/mpfrende/ebrooks5/multi_genome/data/dump_Trinity
 outputs_formatted: /scratch365/ebrooks5/multi_genome_project/data/formatted
