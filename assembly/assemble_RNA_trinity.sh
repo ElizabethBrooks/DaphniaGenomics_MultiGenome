@@ -66,7 +66,7 @@ if [[ $readType == "unpaired" ]]; then # single reads
 		--single $readsOne \
 	    --CPU 8 \
 	    --max_memory 10G \
-	    --output $outputsPath
+	    --output $outputsPath"/trinity_out_dir"
 else # paired reads
 	# setup read paths
 	readsOne=$(cat $inputsPath | awk '/reads:/{flag=1; next} flag' | sed "s/^.*-\ //g" | grep "R1_001" | tr '\n' ',' | sed "s/,$//g")
@@ -79,7 +79,7 @@ else # paired reads
 	    --right $readsTwo \
 	    --CPU 8 \
 	    --max_memory 10G \
-	    --output $outputsPath
+	    --output $outputsPath"/trinity_out_dir"
 fi
 
 # Print status message
