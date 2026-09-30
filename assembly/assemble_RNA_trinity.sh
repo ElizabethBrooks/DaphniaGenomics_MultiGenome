@@ -61,7 +61,7 @@ if [[ $readType == "unpaired" ]]; then # single reads
 	# setup read paths
 	readsOne=$(echo $readPath | tr ' ' ',' | sed "s/,$//g")
 	# run trinity
-	singularity exec -B $softPath"/trinityrnaseq.v2.15.2.simg"  Trinity \
+	singularity exec -eB $softPath"/trinityrnaseq.v2.15.2.simg"  Trinity \
 		--seqType fq \
 		--SS_lib_type F  \
 		--single $readsOne \
@@ -73,7 +73,7 @@ else # paired reads
 	readsOne=$(cat $inputsPath | awk '/reads:/{flag=1; next} flag' | sed "s/^.*-\ //g" | grep "R1_001" | tr '\n' ',' | sed "s/,$//g")
 	readsTwo=$(cat $inputsPath | awk '/reads:/{flag=1; next} flag' | sed "s/^.*-\ //g" | grep "R2_001" | tr '\n' ',' | sed "s/,$//g")
 	# run trinity
-	singularity exec -B $softPath"/trinityrnaseq.v2.15.2.simg"  Trinity \
+	singularity exec -eB $softPath"/trinityrnaseq.v2.15.2.simg"  Trinity \
 		--seqType fq \
 		--SS_lib_type RF  \
 		--left $readsOne \
