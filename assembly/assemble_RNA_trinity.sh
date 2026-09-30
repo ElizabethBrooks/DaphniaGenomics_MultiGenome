@@ -41,6 +41,7 @@ outputsPath=$outputsPath"/"$speciesName
 
 # create outputs directory
 mkdir $outputsPath
+mkdir $outputsPath"/trinity_out_dir"
 
 # move to the software directory
 cd $softPath
