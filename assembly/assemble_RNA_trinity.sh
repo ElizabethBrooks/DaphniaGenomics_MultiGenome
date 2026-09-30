@@ -61,26 +61,13 @@ if [[ $readType == "unpaired" ]]; then # single reads
 	# setup read paths
 	readsOne=$(echo $readPath | tr ' ' ',' | sed "s/,$//g")
 	# run trinity
-	singularity exec -e -B $softPath"/trinityrnaseq.v2.15.2.simg" Trinity \
-		--seqType fq \
-		--SS_lib_type F  \
-		--single $readsOne \
-	    --CPU 8 \
-	    --max_memory 10G \
-	    --output $outputsPath"/trinity_out_dir"
+	singularity exec -e -B $softPath"/trinityrnaseq.v2.15.2.simg" Trinity --seqType fq --SS_lib_type F  --single $readsOne --CPU 8 --max_memory 10G --output $outputsPath"/trinity_out_dir"
 else # paired reads
 	# setup read paths
 	readsOne=$(cat $inputsPath | awk '/reads:/{flag=1; next} flag' | sed "s/^.*-\ //g" | grep "R1_001" | tr '\n' ',' | sed "s/,$//g")
 	readsTwo=$(cat $inputsPath | awk '/reads:/{flag=1; next} flag' | sed "s/^.*-\ //g" | grep "R2_001" | tr '\n' ',' | sed "s/,$//g")
 	# run trinity
-	singularity exec -e -B $softPath"/trinityrnaseq.v2.15.2.simg" Trinity \
-		--seqType fq \
-		--SS_lib_type RF  \
-		--left $readsOne \
-	    --right $readsTwo \
-	    --CPU 8 \
-	    --max_memory 10G \
-	    --output $outputsPath"/trinity_out_dir"
+	singularity exec -e -B $softPath"/trinityrnaseq.v2.15.2.simg" Trinity --seqType fq --SS_lib_type RF  --left $readsOne --right $readsTwo --CPU 8 --max_memory 10G --output $outputsPath"/trinity_out_dir"
 fi
 
 # Print status message
