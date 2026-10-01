@@ -2,10 +2,13 @@
 
 ## EGAPx v0.5.2 annotations
 
-qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/D_pulex/inputs_KAP4_NCBI.txt
+qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub clean_EGAPx_v0.5.2_outputs.sh EGAPx_v0.5.2/D_pulex/inputs_KAP4_SRA_noAA.txt
 
+Your job 1488984 ("run_EGAPx_v0.5_jobOutput") has been submitted
+Your job 1491498 ("clean_EGAPx_outputs_jobOutput") has been submitted
 
-qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/D_pulex/inputs_KAP4_NCBI_long.txt
+qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/D_pulex/inputs_KAP4_SRA_noAA_long.txt
 
 
 ## download SRA data for Trinity
