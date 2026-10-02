@@ -53,7 +53,7 @@ fi
 # check read type
 if [[ $readType == "unpaired" ]]; then # single reads
 	# retrieve read path
-	readPath=$(ls $outputsPath"/SRA/"*".fastq" | head -1)
+	readPath=$(ls $inputsPath"/SRA/"*".fastq" | head -1)
 	readPath=$(dirname $readPath)
 	# setup read paths
 	readsOne=$(echo $readPath | tr ' ' ',' | sed "s/,$//g")
@@ -61,11 +61,11 @@ if [[ $readType == "unpaired" ]]; then # single reads
 	singularity exec -B $readPath $softPath"/trinityrnaseq.v2.15.2.simg" Trinity --seqType fq --single $readsOne --CPU 8 --max_memory 10G --output $outputsPath"/trinity_out_dir"
 else # paired reads
 	# retrieve read path
-	readPath=$(ls $outputsPath"/SRA/"*".fastq" | head -1)
+	readPath=$(ls $inputsPath"/SRA/"*".fastq" | head -1)
 	readPath=$(dirname $readPath)
 	# setup read paths
-	readsOne=$(ls $outputsPath"/SRA/"*".fastq" | grep "_1.fastq" | tr '\n' ',' | sed "s/,$//g")
-	readsTwo=$(ls $outputsPath"/SRA/"*".fastq" | grep "_2.fastq" | tr '\n' ',' | sed "s/,$//g")
+	readsOne=$(ls $inputsPath"/SRA/"*".fastq" | grep "_1.fastq" | tr '\n' ',' | sed "s/,$//g")
+	readsTwo=$(ls $inputsPath"/SRA/"*".fastq" | grep "_2.fastq" | tr '\n' ',' | sed "s/,$//g")
 	# run trinity
 	singularity exec -B $readPath $softPath"/trinityrnaseq.v2.15.2.simg" Trinity --seqType fq --left $readsOne --right $readsTwo --CPU 8 --max_memory 10G --output $outputsPath"/trinity_out_dir"
 fi
