@@ -6,7 +6,7 @@ qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/D_pulex/inputs_KAP4_SRA_noAA.txt
 qsub clean_EGAPx_v0.5.2_outputs.sh EGAPx_v0.5.2/D_pulex/inputs_KAP4_SRA_noAA.txt
 
 Your job 1488984 ("run_EGAPx_v0.5_jobOutput") has been submitted
-Your job 1491498 ("clean_EGAPx_outputs_jobOutput") has been submitted
+Your job 1491633 ("clean_EGAPx_outputs_jobOutput") has been submitted
 
 qsub run_EGAPx_v0.5.2_HPC.sh EGAPx_v0.5.2/D_pulex/inputs_KAP4_SRA_noAA_long.txt
 
@@ -69,6 +69,7 @@ qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_pulex/inputs_BEL2_WW.txt
 qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/Simocephalus_vetulus/inputs_WW.txt
 
 Your job 1487246 ("assemble_RNA_jobOutput") has been submitted
+Error, 1 threads errored out at /usr/local/bin/util/insilico_read_normalization.pl line 1011.
 Your job 1487247 ("assemble_RNA_jobOutput") has been submitted
 Your job 1487248 ("assemble_RNA_jobOutput") has been submitted
 Your job 1487249 ("assemble_RNA_jobOutput") has been submitted
@@ -92,59 +93,11 @@ Your job 1487266 ("assemble_RNA_jobOutput") has been submitted
 Your job 1487267 ("assemble_RNA_jobOutput") has been submitted
 Your job 1487268 ("assemble_RNA_jobOutput") has been submitted
 
-qmod -c 1487246
-qmod -c 1487247
-qmod -c 1487248
-qmod -c 1487249
-qmod -c 1487250
-qmod -c 1487251
-qmod -c 1487252
-qmod -c 1487253
-qmod -c 1487254
-qmod -c 1487255
-qmod -c 1487256
-qmod -c 1487257
-qmod -c 1487258
-qmod -c 1487259
-qmod -c 1487260
-qmod -c 1487261
-qmod -c 1487262
-qmod -c 1487263
-qmod -c 1487264
-qmod -c 1487265
-qmod -c 1487266
-qmod -c 1487267
-qmod -c 1487268
-
-ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487246
-ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487247
-ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487248
-ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487249
-ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487250
-Job 1487251 is not in error state
-ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487252
-ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487253
-ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487254
-ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487255
-ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487256
-ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487257
-ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487258
-ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487259
-ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487260
-ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487261
-ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487262
-ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487263
-ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487264
-ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487265
-ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487266
-ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487267
-ebrooks5@crcfe02.crc.nd.edu cleared error state of job 1487268
-
-qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
-qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
-qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
-qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
-qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
+qsub assemble_SRA_RNA_Trinity.sh EGAPx_v0.3.2/D_arabica/inputs_zenodo_SRA.txt
+qsub assemble_SRA_RNA_Trinity.sh EGAPx_v0.3.2/D_carinata/inputs_CSIRO_NCBI.txt
+qsub assemble_SRA_RNA_Trinity.sh EGAPx_v0.3.2/D_longicephala/inputs_AUS_NCBI.txt
+qsub assemble_SRA_RNA_Trinity.sh EGAPx_v0.3.2/D_pulex/inputs_KAP4_SRA_noAA.txt
+qsub assemble_SRA_RNA_Trinity.sh EGAPx_v0.3.2/D_sinensis/inputs_WSL_NCBI_clean_noAA.txt
 
 
 ## Outgroup annotations
