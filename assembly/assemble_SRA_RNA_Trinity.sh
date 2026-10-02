@@ -25,7 +25,7 @@ speciesName=$(grep "species:" ../"inputData/"$inputFile | cut -d " " -f2)
 inputsPath=$(grep "outputs_SRA_Trinity:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_SRA_Trinity://g")
 
 # setup inputs path
-inputsPath=$inputsPath"/"$inputSpecies
+inputsPath=$inputsPath"/"$speciesName
 
 # retrieve paired reads absolute path for alignment
 readPath=$inputsPath"/"*"/"*".fastq"
