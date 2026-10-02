@@ -24,8 +24,11 @@ speciesName=$(grep "species:" ../"inputData/"$inputFile | cut -d " " -f2)
 # retrieve inputs path
 inputsPath=$(grep "outputs_SRA_Trinity:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_SRA_Trinity://g")
 
+# setup inputs path
+inputsPath=$inputsPath"/"$inputSpecies
+
 # retrieve paired reads absolute path for alignment
-readPath=$inputsPath"/SRA/"*".fastq"
+readPath=$inputsPath"/"*"/"*".fastq"
 
 # retrieve outputs path
 outputsPath=$(grep "outputs_Trinity:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/outputs_Trinity://g")
@@ -53,7 +56,7 @@ fi
 # check read type
 if [[ $readType == "unpaired" ]]; then # single reads
 	# retrieve read path
-	readPath=$(ls $inputsPath"/SRA/"*".fastq" | head -1)
+	readPath=$(ls $inputsPath"/"*"/"*".fastq" | head -1)
 	readPath=$(dirname $readPath)
 	# setup read paths
 	readsOne=$(echo $readPath | tr ' ' ',' | sed "s/,$//g")
@@ -61,11 +64,11 @@ if [[ $readType == "unpaired" ]]; then # single reads
 	singularity exec -B $readPath $softPath"/trinityrnaseq.v2.15.2.simg" Trinity --seqType fq --single $readsOne --CPU 8 --max_memory 10G --output $outputsPath"/trinity_out_dir"
 else # paired reads
 	# retrieve read path
-	readPath=$(ls $inputsPath"/SRA/"*".fastq" | head -1)
+	readPath=$(ls $inputsPath"/"*"/"*".fastq" | head -1)
 	readPath=$(dirname $readPath)
 	# setup read paths
-	readsOne=$(ls $inputsPath"/SRA/"*".fastq" | grep "_1.fastq" | tr '\n' ',' | sed "s/,$//g")
-	readsTwo=$(ls $inputsPath"/SRA/"*".fastq" | grep "_2.fastq" | tr '\n' ',' | sed "s/,$//g")
+	readsOne=$(ls $inputsPath"/"*"/"*".fastq" | grep "_1.fastq" | tr '\n' ',' | sed "s/,$//g")
+	readsTwo=$(ls $inputsPath"/"*"/"*".fastq" | grep "_2.fastq" | tr '\n' ',' | sed "s/,$//g")
 	# run trinity
 	singularity exec -B $readPath $softPath"/trinityrnaseq.v2.15.2.simg" Trinity --seqType fq --left $readsOne --right $readsTwo --CPU 8 --max_memory 10G --output $outputsPath"/trinity_out_dir"
 fi
