@@ -9,9 +9,6 @@
 # usage: qsub assemble_RNA_trinity.sh inputsFile
 # usage: qsub assemble_RNA_trinity.sh EGAPx_v0.3.2/Ceriodaphnia_sp/inputs_dubia_v2_ZQ.txt
 
-# Required modules for ND CRC servers
-#module load bio/trinity
-
 # retrieve software path
 softPath=$(grep "software_Trinity:" ../"inputData/inputs_annotations.txt" | tr -d " " | sed "s/software_Trinity://g")
 
