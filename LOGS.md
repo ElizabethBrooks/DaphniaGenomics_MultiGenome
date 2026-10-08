@@ -105,6 +105,10 @@ Your job 1497152 ("assemble_RNA_jobOutput") has been submitted
 Your job 1497154 ("assemble_RNA_jobOutput") has been submitted
 Your job 1497155 ("assemble_RNA_jobOutput") has been submitted
 
+qsub assemble_RNA_Trinity.sh EGAPx_v0.3.2/D_magna/inputs_LRVO_BC_clean.txt
+
+Your job 1509045 ("assemble_RNA_jobOutput") has been submitted
+
 
 ## Outgroup annotations
 
